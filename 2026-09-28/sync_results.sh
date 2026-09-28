@@ -19,7 +19,10 @@ scp -q $H:"$R/logs/census.log" $L/stageB/results/census/ 2>/dev/null || true
 mkdir -p $L/stageB/results/census_B
 scp -q $H:"$R/runs/census_B/*" $L/stageB/results/census_B/ 2>/dev/null || true
 scp -q $H:"$R/logs/census_B.log" $L/stageB/results/census_B/ 2>/dev/null || true
-for f in run_censusB.sh auto_shutdown.sh; do scp -q $H:"$R/data/$f" $L/stageB/ 2>/dev/null || true; done
+mkdir -p $L/stageB/results/ablate
+scp -q $H:"$R/runs/ablate/*" $L/stageB/results/ablate/ 2>/dev/null || true
+scp -q $H:"$R/logs/ablate.log" $L/stageB/results/ablate/ 2>/dev/null || true
+for f in run_censusB.sh auto_shutdown.sh run_ablate.sh; do scp -q $H:"$R/data/$f" $L/stageB/ 2>/dev/null || true; done
 scp -q $H:"$R/data/run_pre.sh" $L/product/ 2>/dev/null || true
 scp -q $H:"$R/data/run_chain.sh" $L/stageB/ 2>/dev/null || true
 cd /Users/lovelyjoy/Documents/AI-Emotion-Experiment
