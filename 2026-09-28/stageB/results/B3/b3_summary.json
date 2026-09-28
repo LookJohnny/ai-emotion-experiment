@@ -1,0 +1,270 @@
+{
+ "primary": "anger",
+ "window": "L12-27",
+ "window_layers": [
+  12,
+  27
+ ],
+ "attn_window_primary_own": {
+  "L16-23": 0.475,
+  "L12-27": 0.548,
+  "L8-31": 0.632,
+  "L0-35": 0.648,
+  "peak17±4": 0.505
+ },
+ "n_heads_in_window": 512,
+ "self_patch_exact": "4/4",
+ "window_all_heads_own": 0.5489,
+ "top_heads": [
+  {
+   "head": "L16H12",
+   "own": 0.0493,
+   "cross": 0.0327
+  },
+  {
+   "head": "L17H16",
+   "own": 0.0462,
+   "cross": 0.0266
+  },
+  {
+   "head": "L14H25",
+   "own": 0.0456,
+   "cross": 0.0018
+  },
+  {
+   "head": "L19H28",
+   "own": 0.038,
+   "cross": 0.0102
+  },
+  {
+   "head": "L17H4",
+   "own": 0.0334,
+   "cross": 0.005
+  },
+  {
+   "head": "L19H29",
+   "own": 0.0322,
+   "cross": 0.0115
+  },
+  {
+   "head": "L18H8",
+   "own": 0.0294,
+   "cross": 0.0016
+  },
+  {
+   "head": "L22H19",
+   "own": 0.0283,
+   "cross": 0.0155
+  },
+  {
+   "head": "L16H3",
+   "own": 0.0272,
+   "cross": 0.0091
+  },
+  {
+   "head": "L14H26",
+   "own": 0.0271,
+   "cross": 0.0106
+  },
+  {
+   "head": "L20H11",
+   "own": 0.0255,
+   "cross": 0.01
+  },
+  {
+   "head": "L16H17",
+   "own": 0.0246,
+   "cross": 0.0039
+  },
+  {
+   "head": "L23H2",
+   "own": 0.0245,
+   "cross": 0.0044
+  },
+  {
+   "head": "L16H14",
+   "own": 0.0243,
+   "cross": 0.0098
+  },
+  {
+   "head": "L15H25",
+   "own": 0.0223,
+   "cross": 0.0072
+  },
+  {
+   "head": "L21H6",
+   "own": 0.0218,
+   "cross": 0.0224
+  },
+  {
+   "head": "L17H28",
+   "own": 0.0217,
+   "cross": 0.0069
+  },
+  {
+   "head": "L17H15",
+   "own": 0.0215,
+   "cross": 0.002
+  },
+  {
+   "head": "L17H18",
+   "own": 0.0202,
+   "cross": 0.0156
+  },
+  {
+   "head": "L20H14",
+   "own": 0.0198,
+   "cross": 0.0126
+  },
+  {
+   "head": "L19H18",
+   "own": 0.0192,
+   "cross": 0.01
+  },
+  {
+   "head": "L18H11",
+   "own": 0.0191,
+   "cross": -0.0009
+  },
+  {
+   "head": "L16H10",
+   "own": 0.019,
+   "cross": 0.0119
+  },
+  {
+   "head": "L16H18",
+   "own": 0.0182,
+   "cross": -0.0048
+  },
+  {
+   "head": "L17H13",
+   "own": 0.0181,
+   "cross": 0.0056
+  },
+  {
+   "head": "L21H13",
+   "own": 0.0181,
+   "cross": 0.0125
+  },
+  {
+   "head": "L23H0",
+   "own": 0.0176,
+   "cross": 0.0044
+  },
+  {
+   "head": "L20H10",
+   "own": 0.0175,
+   "cross": 0.0105
+  },
+  {
+   "head": "L22H10",
+   "own": 0.0166,
+   "cross": 0.0072
+  },
+  {
+   "head": "L15H18",
+   "own": 0.0164,
+   "cross": 0.0065
+  },
+  {
+   "head": "L17H31",
+   "own": 0.016,
+   "cross": 0.0086
+  },
+  {
+   "head": "L21H0",
+   "own": 0.0154,
+   "cross": 0.0034
+  }
+ ],
+ "cumulative": {
+  "1": {
+   "own": 0.0493,
+   "cross": 0.0327,
+   "frac_of_window": 0.09
+  },
+  "2": {
+   "own": 0.0945,
+   "cross": 0.0522,
+   "frac_of_window": 0.172
+  },
+  "4": {
+   "own": 0.1752,
+   "cross": 0.0465,
+   "frac_of_window": 0.319
+  },
+  "8": {
+   "own": 0.2684,
+   "cross": 0.0297,
+   "frac_of_window": 0.489
+  },
+  "12": {
+   "own": 0.3446,
+   "cross": 0.009,
+   "frac_of_window": 0.628
+  },
+  "16": {
+   "own": 0.4025,
+   "cross": 0.0083,
+   "frac_of_window": 0.733
+  },
+  "24": {
+   "own": 0.4673,
+   "cross": -0.0248,
+   "frac_of_window": 0.851
+  },
+  "32": {
+   "own": 0.5088,
+   "cross": -0.0364,
+   "frac_of_window": 0.927
+  },
+  "48": {
+   "own": 0.5704,
+   "cross": -0.0721,
+   "frac_of_window": 1.039
+  },
+  "64": {
+   "own": 0.61,
+   "cross": -0.0976,
+   "frac_of_window": 1.111
+  },
+  "96": {
+   "own": 0.6438,
+   "cross": -0.1229,
+   "frac_of_window": 1.173
+  },
+  "128": {
+   "own": 0.6654,
+   "cross": -0.1403,
+   "frac_of_window": 1.212
+  },
+  "512": {
+   "own": 0.5489,
+   "cross": -0.1229,
+   "frac_of_window": 1.0
+  }
+ },
+ "k_for_50pct": 12,
+ "k_for_80pct": 24,
+ "top16_bootstrap_jaccard": {
+  "mean": 0.781,
+  "p5": 0.684
+ },
+ "primary_object_rule": {
+  "k50_le_16": true,
+  "jaccard_ge_0_5": true,
+  "head_set_is_primary": true
+ },
+ "descriptive_attn_anchor_to_lead_top8": {
+  "L16H12": 0.135,
+  "L17H16": 0.33,
+  "L14H25": 0.479,
+  "L19H28": 0.142,
+  "L17H4": 0.066,
+  "L19H29": 0.19,
+  "L18H8": 0.165,
+  "L22H19": 0.301
+ },
+ "seconds": 2681.6,
+ "peak_gib": 10.42
+}

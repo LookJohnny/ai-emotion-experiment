@@ -1,0 +1,75 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 137.28it/s]
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+1/60 fam01 32s
+2/60 fam02 61s
+3/60 fam03 92s
+4/60 fam04 122s
+5/60 fam05 152s
+6/60 fam06 182s
+7/60 fam07 213s
+8/60 fam08 243s
+9/60 fam09 273s
+10/60 fam10 304s
+11/60 fam11 334s
+12/60 fam12 364s
+13/60 fam13 395s
+14/60 fam14 425s
+15/60 fam15 455s
+16/60 fam16 485s
+17/60 fam17 516s
+18/60 fam18 547s
+19/60 fam19 577s
+20/60 fam20 608s
+21/60 shop01 638s
+22/60 shop02 668s
+23/60 shop03 698s
+24/60 shop04 728s
+25/60 shop05 759s
+26/60 shop06 790s
+27/60 shop07 821s
+28/60 shop08 852s
+29/60 shop09 883s
+30/60 shop10 912s
+31/60 shop11 943s
+32/60 shop12 974s
+33/60 shop13 1003s
+34/60 shop14 1033s
+35/60 shop15 1064s
+36/60 shop16 1094s
+37/60 shop17 1125s
+38/60 shop18 1154s
+39/60 shop19 1184s
+40/60 shop20 1215s
+41/60 trav01 1246s
+42/60 trav02 1277s
+43/60 trav03 1308s
+44/60 trav04 1338s
+45/60 trav05 1369s
+46/60 trav06 1399s
+47/60 trav07 1430s
+48/60 trav08 1462s
+49/60 trav09 1492s
+50/60 trav10 1522s
+51/60 trav11 1553s
+52/60 trav12 1591s
+53/60 trav13 1705s
+54/60 trav14 1854s
+55/60 trav15 2004s
+56/60 trav16 2135s
+57/60 trav17 2268s
+58/60 trav18 2404s
+59/60 trav19 2530s
+60/60 trav20 2563s
+resid_last joy      L24  own=0.09 [0.064, 0.124] cross=0.00 spec=[0.058, 0.128]
+resid_last sadness  L24  own=0.09 [0.073, 0.118] cross=0.01 spec=[0.055, 0.112]
+resid_last anger    L25  own=0.14 [0.109, 0.166] cross=-0.06 spec=[0.146, 0.259]
+resid_all  joy      L19  own=0.32 [0.275, 0.369] cross=0.05 spec=[0.215, 0.323]
+resid_all  sadness  L18  own=0.33 [0.295, 0.36] cross=0.11 spec=[0.16, 0.276]
+resid_all  anger    L17  own=0.36 [0.321, 0.398] cross=0.06 spec=[0.232, 0.387]
+attn_all   joy      L16  own=0.14 [0.113, 0.17] cross=0.03 spec=[0.088, 0.139]
+attn_all   sadness  L16  own=0.14 [0.116, 0.161] cross=0.07 spec=[0.042, 0.101]
+attn_all   anger    L16  own=0.16 [0.141, 0.189] cross=0.04 spec=[0.087, 0.156]
+mlp_all    joy      L20  own=0.06 [0.035, 0.076] cross=0.01 spec=[0.026, 0.07]
+mlp_all    sadness  L22  own=0.06 [0.041, 0.076] cross=0.02 spec=[0.022, 0.058]
+mlp_all    anger    L22  own=0.07 [0.055, 0.082] cross=0.02 spec=[0.032, 0.072]
+DONE 4/4 2566.9

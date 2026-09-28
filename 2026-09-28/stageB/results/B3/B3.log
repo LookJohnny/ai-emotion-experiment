@@ -1,0 +1,30 @@
+attn windows joy own: {'L16-23': 0.475, 'L12-27': 0.548, 'L8-31': 0.632, 'L0-35': 0.648, 'peak17±4': 0.505} -> chosen L12-27
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 137.83it/s]
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+single 1/120 19s
+single 11/120 193s
+single 21/120 369s
+single 31/120 553s
+single 41/120 734s
+single 51/120 920s
+single 61/120 1097s
+single 71/120 1277s
+single 81/120 1543s
+single 91/120 1815s
+single 101/120 2085s
+single 111/120 2360s
+top-1: own=0.049 cross=0.033 frac=0.09
+top-2: own=0.095 cross=0.052 frac=0.17
+top-4: own=0.175 cross=0.047 frac=0.32
+top-8: own=0.268 cross=0.030 frac=0.49
+top-12: own=0.345 cross=0.009 frac=0.63
+top-16: own=0.402 cross=0.008 frac=0.73
+top-24: own=0.467 cross=-0.025 frac=0.85
+top-32: own=0.509 cross=-0.036 frac=0.93
+top-48: own=0.570 cross=-0.072 frac=1.04
+top-64: own=0.610 cross=-0.098 frac=1.11
+top-96: own=0.644 cross=-0.123 frac=1.17
+top-128: own=0.665 cross=-0.140 frac=1.21
+top-512: own=0.549 cross=-0.123 frac=1.00
+{"window": "L12-27", "window_all_heads_own": 0.5489, "k_for_50pct": 12, "k_for_80pct": 24, "top16_bootstrap_jaccard": {"mean": 0.781, "p5": 0.684}, "primary_object_rule": {"k50_le_16": true, "jaccard_ge_0_5": true, "head_set_is_primary": true}, "self_patch_exact": "4/4"}
+DONE

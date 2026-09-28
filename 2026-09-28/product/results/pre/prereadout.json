@@ -1,0 +1,78 @@
+{
+ "n_prompts": 400,
+ "split": {
+  "train": 240,
+  "val": 80,
+  "test": 80
+ },
+ "val_by_layer": {
+  "8": 0.697,
+  "12": 0.76,
+  "16": 0.802,
+  "19": 0.81,
+  "22": 0.834,
+  "26": 0.844,
+  "30": 0.842
+ },
+ "layer": 26,
+ "alpha": 1000,
+ "test_pre_probe": {
+  "joy": 0.85,
+  "sadness": 0.807,
+  "anger": 0.89
+ },
+ "test_baseline_user_ridge": {
+  "joy": 0.773,
+  "sadness": 0.809,
+  "anger": 0.837
+ },
+ "test_baseline_user_direct_probe": {
+  "joy": 0.706,
+  "sadness": 0.702,
+  "anger": 0.565
+ },
+ "val_pre_probe": {
+  "joy": 0.846,
+  "sadness": 0.804,
+  "anger": 0.882
+ },
+ "val_baseline_user_ridge": {
+  "joy": 0.725,
+  "sadness": 0.779,
+  "anger": 0.833
+ },
+ "label_mean_by_category": {
+  "good_news": {
+   "neutral": 0.02,
+   "joy": 0.838,
+   "sadness": 0.101,
+   "anger": 0.042
+  },
+  "grievance": {
+   "neutral": 0.18,
+   "joy": 0.053,
+   "sadness": 0.064,
+   "anger": 0.703
+  },
+  "mixed": {
+   "neutral": 0.059,
+   "joy": 0.459,
+   "sadness": 0.327,
+   "anger": 0.155
+  },
+  "neutral_task": {
+   "neutral": 0.589,
+   "joy": 0.096,
+   "sadness": 0.028,
+   "anger": 0.287
+  },
+  "sad": {
+   "neutral": 0.04,
+   "joy": 0.062,
+   "sadness": 0.824,
+   "anger": 0.075
+  }
+ },
+ "seconds": 1279.6,
+ "note": "Labels are the model's own token-time readout (self-supervised), not human ratings. Test split used once."
+}

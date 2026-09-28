@@ -1,0 +1,14 @@
+2026-09-28 16:24:29 chain start
+2026-09-28 16:31:22 B2 ok
+2026-09-28 16:42:07 [auto_shutdown] armed (hard cap 4h)
+2026-09-28 16:45:06 censusB start
+2026-09-28 16:45:36 [auto_shutdown] armed (deadline 2026-09-28 20:42:07)
+2026-09-28 16:46:20 censusB exit 0
+2026-09-28 16:52:18 ablate start
+2026-09-28 16:52:29 [auto_shutdown] armed (deadline 2026-09-28 20:42:07)
+2026-09-28 17:16:10 B3 ok
+2026-09-28 17:19:39 ablate exit 0
+2026-09-28 17:20:49 B4 ok
+2026-09-28 17:21:01 prereadout start (chain: done)
+2026-09-28 17:42:28 prereadout ok
+2026-09-28 17:42:29 [auto_shutdown] all jobs finished; grace 45 min for local sync

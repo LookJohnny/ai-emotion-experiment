@@ -1,0 +1,46 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 131.74it/s]
+set1 0/640 1s
+set1 100/640 5s
+set1 200/640 9s
+set1 300/640 13s
+set1 400/640 17s
+set1 500/640 21s
+set1 600/640 25s
+activations done 40s
+L 0 lead: emo-only  5955 topic-only   400 both   972 | prompts cat-sel  2684 | anger~grievance r=0.15 J=0.032
+L 1 lead: emo-only  7181 topic-only   314 both   906 | prompts cat-sel  5773 | anger~grievance r=0.50 J=0.026
+L 2 lead: emo-only  6671 topic-only   409 both  1462 | prompts cat-sel  3373 | anger~grievance r=0.18 J=0.037
+L 3 lead: emo-only  5425 topic-only   720 both  1762 | prompts cat-sel  4115 | anger~grievance r=0.17 J=0.021
+L 4 lead: emo-only  5296 topic-only   656 both  2255 | prompts cat-sel  4706 | anger~grievance r=0.21 J=0.016
+L 5 lead: emo-only  5265 topic-only   648 both  2089 | prompts cat-sel  4677 | anger~grievance r=0.24 J=0.037
+L 6 lead: emo-only  5698 topic-only   547 both  2051 | prompts cat-sel  4560 | anger~grievance r=0.24 J=0.021
+L 7 lead: emo-only  5586 topic-only   575 both  2276 | prompts cat-sel  4815 | anger~grievance r=0.20 J=0.021
+L 8 lead: emo-only  5262 topic-only   554 both  2719 | prompts cat-sel  5345 | anger~grievance r=0.18 J=0.016
+L 9 lead: emo-only  5327 topic-only   471 both  3124 | prompts cat-sel  5494 | anger~grievance r=0.20 J=0.016
+L10 lead: emo-only  5920 topic-only   400 both  2595 | prompts cat-sel  5530 | anger~grievance r=0.21 J=0.049
+L11 lead: emo-only  5081 topic-only   541 both  3244 | prompts cat-sel  5138 | anger~grievance r=0.25 J=0.037
+L12 lead: emo-only  5142 topic-only   428 both  3514 | prompts cat-sel  5736 | anger~grievance r=0.24 J=0.032
+L13 lead: emo-only  5931 topic-only   391 both  2599 | prompts cat-sel  5964 | anger~grievance r=0.25 J=0.032
+L14 lead: emo-only  5873 topic-only   387 both  2701 | prompts cat-sel  6156 | anger~grievance r=0.25 J=0.043
+L15 lead: emo-only  5590 topic-only   483 both  2838 | prompts cat-sel  6427 | anger~grievance r=0.19 J=0.037
+L16 lead: emo-only  5382 topic-only   414 both  3353 | prompts cat-sel  6696 | anger~grievance r=0.22 J=0.043
+L17 lead: emo-only  7555 topic-only   120 both  1317 | prompts cat-sel  7000 | anger~grievance r=0.23 J=0.049
+L18 lead: emo-only  6946 topic-only   247 both  1580 | prompts cat-sel  6904 | anger~grievance r=0.22 J=0.037
+L19 lead: emo-only  5846 topic-only   354 both  2671 | prompts cat-sel  6961 | anger~grievance r=0.23 J=0.049
+L20 lead: emo-only  5191 topic-only   537 both  3202 | prompts cat-sel  7045 | anger~grievance r=0.20 J=0.026
+L21 lead: emo-only  6139 topic-only   321 both  2437 | prompts cat-sel  7057 | anger~grievance r=0.20 J=0.060
+L22 lead: emo-only  6130 topic-only   381 both  2290 | prompts cat-sel  6690 | anger~grievance r=0.24 J=0.049
+L23 lead: emo-only  6092 topic-only   331 both  2448 | prompts cat-sel  7142 | anger~grievance r=0.25 J=0.037
+L24 lead: emo-only  6010 topic-only   411 both  2468 | prompts cat-sel  6918 | anger~grievance r=0.27 J=0.043
+L25 lead: emo-only  5661 topic-only   486 both  2529 | prompts cat-sel  6662 | anger~grievance r=0.28 J=0.032
+L26 lead: emo-only  4575 topic-only   605 both  3741 | prompts cat-sel  6836 | anger~grievance r=0.26 J=0.026
+L27 lead: emo-only  5681 topic-only   438 both  2668 | prompts cat-sel  6749 | anger~grievance r=0.24 J=0.026
+L28 lead: emo-only  5074 topic-only   584 both  3042 | prompts cat-sel  6835 | anger~grievance r=0.24 J=0.054
+L29 lead: emo-only  5006 topic-only   647 both  2925 | prompts cat-sel  5858 | anger~grievance r=0.24 J=0.032
+L30 lead: emo-only  4492 topic-only   755 both  3431 | prompts cat-sel  5490 | anger~grievance r=0.23 J=0.037
+L31 lead: emo-only  4610 topic-only   772 both  3241 | prompts cat-sel  5926 | anger~grievance r=0.24 J=0.054
+L32 lead: emo-only  4683 topic-only   627 both  3531 | prompts cat-sel  6180 | anger~grievance r=0.25 J=0.043
+L33 lead: emo-only  5222 topic-only   567 both  2728 | prompts cat-sel  6317 | anger~grievance r=0.26 J=0.049
+L34 lead: emo-only  4302 topic-only   766 both  3611 | prompts cat-sel  6715 | anger~grievance r=0.23 J=0.032
+L35 lead: emo-only  4952 topic-only   566 both  3286 | prompts cat-sel  6568 | anger~grievance r=0.22 J=0.049
+DONE

@@ -1,0 +1,551 @@
+{
+ "n_scenarios": 60,
+ "tail": "我的看法是：",
+ "primary": "anger",
+ "b1_peak": 17,
+ "self_patch_exact": "4/4",
+ "cells": {
+  "attn/L16-23/joy": {
+   "own": 0.38,
+   "cross": 0.06,
+   "own_ci95": [
+    0.332,
+    0.435
+   ],
+   "specificity_ci95": [
+    0.26,
+    0.385
+   ]
+  },
+  "attn/L16-23/sadness": {
+   "own": 0.404,
+   "cross": 0.1,
+   "own_ci95": [
+    0.371,
+    0.441
+   ],
+   "specificity_ci95": [
+    0.239,
+    0.373
+   ]
+  },
+  "attn/L16-23/anger": {
+   "own": 0.475,
+   "cross": -0.04,
+   "own_ci95": [
+    0.427,
+    0.515
+   ],
+   "specificity_ci95": [
+    0.413,
+    0.624
+   ]
+  },
+  "attn/L12-27/joy": {
+   "own": 0.403,
+   "cross": 0.076,
+   "own_ci95": [
+    0.349,
+    0.463
+   ],
+   "specificity_ci95": [
+    0.263,
+    0.397
+   ]
+  },
+  "attn/L12-27/sadness": {
+   "own": 0.452,
+   "cross": 0.083,
+   "own_ci95": [
+    0.412,
+    0.492
+   ],
+   "specificity_ci95": [
+    0.296,
+    0.449
+   ]
+  },
+  "attn/L12-27/anger": {
+   "own": 0.548,
+   "cross": -0.124,
+   "own_ci95": [
+    0.497,
+    0.593
+   ],
+   "specificity_ci95": [
+    0.548,
+    0.811
+   ]
+  },
+  "attn/L8-31/joy": {
+   "own": 0.497,
+   "cross": 0.071,
+   "own_ci95": [
+    0.441,
+    0.557
+   ],
+   "specificity_ci95": [
+    0.366,
+    0.494
+   ]
+  },
+  "attn/L8-31/sadness": {
+   "own": 0.521,
+   "cross": 0.101,
+   "own_ci95": [
+    0.473,
+    0.566
+   ],
+   "specificity_ci95": [
+    0.345,
+    0.508
+   ]
+  },
+  "attn/L8-31/anger": {
+   "own": 0.632,
+   "cross": -0.153,
+   "own_ci95": [
+    0.581,
+    0.678
+   ],
+   "specificity_ci95": [
+    0.652,
+    0.936
+   ]
+  },
+  "attn/L0-35/joy": {
+   "own": 0.516,
+   "cross": 0.073,
+   "own_ci95": [
+    0.46,
+    0.577
+   ],
+   "specificity_ci95": [
+    0.379,
+    0.516
+   ]
+  },
+  "attn/L0-35/sadness": {
+   "own": 0.54,
+   "cross": 0.095,
+   "own_ci95": [
+    0.491,
+    0.584
+   ],
+   "specificity_ci95": [
+    0.366,
+    0.531
+   ]
+  },
+  "attn/L0-35/anger": {
+   "own": 0.648,
+   "cross": -0.157,
+   "own_ci95": [
+    0.598,
+    0.696
+   ],
+   "specificity_ci95": [
+    0.669,
+    0.954
+   ]
+  },
+  "attn/peak17±4/joy": {
+   "own": 0.373,
+   "cross": 0.07,
+   "own_ci95": [
+    0.323,
+    0.428
+   ],
+   "specificity_ci95": [
+    0.245,
+    0.373
+   ]
+  },
+  "attn/peak17±4/sadness": {
+   "own": 0.406,
+   "cross": 0.086,
+   "own_ci95": [
+    0.371,
+    0.443
+   ],
+   "specificity_ci95": [
+    0.25,
+    0.395
+   ]
+  },
+  "attn/peak17±4/anger": {
+   "own": 0.505,
+   "cross": -0.091,
+   "own_ci95": [
+    0.458,
+    0.551
+   ],
+   "specificity_ci95": [
+    0.493,
+    0.715
+   ]
+  },
+  "mlp/L16-23/joy": {
+   "own": -0.044,
+   "cross": -0.016,
+   "own_ci95": [
+    -0.123,
+    0.026
+   ],
+   "specificity_ci95": [
+    -0.103,
+    0.042
+   ]
+  },
+  "mlp/L16-23/sadness": {
+   "own": 0.099,
+   "cross": -0.062,
+   "own_ci95": [
+    0.05,
+    0.144
+   ],
+   "specificity_ci95": [
+    0.104,
+    0.224
+   ]
+  },
+  "mlp/L16-23/anger": {
+   "own": 0.082,
+   "cross": -0.125,
+   "own_ci95": [
+    0.033,
+    0.132
+   ],
+   "specificity_ci95": [
+    0.122,
+    0.298
+   ]
+  },
+  "mlp/L12-27/joy": {
+   "own": -0.317,
+   "cross": -0.145,
+   "own_ci95": [
+    -0.466,
+    -0.193
+   ],
+   "specificity_ci95": [
+    -0.321,
+    -0.048
+   ]
+  },
+  "mlp/L12-27/sadness": {
+   "own": -0.146,
+   "cross": -0.311,
+   "own_ci95": [
+    -0.242,
+    -0.062
+   ],
+   "specificity_ci95": [
+    0.055,
+    0.292
+   ]
+  },
+  "mlp/L12-27/anger": {
+   "own": -0.191,
+   "cross": -0.439,
+   "own_ci95": [
+    -0.288,
+    -0.103
+   ],
+   "specificity_ci95": [
+    0.103,
+    0.401
+   ]
+  },
+  "mlp/L8-31/joy": {
+   "own": -0.48,
+   "cross": -0.207,
+   "own_ci95": [
+    -0.661,
+    -0.337
+   ],
+   "specificity_ci95": [
+    -0.44,
+    -0.122
+   ]
+  },
+  "mlp/L8-31/sadness": {
+   "own": -0.258,
+   "cross": -0.411,
+   "own_ci95": [
+    -0.36,
+    -0.172
+   ],
+   "specificity_ci95": [
+    0.035,
+    0.275
+   ]
+  },
+  "mlp/L8-31/anger": {
+   "own": -0.295,
+   "cross": -0.623,
+   "own_ci95": [
+    -0.42,
+    -0.19
+   ],
+   "specificity_ci95": [
+    0.151,
+    0.54
+   ]
+  },
+  "mlp/L0-35/joy": {
+   "own": -0.52,
+   "cross": -0.211,
+   "own_ci95": [
+    -0.697,
+    -0.368
+   ],
+   "specificity_ci95": [
+    -0.478,
+    -0.165
+   ]
+  },
+  "mlp/L0-35/sadness": {
+   "own": -0.264,
+   "cross": -0.426,
+   "own_ci95": [
+    -0.376,
+    -0.168
+   ],
+   "specificity_ci95": [
+    0.029,
+    0.3
+   ]
+  },
+  "mlp/L0-35/anger": {
+   "own": -0.314,
+   "cross": -0.653,
+   "own_ci95": [
+    -0.443,
+    -0.204
+   ],
+   "specificity_ci95": [
+    0.144,
+    0.551
+   ]
+  },
+  "mlp/peak17±4/joy": {
+   "own": -0.454,
+   "cross": -0.183,
+   "own_ci95": [
+    -0.629,
+    -0.315
+   ],
+   "specificity_ci95": [
+    -0.454,
+    -0.134
+   ]
+  },
+  "mlp/peak17±4/sadness": {
+   "own": -0.244,
+   "cross": -0.34,
+   "own_ci95": [
+    -0.341,
+    -0.159
+   ],
+   "specificity_ci95": [
+    -0.008,
+    0.207
+   ]
+  },
+  "mlp/peak17±4/anger": {
+   "own": -0.304,
+   "cross": -0.454,
+   "own_ci95": [
+    -0.386,
+    -0.23
+   ],
+   "specificity_ci95": [
+    0.026,
+    0.295
+   ]
+  },
+  "both/L16-23/joy": {
+   "own": 0.39,
+   "cross": 0.051,
+   "own_ci95": [
+    0.335,
+    0.449
+   ],
+   "specificity_ci95": [
+    0.275,
+    0.405
+   ]
+  },
+  "both/L16-23/sadness": {
+   "own": 0.432,
+   "cross": 0.109,
+   "own_ci95": [
+    0.396,
+    0.471
+   ],
+   "specificity_ci95": [
+    0.257,
+    0.389
+   ]
+  },
+  "both/L16-23/anger": {
+   "own": 0.486,
+   "cross": -0.043,
+   "own_ci95": [
+    0.437,
+    0.533
+   ],
+   "specificity_ci95": [
+    0.42,
+    0.636
+   ]
+  },
+  "both/L12-27/joy": {
+   "own": 0.41,
+   "cross": 0.056,
+   "own_ci95": [
+    0.355,
+    0.466
+   ],
+   "specificity_ci95": [
+    0.292,
+    0.418
+   ]
+  },
+  "both/L12-27/sadness": {
+   "own": 0.452,
+   "cross": 0.086,
+   "own_ci95": [
+    0.405,
+    0.498
+   ],
+   "specificity_ci95": [
+    0.285,
+    0.448
+   ]
+  },
+  "both/L12-27/anger": {
+   "own": 0.547,
+   "cross": -0.12,
+   "own_ci95": [
+    0.493,
+    0.592
+   ],
+   "specificity_ci95": [
+    0.547,
+    0.791
+   ]
+  },
+  "both/L8-31/joy": {
+   "own": 0.49,
+   "cross": 0.071,
+   "own_ci95": [
+    0.435,
+    0.549
+   ],
+   "specificity_ci95": [
+    0.35,
+    0.488
+   ]
+  },
+  "both/L8-31/sadness": {
+   "own": 0.516,
+   "cross": 0.099,
+   "own_ci95": [
+    0.47,
+    0.562
+   ],
+   "specificity_ci95": [
+    0.339,
+    0.499
+   ]
+  },
+  "both/L8-31/anger": {
+   "own": 0.623,
+   "cross": -0.155,
+   "own_ci95": [
+    0.57,
+    0.67
+   ],
+   "specificity_ci95": [
+    0.635,
+    0.937
+   ]
+  },
+  "both/L0-35/joy": {
+   "own": 0.513,
+   "cross": 0.073,
+   "own_ci95": [
+    0.457,
+    0.576
+   ],
+   "specificity_ci95": [
+    0.375,
+    0.51
+   ]
+  },
+  "both/L0-35/sadness": {
+   "own": 0.536,
+   "cross": 0.096,
+   "own_ci95": [
+    0.488,
+    0.579
+   ],
+   "specificity_ci95": [
+    0.359,
+    0.53
+   ]
+  },
+  "both/L0-35/anger": {
+   "own": 0.646,
+   "cross": -0.161,
+   "own_ci95": [
+    0.595,
+    0.694
+   ],
+   "specificity_ci95": [
+    0.663,
+    0.966
+   ]
+  },
+  "both/peak17±4/joy": {
+   "own": 0.362,
+   "cross": 0.04,
+   "own_ci95": [
+    0.312,
+    0.418
+   ],
+   "specificity_ci95": [
+    0.26,
+    0.386
+   ]
+  },
+  "both/peak17±4/sadness": {
+   "own": 0.394,
+   "cross": 0.072,
+   "own_ci95": [
+    0.353,
+    0.437
+   ],
+   "specificity_ci95": [
+    0.251,
+    0.403
+   ]
+  },
+  "both/peak17±4/anger": {
+   "own": 0.47,
+   "cross": -0.078,
+   "own_ci95": [
+    0.419,
+    0.517
+   ],
+   "specificity_ci95": [
+    0.443,
+    0.665
+   ]
+  }
+ },
+ "seconds": 406.4,
+ "peak_gib": 10.34
+}

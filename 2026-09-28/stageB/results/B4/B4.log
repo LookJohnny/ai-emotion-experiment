@@ -1,0 +1,37 @@
+peak 17 mlp window L12-27
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 141.21it/s]
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+prepared 120 units 223s
+fold 0: {"dir_lam0.5": {"own": 0.0541, "cross": 0.0359}, "dir_lam1": {"own": 0.1093, "cross": 0.0571}, "dir_lam2": {"own": 0.1861, "cross": 0.0623}, "dir_lam4": {"own": 0.235, "cross": -0.069}, "random_dir_lam1_mean": {"own": -0.0093, "cross": -0.0084}, "mlp_units_top32": {"own": -0.0253, "cross": -0.0056}, "mlp_units_random_mean": {"own": 0.0018, "cross": 0.0027}}
+fold 1: {"dir_lam0.5": {"own": 0.0584, "cross": 0.038}, "dir_lam1": {"own": 0.1143, "cross": 0.0613}, "dir_lam2": {"own": 0.1941, "cross": 0.0711}, "dir_lam4": {"own": 0.2401, "cross": -0.0453}, "random_dir_lam1_mean": {"own": -0.0065, "cross": 0.0025}, "mlp_units_top32": {"own": -0.003, "cross": 0.0036}, "mlp_units_random_mean": {"own": -0.0001, "cross": -0.0012}}
+{
+ "dir_lam0.5": {
+  "own": 0.0562,
+  "cross": 0.0369
+ },
+ "dir_lam1": {
+  "own": 0.1118,
+  "cross": 0.0592
+ },
+ "dir_lam2": {
+  "own": 0.1901,
+  "cross": 0.0667
+ },
+ "dir_lam4": {
+  "own": 0.2376,
+  "cross": -0.0572
+ },
+ "random_dir_lam1_mean": {
+  "own": -0.0079,
+  "cross": -0.0029
+ },
+ "mlp_units_top32": {
+  "own": -0.0142,
+  "cross": -0.001
+ },
+ "mlp_units_random_mean": {
+  "own": 0.0008,
+  "cross": 0.0008
+ }
+}
+DONE

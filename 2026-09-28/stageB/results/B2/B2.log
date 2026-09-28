@@ -1,0 +1,108 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 133.96it/s]
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+1/60 fam01 8s
+2/60 fam02 14s
+3/60 fam03 21s
+4/60 fam04 28s
+5/60 fam05 34s
+6/60 fam06 41s
+7/60 fam07 48s
+8/60 fam08 54s
+9/60 fam09 61s
+10/60 fam10 68s
+11/60 fam11 74s
+12/60 fam12 81s
+13/60 fam13 87s
+14/60 fam14 94s
+15/60 fam15 101s
+16/60 fam16 108s
+17/60 fam17 114s
+18/60 fam18 121s
+19/60 fam19 128s
+20/60 fam20 134s
+21/60 shop01 141s
+22/60 shop02 147s
+23/60 shop03 154s
+24/60 shop04 161s
+25/60 shop05 168s
+26/60 shop06 174s
+27/60 shop07 181s
+28/60 shop08 188s
+29/60 shop09 194s
+30/60 shop10 201s
+31/60 shop11 208s
+32/60 shop12 214s
+33/60 shop13 221s
+34/60 shop14 228s
+35/60 shop15 234s
+36/60 shop16 241s
+37/60 shop17 248s
+38/60 shop18 254s
+39/60 shop19 261s
+40/60 shop20 268s
+41/60 trav01 275s
+42/60 trav02 282s
+43/60 trav03 289s
+44/60 trav04 295s
+45/60 trav05 302s
+46/60 trav06 309s
+47/60 trav07 316s
+48/60 trav08 322s
+49/60 trav09 329s
+50/60 trav10 336s
+51/60 trav11 343s
+52/60 trav12 350s
+53/60 trav13 356s
+54/60 trav14 363s
+55/60 trav15 370s
+56/60 trav16 376s
+57/60 trav17 383s
+58/60 trav18 390s
+59/60 trav19 397s
+60/60 trav20 403s
+attn  L16-23     joy      own=0.38 [0.332, 0.435] cross=0.06 spec=[0.26, 0.385]
+attn  L16-23     sadness  own=0.40 [0.371, 0.441] cross=0.10 spec=[0.239, 0.373]
+attn  L16-23     anger    own=0.47 [0.427, 0.515] cross=-0.04 spec=[0.413, 0.624]
+attn  L12-27     joy      own=0.40 [0.349, 0.463] cross=0.08 spec=[0.263, 0.397]
+attn  L12-27     sadness  own=0.45 [0.412, 0.492] cross=0.08 spec=[0.296, 0.449]
+attn  L12-27     anger    own=0.55 [0.497, 0.593] cross=-0.12 spec=[0.548, 0.811]
+attn  L8-31      joy      own=0.50 [0.441, 0.557] cross=0.07 spec=[0.366, 0.494]
+attn  L8-31      sadness  own=0.52 [0.473, 0.566] cross=0.10 spec=[0.345, 0.508]
+attn  L8-31      anger    own=0.63 [0.581, 0.678] cross=-0.15 spec=[0.652, 0.936]
+attn  L0-35      joy      own=0.52 [0.46, 0.577] cross=0.07 spec=[0.379, 0.516]
+attn  L0-35      sadness  own=0.54 [0.491, 0.584] cross=0.10 spec=[0.366, 0.531]
+attn  L0-35      anger    own=0.65 [0.598, 0.696] cross=-0.16 spec=[0.669, 0.954]
+attn  peak17±4   joy      own=0.37 [0.323, 0.428] cross=0.07 spec=[0.245, 0.373]
+attn  peak17±4   sadness  own=0.41 [0.371, 0.443] cross=0.09 spec=[0.25, 0.395]
+attn  peak17±4   anger    own=0.51 [0.458, 0.551] cross=-0.09 spec=[0.493, 0.715]
+mlp   L16-23     joy      own=-0.04 [-0.123, 0.026] cross=-0.02 spec=[-0.103, 0.042]
+mlp   L16-23     sadness  own=0.10 [0.05, 0.144] cross=-0.06 spec=[0.104, 0.224]
+mlp   L16-23     anger    own=0.08 [0.033, 0.132] cross=-0.12 spec=[0.122, 0.298]
+mlp   L12-27     joy      own=-0.32 [-0.466, -0.193] cross=-0.15 spec=[-0.321, -0.048]
+mlp   L12-27     sadness  own=-0.15 [-0.242, -0.062] cross=-0.31 spec=[0.055, 0.292]
+mlp   L12-27     anger    own=-0.19 [-0.288, -0.103] cross=-0.44 spec=[0.103, 0.401]
+mlp   L8-31      joy      own=-0.48 [-0.661, -0.337] cross=-0.21 spec=[-0.44, -0.122]
+mlp   L8-31      sadness  own=-0.26 [-0.36, -0.172] cross=-0.41 spec=[0.035, 0.275]
+mlp   L8-31      anger    own=-0.30 [-0.42, -0.19] cross=-0.62 spec=[0.151, 0.54]
+mlp   L0-35      joy      own=-0.52 [-0.697, -0.368] cross=-0.21 spec=[-0.478, -0.165]
+mlp   L0-35      sadness  own=-0.26 [-0.376, -0.168] cross=-0.43 spec=[0.029, 0.3]
+mlp   L0-35      anger    own=-0.31 [-0.443, -0.204] cross=-0.65 spec=[0.144, 0.551]
+mlp   peak17±4   joy      own=-0.45 [-0.629, -0.315] cross=-0.18 spec=[-0.454, -0.134]
+mlp   peak17±4   sadness  own=-0.24 [-0.341, -0.159] cross=-0.34 spec=[-0.008, 0.207]
+mlp   peak17±4   anger    own=-0.30 [-0.386, -0.23] cross=-0.45 spec=[0.026, 0.295]
+both  L16-23     joy      own=0.39 [0.335, 0.449] cross=0.05 spec=[0.275, 0.405]
+both  L16-23     sadness  own=0.43 [0.396, 0.471] cross=0.11 spec=[0.257, 0.389]
+both  L16-23     anger    own=0.49 [0.437, 0.533] cross=-0.04 spec=[0.42, 0.636]
+both  L12-27     joy      own=0.41 [0.355, 0.466] cross=0.06 spec=[0.292, 0.418]
+both  L12-27     sadness  own=0.45 [0.405, 0.498] cross=0.09 spec=[0.285, 0.448]
+both  L12-27     anger    own=0.55 [0.493, 0.592] cross=-0.12 spec=[0.547, 0.791]
+both  L8-31      joy      own=0.49 [0.435, 0.549] cross=0.07 spec=[0.35, 0.488]
+both  L8-31      sadness  own=0.52 [0.47, 0.562] cross=0.10 spec=[0.339, 0.499]
+both  L8-31      anger    own=0.62 [0.57, 0.67] cross=-0.16 spec=[0.635, 0.937]
+both  L0-35      joy      own=0.51 [0.457, 0.576] cross=0.07 spec=[0.375, 0.51]
+both  L0-35      sadness  own=0.54 [0.488, 0.579] cross=0.10 spec=[0.359, 0.53]
+both  L0-35      anger    own=0.65 [0.595, 0.694] cross=-0.16 spec=[0.663, 0.966]
+both  peak17±4   joy      own=0.36 [0.312, 0.418] cross=0.04 spec=[0.26, 0.386]
+both  peak17±4   sadness  own=0.39 [0.353, 0.437] cross=0.07 spec=[0.251, 0.403]
+both  peak17±4   anger    own=0.47 [0.419, 0.517] cross=-0.08 spec=[0.443, 0.665]
+DONE 4/4 406.4
