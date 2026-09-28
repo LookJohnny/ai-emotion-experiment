@@ -1,0 +1,2231 @@
+{
+ "paraphrase": "B",
+ "n_records": 320,
+ "n_prompts": 400,
+ "topics": [
+  "出行",
+  "学习安排",
+  "家庭安排",
+  "购物"
+ ],
+ "categories": [
+  "good_news",
+  "grievance",
+  "mixed",
+  "neutral_task",
+  "sad"
+ ],
+ "layers": {
+  "0": {
+   "lead": {
+    "thr_emotion": 0.0481,
+    "thr_topic": 0.0494,
+    "n_emotion_only": 3051,
+    "n_topic_only": 709,
+    "n_both": 573,
+    "n_neither": 5395,
+    "median_eta_emotion": 0.0353,
+    "median_eta_topic": 0.0194,
+    "top1pct_eta_emotion": 0.2129,
+    "top1pct_eta_topic": 0.1254
+   },
+   "anchor": {
+    "thr_emotion": 0.0024,
+    "thr_topic": 0.192,
+    "n_emotion_only": 806,
+    "n_topic_only": 337,
+    "n_both": 77,
+    "n_neither": 8508,
+    "median_eta_emotion": 0.0003,
+    "median_eta_topic": 0.0552,
+    "top1pct_eta_emotion": 0.0115,
+    "top1pct_eta_topic": 0.2738
+   },
+   "suffix": {
+    "thr_emotion": 0.0431,
+    "thr_topic": 0.0626,
+    "n_emotion_only": 2635,
+    "n_topic_only": 951,
+    "n_both": 453,
+    "n_neither": 5689,
+    "median_eta_emotion": 0.028,
+    "median_eta_topic": 0.025,
+    "top1pct_eta_emotion": 0.1745,
+    "top1pct_eta_topic": 0.1669
+   },
+   "prompts": {
+    "thr_category": 0.0422,
+    "n_category_selective": 2877,
+    "top1pct_eta_category": 0.1968
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.089,
+    "top1pct_jaccard": 0.016,
+    "chance_jaccard": 0.005
+   }
+  },
+  "1": {
+   "lead": {
+    "thr_emotion": 0.0464,
+    "thr_topic": 0.0484,
+    "n_emotion_only": 6227,
+    "n_topic_only": 472,
+    "n_both": 466,
+    "n_neither": 2563,
+    "median_eta_emotion": 0.104,
+    "median_eta_topic": 0.0202,
+    "top1pct_eta_emotion": 0.2244,
+    "top1pct_eta_topic": 0.1099
+   },
+   "anchor": {
+    "thr_emotion": 0.001,
+    "thr_topic": 0.1556,
+    "n_emotion_only": 1249,
+    "n_topic_only": 395,
+    "n_both": 147,
+    "n_neither": 7937,
+    "median_eta_emotion": 0.0002,
+    "median_eta_topic": 0.0454,
+    "top1pct_eta_emotion": 0.0064,
+    "top1pct_eta_topic": 0.2515
+   },
+   "suffix": {
+    "thr_emotion": 0.0414,
+    "thr_topic": 0.0663,
+    "n_emotion_only": 6073,
+    "n_topic_only": 453,
+    "n_both": 331,
+    "n_neither": 2871,
+    "median_eta_emotion": 0.0725,
+    "median_eta_topic": 0.0283,
+    "top1pct_eta_emotion": 0.2235,
+    "top1pct_eta_topic": 0.1379
+   },
+   "prompts": {
+    "thr_category": 0.0381,
+    "n_category_selective": 6128,
+    "top1pct_eta_category": 0.2211
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.486,
+    "top1pct_jaccard": 0.005,
+    "chance_jaccard": 0.005
+   }
+  },
+  "2": {
+   "lead": {
+    "thr_emotion": 0.0467,
+    "thr_topic": 0.0432,
+    "n_emotion_only": 5863,
+    "n_topic_only": 678,
+    "n_both": 965,
+    "n_neither": 2222,
+    "median_eta_emotion": 0.0793,
+    "median_eta_topic": 0.0156,
+    "top1pct_eta_emotion": 0.2621,
+    "top1pct_eta_topic": 0.1219
+   },
+   "anchor": {
+    "thr_emotion": 0.0056,
+    "thr_topic": 0.1456,
+    "n_emotion_only": 945,
+    "n_topic_only": 730,
+    "n_both": 330,
+    "n_neither": 7723,
+    "median_eta_emotion": 0.001,
+    "median_eta_topic": 0.0473,
+    "top1pct_eta_emotion": 0.0441,
+    "top1pct_eta_topic": 0.3027
+   },
+   "suffix": {
+    "thr_emotion": 0.0378,
+    "thr_topic": 0.059,
+    "n_emotion_only": 5262,
+    "n_topic_only": 598,
+    "n_both": 818,
+    "n_neither": 3050,
+    "median_eta_emotion": 0.0543,
+    "median_eta_topic": 0.02,
+    "top1pct_eta_emotion": 0.2762,
+    "top1pct_eta_topic": 0.1657
+   },
+   "prompts": {
+    "thr_category": 0.0447,
+    "n_category_selective": 3454,
+    "top1pct_eta_category": 0.292
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.146,
+    "top1pct_jaccard": 0.026,
+    "chance_jaccard": 0.005
+   }
+  },
+  "3": {
+   "lead": {
+    "thr_emotion": 0.0435,
+    "thr_topic": 0.0537,
+    "n_emotion_only": 4522,
+    "n_topic_only": 627,
+    "n_both": 729,
+    "n_neither": 3850,
+    "median_eta_emotion": 0.0468,
+    "median_eta_topic": 0.0193,
+    "top1pct_eta_emotion": 0.2629,
+    "top1pct_eta_topic": 0.1327
+   },
+   "anchor": {
+    "thr_emotion": 0.0072,
+    "thr_topic": 0.194,
+    "n_emotion_only": 1433,
+    "n_topic_only": 686,
+    "n_both": 187,
+    "n_neither": 7422,
+    "median_eta_emotion": 0.0021,
+    "median_eta_topic": 0.0659,
+    "top1pct_eta_emotion": 0.0495,
+    "top1pct_eta_topic": 0.317
+   },
+   "suffix": {
+    "thr_emotion": 0.0423,
+    "thr_topic": 0.0541,
+    "n_emotion_only": 3338,
+    "n_topic_only": 1265,
+    "n_both": 1294,
+    "n_neither": 3831,
+    "median_eta_emotion": 0.0399,
+    "median_eta_topic": 0.0284,
+    "top1pct_eta_emotion": 0.2726,
+    "top1pct_eta_topic": 0.1879
+   },
+   "prompts": {
+    "thr_category": 0.0446,
+    "n_category_selective": 3946,
+    "top1pct_eta_category": 0.2897
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.075,
+    "top1pct_jaccard": 0.01,
+    "chance_jaccard": 0.005
+   }
+  },
+  "4": {
+   "lead": {
+    "thr_emotion": 0.0451,
+    "thr_topic": 0.0566,
+    "n_emotion_only": 4405,
+    "n_topic_only": 827,
+    "n_both": 1126,
+    "n_neither": 3370,
+    "median_eta_emotion": 0.0532,
+    "median_eta_topic": 0.0275,
+    "top1pct_eta_emotion": 0.2904,
+    "top1pct_eta_topic": 0.1579
+   },
+   "anchor": {
+    "thr_emotion": 0.0079,
+    "thr_topic": 0.1753,
+    "n_emotion_only": 1874,
+    "n_topic_only": 1255,
+    "n_both": 408,
+    "n_neither": 6191,
+    "median_eta_emotion": 0.0031,
+    "median_eta_topic": 0.0848,
+    "top1pct_eta_emotion": 0.0558,
+    "top1pct_eta_topic": 0.3608
+   },
+   "suffix": {
+    "thr_emotion": 0.0411,
+    "thr_topic": 0.0759,
+    "n_emotion_only": 4030,
+    "n_topic_only": 1138,
+    "n_both": 1408,
+    "n_neither": 3152,
+    "median_eta_emotion": 0.0476,
+    "median_eta_topic": 0.0433,
+    "top1pct_eta_emotion": 0.3011,
+    "top1pct_eta_topic": 0.2212
+   },
+   "prompts": {
+    "thr_category": 0.0452,
+    "n_category_selective": 4557,
+    "top1pct_eta_category": 0.2936
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.128,
+    "top1pct_jaccard": 0.01,
+    "chance_jaccard": 0.005
+   }
+  },
+  "5": {
+   "lead": {
+    "thr_emotion": 0.0515,
+    "thr_topic": 0.0495,
+    "n_emotion_only": 3929,
+    "n_topic_only": 1120,
+    "n_both": 1150,
+    "n_neither": 3529,
+    "median_eta_emotion": 0.0545,
+    "median_eta_topic": 0.026,
+    "top1pct_eta_emotion": 0.2875,
+    "top1pct_eta_topic": 0.1453
+   },
+   "anchor": {
+    "thr_emotion": 0.0054,
+    "thr_topic": 0.1676,
+    "n_emotion_only": 3397,
+    "n_topic_only": 986,
+    "n_both": 815,
+    "n_neither": 4530,
+    "median_eta_emotion": 0.0043,
+    "median_eta_topic": 0.0831,
+    "top1pct_eta_emotion": 0.0664,
+    "top1pct_eta_topic": 0.3508
+   },
+   "suffix": {
+    "thr_emotion": 0.0408,
+    "thr_topic": 0.0831,
+    "n_emotion_only": 4616,
+    "n_topic_only": 813,
+    "n_both": 1001,
+    "n_neither": 3298,
+    "median_eta_emotion": 0.0497,
+    "median_eta_topic": 0.0377,
+    "top1pct_eta_emotion": 0.3048,
+    "top1pct_eta_topic": 0.2038
+   },
+   "prompts": {
+    "thr_category": 0.0435,
+    "n_category_selective": 4934,
+    "top1pct_eta_category": 0.3017
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.164,
+    "top1pct_jaccard": 0.026,
+    "chance_jaccard": 0.005
+   }
+  },
+  "6": {
+   "lead": {
+    "thr_emotion": 0.0455,
+    "thr_topic": 0.05,
+    "n_emotion_only": 4451,
+    "n_topic_only": 853,
+    "n_both": 1070,
+    "n_neither": 3354,
+    "median_eta_emotion": 0.0538,
+    "median_eta_topic": 0.0241,
+    "top1pct_eta_emotion": 0.2869,
+    "top1pct_eta_topic": 0.1349
+   },
+   "anchor": {
+    "thr_emotion": 0.0042,
+    "thr_topic": 0.1883,
+    "n_emotion_only": 3586,
+    "n_topic_only": 678,
+    "n_both": 557,
+    "n_neither": 4907,
+    "median_eta_emotion": 0.0033,
+    "median_eta_topic": 0.0805,
+    "top1pct_eta_emotion": 0.0442,
+    "top1pct_eta_topic": 0.3465
+   },
+   "suffix": {
+    "thr_emotion": 0.0444,
+    "thr_topic": 0.0678,
+    "n_emotion_only": 4096,
+    "n_topic_only": 1021,
+    "n_both": 1079,
+    "n_neither": 3532,
+    "median_eta_emotion": 0.0481,
+    "median_eta_topic": 0.0336,
+    "top1pct_eta_emotion": 0.2704,
+    "top1pct_eta_topic": 0.1846
+   },
+   "prompts": {
+    "thr_category": 0.0403,
+    "n_category_selective": 5162,
+    "top1pct_eta_category": 0.2751
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.173,
+    "top1pct_jaccard": 0.01,
+    "chance_jaccard": 0.005
+   }
+  },
+  "7": {
+   "lead": {
+    "thr_emotion": 0.0475,
+    "thr_topic": 0.0524,
+    "n_emotion_only": 4632,
+    "n_topic_only": 791,
+    "n_both": 1034,
+    "n_neither": 3271,
+    "median_eta_emotion": 0.0577,
+    "median_eta_topic": 0.0245,
+    "top1pct_eta_emotion": 0.2894,
+    "top1pct_eta_topic": 0.1384
+   },
+   "anchor": {
+    "thr_emotion": 0.0058,
+    "thr_topic": 0.1569,
+    "n_emotion_only": 3113,
+    "n_topic_only": 1100,
+    "n_both": 719,
+    "n_neither": 4796,
+    "median_eta_emotion": 0.0042,
+    "median_eta_topic": 0.0811,
+    "top1pct_eta_emotion": 0.0678,
+    "top1pct_eta_topic": 0.3309
+   },
+   "suffix": {
+    "thr_emotion": 0.0501,
+    "thr_topic": 0.0609,
+    "n_emotion_only": 3858,
+    "n_topic_only": 1211,
+    "n_both": 1179,
+    "n_neither": 3480,
+    "median_eta_emotion": 0.0527,
+    "median_eta_topic": 0.0327,
+    "top1pct_eta_emotion": 0.2929,
+    "top1pct_eta_topic": 0.1807
+   },
+   "prompts": {
+    "thr_category": 0.0438,
+    "n_category_selective": 4974,
+    "top1pct_eta_category": 0.2864
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.142,
+    "top1pct_jaccard": 0.016,
+    "chance_jaccard": 0.005
+   }
+  },
+  "8": {
+   "lead": {
+    "thr_emotion": 0.0493,
+    "thr_topic": 0.0501,
+    "n_emotion_only": 4356,
+    "n_topic_only": 1013,
+    "n_both": 1520,
+    "n_neither": 2839,
+    "median_eta_emotion": 0.0641,
+    "median_eta_topic": 0.0286,
+    "top1pct_eta_emotion": 0.3202,
+    "top1pct_eta_topic": 0.1573
+   },
+   "anchor": {
+    "thr_emotion": 0.0079,
+    "thr_topic": 0.1747,
+    "n_emotion_only": 3435,
+    "n_topic_only": 1015,
+    "n_both": 768,
+    "n_neither": 4510,
+    "median_eta_emotion": 0.0064,
+    "median_eta_topic": 0.0858,
+    "top1pct_eta_emotion": 0.0784,
+    "top1pct_eta_topic": 0.3758
+   },
+   "suffix": {
+    "thr_emotion": 0.0433,
+    "thr_topic": 0.0715,
+    "n_emotion_only": 4609,
+    "n_topic_only": 856,
+    "n_both": 1219,
+    "n_neither": 3044,
+    "median_eta_emotion": 0.0567,
+    "median_eta_topic": 0.0348,
+    "top1pct_eta_emotion": 0.3049,
+    "top1pct_eta_topic": 0.2003
+   },
+   "prompts": {
+    "thr_category": 0.0429,
+    "n_category_selective": 5424,
+    "top1pct_eta_category": 0.3051
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.123,
+    "top1pct_jaccard": 0.01,
+    "chance_jaccard": 0.005
+   }
+  },
+  "9": {
+   "lead": {
+    "thr_emotion": 0.0478,
+    "thr_topic": 0.0629,
+    "n_emotion_only": 4532,
+    "n_topic_only": 1053,
+    "n_both": 1663,
+    "n_neither": 2480,
+    "median_eta_emotion": 0.0668,
+    "median_eta_topic": 0.0377,
+    "top1pct_eta_emotion": 0.3223,
+    "top1pct_eta_topic": 0.198
+   },
+   "anchor": {
+    "thr_emotion": 0.0096,
+    "thr_topic": 0.1763,
+    "n_emotion_only": 3149,
+    "n_topic_only": 1468,
+    "n_both": 864,
+    "n_neither": 4247,
+    "median_eta_emotion": 0.0074,
+    "median_eta_topic": 0.1019,
+    "top1pct_eta_emotion": 0.0753,
+    "top1pct_eta_topic": 0.4129
+   },
+   "suffix": {
+    "thr_emotion": 0.0401,
+    "thr_topic": 0.0766,
+    "n_emotion_only": 4253,
+    "n_topic_only": 1314,
+    "n_both": 2073,
+    "n_neither": 2088,
+    "median_eta_emotion": 0.0595,
+    "median_eta_topic": 0.0526,
+    "top1pct_eta_emotion": 0.3221,
+    "top1pct_eta_topic": 0.2846
+   },
+   "prompts": {
+    "thr_category": 0.0412,
+    "n_category_selective": 5724,
+    "top1pct_eta_category": 0.2874
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.13,
+    "top1pct_jaccard": 0.01,
+    "chance_jaccard": 0.005
+   }
+  },
+  "10": {
+   "lead": {
+    "thr_emotion": 0.0435,
+    "thr_topic": 0.0709,
+    "n_emotion_only": 4965,
+    "n_topic_only": 864,
+    "n_both": 1931,
+    "n_neither": 1968,
+    "median_eta_emotion": 0.0764,
+    "median_eta_topic": 0.0438,
+    "top1pct_eta_emotion": 0.3547,
+    "top1pct_eta_topic": 0.2261
+   },
+   "anchor": {
+    "thr_emotion": 0.0118,
+    "thr_topic": 0.1899,
+    "n_emotion_only": 3141,
+    "n_topic_only": 1417,
+    "n_both": 813,
+    "n_neither": 4357,
+    "median_eta_emotion": 0.0089,
+    "median_eta_topic": 0.1089,
+    "top1pct_eta_emotion": 0.0958,
+    "top1pct_eta_topic": 0.4148
+   },
+   "suffix": {
+    "thr_emotion": 0.0377,
+    "thr_topic": 0.0789,
+    "n_emotion_only": 4280,
+    "n_topic_only": 1152,
+    "n_both": 2587,
+    "n_neither": 1709,
+    "median_eta_emotion": 0.0651,
+    "median_eta_topic": 0.0599,
+    "top1pct_eta_emotion": 0.3033,
+    "top1pct_eta_topic": 0.288
+   },
+   "prompts": {
+    "thr_category": 0.0409,
+    "n_category_selective": 5818,
+    "top1pct_eta_category": 0.3056
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.148,
+    "top1pct_jaccard": 0.032,
+    "chance_jaccard": 0.005
+   }
+  },
+  "11": {
+   "lead": {
+    "thr_emotion": 0.0428,
+    "thr_topic": 0.0733,
+    "n_emotion_only": 4642,
+    "n_topic_only": 975,
+    "n_both": 2061,
+    "n_neither": 2050,
+    "median_eta_emotion": 0.0716,
+    "median_eta_topic": 0.0468,
+    "top1pct_eta_emotion": 0.334,
+    "top1pct_eta_topic": 0.2385
+   },
+   "anchor": {
+    "thr_emotion": 0.0115,
+    "thr_topic": 0.1597,
+    "n_emotion_only": 2584,
+    "n_topic_only": 1971,
+    "n_both": 1077,
+    "n_neither": 4096,
+    "median_eta_emotion": 0.0079,
+    "median_eta_topic": 0.1076,
+    "top1pct_eta_emotion": 0.0904,
+    "top1pct_eta_topic": 0.4132
+   },
+   "suffix": {
+    "thr_emotion": 0.0357,
+    "thr_topic": 0.1089,
+    "n_emotion_only": 5119,
+    "n_topic_only": 900,
+    "n_both": 1653,
+    "n_neither": 2056,
+    "median_eta_emotion": 0.0613,
+    "median_eta_topic": 0.0626,
+    "top1pct_eta_emotion": 0.3172,
+    "top1pct_eta_topic": 0.2879
+   },
+   "prompts": {
+    "thr_category": 0.0439,
+    "n_category_selective": 5436,
+    "top1pct_eta_category": 0.2944
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.196,
+    "top1pct_jaccard": 0.032,
+    "chance_jaccard": 0.005
+   }
+  },
+  "12": {
+   "lead": {
+    "thr_emotion": 0.0432,
+    "thr_topic": 0.0679,
+    "n_emotion_only": 4463,
+    "n_topic_only": 1052,
+    "n_both": 2398,
+    "n_neither": 1815,
+    "median_eta_emotion": 0.0758,
+    "median_eta_topic": 0.0485,
+    "top1pct_eta_emotion": 0.356,
+    "top1pct_eta_topic": 0.2512
+   },
+   "anchor": {
+    "thr_emotion": 0.0114,
+    "thr_topic": 0.1633,
+    "n_emotion_only": 2902,
+    "n_topic_only": 1662,
+    "n_both": 1095,
+    "n_neither": 4069,
+    "median_eta_emotion": 0.0086,
+    "median_eta_topic": 0.1038,
+    "top1pct_eta_emotion": 0.103,
+    "top1pct_eta_topic": 0.4152
+   },
+   "suffix": {
+    "thr_emotion": 0.0377,
+    "thr_topic": 0.0718,
+    "n_emotion_only": 3954,
+    "n_topic_only": 1332,
+    "n_both": 2876,
+    "n_neither": 1566,
+    "median_eta_emotion": 0.0639,
+    "median_eta_topic": 0.061,
+    "top1pct_eta_emotion": 0.3405,
+    "top1pct_eta_topic": 0.297
+   },
+   "prompts": {
+    "thr_category": 0.0473,
+    "n_category_selective": 5527,
+    "top1pct_eta_category": 0.3334
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.186,
+    "top1pct_jaccard": 0.037,
+    "chance_jaccard": 0.005
+   }
+  },
+  "13": {
+   "lead": {
+    "thr_emotion": 0.041,
+    "thr_topic": 0.0754,
+    "n_emotion_only": 5347,
+    "n_topic_only": 723,
+    "n_both": 1749,
+    "n_neither": 1909,
+    "median_eta_emotion": 0.0778,
+    "median_eta_topic": 0.0413,
+    "top1pct_eta_emotion": 0.3555,
+    "top1pct_eta_topic": 0.2257
+   },
+   "anchor": {
+    "thr_emotion": 0.0099,
+    "thr_topic": 0.1538,
+    "n_emotion_only": 3597,
+    "n_topic_only": 1345,
+    "n_both": 1288,
+    "n_neither": 3498,
+    "median_eta_emotion": 0.01,
+    "median_eta_topic": 0.0955,
+    "top1pct_eta_emotion": 0.1142,
+    "top1pct_eta_topic": 0.4017
+   },
+   "suffix": {
+    "thr_emotion": 0.0397,
+    "thr_topic": 0.0701,
+    "n_emotion_only": 4609,
+    "n_topic_only": 1039,
+    "n_both": 2412,
+    "n_neither": 1668,
+    "median_eta_emotion": 0.0739,
+    "median_eta_topic": 0.0492,
+    "top1pct_eta_emotion": 0.3775,
+    "top1pct_eta_topic": 0.2635
+   },
+   "prompts": {
+    "thr_category": 0.0442,
+    "n_category_selective": 5979,
+    "top1pct_eta_category": 0.3321
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.196,
+    "top1pct_jaccard": 0.043,
+    "chance_jaccard": 0.005
+   }
+  },
+  "14": {
+   "lead": {
+    "thr_emotion": 0.0397,
+    "thr_topic": 0.0642,
+    "n_emotion_only": 4737,
+    "n_topic_only": 922,
+    "n_both": 2463,
+    "n_neither": 1606,
+    "median_eta_emotion": 0.0777,
+    "median_eta_topic": 0.0442,
+    "top1pct_eta_emotion": 0.3614,
+    "top1pct_eta_topic": 0.2385
+   },
+   "anchor": {
+    "thr_emotion": 0.0097,
+    "thr_topic": 0.1595,
+    "n_emotion_only": 4987,
+    "n_topic_only": 822,
+    "n_both": 1455,
+    "n_neither": 2464,
+    "median_eta_emotion": 0.0164,
+    "median_eta_topic": 0.0887,
+    "top1pct_eta_emotion": 0.1556,
+    "top1pct_eta_topic": 0.3859
+   },
+   "suffix": {
+    "thr_emotion": 0.0446,
+    "thr_topic": 0.0886,
+    "n_emotion_only": 5204,
+    "n_topic_only": 776,
+    "n_both": 1660,
+    "n_neither": 2088,
+    "median_eta_emotion": 0.0776,
+    "median_eta_topic": 0.0484,
+    "top1pct_eta_emotion": 0.3766,
+    "top1pct_eta_topic": 0.2649
+   },
+   "prompts": {
+    "thr_category": 0.0436,
+    "n_category_selective": 6278,
+    "top1pct_eta_category": 0.3568
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.205,
+    "top1pct_jaccard": 0.021,
+    "chance_jaccard": 0.005
+   }
+  },
+  "15": {
+   "lead": {
+    "thr_emotion": 0.0466,
+    "thr_topic": 0.0569,
+    "n_emotion_only": 4485,
+    "n_topic_only": 1109,
+    "n_both": 2419,
+    "n_neither": 1715,
+    "median_eta_emotion": 0.082,
+    "median_eta_topic": 0.0422,
+    "top1pct_eta_emotion": 0.3876,
+    "top1pct_eta_topic": 0.2231
+   },
+   "anchor": {
+    "thr_emotion": 0.0094,
+    "thr_topic": 0.1858,
+    "n_emotion_only": 5876,
+    "n_topic_only": 406,
+    "n_both": 858,
+    "n_neither": 2588,
+    "median_eta_emotion": 0.018,
+    "median_eta_topic": 0.0797,
+    "top1pct_eta_emotion": 0.1732,
+    "top1pct_eta_topic": 0.3562
+   },
+   "suffix": {
+    "thr_emotion": 0.0425,
+    "thr_topic": 0.0635,
+    "n_emotion_only": 5097,
+    "n_topic_only": 749,
+    "n_both": 2172,
+    "n_neither": 1710,
+    "median_eta_emotion": 0.0835,
+    "median_eta_topic": 0.0394,
+    "top1pct_eta_emotion": 0.4108,
+    "top1pct_eta_topic": 0.2176
+   },
+   "prompts": {
+    "thr_category": 0.0443,
+    "n_category_selective": 6492,
+    "top1pct_eta_category": 0.3702
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.149,
+    "top1pct_jaccard": 0.037,
+    "chance_jaccard": 0.005
+   }
+  },
+  "16": {
+   "lead": {
+    "thr_emotion": 0.0405,
+    "thr_topic": 0.0882,
+    "n_emotion_only": 5675,
+    "n_topic_only": 637,
+    "n_both": 1642,
+    "n_neither": 1774,
+    "median_eta_emotion": 0.0827,
+    "median_eta_topic": 0.0464,
+    "top1pct_eta_emotion": 0.3741,
+    "top1pct_eta_topic": 0.2556
+   },
+   "anchor": {
+    "thr_emotion": 0.0118,
+    "thr_topic": 0.1476,
+    "n_emotion_only": 4940,
+    "n_topic_only": 803,
+    "n_both": 1486,
+    "n_neither": 2499,
+    "median_eta_emotion": 0.0201,
+    "median_eta_topic": 0.0818,
+    "top1pct_eta_emotion": 0.1813,
+    "top1pct_eta_topic": 0.36
+   },
+   "suffix": {
+    "thr_emotion": 0.0556,
+    "thr_topic": 0.0846,
+    "n_emotion_only": 5169,
+    "n_topic_only": 815,
+    "n_both": 1507,
+    "n_neither": 2237,
+    "median_eta_emotion": 0.0906,
+    "median_eta_topic": 0.0449,
+    "top1pct_eta_emotion": 0.4128,
+    "top1pct_eta_topic": 0.246
+   },
+   "prompts": {
+    "thr_category": 0.0451,
+    "n_category_selective": 6674,
+    "top1pct_eta_category": 0.3868
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.174,
+    "top1pct_jaccard": 0.016,
+    "chance_jaccard": 0.005
+   }
+  },
+  "17": {
+   "lead": {
+    "thr_emotion": 0.042,
+    "thr_topic": 0.0593,
+    "n_emotion_only": 4540,
+    "n_topic_only": 918,
+    "n_both": 2858,
+    "n_neither": 1412,
+    "median_eta_emotion": 0.0873,
+    "median_eta_topic": 0.0461,
+    "top1pct_eta_emotion": 0.3946,
+    "top1pct_eta_topic": 0.2536
+   },
+   "anchor": {
+    "thr_emotion": 0.0191,
+    "thr_topic": 0.1848,
+    "n_emotion_only": 4558,
+    "n_topic_only": 679,
+    "n_both": 653,
+    "n_neither": 3838,
+    "median_eta_emotion": 0.0214,
+    "median_eta_topic": 0.0807,
+    "top1pct_eta_emotion": 0.191,
+    "top1pct_eta_topic": 0.3623
+   },
+   "suffix": {
+    "thr_emotion": 0.0467,
+    "thr_topic": 0.079,
+    "n_emotion_only": 5762,
+    "n_topic_only": 597,
+    "n_both": 1787,
+    "n_neither": 1582,
+    "median_eta_emotion": 0.1037,
+    "median_eta_topic": 0.0421,
+    "top1pct_eta_emotion": 0.4684,
+    "top1pct_eta_topic": 0.2356
+   },
+   "prompts": {
+    "thr_category": 0.0441,
+    "n_category_selective": 7075,
+    "top1pct_eta_category": 0.4314
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.197,
+    "top1pct_jaccard": 0.026,
+    "chance_jaccard": 0.005
+   }
+  },
+  "18": {
+   "lead": {
+    "thr_emotion": 0.0496,
+    "thr_topic": 0.0855,
+    "n_emotion_only": 5216,
+    "n_topic_only": 778,
+    "n_both": 1458,
+    "n_neither": 2276,
+    "median_eta_emotion": 0.0798,
+    "median_eta_topic": 0.0435,
+    "top1pct_eta_emotion": 0.3825,
+    "top1pct_eta_topic": 0.2526
+   },
+   "anchor": {
+    "thr_emotion": 0.0137,
+    "thr_topic": 0.186,
+    "n_emotion_only": 4971,
+    "n_topic_only": 500,
+    "n_both": 707,
+    "n_neither": 3550,
+    "median_eta_emotion": 0.0179,
+    "median_eta_topic": 0.0758,
+    "top1pct_eta_emotion": 0.1686,
+    "top1pct_eta_topic": 0.35
+   },
+   "suffix": {
+    "thr_emotion": 0.0451,
+    "thr_topic": 0.0842,
+    "n_emotion_only": 5931,
+    "n_topic_only": 510,
+    "n_both": 1406,
+    "n_neither": 1881,
+    "median_eta_emotion": 0.0944,
+    "median_eta_topic": 0.0399,
+    "top1pct_eta_emotion": 0.4551,
+    "top1pct_eta_topic": 0.2217
+   },
+   "prompts": {
+    "thr_category": 0.0452,
+    "n_category_selective": 6855,
+    "top1pct_eta_category": 0.4145
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.2,
+    "top1pct_jaccard": 0.032,
+    "chance_jaccard": 0.005
+   }
+  },
+  "19": {
+   "lead": {
+    "thr_emotion": 0.0427,
+    "thr_topic": 0.0658,
+    "n_emotion_only": 5111,
+    "n_topic_only": 798,
+    "n_both": 2066,
+    "n_neither": 1753,
+    "median_eta_emotion": 0.0848,
+    "median_eta_topic": 0.0403,
+    "top1pct_eta_emotion": 0.3927,
+    "top1pct_eta_topic": 0.2316
+   },
+   "anchor": {
+    "thr_emotion": 0.0162,
+    "thr_topic": 0.1787,
+    "n_emotion_only": 4745,
+    "n_topic_only": 472,
+    "n_both": 520,
+    "n_neither": 3991,
+    "median_eta_emotion": 0.0185,
+    "median_eta_topic": 0.0718,
+    "top1pct_eta_emotion": 0.1644,
+    "top1pct_eta_topic": 0.319
+   },
+   "suffix": {
+    "thr_emotion": 0.04,
+    "thr_topic": 0.081,
+    "n_emotion_only": 6411,
+    "n_topic_only": 362,
+    "n_both": 1348,
+    "n_neither": 1607,
+    "median_eta_emotion": 0.0982,
+    "median_eta_topic": 0.0363,
+    "top1pct_eta_emotion": 0.4601,
+    "top1pct_eta_topic": 0.1985
+   },
+   "prompts": {
+    "thr_category": 0.0403,
+    "n_category_selective": 7274,
+    "top1pct_eta_category": 0.446
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.197,
+    "top1pct_jaccard": 0.032,
+    "chance_jaccard": 0.005
+   }
+  },
+  "20": {
+   "lead": {
+    "thr_emotion": 0.047,
+    "thr_topic": 0.0667,
+    "n_emotion_only": 5080,
+    "n_topic_only": 773,
+    "n_both": 1872,
+    "n_neither": 2003,
+    "median_eta_emotion": 0.0842,
+    "median_eta_topic": 0.0387,
+    "top1pct_eta_emotion": 0.3877,
+    "top1pct_eta_topic": 0.2086
+   },
+   "anchor": {
+    "thr_emotion": 0.0082,
+    "thr_topic": 0.1708,
+    "n_emotion_only": 5890,
+    "n_topic_only": 351,
+    "n_both": 754,
+    "n_neither": 2733,
+    "median_eta_emotion": 0.0148,
+    "median_eta_topic": 0.0689,
+    "top1pct_eta_emotion": 0.1344,
+    "top1pct_eta_topic": 0.3139
+   },
+   "suffix": {
+    "thr_emotion": 0.0473,
+    "thr_topic": 0.0641,
+    "n_emotion_only": 5607,
+    "n_topic_only": 593,
+    "n_both": 1676,
+    "n_neither": 1852,
+    "median_eta_emotion": 0.0953,
+    "median_eta_topic": 0.0342,
+    "top1pct_eta_emotion": 0.4442,
+    "top1pct_eta_topic": 0.1801
+   },
+   "prompts": {
+    "thr_category": 0.0453,
+    "n_category_selective": 7035,
+    "top1pct_eta_category": 0.4255
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.169,
+    "top1pct_jaccard": 0.026,
+    "chance_jaccard": 0.005
+   }
+  },
+  "21": {
+   "lead": {
+    "thr_emotion": 0.0383,
+    "thr_topic": 0.0599,
+    "n_emotion_only": 5294,
+    "n_topic_only": 666,
+    "n_both": 2167,
+    "n_neither": 1601,
+    "median_eta_emotion": 0.0829,
+    "median_eta_topic": 0.0366,
+    "top1pct_eta_emotion": 0.3896,
+    "top1pct_eta_topic": 0.2074
+   },
+   "anchor": {
+    "thr_emotion": 0.0098,
+    "thr_topic": 0.1801,
+    "n_emotion_only": 5443,
+    "n_topic_only": 406,
+    "n_both": 561,
+    "n_neither": 3318,
+    "median_eta_emotion": 0.0143,
+    "median_eta_topic": 0.0676,
+    "top1pct_eta_emotion": 0.1233,
+    "top1pct_eta_topic": 0.3227
+   },
+   "suffix": {
+    "thr_emotion": 0.0449,
+    "thr_topic": 0.0674,
+    "n_emotion_only": 5863,
+    "n_topic_only": 491,
+    "n_both": 1441,
+    "n_neither": 1933,
+    "median_eta_emotion": 0.0917,
+    "median_eta_topic": 0.0325,
+    "top1pct_eta_emotion": 0.4317,
+    "top1pct_eta_topic": 0.1809
+   },
+   "prompts": {
+    "thr_category": 0.0428,
+    "n_category_selective": 7120,
+    "top1pct_eta_category": 0.427
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.172,
+    "top1pct_jaccard": 0.049,
+    "chance_jaccard": 0.005
+   }
+  },
+  "22": {
+   "lead": {
+    "thr_emotion": 0.0475,
+    "thr_topic": 0.0723,
+    "n_emotion_only": 5404,
+    "n_topic_only": 704,
+    "n_both": 1657,
+    "n_neither": 1963,
+    "median_eta_emotion": 0.0879,
+    "median_eta_topic": 0.0386,
+    "top1pct_eta_emotion": 0.3986,
+    "top1pct_eta_topic": 0.218
+   },
+   "anchor": {
+    "thr_emotion": 0.0097,
+    "thr_topic": 0.1724,
+    "n_emotion_only": 5310,
+    "n_topic_only": 507,
+    "n_both": 851,
+    "n_neither": 3060,
+    "median_eta_emotion": 0.0146,
+    "median_eta_topic": 0.0732,
+    "top1pct_eta_emotion": 0.141,
+    "top1pct_eta_topic": 0.3404
+   },
+   "suffix": {
+    "thr_emotion": 0.0367,
+    "thr_topic": 0.072,
+    "n_emotion_only": 6313,
+    "n_topic_only": 388,
+    "n_both": 1696,
+    "n_neither": 1331,
+    "median_eta_emotion": 0.1014,
+    "median_eta_topic": 0.0364,
+    "top1pct_eta_emotion": 0.4659,
+    "top1pct_eta_topic": 0.1985
+   },
+   "prompts": {
+    "thr_category": 0.0432,
+    "n_category_selective": 7238,
+    "top1pct_eta_category": 0.4609
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.203,
+    "top1pct_jaccard": 0.037,
+    "chance_jaccard": 0.005
+   }
+  },
+  "23": {
+   "lead": {
+    "thr_emotion": 0.0459,
+    "thr_topic": 0.0618,
+    "n_emotion_only": 4745,
+    "n_topic_only": 919,
+    "n_both": 2332,
+    "n_neither": 1732,
+    "median_eta_emotion": 0.0866,
+    "median_eta_topic": 0.0416,
+    "top1pct_eta_emotion": 0.3964,
+    "top1pct_eta_topic": 0.234
+   },
+   "anchor": {
+    "thr_emotion": 0.0075,
+    "thr_topic": 0.1908,
+    "n_emotion_only": 5525,
+    "n_topic_only": 513,
+    "n_both": 860,
+    "n_neither": 2830,
+    "median_eta_emotion": 0.0126,
+    "median_eta_topic": 0.0829,
+    "top1pct_eta_emotion": 0.1188,
+    "top1pct_eta_topic": 0.3649
+   },
+   "suffix": {
+    "thr_emotion": 0.0407,
+    "thr_topic": 0.0735,
+    "n_emotion_only": 5947,
+    "n_topic_only": 503,
+    "n_both": 1908,
+    "n_neither": 1370,
+    "median_eta_emotion": 0.1038,
+    "median_eta_topic": 0.0404,
+    "top1pct_eta_emotion": 0.4566,
+    "top1pct_eta_topic": 0.2219
+   },
+   "prompts": {
+    "thr_category": 0.0467,
+    "n_category_selective": 7049,
+    "top1pct_eta_category": 0.4733
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.206,
+    "top1pct_jaccard": 0.032,
+    "chance_jaccard": 0.005
+   }
+  },
+  "24": {
+   "lead": {
+    "thr_emotion": 0.0462,
+    "thr_topic": 0.0937,
+    "n_emotion_only": 5390,
+    "n_topic_only": 755,
+    "n_both": 1659,
+    "n_neither": 1924,
+    "median_eta_emotion": 0.0869,
+    "median_eta_topic": 0.05,
+    "top1pct_eta_emotion": 0.3881,
+    "top1pct_eta_topic": 0.3044
+   },
+   "anchor": {
+    "thr_emotion": 0.0072,
+    "thr_topic": 0.1604,
+    "n_emotion_only": 4222,
+    "n_topic_only": 1178,
+    "n_both": 1669,
+    "n_neither": 2659,
+    "median_eta_emotion": 0.0099,
+    "median_eta_topic": 0.1028,
+    "top1pct_eta_emotion": 0.1031,
+    "top1pct_eta_topic": 0.4439
+   },
+   "suffix": {
+    "thr_emotion": 0.0337,
+    "thr_topic": 0.0788,
+    "n_emotion_only": 5415,
+    "n_topic_only": 598,
+    "n_both": 2667,
+    "n_neither": 1048,
+    "median_eta_emotion": 0.1022,
+    "median_eta_topic": 0.0532,
+    "top1pct_eta_emotion": 0.4577,
+    "top1pct_eta_topic": 0.309
+   },
+   "prompts": {
+    "thr_category": 0.0431,
+    "n_category_selective": 7074,
+    "top1pct_eta_category": 0.4511
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.226,
+    "top1pct_jaccard": 0.026,
+    "chance_jaccard": 0.005
+   }
+  },
+  "25": {
+   "lead": {
+    "thr_emotion": 0.0425,
+    "thr_topic": 0.0718,
+    "n_emotion_only": 4736,
+    "n_topic_only": 977,
+    "n_both": 2319,
+    "n_neither": 1696,
+    "median_eta_emotion": 0.0808,
+    "median_eta_topic": 0.0487,
+    "top1pct_eta_emotion": 0.3829,
+    "top1pct_eta_topic": 0.2806
+   },
+   "anchor": {
+    "thr_emotion": 0.0073,
+    "thr_topic": 0.16,
+    "n_emotion_only": 3864,
+    "n_topic_only": 1330,
+    "n_both": 1520,
+    "n_neither": 3014,
+    "median_eta_emotion": 0.0086,
+    "median_eta_topic": 0.1029,
+    "top1pct_eta_emotion": 0.0877,
+    "top1pct_eta_topic": 0.433
+   },
+   "suffix": {
+    "thr_emotion": 0.0412,
+    "thr_topic": 0.0641,
+    "n_emotion_only": 4544,
+    "n_topic_only": 833,
+    "n_both": 3151,
+    "n_neither": 1200,
+    "median_eta_emotion": 0.0982,
+    "median_eta_topic": 0.0512,
+    "top1pct_eta_emotion": 0.4367,
+    "top1pct_eta_topic": 0.2791
+   },
+   "prompts": {
+    "thr_category": 0.041,
+    "n_category_selective": 6987,
+    "top1pct_eta_category": 0.4241
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.225,
+    "top1pct_jaccard": 0.032,
+    "chance_jaccard": 0.005
+   }
+  },
+  "26": {
+   "lead": {
+    "thr_emotion": 0.035,
+    "thr_topic": 0.0799,
+    "n_emotion_only": 5145,
+    "n_topic_only": 722,
+    "n_both": 2432,
+    "n_neither": 1429,
+    "median_eta_emotion": 0.0797,
+    "median_eta_topic": 0.0518,
+    "top1pct_eta_emotion": 0.3751,
+    "top1pct_eta_topic": 0.2781
+   },
+   "anchor": {
+    "thr_emotion": 0.0073,
+    "thr_topic": 0.1483,
+    "n_emotion_only": 3417,
+    "n_topic_only": 1566,
+    "n_both": 1732,
+    "n_neither": 3013,
+    "median_eta_emotion": 0.008,
+    "median_eta_topic": 0.1075,
+    "top1pct_eta_emotion": 0.0851,
+    "top1pct_eta_topic": 0.4317
+   },
+   "suffix": {
+    "thr_emotion": 0.0409,
+    "thr_topic": 0.0836,
+    "n_emotion_only": 5069,
+    "n_topic_only": 736,
+    "n_both": 2555,
+    "n_neither": 1368,
+    "median_eta_emotion": 0.095,
+    "median_eta_topic": 0.0565,
+    "top1pct_eta_emotion": 0.4237,
+    "top1pct_eta_topic": 0.2829
+   },
+   "prompts": {
+    "thr_category": 0.0521,
+    "n_category_selective": 6175,
+    "top1pct_eta_category": 0.4014
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.218,
+    "top1pct_jaccard": 0.026,
+    "chance_jaccard": 0.005
+   }
+  },
+  "27": {
+   "lead": {
+    "thr_emotion": 0.0423,
+    "thr_topic": 0.0682,
+    "n_emotion_only": 4186,
+    "n_topic_only": 1137,
+    "n_both": 2832,
+    "n_neither": 1573,
+    "median_eta_emotion": 0.0782,
+    "median_eta_topic": 0.0546,
+    "top1pct_eta_emotion": 0.3597,
+    "top1pct_eta_topic": 0.2838
+   },
+   "anchor": {
+    "thr_emotion": 0.0093,
+    "thr_topic": 0.2185,
+    "n_emotion_only": 3663,
+    "n_topic_only": 1046,
+    "n_both": 745,
+    "n_neither": 4274,
+    "median_eta_emotion": 0.0082,
+    "median_eta_topic": 0.1109,
+    "top1pct_eta_emotion": 0.0807,
+    "top1pct_eta_topic": 0.4301
+   },
+   "suffix": {
+    "thr_emotion": 0.0364,
+    "thr_topic": 0.081,
+    "n_emotion_only": 4897,
+    "n_topic_only": 706,
+    "n_both": 2931,
+    "n_neither": 1194,
+    "median_eta_emotion": 0.0944,
+    "median_eta_topic": 0.0598,
+    "top1pct_eta_emotion": 0.4208,
+    "top1pct_eta_topic": 0.3162
+   },
+   "prompts": {
+    "thr_category": 0.0411,
+    "n_category_selective": 6943,
+    "top1pct_eta_category": 0.418
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.193,
+    "top1pct_jaccard": 0.016,
+    "chance_jaccard": 0.005
+   }
+  },
+  "28": {
+   "lead": {
+    "thr_emotion": 0.0387,
+    "thr_topic": 0.0828,
+    "n_emotion_only": 4877,
+    "n_topic_only": 839,
+    "n_both": 2191,
+    "n_neither": 1821,
+    "median_eta_emotion": 0.0747,
+    "median_eta_topic": 0.0526,
+    "top1pct_eta_emotion": 0.3557,
+    "top1pct_eta_topic": 0.279
+   },
+   "anchor": {
+    "thr_emotion": 0.0076,
+    "thr_topic": 0.1593,
+    "n_emotion_only": 3338,
+    "n_topic_only": 1547,
+    "n_both": 1497,
+    "n_neither": 3346,
+    "median_eta_emotion": 0.0076,
+    "median_eta_topic": 0.1079,
+    "top1pct_eta_emotion": 0.0818,
+    "top1pct_eta_topic": 0.4409
+   },
+   "suffix": {
+    "thr_emotion": 0.035,
+    "thr_topic": 0.0923,
+    "n_emotion_only": 5330,
+    "n_topic_only": 643,
+    "n_both": 2471,
+    "n_neither": 1284,
+    "median_eta_emotion": 0.09,
+    "median_eta_topic": 0.0592,
+    "top1pct_eta_emotion": 0.4129,
+    "top1pct_eta_topic": 0.3005
+   },
+   "prompts": {
+    "thr_category": 0.0419,
+    "n_category_selective": 6744,
+    "top1pct_eta_category": 0.4058
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.199,
+    "top1pct_jaccard": 0.06,
+    "chance_jaccard": 0.005
+   }
+  },
+  "29": {
+   "lead": {
+    "thr_emotion": 0.0383,
+    "thr_topic": 0.0701,
+    "n_emotion_only": 4185,
+    "n_topic_only": 1155,
+    "n_both": 2754,
+    "n_neither": 1634,
+    "median_eta_emotion": 0.0687,
+    "median_eta_topic": 0.0556,
+    "top1pct_eta_emotion": 0.3478,
+    "top1pct_eta_topic": 0.2806
+   },
+   "anchor": {
+    "thr_emotion": 0.0081,
+    "thr_topic": 0.186,
+    "n_emotion_only": 3269,
+    "n_topic_only": 1505,
+    "n_both": 979,
+    "n_neither": 3975,
+    "median_eta_emotion": 0.0069,
+    "median_eta_topic": 0.1135,
+    "top1pct_eta_emotion": 0.0704,
+    "top1pct_eta_topic": 0.432
+   },
+   "suffix": {
+    "thr_emotion": 0.0372,
+    "thr_topic": 0.085,
+    "n_emotion_only": 4751,
+    "n_topic_only": 897,
+    "n_both": 2808,
+    "n_neither": 1272,
+    "median_eta_emotion": 0.0854,
+    "median_eta_topic": 0.0647,
+    "top1pct_eta_emotion": 0.3905,
+    "top1pct_eta_topic": 0.3063
+   },
+   "prompts": {
+    "thr_category": 0.0436,
+    "n_category_selective": 6288,
+    "top1pct_eta_category": 0.3685
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.207,
+    "top1pct_jaccard": 0.026,
+    "chance_jaccard": 0.005
+   }
+  },
+  "30": {
+   "lead": {
+    "thr_emotion": 0.0409,
+    "thr_topic": 0.0997,
+    "n_emotion_only": 4910,
+    "n_topic_only": 896,
+    "n_both": 1697,
+    "n_neither": 2225,
+    "median_eta_emotion": 0.0675,
+    "median_eta_topic": 0.0572,
+    "top1pct_eta_emotion": 0.3323,
+    "top1pct_eta_topic": 0.2966
+   },
+   "anchor": {
+    "thr_emotion": 0.0055,
+    "thr_topic": 0.1621,
+    "n_emotion_only": 3647,
+    "n_topic_only": 1513,
+    "n_both": 1725,
+    "n_neither": 2843,
+    "median_eta_emotion": 0.0065,
+    "median_eta_topic": 0.1152,
+    "top1pct_eta_emotion": 0.0691,
+    "top1pct_eta_topic": 0.4408
+   },
+   "suffix": {
+    "thr_emotion": 0.0362,
+    "thr_topic": 0.0842,
+    "n_emotion_only": 4563,
+    "n_topic_only": 906,
+    "n_both": 3030,
+    "n_neither": 1229,
+    "median_eta_emotion": 0.0848,
+    "median_eta_topic": 0.0671,
+    "top1pct_eta_emotion": 0.3875,
+    "top1pct_eta_topic": 0.3324
+   },
+   "prompts": {
+    "thr_category": 0.0468,
+    "n_category_selective": 5915,
+    "top1pct_eta_category": 0.3696
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.191,
+    "top1pct_jaccard": 0.01,
+    "chance_jaccard": 0.005
+   }
+  },
+  "31": {
+   "lead": {
+    "thr_emotion": 0.0432,
+    "thr_topic": 0.0857,
+    "n_emotion_only": 4410,
+    "n_topic_only": 1099,
+    "n_both": 2102,
+    "n_neither": 2117,
+    "median_eta_emotion": 0.0674,
+    "median_eta_topic": 0.0564,
+    "top1pct_eta_emotion": 0.3363,
+    "top1pct_eta_topic": 0.2943
+   },
+   "anchor": {
+    "thr_emotion": 0.006,
+    "thr_topic": 0.1601,
+    "n_emotion_only": 3201,
+    "n_topic_only": 1726,
+    "n_both": 1707,
+    "n_neither": 3094,
+    "median_eta_emotion": 0.0061,
+    "median_eta_topic": 0.1166,
+    "top1pct_eta_emotion": 0.0624,
+    "top1pct_eta_topic": 0.4536
+   },
+   "suffix": {
+    "thr_emotion": 0.0348,
+    "thr_topic": 0.0928,
+    "n_emotion_only": 4793,
+    "n_topic_only": 784,
+    "n_both": 2880,
+    "n_neither": 1271,
+    "median_eta_emotion": 0.0831,
+    "median_eta_topic": 0.0686,
+    "top1pct_eta_emotion": 0.3784,
+    "top1pct_eta_topic": 0.3275
+   },
+   "prompts": {
+    "thr_category": 0.0428,
+    "n_category_selective": 6241,
+    "top1pct_eta_category": 0.3765
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.198,
+    "top1pct_jaccard": 0.043,
+    "chance_jaccard": 0.005
+   }
+  },
+  "32": {
+   "lead": {
+    "thr_emotion": 0.0378,
+    "thr_topic": 0.0776,
+    "n_emotion_only": 4329,
+    "n_topic_only": 1068,
+    "n_both": 2446,
+    "n_neither": 1885,
+    "median_eta_emotion": 0.0655,
+    "median_eta_topic": 0.055,
+    "top1pct_eta_emotion": 0.3275,
+    "top1pct_eta_topic": 0.2877
+   },
+   "anchor": {
+    "thr_emotion": 0.005,
+    "thr_topic": 0.1777,
+    "n_emotion_only": 3758,
+    "n_topic_only": 1233,
+    "n_both": 1509,
+    "n_neither": 3228,
+    "median_eta_emotion": 0.0057,
+    "median_eta_topic": 0.1112,
+    "top1pct_eta_emotion": 0.0626,
+    "top1pct_eta_topic": 0.4568
+   },
+   "suffix": {
+    "thr_emotion": 0.0441,
+    "thr_topic": 0.0937,
+    "n_emotion_only": 4504,
+    "n_topic_only": 1034,
+    "n_both": 2571,
+    "n_neither": 1619,
+    "median_eta_emotion": 0.0823,
+    "median_eta_topic": 0.0687,
+    "top1pct_eta_emotion": 0.3928,
+    "top1pct_eta_topic": 0.3229
+   },
+   "prompts": {
+    "thr_category": 0.0489,
+    "n_category_selective": 5737,
+    "top1pct_eta_category": 0.3833
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.202,
+    "top1pct_jaccard": 0.032,
+    "chance_jaccard": 0.005
+   }
+  },
+  "33": {
+   "lead": {
+    "thr_emotion": 0.0389,
+    "thr_topic": 0.0891,
+    "n_emotion_only": 4677,
+    "n_topic_only": 909,
+    "n_both": 2074,
+    "n_neither": 2068,
+    "median_eta_emotion": 0.065,
+    "median_eta_topic": 0.0556,
+    "top1pct_eta_emotion": 0.3406,
+    "top1pct_eta_topic": 0.297
+   },
+   "anchor": {
+    "thr_emotion": 0.0051,
+    "thr_topic": 0.1944,
+    "n_emotion_only": 3851,
+    "n_topic_only": 1099,
+    "n_both": 1247,
+    "n_neither": 3531,
+    "median_eta_emotion": 0.0056,
+    "median_eta_topic": 0.1094,
+    "top1pct_eta_emotion": 0.0611,
+    "top1pct_eta_topic": 0.445
+   },
+   "suffix": {
+    "thr_emotion": 0.0375,
+    "thr_topic": 0.0886,
+    "n_emotion_only": 4533,
+    "n_topic_only": 864,
+    "n_both": 2935,
+    "n_neither": 1396,
+    "median_eta_emotion": 0.083,
+    "median_eta_topic": 0.0684,
+    "top1pct_eta_emotion": 0.396,
+    "top1pct_eta_topic": 0.3238
+   },
+   "prompts": {
+    "thr_category": 0.0422,
+    "n_category_selective": 6363,
+    "top1pct_eta_category": 0.4014
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.217,
+    "top1pct_jaccard": 0.032,
+    "chance_jaccard": 0.005
+   }
+  },
+  "34": {
+   "lead": {
+    "thr_emotion": 0.0467,
+    "thr_topic": 0.078,
+    "n_emotion_only": 3789,
+    "n_topic_only": 1341,
+    "n_both": 2204,
+    "n_neither": 2394,
+    "median_eta_emotion": 0.0642,
+    "median_eta_topic": 0.0567,
+    "top1pct_eta_emotion": 0.329,
+    "top1pct_eta_topic": 0.2847
+   },
+   "anchor": {
+    "thr_emotion": 0.0055,
+    "thr_topic": 0.1461,
+    "n_emotion_only": 3145,
+    "n_topic_only": 1629,
+    "n_both": 1808,
+    "n_neither": 3146,
+    "median_eta_emotion": 0.0057,
+    "median_eta_topic": 0.1065,
+    "top1pct_eta_emotion": 0.064,
+    "top1pct_eta_topic": 0.4417
+   },
+   "suffix": {
+    "thr_emotion": 0.038,
+    "thr_topic": 0.11,
+    "n_emotion_only": 5223,
+    "n_topic_only": 677,
+    "n_both": 2202,
+    "n_neither": 1626,
+    "median_eta_emotion": 0.0828,
+    "median_eta_topic": 0.0682,
+    "top1pct_eta_emotion": 0.4,
+    "top1pct_eta_topic": 0.332
+   },
+   "prompts": {
+    "thr_category": 0.0421,
+    "n_category_selective": 6707,
+    "top1pct_eta_category": 0.4482
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.183,
+    "top1pct_jaccard": 0.026,
+    "chance_jaccard": 0.005
+   }
+  },
+  "35": {
+   "lead": {
+    "thr_emotion": 0.0359,
+    "thr_topic": 0.0891,
+    "n_emotion_only": 4831,
+    "n_topic_only": 861,
+    "n_both": 2193,
+    "n_neither": 1843,
+    "median_eta_emotion": 0.0667,
+    "median_eta_topic": 0.058,
+    "top1pct_eta_emotion": 0.3323,
+    "top1pct_eta_topic": 0.2825
+   },
+   "anchor": {
+    "thr_emotion": 0.0071,
+    "thr_topic": 0.1639,
+    "n_emotion_only": 3136,
+    "n_topic_only": 1550,
+    "n_both": 1437,
+    "n_neither": 3605,
+    "median_eta_emotion": 0.0065,
+    "median_eta_topic": 0.1098,
+    "top1pct_eta_emotion": 0.0772,
+    "top1pct_eta_topic": 0.4293
+   },
+   "suffix": {
+    "thr_emotion": 0.0488,
+    "thr_topic": 0.1146,
+    "n_emotion_only": 4903,
+    "n_topic_only": 930,
+    "n_both": 1864,
+    "n_neither": 2031,
+    "median_eta_emotion": 0.0835,
+    "median_eta_topic": 0.0715,
+    "top1pct_eta_emotion": 0.3952,
+    "top1pct_eta_topic": 0.3141
+   },
+   "prompts": {
+    "thr_category": 0.0463,
+    "n_category_selective": 6637,
+    "top1pct_eta_category": 0.4585
+   },
+   "anger_generalisation": {
+    "corr_speaker_anger_vs_user_grievance": 0.176,
+    "top1pct_jaccard": 0.026,
+    "chance_jaccard": 0.005
+   }
+  }
+ },
+ "top_emotion_units_lead": [
+  {
+   "layer": 19,
+   "unit": 7801,
+   "eta_emotion": 0.69,
+   "eta_topic": 0.013,
+   "preferred": "sadness",
+   "same_preference_in_all_topics": false
+  },
+  {
+   "layer": 11,
+   "unit": 7612,
+   "eta_emotion": 0.65,
+   "eta_topic": 0.044,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 8,
+   "unit": 3145,
+   "eta_emotion": 0.638,
+   "eta_topic": 0.022,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 22,
+   "unit": 609,
+   "eta_emotion": 0.637,
+   "eta_topic": 0.008,
+   "preferred": "sadness",
+   "same_preference_in_all_topics": false
+  },
+  {
+   "layer": 12,
+   "unit": 8223,
+   "eta_emotion": 0.634,
+   "eta_topic": 0.009,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 16,
+   "unit": 9433,
+   "eta_emotion": 0.62,
+   "eta_topic": 0.027,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": false
+  },
+  {
+   "layer": 30,
+   "unit": 4393,
+   "eta_emotion": 0.617,
+   "eta_topic": 0.003,
+   "preferred": "sadness",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 13,
+   "unit": 6146,
+   "eta_emotion": 0.616,
+   "eta_topic": 0.018,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": false
+  },
+  {
+   "layer": 14,
+   "unit": 6962,
+   "eta_emotion": 0.609,
+   "eta_topic": 0.027,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 15,
+   "unit": 8,
+   "eta_emotion": 0.609,
+   "eta_topic": 0.004,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 24,
+   "unit": 416,
+   "eta_emotion": 0.609,
+   "eta_topic": 0.01,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 24,
+   "unit": 4032,
+   "eta_emotion": 0.609,
+   "eta_topic": 0.009,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 32,
+   "unit": 876,
+   "eta_emotion": 0.607,
+   "eta_topic": 0.018,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 10,
+   "unit": 2038,
+   "eta_emotion": 0.605,
+   "eta_topic": 0.054,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 10,
+   "unit": 572,
+   "eta_emotion": 0.602,
+   "eta_topic": 0.006,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 25,
+   "unit": 1618,
+   "eta_emotion": 0.597,
+   "eta_topic": 0.023,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 21,
+   "unit": 8520,
+   "eta_emotion": 0.595,
+   "eta_topic": 0.002,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 11,
+   "unit": 3904,
+   "eta_emotion": 0.594,
+   "eta_topic": 0.049,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 27,
+   "unit": 2408,
+   "eta_emotion": 0.593,
+   "eta_topic": 0.013,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 10,
+   "unit": 4353,
+   "eta_emotion": 0.592,
+   "eta_topic": 0.012,
+   "preferred": "sadness",
+   "same_preference_in_all_topics": false
+  },
+  {
+   "layer": 28,
+   "unit": 4509,
+   "eta_emotion": 0.592,
+   "eta_topic": 0.011,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 21,
+   "unit": 6481,
+   "eta_emotion": 0.587,
+   "eta_topic": 0.005,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 23,
+   "unit": 1091,
+   "eta_emotion": 0.587,
+   "eta_topic": 0.01,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 12,
+   "unit": 8285,
+   "eta_emotion": 0.585,
+   "eta_topic": 0.044,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 18,
+   "unit": 8408,
+   "eta_emotion": 0.585,
+   "eta_topic": 0.013,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 17,
+   "unit": 6,
+   "eta_emotion": 0.583,
+   "eta_topic": 0.037,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 9,
+   "unit": 540,
+   "eta_emotion": 0.582,
+   "eta_topic": 0.001,
+   "preferred": "joy",
+   "same_preference_in_all_topics": false
+  },
+  {
+   "layer": 20,
+   "unit": 4548,
+   "eta_emotion": 0.582,
+   "eta_topic": 0.008,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 14,
+   "unit": 2131,
+   "eta_emotion": 0.581,
+   "eta_topic": 0.034,
+   "preferred": "anger",
+   "same_preference_in_all_topics": false
+  },
+  {
+   "layer": 9,
+   "unit": 9529,
+   "eta_emotion": 0.58,
+   "eta_topic": 0.032,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 18,
+   "unit": 5157,
+   "eta_emotion": 0.58,
+   "eta_topic": 0.009,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 29,
+   "unit": 2593,
+   "eta_emotion": 0.579,
+   "eta_topic": 0.023,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 13,
+   "unit": 126,
+   "eta_emotion": 0.578,
+   "eta_topic": 0.015,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 15,
+   "unit": 7469,
+   "eta_emotion": 0.576,
+   "eta_topic": 0.024,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 35,
+   "unit": 108,
+   "eta_emotion": 0.575,
+   "eta_topic": 0.008,
+   "preferred": "sadness",
+   "same_preference_in_all_topics": false
+  },
+  {
+   "layer": 29,
+   "unit": 156,
+   "eta_emotion": 0.573,
+   "eta_topic": 0.02,
+   "preferred": "anger",
+   "same_preference_in_all_topics": false
+  },
+  {
+   "layer": 9,
+   "unit": 7333,
+   "eta_emotion": 0.569,
+   "eta_topic": 0.092,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 19,
+   "unit": 448,
+   "eta_emotion": 0.568,
+   "eta_topic": 0.044,
+   "preferred": "sadness",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 20,
+   "unit": 2149,
+   "eta_emotion": 0.568,
+   "eta_topic": 0.043,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 25,
+   "unit": 1585,
+   "eta_emotion": 0.568,
+   "eta_topic": 0.032,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 18,
+   "unit": 7418,
+   "eta_emotion": 0.567,
+   "eta_topic": 0.028,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 14,
+   "unit": 665,
+   "eta_emotion": 0.565,
+   "eta_topic": 0.022,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 24,
+   "unit": 2859,
+   "eta_emotion": 0.565,
+   "eta_topic": 0.016,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 14,
+   "unit": 8815,
+   "eta_emotion": 0.563,
+   "eta_topic": 0.021,
+   "preferred": "sadness",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 22,
+   "unit": 7194,
+   "eta_emotion": 0.563,
+   "eta_topic": 0.042,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 26,
+   "unit": 1287,
+   "eta_emotion": 0.563,
+   "eta_topic": 0.025,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 16,
+   "unit": 6778,
+   "eta_emotion": 0.562,
+   "eta_topic": 0.053,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 19,
+   "unit": 4131,
+   "eta_emotion": 0.561,
+   "eta_topic": 0.022,
+   "preferred": "sadness",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 22,
+   "unit": 9645,
+   "eta_emotion": 0.561,
+   "eta_topic": 0.033,
+   "preferred": "anger",
+   "same_preference_in_all_topics": false
+  },
+  {
+   "layer": 32,
+   "unit": 6730,
+   "eta_emotion": 0.561,
+   "eta_topic": 0.016,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 21,
+   "unit": 5452,
+   "eta_emotion": 0.56,
+   "eta_topic": 0.048,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 22,
+   "unit": 7746,
+   "eta_emotion": 0.56,
+   "eta_topic": 0.043,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 16,
+   "unit": 1494,
+   "eta_emotion": 0.558,
+   "eta_topic": 0.001,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 29,
+   "unit": 6985,
+   "eta_emotion": 0.556,
+   "eta_topic": 0.012,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 18,
+   "unit": 9280,
+   "eta_emotion": 0.554,
+   "eta_topic": 0.029,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 15,
+   "unit": 6943,
+   "eta_emotion": 0.553,
+   "eta_topic": 0.03,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 17,
+   "unit": 7698,
+   "eta_emotion": 0.553,
+   "eta_topic": 0.035,
+   "preferred": "anger",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 23,
+   "unit": 1855,
+   "eta_emotion": 0.553,
+   "eta_topic": 0.023,
+   "preferred": "sadness",
+   "same_preference_in_all_topics": true
+  },
+  {
+   "layer": 22,
+   "unit": 9566,
+   "eta_emotion": 0.552,
+   "eta_topic": 0.006,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": false
+  },
+  {
+   "layer": 29,
+   "unit": 3499,
+   "eta_emotion": 0.552,
+   "eta_topic": 0.044,
+   "preferred": "neutral",
+   "same_preference_in_all_topics": true
+  }
+ ],
+ "seconds": 66.7
+}
