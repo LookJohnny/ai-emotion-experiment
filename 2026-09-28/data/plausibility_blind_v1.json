@@ -1,0 +1,842 @@
+[
+ {
+  "id": "shop01",
+  "joy": 5,
+  "sadness": 1,
+  "anger": 2,
+  "note": "差价已退无损失，难过勉强；已妥善解决，不满较弱"
+ },
+ {
+  "id": "shop02",
+  "joy": 1,
+  "sadness": 3,
+  "anger": 4,
+  "note": "纯延误，无喜可言"
+ },
+ {
+  "id": "shop03",
+  "joy": 4,
+  "sadness": 1,
+  "anger": 1,
+  "note": "退款顺利到账，无可难过或不满之处"
+ },
+ {
+  "id": "shop04",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 2,
+  "note": "补货是好事，仅量少可能略有不满"
+ },
+ {
+  "id": "shop05",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "shop06",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 2,
+  "note": "券过期无喜可言；是自己没用上，怨他人较牵强"
+ },
+ {
+  "id": "shop07",
+  "joy": 3,
+  "sadness": 2,
+  "anger": 2,
+  "note": "还能兑换，难过和不满都需聚焦于清零规则"
+ },
+ {
+  "id": "shop08",
+  "joy": 4,
+  "sadness": 1,
+  "anger": 2,
+  "note": "纯优惠信息，难过牵强；限购/时段带来的不满较弱"
+ },
+ {
+  "id": "shop09",
+  "joy": 2,
+  "sadness": 2,
+  "anger": 4,
+  "note": "便宜8元是被动的，喜悦牵强；主要是被擅自改发的不满，难过较弱"
+ },
+ {
+  "id": "shop10",
+  "joy": 2,
+  "sadness": 2,
+  "anger": 4,
+  "note": "单包价格实际略涨，喜悦牵强；是变相涨价引起不满而非难过"
+ },
+ {
+  "id": "shop11",
+  "joy": 4,
+  "sadness": 1,
+  "anger": 1,
+  "note": "换货且包运费，无可难过或不满"
+ },
+ {
+  "id": "shop12",
+  "joy": 5,
+  "sadness": 1,
+  "anger": 1,
+  "note": "中奖纯好事"
+ },
+ {
+  "id": "shop13",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 2,
+  "note": "常用品停产无喜；非谁的错，不满较弱"
+ },
+ {
+  "id": "shop14",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 4,
+  "note": "额外收费无喜；更多是不满而非难过"
+ },
+ {
+  "id": "shop15",
+  "joy": 4,
+  "sadness": 2,
+  "anger": 1,
+  "note": "卖出是好事；不舍感较弱，无人可怨"
+ },
+ {
+  "id": "shop16",
+  "joy": 4,
+  "sadness": 2,
+  "anger": 3,
+  "note": "免费换新可喜，损失已被弥补故难过较弱"
+ },
+ {
+  "id": "shop17",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 1,
+  "note": "店关门无人可怨"
+ },
+ {
+  "id": "shop18",
+  "joy": 4,
+  "sadness": 2,
+  "anger": 2,
+  "note": "折扣提高，仅日期变动可能略不便"
+ },
+ {
+  "id": "shop19",
+  "joy": 4,
+  "sadness": 2,
+  "anger": 2,
+  "note": "能抵扣是好事，估价高低事实未显示吃亏"
+ },
+ {
+  "id": "shop20",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 2,
+  "note": "预售规则明示，不满牵强"
+ },
+ {
+  "id": "trav01",
+  "joy": 1,
+  "sadness": 3,
+  "anger": 4,
+  "note": "晚点无喜可言"
+ },
+ {
+  "id": "trav02",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 4,
+  "note": "航班取消无喜可言"
+ },
+ {
+  "id": "trav03",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 3,
+  "note": "多走300米无喜；程度轻，难过较弱"
+ },
+ {
+  "id": "trav04",
+  "joy": 1,
+  "sadness": 3,
+  "anger": 4,
+  "note": "常用站被取消，无喜可言"
+ },
+ {
+  "id": "trav05",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 5,
+  "note": "5元券无法抵消被放鸽子，喜悦牵强；更多是恼火而非难过"
+ },
+ {
+  "id": "trav06",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 3,
+  "note": "退24元差价不足以令人高兴"
+ },
+ {
+  "id": "trav07",
+  "joy": 3,
+  "sadness": 2,
+  "anger": 3,
+  "note": "有得有失，难过较弱"
+ },
+ {
+  "id": "trav08",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 2,
+  "note": "车票是自己抢的，无明确可怨对象"
+ },
+ {
+  "id": "trav09",
+  "joy": 1,
+  "sadness": 3,
+  "anger": 4,
+  "note": "免费变收费无喜可言"
+ },
+ {
+  "id": "trav10",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav11",
+  "joy": 4,
+  "sadness": 2,
+  "anger": 2,
+  "note": "票已兑现，分车厢是小遗憾"
+ },
+ {
+  "id": "trav12",
+  "joy": 4,
+  "sadness": 2,
+  "anger": 1,
+  "note": "自愿改乘且获补偿，无不满理由"
+ },
+ {
+  "id": "trav13",
+  "joy": 2,
+  "sadness": 2,
+  "anger": 4,
+  "note": "延长时长难抵涨价，喜悦较弱；主要是涨价不满"
+ },
+ {
+  "id": "trav14",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 2,
+  "note": "车站已免费改签，堵车无特定可怨对象"
+ },
+ {
+  "id": "trav15",
+  "joy": 3,
+  "sadness": 2,
+  "anger": 3,
+  "note": "有得有失，难过较弱"
+ },
+ {
+  "id": "trav16",
+  "joy": 3,
+  "sadness": 2,
+  "anger": 3,
+  "note": "有得有失，难过较弱"
+ },
+ {
+  "id": "trav17",
+  "joy": 4,
+  "sadness": 1,
+  "anger": 2,
+  "note": "免费升级为主，油耗多只是小代价"
+ },
+ {
+  "id": "trav18",
+  "joy": 1,
+  "sadness": 3,
+  "anger": 4,
+  "note": "停运致不便，无喜可言"
+ },
+ {
+  "id": "trav19",
+  "joy": 1,
+  "sadness": 3,
+  "anger": 3,
+  "note": "退票扣费无喜可言"
+ },
+ {
+  "id": "trav20",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 2,
+  "note": "停航无喜；天气原因且全额退款，不满牵强"
+ },
+ {
+  "id": "fam01",
+  "joy": 5,
+  "sadness": 1,
+  "anger": 1,
+  "note": "长辈寿宴纯喜事"
+ },
+ {
+  "id": "fam02",
+  "joy": 4,
+  "sadness": 2,
+  "anger": 2,
+  "note": "换新车是喜事，车贷是压力而非难过或怨气"
+ },
+ {
+  "id": "fam03",
+  "joy": 2,
+  "sadness": 2,
+  "anger": 4,
+  "note": "接孩子可视为陪伴但偏牵强；主要是负担不满"
+ },
+ {
+  "id": "fam04",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 4,
+  "note": "多做家务无喜；多为不满而非难过"
+ },
+ {
+  "id": "fam05",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 2,
+  "note": "露营也不错，计划改变非谁之错"
+ },
+ {
+  "id": "fam06",
+  "joy": 4,
+  "sadness": 1,
+  "anger": 1,
+  "note": "为父母庆祝是乐事，无可难过或不满"
+ },
+ {
+  "id": "fam07",
+  "joy": 1,
+  "sadness": 3,
+  "anger": 2,
+  "note": "手术陪护无喜；小手术请假是本分，怨气牵强"
+ },
+ {
+  "id": "fam08",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 2,
+  "note": "宠物生病无喜；非谁之错，不满较弱"
+ },
+ {
+  "id": "fam09",
+  "joy": 3,
+  "sadness": 2,
+  "anger": 3,
+  "note": "同住有喜有不便，难过较弱"
+ },
+ {
+  "id": "fam10",
+  "joy": 4,
+  "sadness": 1,
+  "anger": 3,
+  "note": "过年团聚是喜事，难过牵强"
+ },
+ {
+  "id": "fam11",
+  "joy": 5,
+  "sadness": 1,
+  "anger": 1,
+  "note": "全家度假纯喜事"
+ },
+ {
+  "id": "fam12",
+  "joy": 4,
+  "sadness": 1,
+  "anger": 2,
+  "note": "亲人婚礼喜事，早起略有不满"
+ },
+ {
+  "id": "fam13",
+  "joy": 5,
+  "sadness": 1,
+  "anger": 1,
+  "note": "女儿生日纯喜事"
+ },
+ {
+  "id": "fam14",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 2,
+  "note": "外婆离开+多支出无喜；非谁之错"
+ },
+ {
+  "id": "fam15",
+  "joy": 3,
+  "sadness": 2,
+  "anger": 3,
+  "note": "翻新有期待，难过较弱"
+ },
+ {
+  "id": "fam16",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 2,
+  "note": "搬新房是喜事，通勤变长无特定可怨对象"
+ },
+ {
+  "id": "fam17",
+  "joy": 3,
+  "sadness": 2,
+  "anger": 2,
+  "note": "安排合理的轮流看望，难过和不满都较弱"
+ },
+ {
+  "id": "fam18",
+  "joy": 4,
+  "sadness": 1,
+  "anger": 2,
+  "note": "全家福是乐事，着装要求只是小麻烦"
+ },
+ {
+  "id": "fam19",
+  "joy": 5,
+  "sadness": 1,
+  "anger": 3,
+  "note": "领养小狗是喜事，难过牵强"
+ },
+ {
+  "id": "fam20",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 1,
+  "note": "平分无可怨之处"
+ },
+ {
+  "id": "study01",
+  "joy": 1,
+  "sadness": 3,
+  "anger": 4,
+  "note": "考试提前无喜可言"
+ },
+ {
+  "id": "study02",
+  "joy": 4,
+  "sadness": 2,
+  "anger": 1,
+  "note": "过线成绩，难过要聚焦于分数不够高；无人可怨"
+ },
+ {
+  "id": "study03",
+  "joy": 5,
+  "sadness": 1,
+  "anger": 1,
+  "note": "截止延后纯好事"
+ },
+ {
+  "id": "study04",
+  "joy": 2,
+  "sadness": 1,
+  "anger": 3,
+  "note": "换教室是中性变化，喜与难过都牵强"
+ },
+ {
+  "id": "study05",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 3,
+  "note": "没抽中+晚课，无喜可言"
+ },
+ {
+  "id": "study06",
+  "joy": 2,
+  "sadness": 3,
+  "anger": 3,
+  "note": "推迟可多准备但较牵强"
+ },
+ {
+  "id": "study07",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study08",
+  "joy": 3,
+  "sadness": 2,
+  "anger": 3,
+  "note": "有得有失，难过较弱"
+ },
+ {
+  "id": "study09",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 2,
+  "note": "查重超标无喜；是自己论文的问题，怨他人牵强"
+ },
+ {
+  "id": "study10",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 4,
+  "note": "早起讨论无喜；更多是不满而非难过"
+ },
+ {
+  "id": "study11",
+  "joy": 4,
+  "sadness": 2,
+  "anger": 3,
+  "note": "放假提前可喜，难过较弱"
+ },
+ {
+  "id": "study12",
+  "joy": 5,
+  "sadness": 2,
+  "anger": 1,
+  "note": "获奖是喜事，无可怨之处"
+ },
+ {
+  "id": "study13",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 4,
+  "note": "调到晚上无喜；更多是不满"
+ },
+ {
+  "id": "study14",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 1,
+  "note": "自己的成绩，无人可怨"
+ },
+ {
+  "id": "study15",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 2,
+  "note": "差3分主要是遗憾，怨他人牵强"
+ },
+ {
+  "id": "study16",
+  "joy": 3,
+  "sadness": 2,
+  "anger": 3,
+  "note": "有免费电子版，难过较弱"
+ },
+ {
+  "id": "study17",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 4,
+  "note": "任务加重无喜；多为不满"
+ },
+ {
+  "id": "study18",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 2,
+  "note": "老师离职无喜；非平台可控，不满较弱"
+ },
+ {
+  "id": "study19",
+  "joy": 3,
+  "sadness": 2,
+  "anger": 4,
+  "note": "免考有一面可喜，难过较弱"
+ },
+ {
+  "id": "study20",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work01",
+  "joy": 2,
+  "sadness": 2,
+  "anger": 5,
+  "note": "强制周末且不算加班，喜悦牵强；主要是不满而非难过"
+ },
+ {
+  "id": "work02",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 5,
+  "note": "截止提前无喜；主要是不满"
+ },
+ {
+  "id": "work03",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work04",
+  "joy": 2,
+  "sadness": 3,
+  "anger": 3,
+  "note": "改做投标文件难言可喜"
+ },
+ {
+  "id": "work05",
+  "joy": 1,
+  "sadness": 1,
+  "anger": 3,
+  "note": "地点变更是中性小事，无喜无难过"
+ },
+ {
+  "id": "work06",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 4,
+  "note": "额外迁移工作无喜；多为不满"
+ },
+ {
+  "id": "work07",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 4,
+  "note": "预算被砍无喜可言"
+ },
+ {
+  "id": "work08",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 3,
+  "note": "被要求重写无喜可言"
+ },
+ {
+  "id": "work09",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 5,
+  "note": "临时改稿无喜；多为不满"
+ },
+ {
+  "id": "work10",
+  "joy": 2,
+  "sadness": 3,
+  "anger": 3,
+  "note": "接手客户多为负担，喜悦牵强"
+ },
+ {
+  "id": "work11",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 3,
+  "note": "假期值班无喜可言"
+ },
+ {
+  "id": "work12",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 4,
+  "note": "额外配合任务无喜；多为不满"
+ },
+ {
+  "id": "work13",
+  "joy": 1,
+  "sadness": 3,
+  "anger": 4,
+  "note": "周末加班无喜可言"
+ },
+ {
+  "id": "work14",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 2,
+  "note": "中游评级，怨气牵强"
+ },
+ {
+  "id": "work15",
+  "joy": 3,
+  "sadness": 2,
+  "anger": 2,
+  "note": "普通出差，难过和不满都较弱"
+ },
+ {
+  "id": "work16",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 3,
+  "note": "失去靠窗工位无喜可言"
+ },
+ {
+  "id": "work17",
+  "joy": 5,
+  "sadness": 1,
+  "anger": 1,
+  "note": "居家办公纯福利"
+ },
+ {
+  "id": "work18",
+  "joy": 5,
+  "sadness": 1,
+  "anger": 3,
+  "note": "升职是喜事，难过牵强"
+ },
+ {
+  "id": "work19",
+  "joy": 2,
+  "sadness": 3,
+  "anger": 1,
+  "note": "组织调动无人可怨，喜悦需另有原因"
+ },
+ {
+  "id": "work20",
+  "joy": 2,
+  "sadness": 2,
+  "anger": 4,
+  "note": "改站会难言可喜，更多是不满而非难过"
+ },
+ {
+  "id": "hobby01",
+  "joy": 2,
+  "sadness": 2,
+  "anger": 2,
+  "note": "场地变更为中性信息，三种情绪都不强"
+ },
+ {
+  "id": "hobby02",
+  "joy": 5,
+  "sadness": 2,
+  "anger": 1,
+  "note": "入选是喜事，无可怨之处"
+ },
+ {
+  "id": "hobby03",
+  "joy": 2,
+  "sadness": 2,
+  "anger": 3,
+  "note": "加练安排难言喜或难过"
+ },
+ {
+  "id": "hobby04",
+  "joy": 4,
+  "sadness": 2,
+  "anger": 3,
+  "note": "入围可喜，排最后组主要是不便而非难过"
+ },
+ {
+  "id": "hobby05",
+  "joy": 5,
+  "sadness": 2,
+  "anger": 1,
+  "note": "抢到票是喜事，无可怨之处"
+ },
+ {
+  "id": "hobby06",
+  "joy": 4,
+  "sadness": 1,
+  "anger": 2,
+  "note": "延期可喜，预约只是小麻烦"
+ },
+ {
+  "id": "hobby07",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 2,
+  "note": "改期无喜；场地维修非谁之错"
+ },
+ {
+  "id": "hobby08",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 2,
+  "note": "候补无喜；先到先得，怨气牵强"
+ },
+ {
+  "id": "hobby09",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 1,
+  "note": "开裂是烧制常态，无人可怨"
+ },
+ {
+  "id": "hobby10",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 2,
+  "note": "分到地块可喜，角落位置怨气较弱"
+ },
+ {
+  "id": "hobby11",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 4,
+  "note": "改早课无喜；多为不满"
+ },
+ {
+  "id": "hobby12",
+  "joy": 5,
+  "sadness": 1,
+  "anger": 1,
+  "note": "中签是喜事"
+ },
+ {
+  "id": "hobby13",
+  "joy": 1,
+  "sadness": 4,
+  "anger": 2,
+  "note": "改线上无喜；不满较弱"
+ },
+ {
+  "id": "hobby14",
+  "joy": 3,
+  "sadness": 2,
+  "anger": 4,
+  "note": "涨价主要引起不满而非难过"
+ },
+ {
+  "id": "hobby15",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 1,
+  "note": "演出定档无人可怨"
+ },
+ {
+  "id": "hobby16",
+  "joy": 1,
+  "sadness": 3,
+  "anger": 4,
+  "note": "路线缩短+早起无喜可言"
+ },
+ {
+  "id": "hobby17",
+  "joy": 5,
+  "sadness": 2,
+  "anger": 1,
+  "note": "获奖是喜事，无可怨之处"
+ },
+ {
+  "id": "hobby18",
+  "joy": 2,
+  "sadness": 4,
+  "anger": 3,
+  "note": "时间缩短难言可喜"
+ },
+ {
+  "id": "hobby19",
+  "joy": 5,
+  "sadness": 2,
+  "anger": 2,
+  "note": "摊位通过且位置好，半天限制是小遗憾"
+ },
+ {
+  "id": "hobby20",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ }
+]

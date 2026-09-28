@@ -1,0 +1,161 @@
+[env] {'sec': 9.43, 'peak_alloc_gib': 0.149, 'peak_reserved_gib': 0.162}
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 134.70it/s]
+[load] {'sec': 2.21, 'peak_alloc_gib': 7.556, 'peak_reserved_gib': 7.57}
+{
+ "n_records": 48,
+ "n_scenarios": 12,
+ "all_four_emotions": true,
+ "anchor_identical_within_scenario": true,
+ "prompt_identical_within_scenario": true,
+ "label_not_in_input": true,
+ "category_word_in_user_prompt": 0,
+ "tokenization_issues": [],
+ "anchor_tokens_identical_within_scenario": true,
+ "total_tokens_max": 87,
+ "lead_tokens_by_emotion": {
+  "joy": 11.416666666666666,
+  "sadness": 10.916666666666666,
+  "anger": 11.666666666666666,
+  "neutral": 10.666666666666666
+ },
+ "lead_chars_by_emotion": {
+  "joy": 15.916666666666666,
+  "sadness": 15.833333333333334,
+  "anger": 15.583333333333334,
+  "neutral": 16.333333333333332
+ },
+ "passed": true
+}
+[data_checks] {'sec': 0.03, 'peak_alloc_gib': 7.556, 'peak_reserved_gib': 7.57}
+[capture] {'sec': 2.32, 'peak_alloc_gib': 7.582, 'peak_reserved_gib': 7.602, 'shape': [48, 4, 9728]}
+{
+ "per_layer": {
+  "8": {
+   "max_abs_diff": 0.0,
+   "max_abs_value": 1.9765625
+  },
+  "17": {
+   "max_abs_diff": 0.0,
+   "max_abs_value": 2.53125
+  },
+  "26": {
+   "max_abs_diff": 0.0,
+   "max_abs_value": 13.1875
+  },
+  "35": {
+   "max_abs_diff": 0.0,
+   "max_abs_value": 143.0
+  }
+ },
+ "nearest_centroid_loso": {
+  "8": {
+   "prefix_acc": 0.25,
+   "anchor_acc": 0.8333333333333334
+  },
+  "17": {
+   "prefix_acc": 0.25,
+   "anchor_acc": 0.7291666666666666
+  },
+  "26": {
+   "prefix_acc": 0.25,
+   "anchor_acc": 0.7708333333333334
+  },
+  "35": {
+   "prefix_acc": 0.25,
+   "anchor_acc": 0.5416666666666666
+  }
+ },
+ "chance": 0.25,
+ "passed": true,
+ "note": "prefix_acc should be 0.25 (identical inputs -> ties); anchor_acc is exploratory, 12 scenarios only"
+}
+[blank_check] {'sec': 0.03, 'peak_alloc_gib': 7.582, 'peak_reserved_gib': 7.602}
+[select] {'sec': 0.09, 'peak_alloc_gib': 7.582, 'peak_reserved_gib': 7.602}
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+{
+ "items": [
+  {
+   "scenario": "d09",
+   "max_logit_diff": 0.0,
+   "generation_identical": true
+  },
+  {
+   "scenario": "d10",
+   "max_logit_diff": 0.0,
+   "generation_identical": true
+  },
+  {
+   "scenario": "d11",
+   "max_logit_diff": 0.0,
+   "generation_identical": true
+  },
+  {
+   "scenario": "d12",
+   "max_logit_diff": 0.0,
+   "generation_identical": true
+  }
+ ],
+ "passed": true
+}
+[zero_check] {'sec': 5.09, 'peak_alloc_gib': 7.582, 'peak_reserved_gib': 7.615}
+{
+ "8": {
+  "target": 0.001110820892790798,
+  "random_mean": 0.0013763147711870261,
+  "shuffled": 0.0012533045519376174,
+  "scales_random": [
+   1.11,
+   1.88,
+   1.67,
+   2.21,
+   2.21
+  ],
+  "changed_vs_base": 2
+ },
+ "17": {
+  "target": 0.0012879781279480085,
+  "random_mean": 0.0016670072713168339,
+  "shuffled": 0.0014433112955885008,
+  "scales_random": [
+   2.04,
+   1.38,
+   1.37,
+   1.36,
+   1.48
+  ],
+  "changed_vs_base": 2
+ },
+ "26": {
+  "target": 0.0006509354998343042,
+  "random_mean": 0.001122147877322277,
+  "shuffled": 0.000806907959486125,
+  "scales_random": [
+   3.23,
+   2.11,
+   1.13,
+   2.07,
+   2.69
+  ],
+  "changed_vs_base": 2
+ },
+ "35": {
+  "target": 0.0015477643082704162,
+  "random_mean": 0.001031461676939216,
+  "shuffled": 0.0008934755314840004,
+  "scales_random": [
+   5.84,
+   2.67,
+   8.09,
+   4.32,
+   6.38
+  ],
+  "changed_vs_base": 0
+ }
+}
+[intervene] {'sec': 82.04, 'peak_alloc_gib': 7.957, 'peak_reserved_gib': 7.998, 'n_generations': 128}
+/root/autodl-tmp/E01/smoke.py:347: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  losses.append(round(float(loss), 4))
+{'losses': [5.3708, 7.2909, 5.2451, 5.9034, 7.5755, 3.5591, 5.9311, 4.4253, 4.4003, 5.4414], 'trainable_params': 2949120, 'finite': True}
+[lora10] {'sec': 2.05, 'peak_alloc_gib': 8.138, 'peak_reserved_gib': 8.436}
+CRITERIA {'model_ok': True, 'data_checks': True, 'blank_prefix': True, 'mlp_capture': True, 'zero_lambda': True, 'intervention_with_random_controls': True, 'lora_backward': True} TOTAL 103.3

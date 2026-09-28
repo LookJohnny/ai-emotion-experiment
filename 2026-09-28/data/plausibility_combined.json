@@ -1,0 +1,1277 @@
+{
+"hobby08": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3.33,
+"sadness": 4,
+"anger": 3.33
+},
+"study12": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 3.67,
+"anger": 3
+},
+"work08": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 3.67
+},
+"shop16": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 3.33,
+"anger": 3.67
+},
+"hobby14": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 3.67,
+"anger": 3
+},
+"shop07": {
+"n_raters": 2,
+"raters": [
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 3,
+"anger": 3
+},
+"hobby04": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4.67,
+"sadness": 4,
+"anger": 4.33
+},
+"hobby13": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 4
+},
+"shop08": {
+"n_raters": 2,
+"raters": [
+"v5a",
+"v5b"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 3
+},
+"fam06": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 4.67,
+"anger": 4.33
+},
+"fam09": {
+"n_raters": 2,
+"raters": [
+"v7a",
+"v7b"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 4
+},
+"study16": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 3.67
+},
+"trav11": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4.67,
+"sadness": 3.33,
+"anger": 3
+},
+"work16": {
+"n_raters": 2,
+"raters": [
+"v7a",
+"v7b"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 4
+},
+"study20": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 3.33,
+"anger": 3
+},
+"shop15": {
+"n_raters": 2,
+"raters": [
+"v7a",
+"v7b"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 4
+},
+"shop06": {
+"n_raters": 2,
+"raters": [
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 3,
+"anger": 5
+},
+"hobby07": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4.67,
+"sadness": 4.67,
+"anger": 3
+},
+"study19": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3.67,
+"sadness": 4.67,
+"anger": 3.67
+},
+"trav03": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 3.33,
+"anger": 3
+},
+"work12": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3.67,
+"sadness": 3.33,
+"anger": 5
+},
+"work10": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 3,
+"anger": 3.33
+},
+"shop17": {
+"n_raters": 2,
+"raters": [
+"v7a",
+"v7b"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 4.5
+},
+"trav18": {
+"n_raters": 2,
+"raters": [
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 5
+},
+"trav13": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3.33,
+"sadness": 3.67,
+"anger": 4.67
+},
+"trav12": {
+"n_raters": 2,
+"raters": [
+"v5a",
+"v5b"
+],
+"joy": 3.5,
+"sadness": 5,
+"anger": 3.5
+},
+"trav15": {
+"n_raters": 2,
+"raters": [
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 4.5,
+"anger": 4
+},
+"hobby20": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 3.33,
+"anger": 3.33
+},
+"trav05": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 3.67,
+"anger": 3
+},
+"fam10": {
+"n_raters": 2,
+"raters": [
+"v6a",
+"v6b"
+],
+"joy": 4,
+"sadness": 3.5,
+"anger": 5
+},
+"trav04": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 3.67,
+"anger": 3
+},
+"shop04": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4.33,
+"sadness": 3.67,
+"anger": 3
+},
+"work13": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 3.33
+},
+"work03": {
+"n_raters": 2,
+"raters": [
+"v7a",
+"v7b"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 4
+},
+"fam12": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3.67,
+"sadness": 4,
+"anger": 3
+},
+"hobby05": {
+"n_raters": 2,
+"raters": [
+"v6a",
+"v6b"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 5
+},
+"work20": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3.33,
+"sadness": 4,
+"anger": 3
+},
+"study03": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 3.67,
+"anger": 3
+},
+"fam20": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 5,
+"anger": 4
+},
+"study02": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 5,
+"anger": 3.67
+},
+"shop02": {
+"n_raters": 2,
+"raters": [
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 3.5
+},
+"shop01": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 3
+},
+"work06": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 4
+},
+"work18": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4.67,
+"sadness": 4,
+"anger": 3
+},
+"hobby06": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 4
+},
+"study05": {
+"n_raters": 2,
+"raters": [
+"v7a",
+"v7b"
+],
+"joy": 3.5,
+"sadness": 3,
+"anger": 4
+},
+"fam07": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4.33,
+"sadness": 4,
+"anger": 3
+},
+"fam19": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3.33,
+"sadness": 5,
+"anger": 4
+},
+"hobby02": {
+"n_raters": 2,
+"raters": [
+"v7a",
+"v7b"
+],
+"joy": 4.5,
+"sadness": 4,
+"anger": 4
+},
+"study09": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4.33,
+"sadness": 3,
+"anger": 3
+},
+"trav01": {
+"n_raters": 2,
+"raters": [
+"v7a",
+"v7b"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 3
+},
+"hobby19": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3.67,
+"sadness": 4,
+"anger": 4.33
+},
+"work19": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 3.33
+},
+"study14": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4.67,
+"sadness": 3.33,
+"anger": 4
+},
+"study15": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 3.33,
+"anger": 4
+},
+"trav10": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 3,
+"anger": 3.33
+},
+"trav08": {
+"n_raters": 2,
+"raters": [
+"v7a",
+"v7b"
+],
+"joy": 4,
+"sadness": 3.5,
+"anger": 3
+},
+"fam02": {
+"n_raters": 2,
+"raters": [
+"v7a",
+"v7b"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 5
+},
+"fam01": {
+"n_raters": 1,
+"raters": [
+"v4"
+],
+"joy": 3,
+"sadness": 3,
+"anger": 5
+},
+"trav07": {
+"n_raters": 2,
+"raters": [
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 3.5,
+"anger": 3.5
+},
+"hobby01": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 3
+},
+"work05": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 5,
+"sadness": 3,
+"anger": 3
+},
+"work01": {
+"n_raters": 2,
+"raters": [
+"v5a",
+"v5b"
+],
+"joy": 4,
+"sadness": 3,
+"anger": 4
+},
+"shop09": {
+"n_raters": 2,
+"raters": [
+"v5a",
+"v5b"
+],
+"joy": 4,
+"sadness": 3,
+"anger": 3
+},
+"fam04": {
+"n_raters": 2,
+"raters": [
+"v3",
+"v4"
+],
+"joy": 3.5,
+"sadness": 4,
+"anger": 5
+},
+"shop20": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 4
+},
+"trav14": {
+"n_raters": 2,
+"raters": [
+"v5a",
+"v5b"
+],
+"joy": 3.5,
+"sadness": 4.5,
+"anger": 3
+},
+"shop18": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 3,
+"anger": 3
+},
+"fam08": {
+"n_raters": 1,
+"raters": [
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 4
+},
+"shop13": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 5,
+"anger": 3
+},
+"hobby10": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 4
+},
+"hobby17": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4.33,
+"sadness": 4,
+"anger": 3.67
+},
+"work02": {
+"n_raters": 2,
+"raters": [
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 3.5
+},
+"trav20": {
+"n_raters": 1,
+"raters": [
+"v4"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 4
+},
+"shop19": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 3.67,
+"anger": 3.67
+},
+"study07": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3.67,
+"sadness": 4,
+"anger": 3
+},
+"study01": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 3,
+"anger": 3.33
+},
+"work09": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4.67,
+"sadness": 3.33,
+"anger": 3.67
+},
+"work11": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 4.67,
+"anger": 3.67
+},
+"hobby12": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4.33,
+"sadness": 4,
+"anger": 3
+},
+"trav16": {
+"n_raters": 1,
+"raters": [
+"v4"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 5
+},
+"trav19": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 4
+},
+"fam15": {
+"n_raters": 2,
+"raters": [
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 5,
+"anger": 5
+},
+"work17": {
+"n_raters": 2,
+"raters": [
+"v5a",
+"v5b"
+],
+"joy": 4,
+"sadness": 3.5,
+"anger": 4
+},
+"work15": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4.33,
+"anger": 3
+},
+"study08": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 3.67,
+"anger": 3
+},
+"study13": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 3
+},
+"work07": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4.33,
+"sadness": 3,
+"anger": 3.33
+},
+"fam13": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 3
+},
+"fam16": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 3
+},
+"hobby03": {
+"n_raters": 2,
+"raters": [
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 4
+},
+"trav02": {
+"n_raters": 2,
+"raters": [
+"v5a",
+"v5b"
+],
+"joy": 4,
+"sadness": 3,
+"anger": 3
+},
+"fam18": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3.33,
+"sadness": 3.33,
+"anger": 3
+},
+"trav06": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3.33,
+"sadness": 3,
+"anger": 3.67
+},
+"work14": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 4
+},
+"hobby16": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 3.67,
+"anger": 3.33
+},
+"study10": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 3.33
+},
+"hobby15": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 5,
+"anger": 4
+},
+"fam03": {
+"n_raters": 2,
+"raters": [
+"v6a",
+"v6b"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 4
+},
+"study04": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3.67,
+"sadness": 3.67,
+"anger": 3
+},
+"shop11": {
+"n_raters": 2,
+"raters": [
+"v6a",
+"v6b"
+],
+"joy": 4,
+"sadness": 3,
+"anger": 4
+},
+"hobby11": {
+"n_raters": 2,
+"raters": [
+"v7a",
+"v7b"
+],
+"joy": 5,
+"sadness": 4,
+"anger": 4
+},
+"trav09": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 3,
+"anger": 3
+},
+"work04": {
+"n_raters": 2,
+"raters": [
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 5
+},
+"fam17": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 3
+},
+"shop14": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 4
+},
+"shop05": {
+"n_raters": 2,
+"raters": [
+"v8a",
+"v8b"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 3
+},
+"shop03": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 3,
+"anger": 4
+},
+"fam14": {
+"n_raters": 2,
+"raters": [
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 5,
+"anger": 3
+},
+"fam11": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 3.67,
+"anger": 3
+},
+"hobby18": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4.33,
+"sadness": 4,
+"anger": 3
+},
+"study06": {
+"n_raters": 1,
+"raters": [
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 4
+},
+"shop12": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4.67,
+"sadness": 3,
+"anger": 4
+},
+"trav17": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 3.33,
+"anger": 3
+},
+"study18": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 3.33
+},
+"hobby09": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4.67,
+"sadness": 4,
+"anger": 4
+},
+"study17": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 5,
+"sadness": 4,
+"anger": 3
+},
+"fam05": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 4,
+"sadness": 4,
+"anger": 3
+},
+"shop10": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 4,
+"anger": 4
+},
+"study11": {
+"n_raters": 3,
+"raters": [
+"v2",
+"v3",
+"v4"
+],
+"joy": 3,
+"sadness": 5,
+"anger": 4
+}
+}

@@ -1,0 +1,444 @@
+{
+ "stages": {
+  "env": {
+   "sec": 9.43,
+   "peak_alloc_gib": 0.149,
+   "peak_reserved_gib": 0.162
+  },
+  "load": {
+   "sec": 2.21,
+   "peak_alloc_gib": 7.556,
+   "peak_reserved_gib": 7.57
+  },
+  "data_checks": {
+   "sec": 0.03,
+   "peak_alloc_gib": 7.556,
+   "peak_reserved_gib": 7.57
+  },
+  "capture": {
+   "sec": 2.32,
+   "peak_alloc_gib": 7.582,
+   "peak_reserved_gib": 7.602,
+   "shape": [
+    48,
+    4,
+    9728
+   ]
+  },
+  "blank_check": {
+   "sec": 0.03,
+   "peak_alloc_gib": 7.582,
+   "peak_reserved_gib": 7.602
+  },
+  "select": {
+   "sec": 0.09,
+   "peak_alloc_gib": 7.582,
+   "peak_reserved_gib": 7.602
+  },
+  "zero_check": {
+   "sec": 5.09,
+   "peak_alloc_gib": 7.582,
+   "peak_reserved_gib": 7.615
+  },
+  "intervene": {
+   "sec": 82.04,
+   "peak_alloc_gib": 7.957,
+   "peak_reserved_gib": 7.998,
+   "n_generations": 128
+  },
+  "lora10": {
+   "sec": 2.05,
+   "peak_alloc_gib": 8.138,
+   "peak_reserved_gib": 8.436
+  }
+ },
+ "env": {
+  "python": "3.12.3",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "gpu_total_gib": 31.36,
+  "transformers": "4.57.6",
+  "peft": "0.21.0",
+  "cuda_matmul_ok": true
+ },
+ "model_file_sha256": {
+  "model-00001-of-00003.safetensors": "75311d91bb08cf0b882913da464a1e722a31fb44db35208663487efb7a3d8ed6",
+  "model-00002-of-00003.safetensors": "0b48adbb1f60e901153d91907ba11ce63bd4b8b584482e730f48808d055dfba1",
+  "model-00003-of-00003.safetensors": "7dd39ccca5e4de123c74c14af44c9bf2eb75df33b4614382af0134528e060d5d"
+ },
+ "model": {
+  "layers": 36,
+  "hidden": 2560,
+  "intermediate": 9728
+ },
+ "data_checks": {
+  "n_records": 48,
+  "n_scenarios": 12,
+  "all_four_emotions": true,
+  "anchor_identical_within_scenario": true,
+  "prompt_identical_within_scenario": true,
+  "label_not_in_input": true,
+  "category_word_in_user_prompt": 0,
+  "tokenization_issues": [],
+  "anchor_tokens_identical_within_scenario": true,
+  "total_tokens_max": 87,
+  "lead_tokens_by_emotion": {
+   "joy": 11.416666666666666,
+   "sadness": 10.916666666666666,
+   "anger": 11.666666666666666,
+   "neutral": 10.666666666666666
+  },
+  "lead_chars_by_emotion": {
+   "joy": 15.916666666666666,
+   "sadness": 15.833333333333334,
+   "anger": 15.583333333333334,
+   "neutral": 16.333333333333332
+  },
+  "passed": true
+ },
+ "blank_prefix_check": {
+  "per_layer": {
+   "8": {
+    "max_abs_diff": 0.0,
+    "max_abs_value": 1.9765625
+   },
+   "17": {
+    "max_abs_diff": 0.0,
+    "max_abs_value": 2.53125
+   },
+   "26": {
+    "max_abs_diff": 0.0,
+    "max_abs_value": 13.1875
+   },
+   "35": {
+    "max_abs_diff": 0.0,
+    "max_abs_value": 143.0
+   }
+  },
+  "nearest_centroid_loso": {
+   "8": {
+    "prefix_acc": 0.25,
+    "anchor_acc": 0.8333333333333334
+   },
+   "17": {
+    "prefix_acc": 0.25,
+    "anchor_acc": 0.7291666666666666
+   },
+   "26": {
+    "prefix_acc": 0.25,
+    "anchor_acc": 0.7708333333333334
+   },
+   "35": {
+    "prefix_acc": 0.25,
+    "anchor_acc": 0.5416666666666666
+   }
+  },
+  "chance": 0.25,
+  "passed": true,
+  "note": "prefix_acc should be 0.25 (identical inputs -> ties); anchor_acc is exploratory, 12 scenarios only"
+ },
+ "candidates": {
+  "8": {
+   "top_units": [
+    2185,
+    9239,
+    5808,
+    8687,
+    6414,
+    4254,
+    6246,
+    1168,
+    294,
+    6149,
+    7585,
+    3888,
+    6726,
+    691,
+    4908,
+    4342,
+    1581,
+    4388,
+    9616,
+    2699,
+    2645,
+    4293,
+    81,
+    6684,
+    4530,
+    6195,
+    7192,
+    6147,
+    8563,
+    1496,
+    8556,
+    4289
+   ],
+   "top_abs_effect": [
+    7.380000114440918,
+    7.0,
+    6.309999942779541,
+    6.239999771118164,
+    6.199999809265137,
+    5.840000152587891,
+    5.730000019073486,
+    5.420000076293945
+   ],
+   "mean_abs_effect_top32": 5.020075798034668,
+   "n_positive": 13,
+   "overlap_with_shuffled": 0
+  },
+  "17": {
+   "top_units": [
+    20,
+    5302,
+    7368,
+    9038,
+    6976,
+    6510,
+    8648,
+    6070,
+    4850,
+    2953,
+    4245,
+    2432,
+    6450,
+    5486,
+    5012,
+    485,
+    6716,
+    2314,
+    1477,
+    2273,
+    2028,
+    5119,
+    2902,
+    6251,
+    566,
+    2966,
+    9384,
+    1092,
+    2933,
+    3696,
+    100,
+    2582
+   ],
+   "top_abs_effect": [
+    4.840000152587891,
+    4.380000114440918,
+    4.130000114440918,
+    3.8299999237060547,
+    3.4700000286102295,
+    3.4700000286102295,
+    3.390000104904175,
+    3.390000104904175
+   ],
+   "mean_abs_effect_top32": 3.2068772315979004,
+   "n_positive": 17,
+   "overlap_with_shuffled": 0
+  },
+  "26": {
+   "top_units": [
+    4675,
+    1055,
+    3665,
+    5186,
+    2664,
+    6966,
+    5945,
+    866,
+    2230,
+    1861,
+    5354,
+    5545,
+    2466,
+    6467,
+    7232,
+    7119,
+    3517,
+    9155,
+    6024,
+    6466,
+    3628,
+    2647,
+    2807,
+    1286,
+    8594,
+    1408,
+    4445,
+    3729,
+    5000,
+    1744,
+    1689,
+    4728
+   ],
+   "top_abs_effect": [
+    4.690000057220459,
+    4.510000228881836,
+    4.460000038146973,
+    4.179999828338623,
+    4.150000095367432,
+    3.880000114440918,
+    3.869999885559082,
+    3.8499999046325684
+   ],
+   "mean_abs_effect_top32": 3.5276224613189697,
+   "n_positive": 14,
+   "overlap_with_shuffled": 0
+  },
+  "35": {
+   "top_units": [
+    2088,
+    544,
+    8790,
+    4657,
+    1347,
+    533,
+    5498,
+    5061,
+    992,
+    3388,
+    6034,
+    1773,
+    5940,
+    3033,
+    336,
+    8964,
+    5148,
+    9189,
+    4227,
+    3153,
+    972,
+    7849,
+    597,
+    8373,
+    8143,
+    2476,
+    4092,
+    676,
+    4437,
+    1660,
+    4327,
+    3622
+   ],
+   "top_abs_effect": [
+    4.900000095367432,
+    4.760000228881836,
+    4.670000076293945,
+    4.659999847412109,
+    4.380000114440918,
+    4.269999980926514,
+    3.890000104904175,
+    3.859999895095825
+   ],
+   "mean_abs_effect_top32": 3.472677230834961,
+   "n_positive": 14,
+   "overlap_with_shuffled": 0
+  }
+ },
+ "zero_lambda_check": {
+  "items": [
+   {
+    "scenario": "d09",
+    "max_logit_diff": 0.0,
+    "generation_identical": true
+   },
+   {
+    "scenario": "d10",
+    "max_logit_diff": 0.0,
+    "generation_identical": true
+   },
+   {
+    "scenario": "d11",
+    "max_logit_diff": 0.0,
+    "generation_identical": true
+   },
+   {
+    "scenario": "d12",
+    "max_logit_diff": 0.0,
+    "generation_identical": true
+   }
+  ],
+  "passed": true
+ },
+ "intervention_summary": {
+  "8": {
+   "target": 0.001110820892790798,
+   "random_mean": 0.0013763147711870261,
+   "shuffled": 0.0012533045519376174,
+   "scales_random": [
+    1.11,
+    1.88,
+    1.67,
+    2.21,
+    2.21
+   ],
+   "changed_vs_base": 2
+  },
+  "17": {
+   "target": 0.0012879781279480085,
+   "random_mean": 0.0016670072713168339,
+   "shuffled": 0.0014433112955885008,
+   "scales_random": [
+    2.04,
+    1.38,
+    1.37,
+    1.36,
+    1.48
+   ],
+   "changed_vs_base": 2
+  },
+  "26": {
+   "target": 0.0006509354998343042,
+   "random_mean": 0.001122147877322277,
+   "shuffled": 0.000806907959486125,
+   "scales_random": [
+    3.23,
+    2.11,
+    1.13,
+    2.07,
+    2.69
+   ],
+   "changed_vs_base": 2
+  },
+  "35": {
+   "target": 0.0015477643082704162,
+   "random_mean": 0.001031461676939216,
+   "shuffled": 0.0008934755314840004,
+   "scales_random": [
+    5.84,
+    2.67,
+    8.09,
+    4.32,
+    6.38
+   ],
+   "changed_vs_base": 0
+  }
+ },
+ "lora_smoke": {
+  "losses": [
+   5.3708,
+   7.2909,
+   5.2451,
+   5.9034,
+   7.5755,
+   3.5591,
+   5.9311,
+   4.4253,
+   4.4003,
+   5.4414
+  ],
+  "trainable_params": 2949120,
+  "finite": true
+ },
+ "total_sec": 103.3,
+ "today_criteria": {
+  "model_ok": true,
+  "data_checks": true,
+  "blank_prefix": true,
+  "mlp_capture": true,
+  "zero_lambda": true,
+  "intervention_with_random_controls": true,
+  "lora_backward": true
+ }
+}

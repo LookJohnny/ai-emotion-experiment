@@ -1,0 +1,842 @@
+[
+ {
+  "id": "hobby08",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study12",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work08",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop16",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby14",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop07",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby04",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "hobby13",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "shop08",
+  "joy": 2,
+  "sadness": 3,
+  "anger": 3,
+  "note": "joy:对习惯8点后半价的人，全天八折实为涨价，难有直接喜悦"
+ },
+ {
+  "id": "fam06",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "fam09",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study16",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav11",
+  "joy": 5,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work16",
+  "joy": 2,
+  "sadness": 4,
+  "anger": 3,
+  "note": "joy:休息区是公共收益，对失去固定座位的人喜悦来源很弱"
+ },
+ {
+  "id": "study20",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop15",
+  "joy": 5,
+  "sadness": 2,
+  "anger": 2,
+  "note": "sadness/anger:车已卖出且多卖了钱，买家怎么处置属其自由，难过或不满都较牵强"
+ },
+ {
+  "id": "shop06",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 5,
+  "note": ""
+ },
+ {
+  "id": "hobby07",
+  "joy": 4,
+  "sadness": 5,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study19",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav03",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work12",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 5,
+  "note": ""
+ },
+ {
+  "id": "work10",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop17",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 2,
+  "note": "anger:搬进有空调停车位的室内市场是改善，无明显过错方"
+ },
+ {
+  "id": "trav18",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 5,
+  "note": ""
+ },
+ {
+  "id": "trav13",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "trav12",
+  "joy": 2,
+  "sadness": 5,
+  "anger": 5,
+  "note": "joy:错过女儿毕业典礼占主导，补偿和升舱很难带来真心高兴"
+ },
+ {
+  "id": "trav15",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "hobby20",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav05",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam10",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 2,
+  "note": "anger:奶奶来家过年属家人意愿，对奶奶不满不太自然"
+ },
+ {
+  "id": "trav04",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop04",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work13",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work03",
+  "joy": 3,
+  "sadness": 2,
+  "anger": 3,
+  "note": "sadness:只是日期推迟，事实中没有个人损失"
+ },
+ {
+  "id": "fam12",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby05",
+  "joy": 5,
+  "sadness": 5,
+  "anger": 2,
+  "note": "anger:解散是乐队自己的选择，没人亏待我"
+ },
+ {
+  "id": "work20",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study03",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam20",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "study02",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop02",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop01",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work06",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "work18",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby06",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "study05",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 2,
+  "note": "anger:按绩点选课规则公平且我选上了，不满缺乏对象"
+ },
+ {
+  "id": "fam07",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam19",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "hobby02",
+  "joy": 5,
+  "sadness": 4,
+  "anger": 2,
+  "note": "anger:评委取舍属正常评审，两张入选时抱怨评委较牵强"
+ },
+ {
+  "id": "study09",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav01",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby19",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "work19",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study14",
+  "joy": 5,
+  "sadness": 3,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "study15",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "trav10",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav08",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam02",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "fam01",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 5,
+  "note": ""
+ },
+ {
+  "id": "trav07",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby01",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work05",
+  "joy": 5,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work01",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 2,
+  "note": "anger:下午茶取消是改线上的自然副作用，无人刻意剥夺"
+ },
+ {
+  "id": "shop09",
+  "joy": 2,
+  "sadness": 3,
+  "anger": 4,
+  "note": "joy:未经询问被换货，便宜8元太小，难有真心高兴"
+ },
+ {
+  "id": "fam04",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 5,
+  "note": ""
+ },
+ {
+  "id": "shop20",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "trav14",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 2,
+  "note": "anger:刷脸登机是普遍技术进步，为收藏爱好不满较牵强"
+ },
+ {
+  "id": "shop18",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam08",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "shop13",
+  "joy": 4,
+  "sadness": 5,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby10",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "hobby17",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "work02",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "trav20",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "shop19",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study07",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study01",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work09",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work11",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby12",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav16",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 5,
+  "note": ""
+ },
+ {
+  "id": "trav19",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "fam15",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 5,
+  "note": ""
+ },
+ {
+  "id": "work17",
+  "joy": 5,
+  "sadness": 3,
+  "anger": 2,
+  "note": "anger:居家省2小时通勤是利好，午饭搭子散了难以怪公司"
+ },
+ {
+  "id": "work15",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study08",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study13",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work07",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam13",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam16",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby03",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "trav02",
+  "joy": 2,
+  "sadness": 4,
+  "anger": 4,
+  "note": "joy:失去唯一直飞、多2小时，便宜300元难令人真心高兴"
+ },
+ {
+  "id": "fam18",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav06",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work14",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "hobby16",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study10",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby15",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "fam03",
+  "joy": 2,
+  "sadness": 4,
+  "anger": 3,
+  "note": "joy:接孩子被写成被安排的任务并换掉爱好，事实里缺少直接喜悦来源"
+ },
+ {
+  "id": "study04",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop11",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 2,
+  "note": "anger:商家同意换货并包运费，停产非其过错"
+ },
+ {
+  "id": "hobby11",
+  "joy": 5,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav09",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work04",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 5,
+  "note": ""
+ },
+ {
+  "id": "fam17",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop14",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "shop05",
+  "joy": 3,
+  "sadness": 2,
+  "anger": 3,
+  "note": "sadness:剩余2只下周就补发，谈不上失望"
+ },
+ {
+  "id": "shop03",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "fam14",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam11",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby18",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study06",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "shop12",
+  "joy": 5,
+  "sadness": 3,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "trav17",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study18",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby09",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "study17",
+  "joy": 5,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam05",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop10",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "study11",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 4,
+  "note": ""
+ }
+]

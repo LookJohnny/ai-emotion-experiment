@@ -1,0 +1,15 @@
+{
+ "T0_64": {
+  "ceiling_joy": 0.196,
+  "ci95": [
+   0.079,
+   0.317
+  ],
+  "passes": false,
+  "joy_neutral": 0.454,
+  "joy_joy": 0.65,
+  "sadness_joyprefix": 1.217,
+  "fact_err": 0.181,
+  "fluency": 4.746
+ }
+}

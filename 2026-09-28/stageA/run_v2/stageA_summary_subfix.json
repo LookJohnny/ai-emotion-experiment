@@ -1,0 +1,16 @@
+{
+ "n_generations": 800,
+ "n_scenarios": 80,
+ "seconds": 732.4,
+ "peak_alloc_gib": 7.59,
+ "self_sub_identical": "160/160",
+ "first_token_match": "160/160",
+ "prefix_reproduced": "320/320",
+ "capture_path": "generate_prefill_use_cache",
+ "data_sha256": "b846dfdeb1595ac939ade078288509f257e776b400cf91f52c8677030ee5609b",
+ "env": {
+  "torch": "2.8.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "python": "3.12.3"
+ }
+}

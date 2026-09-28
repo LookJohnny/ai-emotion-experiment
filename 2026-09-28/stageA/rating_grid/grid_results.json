@@ -1,0 +1,106 @@
+{
+ "T0_64": {
+  "ceiling_joy": 0.425,
+  "ci95": [
+   0.25,
+   0.613
+  ],
+  "passes": false,
+  "joy_neutral": 0.237,
+  "joy_joy": 0.662,
+  "sadness_joyprefix": 1.062,
+  "fact_err": 0.263,
+  "fluency": 4.644
+ },
+ "T0_32": {
+  "ceiling_joy": 0.338,
+  "ci95": [
+   0.175,
+   0.512
+  ],
+  "passes": false,
+  "joy_neutral": 0.163,
+  "joy_joy": 0.5,
+  "sadness_joyprefix": 0.925,
+  "fact_err": 0.144,
+  "fluency": 4.787
+ },
+ "T1_64": {
+  "ceiling_joy": 0.263,
+  "ci95": [
+   0.013,
+   0.487
+  ],
+  "passes": false,
+  "joy_neutral": 0.275,
+  "joy_joy": 0.537,
+  "sadness_joyprefix": 1.125,
+  "fact_err": 0.3,
+  "fluency": 4.662
+ },
+ "T1_32": {
+  "ceiling_joy": 0.188,
+  "ci95": [
+   -0.025,
+   0.425
+  ],
+  "passes": false,
+  "joy_neutral": 0.2,
+  "joy_joy": 0.388,
+  "sadness_joyprefix": 1.062,
+  "fact_err": 0.3,
+  "fluency": 4.525
+ },
+ "T2_64": {
+  "ceiling_joy": 0.275,
+  "ci95": [
+   0.05,
+   0.525
+  ],
+  "passes": false,
+  "joy_neutral": 0.362,
+  "joy_joy": 0.637,
+  "sadness_joyprefix": 1.212,
+  "fact_err": 0.287,
+  "fluency": 4.644
+ },
+ "T2_32": {
+  "ceiling_joy": 0.15,
+  "ci95": [
+   -0.075,
+   0.425
+  ],
+  "passes": false,
+  "joy_neutral": 0.263,
+  "joy_joy": 0.412,
+  "sadness_joyprefix": 1.062,
+  "fact_err": 0.138,
+  "fluency": 4.844
+ },
+ "T3_64": {
+  "ceiling_joy": 0.225,
+  "ci95": [
+   0.087,
+   0.375
+  ],
+  "passes": false,
+  "joy_neutral": 0.188,
+  "joy_joy": 0.412,
+  "sadness_joyprefix": 0.963,
+  "fact_err": 0.194,
+  "fluency": 4.781
+ },
+ "T3_32": {
+  "ceiling_joy": 0.225,
+  "ci95": [
+   0.037,
+   0.412
+  ],
+  "passes": false,
+  "joy_neutral": 0.175,
+  "joy_joy": 0.4,
+  "sadness_joyprefix": 1.012,
+  "fact_err": 0.169,
+  "fluency": 4.719
+ }
+}

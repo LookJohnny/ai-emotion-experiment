@@ -1,0 +1,3362 @@
+{
+"g64_0000": {
+"scenario_id": "trav05",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0001": {
+"scenario_id": "trav18",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0002": {
+"scenario_id": "fam06",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0003": {
+"scenario_id": "trav09",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0004": {
+"scenario_id": "trav12",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0005": {
+"scenario_id": "fam04",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0006": {
+"scenario_id": "fam07",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0007": {
+"scenario_id": "fam02",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0008": {
+"scenario_id": "shop20",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0009": {
+"scenario_id": "trav06",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0010": {
+"scenario_id": "fam11",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0011": {
+"scenario_id": "fam11",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0012": {
+"scenario_id": "fam05",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0013": {
+"scenario_id": "fam19",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0014": {
+"scenario_id": "fam07",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0015": {
+"scenario_id": "trav05",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0016": {
+"scenario_id": "shop13",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0017": {
+"scenario_id": "trav09",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0018": {
+"scenario_id": "shop02",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0019": {
+"scenario_id": "fam08",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0020": {
+"scenario_id": "shop03",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0021": {
+"scenario_id": "fam12",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0022": {
+"scenario_id": "shop17",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0023": {
+"scenario_id": "shop11",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0024": {
+"scenario_id": "trav20",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0025": {
+"scenario_id": "shop10",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0026": {
+"scenario_id": "trav01",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0027": {
+"scenario_id": "trav02",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0028": {
+"scenario_id": "fam01",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0029": {
+"scenario_id": "trav14",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0030": {
+"scenario_id": "trav10",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0031": {
+"scenario_id": "shop09",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0032": {
+"scenario_id": "fam17",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0033": {
+"scenario_id": "trav19",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0034": {
+"scenario_id": "shop12",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0035": {
+"scenario_id": "fam10",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0036": {
+"scenario_id": "fam10",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0037": {
+"scenario_id": "trav01",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0038": {
+"scenario_id": "fam06",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0039": {
+"scenario_id": "shop11",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0040": {
+"scenario_id": "trav07",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0041": {
+"scenario_id": "trav14",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0042": {
+"scenario_id": "trav02",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0043": {
+"scenario_id": "shop10",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0044": {
+"scenario_id": "fam20",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0045": {
+"scenario_id": "shop18",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0046": {
+"scenario_id": "fam11",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0047": {
+"scenario_id": "fam17",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0048": {
+"scenario_id": "fam09",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0049": {
+"scenario_id": "trav19",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0050": {
+"scenario_id": "trav06",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0051": {
+"scenario_id": "shop16",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0052": {
+"scenario_id": "fam08",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0053": {
+"scenario_id": "fam07",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0054": {
+"scenario_id": "trav10",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0055": {
+"scenario_id": "trav03",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0056": {
+"scenario_id": "shop08",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0057": {
+"scenario_id": "shop17",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0058": {
+"scenario_id": "shop02",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0059": {
+"scenario_id": "fam12",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0060": {
+"scenario_id": "shop01",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0061": {
+"scenario_id": "shop07",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0062": {
+"scenario_id": "trav20",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0063": {
+"scenario_id": "fam16",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0064": {
+"scenario_id": "shop04",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0065": {
+"scenario_id": "shop17",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0066": {
+"scenario_id": "trav07",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0067": {
+"scenario_id": "fam14",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0068": {
+"scenario_id": "trav08",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0069": {
+"scenario_id": "shop15",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0070": {
+"scenario_id": "shop02",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0071": {
+"scenario_id": "shop17",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0072": {
+"scenario_id": "trav13",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0073": {
+"scenario_id": "shop11",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0074": {
+"scenario_id": "fam17",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0075": {
+"scenario_id": "shop12",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0076": {
+"scenario_id": "shop18",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0077": {
+"scenario_id": "trav05",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0078": {
+"scenario_id": "trav19",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0079": {
+"scenario_id": "shop01",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0080": {
+"scenario_id": "trav09",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0081": {
+"scenario_id": "shop09",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0082": {
+"scenario_id": "fam04",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0083": {
+"scenario_id": "shop19",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0084": {
+"scenario_id": "fam02",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0085": {
+"scenario_id": "shop01",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0086": {
+"scenario_id": "trav15",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0087": {
+"scenario_id": "trav02",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0088": {
+"scenario_id": "fam18",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0089": {
+"scenario_id": "fam03",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0090": {
+"scenario_id": "fam17",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0091": {
+"scenario_id": "fam15",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0092": {
+"scenario_id": "fam06",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0093": {
+"scenario_id": "shop08",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0094": {
+"scenario_id": "fam07",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0095": {
+"scenario_id": "fam15",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0096": {
+"scenario_id": "trav11",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0097": {
+"scenario_id": "shop14",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0098": {
+"scenario_id": "trav03",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0099": {
+"scenario_id": "trav06",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0100": {
+"scenario_id": "trav07",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0101": {
+"scenario_id": "shop14",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0102": {
+"scenario_id": "fam19",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0103": {
+"scenario_id": "shop09",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0104": {
+"scenario_id": "shop18",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0105": {
+"scenario_id": "shop13",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0106": {
+"scenario_id": "fam14",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0107": {
+"scenario_id": "trav11",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0108": {
+"scenario_id": "trav17",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0109": {
+"scenario_id": "fam03",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0110": {
+"scenario_id": "fam16",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0111": {
+"scenario_id": "shop13",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0112": {
+"scenario_id": "fam14",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0113": {
+"scenario_id": "trav04",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0114": {
+"scenario_id": "trav14",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0115": {
+"scenario_id": "fam10",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0116": {
+"scenario_id": "trav13",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0117": {
+"scenario_id": "shop07",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0118": {
+"scenario_id": "shop02",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0119": {
+"scenario_id": "fam20",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0120": {
+"scenario_id": "fam18",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0121": {
+"scenario_id": "fam09",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0122": {
+"scenario_id": "shop06",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0123": {
+"scenario_id": "shop12",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0124": {
+"scenario_id": "shop15",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0125": {
+"scenario_id": "trav11",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0126": {
+"scenario_id": "shop01",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0127": {
+"scenario_id": "trav03",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0128": {
+"scenario_id": "trav05",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0129": {
+"scenario_id": "shop19",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0130": {
+"scenario_id": "trav20",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0131": {
+"scenario_id": "shop20",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0132": {
+"scenario_id": "fam05",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0133": {
+"scenario_id": "fam06",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0134": {
+"scenario_id": "trav11",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0135": {
+"scenario_id": "shop18",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0136": {
+"scenario_id": "fam15",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0137": {
+"scenario_id": "fam16",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0138": {
+"scenario_id": "fam03",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0139": {
+"scenario_id": "fam05",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0140": {
+"scenario_id": "trav03",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0141": {
+"scenario_id": "fam03",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0142": {
+"scenario_id": "fam04",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0143": {
+"scenario_id": "fam11",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0144": {
+"scenario_id": "shop05",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0145": {
+"scenario_id": "shop03",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0146": {
+"scenario_id": "trav18",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0147": {
+"scenario_id": "trav12",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0148": {
+"scenario_id": "fam20",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0149": {
+"scenario_id": "fam05",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0150": {
+"scenario_id": "shop11",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0151": {
+"scenario_id": "fam10",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0152": {
+"scenario_id": "trav13",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0153": {
+"scenario_id": "fam09",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0154": {
+"scenario_id": "fam19",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0155": {
+"scenario_id": "trav19",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0156": {
+"scenario_id": "shop19",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0157": {
+"scenario_id": "trav09",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0158": {
+"scenario_id": "trav02",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0159": {
+"scenario_id": "trav12",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0160": {
+"scenario_id": "trav14",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0161": {
+"scenario_id": "fam02",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0162": {
+"scenario_id": "fam12",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0163": {
+"scenario_id": "shop06",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0164": {
+"scenario_id": "shop16",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0165": {
+"scenario_id": "fam08",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0166": {
+"scenario_id": "shop16",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0167": {
+"scenario_id": "shop20",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0168": {
+"scenario_id": "trav04",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0169": {
+"scenario_id": "trav10",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0170": {
+"scenario_id": "fam12",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0171": {
+"scenario_id": "trav10",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0172": {
+"scenario_id": "trav01",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0173": {
+"scenario_id": "trav08",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0174": {
+"scenario_id": "trav15",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0175": {
+"scenario_id": "fam08",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0176": {
+"scenario_id": "trav12",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0177": {
+"scenario_id": "shop14",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0178": {
+"scenario_id": "trav20",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0179": {
+"scenario_id": "fam13",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0180": {
+"scenario_id": "fam14",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0181": {
+"scenario_id": "shop05",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0182": {
+"scenario_id": "trav16",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0183": {
+"scenario_id": "fam18",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0184": {
+"scenario_id": "trav04",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0185": {
+"scenario_id": "shop13",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0186": {
+"scenario_id": "fam01",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0187": {
+"scenario_id": "fam09",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0188": {
+"scenario_id": "trav18",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0189": {
+"scenario_id": "shop07",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0190": {
+"scenario_id": "shop12",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0191": {
+"scenario_id": "fam04",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0192": {
+"scenario_id": "trav16",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0193": {
+"scenario_id": "shop20",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0194": {
+"scenario_id": "trav17",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0195": {
+"scenario_id": "shop08",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0196": {
+"scenario_id": "trav15",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0197": {
+"scenario_id": "shop10",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0198": {
+"scenario_id": "fam16",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0199": {
+"scenario_id": "shop19",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0200": {
+"scenario_id": "shop09",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0201": {
+"scenario_id": "trav16",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0202": {
+"scenario_id": "shop03",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0203": {
+"scenario_id": "shop15",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0204": {
+"scenario_id": "fam19",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0205": {
+"scenario_id": "fam20",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0206": {
+"scenario_id": "fam13",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0207": {
+"scenario_id": "trav17",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0208": {
+"scenario_id": "fam15",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0209": {
+"scenario_id": "fam18",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0210": {
+"scenario_id": "fam01",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0211": {
+"scenario_id": "fam01",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0212": {
+"scenario_id": "shop15",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0213": {
+"scenario_id": "shop08",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0214": {
+"scenario_id": "trav17",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0215": {
+"scenario_id": "fam13",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0216": {
+"scenario_id": "shop04",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0217": {
+"scenario_id": "trav08",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0218": {
+"scenario_id": "trav16",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0219": {
+"scenario_id": "shop06",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0220": {
+"scenario_id": "shop16",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0221": {
+"scenario_id": "shop05",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0222": {
+"scenario_id": "trav07",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0223": {
+"scenario_id": "trav08",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0224": {
+"scenario_id": "shop06",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0225": {
+"scenario_id": "shop03",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0226": {
+"scenario_id": "shop14",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0227": {
+"scenario_id": "trav13",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0228": {
+"scenario_id": "shop04",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0229": {
+"scenario_id": "trav18",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0230": {
+"scenario_id": "trav04",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0231": {
+"scenario_id": "shop07",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0232": {
+"scenario_id": "trav15",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0233": {
+"scenario_id": "fam13",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0234": {
+"scenario_id": "shop05",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0235": {
+"scenario_id": "shop04",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0236": {
+"scenario_id": "fam02",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0237": {
+"scenario_id": "trav06",
+"paraphrase": "B",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_joy"
+},
+"g64_0238": {
+"scenario_id": "shop10",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g64_0239": {
+"scenario_id": "trav01",
+"paraphrase": "A",
+"tail": "T0",
+"length": "64",
+"condition": "prefix_neutral"
+},
+"g32_0000": {
+"scenario_id": "shop12",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0001": {
+"scenario_id": "fam08",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0002": {
+"scenario_id": "trav04",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0003": {
+"scenario_id": "trav08",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0004": {
+"scenario_id": "trav18",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0005": {
+"scenario_id": "shop15",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0006": {
+"scenario_id": "trav09",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0007": {
+"scenario_id": "trav16",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0008": {
+"scenario_id": "shop19",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0009": {
+"scenario_id": "shop12",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0010": {
+"scenario_id": "trav12",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0011": {
+"scenario_id": "trav07",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0012": {
+"scenario_id": "fam06",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0013": {
+"scenario_id": "shop01",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0014": {
+"scenario_id": "fam02",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0015": {
+"scenario_id": "fam05",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0016": {
+"scenario_id": "fam13",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0017": {
+"scenario_id": "fam14",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0018": {
+"scenario_id": "shop18",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0019": {
+"scenario_id": "shop16",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0020": {
+"scenario_id": "shop10",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0021": {
+"scenario_id": "trav06",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0022": {
+"scenario_id": "shop09",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0023": {
+"scenario_id": "fam03",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0024": {
+"scenario_id": "shop08",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0025": {
+"scenario_id": "shop12",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0026": {
+"scenario_id": "trav12",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0027": {
+"scenario_id": "trav15",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0028": {
+"scenario_id": "shop03",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0029": {
+"scenario_id": "fam18",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0030": {
+"scenario_id": "shop16",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0031": {
+"scenario_id": "fam03",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0032": {
+"scenario_id": "trav19",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0033": {
+"scenario_id": "fam02",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0034": {
+"scenario_id": "fam09",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0035": {
+"scenario_id": "fam01",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0036": {
+"scenario_id": "shop13",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0037": {
+"scenario_id": "shop03",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0038": {
+"scenario_id": "shop19",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0039": {
+"scenario_id": "shop18",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0040": {
+"scenario_id": "shop02",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0041": {
+"scenario_id": "shop04",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0042": {
+"scenario_id": "shop08",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0043": {
+"scenario_id": "fam09",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0044": {
+"scenario_id": "shop05",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0045": {
+"scenario_id": "fam07",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0046": {
+"scenario_id": "fam17",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0047": {
+"scenario_id": "shop14",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0048": {
+"scenario_id": "fam19",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0049": {
+"scenario_id": "fam05",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0050": {
+"scenario_id": "shop03",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0051": {
+"scenario_id": "trav17",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0052": {
+"scenario_id": "trav05",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0053": {
+"scenario_id": "shop19",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0054": {
+"scenario_id": "trav09",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0055": {
+"scenario_id": "trav09",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0056": {
+"scenario_id": "trav05",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0057": {
+"scenario_id": "trav19",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0058": {
+"scenario_id": "shop07",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0059": {
+"scenario_id": "shop20",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0060": {
+"scenario_id": "shop11",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0061": {
+"scenario_id": "shop02",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0062": {
+"scenario_id": "fam10",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0063": {
+"scenario_id": "fam04",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0064": {
+"scenario_id": "fam09",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0065": {
+"scenario_id": "trav08",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0066": {
+"scenario_id": "shop14",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0067": {
+"scenario_id": "shop05",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0068": {
+"scenario_id": "trav01",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0069": {
+"scenario_id": "fam08",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0070": {
+"scenario_id": "trav13",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0071": {
+"scenario_id": "trav07",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0072": {
+"scenario_id": "trav04",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0073": {
+"scenario_id": "trav01",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0074": {
+"scenario_id": "fam03",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0075": {
+"scenario_id": "shop18",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0076": {
+"scenario_id": "trav01",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0077": {
+"scenario_id": "fam16",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0078": {
+"scenario_id": "fam19",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0079": {
+"scenario_id": "shop07",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0080": {
+"scenario_id": "trav12",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0081": {
+"scenario_id": "fam01",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0082": {
+"scenario_id": "fam15",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0083": {
+"scenario_id": "shop20",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0084": {
+"scenario_id": "trav07",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0085": {
+"scenario_id": "fam15",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0086": {
+"scenario_id": "shop03",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0087": {
+"scenario_id": "trav18",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0088": {
+"scenario_id": "trav05",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0089": {
+"scenario_id": "fam18",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0090": {
+"scenario_id": "trav16",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0091": {
+"scenario_id": "shop04",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0092": {
+"scenario_id": "fam04",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0093": {
+"scenario_id": "trav17",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0094": {
+"scenario_id": "shop07",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0095": {
+"scenario_id": "shop08",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0096": {
+"scenario_id": "trav13",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0097": {
+"scenario_id": "trav10",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0098": {
+"scenario_id": "shop04",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0099": {
+"scenario_id": "trav13",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0100": {
+"scenario_id": "trav06",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0101": {
+"scenario_id": "fam20",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0102": {
+"scenario_id": "trav08",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0103": {
+"scenario_id": "fam14",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0104": {
+"scenario_id": "fam20",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0105": {
+"scenario_id": "trav02",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0106": {
+"scenario_id": "shop11",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0107": {
+"scenario_id": "trav16",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0108": {
+"scenario_id": "fam16",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0109": {
+"scenario_id": "trav14",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0110": {
+"scenario_id": "trav04",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0111": {
+"scenario_id": "shop20",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0112": {
+"scenario_id": "shop16",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0113": {
+"scenario_id": "shop05",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0114": {
+"scenario_id": "fam04",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0115": {
+"scenario_id": "shop05",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0116": {
+"scenario_id": "fam06",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0117": {
+"scenario_id": "trav20",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0118": {
+"scenario_id": "fam14",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0119": {
+"scenario_id": "shop20",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0120": {
+"scenario_id": "shop06",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0121": {
+"scenario_id": "fam05",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0122": {
+"scenario_id": "fam20",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0123": {
+"scenario_id": "trav17",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0124": {
+"scenario_id": "shop01",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0125": {
+"scenario_id": "shop17",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0126": {
+"scenario_id": "shop17",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0127": {
+"scenario_id": "fam01",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0128": {
+"scenario_id": "trav18",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0129": {
+"scenario_id": "trav15",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0130": {
+"scenario_id": "trav14",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0131": {
+"scenario_id": "trav10",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0132": {
+"scenario_id": "trav03",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0133": {
+"scenario_id": "shop04",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0134": {
+"scenario_id": "trav20",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0135": {
+"scenario_id": "trav07",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0136": {
+"scenario_id": "fam18",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0137": {
+"scenario_id": "trav01",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0138": {
+"scenario_id": "fam16",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0139": {
+"scenario_id": "fam19",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0140": {
+"scenario_id": "shop19",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0141": {
+"scenario_id": "trav17",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0142": {
+"scenario_id": "shop17",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0143": {
+"scenario_id": "fam06",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0144": {
+"scenario_id": "shop14",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0145": {
+"scenario_id": "fam17",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0146": {
+"scenario_id": "fam04",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0147": {
+"scenario_id": "shop09",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0148": {
+"scenario_id": "trav14",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0149": {
+"scenario_id": "fam10",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0150": {
+"scenario_id": "shop01",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0151": {
+"scenario_id": "shop02",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0152": {
+"scenario_id": "shop09",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0153": {
+"scenario_id": "fam12",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0154": {
+"scenario_id": "trav16",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0155": {
+"scenario_id": "shop10",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0156": {
+"scenario_id": "fam11",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0157": {
+"scenario_id": "trav11",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0158": {
+"scenario_id": "trav19",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0159": {
+"scenario_id": "fam08",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0160": {
+"scenario_id": "shop10",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0161": {
+"scenario_id": "trav10",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0162": {
+"scenario_id": "trav18",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0163": {
+"scenario_id": "shop10",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0164": {
+"scenario_id": "fam13",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0165": {
+"scenario_id": "shop09",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0166": {
+"scenario_id": "shop11",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0167": {
+"scenario_id": "shop11",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0168": {
+"scenario_id": "fam06",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0169": {
+"scenario_id": "fam16",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0170": {
+"scenario_id": "trav10",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0171": {
+"scenario_id": "trav06",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0172": {
+"scenario_id": "shop06",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0173": {
+"scenario_id": "trav02",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0174": {
+"scenario_id": "fam19",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0175": {
+"scenario_id": "trav08",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0176": {
+"scenario_id": "shop12",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0177": {
+"scenario_id": "fam07",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0178": {
+"scenario_id": "fam15",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0179": {
+"scenario_id": "trav05",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0180": {
+"scenario_id": "shop08",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0181": {
+"scenario_id": "fam03",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0182": {
+"scenario_id": "shop06",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0183": {
+"scenario_id": "fam02",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0184": {
+"scenario_id": "fam11",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0185": {
+"scenario_id": "fam02",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0186": {
+"scenario_id": "trav11",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0187": {
+"scenario_id": "shop01",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0188": {
+"scenario_id": "fam18",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0189": {
+"scenario_id": "trav20",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0190": {
+"scenario_id": "trav11",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0191": {
+"scenario_id": "shop14",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0192": {
+"scenario_id": "trav02",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0193": {
+"scenario_id": "shop13",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0194": {
+"scenario_id": "fam13",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0195": {
+"scenario_id": "fam17",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0196": {
+"scenario_id": "shop07",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0197": {
+"scenario_id": "shop15",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0198": {
+"scenario_id": "shop06",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0199": {
+"scenario_id": "trav04",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0200": {
+"scenario_id": "trav03",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0201": {
+"scenario_id": "fam07",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0202": {
+"scenario_id": "trav09",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0203": {
+"scenario_id": "trav03",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0204": {
+"scenario_id": "trav19",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0205": {
+"scenario_id": "fam05",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0206": {
+"scenario_id": "fam17",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0207": {
+"scenario_id": "shop17",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0208": {
+"scenario_id": "trav11",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0209": {
+"scenario_id": "shop18",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0210": {
+"scenario_id": "fam11",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0211": {
+"scenario_id": "fam14",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0212": {
+"scenario_id": "shop02",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0213": {
+"scenario_id": "fam07",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0214": {
+"scenario_id": "trav03",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0215": {
+"scenario_id": "trav12",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0216": {
+"scenario_id": "trav14",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0217": {
+"scenario_id": "shop13",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0218": {
+"scenario_id": "shop15",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0219": {
+"scenario_id": "fam12",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0220": {
+"scenario_id": "fam08",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0221": {
+"scenario_id": "trav06",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0222": {
+"scenario_id": "fam13",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0223": {
+"scenario_id": "shop16",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0224": {
+"scenario_id": "fam12",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0225": {
+"scenario_id": "shop13",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0226": {
+"scenario_id": "fam15",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0227": {
+"scenario_id": "fam09",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0228": {
+"scenario_id": "fam11",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0229": {
+"scenario_id": "fam12",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0230": {
+"scenario_id": "trav20",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0231": {
+"scenario_id": "fam20",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0232": {
+"scenario_id": "fam01",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0233": {
+"scenario_id": "trav02",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0234": {
+"scenario_id": "trav13",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0235": {
+"scenario_id": "fam10",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0236": {
+"scenario_id": "trav15",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_neutral"
+},
+"g32_0237": {
+"scenario_id": "trav15",
+"paraphrase": "A",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0238": {
+"scenario_id": "shop15",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+},
+"g32_0239": {
+"scenario_id": "fam10",
+"paraphrase": "B",
+"tail": "T0",
+"length": "32",
+"condition": "prefix_joy"
+}
+}

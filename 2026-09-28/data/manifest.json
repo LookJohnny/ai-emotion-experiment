@@ -1,0 +1,116 @@
+{
+ "version": "draft-v2",
+ "created": "2026-09-28",
+ "status": "DRAFT_v2_needs_human_review",
+ "provenance": "Drafted by 6 parallel Claude Opus 5.5 subagents following data/BRIEF.md; validated by validate_topic.py; not yet human-reviewed; v2: all scenarios rewritten to 3-element mixed events (BRIEF.md v2 addendum), iterated against blind plausibility raters",
+ "split_rule": {
+  "shop": "discovery",
+  "trav": "discovery",
+  "fam": "discovery",
+  "study": "validation",
+  "work": "test",
+  "hobby": "test"
+ },
+ "anchor_tail": "我的看法是：",
+ "user_prompt_template": "请根据下面事实，以第一人称写一段简短回应，保留时间、地点和数量等信息。事实：{facts}",
+ "sha256": {
+  "formal_960.jsonl": "b846dfdeb1595ac939ade078288509f257e776b400cf91f52c8677030ee5609b",
+  "controls_48.jsonl": "c1c30253b23858b6a65f5c3e403d5729e4db235f27d3defc4ff6ff68180ca9ed",
+  "draft/shop.json": "00b34ab55e5604d1b243b72289d8a33cc3d3de55b4221358bd25475e4cfadc24",
+  "draft/trav.json": "dfe2512507a3ccbba59f3fc882cbbc6bfdf56416a85e9c1533eacb1a5a82d4f1",
+  "draft/fam.json": "dbe1c38a5b7aa16972194f036aa8506013e2c8dfe8d6a9afe022c6fda403d380",
+  "draft/study.json": "6fbfb447c289127f10586a125110ec7a037d226a2aaded2f23986829ca0c95d4",
+  "draft/work.json": "83c5eef995f8c8b69f0559d1a627082227c6ea7e052e99b506bcd26c65fe836d",
+  "draft/hobby.json": "ed896448f843e62ad6f0044a699334765de1eee1f4d64621ddc9e1285e663fdd"
+ },
+ "stats": {
+  "n_scenarios": 120,
+  "n_main": 960,
+  "n_controls": 48,
+  "by_split": {
+   "discovery": 480,
+   "validation": 160,
+   "test": 320
+  },
+  "lead_chars_mean_by_emotion": {
+   "joy": 13.68,
+   "sadness": 14.15,
+   "anger": 13.83,
+   "neutral": 13.07
+  },
+  "lead_chars_mean_by_emotion_paraphrase": {
+   "joy.A": 13.52,
+   "joy.B": 13.85,
+   "sadness.A": 13.63,
+   "sadness.B": 14.66,
+   "anger.A": 13.6,
+   "anger.B": 14.06,
+   "neutral.A": 12.79,
+   "neutral.B": 13.36
+  },
+  "suffix_chars_mean_by_emotion": {
+   "joy": 36.08,
+   "sadness": 38.08,
+   "anger": 38.22,
+   "neutral": 32.73
+  },
+  "category_word_rate_A_by_emotion": {
+   "joy": 0.83,
+   "sadness": 0.99,
+   "anger": 0.97,
+   "neutral": 0
+  },
+  "commas_in_lead_by_emotion": {
+   "joy": 0.62,
+   "sadness": 0.66,
+   "anger": 0.54,
+   "neutral": 0.6
+  },
+  "cross_topic_similar_facts_gt_0.35": [],
+  "duplicate_anchors": []
+ },
+ "test_set_note": "test split (work, hobby) is sealed: may be proofread for data quality only, never used for localization/tuning",
+ "plausibility": {
+  "method": "independent blind LLM raters (fresh agent each round, facts only, shuffled order), 1-5 per emotion; combined = mean of raters that saw the current version",
+  "criterion_agreed": "combined mean >=2.5 on all three emotions in >=90% of scenarios",
+  "final_combined_mean_ge_2.5": "120/120",
+  "final_combined_mean_ge_3": "120/120",
+  "by_split": {
+   "discovery": {
+    "mean": {
+     "joy": 3.56,
+     "sadness": 3.81,
+     "anger": 3.66
+    },
+    "pass_2_5": "60/60"
+   },
+   "validation": {
+    "mean": {
+     "joy": 3.83,
+     "sadness": 3.82,
+     "anger": 3.4
+    },
+    "pass_2_5": "20/20"
+   },
+   "test": {
+    "mean": {
+     "joy": 3.88,
+     "sadness": 3.89,
+     "anger": 3.7
+    },
+    "pass_2_5": "40/40"
+   }
+  },
+  "weak_scenarios": [],
+  "history": {
+   "v1_single_all_ge3": "6/120",
+   "v2_round2": "103/120",
+   "v3_round3": "98/120 (rater noise, inter-rater |Δ|=0.24)",
+   "v4_round4": "102/120"
+  },
+  "rater_files": [
+   "plausibility_blind_v1..v4.json",
+   "plausibility_v5a/b..v8a/b.json"
+  ]
+ }
+}

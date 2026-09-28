@@ -1,0 +1,268 @@
+{
+  "experiment_id": "E01-20260928-v2.1",
+  "status": "stageA_done_primary_switched_to_anger",
+  "model": {
+    "id": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "revision_note": "ModelScope copy; all 3 safetensors sha256 verified equal to HF commit",
+    "dtype": "bfloat16",
+    "quantization": null,
+    "attention_implementation": "sdpa",
+    "max_sequence_tokens": 512,
+    "microbatch_size": 1,
+    "attention": {
+      "num_attention_heads": 32,
+      "num_key_value_heads": 8,
+      "head_dim": 128,
+      "head_output_hook": "self_attn.o_proj forward_pre_hook, slice h*128:(h+1)*128"
+    }
+  },
+  "data": {
+    "debug_scenarios_excluded": 12,
+    "discovery_scenarios": 60,
+    "validation_scenarios": 20,
+    "test_scenarios": 40,
+    "emotions": [
+      "joy",
+      "sadness",
+      "anger",
+      "neutral"
+    ],
+    "paraphrases_per_emotion": 2,
+    "formal_records": 960,
+    "additional_control_records": 48,
+    "split_unit": "scenario_family",
+    "labels_in_model_input": false,
+    "test_domains": [
+      "work_collaboration",
+      "hobby_activities"
+    ]
+  },
+  "observation": {
+    "representation": "gated_mlp_input_to_down_proj",
+    "debug_layer_indices": [
+      8,
+      17,
+      26,
+      35
+    ],
+    "formal_layer_indices": "all_36_zero_based",
+    "position": "last_token_of_verified_common_anchor",
+    "save_full_token_activations": false,
+    "candidate_set_size": 32,
+    "discovery_bootstrap_replicates": 100
+  },
+  "causal_primary": {
+    "contrast": "anger_vs_neutral",
+    "recipient_prefix": "neutral_style_lead_and_common_anchor",
+    "donor_prefix": "anger_style_lead_and_same_common_anchor",
+    "operation": "object_specific_see_EXPERIMENT_5.2",
+    "intervention_positions": "all_common_anchor_tokens",
+    "lambda_validation_grid": {
+      "head_set": [
+        0.5,
+        1.0
+      ],
+      "direction": [
+        0.5,
+        1,
+        2,
+        4
+      ],
+      "mlp_units": [
+        0.5,
+        1,
+        2
+      ]
+    },
+    "selected_layer": null,
+    "selected_lambda": null,
+    "matched_random_sets": 5,
+    "random_set_seeds": [
+      101,
+      102,
+      103,
+      104,
+      105
+    ],
+    "label_shuffle_seed": 201,
+    "conditions": [
+      "no_intervention",
+      "target",
+      "random_101",
+      "random_102",
+      "random_103",
+      "random_104",
+      "random_105",
+      "label_shuffled",
+      "full_anchor_substitution",
+      "joy_prefix"
+    ],
+    "test_paraphrase": "A",
+    "expected_test_completions": 400,
+    "generation": {
+      "do_sample": false,
+      "max_new_tokens": 64
+    },
+    "comparison": "target_minus_mean_of_five_random_sets_per_scenario",
+    "independent_unit": "scenario",
+    "human_raters": 2,
+    "bootstrap_replicates": 10000,
+    "confidence_level": 0.95,
+    "primary_object_rule": "head_set if <=16 heads reach 50% of attention-window effect and bootstrap Jaccard>=0.5, else residual_direction; mlp_units always secondary",
+    "random_scale_ood_flag": 4.0
+  },
+  "proposed_progression_gates_not_observed": {
+    "joy_score_scale": [
+      0,
+      4
+    ],
+    "effect_ci_lower_gt": 0,
+    "target_vs_no_intervention_effect_ci_lower_gt": 0,
+    "continuation_factual_consistency_difference_ci_lower_gt": -0.05,
+    "fluency_difference_ci_lower_gt": -0.3,
+    "inconclusive_ci_policy": "collect_more_independent_scenarios",
+    "target_minus_random_min": "0.5 * (anchor_mediated_ceiling - no_intervention)",
+    "specificity_ci_lower_gt": 0,
+    "requires_stage_A_pass": true
+  },
+  "free_generation_secondary": {
+    "no_emotion_instruction_or_emotional_prefix": true,
+    "direction_source": "discovery_only",
+    "intervene_first_n_prediction_positions": 32,
+    "strength_selection": "validation_only",
+    "sampling_seeds": [
+      11,
+      22,
+      33
+    ],
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20
+  },
+  "lora_secondary": {
+    "start_after_base_causal_gate": true,
+    "groups": [
+      "anger",
+      "neutral_control"
+    ],
+    "records_per_group": 120,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "learning_rate": 0.0001,
+    "weight_decay": 0,
+    "warmup_ratio": 0.1,
+    "epochs": 3,
+    "microbatch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "gradient_checkpointing": true,
+    "use_cache": false,
+    "max_grad_norm": 1,
+    "train_seeds": [
+      11,
+      22,
+      33
+    ],
+    "loss_on_assistant_only": true,
+    "remove_observation_hooks_during_training": true
+  },
+  "budget": {
+    "total_user_budget_cny": 500,
+    "actual_hourly_rate_cny": null,
+    "already_spent_cny": null,
+    "stage_gpu_hour_caps": {
+      "smoke": 2,
+      "ceiling_localization_validation": 6,
+      "causal": 8,
+      "lora": 8,
+      "demo_repeats": 6
+    },
+    "initial_total_gpu_hour_cap": 30,
+    "note": "Caps are not runtime estimates. Account for existing spend, storage and external API fees.",
+    "smoke_used_gpu_hours_approx": 0.6
+  },
+  "environment_measured": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.6",
+    "peft": "0.21.0",
+    "driver": "595.71.05",
+    "smoke_peak_alloc_gib": 8.14
+  },
+  "stage_A_ceiling": {
+    "conditions": [
+      "neutral_prefix",
+      "joy_prefix",
+      "full_anchor_substitution"
+    ],
+    "gate": "validation prefix-ceiling joy score >= 0.5/4 and CI lower > 0",
+    "on_fail": "revise anchor tail / continuation length on validation only"
+  },
+  "localization": {
+    "metric": "teacher_forced_recovery",
+    "continuation_tokens": 24,
+    "donors": [
+      "joy",
+      "sadness",
+      "anger"
+    ],
+    "aggregation": "ratio_of_sums_plus_scenario_bootstrap",
+    "small_gap_flag_nats": 2,
+    "B1_sites": [
+      "resid_last",
+      "resid_all_anchor",
+      "attn_out_all_anchor",
+      "mlp_out_all_anchor"
+    ],
+    "B1_layers": "all_36",
+    "B2_windows": [
+      "L16-23",
+      "L12-27",
+      "L8-31",
+      "L0-35"
+    ],
+    "B3_heads": {
+      "within": "best_attention_window",
+      "greedy_targets": [
+        0.5,
+        0.8
+      ]
+    },
+    "B4": [
+      "residual_mean_diff_direction_at_peak_layer",
+      "cross_layer_mlp_unit_set_secondary"
+    ],
+    "bootstrap_replicates": 100
+  },
+  "stageA_results": {
+    "joy_ceiling_validation": "0.35-0.43",
+    "joy_ceiling_discovery": [
+      0.196,
+      [
+        0.079,
+        0.317
+      ]
+    ],
+    "anger_effect_validation": [
+      1.075,
+      [
+        0.713,
+        1.45
+      ]
+    ],
+    "anger_effect_discovery": [
+      1.146,
+      [
+        0.958,
+        1.325
+      ]
+    ],
+    "raters": "2 blind LLM raters (provisional)",
+    "anchor_tail": "我的看法是：",
+    "cont_tokens": 64
+  }
+}

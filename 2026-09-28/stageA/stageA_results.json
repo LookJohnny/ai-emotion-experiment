@@ -1,0 +1,94 @@
+{
+ "validation": {
+  "n_scenarios": 20,
+  "means": {
+   "anchor_sub_joy": {
+    "joy": 0.338,
+    "sadness": 1.1,
+    "anger": 0.188,
+    "fluency": 4.7,
+    "new_fact_error": 0.275
+   },
+   "prefix_anger": {
+    "joy": 0.05,
+    "sadness": 1.525,
+    "anger": 1.288,
+    "fluency": 4.513,
+    "new_fact_error": 0.312
+   },
+   "prefix_joy": {
+    "joy": 0.525,
+    "sadness": 1.05,
+    "anger": 0.188,
+    "fluency": 4.688,
+    "new_fact_error": 0.362
+   },
+   "prefix_neutral": {
+    "joy": 0.175,
+    "sadness": 1.012,
+    "anger": 0.212,
+    "fluency": 4.625,
+    "new_fact_error": 0.25
+   },
+   "prefix_sadness": {
+    "joy": 0.113,
+    "sadness": 1.462,
+    "anger": 0.525,
+    "fluency": 4.75,
+    "new_fact_error": 0.25
+   }
+  },
+  "prefix_ceiling_joy": {
+   "mean": 0.35,
+   "ci95": [
+    0.188,
+    0.512
+   ],
+   "n": 20
+  },
+  "anchor_ceiling_joy": {
+   "mean": 0.163,
+   "ci95": [
+    0.013,
+    0.35
+   ],
+   "n": 20
+  },
+  "prefix_sadness_effect": {
+   "mean": 0.45,
+   "ci95": [
+    0.225,
+    0.675
+   ],
+   "n": 20
+  },
+  "prefix_anger_effect": {
+   "mean": 1.075,
+   "ci95": [
+    0.713,
+    1.45
+   ],
+   "n": 20
+  },
+  "anchor_sub_fact_error_delta": {
+   "mean": 0.025,
+   "ci95": [
+    -0.15,
+    0.175
+   ],
+   "n": 20
+  },
+  "anchor_sub_fluency_delta": {
+   "mean": 0.075,
+   "ci95": [
+    -0.188,
+    0.375
+   ],
+   "n": 20
+  },
+  "gate_A": {
+   "rule": "prefix ceiling joy >= 0.5/4 and CI lower > 0 (validation)",
+   "passed": false
+  }
+ }
+}

@@ -1,0 +1,4802 @@
+{
+"val0000": {
+"scenario_id": "study20",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0001": {
+"scenario_id": "study02",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0002": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0003": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0004": {
+"scenario_id": "study15",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0005": {
+"scenario_id": "study15",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0006": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0007": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0008": {
+"scenario_id": "study03",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0009": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0010": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0011": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0012": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0013": {
+"scenario_id": "study14",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0014": {
+"scenario_id": "study07",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0015": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0016": {
+"scenario_id": "study05",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0017": {
+"scenario_id": "study12",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0018": {
+"scenario_id": "study04",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0019": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0020": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0021": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0022": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0023": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0024": {
+"scenario_id": "study03",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0025": {
+"scenario_id": "study12",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0026": {
+"scenario_id": "study06",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0027": {
+"scenario_id": "study20",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0028": {
+"scenario_id": "study18",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0029": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0030": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0031": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0032": {
+"scenario_id": "study16",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0033": {
+"scenario_id": "study14",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0034": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0035": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0036": {
+"scenario_id": "study18",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0037": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0038": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0039": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0040": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0041": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0042": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0043": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0044": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0045": {
+"scenario_id": "study04",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0046": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0047": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0048": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0049": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0050": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0051": {
+"scenario_id": "study11",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0052": {
+"scenario_id": "study04",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0053": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0054": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0055": {
+"scenario_id": "study11",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0056": {
+"scenario_id": "study10",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0057": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0058": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0059": {
+"scenario_id": "study13",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0060": {
+"scenario_id": "study05",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0061": {
+"scenario_id": "study10",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0062": {
+"scenario_id": "study04",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0063": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0064": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0065": {
+"scenario_id": "study05",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0066": {
+"scenario_id": "study05",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0067": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0068": {
+"scenario_id": "study19",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0069": {
+"scenario_id": "study10",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0070": {
+"scenario_id": "study08",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0071": {
+"scenario_id": "study02",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0072": {
+"scenario_id": "study10",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0073": {
+"scenario_id": "study09",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0074": {
+"scenario_id": "study16",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0075": {
+"scenario_id": "study10",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0076": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0077": {
+"scenario_id": "study16",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0078": {
+"scenario_id": "study11",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0079": {
+"scenario_id": "study07",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0080": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0081": {
+"scenario_id": "study20",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0082": {
+"scenario_id": "study18",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0083": {
+"scenario_id": "study04",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0084": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0085": {
+"scenario_id": "study17",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0086": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0087": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0088": {
+"scenario_id": "study03",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0089": {
+"scenario_id": "study06",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0090": {
+"scenario_id": "study16",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0091": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0092": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0093": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0094": {
+"scenario_id": "study02",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0095": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0096": {
+"scenario_id": "study14",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0097": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0098": {
+"scenario_id": "study09",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0099": {
+"scenario_id": "study05",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0100": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0101": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0102": {
+"scenario_id": "study17",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0103": {
+"scenario_id": "study13",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0104": {
+"scenario_id": "study03",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0105": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0106": {
+"scenario_id": "study19",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0107": {
+"scenario_id": "study01",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0108": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0109": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0110": {
+"scenario_id": "study13",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0111": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0112": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0113": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0114": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0115": {
+"scenario_id": "study13",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0116": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0117": {
+"scenario_id": "study19",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0118": {
+"scenario_id": "study16",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0119": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0120": {
+"scenario_id": "study12",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0121": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0122": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0123": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0124": {
+"scenario_id": "study09",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0125": {
+"scenario_id": "study15",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0126": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0127": {
+"scenario_id": "study17",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0128": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0129": {
+"scenario_id": "study12",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0130": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0131": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0132": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0133": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0134": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0135": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0136": {
+"scenario_id": "study12",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0137": {
+"scenario_id": "study03",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0138": {
+"scenario_id": "study01",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0139": {
+"scenario_id": "study14",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0140": {
+"scenario_id": "study19",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0141": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0142": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0143": {
+"scenario_id": "study08",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0144": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0145": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0146": {
+"scenario_id": "study02",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0147": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0148": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0149": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0150": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0151": {
+"scenario_id": "study14",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0152": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0153": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0154": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0155": {
+"scenario_id": "study08",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0156": {
+"scenario_id": "study20",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0157": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0158": {
+"scenario_id": "study06",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0159": {
+"scenario_id": "study07",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0160": {
+"scenario_id": "study15",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0161": {
+"scenario_id": "study06",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0162": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0163": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0164": {
+"scenario_id": "study19",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0165": {
+"scenario_id": "study01",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0166": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0167": {
+"scenario_id": "study08",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0168": {
+"scenario_id": "study01",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0169": {
+"scenario_id": "study18",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0170": {
+"scenario_id": "study09",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0171": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0172": {
+"scenario_id": "study02",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0173": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0174": {
+"scenario_id": "study17",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0175": {
+"scenario_id": "study07",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0176": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0177": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0178": {
+"scenario_id": "study13",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0179": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0180": {
+"scenario_id": "study06",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0181": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0182": {
+"scenario_id": "study01",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0183": {
+"scenario_id": "study15",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0184": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0185": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0186": {
+"scenario_id": "study11",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0187": {
+"scenario_id": "study11",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0188": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0189": {
+"scenario_id": "study20",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0190": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0191": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "validation"
+},
+"val0192": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0193": {
+"scenario_id": "study07",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "validation"
+},
+"val0194": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0195": {
+"scenario_id": "study17",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0196": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"val0197": {
+"scenario_id": "study09",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "validation"
+},
+"val0198": {
+"scenario_id": "study18",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "validation"
+},
+"val0199": {
+"scenario_id": "study08",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "validation"
+},
+"dis0000": {
+"scenario_id": "fam16",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0001": {
+"scenario_id": "fam08",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0002": {
+"scenario_id": "trav05",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0003": {
+"scenario_id": "shop20",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0004": {
+"scenario_id": "fam09",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0005": {
+"scenario_id": "fam04",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0006": {
+"scenario_id": "shop06",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0007": {
+"scenario_id": "trav04",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0008": {
+"scenario_id": "shop16",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0009": {
+"scenario_id": "trav02",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0010": {
+"scenario_id": "shop05",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0011": {
+"scenario_id": "fam07",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0012": {
+"scenario_id": "trav04",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0013": {
+"scenario_id": "shop03",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0014": {
+"scenario_id": "fam11",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0015": {
+"scenario_id": "trav19",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0016": {
+"scenario_id": "shop11",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0017": {
+"scenario_id": "trav04",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0018": {
+"scenario_id": "trav18",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0019": {
+"scenario_id": "shop11",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0020": {
+"scenario_id": "trav02",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0021": {
+"scenario_id": "fam08",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0022": {
+"scenario_id": "trav12",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0023": {
+"scenario_id": "trav12",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0024": {
+"scenario_id": "shop06",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0025": {
+"scenario_id": "trav06",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0026": {
+"scenario_id": "fam19",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0027": {
+"scenario_id": "shop07",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0028": {
+"scenario_id": "fam10",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0029": {
+"scenario_id": "fam18",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0030": {
+"scenario_id": "shop11",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0031": {
+"scenario_id": "trav11",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0032": {
+"scenario_id": "fam01",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0033": {
+"scenario_id": "shop11",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0034": {
+"scenario_id": "shop18",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0035": {
+"scenario_id": "trav17",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0036": {
+"scenario_id": "fam06",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0037": {
+"scenario_id": "fam01",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0038": {
+"scenario_id": "fam05",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0039": {
+"scenario_id": "trav10",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0040": {
+"scenario_id": "trav05",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0041": {
+"scenario_id": "trav19",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0042": {
+"scenario_id": "fam06",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0043": {
+"scenario_id": "shop08",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0044": {
+"scenario_id": "shop06",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0045": {
+"scenario_id": "trav14",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0046": {
+"scenario_id": "shop05",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0047": {
+"scenario_id": "trav17",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0048": {
+"scenario_id": "shop09",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0049": {
+"scenario_id": "shop01",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0050": {
+"scenario_id": "trav13",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0051": {
+"scenario_id": "fam17",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0052": {
+"scenario_id": "trav15",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0053": {
+"scenario_id": "fam09",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0054": {
+"scenario_id": "shop17",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0055": {
+"scenario_id": "shop07",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0056": {
+"scenario_id": "shop04",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0057": {
+"scenario_id": "trav02",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0058": {
+"scenario_id": "trav19",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0059": {
+"scenario_id": "fam19",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0060": {
+"scenario_id": "fam09",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0061": {
+"scenario_id": "fam04",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0062": {
+"scenario_id": "trav11",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0063": {
+"scenario_id": "shop02",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0064": {
+"scenario_id": "shop01",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0065": {
+"scenario_id": "trav20",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0066": {
+"scenario_id": "shop02",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0067": {
+"scenario_id": "fam18",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0068": {
+"scenario_id": "shop08",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0069": {
+"scenario_id": "trav06",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0070": {
+"scenario_id": "shop17",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0071": {
+"scenario_id": "shop16",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0072": {
+"scenario_id": "trav16",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0073": {
+"scenario_id": "trav13",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0074": {
+"scenario_id": "shop03",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0075": {
+"scenario_id": "fam11",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0076": {
+"scenario_id": "trav16",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0077": {
+"scenario_id": "trav15",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0078": {
+"scenario_id": "fam19",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0079": {
+"scenario_id": "trav03",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0080": {
+"scenario_id": "trav10",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0081": {
+"scenario_id": "fam04",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0082": {
+"scenario_id": "trav11",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0083": {
+"scenario_id": "fam10",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0084": {
+"scenario_id": "fam14",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0085": {
+"scenario_id": "shop04",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0086": {
+"scenario_id": "fam04",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0087": {
+"scenario_id": "trav04",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0088": {
+"scenario_id": "fam03",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0089": {
+"scenario_id": "trav10",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0090": {
+"scenario_id": "shop19",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0091": {
+"scenario_id": "fam20",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0092": {
+"scenario_id": "trav18",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0093": {
+"scenario_id": "fam11",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0094": {
+"scenario_id": "trav07",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0095": {
+"scenario_id": "shop11",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0096": {
+"scenario_id": "fam19",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0097": {
+"scenario_id": "fam04",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0098": {
+"scenario_id": "fam20",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0099": {
+"scenario_id": "trav13",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0100": {
+"scenario_id": "trav03",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0101": {
+"scenario_id": "fam06",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0102": {
+"scenario_id": "trav03",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0103": {
+"scenario_id": "fam12",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0104": {
+"scenario_id": "shop10",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0105": {
+"scenario_id": "fam11",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0106": {
+"scenario_id": "trav01",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0107": {
+"scenario_id": "trav19",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0108": {
+"scenario_id": "fam19",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0109": {
+"scenario_id": "trav12",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0110": {
+"scenario_id": "shop06",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0111": {
+"scenario_id": "fam14",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0112": {
+"scenario_id": "fam04",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0113": {
+"scenario_id": "trav17",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0114": {
+"scenario_id": "trav09",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0115": {
+"scenario_id": "shop16",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0116": {
+"scenario_id": "fam10",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0117": {
+"scenario_id": "fam17",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0118": {
+"scenario_id": "trav17",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0119": {
+"scenario_id": "shop10",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0120": {
+"scenario_id": "trav06",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0121": {
+"scenario_id": "trav06",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0122": {
+"scenario_id": "trav12",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0123": {
+"scenario_id": "fam12",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0124": {
+"scenario_id": "fam05",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0125": {
+"scenario_id": "fam18",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0126": {
+"scenario_id": "trav12",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0127": {
+"scenario_id": "shop12",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0128": {
+"scenario_id": "fam05",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0129": {
+"scenario_id": "shop17",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0130": {
+"scenario_id": "fam14",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0131": {
+"scenario_id": "trav11",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0132": {
+"scenario_id": "trav07",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0133": {
+"scenario_id": "shop06",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0134": {
+"scenario_id": "trav18",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0135": {
+"scenario_id": "trav15",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0136": {
+"scenario_id": "fam12",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0137": {
+"scenario_id": "shop18",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0138": {
+"scenario_id": "trav13",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0139": {
+"scenario_id": "trav12",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0140": {
+"scenario_id": "shop01",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0141": {
+"scenario_id": "shop09",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0142": {
+"scenario_id": "shop08",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0143": {
+"scenario_id": "trav10",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0144": {
+"scenario_id": "shop01",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0145": {
+"scenario_id": "shop05",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0146": {
+"scenario_id": "fam13",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0147": {
+"scenario_id": "fam02",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0148": {
+"scenario_id": "trav11",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0149": {
+"scenario_id": "trav10",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0150": {
+"scenario_id": "trav20",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0151": {
+"scenario_id": "shop09",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0152": {
+"scenario_id": "shop20",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0153": {
+"scenario_id": "shop07",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0154": {
+"scenario_id": "fam09",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0155": {
+"scenario_id": "shop10",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0156": {
+"scenario_id": "trav01",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0157": {
+"scenario_id": "shop20",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0158": {
+"scenario_id": "trav06",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0159": {
+"scenario_id": "trav07",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0160": {
+"scenario_id": "trav12",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0161": {
+"scenario_id": "shop09",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0162": {
+"scenario_id": "shop02",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0163": {
+"scenario_id": "fam18",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0164": {
+"scenario_id": "fam03",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0165": {
+"scenario_id": "fam16",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0166": {
+"scenario_id": "trav04",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0167": {
+"scenario_id": "shop02",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0168": {
+"scenario_id": "shop04",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0169": {
+"scenario_id": "trav05",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0170": {
+"scenario_id": "fam10",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0171": {
+"scenario_id": "trav01",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0172": {
+"scenario_id": "fam15",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0173": {
+"scenario_id": "trav13",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0174": {
+"scenario_id": "shop11",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0175": {
+"scenario_id": "fam05",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0176": {
+"scenario_id": "trav18",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0177": {
+"scenario_id": "fam17",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0178": {
+"scenario_id": "fam06",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0179": {
+"scenario_id": "trav05",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0180": {
+"scenario_id": "shop09",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0181": {
+"scenario_id": "fam06",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0182": {
+"scenario_id": "fam19",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0183": {
+"scenario_id": "trav12",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0184": {
+"scenario_id": "trav20",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0185": {
+"scenario_id": "fam05",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0186": {
+"scenario_id": "trav08",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0187": {
+"scenario_id": "shop13",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0188": {
+"scenario_id": "fam11",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0189": {
+"scenario_id": "fam01",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0190": {
+"scenario_id": "trav11",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0191": {
+"scenario_id": "trav16",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0192": {
+"scenario_id": "fam01",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0193": {
+"scenario_id": "trav04",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0194": {
+"scenario_id": "fam10",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0195": {
+"scenario_id": "shop08",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0196": {
+"scenario_id": "trav03",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0197": {
+"scenario_id": "trav02",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0198": {
+"scenario_id": "trav09",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0199": {
+"scenario_id": "shop18",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0200": {
+"scenario_id": "shop19",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0201": {
+"scenario_id": "fam11",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0202": {
+"scenario_id": "fam02",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0203": {
+"scenario_id": "shop05",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0204": {
+"scenario_id": "shop19",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0205": {
+"scenario_id": "fam10",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0206": {
+"scenario_id": "fam08",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0207": {
+"scenario_id": "fam13",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0208": {
+"scenario_id": "fam01",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0209": {
+"scenario_id": "fam16",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0210": {
+"scenario_id": "fam05",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0211": {
+"scenario_id": "shop12",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0212": {
+"scenario_id": "shop07",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0213": {
+"scenario_id": "fam15",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0214": {
+"scenario_id": "shop07",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0215": {
+"scenario_id": "trav01",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0216": {
+"scenario_id": "fam19",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0217": {
+"scenario_id": "shop04",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0218": {
+"scenario_id": "shop17",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0219": {
+"scenario_id": "shop10",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0220": {
+"scenario_id": "trav18",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0221": {
+"scenario_id": "trav08",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0222": {
+"scenario_id": "trav07",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0223": {
+"scenario_id": "fam11",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0224": {
+"scenario_id": "shop12",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0225": {
+"scenario_id": "trav20",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0226": {
+"scenario_id": "fam03",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0227": {
+"scenario_id": "trav03",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0228": {
+"scenario_id": "shop17",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0229": {
+"scenario_id": "fam11",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0230": {
+"scenario_id": "trav20",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0231": {
+"scenario_id": "shop17",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0232": {
+"scenario_id": "fam09",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0233": {
+"scenario_id": "shop20",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0234": {
+"scenario_id": "shop02",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0235": {
+"scenario_id": "fam11",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0236": {
+"scenario_id": "shop14",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0237": {
+"scenario_id": "trav07",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0238": {
+"scenario_id": "shop13",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0239": {
+"scenario_id": "fam14",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0240": {
+"scenario_id": "fam12",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0241": {
+"scenario_id": "fam13",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0242": {
+"scenario_id": "fam07",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0243": {
+"scenario_id": "fam13",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0244": {
+"scenario_id": "fam20",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0245": {
+"scenario_id": "fam20",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0246": {
+"scenario_id": "fam18",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0247": {
+"scenario_id": "fam03",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0248": {
+"scenario_id": "shop19",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0249": {
+"scenario_id": "fam07",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0250": {
+"scenario_id": "fam17",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0251": {
+"scenario_id": "fam09",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0252": {
+"scenario_id": "trav13",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0253": {
+"scenario_id": "fam04",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0254": {
+"scenario_id": "shop02",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0255": {
+"scenario_id": "shop14",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0256": {
+"scenario_id": "shop06",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0257": {
+"scenario_id": "fam13",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0258": {
+"scenario_id": "shop09",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0259": {
+"scenario_id": "shop12",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0260": {
+"scenario_id": "fam14",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0261": {
+"scenario_id": "trav09",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0262": {
+"scenario_id": "trav14",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0263": {
+"scenario_id": "shop05",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0264": {
+"scenario_id": "trav11",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0265": {
+"scenario_id": "shop19",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0266": {
+"scenario_id": "trav14",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0267": {
+"scenario_id": "fam02",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0268": {
+"scenario_id": "shop16",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0269": {
+"scenario_id": "shop03",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0270": {
+"scenario_id": "trav08",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0271": {
+"scenario_id": "shop09",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0272": {
+"scenario_id": "shop13",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0273": {
+"scenario_id": "shop19",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0274": {
+"scenario_id": "shop13",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0275": {
+"scenario_id": "fam19",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0276": {
+"scenario_id": "fam10",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0277": {
+"scenario_id": "shop04",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0278": {
+"scenario_id": "trav02",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0279": {
+"scenario_id": "fam08",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0280": {
+"scenario_id": "trav06",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0281": {
+"scenario_id": "trav15",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0282": {
+"scenario_id": "fam12",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0283": {
+"scenario_id": "trav06",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0284": {
+"scenario_id": "trav01",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0285": {
+"scenario_id": "shop03",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0286": {
+"scenario_id": "fam02",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0287": {
+"scenario_id": "fam15",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0288": {
+"scenario_id": "shop01",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0289": {
+"scenario_id": "fam15",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0290": {
+"scenario_id": "fam12",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0291": {
+"scenario_id": "trav19",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0292": {
+"scenario_id": "shop04",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0293": {
+"scenario_id": "fam08",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0294": {
+"scenario_id": "trav17",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0295": {
+"scenario_id": "fam16",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0296": {
+"scenario_id": "fam19",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0297": {
+"scenario_id": "fam18",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0298": {
+"scenario_id": "trav04",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0299": {
+"scenario_id": "fam03",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0300": {
+"scenario_id": "shop15",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0301": {
+"scenario_id": "trav20",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0302": {
+"scenario_id": "fam16",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0303": {
+"scenario_id": "shop12",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0304": {
+"scenario_id": "fam02",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0305": {
+"scenario_id": "shop06",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0306": {
+"scenario_id": "fam03",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0307": {
+"scenario_id": "fam01",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0308": {
+"scenario_id": "trav05",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0309": {
+"scenario_id": "trav02",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0310": {
+"scenario_id": "shop07",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0311": {
+"scenario_id": "fam05",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0312": {
+"scenario_id": "shop13",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0313": {
+"scenario_id": "fam20",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0314": {
+"scenario_id": "fam07",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0315": {
+"scenario_id": "shop13",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0316": {
+"scenario_id": "fam10",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0317": {
+"scenario_id": "shop05",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0318": {
+"scenario_id": "shop19",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0319": {
+"scenario_id": "trav08",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0320": {
+"scenario_id": "trav08",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0321": {
+"scenario_id": "trav13",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0322": {
+"scenario_id": "trav19",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0323": {
+"scenario_id": "shop02",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0324": {
+"scenario_id": "fam06",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0325": {
+"scenario_id": "fam08",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0326": {
+"scenario_id": "shop05",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0327": {
+"scenario_id": "shop07",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0328": {
+"scenario_id": "trav06",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0329": {
+"scenario_id": "shop14",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0330": {
+"scenario_id": "trav16",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0331": {
+"scenario_id": "fam07",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0332": {
+"scenario_id": "trav14",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0333": {
+"scenario_id": "fam18",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0334": {
+"scenario_id": "shop18",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0335": {
+"scenario_id": "trav04",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0336": {
+"scenario_id": "trav07",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0337": {
+"scenario_id": "shop08",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0338": {
+"scenario_id": "shop20",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0339": {
+"scenario_id": "fam02",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0340": {
+"scenario_id": "trav03",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0341": {
+"scenario_id": "fam13",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0342": {
+"scenario_id": "shop01",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0343": {
+"scenario_id": "shop03",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0344": {
+"scenario_id": "trav18",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0345": {
+"scenario_id": "fam15",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0346": {
+"scenario_id": "fam16",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0347": {
+"scenario_id": "trav12",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0348": {
+"scenario_id": "trav18",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0349": {
+"scenario_id": "fam09",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0350": {
+"scenario_id": "trav17",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0351": {
+"scenario_id": "shop01",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0352": {
+"scenario_id": "trav09",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0353": {
+"scenario_id": "fam06",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0354": {
+"scenario_id": "shop18",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0355": {
+"scenario_id": "fam14",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0356": {
+"scenario_id": "fam07",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0357": {
+"scenario_id": "shop08",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0358": {
+"scenario_id": "trav18",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0359": {
+"scenario_id": "shop12",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0360": {
+"scenario_id": "shop18",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0361": {
+"scenario_id": "shop15",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0362": {
+"scenario_id": "trav11",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0363": {
+"scenario_id": "shop11",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0364": {
+"scenario_id": "shop05",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0365": {
+"scenario_id": "trav07",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0366": {
+"scenario_id": "fam12",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0367": {
+"scenario_id": "fam01",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0368": {
+"scenario_id": "trav17",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0369": {
+"scenario_id": "shop04",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0370": {
+"scenario_id": "trav10",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0371": {
+"scenario_id": "fam15",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0372": {
+"scenario_id": "shop15",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0373": {
+"scenario_id": "shop06",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0374": {
+"scenario_id": "fam19",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0375": {
+"scenario_id": "shop14",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0376": {
+"scenario_id": "trav03",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0377": {
+"scenario_id": "fam10",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0378": {
+"scenario_id": "trav09",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0379": {
+"scenario_id": "shop12",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0380": {
+"scenario_id": "shop16",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0381": {
+"scenario_id": "trav17",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0382": {
+"scenario_id": "fam12",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0383": {
+"scenario_id": "shop14",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0384": {
+"scenario_id": "fam04",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0385": {
+"scenario_id": "shop19",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0386": {
+"scenario_id": "trav14",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0387": {
+"scenario_id": "shop16",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0388": {
+"scenario_id": "fam20",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0389": {
+"scenario_id": "trav03",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0390": {
+"scenario_id": "fam03",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0391": {
+"scenario_id": "trav02",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0392": {
+"scenario_id": "trav19",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0393": {
+"scenario_id": "shop04",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0394": {
+"scenario_id": "shop17",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0395": {
+"scenario_id": "shop03",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0396": {
+"scenario_id": "fam02",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0397": {
+"scenario_id": "shop20",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0398": {
+"scenario_id": "trav15",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0399": {
+"scenario_id": "fam09",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0400": {
+"scenario_id": "fam07",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0401": {
+"scenario_id": "shop15",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0402": {
+"scenario_id": "shop08",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0403": {
+"scenario_id": "shop17",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0404": {
+"scenario_id": "shop01",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0405": {
+"scenario_id": "trav04",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0406": {
+"scenario_id": "shop03",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0407": {
+"scenario_id": "trav01",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0408": {
+"scenario_id": "trav10",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0409": {
+"scenario_id": "trav07",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0410": {
+"scenario_id": "shop01",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0411": {
+"scenario_id": "shop08",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0412": {
+"scenario_id": "fam17",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0413": {
+"scenario_id": "trav18",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0414": {
+"scenario_id": "trav16",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0415": {
+"scenario_id": "shop03",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0416": {
+"scenario_id": "shop13",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0417": {
+"scenario_id": "shop20",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0418": {
+"scenario_id": "fam02",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0419": {
+"scenario_id": "fam20",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0420": {
+"scenario_id": "shop20",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0421": {
+"scenario_id": "shop07",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0422": {
+"scenario_id": "fam06",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0423": {
+"scenario_id": "trav11",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0424": {
+"scenario_id": "trav14",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0425": {
+"scenario_id": "trav20",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0426": {
+"scenario_id": "trav05",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0427": {
+"scenario_id": "trav05",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0428": {
+"scenario_id": "shop14",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0429": {
+"scenario_id": "shop14",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0430": {
+"scenario_id": "trav17",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0431": {
+"scenario_id": "trav08",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0432": {
+"scenario_id": "fam12",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0433": {
+"scenario_id": "fam03",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0434": {
+"scenario_id": "shop02",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0435": {
+"scenario_id": "shop14",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0436": {
+"scenario_id": "trav08",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0437": {
+"scenario_id": "trav10",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0438": {
+"scenario_id": "fam18",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0439": {
+"scenario_id": "shop08",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0440": {
+"scenario_id": "fam05",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0441": {
+"scenario_id": "trav07",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0442": {
+"scenario_id": "shop10",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0443": {
+"scenario_id": "shop18",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0444": {
+"scenario_id": "trav19",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0445": {
+"scenario_id": "fam01",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0446": {
+"scenario_id": "trav06",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0447": {
+"scenario_id": "shop18",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0448": {
+"scenario_id": "trav17",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0449": {
+"scenario_id": "fam15",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0450": {
+"scenario_id": "shop16",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0451": {
+"scenario_id": "trav02",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0452": {
+"scenario_id": "fam13",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0453": {
+"scenario_id": "fam04",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0454": {
+"scenario_id": "trav18",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0455": {
+"scenario_id": "fam16",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0456": {
+"scenario_id": "shop18",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0457": {
+"scenario_id": "shop20",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0458": {
+"scenario_id": "shop10",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0459": {
+"scenario_id": "trav16",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0460": {
+"scenario_id": "shop13",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0461": {
+"scenario_id": "shop12",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0462": {
+"scenario_id": "trav05",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0463": {
+"scenario_id": "trav09",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0464": {
+"scenario_id": "shop12",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0465": {
+"scenario_id": "trav05",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0466": {
+"scenario_id": "shop12",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0467": {
+"scenario_id": "fam02",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0468": {
+"scenario_id": "shop16",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0469": {
+"scenario_id": "trav14",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0470": {
+"scenario_id": "shop06",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0471": {
+"scenario_id": "shop08",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0472": {
+"scenario_id": "shop05",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0473": {
+"scenario_id": "trav03",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0474": {
+"scenario_id": "fam17",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0475": {
+"scenario_id": "shop10",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0476": {
+"scenario_id": "fam10",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0477": {
+"scenario_id": "shop07",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0478": {
+"scenario_id": "fam16",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0479": {
+"scenario_id": "trav02",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0480": {
+"scenario_id": "trav09",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0481": {
+"scenario_id": "trav20",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0482": {
+"scenario_id": "shop10",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0483": {
+"scenario_id": "trav13",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0484": {
+"scenario_id": "trav08",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0485": {
+"scenario_id": "trav06",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0486": {
+"scenario_id": "trav16",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0487": {
+"scenario_id": "trav19",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0488": {
+"scenario_id": "fam13",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0489": {
+"scenario_id": "shop16",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0490": {
+"scenario_id": "shop15",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0491": {
+"scenario_id": "shop05",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0492": {
+"scenario_id": "shop04",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0493": {
+"scenario_id": "trav07",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0494": {
+"scenario_id": "shop14",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0495": {
+"scenario_id": "trav09",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0496": {
+"scenario_id": "shop10",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0497": {
+"scenario_id": "fam17",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0498": {
+"scenario_id": "trav05",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0499": {
+"scenario_id": "trav20",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0500": {
+"scenario_id": "trav14",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0501": {
+"scenario_id": "fam17",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0502": {
+"scenario_id": "fam16",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0503": {
+"scenario_id": "fam08",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0504": {
+"scenario_id": "fam02",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0505": {
+"scenario_id": "trav19",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0506": {
+"scenario_id": "shop11",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0507": {
+"scenario_id": "fam14",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0508": {
+"scenario_id": "fam20",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0509": {
+"scenario_id": "shop15",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0510": {
+"scenario_id": "fam01",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0511": {
+"scenario_id": "shop13",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0512": {
+"scenario_id": "trav14",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0513": {
+"scenario_id": "shop15",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0514": {
+"scenario_id": "shop11",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0515": {
+"scenario_id": "fam09",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0516": {
+"scenario_id": "fam18",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0517": {
+"scenario_id": "fam06",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0518": {
+"scenario_id": "fam03",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0519": {
+"scenario_id": "shop14",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0520": {
+"scenario_id": "shop18",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0521": {
+"scenario_id": "shop13",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0522": {
+"scenario_id": "trav08",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0523": {
+"scenario_id": "fam08",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0524": {
+"scenario_id": "fam14",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0525": {
+"scenario_id": "shop09",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0526": {
+"scenario_id": "fam15",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0527": {
+"scenario_id": "fam05",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0528": {
+"scenario_id": "trav10",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0529": {
+"scenario_id": "shop19",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0530": {
+"scenario_id": "shop20",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0531": {
+"scenario_id": "trav15",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0532": {
+"scenario_id": "fam15",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0533": {
+"scenario_id": "shop02",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0534": {
+"scenario_id": "trav14",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0535": {
+"scenario_id": "shop15",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0536": {
+"scenario_id": "trav03",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0537": {
+"scenario_id": "shop07",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0538": {
+"scenario_id": "trav13",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0539": {
+"scenario_id": "shop03",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0540": {
+"scenario_id": "fam03",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0541": {
+"scenario_id": "shop01",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0542": {
+"scenario_id": "shop09",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0543": {
+"scenario_id": "trav02",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0544": {
+"scenario_id": "trav13",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0545": {
+"scenario_id": "shop10",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0546": {
+"scenario_id": "fam13",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0547": {
+"scenario_id": "fam06",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0548": {
+"scenario_id": "fam07",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0549": {
+"scenario_id": "fam08",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0550": {
+"scenario_id": "fam14",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0551": {
+"scenario_id": "fam01",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0552": {
+"scenario_id": "trav04",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0553": {
+"scenario_id": "trav15",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0554": {
+"scenario_id": "trav15",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0555": {
+"scenario_id": "fam07",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0556": {
+"scenario_id": "fam12",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0557": {
+"scenario_id": "fam07",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0558": {
+"scenario_id": "trav15",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0559": {
+"scenario_id": "fam14",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0560": {
+"scenario_id": "shop19",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0561": {
+"scenario_id": "shop15",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0562": {
+"scenario_id": "shop03",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0563": {
+"scenario_id": "trav10",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0564": {
+"scenario_id": "trav08",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0565": {
+"scenario_id": "fam17",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0566": {
+"scenario_id": "fam15",
+"paraphrase": "A",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0567": {
+"scenario_id": "trav12",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0568": {
+"scenario_id": "fam11",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0569": {
+"scenario_id": "shop04",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0570": {
+"scenario_id": "trav01",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0571": {
+"scenario_id": "shop11",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0572": {
+"scenario_id": "fam20",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0573": {
+"scenario_id": "trav01",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0574": {
+"scenario_id": "fam17",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0575": {
+"scenario_id": "trav01",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0576": {
+"scenario_id": "trav16",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0577": {
+"scenario_id": "trav09",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0578": {
+"scenario_id": "shop17",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0579": {
+"scenario_id": "shop16",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0580": {
+"scenario_id": "fam13",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0581": {
+"scenario_id": "fam05",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0582": {
+"scenario_id": "trav16",
+"paraphrase": "B",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0583": {
+"scenario_id": "shop09",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0584": {
+"scenario_id": "fam20",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0585": {
+"scenario_id": "shop15",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0586": {
+"scenario_id": "fam08",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0587": {
+"scenario_id": "trav15",
+"paraphrase": "A",
+"condition": "prefix_joy",
+"split": "discovery"
+},
+"dis0588": {
+"scenario_id": "trav20",
+"paraphrase": "B",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0589": {
+"scenario_id": "shop17",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0590": {
+"scenario_id": "fam09",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0591": {
+"scenario_id": "shop02",
+"paraphrase": "A",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0592": {
+"scenario_id": "fam18",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0593": {
+"scenario_id": "trav01",
+"paraphrase": "B",
+"condition": "prefix_sadness",
+"split": "discovery"
+},
+"dis0594": {
+"scenario_id": "trav16",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0595": {
+"scenario_id": "fam04",
+"paraphrase": "A",
+"condition": "anchor_sub_joy",
+"split": "discovery"
+},
+"dis0596": {
+"scenario_id": "fam16",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+},
+"dis0597": {
+"scenario_id": "trav11",
+"paraphrase": "B",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0598": {
+"scenario_id": "shop06",
+"paraphrase": "A",
+"condition": "prefix_neutral",
+"split": "discovery"
+},
+"dis0599": {
+"scenario_id": "trav09",
+"paraphrase": "B",
+"condition": "prefix_anger",
+"split": "discovery"
+}
+}

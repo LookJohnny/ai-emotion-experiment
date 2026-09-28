@@ -1,0 +1,29 @@
+{
+ "discovery": {
+  "n_scenarios": 60,
+  "means": {
+   "prefix_anger": {
+    "joy": 0.108,
+    "sadness": 1.621,
+    "anger": 1.7,
+    "fluency": 4.454,
+    "new_fact_error": 0.275
+   },
+   "prefix_neutral": {
+    "joy": 0.508,
+    "sadness": 1.279,
+    "anger": 0.554,
+    "fluency": 4.521,
+    "new_fact_error": 0.142
+   }
+  },
+  "prefix_anger_effect": {
+   "mean": 1.146,
+   "ci95": [
+    0.958,
+    1.325
+   ],
+   "n": 60
+  }
+ }
+}

@@ -1,0 +1,842 @@
+[
+ {
+  "id": "study08",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby13",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "trav15",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 2,
+  "note": "anger:只是城市交通调整、通勤反而更快，没有人做错事，不满显得牵强"
+ },
+ {
+  "id": "work06",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "shop04",
+  "joy": 5,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam12",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study02",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "study16",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "hobby20",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop01",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop02",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 2,
+  "note": "anger:快递员调片区属正常工作安排，没有明确的不满对象"
+ },
+ {
+  "id": "fam18",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam19",
+  "joy": 4,
+  "sadness": 5,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "work08",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "fam01",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 2,
+  "note": "anger:给奶奶在酒楼办寿宴是正常安排，事实中没有明显的受损点可怨"
+ },
+ {
+  "id": "shop17",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam04",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 2,
+  "note": "anger:爸妈请钟点工是好意，对此不满显得牵强"
+ },
+ {
+  "id": "shop15",
+  "joy": 5,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav06",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "hobby08",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "study18",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "study20",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav03",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby07",
+  "joy": 5,
+  "sadness": 5,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam09",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam03",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work02",
+  "joy": 2,
+  "sadness": 5,
+  "anger": 5,
+  "note": "joy:推迟交付却加了功能、年假还泡汤，高兴不起来"
+ },
+ {
+  "id": "work19",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "hobby11",
+  "joy": 5,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav16",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 2,
+  "note": "anger:改步行街是公共规划且回家更快，不满没有着力点"
+ },
+ {
+  "id": "hobby01",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop03",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "fam20",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "fam06",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 5,
+  "note": ""
+ },
+ {
+  "id": "hobby15",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "fam13",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop11",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study06",
+  "joy": 2,
+  "sadness": 5,
+  "anger": 5,
+  "note": "joy:补送口语课只是补偿，赶不上考试才是核心，高兴很勉强"
+ },
+ {
+  "id": "trav13",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 5,
+  "note": ""
+ },
+ {
+  "id": "study07",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby14",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav19",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "study19",
+  "joy": 4,
+  "sadness": 5,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "work05",
+  "joy": 5,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav02",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "trav12",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 5,
+  "note": ""
+ },
+ {
+  "id": "trav14",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam17",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav17",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby17",
+  "joy": 5,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby04",
+  "joy": 5,
+  "sadness": 4,
+  "anger": 5,
+  "note": ""
+ },
+ {
+  "id": "study03",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam05",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work20",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work07",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "study17",
+  "joy": 5,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby19",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "work16",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "study01",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "work12",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 5,
+  "note": ""
+ },
+ {
+  "id": "trav10",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav01",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam10",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work18",
+  "joy": 5,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study04",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav07",
+  "joy": 2,
+  "sadness": 4,
+  "anger": 5,
+  "note": "joy:手提额度提高1公斤几乎弥补不了托运减少，没什么可高兴的"
+ },
+ {
+  "id": "work10",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "hobby02",
+  "joy": 5,
+  "sadness": 5,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby12",
+  "joy": 5,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "fam08",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 2,
+  "note": "anger:爸爸卖自己的旧车换新车合情合理，不满牵强"
+ },
+ {
+  "id": "trav05",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop14",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "trav04",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work03",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav20",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 2,
+  "note": "anger:关停客运站、回家更快，属正常变迁，不满缺乏对象"
+ },
+ {
+  "id": "work09",
+  "joy": 5,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "work15",
+  "joy": 4,
+  "sadness": 5,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study10",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "shop19",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "hobby03",
+  "joy": 5,
+  "sadness": 4,
+  "anger": 2,
+  "note": "anger:指挥按名额挑人是正常选拔，自己还入选了，不满牵强"
+ },
+ {
+  "id": "trav18",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 2,
+  "note": "anger:地铁替代大巴且更快，属正常交通升级，不满牵强"
+ },
+ {
+  "id": "shop18",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study12",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop06",
+  "joy": 5,
+  "sadness": 3,
+  "anger": 2,
+  "note": "anger:新方案给的优惠比签到还多，不满显得牵强"
+ },
+ {
+  "id": "work14",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "hobby16",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "hobby18",
+  "joy": 5,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "work11",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "study14",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "work17",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby10",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "work13",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "work01",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav09",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop16",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "study13",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby09",
+  "joy": 5,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "fam15",
+  "joy": 4,
+  "sadness": 5,
+  "anger": 2,
+  "note": "anger:妈妈翻新自家厨房是合理决定，对她不满牵强"
+ },
+ {
+  "id": "study11",
+  "joy": 3,
+  "sadness": 5,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "hobby05",
+  "joy": 4,
+  "sadness": 5,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav11",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop09",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "fam14",
+  "joy": 2,
+  "sadness": 5,
+  "anger": 3,
+  "note": "joy:外婆离开、孩子难再常见，事实中几乎没有直接值得高兴的点"
+ },
+ {
+  "id": "fam16",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop12",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "shop05",
+  "joy": 3,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "trav08",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "study05",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop08",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study15",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "fam07",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop13",
+  "joy": 4,
+  "sadness": 5,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "study09",
+  "joy": 4,
+  "sadness": 3,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "hobby06",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "shop10",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "shop07",
+  "joy": 2,
+  "sadness": 4,
+  "anger": 5,
+  "note": "joy:积分被折成少量现金券、想兑的血压计下架，高兴很勉强"
+ },
+ {
+  "id": "work04",
+  "joy": 5,
+  "sadness": 3,
+  "anger": 2,
+  "note": "anger:被委以新的海外项目是提拔，移交旧项目属正常，不满牵强"
+ },
+ {
+  "id": "fam11",
+  "joy": 4,
+  "sadness": 4,
+  "anger": 3,
+  "note": ""
+ },
+ {
+  "id": "shop20",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 4,
+  "note": ""
+ },
+ {
+  "id": "fam02",
+  "joy": 3,
+  "sadness": 4,
+  "anger": 5,
+  "note": ""
+ }
+]
