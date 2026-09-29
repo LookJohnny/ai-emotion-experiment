@@ -1,0 +1,7442 @@
+{
+"m0000": {
+"item_id": "sl09-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl09"
+},
+"m0001": {
+"item_id": "sl01-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0002": {
+"item_id": "cs02-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cs02"
+},
+"m0003": {
+"item_id": "cs14-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cs14"
+},
+"m0004": {
+"item_id": "cp12-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp12"
+},
+"m0005": {
+"item_id": "cp04-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0006": {
+"item_id": "cp12-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cp12"
+},
+"m0007": {
+"item_id": "cp12-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp12"
+},
+"m0008": {
+"item_id": "cp09-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cp09"
+},
+"m0009": {
+"item_id": "cp09-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cp09"
+},
+"m0010": {
+"item_id": "cs01-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0011": {
+"item_id": "cp08-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp08"
+},
+"m0012": {
+"item_id": "cs06-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "val",
+"template_id": "cs06"
+},
+"m0013": {
+"item_id": "cp03-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp03"
+},
+"m0014": {
+"item_id": "cp03-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cp03"
+},
+"m0015": {
+"item_id": "sl16-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "sl16"
+},
+"m0016": {
+"item_id": "cp04-reply_esc-redteam",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0017": {
+"item_id": "cs04-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "val",
+"template_id": "cs04"
+},
+"m0018": {
+"item_id": "cp02-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cp02"
+},
+"m0019": {
+"item_id": "cs02-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cs02"
+},
+"m0020": {
+"item_id": "cp13-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cp13"
+},
+"m0021": {
+"item_id": "sl19-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "sl19"
+},
+"m0022": {
+"item_id": "sl13-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "val",
+"template_id": "sl13"
+},
+"m0023": {
+"item_id": "cp01-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "val",
+"template_id": "cp01"
+},
+"m0024": {
+"item_id": "cp08-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp08"
+},
+"m0025": {
+"item_id": "cs08-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "val",
+"template_id": "cs08"
+},
+"m0026": {
+"item_id": "sl10-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0027": {
+"item_id": "cp06-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "val",
+"template_id": "cp06"
+},
+"m0028": {
+"item_id": "cs08-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "val",
+"template_id": "cs08"
+},
+"m0029": {
+"item_id": "cs09-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cs09"
+},
+"m0030": {
+"item_id": "cs16-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0031": {
+"item_id": "cp16-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0032": {
+"item_id": "cp02-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp02"
+},
+"m0033": {
+"item_id": "cs01-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cs01"
+},
+"m0034": {
+"item_id": "cp20-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "val",
+"template_id": "cp20"
+},
+"m0035": {
+"item_id": "cs04-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "val",
+"template_id": "cs04"
+},
+"m0036": {
+"item_id": "cs09-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cs09"
+},
+"m0037": {
+"item_id": "cs19-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0038": {
+"item_id": "sl11-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "sl11"
+},
+"m0039": {
+"item_id": "sl18-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "val",
+"template_id": "sl18"
+},
+"m0040": {
+"item_id": "sl18-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "val",
+"template_id": "sl18"
+},
+"m0041": {
+"item_id": "sl19-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0042": {
+"item_id": "cs19-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cs19"
+},
+"m0043": {
+"item_id": "cp12-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cp12"
+},
+"m0044": {
+"item_id": "cs14-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs14"
+},
+"m0045": {
+"item_id": "cs04-reply_esc-redteam",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs04"
+},
+"m0046": {
+"item_id": "sl19-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0047": {
+"item_id": "cp05-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cp05"
+},
+"m0048": {
+"item_id": "cs12-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cs12"
+},
+"m0049": {
+"item_id": "cp02-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cp02"
+},
+"m0050": {
+"item_id": "cp08-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp08"
+},
+"m0051": {
+"item_id": "cs19-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0052": {
+"item_id": "cp09-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cp09"
+},
+"m0053": {
+"item_id": "sl10-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0054": {
+"item_id": "cp20-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp20"
+},
+"m0055": {
+"item_id": "cs09-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs09"
+},
+"m0056": {
+"item_id": "cs16-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cs16"
+},
+"m0057": {
+"item_id": "sl16-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0058": {
+"item_id": "cs12-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cs12"
+},
+"m0059": {
+"item_id": "cs12-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs12"
+},
+"m0060": {
+"item_id": "cs04-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "val",
+"template_id": "cs04"
+},
+"m0061": {
+"item_id": "sl12-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "sl12"
+},
+"m0062": {
+"item_id": "cs18-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs18"
+},
+"m0063": {
+"item_id": "cs06-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "val",
+"template_id": "cs06"
+},
+"m0064": {
+"item_id": "cs14-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs14"
+},
+"m0065": {
+"item_id": "sl20-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "sl20"
+},
+"m0066": {
+"item_id": "sl14-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl14"
+},
+"m0067": {
+"item_id": "sl19-reply_esc-redteam",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0068": {
+"item_id": "cp20-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "val",
+"template_id": "cp20"
+},
+"m0069": {
+"item_id": "cp08-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp08"
+},
+"m0070": {
+"item_id": "cp02-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cp02"
+},
+"m0071": {
+"item_id": "sl03-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl03"
+},
+"m0072": {
+"item_id": "cp04-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0073": {
+"item_id": "cs16-reply_esc-default",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "default",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0074": {
+"item_id": "sl19-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0075": {
+"item_id": "sl19-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0076": {
+"item_id": "sl19-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0077": {
+"item_id": "cp12-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cp12"
+},
+"m0078": {
+"item_id": "cp06-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "val",
+"template_id": "cp06"
+},
+"m0079": {
+"item_id": "sl10-reply_esc-blunt",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0080": {
+"item_id": "cp18-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "val",
+"template_id": "cp18"
+},
+"m0081": {
+"item_id": "cp18-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "val",
+"template_id": "cp18"
+},
+"m0082": {
+"item_id": "sl03-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "val",
+"template_id": "sl03"
+},
+"m0083": {
+"item_id": "cp16-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0084": {
+"item_id": "cs19-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0085": {
+"item_id": "sl10-reply_esc-default",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "default",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0086": {
+"item_id": "sl04-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0087": {
+"item_id": "cp06-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "val",
+"template_id": "cp06"
+},
+"m0088": {
+"item_id": "cs08-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "val",
+"template_id": "cs08"
+},
+"m0089": {
+"item_id": "cs14-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs14"
+},
+"m0090": {
+"item_id": "cs08-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "val",
+"template_id": "cs08"
+},
+"m0091": {
+"item_id": "sl10-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "sl10"
+},
+"m0092": {
+"item_id": "sl13-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "val",
+"template_id": "sl13"
+},
+"m0093": {
+"item_id": "cp01-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "val",
+"template_id": "cp01"
+},
+"m0094": {
+"item_id": "cp13-reply_esc-redteam",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0095": {
+"item_id": "sl09-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "sl09"
+},
+"m0096": {
+"item_id": "sl20-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl20"
+},
+"m0097": {
+"item_id": "sl04-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0098": {
+"item_id": "cp05-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp05"
+},
+"m0099": {
+"item_id": "cp20-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "val",
+"template_id": "cp20"
+},
+"m0100": {
+"item_id": "sl18-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "val",
+"template_id": "sl18"
+},
+"m0101": {
+"item_id": "cp01-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "val",
+"template_id": "cp01"
+},
+"m0102": {
+"item_id": "sl01-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0103": {
+"item_id": "cs01-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0104": {
+"item_id": "cp05-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp05"
+},
+"m0105": {
+"item_id": "sl07-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "val",
+"template_id": "sl07"
+},
+"m0106": {
+"item_id": "sl13-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "val",
+"template_id": "sl13"
+},
+"m0107": {
+"item_id": "sl12-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl12"
+},
+"m0108": {
+"item_id": "cp18-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "val",
+"template_id": "cp18"
+},
+"m0109": {
+"item_id": "sl04-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0110": {
+"item_id": "cp01-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "val",
+"template_id": "cp01"
+},
+"m0111": {
+"item_id": "cp04-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0112": {
+"item_id": "cp16-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0113": {
+"item_id": "cs01-reply_esc-blunt",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0114": {
+"item_id": "sl13-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "val",
+"template_id": "sl13"
+},
+"m0115": {
+"item_id": "sl18-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "val",
+"template_id": "sl18"
+},
+"m0116": {
+"item_id": "cs12-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cs12"
+},
+"m0117": {
+"item_id": "sl12-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl12"
+},
+"m0118": {
+"item_id": "sl16-esc3_user",
+"concept": "C2",
+"kind": "esc3_user",
+"persona": null,
+"split": "dev",
+"template_id": "sl16"
+},
+"m0119": {
+"item_id": "cs08-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "val",
+"template_id": "cs08"
+},
+"m0120": {
+"item_id": "cs01-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cs01"
+},
+"m0121": {
+"item_id": "cs01-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0122": {
+"item_id": "cp08-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp08"
+},
+"m0123": {
+"item_id": "cp13-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0124": {
+"item_id": "cs03-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cs03"
+},
+"m0125": {
+"item_id": "sl16-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "sl16"
+},
+"m0126": {
+"item_id": "sl14-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "sl14"
+},
+"m0127": {
+"item_id": "cp06-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "val",
+"template_id": "cp06"
+},
+"m0128": {
+"item_id": "cp02-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cp02"
+},
+"m0129": {
+"item_id": "cp16-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0130": {
+"item_id": "cs19-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs19"
+},
+"m0131": {
+"item_id": "sl16-esc1_user",
+"concept": "C2",
+"kind": "esc1_user",
+"persona": null,
+"split": "dev",
+"template_id": "sl16"
+},
+"m0132": {
+"item_id": "cp13-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp13"
+},
+"m0133": {
+"item_id": "cs16-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0134": {
+"item_id": "cs02-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs02"
+},
+"m0135": {
+"item_id": "cs03-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cs03"
+},
+"m0136": {
+"item_id": "cp06-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "val",
+"template_id": "cp06"
+},
+"m0137": {
+"item_id": "cs02-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs02"
+},
+"m0138": {
+"item_id": "cs09-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cs09"
+},
+"m0139": {
+"item_id": "cp08-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp08"
+},
+"m0140": {
+"item_id": "cs19-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cs19"
+},
+"m0141": {
+"item_id": "cp18-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "val",
+"template_id": "cp18"
+},
+"m0142": {
+"item_id": "sl13-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl13"
+},
+"m0143": {
+"item_id": "sl01-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0144": {
+"item_id": "cp04-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cp04"
+},
+"m0145": {
+"item_id": "cs14-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs14"
+},
+"m0146": {
+"item_id": "sl18-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "val",
+"template_id": "sl18"
+},
+"m0147": {
+"item_id": "sl14-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "sl14"
+},
+"m0148": {
+"item_id": "cs06-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "val",
+"template_id": "cs06"
+},
+"m0149": {
+"item_id": "cs06-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs06"
+},
+"m0150": {
+"item_id": "cp04-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0151": {
+"item_id": "sl01-esc2_user",
+"concept": "C2",
+"kind": "esc2_user",
+"persona": null,
+"split": "dev",
+"template_id": "sl01"
+},
+"m0152": {
+"item_id": "cs04-reply_esc-default",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "default",
+"split": "val",
+"template_id": "cs04"
+},
+"m0153": {
+"item_id": "cp20-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "val",
+"template_id": "cp20"
+},
+"m0154": {
+"item_id": "cp02-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cp02"
+},
+"m0155": {
+"item_id": "cp01-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "val",
+"template_id": "cp01"
+},
+"m0156": {
+"item_id": "sl13-reply_esc-default",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "default",
+"split": "val",
+"template_id": "sl13"
+},
+"m0157": {
+"item_id": "sl12-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl12"
+},
+"m0158": {
+"item_id": "cs04-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs04"
+},
+"m0159": {
+"item_id": "cs04-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "val",
+"template_id": "cs04"
+},
+"m0160": {
+"item_id": "sl16-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0161": {
+"item_id": "sl10-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0162": {
+"item_id": "sl09-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl09"
+},
+"m0163": {
+"item_id": "cp04-esc1_user",
+"concept": "C2",
+"kind": "esc1_user",
+"persona": null,
+"split": "dev",
+"template_id": "cp04"
+},
+"m0164": {
+"item_id": "cs18-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "val",
+"template_id": "cs18"
+},
+"m0165": {
+"item_id": "cs18-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "val",
+"template_id": "cs18"
+},
+"m0166": {
+"item_id": "cs19-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0167": {
+"item_id": "sl03-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "val",
+"template_id": "sl03"
+},
+"m0168": {
+"item_id": "sl16-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0169": {
+"item_id": "cp12-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cp12"
+},
+"m0170": {
+"item_id": "cp04-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp04"
+},
+"m0171": {
+"item_id": "sl14-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "sl14"
+},
+"m0172": {
+"item_id": "sl01-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0173": {
+"item_id": "sl04-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0174": {
+"item_id": "sl19-esc1_user",
+"concept": "C2",
+"kind": "esc1_user",
+"persona": null,
+"split": "dev",
+"template_id": "sl19"
+},
+"m0175": {
+"item_id": "cp09-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cp09"
+},
+"m0176": {
+"item_id": "cs02-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs02"
+},
+"m0177": {
+"item_id": "sl07-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "val",
+"template_id": "sl07"
+},
+"m0178": {
+"item_id": "cs16-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0179": {
+"item_id": "cp01-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp01"
+},
+"m0180": {
+"item_id": "sl11-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "sl11"
+},
+"m0181": {
+"item_id": "cp08-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp08"
+},
+"m0182": {
+"item_id": "cs20-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cs20"
+},
+"m0183": {
+"item_id": "cp17-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cp17"
+},
+"m0184": {
+"item_id": "cs04-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "val",
+"template_id": "cs04"
+},
+"m0185": {
+"item_id": "sl01-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0186": {
+"item_id": "cp06-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "val",
+"template_id": "cp06"
+},
+"m0187": {
+"item_id": "cs12-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs12"
+},
+"m0188": {
+"item_id": "cs11-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs11"
+},
+"m0189": {
+"item_id": "sl07-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "val",
+"template_id": "sl07"
+},
+"m0190": {
+"item_id": "cs01-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0191": {
+"item_id": "sl07-esc2_user",
+"concept": "C2",
+"kind": "esc2_user",
+"persona": null,
+"split": "val",
+"template_id": "sl07"
+},
+"m0192": {
+"item_id": "sl09-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl09"
+},
+"m0193": {
+"item_id": "cp05-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp05"
+},
+"m0194": {
+"item_id": "sl16-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0195": {
+"item_id": "cp06-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp06"
+},
+"m0196": {
+"item_id": "cp04-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0197": {
+"item_id": "sl10-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0198": {
+"item_id": "sl07-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "val",
+"template_id": "sl07"
+},
+"m0199": {
+"item_id": "sl09-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "sl09"
+},
+"m0200": {
+"item_id": "cp04-reply_esc-blunt",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0201": {
+"item_id": "cp20-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "val",
+"template_id": "cp20"
+},
+"m0202": {
+"item_id": "sl13-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "val",
+"template_id": "sl13"
+},
+"m0203": {
+"item_id": "cp20-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "val",
+"template_id": "cp20"
+},
+"m0204": {
+"item_id": "sl01-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "sl01"
+},
+"m0205": {
+"item_id": "cs06-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs06"
+},
+"m0206": {
+"item_id": "sl14-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl14"
+},
+"m0207": {
+"item_id": "cs20-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cs20"
+},
+"m0208": {
+"item_id": "cp13-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp13"
+},
+"m0209": {
+"item_id": "sl09-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "sl09"
+},
+"m0210": {
+"item_id": "cp09-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cp09"
+},
+"m0211": {
+"item_id": "cp18-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp18"
+},
+"m0212": {
+"item_id": "cp01-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "val",
+"template_id": "cp01"
+},
+"m0213": {
+"item_id": "sl09-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "sl09"
+},
+"m0214": {
+"item_id": "cs20-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs20"
+},
+"m0215": {
+"item_id": "cs04-esc3_user",
+"concept": "C2",
+"kind": "esc3_user",
+"persona": null,
+"split": "val",
+"template_id": "cs04"
+},
+"m0216": {
+"item_id": "cs20-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cs20"
+},
+"m0217": {
+"item_id": "cs19-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0218": {
+"item_id": "sl07-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "val",
+"template_id": "sl07"
+},
+"m0219": {
+"item_id": "cp08-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cp08"
+},
+"m0220": {
+"item_id": "cp18-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "val",
+"template_id": "cp18"
+},
+"m0221": {
+"item_id": "cp13-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0222": {
+"item_id": "cs04-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "val",
+"template_id": "cs04"
+},
+"m0223": {
+"item_id": "cs16-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cs16"
+},
+"m0224": {
+"item_id": "cp06-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "val",
+"template_id": "cp06"
+},
+"m0225": {
+"item_id": "sl07-esc1_user",
+"concept": "C2",
+"kind": "esc1_user",
+"persona": null,
+"split": "val",
+"template_id": "sl07"
+},
+"m0226": {
+"item_id": "cp16-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0227": {
+"item_id": "cs01-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0228": {
+"item_id": "cp20-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp20"
+},
+"m0229": {
+"item_id": "sl20-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "sl20"
+},
+"m0230": {
+"item_id": "sl07-reply_esc-redteam",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl07"
+},
+"m0231": {
+"item_id": "cp06-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp06"
+},
+"m0232": {
+"item_id": "cs06-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "val",
+"template_id": "cs06"
+},
+"m0233": {
+"item_id": "cs12-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs12"
+},
+"m0234": {
+"item_id": "cp03-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cp03"
+},
+"m0235": {
+"item_id": "sl01-reply_esc-blunt",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0236": {
+"item_id": "sl03-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "val",
+"template_id": "sl03"
+},
+"m0237": {
+"item_id": "cs19-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0238": {
+"item_id": "cs11-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs11"
+},
+"m0239": {
+"item_id": "cs03-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cs03"
+},
+"m0240": {
+"item_id": "cp16-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp16"
+},
+"m0241": {
+"item_id": "sl12-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl12"
+},
+"m0242": {
+"item_id": "sl16-reply_esc-default",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "default",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0243": {
+"item_id": "cs02-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cs02"
+},
+"m0244": {
+"item_id": "sl01-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0245": {
+"item_id": "cp12-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp12"
+},
+"m0246": {
+"item_id": "cp05-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp05"
+},
+"m0247": {
+"item_id": "cs19-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0248": {
+"item_id": "cs08-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "val",
+"template_id": "cs08"
+},
+"m0249": {
+"item_id": "sl20-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl20"
+},
+"m0250": {
+"item_id": "sl12-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "sl12"
+},
+"m0251": {
+"item_id": "sl18-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl18"
+},
+"m0252": {
+"item_id": "cp13-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0253": {
+"item_id": "cs02-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cs02"
+},
+"m0254": {
+"item_id": "sl01-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "sl01"
+},
+"m0255": {
+"item_id": "sl16-reply_esc-blunt",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0256": {
+"item_id": "cs09-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs09"
+},
+"m0257": {
+"item_id": "cs09-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs09"
+},
+"m0258": {
+"item_id": "cp01-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "val",
+"template_id": "cp01"
+},
+"m0259": {
+"item_id": "sl09-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "sl09"
+},
+"m0260": {
+"item_id": "cs16-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cs16"
+},
+"m0261": {
+"item_id": "cp02-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cp02"
+},
+"m0262": {
+"item_id": "sl07-reply_esc-blunt",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "blunt",
+"split": "val",
+"template_id": "sl07"
+},
+"m0263": {
+"item_id": "cp08-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cp08"
+},
+"m0264": {
+"item_id": "sl11-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl11"
+},
+"m0265": {
+"item_id": "cp06-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "val",
+"template_id": "cp06"
+},
+"m0266": {
+"item_id": "cp16-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cp16"
+},
+"m0267": {
+"item_id": "cp05-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp05"
+},
+"m0268": {
+"item_id": "cs19-esc1_user",
+"concept": "C2",
+"kind": "esc1_user",
+"persona": null,
+"split": "dev",
+"template_id": "cs19"
+},
+"m0269": {
+"item_id": "sl11-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl11"
+},
+"m0270": {
+"item_id": "sl20-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "sl20"
+},
+"m0271": {
+"item_id": "cs03-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cs03"
+},
+"m0272": {
+"item_id": "sl11-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "sl11"
+},
+"m0273": {
+"item_id": "cp09-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp09"
+},
+"m0274": {
+"item_id": "cs02-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cs02"
+},
+"m0275": {
+"item_id": "sl09-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl09"
+},
+"m0276": {
+"item_id": "sl19-reply_esc-blunt",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0277": {
+"item_id": "sl10-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl10"
+},
+"m0278": {
+"item_id": "sl01-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0279": {
+"item_id": "cs08-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "val",
+"template_id": "cs08"
+},
+"m0280": {
+"item_id": "sl20-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "sl20"
+},
+"m0281": {
+"item_id": "sl20-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl20"
+},
+"m0282": {
+"item_id": "cp12-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cp12"
+},
+"m0283": {
+"item_id": "cp17-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cp17"
+},
+"m0284": {
+"item_id": "cs14-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cs14"
+},
+"m0285": {
+"item_id": "cs11-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs11"
+},
+"m0286": {
+"item_id": "sl19-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0287": {
+"item_id": "cs01-esc2_user",
+"concept": "C2",
+"kind": "esc2_user",
+"persona": null,
+"split": "dev",
+"template_id": "cs01"
+},
+"m0288": {
+"item_id": "sl09-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "sl09"
+},
+"m0289": {
+"item_id": "cs08-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs08"
+},
+"m0290": {
+"item_id": "sl10-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0291": {
+"item_id": "sl09-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "sl09"
+},
+"m0292": {
+"item_id": "cp13-esc1_user",
+"concept": "C2",
+"kind": "esc1_user",
+"persona": null,
+"split": "dev",
+"template_id": "cp13"
+},
+"m0293": {
+"item_id": "sl03-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "val",
+"template_id": "sl03"
+},
+"m0294": {
+"item_id": "sl03-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl03"
+},
+"m0295": {
+"item_id": "cs16-esc3_user",
+"concept": "C2",
+"kind": "esc3_user",
+"persona": null,
+"split": "dev",
+"template_id": "cs16"
+},
+"m0296": {
+"item_id": "cp18-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "val",
+"template_id": "cp18"
+},
+"m0297": {
+"item_id": "cp18-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp18"
+},
+"m0298": {
+"item_id": "cp17-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cp17"
+},
+"m0299": {
+"item_id": "cs03-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cs03"
+},
+"m0300": {
+"item_id": "cs12-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs12"
+},
+"m0301": {
+"item_id": "cs20-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs20"
+},
+"m0302": {
+"item_id": "cs08-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "val",
+"template_id": "cs08"
+},
+"m0303": {
+"item_id": "cp16-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0304": {
+"item_id": "sl11-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl11"
+},
+"m0305": {
+"item_id": "sl14-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "sl14"
+},
+"m0306": {
+"item_id": "cp20-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "val",
+"template_id": "cp20"
+},
+"m0307": {
+"item_id": "cs11-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cs11"
+},
+"m0308": {
+"item_id": "cp13-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0309": {
+"item_id": "cs14-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cs14"
+},
+"m0310": {
+"item_id": "sl12-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl12"
+},
+"m0311": {
+"item_id": "cs11-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cs11"
+},
+"m0312": {
+"item_id": "sl16-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl16"
+},
+"m0313": {
+"item_id": "cs20-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cs20"
+},
+"m0314": {
+"item_id": "cs08-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "val",
+"template_id": "cs08"
+},
+"m0315": {
+"item_id": "cs20-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs20"
+},
+"m0316": {
+"item_id": "cp05-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cp05"
+},
+"m0317": {
+"item_id": "cs11-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs11"
+},
+"m0318": {
+"item_id": "cp02-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp02"
+},
+"m0319": {
+"item_id": "cs01-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0320": {
+"item_id": "cs16-reply_esc-redteam",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0321": {
+"item_id": "cs03-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cs03"
+},
+"m0322": {
+"item_id": "cp16-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0323": {
+"item_id": "cp06-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "val",
+"template_id": "cp06"
+},
+"m0324": {
+"item_id": "sl09-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl09"
+},
+"m0325": {
+"item_id": "cs14-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs14"
+},
+"m0326": {
+"item_id": "cp17-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp17"
+},
+"m0327": {
+"item_id": "sl16-reply_esc-redteam",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0328": {
+"item_id": "cp12-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cp12"
+},
+"m0329": {
+"item_id": "sl10-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0330": {
+"item_id": "sl19-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl19"
+},
+"m0331": {
+"item_id": "sl18-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "val",
+"template_id": "sl18"
+},
+"m0332": {
+"item_id": "sl09-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl09"
+},
+"m0333": {
+"item_id": "cs03-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs03"
+},
+"m0334": {
+"item_id": "sl20-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "sl20"
+},
+"m0335": {
+"item_id": "sl16-esc2_user",
+"concept": "C2",
+"kind": "esc2_user",
+"persona": null,
+"split": "dev",
+"template_id": "sl16"
+},
+"m0336": {
+"item_id": "cs18-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "val",
+"template_id": "cs18"
+},
+"m0337": {
+"item_id": "cp04-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0338": {
+"item_id": "cp06-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp06"
+},
+"m0339": {
+"item_id": "cp06-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "val",
+"template_id": "cp06"
+},
+"m0340": {
+"item_id": "cp03-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cp03"
+},
+"m0341": {
+"item_id": "sl04-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "sl04"
+},
+"m0342": {
+"item_id": "cs09-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cs09"
+},
+"m0343": {
+"item_id": "cp08-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cp08"
+},
+"m0344": {
+"item_id": "cp13-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0345": {
+"item_id": "sl10-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0346": {
+"item_id": "cs16-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0347": {
+"item_id": "cs04-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "val",
+"template_id": "cs04"
+},
+"m0348": {
+"item_id": "sl18-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "val",
+"template_id": "sl18"
+},
+"m0349": {
+"item_id": "cs06-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "val",
+"template_id": "cs06"
+},
+"m0350": {
+"item_id": "cs06-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "val",
+"template_id": "cs06"
+},
+"m0351": {
+"item_id": "sl12-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "sl12"
+},
+"m0352": {
+"item_id": "cs19-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0353": {
+"item_id": "cp09-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cp09"
+},
+"m0354": {
+"item_id": "cp03-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp03"
+},
+"m0355": {
+"item_id": "cp01-reply_esc-blunt",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "blunt",
+"split": "val",
+"template_id": "cp01"
+},
+"m0356": {
+"item_id": "sl04-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0357": {
+"item_id": "cs08-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "val",
+"template_id": "cs08"
+},
+"m0358": {
+"item_id": "cs06-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "val",
+"template_id": "cs06"
+},
+"m0359": {
+"item_id": "cs04-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "val",
+"template_id": "cs04"
+},
+"m0360": {
+"item_id": "sl18-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "val",
+"template_id": "sl18"
+},
+"m0361": {
+"item_id": "cs03-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs03"
+},
+"m0362": {
+"item_id": "cs04-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "val",
+"template_id": "cs04"
+},
+"m0363": {
+"item_id": "cs09-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cs09"
+},
+"m0364": {
+"item_id": "cs20-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cs20"
+},
+"m0365": {
+"item_id": "cs11-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cs11"
+},
+"m0366": {
+"item_id": "sl18-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "val",
+"template_id": "sl18"
+},
+"m0367": {
+"item_id": "cs06-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "val",
+"template_id": "cs06"
+},
+"m0368": {
+"item_id": "sl04-reply_esc-redteam",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0369": {
+"item_id": "cs16-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0370": {
+"item_id": "cs02-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cs02"
+},
+"m0371": {
+"item_id": "cp12-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp12"
+},
+"m0372": {
+"item_id": "sl13-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "val",
+"template_id": "sl13"
+},
+"m0373": {
+"item_id": "cs11-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs11"
+},
+"m0374": {
+"item_id": "cs04-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "val",
+"template_id": "cs04"
+},
+"m0375": {
+"item_id": "cp17-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cp17"
+},
+"m0376": {
+"item_id": "cs06-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "val",
+"template_id": "cs06"
+},
+"m0377": {
+"item_id": "cp18-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp18"
+},
+"m0378": {
+"item_id": "cs09-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs09"
+},
+"m0379": {
+"item_id": "sl14-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl14"
+},
+"m0380": {
+"item_id": "cs09-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cs09"
+},
+"m0381": {
+"item_id": "cp09-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cp09"
+},
+"m0382": {
+"item_id": "sl09-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "sl09"
+},
+"m0383": {
+"item_id": "sl09-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl09"
+},
+"m0384": {
+"item_id": "sl16-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0385": {
+"item_id": "cs14-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cs14"
+},
+"m0386": {
+"item_id": "cs01-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0387": {
+"item_id": "sl12-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "sl12"
+},
+"m0388": {
+"item_id": "sl14-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "sl14"
+},
+"m0389": {
+"item_id": "sl18-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "val",
+"template_id": "sl18"
+},
+"m0390": {
+"item_id": "sl04-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl04"
+},
+"m0391": {
+"item_id": "sl12-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "sl12"
+},
+"m0392": {
+"item_id": "sl12-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl12"
+},
+"m0393": {
+"item_id": "sl03-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "val",
+"template_id": "sl03"
+},
+"m0394": {
+"item_id": "cs01-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cs01"
+},
+"m0395": {
+"item_id": "cp03-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp03"
+},
+"m0396": {
+"item_id": "cp03-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp03"
+},
+"m0397": {
+"item_id": "sl07-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "val",
+"template_id": "sl07"
+},
+"m0398": {
+"item_id": "cp20-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "val",
+"template_id": "cp20"
+},
+"m0399": {
+"item_id": "cp03-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cp03"
+},
+"m0400": {
+"item_id": "cs14-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cs14"
+},
+"m0401": {
+"item_id": "cp02-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp02"
+},
+"m0402": {
+"item_id": "sl16-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0403": {
+"item_id": "sl19-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "sl19"
+},
+"m0404": {
+"item_id": "cp17-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp17"
+},
+"m0405": {
+"item_id": "cp02-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp02"
+},
+"m0406": {
+"item_id": "cp09-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp09"
+},
+"m0407": {
+"item_id": "cs20-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs20"
+},
+"m0408": {
+"item_id": "cp02-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cp02"
+},
+"m0409": {
+"item_id": "sl14-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl14"
+},
+"m0410": {
+"item_id": "cs11-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cs11"
+},
+"m0411": {
+"item_id": "cp05-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cp05"
+},
+"m0412": {
+"item_id": "cp16-reply_esc-default",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "default",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0413": {
+"item_id": "sl07-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "val",
+"template_id": "sl07"
+},
+"m0414": {
+"item_id": "sl14-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "sl14"
+},
+"m0415": {
+"item_id": "sl18-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl18"
+},
+"m0416": {
+"item_id": "cp16-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0417": {
+"item_id": "sl20-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "sl20"
+},
+"m0418": {
+"item_id": "sl18-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "val",
+"template_id": "sl18"
+},
+"m0419": {
+"item_id": "cs02-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cs02"
+},
+"m0420": {
+"item_id": "sl19-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "sl19"
+},
+"m0421": {
+"item_id": "cs20-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs20"
+},
+"m0422": {
+"item_id": "cp16-esc2_user",
+"concept": "C2",
+"kind": "esc2_user",
+"persona": null,
+"split": "dev",
+"template_id": "cp16"
+},
+"m0423": {
+"item_id": "cp18-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "val",
+"template_id": "cp18"
+},
+"m0424": {
+"item_id": "cp06-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "val",
+"template_id": "cp06"
+},
+"m0425": {
+"item_id": "cs04-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs04"
+},
+"m0426": {
+"item_id": "cp04-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0427": {
+"item_id": "cs11-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cs11"
+},
+"m0428": {
+"item_id": "sl10-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "sl10"
+},
+"m0429": {
+"item_id": "cp16-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cp16"
+},
+"m0430": {
+"item_id": "cs16-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0431": {
+"item_id": "cs19-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0432": {
+"item_id": "cs12-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs12"
+},
+"m0433": {
+"item_id": "sl10-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl10"
+},
+"m0434": {
+"item_id": "cp03-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cp03"
+},
+"m0435": {
+"item_id": "cs02-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs02"
+},
+"m0436": {
+"item_id": "cp18-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "val",
+"template_id": "cp18"
+},
+"m0437": {
+"item_id": "sl13-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl13"
+},
+"m0438": {
+"item_id": "cs09-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs09"
+},
+"m0439": {
+"item_id": "cp16-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp16"
+},
+"m0440": {
+"item_id": "cs01-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cs01"
+},
+"m0441": {
+"item_id": "cp05-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cp05"
+},
+"m0442": {
+"item_id": "cp02-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cp02"
+},
+"m0443": {
+"item_id": "sl04-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl04"
+},
+"m0444": {
+"item_id": "cp18-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp18"
+},
+"m0445": {
+"item_id": "sl04-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0446": {
+"item_id": "cs08-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs08"
+},
+"m0447": {
+"item_id": "cp12-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cp12"
+},
+"m0448": {
+"item_id": "cs12-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cs12"
+},
+"m0449": {
+"item_id": "cp04-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0450": {
+"item_id": "cs04-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "val",
+"template_id": "cs04"
+},
+"m0451": {
+"item_id": "cs04-reply_esc-blunt",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "blunt",
+"split": "val",
+"template_id": "cs04"
+},
+"m0452": {
+"item_id": "cp04-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cp04"
+},
+"m0453": {
+"item_id": "cp03-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp03"
+},
+"m0454": {
+"item_id": "sl10-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0455": {
+"item_id": "sl07-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "val",
+"template_id": "sl07"
+},
+"m0456": {
+"item_id": "cs03-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs03"
+},
+"m0457": {
+"item_id": "cs16-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0458": {
+"item_id": "cs16-reply_esc-blunt",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0459": {
+"item_id": "cs09-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cs09"
+},
+"m0460": {
+"item_id": "cp17-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cp17"
+},
+"m0461": {
+"item_id": "sl11-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "sl11"
+},
+"m0462": {
+"item_id": "sl01-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0463": {
+"item_id": "sl10-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0464": {
+"item_id": "cp05-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cp05"
+},
+"m0465": {
+"item_id": "sl11-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "sl11"
+},
+"m0466": {
+"item_id": "cp20-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "val",
+"template_id": "cp20"
+},
+"m0467": {
+"item_id": "cs16-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0468": {
+"item_id": "cp13-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0469": {
+"item_id": "cs01-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs01"
+},
+"m0470": {
+"item_id": "sl13-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "val",
+"template_id": "sl13"
+},
+"m0471": {
+"item_id": "sl14-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl14"
+},
+"m0472": {
+"item_id": "cp01-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "val",
+"template_id": "cp01"
+},
+"m0473": {
+"item_id": "cs04-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "val",
+"template_id": "cs04"
+},
+"m0474": {
+"item_id": "cp12-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp12"
+},
+"m0475": {
+"item_id": "cs03-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs03"
+},
+"m0476": {
+"item_id": "cs18-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs18"
+},
+"m0477": {
+"item_id": "cs08-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs08"
+},
+"m0478": {
+"item_id": "sl18-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl18"
+},
+"m0479": {
+"item_id": "cs18-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "val",
+"template_id": "cs18"
+},
+"m0480": {
+"item_id": "cp18-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "val",
+"template_id": "cp18"
+},
+"m0481": {
+"item_id": "sl04-esc1_user",
+"concept": "C2",
+"kind": "esc1_user",
+"persona": null,
+"split": "dev",
+"template_id": "sl04"
+},
+"m0482": {
+"item_id": "cp03-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp03"
+},
+"m0483": {
+"item_id": "sl07-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl07"
+},
+"m0484": {
+"item_id": "sl12-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "sl12"
+},
+"m0485": {
+"item_id": "cs03-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cs03"
+},
+"m0486": {
+"item_id": "cp17-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cp17"
+},
+"m0487": {
+"item_id": "cp08-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cp08"
+},
+"m0488": {
+"item_id": "cp03-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp03"
+},
+"m0489": {
+"item_id": "cp03-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cp03"
+},
+"m0490": {
+"item_id": "cs12-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cs12"
+},
+"m0491": {
+"item_id": "cp01-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "val",
+"template_id": "cp01"
+},
+"m0492": {
+"item_id": "cs02-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cs02"
+},
+"m0493": {
+"item_id": "sl19-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0494": {
+"item_id": "sl13-esc2_user",
+"concept": "C2",
+"kind": "esc2_user",
+"persona": null,
+"split": "val",
+"template_id": "sl13"
+},
+"m0495": {
+"item_id": "cs16-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0496": {
+"item_id": "sl16-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "sl16"
+},
+"m0497": {
+"item_id": "sl11-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "sl11"
+},
+"m0498": {
+"item_id": "sl04-reply_esc-blunt",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0499": {
+"item_id": "cs18-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "val",
+"template_id": "cs18"
+},
+"m0500": {
+"item_id": "sl04-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0501": {
+"item_id": "sl01-esc3_user",
+"concept": "C2",
+"kind": "esc3_user",
+"persona": null,
+"split": "dev",
+"template_id": "sl01"
+},
+"m0502": {
+"item_id": "cs12-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cs12"
+},
+"m0503": {
+"item_id": "cs14-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cs14"
+},
+"m0504": {
+"item_id": "sl20-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "sl20"
+},
+"m0505": {
+"item_id": "cp20-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp20"
+},
+"m0506": {
+"item_id": "sl03-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl03"
+},
+"m0507": {
+"item_id": "sl04-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0508": {
+"item_id": "cp03-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cp03"
+},
+"m0509": {
+"item_id": "sl07-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "val",
+"template_id": "sl07"
+},
+"m0510": {
+"item_id": "sl01-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "sl01"
+},
+"m0511": {
+"item_id": "sl14-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "sl14"
+},
+"m0512": {
+"item_id": "cs16-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0513": {
+"item_id": "cs06-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs06"
+},
+"m0514": {
+"item_id": "sl14-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl14"
+},
+"m0515": {
+"item_id": "sl16-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "sl16"
+},
+"m0516": {
+"item_id": "sl20-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl20"
+},
+"m0517": {
+"item_id": "cs08-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "val",
+"template_id": "cs08"
+},
+"m0518": {
+"item_id": "cp05-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp05"
+},
+"m0519": {
+"item_id": "sl12-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl12"
+},
+"m0520": {
+"item_id": "cp05-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cp05"
+},
+"m0521": {
+"item_id": "cp04-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cp04"
+},
+"m0522": {
+"item_id": "sl10-esc3_user",
+"concept": "C2",
+"kind": "esc3_user",
+"persona": null,
+"split": "dev",
+"template_id": "sl10"
+},
+"m0523": {
+"item_id": "cs20-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs20"
+},
+"m0524": {
+"item_id": "sl07-esc3_user",
+"concept": "C2",
+"kind": "esc3_user",
+"persona": null,
+"split": "val",
+"template_id": "sl07"
+},
+"m0525": {
+"item_id": "cs08-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "val",
+"template_id": "cs08"
+},
+"m0526": {
+"item_id": "cs18-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs18"
+},
+"m0527": {
+"item_id": "sl13-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl13"
+},
+"m0528": {
+"item_id": "sl10-esc2_user",
+"concept": "C2",
+"kind": "esc2_user",
+"persona": null,
+"split": "dev",
+"template_id": "sl10"
+},
+"m0529": {
+"item_id": "cp06-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "val",
+"template_id": "cp06"
+},
+"m0530": {
+"item_id": "cp08-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cp08"
+},
+"m0531": {
+"item_id": "sl07-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl07"
+},
+"m0532": {
+"item_id": "cs08-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "val",
+"template_id": "cs08"
+},
+"m0533": {
+"item_id": "cp09-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp09"
+},
+"m0534": {
+"item_id": "cp01-reply_esc-redteam",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp01"
+},
+"m0535": {
+"item_id": "cs11-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cs11"
+},
+"m0536": {
+"item_id": "cs11-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cs11"
+},
+"m0537": {
+"item_id": "sl13-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "val",
+"template_id": "sl13"
+},
+"m0538": {
+"item_id": "cp05-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cp05"
+},
+"m0539": {
+"item_id": "sl04-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0540": {
+"item_id": "cs19-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0541": {
+"item_id": "cs19-reply_esc-redteam",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0542": {
+"item_id": "cs18-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "val",
+"template_id": "cs18"
+},
+"m0543": {
+"item_id": "cp12-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp12"
+},
+"m0544": {
+"item_id": "sl19-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0545": {
+"item_id": "cs19-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cs19"
+},
+"m0546": {
+"item_id": "sl04-reply_esc-default",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "default",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0547": {
+"item_id": "cp17-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cp17"
+},
+"m0548": {
+"item_id": "cp05-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cp05"
+},
+"m0549": {
+"item_id": "cp18-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "val",
+"template_id": "cp18"
+},
+"m0550": {
+"item_id": "cp17-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cp17"
+},
+"m0551": {
+"item_id": "sl16-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0552": {
+"item_id": "sl07-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "val",
+"template_id": "sl07"
+},
+"m0553": {
+"item_id": "sl13-esc1_user",
+"concept": "C2",
+"kind": "esc1_user",
+"persona": null,
+"split": "val",
+"template_id": "sl13"
+},
+"m0554": {
+"item_id": "cs16-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cs16"
+},
+"m0555": {
+"item_id": "cs02-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs02"
+},
+"m0556": {
+"item_id": "cs14-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cs14"
+},
+"m0557": {
+"item_id": "cs16-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0558": {
+"item_id": "sl13-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "val",
+"template_id": "sl13"
+},
+"m0559": {
+"item_id": "cs14-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cs14"
+},
+"m0560": {
+"item_id": "sl12-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "sl12"
+},
+"m0561": {
+"item_id": "cp06-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "val",
+"template_id": "cp06"
+},
+"m0562": {
+"item_id": "sl11-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl11"
+},
+"m0563": {
+"item_id": "sl04-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "sl04"
+},
+"m0564": {
+"item_id": "cp09-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp09"
+},
+"m0565": {
+"item_id": "cp09-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp09"
+},
+"m0566": {
+"item_id": "sl12-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "sl12"
+},
+"m0567": {
+"item_id": "cs09-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cs09"
+},
+"m0568": {
+"item_id": "cp04-esc2_user",
+"concept": "C2",
+"kind": "esc2_user",
+"persona": null,
+"split": "dev",
+"template_id": "cp04"
+},
+"m0569": {
+"item_id": "cs02-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cs02"
+},
+"m0570": {
+"item_id": "sl14-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl14"
+},
+"m0571": {
+"item_id": "cs14-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cs14"
+},
+"m0572": {
+"item_id": "cs12-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs12"
+},
+"m0573": {
+"item_id": "sl09-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "sl09"
+},
+"m0574": {
+"item_id": "cs03-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cs03"
+},
+"m0575": {
+"item_id": "sl13-reply_esc-blunt",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "blunt",
+"split": "val",
+"template_id": "sl13"
+},
+"m0576": {
+"item_id": "cs18-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "val",
+"template_id": "cs18"
+},
+"m0577": {
+"item_id": "cs19-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cs19"
+},
+"m0578": {
+"item_id": "sl09-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl09"
+},
+"m0579": {
+"item_id": "cp09-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cp09"
+},
+"m0580": {
+"item_id": "sl04-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0581": {
+"item_id": "cp04-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cp04"
+},
+"m0582": {
+"item_id": "sl19-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0583": {
+"item_id": "cp01-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "val",
+"template_id": "cp01"
+},
+"m0584": {
+"item_id": "sl03-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "val",
+"template_id": "sl03"
+},
+"m0585": {
+"item_id": "sl19-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "sl19"
+},
+"m0586": {
+"item_id": "cs01-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0587": {
+"item_id": "cs18-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "val",
+"template_id": "cs18"
+},
+"m0588": {
+"item_id": "cp18-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "val",
+"template_id": "cp18"
+},
+"m0589": {
+"item_id": "cs20-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs20"
+},
+"m0590": {
+"item_id": "sl12-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "sl12"
+},
+"m0591": {
+"item_id": "cp18-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "val",
+"template_id": "cp18"
+},
+"m0592": {
+"item_id": "sl18-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl18"
+},
+"m0593": {
+"item_id": "sl04-esc3_user",
+"concept": "C2",
+"kind": "esc3_user",
+"persona": null,
+"split": "dev",
+"template_id": "sl04"
+},
+"m0594": {
+"item_id": "cs11-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs11"
+},
+"m0595": {
+"item_id": "sl19-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0596": {
+"item_id": "cs01-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0597": {
+"item_id": "sl20-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "sl20"
+},
+"m0598": {
+"item_id": "sl19-reply_esc-default",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "default",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0599": {
+"item_id": "cp13-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0600": {
+"item_id": "sl01-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0601": {
+"item_id": "cs03-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs03"
+},
+"m0602": {
+"item_id": "cp16-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0603": {
+"item_id": "cs04-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "val",
+"template_id": "cs04"
+},
+"m0604": {
+"item_id": "cp01-esc2_user",
+"concept": "C2",
+"kind": "esc2_user",
+"persona": null,
+"split": "val",
+"template_id": "cp01"
+},
+"m0605": {
+"item_id": "cp16-reply_esc-redteam",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0606": {
+"item_id": "sl11-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "sl11"
+},
+"m0607": {
+"item_id": "cp06-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "val",
+"template_id": "cp06"
+},
+"m0608": {
+"item_id": "sl03-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "val",
+"template_id": "sl03"
+},
+"m0609": {
+"item_id": "sl18-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "val",
+"template_id": "sl18"
+},
+"m0610": {
+"item_id": "cp02-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp02"
+},
+"m0611": {
+"item_id": "cp17-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp17"
+},
+"m0612": {
+"item_id": "sl16-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0613": {
+"item_id": "cp13-reply_esc-blunt",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0614": {
+"item_id": "cs19-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0615": {
+"item_id": "cp08-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cp08"
+},
+"m0616": {
+"item_id": "sl04-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "sl04"
+},
+"m0617": {
+"item_id": "cs02-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs02"
+},
+"m0618": {
+"item_id": "sl01-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0619": {
+"item_id": "cp08-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cp08"
+},
+"m0620": {
+"item_id": "cp02-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp02"
+},
+"m0621": {
+"item_id": "cp18-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "val",
+"template_id": "cp18"
+},
+"m0622": {
+"item_id": "sl11-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "sl11"
+},
+"m0623": {
+"item_id": "cs20-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cs20"
+},
+"m0624": {
+"item_id": "cs11-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs11"
+},
+"m0625": {
+"item_id": "sl20-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl20"
+},
+"m0626": {
+"item_id": "cp04-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0627": {
+"item_id": "cp05-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cp05"
+},
+"m0628": {
+"item_id": "sl16-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0629": {
+"item_id": "sl16-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0630": {
+"item_id": "cp06-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "val",
+"template_id": "cp06"
+},
+"m0631": {
+"item_id": "cs01-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs01"
+},
+"m0632": {
+"item_id": "cp08-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cp08"
+},
+"m0633": {
+"item_id": "cs11-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cs11"
+},
+"m0634": {
+"item_id": "sl12-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "sl12"
+},
+"m0635": {
+"item_id": "cs03-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cs03"
+},
+"m0636": {
+"item_id": "cs01-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0637": {
+"item_id": "cp09-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp09"
+},
+"m0638": {
+"item_id": "cp16-esc1_user",
+"concept": "C2",
+"kind": "esc1_user",
+"persona": null,
+"split": "dev",
+"template_id": "cp16"
+},
+"m0639": {
+"item_id": "cp17-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cp17"
+},
+"m0640": {
+"item_id": "cs14-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cs14"
+},
+"m0641": {
+"item_id": "sl04-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0642": {
+"item_id": "sl01-esc1_user",
+"concept": "C2",
+"kind": "esc1_user",
+"persona": null,
+"split": "dev",
+"template_id": "sl01"
+},
+"m0643": {
+"item_id": "cp13-reply_esc-default",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "default",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0644": {
+"item_id": "cp03-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp03"
+},
+"m0645": {
+"item_id": "cp13-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cp13"
+},
+"m0646": {
+"item_id": "cp12-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp12"
+},
+"m0647": {
+"item_id": "cp02-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp02"
+},
+"m0648": {
+"item_id": "cs09-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs09"
+},
+"m0649": {
+"item_id": "sl19-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0650": {
+"item_id": "sl10-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0651": {
+"item_id": "cs12-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs12"
+},
+"m0652": {
+"item_id": "cp04-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0653": {
+"item_id": "cp20-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "val",
+"template_id": "cp20"
+},
+"m0654": {
+"item_id": "cs04-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "val",
+"template_id": "cs04"
+},
+"m0655": {
+"item_id": "cs01-esc3_user",
+"concept": "C2",
+"kind": "esc3_user",
+"persona": null,
+"split": "dev",
+"template_id": "cs01"
+},
+"m0656": {
+"item_id": "cs12-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs12"
+},
+"m0657": {
+"item_id": "sl04-esc2_user",
+"concept": "C2",
+"kind": "esc2_user",
+"persona": null,
+"split": "dev",
+"template_id": "sl04"
+},
+"m0658": {
+"item_id": "cp13-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0659": {
+"item_id": "cp05-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp05"
+},
+"m0660": {
+"item_id": "cs20-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cs20"
+},
+"m0661": {
+"item_id": "cs20-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cs20"
+},
+"m0662": {
+"item_id": "cs08-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "val",
+"template_id": "cs08"
+},
+"m0663": {
+"item_id": "sl20-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl20"
+},
+"m0664": {
+"item_id": "cp02-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp02"
+},
+"m0665": {
+"item_id": "cp16-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0666": {
+"item_id": "cs12-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs12"
+},
+"m0667": {
+"item_id": "cs12-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cs12"
+},
+"m0668": {
+"item_id": "sl07-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "val",
+"template_id": "sl07"
+},
+"m0669": {
+"item_id": "cp17-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cp17"
+},
+"m0670": {
+"item_id": "sl11-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "sl11"
+},
+"m0671": {
+"item_id": "cp03-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cp03"
+},
+"m0672": {
+"item_id": "cp13-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0673": {
+"item_id": "cs04-esc2_user",
+"concept": "C2",
+"kind": "esc2_user",
+"persona": null,
+"split": "val",
+"template_id": "cs04"
+},
+"m0674": {
+"item_id": "cp08-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cp08"
+},
+"m0675": {
+"item_id": "sl16-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0676": {
+"item_id": "sl13-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "val",
+"template_id": "sl13"
+},
+"m0677": {
+"item_id": "cp20-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "val",
+"template_id": "cp20"
+},
+"m0678": {
+"item_id": "cp20-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "val",
+"template_id": "cp20"
+},
+"m0679": {
+"item_id": "cp09-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp09"
+},
+"m0680": {
+"item_id": "cs18-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "val",
+"template_id": "cs18"
+},
+"m0681": {
+"item_id": "cs03-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs03"
+},
+"m0682": {
+"item_id": "cp04-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp04"
+},
+"m0683": {
+"item_id": "cp17-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp17"
+},
+"m0684": {
+"item_id": "cs04-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs04"
+},
+"m0685": {
+"item_id": "sl03-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "val",
+"template_id": "sl03"
+},
+"m0686": {
+"item_id": "sl10-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "sl10"
+},
+"m0687": {
+"item_id": "sl09-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "sl09"
+},
+"m0688": {
+"item_id": "sl04-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0689": {
+"item_id": "cs16-esc2_user",
+"concept": "C2",
+"kind": "esc2_user",
+"persona": null,
+"split": "dev",
+"template_id": "cs16"
+},
+"m0690": {
+"item_id": "cs18-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "val",
+"template_id": "cs18"
+},
+"m0691": {
+"item_id": "cs02-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cs02"
+},
+"m0692": {
+"item_id": "sl16-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0693": {
+"item_id": "sl01-reply_esc-redteam",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0694": {
+"item_id": "cp04-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0695": {
+"item_id": "sl03-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "val",
+"template_id": "sl03"
+},
+"m0696": {
+"item_id": "sl20-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "sl20"
+},
+"m0697": {
+"item_id": "sl01-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0698": {
+"item_id": "cs18-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "val",
+"template_id": "cs18"
+},
+"m0699": {
+"item_id": "cp13-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cp13"
+},
+"m0700": {
+"item_id": "cp20-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "val",
+"template_id": "cp20"
+},
+"m0701": {
+"item_id": "sl20-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl20"
+},
+"m0702": {
+"item_id": "sl04-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "sl04"
+},
+"m0703": {
+"item_id": "cp02-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cp02"
+},
+"m0704": {
+"item_id": "cp13-esc3_user",
+"concept": "C2",
+"kind": "esc3_user",
+"persona": null,
+"split": "dev",
+"template_id": "cp13"
+},
+"m0705": {
+"item_id": "sl18-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "val",
+"template_id": "sl18"
+},
+"m0706": {
+"item_id": "sl04-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0707": {
+"item_id": "cs18-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "val",
+"template_id": "cs18"
+},
+"m0708": {
+"item_id": "cp17-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp17"
+},
+"m0709": {
+"item_id": "cp09-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cp09"
+},
+"m0710": {
+"item_id": "sl07-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "val",
+"template_id": "sl07"
+},
+"m0711": {
+"item_id": "sl07-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "val",
+"template_id": "sl07"
+},
+"m0712": {
+"item_id": "cs02-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cs02"
+},
+"m0713": {
+"item_id": "cs18-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs18"
+},
+"m0714": {
+"item_id": "sl20-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "sl20"
+},
+"m0715": {
+"item_id": "sl01-reply_esc-default",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "default",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0716": {
+"item_id": "sl19-esc3_user",
+"concept": "C2",
+"kind": "esc3_user",
+"persona": null,
+"split": "dev",
+"template_id": "sl19"
+},
+"m0717": {
+"item_id": "cs18-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "val",
+"template_id": "cs18"
+},
+"m0718": {
+"item_id": "cs18-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "val",
+"template_id": "cs18"
+},
+"m0719": {
+"item_id": "sl13-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "val",
+"template_id": "sl13"
+},
+"m0720": {
+"item_id": "sl03-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "val",
+"template_id": "sl03"
+},
+"m0721": {
+"item_id": "cs09-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs09"
+},
+"m0722": {
+"item_id": "cp12-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cp12"
+},
+"m0723": {
+"item_id": "cp13-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0724": {
+"item_id": "cp16-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "cp16"
+},
+"m0725": {
+"item_id": "sl10-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0726": {
+"item_id": "cs04-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs04"
+},
+"m0727": {
+"item_id": "cs19-reply_esc-default",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "default",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0728": {
+"item_id": "cp01-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "val",
+"template_id": "cp01"
+},
+"m0729": {
+"item_id": "cp03-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cp03"
+},
+"m0730": {
+"item_id": "sl14-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl14"
+},
+"m0731": {
+"item_id": "sl01-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl01"
+},
+"m0732": {
+"item_id": "cs03-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs03"
+},
+"m0733": {
+"item_id": "sl18-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "val",
+"template_id": "sl18"
+},
+"m0734": {
+"item_id": "cs03-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs03"
+},
+"m0735": {
+"item_id": "cs06-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "val",
+"template_id": "cs06"
+},
+"m0736": {
+"item_id": "cs09-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cs09"
+},
+"m0737": {
+"item_id": "cp08-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp08"
+},
+"m0738": {
+"item_id": "sl13-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "val",
+"template_id": "sl13"
+},
+"m0739": {
+"item_id": "sl07-reply_esc-default",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "default",
+"split": "val",
+"template_id": "sl07"
+},
+"m0740": {
+"item_id": "cs03-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cs03"
+},
+"m0741": {
+"item_id": "cp17-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cp17"
+},
+"m0742": {
+"item_id": "sl10-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "sl10"
+},
+"m0743": {
+"item_id": "sl13-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "val",
+"template_id": "sl13"
+},
+"m0744": {
+"item_id": "cs11-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cs11"
+},
+"m0745": {
+"item_id": "sl13-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "val",
+"template_id": "sl13"
+},
+"m0746": {
+"item_id": "cp01-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp01"
+},
+"m0747": {
+"item_id": "cs01-reply_esc-default",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "default",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0748": {
+"item_id": "cs19-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs19"
+},
+"m0749": {
+"item_id": "cp09-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cp09"
+},
+"m0750": {
+"item_id": "cp18-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "val",
+"template_id": "cp18"
+},
+"m0751": {
+"item_id": "cs19-reply_esc-blunt",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0752": {
+"item_id": "sl19-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl19"
+},
+"m0753": {
+"item_id": "cs08-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "val",
+"template_id": "cs08"
+},
+"m0754": {
+"item_id": "cs16-esc1_user",
+"concept": "C2",
+"kind": "esc1_user",
+"persona": null,
+"split": "dev",
+"template_id": "cs16"
+},
+"m0755": {
+"item_id": "sl14-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "sl14"
+},
+"m0756": {
+"item_id": "cp01-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp01"
+},
+"m0757": {
+"item_id": "cp04-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0758": {
+"item_id": "sl11-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl11"
+},
+"m0759": {
+"item_id": "cp05-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cp05"
+},
+"m0760": {
+"item_id": "cp13-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0761": {
+"item_id": "cs12-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cs12"
+},
+"m0762": {
+"item_id": "sl01-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "dev",
+"template_id": "sl01"
+},
+"m0763": {
+"item_id": "sl12-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl12"
+},
+"m0764": {
+"item_id": "cs08-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "val",
+"template_id": "cs08"
+},
+"m0765": {
+"item_id": "sl07-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl07"
+},
+"m0766": {
+"item_id": "cs04-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "val",
+"template_id": "cs04"
+},
+"m0767": {
+"item_id": "cp16-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "cp16"
+},
+"m0768": {
+"item_id": "cs08-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs08"
+},
+"m0769": {
+"item_id": "sl20-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "sl20"
+},
+"m0770": {
+"item_id": "cp18-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "val",
+"template_id": "cp18"
+},
+"m0771": {
+"item_id": "sl03-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl03"
+},
+"m0772": {
+"item_id": "cp20-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp20"
+},
+"m0773": {
+"item_id": "cp09-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cp09"
+},
+"m0774": {
+"item_id": "sl09-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "sl09"
+},
+"m0775": {
+"item_id": "cp16-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0776": {
+"item_id": "cs20-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cs20"
+},
+"m0777": {
+"item_id": "cp02-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cp02"
+},
+"m0778": {
+"item_id": "sl07-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "val",
+"template_id": "sl07"
+},
+"m0779": {
+"item_id": "sl14-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "sl14"
+},
+"m0780": {
+"item_id": "cp03-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cp03"
+},
+"m0781": {
+"item_id": "sl13-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "val",
+"template_id": "sl13"
+},
+"m0782": {
+"item_id": "sl13-reply_esc-redteam",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl13"
+},
+"m0783": {
+"item_id": "cs04-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "val",
+"template_id": "cs04"
+},
+"m0784": {
+"item_id": "cp01-reply_esc-default",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "default",
+"split": "val",
+"template_id": "cp01"
+},
+"m0785": {
+"item_id": "cs19-esc2_user",
+"concept": "C2",
+"kind": "esc2_user",
+"persona": null,
+"split": "dev",
+"template_id": "cs19"
+},
+"m0786": {
+"item_id": "cs14-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs14"
+},
+"m0787": {
+"item_id": "sl11-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl11"
+},
+"m0788": {
+"item_id": "cs01-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0789": {
+"item_id": "sl11-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "sl11"
+},
+"m0790": {
+"item_id": "sl01-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0791": {
+"item_id": "cs14-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cs14"
+},
+"m0792": {
+"item_id": "cp16-reply_esc-blunt",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0793": {
+"item_id": "sl07-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "val",
+"template_id": "sl07"
+},
+"m0794": {
+"item_id": "cs20-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs20"
+},
+"m0795": {
+"item_id": "cp02-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp02"
+},
+"m0796": {
+"item_id": "sl10-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0797": {
+"item_id": "cs14-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs14"
+},
+"m0798": {
+"item_id": "sl11-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "sl11"
+},
+"m0799": {
+"item_id": "cp09-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp09"
+},
+"m0800": {
+"item_id": "sl20-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl20"
+},
+"m0801": {
+"item_id": "cs04-esc1_user",
+"concept": "C2",
+"kind": "esc1_user",
+"persona": null,
+"split": "val",
+"template_id": "cs04"
+},
+"m0802": {
+"item_id": "cs02-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs02"
+},
+"m0803": {
+"item_id": "sl12-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "sl12"
+},
+"m0804": {
+"item_id": "sl16-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl16"
+},
+"m0805": {
+"item_id": "cp04-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0806": {
+"item_id": "cp16-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0807": {
+"item_id": "cp05-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp05"
+},
+"m0808": {
+"item_id": "sl14-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "dev",
+"template_id": "sl14"
+},
+"m0809": {
+"item_id": "cs01-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0810": {
+"item_id": "cp17-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp17"
+},
+"m0811": {
+"item_id": "cs01-reply_esc-redteam",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0812": {
+"item_id": "sl16-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0813": {
+"item_id": "cs19-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0814": {
+"item_id": "cp20-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "val",
+"template_id": "cp20"
+},
+"m0815": {
+"item_id": "sl18-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "val",
+"template_id": "sl18"
+},
+"m0816": {
+"item_id": "cp04-esc3_user",
+"concept": "C2",
+"kind": "esc3_user",
+"persona": null,
+"split": "dev",
+"template_id": "cp04"
+},
+"m0817": {
+"item_id": "cs01-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0818": {
+"item_id": "cp17-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp17"
+},
+"m0819": {
+"item_id": "cp18-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "val",
+"template_id": "cp18"
+},
+"m0820": {
+"item_id": "sl01-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "sl01"
+},
+"m0821": {
+"item_id": "cs16-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs16"
+},
+"m0822": {
+"item_id": "sl19-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0823": {
+"item_id": "cp17-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp17"
+},
+"m0824": {
+"item_id": "cp08-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp08"
+},
+"m0825": {
+"item_id": "cp13-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cp13"
+},
+"m0826": {
+"item_id": "cp12-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cp12"
+},
+"m0827": {
+"item_id": "cs11-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs11"
+},
+"m0828": {
+"item_id": "cp01-esc3_user",
+"concept": "C2",
+"kind": "esc3_user",
+"persona": null,
+"split": "val",
+"template_id": "cp01"
+},
+"m0829": {
+"item_id": "cp01-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "val",
+"template_id": "cp01"
+},
+"m0830": {
+"item_id": "cs09-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs09"
+},
+"m0831": {
+"item_id": "cp03-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp03"
+},
+"m0832": {
+"item_id": "cp13-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0833": {
+"item_id": "cp03-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cp03"
+},
+"m0834": {
+"item_id": "sl11-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl11"
+},
+"m0835": {
+"item_id": "cp16-esc3_user",
+"concept": "C2",
+"kind": "esc3_user",
+"persona": null,
+"split": "dev",
+"template_id": "cp16"
+},
+"m0836": {
+"item_id": "cp05-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp05"
+},
+"m0837": {
+"item_id": "cs02-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs02"
+},
+"m0838": {
+"item_id": "sl13-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "val",
+"template_id": "sl13"
+},
+"m0839": {
+"item_id": "sl01-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0840": {
+"item_id": "cp16-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0841": {
+"item_id": "cp08-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cp08"
+},
+"m0842": {
+"item_id": "cp01-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "val",
+"template_id": "cp01"
+},
+"m0843": {
+"item_id": "cs12-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cs12"
+},
+"m0844": {
+"item_id": "sl12-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl12"
+},
+"m0845": {
+"item_id": "cs12-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cs12"
+},
+"m0846": {
+"item_id": "cs20-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cs20"
+},
+"m0847": {
+"item_id": "sl11-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl11"
+},
+"m0848": {
+"item_id": "cs14-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs14"
+},
+"m0849": {
+"item_id": "sl03-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "val",
+"template_id": "sl03"
+},
+"m0850": {
+"item_id": "cs16-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0851": {
+"item_id": "sl14-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl14"
+},
+"m0852": {
+"item_id": "cp06-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "val",
+"template_id": "cp06"
+},
+"m0853": {
+"item_id": "cs16-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cs16"
+},
+"m0854": {
+"item_id": "sl13-esc3_user",
+"concept": "C2",
+"kind": "esc3_user",
+"persona": null,
+"split": "val",
+"template_id": "sl13"
+},
+"m0855": {
+"item_id": "cs09-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs09"
+},
+"m0856": {
+"item_id": "cs09-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cs09"
+},
+"m0857": {
+"item_id": "cp01-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "val",
+"template_id": "cp01"
+},
+"m0858": {
+"item_id": "sl16-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "sl16"
+},
+"m0859": {
+"item_id": "cs20-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs20"
+},
+"m0860": {
+"item_id": "cs11-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "dev",
+"template_id": "cs11"
+},
+"m0861": {
+"item_id": "cs11-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cs11"
+},
+"m0862": {
+"item_id": "cs19-c1ctrl_third_party_fault-default",
+"concept": "C1",
+"kind": "c1ctrl_third_party_fault",
+"persona": "default",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0863": {
+"item_id": "cs06-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "val",
+"template_id": "cs06"
+},
+"m0864": {
+"item_id": "sl03-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "val",
+"template_id": "sl03"
+},
+"m0865": {
+"item_id": "cs18-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "val",
+"template_id": "cs18"
+},
+"m0866": {
+"item_id": "cs06-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "val",
+"template_id": "cs06"
+},
+"m0867": {
+"item_id": "cp01-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp01"
+},
+"m0868": {
+"item_id": "sl09-reply_abusive-blunt",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl09"
+},
+"m0869": {
+"item_id": "cs06-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "val",
+"template_id": "cs06"
+},
+"m0870": {
+"item_id": "cp06-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "val",
+"template_id": "cp06"
+},
+"m0871": {
+"item_id": "sl20-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl20"
+},
+"m0872": {
+"item_id": "sl07-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "val",
+"template_id": "sl07"
+},
+"m0873": {
+"item_id": "cs06-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "val",
+"template_id": "cs06"
+},
+"m0874": {
+"item_id": "sl03-user_frustrated",
+"concept": "C2",
+"kind": "user_frustrated",
+"persona": null,
+"split": "val",
+"template_id": "sl03"
+},
+"m0875": {
+"item_id": "cs16-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0876": {
+"item_id": "cs19-esc3_user",
+"concept": "C2",
+"kind": "esc3_user",
+"persona": null,
+"split": "dev",
+"template_id": "cs19"
+},
+"m0877": {
+"item_id": "sl19-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0878": {
+"item_id": "cs06-user_abusive",
+"concept": "C2",
+"kind": "user_abusive",
+"persona": null,
+"split": "val",
+"template_id": "cs06"
+},
+"m0879": {
+"item_id": "cp20-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "val",
+"template_id": "cp20"
+},
+"m0880": {
+"item_id": "sl14-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "sl14"
+},
+"m0881": {
+"item_id": "cp01-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "val",
+"template_id": "cp01"
+},
+"m0882": {
+"item_id": "sl11-reply_calm-redteam",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl11"
+},
+"m0883": {
+"item_id": "cp12-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cp12"
+},
+"m0884": {
+"item_id": "cs18-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "val",
+"template_id": "cs18"
+},
+"m0885": {
+"item_id": "cs20-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cs20"
+},
+"m0886": {
+"item_id": "cs01-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs01"
+},
+"m0887": {
+"item_id": "cp16-reply_neutral-default",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "default",
+"split": "dev",
+"template_id": "cp16"
+},
+"m0888": {
+"item_id": "sl10-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0889": {
+"item_id": "cs03-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "dev",
+"template_id": "cs03"
+},
+"m0890": {
+"item_id": "cs12-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cs12"
+},
+"m0891": {
+"item_id": "sl13-reply_abusive-redteam",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl13"
+},
+"m0892": {
+"item_id": "cp13-esc2_user",
+"concept": "C2",
+"kind": "esc2_user",
+"persona": null,
+"split": "dev",
+"template_id": "cp13"
+},
+"m0893": {
+"item_id": "cs02-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs02"
+},
+"m0894": {
+"item_id": "cp13-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0895": {
+"item_id": "cs06-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "val",
+"template_id": "cs06"
+},
+"m0896": {
+"item_id": "cs14-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs14"
+},
+"m0897": {
+"item_id": "cp12-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "dev",
+"template_id": "cp12"
+},
+"m0898": {
+"item_id": "cp01-c2ctrl_third_party_story",
+"concept": "C2",
+"kind": "c2ctrl_third_party_story",
+"persona": null,
+"split": "val",
+"template_id": "cp01"
+},
+"m0899": {
+"item_id": "sl19-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "sl19"
+},
+"m0900": {
+"item_id": "cp17-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp17"
+},
+"m0901": {
+"item_id": "sl19-esc2_user",
+"concept": "C2",
+"kind": "esc2_user",
+"persona": null,
+"split": "dev",
+"template_id": "sl19"
+},
+"m0902": {
+"item_id": "sl10-reply_abusive-default",
+"concept": "C1",
+"kind": "reply_abusive",
+"persona": "default",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0903": {
+"item_id": "sl10-esc1_user",
+"concept": "C2",
+"kind": "esc1_user",
+"persona": null,
+"split": "dev",
+"template_id": "sl10"
+},
+"m0904": {
+"item_id": "cs03-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs03"
+},
+"m0905": {
+"item_id": "cp12-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp12"
+},
+"m0906": {
+"item_id": "cs19-reply_frustrated-blunt",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs19"
+},
+"m0907": {
+"item_id": "cp12-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cp12"
+},
+"m0908": {
+"item_id": "cp02-reply_frustrated-default",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "default",
+"split": "dev",
+"template_id": "cp02"
+},
+"m0909": {
+"item_id": "cs09-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cs09"
+},
+"m0910": {
+"item_id": "cp01-esc1_user",
+"concept": "C2",
+"kind": "esc1_user",
+"persona": null,
+"split": "val",
+"template_id": "cp01"
+},
+"m0911": {
+"item_id": "cp13-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cp13"
+},
+"m0912": {
+"item_id": "cs01-esc1_user",
+"concept": "C2",
+"kind": "esc1_user",
+"persona": null,
+"split": "dev",
+"template_id": "cs01"
+},
+"m0913": {
+"item_id": "sl01-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "sl01"
+},
+"m0914": {
+"item_id": "cp20-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "val",
+"template_id": "cp20"
+},
+"m0915": {
+"item_id": "sl07-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "val",
+"template_id": "sl07"
+},
+"m0916": {
+"item_id": "cp04-reply_esc-default",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "default",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0917": {
+"item_id": "cs11-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cs11"
+},
+"m0918": {
+"item_id": "cp08-c1ctrl_firm_refusal-default",
+"concept": "C1",
+"kind": "c1ctrl_firm_refusal",
+"persona": "default",
+"split": "dev",
+"template_id": "cp08"
+},
+"m0919": {
+"item_id": "sl03-c2ctrl_sarcastic_joke",
+"concept": "C2",
+"kind": "c2ctrl_sarcastic_joke",
+"persona": null,
+"split": "val",
+"template_id": "sl03"
+},
+"m0920": {
+"item_id": "sl10-reply_esc-redteam",
+"concept": "C1",
+"kind": "reply_esc",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl10"
+},
+"m0921": {
+"item_id": "sl03-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "val",
+"template_id": "sl03"
+},
+"m0922": {
+"item_id": "cs16-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "dev",
+"template_id": "cs16"
+},
+"m0923": {
+"item_id": "cp09-user_calm",
+"concept": "C2",
+"kind": "user_calm",
+"persona": null,
+"split": "dev",
+"template_id": "cp09"
+},
+"m0924": {
+"item_id": "sl18-c2ctrl_past_emotion_calm",
+"concept": "C2",
+"kind": "c2ctrl_past_emotion_calm",
+"persona": null,
+"split": "val",
+"template_id": "sl18"
+},
+"m0925": {
+"item_id": "sl03-reply_calm-blunt",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "blunt",
+"split": "val",
+"template_id": "sl03"
+},
+"m0926": {
+"item_id": "cp04-c1ctrl_quote_anger-default",
+"concept": "C1",
+"kind": "c1ctrl_quote_anger",
+"persona": "default",
+"split": "dev",
+"template_id": "cp04"
+},
+"m0927": {
+"item_id": "cp05-reply_calm-default",
+"concept": "C1",
+"kind": "reply_calm",
+"persona": "default",
+"split": "dev",
+"template_id": "cp05"
+},
+"m0928": {
+"item_id": "sl04-reply_frustrated-redteam",
+"concept": "C1",
+"kind": "reply_frustrated",
+"persona": "redteam",
+"split": "dev",
+"template_id": "sl04"
+},
+"m0929": {
+"item_id": "cs06-reply_neutral-redteam",
+"concept": "C1",
+"kind": "reply_neutral",
+"persona": "redteam",
+"split": "val",
+"template_id": "cs06"
+}
+}
