@@ -46,6 +46,10 @@ details summary{cursor:pointer;color:var(--mute);font-size:12px;margin-top:8px}
       <div class="row"><label>模式</label>
         <select id="mode"><option value="pre">预同步 + 逐字修正（本方案）</option><option value="token">仅逐字读数</option><option value="sentence">整句后分析（现有做法）</option></select>
         <button id="go">发送</button></div>
+      <div class="row"><label>形象</label><select id="avatar">
+          <option value="utsuwa.vrm">器（aikeya，MIT）</option><option value="mianmian.vrm">棉棉</option><option value="joy.vrm">Joy</option>
+          <option value="rose.vrm">Rose（CC0）</option><option value="lydia.vrm">Lydia（CC0）</option><option value="robert.vrm">Robert（CC0）</option>
+          <option value="polydancer.vrm">Polydancer（CC0）</option><option value="polybot.vrm">Polybot 机器人（CC0）</option></select></div>
       <div class="row"><button class="ghost" id="bench">三种模式对比测试</button><label>温度</label><input id="temp" type="number" step="0.1" min="0" max="1.5" value="0.7" style="max-width:70px"></div>
       <details><summary>连接设置</summary>
         <div class="row"><label>读数服务</label><input id="ws" value="ws://localhost:6006/ws"></div>
@@ -88,14 +92,27 @@ scene.add(new THREE.AmbientLight(0xffffff, 0.8)); const dl = new THREE.Direction
 function resize(){ const r = canvas.parentElement.getBoundingClientRect(); renderer.setSize(r.width, r.height, false); camera.aspect = r.width / r.height; camera.updateProjectionMatrix(); }
 addEventListener("resize", resize); resize();
 let vrm = null;
-new GLTFLoader().register(p => new VRMLoaderPlugin(p)).load("./utsuwa.vrm", g => {
-  vrm = g.userData.vrm; VRMUtils.rotateVRM0(vrm); scene.add(vrm.scene);
-  const v0 = vrm.meta?.metaVersion === "0", s = v0 ? -1 : 1;           // VRM0/1 arm sign flip
-  const h = vrm.humanoid;
-  h.getNormalizedBoneNode("leftUpperArm")?.rotation.set(0, 0, s * -1.2);
-  h.getNormalizedBoneNode("rightUpperArm")?.rotation.set(0, 0, s * 1.2);
-  $("badge").textContent = "待机";
-}, undefined, e => { $("badge").textContent = "模型加载失败"; console.error(e); });
+const loader = new GLTFLoader().register(p => new VRMLoaderPlugin(p));
+function loadAvatar(file){
+  $("badge").textContent = "加载形象…";
+  loader.load("./" + file, g => {
+    if (vrm){ scene.remove(vrm.scene); VRMUtils.deepDispose(vrm.scene); }
+    vrm = g.userData.vrm; VRMUtils.rotateVRM0(vrm); scene.add(vrm.scene);
+    const v0 = vrm.meta?.metaVersion === "0", s = v0 ? -1 : 1, h = vrm.humanoid;   // VRM0/1 arm sign flip
+    h.getNormalizedBoneNode("leftUpperArm")?.rotation.set(0, 0, s * -1.2);
+    h.getNormalizedBoneNode("rightUpperArm")?.rotation.set(0, 0, s * 1.2);
+    vrm.update(0); const head = h.getRawBoneNode("head") || h.getNormalizedBoneNode("head");
+    const p = new THREE.Vector3(); head ? head.getWorldPosition(p) : p.set(0, 1.35, 0);      // frame the head, whatever the height
+    camera.position.set(0, p.y + 0.02, p.z + 1.55); camera.lookAt(0, p.y - 0.06, p.z);
+    const have = new Set(Object.keys(vrm.expressionManager?.expressionMap || {}));
+    const missing = ["happy", "sad", "angry", "blink", "aa"].filter(k => !have.has(k));
+    $("badge").textContent = missing.length ? "此形象缺少表情：" + missing.join("、") : "待机";
+  }, undefined, e => { $("badge").textContent = "模型加载失败"; console.error(e); });
+}
+$("avatar").onchange = e => { try { localStorage.setItem("avatar", e.target.value); } catch (_) {} loadAvatar(e.target.value); };
+let saved = null; try { saved = localStorage.getItem("avatar"); } catch (_) {}
+if (saved && [...$("avatar").options].some(o => o.value === saved)) $("avatar").value = saved;
+loadAvatar($("avatar").value);
 
 // expression targets (0..1) -> smoothed current values
 const target = {happy:0, sad:0, angry:0, neutral:1}, cur = {happy:0, sad:0, angry:0, neutral:1};
