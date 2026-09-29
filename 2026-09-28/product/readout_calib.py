@@ -21,6 +21,8 @@ from scipy.stats import spearmanr
 ap = argparse.ArgumentParser()
 ap.add_argument("model"); ap.add_argument("data"); ap.add_argument("gens"); ap.add_argument("ratings"); ap.add_argument("out")
 ap.add_argument("--tail", required=True); ap.add_argument("--layers", default="4,8,12,14,16,18,19,20,21,22,24,26,28,32,35")
+ap.add_argument("--extra_neutral", default=None, help="pre_data.jsonl: TRAIN-split neutral_task replies added as class neutral (v2 bias fix)")
+ap.add_argument("--eval_only_extra", action="store_true", help="use --extra_neutral only for the held-out V4 check (baseline run)")
 a = ap.parse_args(); os.makedirs(a.out, exist_ok=True)
 LAYERS = [int(x) for x in a.layers.split(",")]; EMOS = ["neutral", "joy", "sadness", "anger"]
 tok = AutoTokenizer.from_pretrained(a.model)
@@ -51,6 +53,14 @@ for r in rows:
     n = st[LAYERS[0]].shape[0]
     for L in LAYERS: X[L].append(st[L])
     y += [EMOS.index(r["emotion"])] * n; grp += [r["scenario_id"]] * n
+EXTRA = [json.loads(l) for l in open(a.extra_neutral)] if a.extra_neutral else []
+for x in EXTRA:
+    if a.eval_only_extra or x["category"] != "neutral_task" or x["split"] != "train": continue
+    pre_t = tok.apply_chat_template([{"role": "user", "content": x["text"]}], tokenize=False, add_generation_prompt=True)
+    st, _ = states(pre_t, x["reply_greedy"])
+    n = st[LAYERS[0]].shape[0]
+    for L in LAYERS: X[L].append(st[L])
+    y += [EMOS.index("neutral")] * n; grp += ["task_" + x["id"]] * n
 X = {L: np.concatenate(v) for L, v in X.items()}; y = np.array(y); grp = np.array(grp)
 print(f"train tokens {len(y)} {time.time()-t0:.0f}s", flush=True)
 
@@ -96,8 +106,16 @@ for g in G:
 read_text, read_lead, truth = map(np.array, (read_text, read_lead, truth))
 v1 = {e: float(spearmanr(read_text[:, EMOS.index(e)], truth[:, i]).correlation) for i, e in enumerate(["joy", "sadness", "anger"])}
 v2 = {e: float(spearmanr(read_lead[:, EMOS.index(e)], truth[:, i]).correlation) for i, e in enumerate(["joy", "sadness", "anger"])}
-res = dict(layer=BEST, cv_macro_f1_by_layer=cv, v3_validation_reference_macro_f1=v3,
+# ---- V4: held-out (val/test split) prompt replies: neutral_task should read neutral; emotional categories keep their emotion ----
+v4 = {}
+for x in EXTRA:
+    if x["split"] == "train": continue
+    pre_t = tok.apply_chat_template([{"role": "user", "content": x["text"]}], tokenize=False, add_generation_prompt=True)
+    st, _ = states(pre_t, x["reply_greedy"]); p = clf.predict_proba(sc.transform(st[BEST])).mean(0)
+    v4.setdefault(x["category"], []).append(p)
+v4 = {c: {e: round(float(np.mean([p[EMOS.index(e)] for p in v])), 3) for e in EMOS} for c, v in v4.items()}
+res = dict(layer=BEST, cv_macro_f1_by_layer=cv, v3_validation_reference_macro_f1=v3, v4_heldout_prompt_replies=v4, extra_neutral_trained=bool(EXTRA) and not a.eval_only_extra,
            v1_text_time_spearman=v1, v2_lead_time_spearman=v2, n_continuations=len(truth),
            note="V1/V2 use blind LLM ratings of stage-A continuations (provisional). Validation split only; test untouched.",
            seconds=round(time.time() - t0, 1), peak_gib=round(torch.cuda.max_memory_allocated() / 2**30, 2))
-json.dump(res, open(f"{a.out}/readout_calib.json", "w"), indent=1); print(json.dumps(res, indent=1)); print("DONE")
+json.dump(res, open(f"{a.out}/readout_calib.json", "w"), indent=1, ensure_ascii=False); print(json.dumps(res, indent=1)); print("DONE")

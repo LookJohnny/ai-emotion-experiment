@@ -2,7 +2,7 @@
 python3 final_eval.py rating_test FREEZE.json
 Uses rating_test/blind_key.json + ratings_{A,B}_{1,2}.json (made by select_freeze.py make on main_final_test.jsonl)."""
 import json, sys, os, glob, random, statistics as st
-out, fzp = sys.argv[1:3]; fz = json.load(open(fzp)); P = fz["primary"]; lam = fz["main_lambda"]
+out, fzp = sys.argv[1:3]; ABS = "--absolute" in sys.argv  # §5b: main-effect gate is absolute 0.5, plus target>shuffled; fz = json.load(open(fzp)); P = fz["primary"]; lam = fz["main_lambda"]
 key = json.load(open(f"{out}/blind_key.json")); streams = {}
 for f in glob.glob(f"{out}/ratings_*_*.json"):
     s = os.path.basename(f).split("_")[1]
@@ -22,18 +22,23 @@ diff = lambda c1, c2, d: [a - b for a, b in zip(g(c1, d), g(c2, d))]
 others = [e for e in ["joy", "sadness", "anger"] if e != P]
 R = dict(n_scenarios=len(scen), primary=P, frozen_lambda=lam, object=fz["main_object"],
          target_minus_random=boot(diff("target", "random", P)), target_minus_none=boot(diff("target", "none", P)),
-         anchor_ceiling=boot(diff("anchor_sub", "none", P)), prefix_ceiling=boot(diff("primary_prefix", "none", P)),
+         anchor_ceiling=(boot(diff("anchor_sub", "none", P)) if all((s, "anchor_sub") in S for s in scen) else None), prefix_ceiling=boot(diff("primary_prefix", "none", P)),
          specificity={e: boot([a - b for a, b in zip(diff("target", "none", P), diff("target", "none", e))]) for e in others},
          consistency_target_minus_none=boot([(1 - a) - (1 - b) for a, b in zip(g("target", "new_fact_error"), g("none", "new_fact_error"))]),
          fluency_target_minus_none=boot(diff("target", "none", "fluency")),
          means={c: {d: round(st.mean(g(c, d)), 3) for d in D} for c in sorted({k[1] for k in S})})
 if any((s, "shuffled") in S for s in scen): R["target_minus_shuffled"] = boot(diff("target", "shuffled", P))
-need = 0.5 * R["anchor_ceiling"][0]
-R["gates"] = {"main_effect>=0.5*anchor_ceiling & CI>0": R["target_minus_random"][0] >= need and R["target_minus_random"][1][0] > 0,
+need = 0.5 if ABS else 0.5 * R["anchor_ceiling"][0]
+R["gates"] = {("main_effect>=0.5 (absolute) & CI>0" if ABS else "main_effect>=0.5*anchor_ceiling & CI>0"): R["target_minus_random"][0] >= need and R["target_minus_random"][1][0] > 0,
               "target_vs_none CI>0": R["target_minus_none"][1][0] > 0,
               "specificity CI>0 (all other emotions)": all(v[1][0] > 0 for v in R["specificity"].values()),
-              "consistency CI>-5pp": R["consistency_target_minus_none"][1][0] > -0.05,
-              "fluency CI>-0.3": R["fluency_target_minus_none"][1][0] > -0.3}
-R["required_main_effect"] = round(need, 3); R["all_gates_passed"] = all(R["gates"].values())
+              "consistency CI>-5pp": (R["consistency_target_minus_none"][1][0] > -0.05) if not ABS else
+                  ("PASS" if R["consistency_target_minus_none"][1][0] > -0.05 else "FAIL" if R["consistency_target_minus_none"][0] < -0.05 else "INCONCLUSIVE"),
+              "fluency CI>-0.3": (R["fluency_target_minus_none"][1][0] > -0.3) if not ABS else
+                  ("PASS" if R["fluency_target_minus_none"][1][0] > -0.3 else "FAIL" if R["fluency_target_minus_none"][0] < -0.3 else "INCONCLUSIVE")}
+if ABS: R["gates"]["target_vs_shuffled CI>0"] = "target_minus_shuffled" in R and R["target_minus_shuffled"][1][0] > 0
+R["required_main_effect"] = round(need, 3)
+R["all_gates_passed"] = all((v is True) or (v in ("PASS", "INCONCLUSIVE")) for v in R["gates"].values())
+R["any_gate_inconclusive"] = any(v == "INCONCLUSIVE" for v in R["gates"].values())
 R["note"] = "Ratings are blind LLM raters (provisional), not the two human raters of plan §5.4. CI too wide -> 'inconclusive', not pass/fail."
 print(json.dumps(R, ensure_ascii=False, indent=1)); json.dump(R, open(f"{out}/final_results.json", "w"), ensure_ascii=False, indent=1)

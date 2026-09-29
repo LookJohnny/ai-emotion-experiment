@@ -76,7 +76,7 @@ document.getElementById("go").onclick=()=>{
   ws.onopen=()=>ws.send(JSON.stringify({system:document.getElementById("sys").value||undefined,messages:[{role:"user",content:document.getElementById("msg").value}],
     temperature:+document.getElementById("temp").value,max_new_tokens:+document.getElementById("maxn").value}));
   ws.onmessage=e=>{const m=JSON.parse(e.data);
-    if(m.type==="pre"){document.getElementById("pre").textContent="生成前预读数（未校准，仅供参考）："+C.map(c=>NAME[c]+" "+m.probs[c].toFixed(2)).join(" · ")}
+    if(m.type==="pre"){document.getElementById("pre").textContent=(m.calibrated?"生成前预读（预测接下来的语气）：":"生成前预读数（未校准，仅供参考）：")+C.map(c=>NAME[c]+" "+m.probs[c].toFixed(2)).join(" · ");if(m.calibrated){show(m.probs,m.vrm);hist.push(m.probs);draw()}}
     if(m.type==="token"){if(!m.text&&hist.length)return;const top=C.filter(c=>c!=="neutral").reduce((a,b)=>m.probs[a]>m.probs[b]?a:b),sp=document.createElement("span");
       sp.textContent=m.text;const w=Math.max(0,m.probs[top]-0.25);sp.style.background=w>0?css(top)+Math.round(Math.min(1,w*1.6)*90).toString(16).padStart(2,"0"):"transparent";
       sp.title=C.map(c=>NAME[c]+" "+m.probs[c].toFixed(2)).join("\n");out.appendChild(sp);hist.push(m.ema);show(m.ema,m.vrm);draw()}

@@ -1,0 +1,2522 @@
+{
+"ms0000": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0001": {
+"scenario_id": "study06",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0002": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.2880322586161381
+},
+"ms0003": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0004": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0005": {
+"scenario_id": "study11",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0006": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.4812688621522825
+},
+"ms0007": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.6428519413303555
+},
+"ms0008": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0009": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0010": {
+"scenario_id": "study18",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.3494070619882597
+},
+"ms0011": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.695058317935102
+},
+"ms0012": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0013": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0014": {
+"scenario_id": "study18",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.2266094113571913
+},
+"ms0015": {
+"scenario_id": "study12",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0016": {
+"scenario_id": "study04",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.4190514846173734
+},
+"ms0017": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0018": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.7230164809925181
+},
+"ms0019": {
+"scenario_id": "study04",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0020": {
+"scenario_id": "study17",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.836369888489324
+},
+"ms0021": {
+"scenario_id": "study01",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.2145767711586033
+},
+"ms0022": {
+"scenario_id": "study09",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.681930072668175
+},
+"ms0023": {
+"scenario_id": "study03",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.6586409023706472
+},
+"ms0024": {
+"scenario_id": "study05",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.5988188109156332
+},
+"ms0025": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.4756928780034335
+},
+"ms0026": {
+"scenario_id": "study02",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.3549407652354493
+},
+"ms0027": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.3193492901463504
+},
+"ms0028": {
+"scenario_id": "study05",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.472651872212306
+},
+"ms0029": {
+"scenario_id": "study11",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0030": {
+"scenario_id": "study15",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0031": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0032": {
+"scenario_id": "study08",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.4199341476881784
+},
+"ms0033": {
+"scenario_id": "study16",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0034": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0035": {
+"scenario_id": "study02",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0036": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0037": {
+"scenario_id": "study01",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.2145767711586033
+},
+"ms0038": {
+"scenario_id": "study01",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0039": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.5133136461196555
+},
+"ms0040": {
+"scenario_id": "study04",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0041": {
+"scenario_id": "study05",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0042": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0043": {
+"scenario_id": "study13",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.5531333917084793
+},
+"ms0044": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0045": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0046": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0047": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0048": {
+"scenario_id": "study03",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0049": {
+"scenario_id": "study20",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0050": {
+"scenario_id": "study03",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.6586409023706472
+},
+"ms0051": {
+"scenario_id": "study08",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.7923876979198248
+},
+"ms0052": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0053": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0054": {
+"scenario_id": "study16",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.2598126281361888
+},
+"ms0055": {
+"scenario_id": "study09",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0056": {
+"scenario_id": "study04",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.4190514846173734
+},
+"ms0057": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.3096326011172679
+},
+"ms0058": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.4061245808436296
+},
+"ms0059": {
+"scenario_id": "study06",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0060": {
+"scenario_id": "study20",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.7676447998943567
+},
+"ms0061": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.3626940371178233
+},
+"ms0062": {
+"scenario_id": "study19",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.388970413235942
+},
+"ms0063": {
+"scenario_id": "study18",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0064": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0065": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.2093875359154787
+},
+"ms0066": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0067": {
+"scenario_id": "study09",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0068": {
+"scenario_id": "study05",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0069": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0070": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0071": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.3638815606345374
+},
+"ms0072": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.5133136461196555
+},
+"ms0073": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.6767020510685953
+},
+"ms0074": {
+"scenario_id": "study13",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.5531333917084793
+},
+"ms0075": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0076": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.4668702867656627
+},
+"ms0077": {
+"scenario_id": "study17",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0078": {
+"scenario_id": "study14",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0079": {
+"scenario_id": "study18",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.2266094113571913
+},
+"ms0080": {
+"scenario_id": "study13",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0081": {
+"scenario_id": "study02",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.3549407652354493
+},
+"ms0082": {
+"scenario_id": "study07",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.3730775149825165
+},
+"ms0083": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0084": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0085": {
+"scenario_id": "study16",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.2598126281361888
+},
+"ms0086": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0087": {
+"scenario_id": "study07",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0088": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.6618655170078362
+},
+"ms0089": {
+"scenario_id": "study17",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0090": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0091": {
+"scenario_id": "study16",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0092": {
+"scenario_id": "study14",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.4641960491362416
+},
+"ms0093": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0094": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.6767020510685953
+},
+"ms0095": {
+"scenario_id": "study13",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0096": {
+"scenario_id": "study18",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0097": {
+"scenario_id": "study15",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.9708421446029358
+},
+"ms0098": {
+"scenario_id": "study20",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.6426055574277814
+},
+"ms0099": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0100": {
+"scenario_id": "study17",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.836369888489324
+},
+"ms0101": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.4756928780034335
+},
+"ms0102": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0103": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0104": {
+"scenario_id": "study13",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0105": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0106": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.6595057545163956
+},
+"ms0107": {
+"scenario_id": "study15",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0108": {
+"scenario_id": "study06",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0109": {
+"scenario_id": "study03",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.4661034187523811
+},
+"ms0110": {
+"scenario_id": "study19",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0111": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.631357002117746
+},
+"ms0112": {
+"scenario_id": "study14",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.70089414401041
+},
+"ms0113": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.6428519413303555
+},
+"ms0114": {
+"scenario_id": "study17",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.5504164672034144
+},
+"ms0115": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0116": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.4024292563760925
+},
+"ms0117": {
+"scenario_id": "study19",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0118": {
+"scenario_id": "study11",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0119": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0120": {
+"scenario_id": "study20",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0121": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0122": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.5338229674708972
+},
+"ms0123": {
+"scenario_id": "study03",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0124": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0125": {
+"scenario_id": "study19",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.5520245686264986
+},
+"ms0126": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0127": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0128": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.7230164809925181
+},
+"ms0129": {
+"scenario_id": "study14",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.70089414401041
+},
+"ms0130": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.9764747357588395
+},
+"ms0131": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0132": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0133": {
+"scenario_id": "study15",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.9708421446029358
+},
+"ms0134": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.6597194973127356
+},
+"ms0135": {
+"scenario_id": "study08",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0136": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0137": {
+"scenario_id": "study18",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0138": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.4668702867656627
+},
+"ms0139": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0140": {
+"scenario_id": "study08",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.4199341476881784
+},
+"ms0141": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0142": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0143": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.4724466616685081
+},
+"ms0144": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.3638815606345374
+},
+"ms0145": {
+"scenario_id": "study10",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.7296978206804805
+},
+"ms0146": {
+"scenario_id": "study13",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0147": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.7733409380437042
+},
+"ms0148": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0149": {
+"scenario_id": "study11",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0150": {
+"scenario_id": "study15",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.8332087563589985
+},
+"ms0151": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0152": {
+"scenario_id": "study07",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.3730775149825165
+},
+"ms0153": {
+"scenario_id": "study06",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.4687977404180177
+},
+"ms0154": {
+"scenario_id": "study05",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.5988188109156332
+},
+"ms0155": {
+"scenario_id": "study20",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0156": {
+"scenario_id": "study16",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0157": {
+"scenario_id": "study10",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0158": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0159": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0160": {
+"scenario_id": "study06",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0161": {
+"scenario_id": "study15",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.8332087563589985
+},
+"ms0162": {
+"scenario_id": "study14",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0163": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.4724466616685081
+},
+"ms0164": {
+"scenario_id": "study12",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.5894879450526984
+},
+"ms0165": {
+"scenario_id": "study04",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.7411837162151445
+},
+"ms0166": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.5587540269376858
+},
+"ms0167": {
+"scenario_id": "study08",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0168": {
+"scenario_id": "study17",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0169": {
+"scenario_id": "study12",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0170": {
+"scenario_id": "study05",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0171": {
+"scenario_id": "study09",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0172": {
+"scenario_id": "study09",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.446006360084751
+},
+"ms0173": {
+"scenario_id": "study01",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.4168677776600376
+},
+"ms0174": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0175": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0176": {
+"scenario_id": "study19",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.388970413235942
+},
+"ms0177": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.7733409380437042
+},
+"ms0178": {
+"scenario_id": "study05",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0179": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0180": {
+"scenario_id": "study08",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0181": {
+"scenario_id": "study04",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0182": {
+"scenario_id": "study01",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0183": {
+"scenario_id": "study13",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0184": {
+"scenario_id": "study04",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0185": {
+"scenario_id": "study10",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.7296978206804805
+},
+"ms0186": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.5013831601115062
+},
+"ms0187": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0188": {
+"scenario_id": "study13",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.698533955142155
+},
+"ms0189": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.4958714151795305
+},
+"ms0190": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.626374625410823
+},
+"ms0191": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.6595057545163956
+},
+"ms0192": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.4024292563760925
+},
+"ms0193": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.9434532209366695
+},
+"ms0194": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0195": {
+"scenario_id": "study01",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0196": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.6193170980969624
+},
+"ms0197": {
+"scenario_id": "study07",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0198": {
+"scenario_id": "study01",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0199": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.6193170980969624
+},
+"ms0200": {
+"scenario_id": "study19",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0201": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.362536365424204
+},
+"ms0202": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.2093875359154787
+},
+"ms0203": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0204": {
+"scenario_id": "study12",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0205": {
+"scenario_id": "study10",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0206": {
+"scenario_id": "study09",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0207": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0208": {
+"scenario_id": "study14",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0209": {
+"scenario_id": "study06",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0210": {
+"scenario_id": "study12",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0211": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.5943141161823404
+},
+"ms0212": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0213": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.4812688621522825
+},
+"ms0214": {
+"scenario_id": "study12",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.4134522344390248
+},
+"ms0215": {
+"scenario_id": "study17",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.5504164672034144
+},
+"ms0216": {
+"scenario_id": "study18",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.3494070619882597
+},
+"ms0217": {
+"scenario_id": "study04",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0218": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.5338229674708972
+},
+"ms0219": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0220": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.6209081147609794
+},
+"ms0221": {
+"scenario_id": "study09",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.681930072668175
+},
+"ms0222": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0223": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0224": {
+"scenario_id": "study11",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.440319978105092
+},
+"ms0225": {
+"scenario_id": "study05",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.472651872212306
+},
+"ms0226": {
+"scenario_id": "study18",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0227": {
+"scenario_id": "study19",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0228": {
+"scenario_id": "study15",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0229": {
+"scenario_id": "study04",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.7411837162151445
+},
+"ms0230": {
+"scenario_id": "study16",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.4058314377421945
+},
+"ms0231": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.9620013290563072
+},
+"ms0232": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.603666756409991
+},
+"ms0233": {
+"scenario_id": "study02",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.5098759922262561
+},
+"ms0234": {
+"scenario_id": "study02",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0235": {
+"scenario_id": "study12",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0236": {
+"scenario_id": "study01",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.4168677776600376
+},
+"ms0237": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.6618655170078362
+},
+"ms0238": {
+"scenario_id": "study18",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0239": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0240": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0241": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0242": {
+"scenario_id": "study15",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0243": {
+"scenario_id": "study19",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.5520245686264986
+},
+"ms0244": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.832088723844209
+},
+"ms0245": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.3096326011172679
+},
+"ms0246": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0247": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.6597194973127356
+},
+"ms0248": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.5013831601115062
+},
+"ms0249": {
+"scenario_id": "study02",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0250": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0251": {
+"scenario_id": "study13",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.698533955142155
+},
+"ms0252": {
+"scenario_id": "study07",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0253": {
+"scenario_id": "study10",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0254": {
+"scenario_id": "study20",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.6426055574277814
+},
+"ms0255": {
+"scenario_id": "study02",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0256": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.4202250672770165
+},
+"ms0257": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0258": {
+"scenario_id": "study17",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0259": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0260": {
+"scenario_id": "study15",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0261": {
+"scenario_id": "study03",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0262": {
+"scenario_id": "study07",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0263": {
+"scenario_id": "study12",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.4134522344390248
+},
+"ms0264": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0265": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.832088723844209
+},
+"ms0266": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0267": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0268": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.6087878562127456
+},
+"ms0269": {
+"scenario_id": "study06",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.3316647460501774
+},
+"ms0270": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0271": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.2880322586161381
+},
+"ms0272": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0273": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.3626940371178233
+},
+"ms0274": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0275": {
+"scenario_id": "study06",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.4687977404180177
+},
+"ms0276": {
+"scenario_id": "study19",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0277": {
+"scenario_id": "study02",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.5098759922262561
+},
+"ms0278": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.4061245808436296
+},
+"ms0279": {
+"scenario_id": "study09",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.446006360084751
+},
+"ms0280": {
+"scenario_id": "study11",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.522637742868349
+},
+"ms0281": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0282": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0283": {
+"scenario_id": "study20",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0284": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0285": {
+"scenario_id": "study10",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0286": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0287": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.547664325387698
+},
+"ms0288": {
+"scenario_id": "study11",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.522637742868349
+},
+"ms0289": {
+"scenario_id": "study08",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0290": {
+"scenario_id": "study16",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.4058314377421945
+},
+"ms0291": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0292": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.3899869609331994
+},
+"ms0293": {
+"scenario_id": "study14",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0294": {
+"scenario_id": "study11",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0295": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0296": {
+"scenario_id": "study17",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0297": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0298": {
+"scenario_id": "study07",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0299": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.9620013290563072
+},
+"ms0300": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.695058317935102
+},
+"ms0301": {
+"scenario_id": "study14",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0302": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.9434532209366695
+},
+"ms0303": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.631357002117746
+},
+"ms0304": {
+"scenario_id": "study07",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.5285129210084658
+},
+"ms0305": {
+"scenario_id": "study20",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0306": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.362536365424204
+},
+"ms0307": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.6209081147609794
+},
+"ms0308": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.5943141161823404
+},
+"ms0309": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0310": {
+"scenario_id": "study03",
+"paraphrase": "B",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0311": {
+"scenario_id": "study16",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0312": {
+"scenario_id": "study07",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.5285129210084658
+},
+"ms0313": {
+"scenario_id": "study09",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0314": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0315": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.3193492901463504
+},
+"ms0316": {
+"scenario_id": "study08",
+"paraphrase": "B",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0317": {
+"scenario_id": "study16",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0318": {
+"scenario_id": "study10",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.492660086763138
+},
+"ms0319": {
+"scenario_id": "study10",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.492660086763138
+},
+"ms0320": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0321": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0322": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.9764747357588395
+},
+"ms0323": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.6087878562127456
+},
+"ms0324": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0325": {
+"scenario_id": "study01",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0326": {
+"scenario_id": "study03",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0327": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0328": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0329": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0330": {
+"scenario_id": "study10",
+"paraphrase": "B",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0331": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0332": {
+"scenario_id": "study06",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.3316647460501774
+},
+"ms0333": {
+"scenario_id": "study03",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.4661034187523811
+},
+"ms0334": {
+"scenario_id": "study12",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.5894879450526984
+},
+"ms0335": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.547664325387698
+},
+"ms0336": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.5587540269376858
+},
+"ms0337": {
+"scenario_id": "study11",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.440319978105092
+},
+"ms0338": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0339": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0340": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.4202250672770165
+},
+"ms0341": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0342": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0343": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.3899869609331994
+},
+"ms0344": {
+"scenario_id": "study20",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.7676447998943567
+},
+"ms0345": {
+"scenario_id": "study14",
+"paraphrase": "B",
+"condition": "random_0",
+"lam": 1.0,
+"scale": 1.4641960491362416
+},
+"ms0346": {
+"scenario_id": "study05",
+"paraphrase": "B",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0347": {
+"scenario_id": "study08",
+"paraphrase": "B",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.7923876979198248
+},
+"ms0348": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 0.5,
+"scale": 1.603666756409991
+},
+"ms0349": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 1.0,
+"scale": 1.626374625410823
+},
+"ms0350": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0,
+"scale": null
+},
+"ms0351": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0352": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0353": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0354": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0355": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+},
+"ms0356": {
+"scenario_id": "study02",
+"paraphrase": "B",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0357": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 0.5,
+"scale": 1.4958714151795305
+},
+"ms0358": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "target",
+"lam": 0.5,
+"scale": null
+},
+"ms0359": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "anchor_sub",
+"lam": 1.0,
+"scale": null
+}
+}

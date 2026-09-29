@@ -16,7 +16,9 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import uvicorn
 
 ap = argparse.ArgumentParser(); ap.add_argument("model"); ap.add_argument("probe"); ap.add_argument("--port", type=int, default=6006)
-ap.add_argument("--ema", type=float, default=0.3); a = ap.parse_args()
+ap.add_argument("--ema", type=float, default=0.3)
+ap.add_argument("--preprobe", default=None, help="preprobe_L*.npz: predicts the upcoming reply emotion from the last prompt position")
+a = ap.parse_args()
 pz = np.load(a.probe, allow_pickle=True); L = int(pz["layer"]); CLS = [str(c) for c in pz["classes"]]
 tok = AutoTokenizer.from_pretrained(a.model)
 model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, attn_implementation="sdpa").cuda().eval()
@@ -24,6 +26,21 @@ MU = torch.tensor(pz["mean"], device="cuda", dtype=torch.float32); SD = torch.te
 W = torch.tensor(pz["coef"], device="cuda", dtype=torch.float32); B = torch.tensor(pz["intercept"], device="cuda", dtype=torch.float32)
 grab = {}
 model.model.layers[L].register_forward_hook(lambda m, i, o: grab.__setitem__("h", (o[0] if isinstance(o, tuple) else o)[0, -1].float()))
+PRE = None
+if a.preprobe:
+    q = np.load(a.preprobe, allow_pickle=True); LP = int(q["layer"])
+    PRE = {k: torch.tensor(q[k], device="cuda", dtype=torch.float32) for k in ["mean", "scale", "coef", "intercept"]}
+    PRE_CLS = [str(c) for c in q["classes"]]
+    model.model.layers[LP].register_forward_hook(lambda m, i, o: grab.__setitem__("hp", (o[0] if isinstance(o, tuple) else o)[0, -1].float()))
+
+
+def pre_probs():
+    # ridge regression -> predicted mean reply readout; clip + renormalise into a distribution
+    y = ((grab["hp"] - PRE["mean"]) / PRE["scale"]) @ PRE["coef"].T + PRE["intercept"]
+    y = torch.clamp(y, min=0); y = y / (y.sum() + 1e-6)
+    return {c: round(float(y[PRE_CLS.index(c)]), 4) for c in CLS}
+
+
 VRM = {"joy": "happy", "sadness": "sad", "anger": "angry", "neutral": "neutral"}
 app = FastAPI(); LOCK = asyncio.Lock()
 
@@ -50,7 +67,7 @@ def index():
 
 @app.get("/info")
 def info():
-    return {"layer": L, "classes": CLS, "model": os.path.basename(a.model.rstrip("/"))}
+    return {"layer": L, "classes": CLS, "model": os.path.basename(a.model.rstrip("/")), "preprobe_layer": (LP if PRE is not None else None)}
 
 
 @app.post("/readout")
@@ -82,10 +99,12 @@ async def ws(sock: WebSocket):
                 with torch.no_grad():
                     out = model(torch.tensor([ids], device="cuda"), use_cache=True); past = out.past_key_values; logits = out.logits[0, -1]
                     p = probs(grab["h"]); ema = {c: float(v) for c, v in pack(p).items()}
-                    # 'pre' is read at the chat-template header token; the probe was trained on content tokens only -> UNCALIBRATED.
-                    # Do not drive the face from it; ema starts neutral.
-                    await sock.send_text(json.dumps({"type": "pre", "calibrated": False, "probs": pack(p)}, ensure_ascii=False))
-                    ema = {c: (1.0 if c == "neutral" else 0.0) for c in CLS}
+                    if PRE is not None:   # calibrated pre-readout (trained on 'what the model usually does next')
+                        pp = pre_probs(); ema = dict(pp)
+                        await sock.send_text(json.dumps({"type": "pre", "calibrated": True, "probs": pp, "vrm": vrm_weights(ema)}, ensure_ascii=False))
+                    else:                 # token probe at the template header is out of distribution -> not used for the face
+                        ema = {c: (1.0 if c == "neutral" else 0.0) for c in CLS}
+                        await sock.send_text(json.dumps({"type": "pre", "calibrated": False, "probs": pack(p)}, ensure_ascii=False))
                     for step in range(n_max):
                         if temp > 0:
                             pr = torch.softmax(logits.float() / temp, -1); topv, topi = pr.topk(20); nxt = int(topi[torch.multinomial(topv / topv.sum(), 1)])

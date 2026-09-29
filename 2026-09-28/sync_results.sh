@@ -1,7 +1,7 @@
 #!/bin/bash
 # Pull B1-B4 + readout results from the GPU server into the repo, then commit & push.
 set -e
-H="-o ConnectTimeout=20 -P 44192 root@connect.bjb2.seetacloud.com"
+PORT=${PORT:-24140}; H="-o ConnectTimeout=20 -P $PORT root@connect.bjb2.seetacloud.com"
 R=/root/autodl-tmp/E01; L=/Users/lovelyjoy/Documents/AI-Emotion-Experiment/2026-09-28
 mkdir -p $L/stageB/results $L/product/results
 for s in B1 B2 B3 B4; do

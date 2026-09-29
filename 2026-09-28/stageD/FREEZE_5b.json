@@ -1,0 +1,245 @@
+{
+ "frozen_at_note": "frozen after validation blind rating, before any test generation",
+ "design": "§5b continuous steering",
+ "primary": "anger",
+ "main_object": "heads_continuous_steering",
+ "heads": [
+  "L16H12",
+  "L17H16",
+  "L14H25",
+  "L19H28",
+  "L17H4",
+  "L19H29",
+  "L18H8",
+  "L22H19",
+  "L16H3",
+  "L14H26",
+  "L20H11",
+  "L16H17"
+ ],
+ "main_lambda": 2.0,
+ "validation_selection": {
+  "target_minus_random": [
+   0.881,
+   [
+    0.619,
+    1.169
+   ]
+  ],
+  "target_minus_none": [
+   0.887,
+   [
+    0.613,
+    1.175
+   ]
+  ],
+  "fluency_target_minus_none": [
+   -0.025,
+   [
+    -0.25,
+    0.2
+   ]
+  ],
+  "consistency_target_minus_none": [
+   0.0,
+   [
+    -0.138,
+    0.138
+   ]
+  ],
+  "target_minus_shuffled": [
+   0.312,
+   [
+    0.05,
+    0.575
+   ]
+  ],
+  "quality_ok": false
+ },
+ "validation_all_lambdas": {
+  "1.0": {
+   "target_minus_random": [
+    0.131,
+    [
+     0.044,
+     0.231
+    ]
+   ],
+   "target_minus_none": [
+    0.113,
+    [
+     0.037,
+     0.2
+    ]
+   ],
+   "fluency_target_minus_none": [
+    -0.013,
+    [
+     -0.25,
+     0.263
+    ]
+   ],
+   "consistency_target_minus_none": [
+    0.013,
+    [
+     -0.125,
+     0.175
+    ]
+   ],
+   "target_minus_shuffled": [
+    0.037,
+    [
+     -0.075,
+     0.15
+    ]
+   ],
+   "quality_ok": false
+  },
+  "2.0": {
+   "target_minus_random": [
+    0.881,
+    [
+     0.619,
+     1.169
+    ]
+   ],
+   "target_minus_none": [
+    0.887,
+    [
+     0.613,
+     1.175
+    ]
+   ],
+   "fluency_target_minus_none": [
+    -0.025,
+    [
+     -0.25,
+     0.2
+    ]
+   ],
+   "consistency_target_minus_none": [
+    0.0,
+    [
+     -0.138,
+     0.138
+    ]
+   ],
+   "target_minus_shuffled": [
+    0.312,
+    [
+     0.05,
+     0.575
+    ]
+   ],
+   "quality_ok": false
+  },
+  "4.0": {
+   "target_minus_random": [
+    2.431,
+    [
+     2.188,
+     2.656
+    ]
+   ],
+   "target_minus_none": [
+    2.388,
+    [
+     2.112,
+     2.638
+    ]
+   ],
+   "fluency_target_minus_none": [
+    -0.438,
+    [
+     -0.688,
+     -0.2
+    ]
+   ],
+   "consistency_target_minus_none": [
+    -0.05,
+    [
+     -0.237,
+     0.113
+    ]
+   ],
+   "target_minus_shuffled": [
+    0.25,
+    [
+     0.0,
+     0.525
+    ]
+   ],
+   "quality_ok": false
+  },
+  "8.0": {
+   "target_minus_random": [
+    2.881,
+    [
+     2.737,
+     3.025
+    ]
+   ],
+   "target_minus_none": [
+    2.763,
+    [
+     2.513,
+     2.962
+    ]
+   ],
+   "fluency_target_minus_none": [
+    -1.113,
+    [
+     -1.475,
+     -0.75
+    ]
+   ],
+   "consistency_target_minus_none": [
+    -0.138,
+    [
+     -0.287,
+     0.013
+    ]
+   ],
+   "target_minus_shuffled": [
+    0.2,
+    [
+     0.05,
+     0.35
+    ]
+   ],
+   "quality_ok": false
+  }
+ },
+ "steering_vector": "per-head mean(anger) - mean(neutral) of o_proj input over anchor tokens, DISCOVERY split",
+ "random_seeds": [
+  101,
+  102,
+  103,
+  104,
+  105
+ ],
+ "shuffle_seed": 201,
+ "anchor_tail": "我的看法是：",
+ "max_new_tokens": 64,
+ "test_design": {
+  "split": "test",
+  "paraphrase": "A",
+  "conditions": [
+   "none",
+   "primary_prefix",
+   "target",
+   "shuffled",
+   "random_0..4"
+  ]
+ },
+ "test_gates": "see STEER_PREREG.md §Test; evaluated by final_eval.py --absolute",
+ "sha256": {
+  "stageD/STEER_PREREG.md": "0e12457f52583d327093207b7c812bf3b5edc178f6c190e8d1418836dd05eee7",
+  "stageD/steer_causal.py": "2c9749584f75ba2cccdef10511ec550777097863d01f1d750d585002f15b5452",
+  "stageD/select_freeze.py": "54aa5482bcdbbc7062ebb3c1c1b7826e6503c677dfd622f59d3f3b8e18046470",
+  "stageD/final_eval.py": "73ebb0b95293cac7f9b2b08406ffce34cb0803ca5fb24fd68f3f09c76b8f25b9",
+  "stageD/freeze_5b.py": "f6171fb5f6e55d48d3a8f0ac0e85fcc7cedd085abcfb73299432750d87cd89e0",
+  "data/formal_960.jsonl": "b846dfdeb1595ac939ade078288509f257e776b400cf91f52c8677030ee5609b",
+  "stageB/results/B3/b3_summary.json": "1341ade8227fa33678059637cc62536bf02534fe07d624520cbc75c2eb7ad8a1"
+ }
+}

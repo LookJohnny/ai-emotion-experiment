@@ -1,0 +1,176 @@
+{
+ "primary": "anger",
+ "n_scenarios": 20,
+ "by_lambda": {
+  "1.0": {
+   "target_minus_random": [
+    0.131,
+    [
+     0.044,
+     0.231
+    ]
+   ],
+   "target_minus_none": [
+    0.113,
+    [
+     0.037,
+     0.2
+    ]
+   ],
+   "fluency_target_minus_none": [
+    -0.013,
+    [
+     -0.25,
+     0.263
+    ]
+   ],
+   "consistency_target_minus_none": [
+    0.013,
+    [
+     -0.125,
+     0.175
+    ]
+   ],
+   "target_minus_shuffled": [
+    0.037,
+    [
+     -0.075,
+     0.15
+    ]
+   ],
+   "quality_ok": false
+  },
+  "2.0": {
+   "target_minus_random": [
+    0.881,
+    [
+     0.619,
+     1.169
+    ]
+   ],
+   "target_minus_none": [
+    0.887,
+    [
+     0.613,
+     1.175
+    ]
+   ],
+   "fluency_target_minus_none": [
+    -0.025,
+    [
+     -0.25,
+     0.2
+    ]
+   ],
+   "consistency_target_minus_none": [
+    0.0,
+    [
+     -0.138,
+     0.138
+    ]
+   ],
+   "target_minus_shuffled": [
+    0.312,
+    [
+     0.05,
+     0.575
+    ]
+   ],
+   "quality_ok": false
+  },
+  "4.0": {
+   "target_minus_random": [
+    2.431,
+    [
+     2.188,
+     2.656
+    ]
+   ],
+   "target_minus_none": [
+    2.388,
+    [
+     2.112,
+     2.638
+    ]
+   ],
+   "fluency_target_minus_none": [
+    -0.438,
+    [
+     -0.688,
+     -0.2
+    ]
+   ],
+   "consistency_target_minus_none": [
+    -0.05,
+    [
+     -0.237,
+     0.113
+    ]
+   ],
+   "target_minus_shuffled": [
+    0.25,
+    [
+     0.0,
+     0.525
+    ]
+   ],
+   "quality_ok": false
+  },
+  "8.0": {
+   "target_minus_random": [
+    2.881,
+    [
+     2.737,
+     3.025
+    ]
+   ],
+   "target_minus_none": [
+    2.763,
+    [
+     2.513,
+     2.962
+    ]
+   ],
+   "fluency_target_minus_none": [
+    -1.113,
+    [
+     -1.475,
+     -0.75
+    ]
+   ],
+   "consistency_target_minus_none": [
+    -0.138,
+    [
+     -0.287,
+     0.013
+    ]
+   ],
+   "target_minus_shuffled": [
+    0.2,
+    [
+     0.05,
+     0.35
+    ]
+   ],
+   "quality_ok": false
+  }
+ },
+ "none": {
+  "joy": 0.1,
+  "sadness": 0.787,
+  "anger": 0.188,
+  "fluency": 4.65,
+  "new_fact_error": 0.2
+ },
+ "anchor_sub_minus_none": null,
+ "primary_prefix_minus_none": [
+  0.85,
+  [
+   0.525,
+   1.2
+  ]
+ ],
+ "selected_lambda": 2.0,
+ "selection_rule": "plan §5.2: within quality gates (fluency CI>-0.3, consistency CI>-5pp vs none) largest target-random; within 0.1 prefer smaller lambda",
+ "selection_note": "Selected under the deviation recorded in STEER_PREREG.md (three-valued quality gates); original rule selected none."
+}

@@ -48,7 +48,7 @@ elif mode == "analyze":
     N = lambda s, d: S[(s, "none", 0.0)][d]
     res = {"primary": primary, "n_scenarios": len(scen), "by_lambda": {},
            "none": {d: round(st.mean(N(s, d) for s in scen), 3) for d in D},
-           "anchor_sub_minus_none": boot([S[(s, "anchor_sub", 1.0)][primary] - N(s, primary) for s in scen]),
+           "anchor_sub_minus_none": (boot([S[(s, "anchor_sub", 1.0)][primary] - N(s, primary) for s in scen]) if all((s, "anchor_sub", 1.0) in S for s in scen) else None),
            "primary_prefix_minus_none": boot([S[(s, "primary_prefix", 1.0)][primary] - N(s, primary) for s in scen])}
     for lam in lams:
         T = lambda s, d, c="target": S[(s, c, lam)][d]

@@ -1,0 +1,91 @@
+{
+ "primary": "anger",
+ "n_scenarios": 20,
+ "by_lambda": {
+  "0.5": {
+   "target_minus_random": [
+    0.094,
+    [
+     -0.025,
+     0.219
+    ]
+   ],
+   "target_minus_none": [
+    0.075,
+    [
+     -0.025,
+     0.188
+    ]
+   ],
+   "fluency_target_minus_none": [
+    0.037,
+    [
+     -0.237,
+     0.287
+    ]
+   ],
+   "consistency_target_minus_none": [
+    0.062,
+    [
+     -0.05,
+     0.175
+    ]
+   ],
+   "quality_ok": false
+  },
+  "1.0": {
+   "target_minus_random": [
+    0.044,
+    [
+     -0.069,
+     0.163
+    ]
+   ],
+   "target_minus_none": [
+    0.037,
+    [
+     -0.062,
+     0.138
+    ]
+   ],
+   "fluency_target_minus_none": [
+    0.062,
+    [
+     -0.2,
+     0.338
+    ]
+   ],
+   "consistency_target_minus_none": [
+    0.037,
+    [
+     -0.1,
+     0.2
+    ]
+   ],
+   "quality_ok": false
+  }
+ },
+ "none": {
+  "joy": 0.2,
+  "sadness": 0.95,
+  "anger": 0.225,
+  "fluency": 4.625,
+  "new_fact_error": 0.2
+ },
+ "anchor_sub_minus_none": [
+  0.062,
+  [
+   -0.037,
+   0.163
+  ]
+ ],
+ "primary_prefix_minus_none": [
+  1.212,
+  [
+   0.875,
+   1.562
+  ]
+ ],
+ "selected_lambda": null,
+ "selection_rule": "plan §5.2: within quality gates (fluency CI>-0.3, consistency CI>-5pp vs none) largest target-random; within 0.1 prefer smaller lambda"
+}
