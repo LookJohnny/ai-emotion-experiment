@@ -1,0 +1,2522 @@
+{
+"ms0000": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0001": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0002": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0003": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0004": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0005": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0006": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0007": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0008": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0009": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0010": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0011": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0012": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0013": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0014": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0015": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0016": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0017": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0018": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0019": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0020": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0021": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0022": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0023": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0024": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0025": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0026": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0027": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0028": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0029": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0030": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0031": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0032": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0033": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0034": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0035": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0036": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0037": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0038": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0039": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0040": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0041": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0042": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0043": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0044": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0045": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0046": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0047": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0048": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0049": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0050": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0051": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0052": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0053": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0054": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0055": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0056": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0057": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0058": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0059": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0060": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0061": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0062": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0063": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0064": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0065": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0066": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0067": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0068": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0069": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0070": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0071": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0072": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0073": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0074": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0075": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0076": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0077": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0078": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0079": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0080": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0081": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0082": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0083": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0084": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0085": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0086": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0087": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0088": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0089": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0090": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0091": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0092": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0093": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0094": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0095": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0096": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0097": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0098": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0099": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0100": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0101": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0102": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0103": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0104": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0105": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0106": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0107": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0108": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0109": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0110": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0111": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0112": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0113": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0114": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0115": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0116": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0117": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0118": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0119": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0120": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0121": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0122": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0123": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0124": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0125": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0126": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0127": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0128": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0129": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0130": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0131": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0132": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0133": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0134": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0135": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0136": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0137": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0138": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0139": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0140": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0141": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0142": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0143": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0144": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0145": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0146": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0147": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0148": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0149": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0150": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0151": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0152": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0153": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0154": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0155": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0156": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0157": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0158": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0159": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0160": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0161": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0162": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0163": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0164": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0165": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0166": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0167": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0168": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0169": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0170": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0171": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0172": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0173": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0174": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0175": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0176": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0177": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0178": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0179": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0180": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0181": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0182": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0183": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0184": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0185": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0186": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0187": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0188": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0189": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0190": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0191": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0192": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0193": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0194": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0195": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0196": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0197": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0198": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0199": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0200": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0201": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0202": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0203": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0204": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0205": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0206": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0207": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0208": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0209": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0210": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0211": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0212": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0213": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0214": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0215": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0216": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0217": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0218": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0219": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0220": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0221": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0222": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0223": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0224": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0225": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0226": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0227": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0228": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0229": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0230": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0231": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0232": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0233": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0234": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0235": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0236": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0237": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0238": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0239": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0240": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0241": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0242": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0243": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0244": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0245": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0246": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0247": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0248": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0249": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0250": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0251": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0252": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0253": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0254": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0255": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0256": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0257": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0258": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0259": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0260": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0261": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0262": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0263": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0264": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0265": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0266": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0267": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0268": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0269": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0270": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0271": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0272": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0273": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0274": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0275": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0276": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0277": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0278": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0279": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0280": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0281": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0282": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0283": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0284": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0285": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0286": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0287": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0288": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0289": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0290": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0291": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0292": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0293": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0294": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0295": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0296": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0297": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0298": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0299": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0300": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0301": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0302": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0303": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0304": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0305": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0306": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0307": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0308": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0309": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0310": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0311": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0312": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0313": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0314": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0315": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0316": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0317": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0318": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0319": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0320": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0321": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0322": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0323": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0324": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0325": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0326": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0327": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0328": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0329": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0330": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0331": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0332": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0333": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0334": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0335": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0336": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0337": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0338": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0339": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0340": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0341": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0342": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0343": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0344": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0345": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0346": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0347": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+},
+"ms0348": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0349": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "random_3",
+"lam": 2.0,
+"scale": null
+},
+"ms0350": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0,
+"scale": null
+},
+"ms0351": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0352": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "shuffled",
+"lam": 2.0,
+"scale": null
+},
+"ms0353": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "random_1",
+"lam": 2.0,
+"scale": null
+},
+"ms0354": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0355": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "random_4",
+"lam": 2.0,
+"scale": null
+},
+"ms0356": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "random_0",
+"lam": 2.0,
+"scale": null
+},
+"ms0357": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "random_2",
+"lam": 2.0,
+"scale": null
+},
+"ms0358": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 1.0,
+"scale": null
+},
+"ms0359": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0,
+"scale": null
+}
+}

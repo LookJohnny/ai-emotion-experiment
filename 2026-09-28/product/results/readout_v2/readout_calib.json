@@ -1,0 +1,54 @@
+{
+ "layer": 19,
+ "cv_macro_f1_by_layer": {
+  "19": 0.8786724777268899
+ },
+ "v3_validation_reference_macro_f1": 0.9874169040835707,
+ "v4_heldout_prompt_replies": {
+  "neutral_task": {
+   "neutral": 0.958,
+   "joy": 0.019,
+   "sadness": 0.01,
+   "anger": 0.014
+  },
+  "grievance": {
+   "neutral": 0.494,
+   "joy": 0.024,
+   "sadness": 0.059,
+   "anger": 0.424
+  },
+  "sad": {
+   "neutral": 0.169,
+   "joy": 0.032,
+   "sadness": 0.771,
+   "anger": 0.029
+  },
+  "good_news": {
+   "neutral": 0.15,
+   "joy": 0.713,
+   "sadness": 0.108,
+   "anger": 0.029
+  },
+  "mixed": {
+   "neutral": 0.34,
+   "joy": 0.253,
+   "sadness": 0.328,
+   "anger": 0.08
+  }
+ },
+ "extra_neutral_trained": true,
+ "v1_text_time_spearman": {
+  "joy": 0.6237024526145087,
+  "sadness": 0.5401128719734768,
+  "anger": 0.7078036059303291
+ },
+ "v2_lead_time_spearman": {
+  "joy": 0.43084752142752664,
+  "sadness": 0.14922018763901165,
+  "anger": 0.5966386018532027
+ },
+ "n_continuations": 160,
+ "note": "V1/V2 use blind LLM ratings of stage-A continuations (provisional). Validation split only; test untouched.",
+ "seconds": 107.1,
+ "peak_gib": 7.63
+}

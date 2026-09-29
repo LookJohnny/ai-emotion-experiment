@@ -1,0 +1,58 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 133.79it/s]
+train tokens 25545 15s
+L19 CV macro-F1 0.875
+{
+ "layer": 19,
+ "cv_macro_f1_by_layer": {
+  "19": 0.875313348869892
+ },
+ "v3_validation_reference_macro_f1": 0.9874169040835707,
+ "v4_heldout_prompt_replies": {
+  "neutral_task": {
+   "neutral": 0.544,
+   "joy": 0.136,
+   "sadness": 0.042,
+   "anger": 0.278
+  },
+  "grievance": {
+   "neutral": 0.241,
+   "joy": 0.057,
+   "sadness": 0.064,
+   "anger": 0.638
+  },
+  "sad": {
+   "neutral": 0.034,
+   "joy": 0.065,
+   "sadness": 0.846,
+   "anger": 0.055
+  },
+  "good_news": {
+   "neutral": 0.016,
+   "joy": 0.837,
+   "sadness": 0.104,
+   "anger": 0.044
+  },
+  "mixed": {
+   "neutral": 0.109,
+   "joy": 0.372,
+   "sadness": 0.371,
+   "anger": 0.149
+  }
+ },
+ "extra_neutral_trained": false,
+ "v1_text_time_spearman": {
+  "joy": 0.6172606714735253,
+  "sadness": 0.5235270203354045,
+  "anger": 0.7118758536024521
+ },
+ "v2_lead_time_spearman": {
+  "joy": 0.43708183448967103,
+  "sadness": 0.15373476199610836,
+  "anger": 0.6057586745939424
+ },
+ "n_continuations": 160,
+ "note": "V1/V2 use blind LLM ratings of stage-A continuations (provisional). Validation split only; test untouched.",
+ "seconds": 96.1,
+ "peak_gib": 7.63
+}
+DONE

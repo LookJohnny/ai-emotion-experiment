@@ -2,7 +2,7 @@
 python3 final_eval.py rating_test FREEZE.json
 Uses rating_test/blind_key.json + ratings_{A,B}_{1,2}.json (made by select_freeze.py make on main_final_test.jsonl)."""
 import json, sys, os, glob, random, statistics as st
-out, fzp = sys.argv[1:3]; ABS = "--absolute" in sys.argv  # §5b: main-effect gate is absolute 0.5, plus target>shuffled; fz = json.load(open(fzp)); P = fz["primary"]; lam = fz["main_lambda"]
+out, fzp = sys.argv[1:3]; ABS = "--absolute" in sys.argv; fz = json.load(open(fzp)); P = fz["primary"]; lam = fz["main_lambda"]  # §5b: main-effect gate is absolute 0.5, plus target>shuffled
 key = json.load(open(f"{out}/blind_key.json")); streams = {}
 for f in glob.glob(f"{out}/ratings_*_*.json"):
     s = os.path.basename(f).split("_")[1]

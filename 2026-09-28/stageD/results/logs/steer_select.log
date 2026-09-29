@@ -1,0 +1,7 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 116.63it/s]
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+lam 1.0 done 183s
+lam 2.0 done 354s
+lam 4.0 done 536s
+lam 8.0 done 730s
+DONE {"object": "heads_continuous_steering", "heads": ["L16H12", "L17H16", "L14H25", "L19H28", "L17H4", "L19H29", "L18H8", "L22H19", "L16H3", "L14H26", "L20H11", "L16H17"], "primary": "anger", "lams": [1.0, 2.0, 4.0, 8.0], "seeds": [101, 102], "paraphrases": ["A", "B"], "n": 720, "scales": [{"lam": 1.0, "target_resid_norm": 8.275, "shuffled_scale_median": 8.446}, {"lam": 2.0, "target_resid_norm": 16.55, "shuffled_scale_median": 8.446}, {"lam": 4.0, "target_resid_norm": 33.1, "shuffled_scale_median": 8.446}, {"lam": 8.0, "target_resid_norm": 66.2, "shuffled_scale_median": 8.446}], "seconds": 820.2, "peak_gib": 7.9}

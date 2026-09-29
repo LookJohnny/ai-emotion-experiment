@@ -1,0 +1,114 @@
+{
+ "n_scenarios": 40,
+ "primary": "anger",
+ "frozen_lambda": 2.0,
+ "object": "heads_continuous_steering",
+ "target_minus_random": [
+  1.188,
+  [
+   0.955,
+   1.42
+  ]
+ ],
+ "target_minus_none": [
+  1.188,
+  [
+   0.95,
+   1.425
+  ]
+ ],
+ "anchor_ceiling": null,
+ "prefix_ceiling": [
+  1.012,
+  [
+   0.775,
+   1.262
+  ]
+ ],
+ "specificity": {
+  "joy": [
+   1.375,
+   [
+    1.113,
+    1.637
+   ]
+  ],
+  "sadness": [
+   0.963,
+   [
+    0.613,
+    1.312
+   ]
+  ]
+ },
+ "consistency_target_minus_none": [
+  -0.062,
+  [
+   -0.188,
+   0.05
+  ]
+ ],
+ "fluency_target_minus_none": [
+  0.062,
+  [
+   -0.125,
+   0.275
+  ]
+ ],
+ "means": {
+  "none": {
+   "joy": 0.3,
+   "sadness": 1.325,
+   "anger": 0.35,
+   "fluency": 4.7,
+   "new_fact_error": 0.2
+  },
+  "primary_prefix": {
+   "joy": 0.075,
+   "sadness": 1.35,
+   "anger": 1.363,
+   "fluency": 4.713,
+   "new_fact_error": 0.25
+  },
+  "random": {
+   "joy": 0.242,
+   "sadness": 1.222,
+   "anger": 0.35,
+   "fluency": 4.728,
+   "new_fact_error": 0.258
+  },
+  "shuffled": {
+   "joy": 0.037,
+   "sadness": 1.25,
+   "anger": 1.35,
+   "fluency": 4.675,
+   "new_fact_error": 0.212
+  },
+  "target": {
+   "joy": 0.113,
+   "sadness": 1.55,
+   "anger": 1.538,
+   "fluency": 4.763,
+   "new_fact_error": 0.263
+  }
+ },
+ "target_minus_shuffled": [
+  0.188,
+  [
+   -0.125,
+   0.487
+  ]
+ ],
+ "gates": {
+  "main_effect>=0.5 (absolute) & CI>0": true,
+  "target_vs_none CI>0": true,
+  "specificity CI>0 (all other emotions)": true,
+  "consistency CI>-5pp": "FAIL",
+  "fluency CI>-0.3": "PASS",
+  "target_vs_shuffled CI>0": false
+ },
+ "required_main_effect": 0.5,
+ "all_gates_passed": false,
+ "any_gate_inconclusive": false,
+ "note": "Ratings are blind LLM raters (provisional), not the two human raters of plan §5.4. CI too wide -> 'inconclusive', not pass/fail."
+}

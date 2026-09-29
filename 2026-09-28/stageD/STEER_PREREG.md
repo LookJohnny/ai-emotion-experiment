@@ -57,3 +57,8 @@ Applied to validation: λ=1 (fluency mean −0.01, consistency +0.01) and λ=2 (
 **Known limitation of a control (noted before the test)**: the within-scenario label-shuffle vector keeps part of the true anger direction; after norm-matching (×8.4) it also elicits anger, so target − shuffled underestimates specificity. The test still reports it, and its gate is interpreted with this caveat.
 
 The test split (work, hobby) had not been generated, read or rated at the time of this record.
+
+## Post-freeze bug fix (2026-09-29, after test rating files existed, BEFORE any test result was computed)
+final_eval.py crashed on its first executable line: an inline comment added during the deviation edit had swallowed the statements
+`fz = json.load(...); P = fz["primary"]; lam = fz["main_lambda"]` (NameError: P). The fix only moves that comment to the end of the
+line; no logic, threshold or gate changed. sha256 prefix: frozen/buggy 73ebb0b95293 → fixed da7fa1465926. No test statistic had been computed or seen when this fix was made.

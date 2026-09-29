@@ -1,0 +1,41 @@
+{
+ "object": "heads_continuous_steering",
+ "heads": [
+  "L16H12",
+  "L17H16",
+  "L14H25",
+  "L19H28",
+  "L17H4",
+  "L19H29",
+  "L18H8",
+  "L22H19",
+  "L16H3",
+  "L14H26",
+  "L20H11",
+  "L16H17"
+ ],
+ "primary": "anger",
+ "lams": [
+  2.0
+ ],
+ "seeds": [
+  101,
+  102,
+  103,
+  104,
+  105
+ ],
+ "paraphrases": [
+  "A"
+ ],
+ "n": 360,
+ "scales": [
+  {
+   "lam": 2.0,
+   "target_resid_norm": 16.55,
+   "shuffled_scale_median": 8.446
+  }
+ ],
+ "seconds": 461.9,
+ "peak_gib": 7.91
+}

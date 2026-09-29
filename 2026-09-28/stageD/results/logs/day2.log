@@ -1,0 +1,13 @@
+2026-09-29 10:28:17 [idle_shutdown] armed: idle 45min, deadline 2026-09-29 16:28:17
+2026-09-29 10:28:17 [day2] readout_base start
+2026-09-29 10:30:00 [day2] readout_base exit 0
+2026-09-29 10:30:00 [day2] readout_v2 start
+2026-09-29 10:31:54 [day2] readout_v2 exit 0
+2026-09-29 10:31:54 [day2] main_select start
+2026-09-29 10:38:44 [day2] main_select exit 0
+2026-09-29 10:38:44 [day2] all day2 jobs done
+2026-09-29 11:01:05 [day2] pre_v2 exit 0
+2026-09-29 11:04:32 [day2] steer_select start
+2026-09-29 11:18:19 [day2] steer_select exit 0
+2026-09-29 11:25:15 [day2] steer_test start (TEST SPLIT OPENED)
+2026-09-29 11:33:03 [day2] steer_test exit 0

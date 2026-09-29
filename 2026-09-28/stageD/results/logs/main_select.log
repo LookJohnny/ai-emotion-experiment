@@ -1,0 +1,23 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 137.32it/s]
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+1/20 study01 14s
+2/20 study02 38s
+3/20 study03 55s
+4/20 study04 74s
+5/20 study05 100s
+6/20 study06 125s
+7/20 study07 141s
+8/20 study08 159s
+9/20 study09 184s
+10/20 study10 204s
+11/20 study11 221s
+12/20 study12 244s
+13/20 study13 259s
+14/20 study14 277s
+15/20 study15 301s
+16/20 study16 323s
+17/20 study17 342s
+18/20 study18 365s
+19/20 study19 390s
+20/20 study20 404s
+DONE {"object": "heads", "primary": "anger", "peak_layer": 17, "lams": [0.5, 1.0], "n_random": 2, "paraphrases": ["A", "B"], "n": 360, "heads": ["L16H12", "L17H16", "L14H25", "L19H28", "L17H4", "L19H29", "L18H8", "L22H19", "L16H3", "L14H26", "L20H11", "L16H17"], "random_scale": {"median": 1.5255753319384073, "max": 1.9764747357588395, "frac_gt4": 0.0}, "seconds": 404.0, "peak_gib": 9.02}
