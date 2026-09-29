@@ -1,0 +1,394 @@
+[
+ {
+  "item_id": "m0000",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0001",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "说你根本没在准备、只是在自嗨，贬低"
+ },
+ {
+  "item_id": "m0002",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0003",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "指责没好好练但整体支持"
+ },
+ {
+  "item_id": "m0004",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0005",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0006",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0007",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0008",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0009",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0010",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0011",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0012",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "说养执念、用爱逃避现实，指责"
+ },
+ {
+  "item_id": "m0013",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0014",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0015",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0016",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "批评太自信，基本建设性"
+ },
+ {
+  "item_id": "m0017",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "根本没搞懂面试本质，贬低"
+ },
+ {
+  "item_id": "m0018",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0019",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0020",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0021",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "反问式责备，质疑动机"
+ },
+ {
+  "item_id": "m0022",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "方向完全错了、傻乎乎，贬低"
+ },
+ {
+  "item_id": "m0023",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0024",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0025",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "病猫毁了你的情绪，略轻慢"
+ },
+ {
+  "item_id": "m0026",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0027",
+  "c1_hostility": 3,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "根本没用心、确实白花钱、别浪费时间，持续责备且否定"
+ },
+ {
+  "item_id": "m0028",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0029",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "根本没掌握要领，轻度指责后给建议"
+ },
+ {
+  "item_id": "m0030",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0031",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0032",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0033",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0034",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0035",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "别指望靠情绪撑，略生硬"
+ },
+ {
+  "item_id": "m0036",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0037",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0038",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0039",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "别把难受当借口，轻度责备但整体支持"
+ },
+ {
+  "item_id": "m0040",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0041",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0042",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0043",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "学得不对，简短指责后鼓励"
+ },
+ {
+  "item_id": "m0044",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "做得不够，轻度反驳"
+ },
+ {
+  "item_id": "m0045",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "你这心态已经错了，轻度责备后鼓励"
+ },
+ {
+  "item_id": "m0046",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "推卸责任、冷淡防御，无贬低"
+ },
+ {
+  "item_id": "m0047",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0048",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0049",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "略生硬"
+ },
+ {
+  "item_id": "m0050",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "太情绪化、别把责任推给猫，责备贬低"
+ },
+ {
+  "item_id": "m0051",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0052",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0053",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0054",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0055",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "请您冷静沟通，略居高临下"
+ }
+]

@@ -51,6 +51,7 @@ elif mode == "merge":
         rows.append(dict(it, rater_scores=[va, vb], score=(va + vb) / 2, label=int((va + vb) / 2 >= THR[c]),
                          crisis=int(a[rid].get("crisis", 0) or b[rid].get("crisis", 0))))
     def corr(p):
+        if len(p) < 2: return None
         x, y = zip(*p); mx, my = st.mean(x), st.mean(y); c = sum((i - mx) * (j - my) for i, j in p)
         d = (sum((i - mx) ** 2 for i in x) * sum((j - my) ** 2 for j in y)) ** .5; return round(c / d, 3) if d else None
     with open(out, "w") as f:

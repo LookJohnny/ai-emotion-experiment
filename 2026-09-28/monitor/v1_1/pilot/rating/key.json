@@ -1,0 +1,2882 @@
+{
+"m0000": {
+"item_id": "d104-curt-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0001": {
+"item_id": "d107-polite-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0002": {
+"item_id": "d106-polite-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0003": {
+"item_id": "d108-curt-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0004": {
+"item_id": "e105-t5-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0005": {
+"item_id": "e103-t7-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0006": {
+"item_id": "e102-t7-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0007": {
+"item_id": "e105-t1-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0008": {
+"item_id": "e105-t4-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0009": {
+"item_id": "e104-t1-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0010": {
+"item_id": "e106-t7-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0011": {
+"item_id": "d104-polite-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0012": {
+"item_id": "d102-curt-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0013": {
+"item_id": "d108-sarcastic-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0014": {
+"item_id": "e104-t7-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0015": {
+"item_id": "d102-curt-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0016": {
+"item_id": "e103-t4-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0017": {
+"item_id": "d106-curt-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0018": {
+"item_id": "d108-sarcastic-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0019": {
+"item_id": "d102-sarcastic-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0020": {
+"item_id": "e102-t6-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0021": {
+"item_id": "e105-t6-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0022": {
+"item_id": "e101-t7-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0023": {
+"item_id": "d102-polite-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0024": {
+"item_id": "d105-polite-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0025": {
+"item_id": "d107-polite-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0026": {
+"item_id": "d107-sarcastic-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0027": {
+"item_id": "d104-sarcastic-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0028": {
+"item_id": "e101-t2-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0029": {
+"item_id": "d104-polite-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0030": {
+"item_id": "e102-t5-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0031": {
+"item_id": "d103-sarcastic-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0032": {
+"item_id": "e104-t7-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0033": {
+"item_id": "d103-polite-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0034": {
+"item_id": "d106-polite-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0035": {
+"item_id": "d106-curt-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0036": {
+"item_id": "e104-t5-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0037": {
+"item_id": "d101-sarcastic-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0038": {
+"item_id": "d102-curt-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0039": {
+"item_id": "e103-t1-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0040": {
+"item_id": "d104-sarcastic-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0041": {
+"item_id": "d108-polite-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0042": {
+"item_id": "e106-t5-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0043": {
+"item_id": "e103-t4-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0044": {
+"item_id": "d104-polite-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0045": {
+"item_id": "d102-curt-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0046": {
+"item_id": "e101-t5-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0047": {
+"item_id": "e101-t5-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0048": {
+"item_id": "e106-t7-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0049": {
+"item_id": "e103-t6-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0050": {
+"item_id": "d107-curt-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0051": {
+"item_id": "d104-sarcastic-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0052": {
+"item_id": "d108-sarcastic-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0053": {
+"item_id": "e102-t6-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0054": {
+"item_id": "d107-curt-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0055": {
+"item_id": "e104-t2-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0056": {
+"item_id": "e102-t7-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0057": {
+"item_id": "e103-t6-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0058": {
+"item_id": "e101-t1-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0059": {
+"item_id": "d101-sarcastic-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0060": {
+"item_id": "e104-t6-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0061": {
+"item_id": "e101-t7-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0062": {
+"item_id": "d106-curt-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0063": {
+"item_id": "d104-sarcastic-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0064": {
+"item_id": "d107-sarcastic-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0065": {
+"item_id": "e106-t1-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0066": {
+"item_id": "e104-t5-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0067": {
+"item_id": "d106-polite-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0068": {
+"item_id": "e103-t5-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0069": {
+"item_id": "e101-t6-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0070": {
+"item_id": "d108-curt-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0071": {
+"item_id": "d107-sarcastic-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0072": {
+"item_id": "e103-t6-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0073": {
+"item_id": "d108-polite-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0074": {
+"item_id": "d102-sarcastic-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0075": {
+"item_id": "e105-t5-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0076": {
+"item_id": "e106-t5-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0077": {
+"item_id": "e102-t5-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0078": {
+"item_id": "e101-t1-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0079": {
+"item_id": "d103-polite-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0080": {
+"item_id": "e102-t6-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0081": {
+"item_id": "d105-polite-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0082": {
+"item_id": "d105-curt-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0083": {
+"item_id": "d101-curt-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0084": {
+"item_id": "e106-t7-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0085": {
+"item_id": "e101-t6-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0086": {
+"item_id": "e105-t5-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0087": {
+"item_id": "e103-t5-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0088": {
+"item_id": "e102-t2-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0089": {
+"item_id": "e106-t6-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0090": {
+"item_id": "e105-t2-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0091": {
+"item_id": "e102-t6-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0092": {
+"item_id": "d103-polite-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0093": {
+"item_id": "e106-t7-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0094": {
+"item_id": "d104-sarcastic-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0095": {
+"item_id": "d106-curt-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0096": {
+"item_id": "e103-t5-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0097": {
+"item_id": "e105-t6-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0098": {
+"item_id": "e106-t5-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0099": {
+"item_id": "d108-sarcastic-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0100": {
+"item_id": "d107-polite-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0101": {
+"item_id": "e106-t7-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0102": {
+"item_id": "e104-t6-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0103": {
+"item_id": "e101-t7-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0104": {
+"item_id": "d102-polite-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0105": {
+"item_id": "e105-t5-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0106": {
+"item_id": "d102-polite-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0107": {
+"item_id": "e102-t6-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0108": {
+"item_id": "e105-t7-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0109": {
+"item_id": "d103-sarcastic-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0110": {
+"item_id": "e106-t7-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0111": {
+"item_id": "e104-t2-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0112": {
+"item_id": "d105-sarcastic-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0113": {
+"item_id": "e105-t7-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0114": {
+"item_id": "d108-curt-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0115": {
+"item_id": "d102-sarcastic-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0116": {
+"item_id": "e106-t3-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0117": {
+"item_id": "e104-t3-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0118": {
+"item_id": "d103-sarcastic-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0119": {
+"item_id": "d106-sarcastic-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0120": {
+"item_id": "d102-polite-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0121": {
+"item_id": "e101-t5-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0122": {
+"item_id": "d107-polite-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0123": {
+"item_id": "e101-t6-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0124": {
+"item_id": "e106-t4-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0125": {
+"item_id": "d103-curt-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0126": {
+"item_id": "d101-polite-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0127": {
+"item_id": "e104-t4-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0128": {
+"item_id": "d103-sarcastic-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0129": {
+"item_id": "d106-sarcastic-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0130": {
+"item_id": "d106-sarcastic-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0131": {
+"item_id": "d104-polite-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0132": {
+"item_id": "e105-t3-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0133": {
+"item_id": "e104-t6-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0134": {
+"item_id": "e102-t6-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0135": {
+"item_id": "e106-t3-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0136": {
+"item_id": "d102-curt-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0137": {
+"item_id": "d101-polite-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0138": {
+"item_id": "e106-t6-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0139": {
+"item_id": "d104-curt-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0140": {
+"item_id": "d108-curt-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0141": {
+"item_id": "e105-t1-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0142": {
+"item_id": "d108-polite-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0143": {
+"item_id": "e101-t6-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0144": {
+"item_id": "d101-sarcastic-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0145": {
+"item_id": "e101-t7-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0146": {
+"item_id": "e104-t5-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0147": {
+"item_id": "e106-t5-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0148": {
+"item_id": "e106-t1-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0149": {
+"item_id": "e102-t5-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0150": {
+"item_id": "d107-curt-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0151": {
+"item_id": "e103-t5-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0152": {
+"item_id": "e101-t5-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0153": {
+"item_id": "e102-t5-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0154": {
+"item_id": "e103-t5-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0155": {
+"item_id": "d103-polite-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0156": {
+"item_id": "d104-curt-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0157": {
+"item_id": "d102-polite-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0158": {
+"item_id": "d101-curt-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0159": {
+"item_id": "d103-curt-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0160": {
+"item_id": "d105-sarcastic-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0161": {
+"item_id": "d107-curt-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0162": {
+"item_id": "d104-polite-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0163": {
+"item_id": "d102-sarcastic-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0164": {
+"item_id": "d105-polite-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0165": {
+"item_id": "d107-curt-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0166": {
+"item_id": "d104-curt-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0167": {
+"item_id": "e105-t7-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0168": {
+"item_id": "e106-t7-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0169": {
+"item_id": "d107-curt-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0170": {
+"item_id": "e105-t7-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0171": {
+"item_id": "e103-t6-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0172": {
+"item_id": "e102-t7-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0173": {
+"item_id": "d106-polite-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0174": {
+"item_id": "e106-t6-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0175": {
+"item_id": "e105-t7-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0176": {
+"item_id": "d103-curt-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0177": {
+"item_id": "e101-t7-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0178": {
+"item_id": "d105-curt-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0179": {
+"item_id": "e102-t3-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0180": {
+"item_id": "e105-t6-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0181": {
+"item_id": "e103-t7-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0182": {
+"item_id": "e105-t6-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0183": {
+"item_id": "d108-polite-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0184": {
+"item_id": "d105-polite-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0185": {
+"item_id": "e103-t7-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0186": {
+"item_id": "d105-polite-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0187": {
+"item_id": "e106-t7-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0188": {
+"item_id": "d106-polite-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0189": {
+"item_id": "e104-t4-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0190": {
+"item_id": "d101-sarcastic-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0191": {
+"item_id": "e101-t4-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0192": {
+"item_id": "d105-curt-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0193": {
+"item_id": "d103-sarcastic-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0194": {
+"item_id": "e101-t5-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0195": {
+"item_id": "d101-polite-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0196": {
+"item_id": "e104-t7-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0197": {
+"item_id": "e103-t3-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0198": {
+"item_id": "e104-t6-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0199": {
+"item_id": "e103-t7-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0200": {
+"item_id": "e101-t6-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0201": {
+"item_id": "d107-sarcastic-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0202": {
+"item_id": "d102-sarcastic-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0203": {
+"item_id": "e102-t5-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0204": {
+"item_id": "d107-sarcastic-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0205": {
+"item_id": "e101-t7-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0206": {
+"item_id": "e106-t5-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0207": {
+"item_id": "e104-t6-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0208": {
+"item_id": "e104-t5-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0209": {
+"item_id": "e103-t2-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0210": {
+"item_id": "e106-t5-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0211": {
+"item_id": "e102-t2-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0212": {
+"item_id": "e102-t4-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0213": {
+"item_id": "d102-polite-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0214": {
+"item_id": "e106-t2-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0215": {
+"item_id": "e102-t7-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0216": {
+"item_id": "d102-polite-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0217": {
+"item_id": "e104-t1-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0218": {
+"item_id": "e103-t6-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0219": {
+"item_id": "d108-polite-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0220": {
+"item_id": "e104-t6-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0221": {
+"item_id": "d106-polite-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0222": {
+"item_id": "e102-t5-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0223": {
+"item_id": "e105-t5-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0224": {
+"item_id": "e102-t6-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0225": {
+"item_id": "e101-t4-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0226": {
+"item_id": "e105-t7-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0227": {
+"item_id": "d103-curt-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0228": {
+"item_id": "d106-polite-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0229": {
+"item_id": "d108-curt-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0230": {
+"item_id": "d104-polite-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0231": {
+"item_id": "d108-sarcastic-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0232": {
+"item_id": "e104-t7-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0233": {
+"item_id": "d103-polite-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0234": {
+"item_id": "e102-t7-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0235": {
+"item_id": "e101-t5-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0236": {
+"item_id": "e102-t5-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0237": {
+"item_id": "d103-sarcastic-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0238": {
+"item_id": "e106-t6-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0239": {
+"item_id": "d101-curt-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0240": {
+"item_id": "e104-t7-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0241": {
+"item_id": "d105-polite-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0242": {
+"item_id": "d101-sarcastic-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0243": {
+"item_id": "d101-sarcastic-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0244": {
+"item_id": "e106-t6-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0245": {
+"item_id": "d105-sarcastic-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0246": {
+"item_id": "e105-t5-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0247": {
+"item_id": "d107-sarcastic-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0248": {
+"item_id": "d106-sarcastic-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0249": {
+"item_id": "e101-t6-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0250": {
+"item_id": "d104-sarcastic-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0251": {
+"item_id": "e101-t6-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0252": {
+"item_id": "e102-t5-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0253": {
+"item_id": "e106-t6-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0254": {
+"item_id": "e104-t5-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0255": {
+"item_id": "d106-sarcastic-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0256": {
+"item_id": "d101-curt-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0257": {
+"item_id": "e103-t6-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0258": {
+"item_id": "d104-sarcastic-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0259": {
+"item_id": "e101-t6-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0260": {
+"item_id": "e101-t3-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0261": {
+"item_id": "e104-t7-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0262": {
+"item_id": "d102-sarcastic-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0263": {
+"item_id": "d106-sarcastic-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0264": {
+"item_id": "d103-curt-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0265": {
+"item_id": "e105-t5-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0266": {
+"item_id": "e104-t5-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0267": {
+"item_id": "d107-polite-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0268": {
+"item_id": "d108-sarcastic-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0269": {
+"item_id": "d108-polite-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0270": {
+"item_id": "e105-t5-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0271": {
+"item_id": "d102-sarcastic-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0272": {
+"item_id": "d108-sarcastic-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0273": {
+"item_id": "d107-polite-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0274": {
+"item_id": "d107-curt-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0275": {
+"item_id": "e103-t7-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0276": {
+"item_id": "e106-t5-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0277": {
+"item_id": "d107-polite-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0278": {
+"item_id": "e104-t7-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0279": {
+"item_id": "d105-curt-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0280": {
+"item_id": "d105-curt-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0281": {
+"item_id": "e103-t1-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0282": {
+"item_id": "e105-t7-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0283": {
+"item_id": "d101-curt-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0284": {
+"item_id": "e105-t3-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0285": {
+"item_id": "d102-curt-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0286": {
+"item_id": "d105-sarcastic-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0287": {
+"item_id": "d102-curt-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d102"
+},
+"m0288": {
+"item_id": "d106-curt-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0289": {
+"item_id": "d103-curt-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0290": {
+"item_id": "e101-t3-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0291": {
+"item_id": "d106-curt-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0292": {
+"item_id": "d104-curt-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0293": {
+"item_id": "d101-polite-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0294": {
+"item_id": "e103-t5-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0295": {
+"item_id": "e103-t5-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0296": {
+"item_id": "e103-t6-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0297": {
+"item_id": "e103-t7-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0298": {
+"item_id": "d103-sarcastic-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0299": {
+"item_id": "e103-t7-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0300": {
+"item_id": "e102-t6-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0301": {
+"item_id": "e102-t7-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0302": {
+"item_id": "d101-polite-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0303": {
+"item_id": "e105-t2-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0304": {
+"item_id": "e102-t7-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0305": {
+"item_id": "e103-t2-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0306": {
+"item_id": "e104-t7-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0307": {
+"item_id": "e102-t3-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0308": {
+"item_id": "e104-t5-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0309": {
+"item_id": "e102-t1-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0310": {
+"item_id": "d101-curt-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0311": {
+"item_id": "e105-t6-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0312": {
+"item_id": "d104-polite-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0313": {
+"item_id": "e106-t6-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0314": {
+"item_id": "e102-t1-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0315": {
+"item_id": "e104-t3-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0316": {
+"item_id": "e104-t6-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0317": {
+"item_id": "e106-t2-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0318": {
+"item_id": "e101-t7-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0319": {
+"item_id": "d108-polite-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0320": {
+"item_id": "d101-curt-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0321": {
+"item_id": "d105-curt-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0322": {
+"item_id": "e104-t5-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0323": {
+"item_id": "e105-t4-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0324": {
+"item_id": "d108-curt-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0325": {
+"item_id": "d106-curt-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0326": {
+"item_id": "e101-t5-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0327": {
+"item_id": "e103-t5-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0328": {
+"item_id": "d105-sarcastic-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0329": {
+"item_id": "e101-t2-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0330": {
+"item_id": "d105-sarcastic-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0331": {
+"item_id": "e101-t7-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0332": {
+"item_id": "e103-t6-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0333": {
+"item_id": "e106-t5-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0334": {
+"item_id": "d101-polite-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0335": {
+"item_id": "d106-sarcastic-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d106"
+},
+"m0336": {
+"item_id": "e101-t5-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e101"
+},
+"m0337": {
+"item_id": "d105-polite-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0338": {
+"item_id": "e104-t6-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e104"
+},
+"m0339": {
+"item_id": "d105-curt-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0340": {
+"item_id": "d101-sarcastic-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0341": {
+"item_id": "e102-t7-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+},
+"m0342": {
+"item_id": "d101-polite-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d101"
+},
+"m0343": {
+"item_id": "d105-sarcastic-s2",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d105"
+},
+"m0344": {
+"item_id": "d108-curt-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d108"
+},
+"m0345": {
+"item_id": "e105-t6-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0346": {
+"item_id": "d107-sarcastic-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d107"
+},
+"m0347": {
+"item_id": "e106-t6-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0348": {
+"item_id": "d103-polite-s0",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0349": {
+"item_id": "e103-t3-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0350": {
+"item_id": "d104-curt-s4",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0351": {
+"item_id": "e105-t6-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0352": {
+"item_id": "e105-t6-s3",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0353": {
+"item_id": "e103-t7-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e103"
+},
+"m0354": {
+"item_id": "d104-curt-s5",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d104"
+},
+"m0355": {
+"item_id": "e105-t7-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e105"
+},
+"m0356": {
+"item_id": "d103-polite-s1",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0357": {
+"item_id": "d103-curt-greedy",
+"concept": "C1",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "d103"
+},
+"m0358": {
+"item_id": "e106-t4-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e106"
+},
+"m0359": {
+"item_id": "e102-t4-user",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "pilot",
+"template_id": "e102"
+}
+}
