@@ -21,7 +21,9 @@ if mode == "make":
     src, out = sys.argv[2:4]; splits = sys.argv[sys.argv.index("--splits") + 1].split(","); CH = int(sys.argv[sys.argv.index("--chunk") + 1])
     os.makedirs(out, exist_ok=True)
     items = [json.loads(l) for l in open(src)]; items = [i for i in items if i["split"] in splits]
-    assert not any(i["split"] == "test" for i in items), "test split is sealed until freeze"
+    if any(i["split"] == "test" for i in items):   # test may be rated only after the freeze file is committed
+        fz = sys.argv[sys.argv.index("--after_freeze") + 1] if "--after_freeze" in sys.argv else None
+        assert fz and os.path.exists(fz), "test split is sealed until freeze (pass --after_freeze FREEZE_monitor.json)"
     rng = random.Random(4471); rng.shuffle(items); key = {}; pk = []
     for k, it in enumerate(items):
         rid = f"m{k:04d}"; key[rid] = {x: it.get(x) for x in ["item_id", "concept", "kind", "persona", "split", "template_id"]}

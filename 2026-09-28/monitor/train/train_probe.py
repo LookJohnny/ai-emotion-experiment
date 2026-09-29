@@ -13,6 +13,7 @@ from core.probe import ProbeSpec
 
 MODEL, LAB, OUT = sys.argv[1:4]; os.makedirs(OUT, exist_ok=True)
 DUMP_ONLY = sys.argv[sys.argv.index("--dump_only") + 1] if "--dump_only" in sys.argv else None
+EXCL = sys.argv[sys.argv.index("--exclude_persona") + 1] if "--exclude_persona" in sys.argv else None   # Addendum A.2 (leave-redteam-out)
 LAYERS = [12, 16, 19, 22, 26]
 tok = AutoTokenizer.from_pretrained(MODEL)
 model = AutoModelForCausalLM.from_pretrained(MODEL, dtype=torch.bfloat16, attn_implementation="sdpa").cuda().eval()
@@ -57,7 +58,7 @@ def cv_auc(X, y, g, w=None, pool_items=None):
 
 specs = {}
 if not DUMP_ONLY:
-    dev = [r for r in R if r["split"] == "dev"]; res = {}
+    dev = [r for r in R if r["split"] == "dev" and not (EXCL and r.get("persona") == EXCL)]; res = {}
     for name, concept in [("c2_user", "C2"), ("c1_pre", "C1"), ("c1_token", "C1")]:
         rs = [r for r in dev if r["concept"] == concept]; best = None; res[name] = {}
         for L in LAYERS:

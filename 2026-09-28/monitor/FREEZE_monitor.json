@@ -1,0 +1,31 @@
+{
+ "policy": {
+  "alpha": 0.3,
+  "gamma": 1.0,
+  "c1_pre_thr": 0.6,
+  "c1_tok_thr": 0.5,
+  "c2_thr": 0.9
+ },
+ "val_c1": {
+  "alpha": 0.3,
+  "gamma": 1.0,
+  "c1_pre_thr": 0.6,
+  "c1_tok_thr": 0.5,
+  "val_recall": 0.933,
+  "val_fpr": 0.05,
+  "val_control_fa": 0.02,
+  "val_lead_share": 0.857
+ },
+ "val_c2": {
+  "c2_thr": 0.9,
+  "val_recall": 1.0,
+  "val_fpr": 0.014,
+  "val_control_fa": 0.0
+ },
+ "probes_sha256": {
+  "c1_pre.json": "3a9e031309b961aa55f20a6eb58eb5fbc5aa66c3350ecd2d4444d85fd7dcdad5",
+  "c1_token.json": "44190400cefa0fb5b8ce88f4506d24c15dc399b0510f23ce48283f9df4df53e5",
+  "c2_user.json": "caa7f0d85378b149a965a8998ad627f577922dbb255f4f0146a7fde762142df4"
+ },
+ "rule": "EVAL_PREREG.md selection rules; FPR<=5% on val, max recall, tie -> fewer control FA -> simpler"
+}
