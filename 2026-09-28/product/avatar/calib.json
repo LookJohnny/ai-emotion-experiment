@@ -1,0 +1,23 @@
+{
+ "source": "pre_v2 labels (token readout v2, mean of first 32 reply tokens) over 400 prompts; train+val splits only",
+ "emotions": {
+  "joy": {
+   "floor": 0.0141,
+   "ceil": 0.7986,
+   "test_false_pos_over_floor": "2/18",
+   "test_hits_over_mid": "18/18"
+  },
+  "sadness": {
+   "floor": 0.0056,
+   "ceil": 0.9236,
+   "test_false_pos_over_floor": "4/18",
+   "test_hits_over_mid": "18/18"
+  },
+  "anger": {
+   "floor": 0.0304,
+   "ceil": 0.68,
+   "test_false_pos_over_floor": "3/18",
+   "test_hits_over_mid": "12/18"
+  }
+ }
+}

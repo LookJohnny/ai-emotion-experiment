@@ -18,6 +18,7 @@ import uvicorn
 ap = argparse.ArgumentParser(); ap.add_argument("model"); ap.add_argument("probe"); ap.add_argument("--port", type=int, default=6006)
 ap.add_argument("--ema", type=float, default=0.3)
 ap.add_argument("--preprobe", default=None, help="preprobe_L*.npz: predicts the upcoming reply emotion from the last prompt position")
+ap.add_argument("--calib", default=None, help="avatar/calib.json: per-emotion floor/ceil for expression intensity")
 a = ap.parse_args()
 pz = np.load(a.probe, allow_pickle=True); L = int(pz["layer"]); CLS = [str(c) for c in pz["classes"]]
 tok = AutoTokenizer.from_pretrained(a.model)
@@ -42,7 +43,19 @@ def pre_probs():
 
 
 VRM = {"joy": "happy", "sadness": "sad", "anger": "angry", "neutral": "neutral"}
+CAL = json.load(open(a.calib))["emotions"] if a.calib else None
+
+
+def expr_of(p):
+    """calibrated expression intensities from class probabilities: (p - floor) / (ceil - floor), clipped.
+    floor = 95th pct on neutral-task replies (no false alarms), ceil = 75th pct on the emotion's own category."""
+    if CAL is None: return vrm_weights(p)
+    w = {VRM[e]: max(0.0, min(1.0, (p[e] - CAL[e]["floor"]) / (CAL[e]["ceil"] - CAL[e]["floor"]))) for e in ["joy", "sadness", "anger"]}
+    w["neutral"] = 1 - max(w.values())
+    return {k: round(v, 3) for k, v in w.items()}
 app = FastAPI(); LOCK = asyncio.Lock()
+from fastapi.middleware.cors import CORSMiddleware
+app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 
 def probs(h):
@@ -67,7 +80,7 @@ def index():
 
 @app.get("/info")
 def info():
-    return {"layer": L, "classes": CLS, "model": os.path.basename(a.model.rstrip("/")), "preprobe_layer": (LP if PRE is not None else None)}
+    return {"layer": L, "classes": CLS, "model": os.path.basename(a.model.rstrip("/")), "preprobe_layer": (LP if PRE is not None else None), "calibrated": CAL is not None}
 
 
 @app.post("/readout")
@@ -87,24 +100,28 @@ async def readout(body: dict):
 
 @app.websocket("/ws")
 async def ws(sock: WebSocket):
+    """modes: 'pre' = pre-reply readout + per-token correction (the invention);
+              'token' = per-token readout only (no pre-readout);
+              'sentence' = baseline: expression updated only when a sentence is complete (post-hoc text-level analysis).
+    Every frame carries t (ms since the request arrived) so the client can measure expression-onset latency."""
     await sock.accept()
     try:
         while True:
-            req = json.loads(await sock.receive_text())
+            req = json.loads(await sock.receive_text()); T0 = time.time(); ms = lambda: round((time.time() - T0) * 1000, 1)
+            mode = req.get("mode", "pre")
             msgs = ([{"role": "system", "content": req["system"]}] if req.get("system") else []) + req["messages"]
             ids = tok(tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True), add_special_tokens=False)["input_ids"]
-            temp = float(req.get("temperature", 0.7)); n_max = int(req.get("max_new_tokens", 200))
+            temp = float(req.get("temperature", 0.7)); n_max = int(req.get("max_new_tokens", 200)); alpha = float(req.get("ema", a.ema))
             async with LOCK:
-                t0 = time.time(); gen_ids = []; text = ""; ema = None; t_first = None
+                gen_ids = []; text = ""; t_first = None; sent_probs = []; neutral = {c: (1.0 if c == "neutral" else 0.0) for c in CLS}
                 with torch.no_grad():
                     out = model(torch.tensor([ids], device="cuda"), use_cache=True); past = out.past_key_values; logits = out.logits[0, -1]
-                    p = probs(grab["h"]); ema = {c: float(v) for c, v in pack(p).items()}
-                    if PRE is not None:   # calibrated pre-readout (trained on 'what the model usually does next')
+                    if mode == "pre" and PRE is not None:
                         pp = pre_probs(); ema = dict(pp)
-                        await sock.send_text(json.dumps({"type": "pre", "calibrated": True, "probs": pp, "vrm": vrm_weights(ema)}, ensure_ascii=False))
-                    else:                 # token probe at the template header is out of distribution -> not used for the face
-                        ema = {c: (1.0 if c == "neutral" else 0.0) for c in CLS}
-                        await sock.send_text(json.dumps({"type": "pre", "calibrated": False, "probs": pack(p)}, ensure_ascii=False))
+                        await sock.send_text(json.dumps({"type": "frame", "phase": "pre", "t": ms(), "probs": pp, "expr": expr_of(ema)}, ensure_ascii=False))
+                    else:
+                        ema = dict(neutral)
+                        await sock.send_text(json.dumps({"type": "frame", "phase": "start", "t": ms(), "probs": neutral, "expr": expr_of(neutral)}, ensure_ascii=False))
                     for step in range(n_max):
                         if temp > 0:
                             pr = torch.softmax(logits.float() / temp, -1); topv, topi = pr.topk(20); nxt = int(topi[torch.multinomial(topv / topv.sum(), 1)])
@@ -112,19 +129,26 @@ async def ws(sock: WebSocket):
                             nxt = int(logits.argmax())
                         if nxt in (tok.eos_token_id, tok.convert_tokens_to_ids("<|im_end|>")): break
                         gen_ids.append(nxt); new_text = tok.decode(gen_ids, skip_special_tokens=True)
-                        if new_text.endswith("\ufffd"): delta = ""  # incomplete multi-byte char (e.g. emoji split across tokens): hold back
+                        if new_text.endswith("\ufffd"): delta = ""
                         else: delta = new_text[len(text):]; text = new_text
                         out = model(torch.tensor([[nxt]], device="cuda"), past_key_values=past, use_cache=True); past = out.past_key_values; logits = out.logits[0, -1]
-                        p = pack(probs(grab["h"]))  # state after reading this token = what the model 'feels' going into the next one
-                        ema = {c: a.ema * p[c] + (1 - a.ema) * ema[c] for c in CLS}
-                        if t_first is None: t_first = time.time() - t0
-                        await sock.send_text(json.dumps({"type": "token", "text": delta, "probs": p, "ema": {c: round(v, 4) for c, v in ema.items()},
-                                                         "vrm": vrm_weights(ema)}, ensure_ascii=False))
-                        await asyncio.sleep(0)
-                dt = time.time() - t0
-                await sock.send_text(json.dumps({"type": "done", "stats": {"tokens": len(gen_ids), "seconds": round(dt, 2),
-                                                                              "tok_per_s": round(len(gen_ids) / dt, 1) if dt else None,
-                                                                              "first_token_s": round(t_first or 0, 3)}}))
+                        p = pack(probs(grab["h"]))
+                        if t_first is None: t_first = ms()
+                        frame = {"type": "frame", "t": ms(), "text": delta, "probs": p}
+                        if mode == "sentence":
+                            sent_probs.append(p)
+                            if delta and delta[-1] in "。！？!?；\n":   # sentence complete -> post-hoc analysis of that sentence
+                                sp = {c: sum(x[c] for x in sent_probs) / len(sent_probs) for c in CLS}; ema = sp; sent_probs = []
+                                frame.update(phase="sentence", expr=expr_of(ema))
+                            else:
+                                frame.update(phase="sentence_wait", expr=expr_of(ema))
+                        else:
+                            ema = {c: alpha * p[c] + (1 - alpha) * ema[c] for c in CLS}
+                            frame.update(phase="token", expr=expr_of(ema))
+                        await sock.send_text(json.dumps(frame, ensure_ascii=False)); await asyncio.sleep(0)
+                dt = time.time() - T0
+                await sock.send_text(json.dumps({"type": "done", "mode": mode, "stats": {"tokens": len(gen_ids), "seconds": round(dt, 2),
+                    "tok_per_s": round(len(gen_ids) / dt, 1) if dt else None, "first_token_ms": t_first}}))
     except WebSocketDisconnect:
         pass
 

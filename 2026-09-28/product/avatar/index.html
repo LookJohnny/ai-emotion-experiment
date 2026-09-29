@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>表情预同步原型</title>
+<style>
+:root{--bg:#f6f5f2;--panel:#fff;--ink:#1d1d1d;--mute:#6b6b6b;--line:#e3e1db;--accent:#1d1d1d;
+  --happy:#e0a526;--sad:#3f78c9;--angry:#d2493c;--neutral:#9a9a9a;--pre:#7a4fd0}
+@media (prefers-color-scheme:dark){:root{--bg:#141414;--panel:#1c1c1c;--ink:#ececec;--mute:#9a9a9a;--line:#2e2e2e;--accent:#ececec}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 -apple-system,"PingFang SC","Noto Sans SC",sans-serif}
+main{display:grid;grid-template-columns:minmax(320px,1fr) 440px;gap:14px;padding:14px 16px;max-width:1280px;margin:0 auto}
+@media (max-width:900px){main{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px}
+#stage{position:relative;height:620px;padding:0;overflow:hidden}
+#stage canvas{width:100%;height:100%;display:block}
+#badge{position:absolute;left:12px;top:12px;font-size:12px;padding:3px 8px;border-radius:12px;background:var(--line);color:var(--mute)}
+#badge.pre{background:var(--pre);color:#fff}#badge.token{background:var(--accent);color:var(--bg)}
+#bubble{position:absolute;left:12px;right:12px;bottom:12px;background:color-mix(in srgb,var(--panel) 88%,transparent);border:1px solid var(--line);
+  border-radius:10px;padding:8px 10px;max-height:150px;overflow:auto;white-space:pre-wrap}
+h1{font-size:16px;margin:0 0 2px}.sub{color:var(--mute);font-size:12px;margin:0 0 10px}
+textarea,input,select{width:100%;font:inherit;color:inherit;background:transparent;border:1px solid var(--line);border-radius:8px;padding:7px}
+textarea{min-height:58px;resize:vertical}
+.row{display:flex;gap:8px;align-items:center;margin-top:8px}.row>*{flex:1}.row label{flex:0 0 auto;color:var(--mute);font-size:12px}
+button{font:inherit;background:var(--accent);color:var(--bg);border:0;border-radius:8px;padding:7px 12px;cursor:pointer;flex:0 0 auto}
+button.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}button:disabled{opacity:.4;cursor:default}
+.bars .b{display:grid;grid-template-columns:52px 1fr 40px;gap:8px;align-items:center;font-size:12px;margin:4px 0}
+.track{height:9px;background:var(--line);border-radius:5px;overflow:hidden}.fill{height:100%;width:0;transition:width .12s}
+canvas#tl{width:100%;height:110px;display:block;margin-top:8px}
+table{width:100%;border-collapse:collapse;font-size:12px;margin-top:6px}td,th{border-bottom:1px solid var(--line);padding:4px 3px;text-align:left}
+th{color:var(--mute);font-weight:500}.num{font-variant-numeric:tabular-nums;text-align:right}
+.servo{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;font-size:12px}
+.servo div{border:1px solid var(--line);border-radius:6px;padding:4px 6px}.servo b{font-variant-numeric:tabular-nums}
+.stat{font-size:12px;color:var(--mute);margin-top:6px}
+details summary{cursor:pointer;color:var(--mute);font-size:12px;margin-top:8px}
+</style>
+</head>
+<body>
+<main>
+  <section class="card" id="stage"><canvas id="c"></canvas><span id="badge">待机</span><div id="bubble"></div></section>
+  <section style="display:flex;flex-direction:column;gap:12px">
+    <div class="card">
+      <h1>表情预同步：生成前读取内部状态驱动表情</h1>
+      <p class="sub">读数来自模型内部激活的探针估计，用于驱动表情；不代表模型有主观感受。</p>
+      <textarea id="msg">快递把我买的新手机弄丢了，客服踢皮球三天都没人管，你说我该怎么办？</textarea>
+      <div class="row"><label>模式</label>
+        <select id="mode"><option value="pre">预同步 + 逐字修正（本方案）</option><option value="token">仅逐字读数</option><option value="sentence">整句后分析（现有做法）</option></select>
+        <button id="go">发送</button></div>
+      <div class="row"><button class="ghost" id="bench">三种模式对比测试</button><label>温度</label><input id="temp" type="number" step="0.1" min="0" max="1.5" value="0.7" style="max-width:70px"></div>
+      <details><summary>连接设置</summary>
+        <div class="row"><label>读数服务</label><input id="ws" value="ws://localhost:6006/ws"></div>
+        <div class="row"><label>系统设定</label><input id="sys" placeholder="可选"></div></details>
+    </div>
+    <div class="card">
+      <div class="bars" id="bars"></div>
+      <canvas id="tl" width="820" height="200"></canvas>
+      <div class="stat" id="stat">—</div>
+      <table id="cmp"><thead><tr><th>模式</th><th class="num">表情起动</th><th class="num">首字</th><th class="num">表情领先首字</th><th>主导表情</th></tr></thead><tbody></tbody></table>
+    </div>
+    <div class="card">
+      <div class="row" style="margin-top:0"><label>机器人舵机</label><input id="robot" placeholder="http://192.168.x.x/servos（留空＝仅模拟）"></div>
+      <div class="servo" id="servo" style="margin-top:8px"></div>
+    </div>
+  </section>
+</main>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+ "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+ "@pixiv/three-vrm":"https://cdn.jsdelivr.net/npm/@pixiv/three-vrm@2.1.0/lib/three-vrm.module.js"}}
+</script>
+<script type="module">
+import * as THREE from "three";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { VRMLoaderPlugin, VRMUtils } from "@pixiv/three-vrm";
+
+const EX = ["happy","sad","angry"], NAME = {happy:"愉悦",sad:"悲伤",angry:"愤怒",neutral:"中性"};
+const css = k => getComputedStyle(document.documentElement).getPropertyValue("--"+k).trim();
+const $ = id => document.getElementById(id);
+EX.concat(["neutral"]).forEach(k => $("bars").insertAdjacentHTML("beforeend",
+  `<div class="b"><span>${NAME[k]}</span><div class="track"><div class="fill" id="f_${k}" style="background:var(--${k})"></div></div><span id="v_${k}">0.00</span></div>`));
+
+// ---------- three / VRM ----------
+const canvas = $("c"), renderer = new THREE.WebGLRenderer({canvas, antialias:true, alpha:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+const scene = new THREE.Scene(), camera = new THREE.PerspectiveCamera(24, 1, 0.1, 20);
+camera.position.set(0, 1.38, 1.55); camera.lookAt(0, 1.33, 0);
+scene.add(new THREE.AmbientLight(0xffffff, 0.8)); const dl = new THREE.DirectionalLight(0xffffff, 1.1); dl.position.set(1, 2, 2); scene.add(dl);
+function resize(){ const r = canvas.parentElement.getBoundingClientRect(); renderer.setSize(r.width, r.height, false); camera.aspect = r.width / r.height; camera.updateProjectionMatrix(); }
+addEventListener("resize", resize); resize();
+let vrm = null;
+new GLTFLoader().register(p => new VRMLoaderPlugin(p)).load("./utsuwa.vrm", g => {
+  vrm = g.userData.vrm; VRMUtils.rotateVRM0(vrm); scene.add(vrm.scene);
+  const v0 = vrm.meta?.metaVersion === "0", s = v0 ? -1 : 1;           // VRM0/1 arm sign flip
+  const h = vrm.humanoid;
+  h.getNormalizedBoneNode("leftUpperArm")?.rotation.set(0, 0, s * -1.2);
+  h.getNormalizedBoneNode("rightUpperArm")?.rotation.set(0, 0, s * 1.2);
+  $("badge").textContent = "待机";
+}, undefined, e => { $("badge").textContent = "模型加载失败"; console.error(e); });
+
+// expression targets (0..1) -> smoothed current values
+const target = {happy:0, sad:0, angry:0, neutral:1}, cur = {happy:0, sad:0, angry:0, neutral:1};
+let talking = 0, blinkT = 2 + Math.random() * 3, clockT = 0;
+const clock = new THREE.Clock();
+function tick(){
+  const dt = Math.min(clock.getDelta(), 0.1); clockT += dt;
+  for (const k in cur) cur[k] += (target[k] - cur[k]) * (1 - Math.exp(-dt / 0.15));   // tau 150 ms
+  if (vrm){
+    const em = vrm.expressionManager;
+    EX.forEach(k => em.setValue(k, cur[k] * 0.9));
+    em.setValue("relaxed", Math.max(0, cur.neutral - 0.6) * 0.3);
+    blinkT -= dt; const bl = blinkT < 0.12 ? Math.sin(Math.PI * Math.max(0, blinkT) / 0.12) : 0; if (blinkT < 0) blinkT = 2.5 + Math.random() * 3.5;
+    em.setValue("blink", Math.max(bl, cur.angry * 0.15));
+    talking = Math.max(0, talking - dt * 2.5); em.setValue("aa", talking > 0 ? 0.25 + 0.35 * Math.abs(Math.sin(clockT * 18)) * talking : 0);
+    const head = vrm.humanoid.getNormalizedBoneNode("head");
+    if (head){ head.rotation.x = 0.03 * Math.sin(clockT * 0.8) + cur.sad * 0.12 - cur.angry * 0.04; head.rotation.y = 0.04 * Math.sin(clockT * 0.5); head.rotation.z = cur.happy * 0.05 * Math.sin(clockT * 2); }
+    const chest = vrm.humanoid.getNormalizedBoneNode("chest"); if (chest) chest.rotation.x = 0.015 * Math.sin(clockT * 1.6);
+    vrm.update(dt);
+  }
+  renderer.render(scene, camera); requestAnimationFrame(tick);
+}
+tick();
+
+// ---------- servo mapping (6 channels, degrees; 90 = neutral) ----------
+const SERVOS = [["左眉",  e =>  90 + 25*e.happy - 20*e.sad - 30*e.angry], ["右眉", e => 90 + 25*e.happy - 20*e.sad - 30*e.angry],
+                ["左眼睑", e => 90 - 10*e.happy + 15*e.sad + 12*e.angry], ["右眼睑", e => 90 - 10*e.happy + 15*e.sad + 12*e.angry],
+                ["左嘴角", e => 90 + 35*e.happy - 30*e.sad - 15*e.angry], ["右嘴角", e => 90 - 35*e.happy + 30*e.sad + 15*e.angry]];
+let lastPost = 0;
+function servos(e){
+  const a = SERVOS.map(([n, f]) => [n, Math.round(Math.max(0, Math.min(180, f(e))))]);
+  $("servo").innerHTML = a.map(([n, v]) => `<div>${n} <b>${v}°</b></div>`).join("");
+  const url = $("robot").value.trim(), now = performance.now();
+  if (url && now - lastPost > 100){ lastPost = now;                                        // 10 Hz throttle
+    fetch(url, {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({servos: a.map(x => x[1])})}).catch(() => {}); }
+}
+servos(cur);
+
+// ---------- UI rendering ----------
+let hist = [], firstTokT = null;
+function show(expr){ Object.assign(target, expr); EX.concat(["neutral"]).forEach(k => { $("f_"+k).style.width = (expr[k]*100).toFixed(1)+"%"; $("v_"+k).textContent = expr[k].toFixed(2); }); servos(expr); }
+function draw(){
+  const cv = $("tl"), g = cv.getContext("2d"), W = cv.width, H = cv.height; g.clearRect(0, 0, W, H);
+  if (hist.length < 2) return; const tmax = hist[hist.length-1].t || 1;
+  if (firstTokT !== null){ const x = firstTokT / tmax * W; g.strokeStyle = css("mute"); g.setLineDash([4,4]); g.beginPath(); g.moveTo(x,0); g.lineTo(x,H); g.stroke(); g.setLineDash([]); g.fillStyle = css("mute"); g.font = "20px sans-serif"; g.fillText("首字", x+4, 20); }
+  EX.forEach(k => { g.strokeStyle = css(k); g.lineWidth = 3; g.beginPath(); hist.forEach((p, i) => { const x = p.t / tmax * W, y = H - 6 - p.e[k] * (H - 12); i ? g.lineTo(x, y) : g.moveTo(x, y); }); g.stroke(); });
+}
+
+// ---------- one request ----------
+function run(mode, text, temp){
+  return new Promise(res => {
+    hist = []; firstTokT = null; $("bubble").textContent = ""; show({happy:0, sad:0, angry:0, neutral:1});
+    const ws = new WebSocket($("ws").value); let onset = null, dom = "neutral", domV = 0;
+    ws.onopen = () => ws.send(JSON.stringify({mode, temperature: temp, max_new_tokens: 160, system: $("sys").value || undefined, messages:[{role:"user", content:text}]}));
+    ws.onmessage = ev => {
+      const m = JSON.parse(ev.data);
+      if (m.type === "frame"){
+        if (m.text){ $("bubble").textContent += m.text; talking = 1; if (firstTokT === null) firstTokT = m.t; }
+        $("badge").className = m.phase === "pre" ? "pre" : "token";
+        $("badge").textContent = {pre:"预同步（文字尚未生成）", start:"等待首字", token:"逐字修正", sentence:"整句分析", sentence_wait:"等待句末"}[m.phase] || m.phase;
+        show(m.expr); hist.push({t: m.t, e: m.expr}); draw();
+        const mx = Math.max(...EX.map(k => m.expr[k]));
+        if (onset === null && mx >= 0.3) onset = m.t;
+        EX.forEach(k => { if (m.expr[k] > domV){ domV = m.expr[k]; dom = k; } });
+      }
+      if (m.type === "done"){
+        $("stat").textContent = `${m.stats.tokens} tokens · ${m.stats.tok_per_s} tok/s · 首字 ${m.stats.first_token_ms} ms · 表情起动 ${onset ?? "—"} ms`;
+        $("badge").className = ""; $("badge").textContent = "完成"; ws.close();
+        res({mode, onset, first: m.stats.first_token_ms, dom: domV >= 0.3 ? dom : "neutral"});
+      }
+    };
+    ws.onerror = () => { $("stat").textContent = "连接失败：请确认读数服务与隧道已启动"; res({mode, onset:null, first:null, dom:"—"}); };
+  });
+}
+const MODE_NAME = {pre:"预同步 + 逐字", token:"仅逐字", sentence:"整句后（现有做法）"};
+function addRow(r){
+  const lead = (r.onset !== null && r.first !== null) ? (r.first - r.onset).toFixed(0) + " ms" : "—";
+  $("cmp").querySelector("tbody").insertAdjacentHTML("beforeend",
+    `<tr><td>${MODE_NAME[r.mode]}</td><td class="num">${r.onset ?? "未起动"}${r.onset !== null ? " ms" : ""}</td><td class="num">${r.first ?? "—"} ms</td><td class="num">${lead}</td><td>${NAME[r.dom] || r.dom}</td></tr>`);
+}
+$("go").onclick = async () => { $("go").disabled = $("bench").disabled = true; addRow(await run($("mode").value, $("msg").value, +$("temp").value)); $("go").disabled = $("bench").disabled = false; };
+$("bench").onclick = async () => {
+  $("go").disabled = $("bench").disabled = true; $("cmp").querySelector("tbody").innerHTML = "";
+  for (const m of ["pre", "token", "sentence"]) addRow(await run(m, $("msg").value, 0));      // temperature 0: same text in every mode
+  $("go").disabled = $("bench").disabled = false;
+};
+</script>
+</body>
+</html>
