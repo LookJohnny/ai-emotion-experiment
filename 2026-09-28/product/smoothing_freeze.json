@@ -1,0 +1,28 @@
+{
+ "frozen": {
+  "alpha": 0.15,
+  "sustain": 1,
+  "gamma": 0.3,
+  "n_emotional": 54,
+  "n_neutral": 18,
+  "started": 54,
+  "correct": 53,
+  "before_first": 54,
+  "false_alarm": 0,
+  "onset_median": 23.9
+ },
+ "default_on_val": {
+  "alpha": 0.3,
+  "sustain": 1,
+  "gamma": 1.0,
+  "n_emotional": 54,
+  "n_neutral": 18,
+  "started": 54,
+  "correct": 51,
+  "before_first": 54,
+  "false_alarm": 8,
+  "onset_median": 23.9
+ },
+ "rule": "SMOOTHING_PREREG.md",
+ "n_eligible": 18
+}

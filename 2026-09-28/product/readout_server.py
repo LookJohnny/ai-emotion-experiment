@@ -19,6 +19,7 @@ ap = argparse.ArgumentParser(); ap.add_argument("model"); ap.add_argument("probe
 ap.add_argument("--ema", type=float, default=0.3)
 ap.add_argument("--preprobe", default=None, help="preprobe_L*.npz: predicts the upcoming reply emotion from the last prompt position")
 ap.add_argument("--calib", default=None, help="avatar/calib.json: per-emotion floor/ceil for expression intensity")
+ap.add_argument("--smoothing", default=None, help="smoothing_freeze.json: frozen alpha/sustain/gamma (tuned on validation prompts)")
 a = ap.parse_args()
 pz = np.load(a.probe, allow_pickle=True); L = int(pz["layer"]); CLS = [str(c) for c in pz["classes"]]
 tok = AutoTokenizer.from_pretrained(a.model)
@@ -44,6 +45,9 @@ def pre_probs():
 
 VRM = {"joy": "happy", "sadness": "sad", "anger": "angry", "neutral": "neutral"}
 CAL = json.load(open(a.calib))["emotions"] if a.calib else None
+import sys as _sys; _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from smoothing import Smoother
+SMO = json.load(open(a.smoothing))["frozen"] if a.smoothing else {"alpha": 0.3, "sustain": 1, "gamma": 1.0}
 
 
 def expr_of(p):
@@ -80,7 +84,7 @@ def index():
 
 @app.get("/info")
 def info():
-    return {"layer": L, "classes": CLS, "model": os.path.basename(a.model.rstrip("/")), "preprobe_layer": (LP if PRE is not None else None), "calibrated": CAL is not None}
+    return {"layer": L, "classes": CLS, "model": os.path.basename(a.model.rstrip("/")), "preprobe_layer": (LP if PRE is not None else None), "calibrated": CAL is not None, "smoothing": SMO}
 
 
 @app.post("/readout")
@@ -116,10 +120,14 @@ async def ws(sock: WebSocket):
                 gen_ids = []; text = ""; t_first = None; sent_probs = []; neutral = {c: (1.0 if c == "neutral" else 0.0) for c in CLS}
                 with torch.no_grad():
                     out = model(torch.tensor([ids], device="cuda"), use_cache=True); past = out.past_key_values; logits = out.logits[0, -1]
+                    use_sm = CAL is not None and mode in ("pre", "token")
                     if mode == "pre" and PRE is not None:
                         pp = pre_probs(); ema = dict(pp)
-                        await sock.send_text(json.dumps({"type": "frame", "phase": "pre", "t": ms(), "probs": pp, "expr": expr_of(ema)}, ensure_ascii=False))
+                        sm = Smoother(CAL, SMO["alpha"], SMO["sustain"], SMO["gamma"], pre=pp) if use_sm else None
+                        await sock.send_text(json.dumps({"type": "frame", "phase": "pre", "t": ms(), "probs": pp,
+                                                         "expr": sm.pre_expr() if sm else expr_of(ema)}, ensure_ascii=False))
                     else:
+                        sm = Smoother(CAL, SMO["alpha"], SMO["sustain"], SMO["gamma"], pre=None) if use_sm else None
                         ema = dict(neutral)
                         await sock.send_text(json.dumps({"type": "frame", "phase": "start", "t": ms(), "probs": neutral, "expr": expr_of(neutral)}, ensure_ascii=False))
                     for step in range(n_max):
@@ -142,6 +150,8 @@ async def ws(sock: WebSocket):
                                 frame.update(phase="sentence", expr=expr_of(ema))
                             else:
                                 frame.update(phase="sentence_wait", expr=expr_of(ema))
+                        elif sm is not None:
+                            frame.update(phase="token", expr=sm.step(p))
                         else:
                             ema = {c: alpha * p[c] + (1 - alpha) * ema[c] for c in CLS}
                             frame.update(phase="token", expr=expr_of(ema))

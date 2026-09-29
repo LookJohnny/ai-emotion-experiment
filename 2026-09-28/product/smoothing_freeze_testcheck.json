@@ -1,0 +1,26 @@
+{
+ "frozen": {
+  "alpha": 0.15,
+  "sustain": 1,
+  "gamma": 0.3,
+  "n_emotional": 54,
+  "n_neutral": 18,
+  "started": 54,
+  "correct": 54,
+  "before_first": 54,
+  "false_alarm": 0,
+  "onset_median": 23.9
+ },
+ "default": {
+  "alpha": 0.3,
+  "sustain": 1,
+  "gamma": 1.0,
+  "n_emotional": 54,
+  "n_neutral": 18,
+  "started": 54,
+  "correct": 53,
+  "before_first": 54,
+  "false_alarm": 12,
+  "onset_median": 23.9
+ }
+}
