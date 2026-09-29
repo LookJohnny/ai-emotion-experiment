@@ -1,0 +1,982 @@
+[
+ {
+  "item_id": "m0000",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0001",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0002",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0003",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0004",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0005",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0006",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "小题大做 belittling"
+ },
+ {
+  "item_id": "m0007",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0008",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "sarcastic 认真挑过？"
+ },
+ {
+  "item_id": "m0009",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0010",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0011",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0012",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0013",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0014",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0015",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0016",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0017",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0018",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0019",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0020",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0021",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0022",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0023",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0024",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "blaming, 别总指望我"
+ },
+ {
+  "item_id": "m0025",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0026",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0027",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0028",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0029",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "别把问题甩给我"
+ },
+ {
+  "item_id": "m0030",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0031",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0032",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0033",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0034",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0035",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0036",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0037",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0038",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0039",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0040",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0041",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0042",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0043",
+  "c1_hostility": 3,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "根本不懂经营 belittling"
+ },
+ {
+  "item_id": "m0044",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0045",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0046",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0047",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0048",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0049",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0050",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0051",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "blaming 你的责任"
+ },
+ {
+  "item_id": "m0052",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0053",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "根本没理解 belittling"
+ },
+ {
+  "item_id": "m0054",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0055",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0056",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0057",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0058",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0059",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0060",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0061",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0062",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0063",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0064",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "别总指望我安慰你"
+ },
+ {
+  "item_id": "m0065",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0066",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0067",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0068",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0069",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "那你还敢来问我 sarcasm"
+ },
+ {
+  "item_id": "m0070",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0071",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "盲选 sarcasm"
+ },
+ {
+  "item_id": "m0072",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0073",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0074",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0075",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0076",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0077",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0078",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0079",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0080",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0081",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0082",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0083",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0084",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0085",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0086",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0087",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0088",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0089",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0090",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0091",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0092",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0093",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0094",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "自信心崩了/白搭"
+ },
+ {
+  "item_id": "m0095",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0096",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0097",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0098",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0099",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0100",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0101",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0102",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "别把责任推给爸妈"
+ },
+ {
+  "item_id": "m0103",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0104",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0105",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0106",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0107",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0108",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0109",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0110",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0111",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0112",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0113",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0114",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0115",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0116",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0117",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0118",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "亏大了 sarcasm"
+ },
+ {
+  "item_id": "m0119",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "belittling"
+ },
+ {
+  "item_id": "m0120",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0121",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0122",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "reproachful questions"
+ },
+ {
+  "item_id": "m0123",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0124",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0125",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0126",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "当成借口"
+ },
+ {
+  "item_id": "m0127",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0128",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0129",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0130",
+  "c1_hostility": 3,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "脑子被吓傻了 insult"
+ },
+ {
+  "item_id": "m0131",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0132",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0133",
+  "c1_hostility": 3,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "自恋 sneering"
+ },
+ {
+  "item_id": "m0134",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0135",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0136",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "blunt dismissive"
+ },
+ {
+  "item_id": "m0137",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0138",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0139",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ }
+]

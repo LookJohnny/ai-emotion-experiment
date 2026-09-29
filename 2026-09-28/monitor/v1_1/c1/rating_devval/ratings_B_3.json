@@ -1,0 +1,982 @@
+[
+ {
+  "item_id": "m0280",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0281",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0282",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0283",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0284",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0285",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0286",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0287",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0288",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "别把责任全推给他们，说教指责"
+ },
+ {
+  "item_id": "m0289",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0290",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0291",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0292",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0293",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0294",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0295",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0296",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0297",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0298",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0299",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0300",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0301",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0302",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0303",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0304",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "轻微调侃"
+ },
+ {
+  "item_id": "m0305",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0306",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0307",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0308",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0309",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0310",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0311",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "怪自己"
+ },
+ {
+  "item_id": "m0312",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0313",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "你连开口的勇气都没有"
+ },
+ {
+  "item_id": "m0314",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "说教指责用户委屈"
+ },
+ {
+  "item_id": "m0315",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0316",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0317",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0318",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0319",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0320",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "根本没把批注当回事"
+ },
+ {
+  "item_id": "m0321",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0322",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0323",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0324",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0325",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0326",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "略居高临下"
+ },
+ {
+  "item_id": "m0327",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0328",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0329",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0330",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0331",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0332",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0333",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0334",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "略生硬"
+ },
+ {
+  "item_id": "m0335",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0336",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "责备用户吼孩子"
+ },
+ {
+  "item_id": "m0337",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0338",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0339",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0340",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0341",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "轻微说教"
+ },
+ {
+  "item_id": "m0342",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0343",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0344",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0345",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "轻微居高临下"
+ },
+ {
+  "item_id": "m0346",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "暗示发情绪给别人"
+ },
+ {
+  "item_id": "m0347",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0348",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0349",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0350",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0351",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0352",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0353",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0354",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "生硬"
+ },
+ {
+  "item_id": "m0355",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0356",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0357",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "轻微暗示用户有问题"
+ },
+ {
+  "item_id": "m0358",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0359",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0360",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "略催逼"
+ },
+ {
+  "item_id": "m0361",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0362",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0363",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0364",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0365",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0366",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0367",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0368",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0369",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0370",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0371",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0372",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0373",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0374",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0375",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "略冷"
+ },
+ {
+  "item_id": "m0376",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0377",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0378",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0379",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "略生硬"
+ },
+ {
+  "item_id": "m0380",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0381",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "别当借口，责备"
+ },
+ {
+  "item_id": "m0382",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0383",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0384",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0385",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "别再问我了，不耐烦"
+ },
+ {
+  "item_id": "m0386",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0387",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0388",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0389",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0390",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0391",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "简短生硬"
+ },
+ {
+  "item_id": "m0392",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0393",
+  "c1_hostility": 1,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "略冷"
+ },
+ {
+  "item_id": "m0394",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0395",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0396",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0397",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0398",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "根本没练过，贬低"
+ },
+ {
+  "item_id": "m0399",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0400",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0401",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0402",
+  "c1_hostility": 2,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "找借口，指责"
+ },
+ {
+  "item_id": "m0403",
+  "c1_hostility": 3,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "你这种人根本不懂经营，轻蔑"
+ },
+ {
+  "item_id": "m0404",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0405",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0406",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0407",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0408",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0409",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0410",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0411",
+  "c1_hostility": 3,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": "你这种人…把账本烧了，嘲讽"
+ },
+ {
+  "item_id": "m0412",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0413",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0414",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0415",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0416",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0417",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0418",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ },
+ {
+  "item_id": "m0419",
+  "c1_hostility": 0,
+  "c2_distress": null,
+  "crisis": 0,
+  "note": ""
+ }
+]

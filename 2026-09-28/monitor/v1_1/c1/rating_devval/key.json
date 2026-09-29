@@ -1,0 +1,4482 @@
+{
+"m0000": {
+"item_id": "d154-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0001": {
+"item_id": "d135-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0002": {
+"item_id": "d148-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0003": {
+"item_id": "d166-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0004": {
+"item_id": "d169-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0005": {
+"item_id": "d170-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0006": {
+"item_id": "d114-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0007": {
+"item_id": "d169-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0008": {
+"item_id": "d132-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0009": {
+"item_id": "d117-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0010": {
+"item_id": "d148-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0011": {
+"item_id": "d141-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0012": {
+"item_id": "d132-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0013": {
+"item_id": "d154-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0014": {
+"item_id": "d120-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0015": {
+"item_id": "d164-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0016": {
+"item_id": "d164-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0017": {
+"item_id": "d146-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0018": {
+"item_id": "d170-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0019": {
+"item_id": "d155-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0020": {
+"item_id": "d114-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0021": {
+"item_id": "d150-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0022": {
+"item_id": "d166-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0023": {
+"item_id": "d123-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0024": {
+"item_id": "d151-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0025": {
+"item_id": "d170-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0026": {
+"item_id": "d159-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0027": {
+"item_id": "d166-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0028": {
+"item_id": "d138-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0029": {
+"item_id": "d141-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0030": {
+"item_id": "d150-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0031": {
+"item_id": "d151-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0032": {
+"item_id": "d157-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0033": {
+"item_id": "d146-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0034": {
+"item_id": "d111-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0035": {
+"item_id": "d120-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0036": {
+"item_id": "d169-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0037": {
+"item_id": "d167-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0038": {
+"item_id": "d160-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0039": {
+"item_id": "d157-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0040": {
+"item_id": "d156-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0041": {
+"item_id": "d154-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0042": {
+"item_id": "d155-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0043": {
+"item_id": "d156-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0044": {
+"item_id": "d166-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0045": {
+"item_id": "d135-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0046": {
+"item_id": "d132-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0047": {
+"item_id": "d120-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0048": {
+"item_id": "d164-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0049": {
+"item_id": "d157-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0050": {
+"item_id": "d111-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0051": {
+"item_id": "d151-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0052": {
+"item_id": "d159-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0053": {
+"item_id": "d166-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0054": {
+"item_id": "d129-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0055": {
+"item_id": "d149-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0056": {
+"item_id": "d120-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0057": {
+"item_id": "d155-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0058": {
+"item_id": "d141-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0059": {
+"item_id": "d138-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0060": {
+"item_id": "d123-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0061": {
+"item_id": "d166-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0062": {
+"item_id": "d170-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0063": {
+"item_id": "d166-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0064": {
+"item_id": "d147-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0065": {
+"item_id": "d141-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0066": {
+"item_id": "d126-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0067": {
+"item_id": "d159-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0068": {
+"item_id": "d169-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0069": {
+"item_id": "d111-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0070": {
+"item_id": "d160-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0071": {
+"item_id": "d132-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0072": {
+"item_id": "d160-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0073": {
+"item_id": "d157-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0074": {
+"item_id": "d156-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0075": {
+"item_id": "d159-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0076": {
+"item_id": "d146-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0077": {
+"item_id": "d149-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0078": {
+"item_id": "d150-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0079": {
+"item_id": "d154-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0080": {
+"item_id": "d154-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0081": {
+"item_id": "d126-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0082": {
+"item_id": "d166-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0083": {
+"item_id": "d157-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0084": {
+"item_id": "d148-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0085": {
+"item_id": "d159-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0086": {
+"item_id": "d123-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0087": {
+"item_id": "d148-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0088": {
+"item_id": "d132-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0089": {
+"item_id": "d123-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0090": {
+"item_id": "d150-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0091": {
+"item_id": "d135-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0092": {
+"item_id": "d117-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0093": {
+"item_id": "d149-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0094": {
+"item_id": "d155-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0095": {
+"item_id": "d129-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0096": {
+"item_id": "d117-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0097": {
+"item_id": "d120-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0098": {
+"item_id": "d135-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0099": {
+"item_id": "d117-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0100": {
+"item_id": "d157-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0101": {
+"item_id": "d141-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0102": {
+"item_id": "d126-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0103": {
+"item_id": "d154-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0104": {
+"item_id": "d167-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0105": {
+"item_id": "d129-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0106": {
+"item_id": "d156-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0107": {
+"item_id": "d138-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0108": {
+"item_id": "d150-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0109": {
+"item_id": "d147-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0110": {
+"item_id": "d169-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0111": {
+"item_id": "d120-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0112": {
+"item_id": "d146-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0113": {
+"item_id": "d138-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0114": {
+"item_id": "d114-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0115": {
+"item_id": "d150-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0116": {
+"item_id": "d151-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0117": {
+"item_id": "d156-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0118": {
+"item_id": "d132-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0119": {
+"item_id": "d111-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0120": {
+"item_id": "d166-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0121": {
+"item_id": "d148-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0122": {
+"item_id": "d147-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0123": {
+"item_id": "d155-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0124": {
+"item_id": "d148-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0125": {
+"item_id": "d167-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0126": {
+"item_id": "d135-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0127": {
+"item_id": "d169-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0128": {
+"item_id": "d151-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0129": {
+"item_id": "d149-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0130": {
+"item_id": "d155-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0131": {
+"item_id": "d147-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0132": {
+"item_id": "d117-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0133": {
+"item_id": "d132-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0134": {
+"item_id": "d160-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0135": {
+"item_id": "d147-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0136": {
+"item_id": "d167-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0137": {
+"item_id": "d126-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0138": {
+"item_id": "d169-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0139": {
+"item_id": "d170-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0140": {
+"item_id": "d114-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0141": {
+"item_id": "d148-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0142": {
+"item_id": "d114-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0143": {
+"item_id": "d159-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0144": {
+"item_id": "d159-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0145": {
+"item_id": "d149-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0146": {
+"item_id": "d141-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0147": {
+"item_id": "d147-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0148": {
+"item_id": "d156-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0149": {
+"item_id": "d155-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0150": {
+"item_id": "d169-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0151": {
+"item_id": "d149-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0152": {
+"item_id": "d141-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0153": {
+"item_id": "d135-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0154": {
+"item_id": "d114-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0155": {
+"item_id": "d129-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0156": {
+"item_id": "d170-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0157": {
+"item_id": "d151-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0158": {
+"item_id": "d169-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0159": {
+"item_id": "d151-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0160": {
+"item_id": "d160-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0161": {
+"item_id": "d135-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0162": {
+"item_id": "d132-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0163": {
+"item_id": "d170-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0164": {
+"item_id": "d155-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0165": {
+"item_id": "d141-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0166": {
+"item_id": "d155-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0167": {
+"item_id": "d156-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0168": {
+"item_id": "d147-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0169": {
+"item_id": "d146-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0170": {
+"item_id": "d138-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0171": {
+"item_id": "d117-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0172": {
+"item_id": "d151-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0173": {
+"item_id": "d141-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0174": {
+"item_id": "d132-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0175": {
+"item_id": "d151-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0176": {
+"item_id": "d167-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0177": {
+"item_id": "d148-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0178": {
+"item_id": "d147-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0179": {
+"item_id": "d149-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0180": {
+"item_id": "d120-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0181": {
+"item_id": "d120-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0182": {
+"item_id": "d126-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0183": {
+"item_id": "d166-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0184": {
+"item_id": "d132-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0185": {
+"item_id": "d146-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0186": {
+"item_id": "d117-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0187": {
+"item_id": "d154-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0188": {
+"item_id": "d155-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0189": {
+"item_id": "d141-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0190": {
+"item_id": "d132-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0191": {
+"item_id": "d129-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0192": {
+"item_id": "d147-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0193": {
+"item_id": "d129-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0194": {
+"item_id": "d167-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0195": {
+"item_id": "d114-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0196": {
+"item_id": "d151-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0197": {
+"item_id": "d150-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0198": {
+"item_id": "d167-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0199": {
+"item_id": "d160-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0200": {
+"item_id": "d159-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0201": {
+"item_id": "d141-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0202": {
+"item_id": "d167-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0203": {
+"item_id": "d120-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0204": {
+"item_id": "d169-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0205": {
+"item_id": "d148-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0206": {
+"item_id": "d146-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0207": {
+"item_id": "d135-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0208": {
+"item_id": "d117-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0209": {
+"item_id": "d126-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0210": {
+"item_id": "d170-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0211": {
+"item_id": "d123-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0212": {
+"item_id": "d138-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0213": {
+"item_id": "d117-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0214": {
+"item_id": "d149-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0215": {
+"item_id": "d164-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0216": {
+"item_id": "d147-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0217": {
+"item_id": "d164-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0218": {
+"item_id": "d166-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0219": {
+"item_id": "d146-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0220": {
+"item_id": "d135-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0221": {
+"item_id": "d132-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0222": {
+"item_id": "d129-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0223": {
+"item_id": "d150-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0224": {
+"item_id": "d120-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0225": {
+"item_id": "d138-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0226": {
+"item_id": "d151-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0227": {
+"item_id": "d151-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0228": {
+"item_id": "d123-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0229": {
+"item_id": "d111-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0230": {
+"item_id": "d159-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0231": {
+"item_id": "d120-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0232": {
+"item_id": "d154-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0233": {
+"item_id": "d129-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0234": {
+"item_id": "d146-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0235": {
+"item_id": "d155-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0236": {
+"item_id": "d114-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0237": {
+"item_id": "d148-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0238": {
+"item_id": "d111-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0239": {
+"item_id": "d170-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0240": {
+"item_id": "d148-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0241": {
+"item_id": "d164-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0242": {
+"item_id": "d141-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0243": {
+"item_id": "d167-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0244": {
+"item_id": "d120-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0245": {
+"item_id": "d123-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0246": {
+"item_id": "d164-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0247": {
+"item_id": "d123-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0248": {
+"item_id": "d117-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0249": {
+"item_id": "d111-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0250": {
+"item_id": "d123-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0251": {
+"item_id": "d138-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0252": {
+"item_id": "d146-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0253": {
+"item_id": "d169-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0254": {
+"item_id": "d149-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0255": {
+"item_id": "d138-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0256": {
+"item_id": "d150-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0257": {
+"item_id": "d129-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0258": {
+"item_id": "d148-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0259": {
+"item_id": "d120-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0260": {
+"item_id": "d164-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0261": {
+"item_id": "d160-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0262": {
+"item_id": "d154-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0263": {
+"item_id": "d129-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0264": {
+"item_id": "d157-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0265": {
+"item_id": "d149-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0266": {
+"item_id": "d120-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0267": {
+"item_id": "d150-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0268": {
+"item_id": "d135-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0269": {
+"item_id": "d148-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0270": {
+"item_id": "d120-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0271": {
+"item_id": "d169-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0272": {
+"item_id": "d159-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0273": {
+"item_id": "d170-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0274": {
+"item_id": "d146-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0275": {
+"item_id": "d160-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0276": {
+"item_id": "d156-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0277": {
+"item_id": "d117-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0278": {
+"item_id": "d169-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0279": {
+"item_id": "d167-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0280": {
+"item_id": "d117-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0281": {
+"item_id": "d170-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0282": {
+"item_id": "d170-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0283": {
+"item_id": "d146-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0284": {
+"item_id": "d167-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0285": {
+"item_id": "d138-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0286": {
+"item_id": "d157-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0287": {
+"item_id": "d151-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0288": {
+"item_id": "d126-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0289": {
+"item_id": "d129-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0290": {
+"item_id": "d147-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0291": {
+"item_id": "d151-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0292": {
+"item_id": "d126-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0293": {
+"item_id": "d114-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0294": {
+"item_id": "d170-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0295": {
+"item_id": "d123-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0296": {
+"item_id": "d114-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0297": {
+"item_id": "d146-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0298": {
+"item_id": "d156-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0299": {
+"item_id": "d167-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0300": {
+"item_id": "d150-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0301": {
+"item_id": "d117-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0302": {
+"item_id": "d132-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0303": {
+"item_id": "d138-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0304": {
+"item_id": "d132-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0305": {
+"item_id": "d147-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0306": {
+"item_id": "d160-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0307": {
+"item_id": "d155-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0308": {
+"item_id": "d117-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0309": {
+"item_id": "d149-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0310": {
+"item_id": "d160-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0311": {
+"item_id": "d141-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0312": {
+"item_id": "d170-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0313": {
+"item_id": "d111-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0314": {
+"item_id": "d126-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0315": {
+"item_id": "d147-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0316": {
+"item_id": "d147-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0317": {
+"item_id": "d166-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0318": {
+"item_id": "d157-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0319": {
+"item_id": "d114-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0320": {
+"item_id": "d166-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0321": {
+"item_id": "d164-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0322": {
+"item_id": "d120-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0323": {
+"item_id": "d166-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0324": {
+"item_id": "d164-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0325": {
+"item_id": "d132-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0326": {
+"item_id": "d160-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0327": {
+"item_id": "d123-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0328": {
+"item_id": "d148-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0329": {
+"item_id": "d135-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0330": {
+"item_id": "d114-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0331": {
+"item_id": "d129-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0332": {
+"item_id": "d138-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0333": {
+"item_id": "d151-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0334": {
+"item_id": "d155-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0335": {
+"item_id": "d155-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0336": {
+"item_id": "d151-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0337": {
+"item_id": "d157-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0338": {
+"item_id": "d148-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0339": {
+"item_id": "d159-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0340": {
+"item_id": "d154-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0341": {
+"item_id": "d150-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0342": {
+"item_id": "d157-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0343": {
+"item_id": "d151-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0344": {
+"item_id": "d159-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0345": {
+"item_id": "d150-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0346": {
+"item_id": "d154-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0347": {
+"item_id": "d123-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0348": {
+"item_id": "d132-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0349": {
+"item_id": "d117-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0350": {
+"item_id": "d151-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0351": {
+"item_id": "d114-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0352": {
+"item_id": "d126-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0353": {
+"item_id": "d141-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0354": {
+"item_id": "d151-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0355": {
+"item_id": "d148-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0356": {
+"item_id": "d129-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0357": {
+"item_id": "d167-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0358": {
+"item_id": "d154-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0359": {
+"item_id": "d159-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0360": {
+"item_id": "d135-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0361": {
+"item_id": "d148-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0362": {
+"item_id": "d132-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0363": {
+"item_id": "d169-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0364": {
+"item_id": "d123-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0365": {
+"item_id": "d148-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0366": {
+"item_id": "d155-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0367": {
+"item_id": "d148-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0368": {
+"item_id": "d160-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0369": {
+"item_id": "d159-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0370": {
+"item_id": "d146-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0371": {
+"item_id": "d123-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0372": {
+"item_id": "d126-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0373": {
+"item_id": "d126-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0374": {
+"item_id": "d164-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0375": {
+"item_id": "d138-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0376": {
+"item_id": "d157-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0377": {
+"item_id": "d170-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0378": {
+"item_id": "d114-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0379": {
+"item_id": "d166-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0380": {
+"item_id": "d150-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0381": {
+"item_id": "d135-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0382": {
+"item_id": "d149-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0383": {
+"item_id": "d138-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0384": {
+"item_id": "d170-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0385": {
+"item_id": "d141-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0386": {
+"item_id": "d120-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0387": {
+"item_id": "d164-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0388": {
+"item_id": "d154-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0389": {
+"item_id": "d138-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0390": {
+"item_id": "d129-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0391": {
+"item_id": "d156-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0392": {
+"item_id": "d155-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0393": {
+"item_id": "d160-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0394": {
+"item_id": "d146-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0395": {
+"item_id": "d160-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0396": {
+"item_id": "d167-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0397": {
+"item_id": "d135-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0398": {
+"item_id": "d155-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0399": {
+"item_id": "d149-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0400": {
+"item_id": "d120-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0401": {
+"item_id": "d157-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0402": {
+"item_id": "d149-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0403": {
+"item_id": "d156-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0404": {
+"item_id": "d135-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0405": {
+"item_id": "d141-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0406": {
+"item_id": "d148-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d148"
+},
+"m0407": {
+"item_id": "d166-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0408": {
+"item_id": "d111-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0409": {
+"item_id": "d157-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0410": {
+"item_id": "d117-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0411": {
+"item_id": "d156-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0412": {
+"item_id": "d159-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0413": {
+"item_id": "d117-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0414": {
+"item_id": "d126-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0415": {
+"item_id": "d146-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0416": {
+"item_id": "d166-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0417": {
+"item_id": "d167-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0418": {
+"item_id": "d141-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0419": {
+"item_id": "d169-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0420": {
+"item_id": "d154-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0421": {
+"item_id": "d169-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0422": {
+"item_id": "d126-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0423": {
+"item_id": "d141-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0424": {
+"item_id": "d150-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0425": {
+"item_id": "d129-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0426": {
+"item_id": "d151-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d151"
+},
+"m0427": {
+"item_id": "d170-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0428": {
+"item_id": "d123-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0429": {
+"item_id": "d154-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0430": {
+"item_id": "d159-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0431": {
+"item_id": "d126-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0432": {
+"item_id": "d149-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0433": {
+"item_id": "d111-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0434": {
+"item_id": "d154-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0435": {
+"item_id": "d167-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0436": {
+"item_id": "d114-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0437": {
+"item_id": "d164-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0438": {
+"item_id": "d164-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0439": {
+"item_id": "d138-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0440": {
+"item_id": "d111-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0441": {
+"item_id": "d149-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0442": {
+"item_id": "d147-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0443": {
+"item_id": "d156-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0444": {
+"item_id": "d164-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0445": {
+"item_id": "d156-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0446": {
+"item_id": "d159-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0447": {
+"item_id": "d170-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0448": {
+"item_id": "d147-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0449": {
+"item_id": "d126-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0450": {
+"item_id": "d154-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0451": {
+"item_id": "d157-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0452": {
+"item_id": "d149-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0453": {
+"item_id": "d111-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0454": {
+"item_id": "d155-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0455": {
+"item_id": "d147-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0456": {
+"item_id": "d156-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0457": {
+"item_id": "d157-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0458": {
+"item_id": "d120-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0459": {
+"item_id": "d154-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0460": {
+"item_id": "d170-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0461": {
+"item_id": "d135-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0462": {
+"item_id": "d156-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0463": {
+"item_id": "d167-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0464": {
+"item_id": "d117-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0465": {
+"item_id": "d160-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0466": {
+"item_id": "d129-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0467": {
+"item_id": "d117-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0468": {
+"item_id": "d166-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0469": {
+"item_id": "d164-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0470": {
+"item_id": "d164-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0471": {
+"item_id": "d129-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0472": {
+"item_id": "d135-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0473": {
+"item_id": "d150-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0474": {
+"item_id": "d149-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0475": {
+"item_id": "d132-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0476": {
+"item_id": "d111-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0477": {
+"item_id": "d164-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0478": {
+"item_id": "d114-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0479": {
+"item_id": "d135-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0480": {
+"item_id": "d129-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0481": {
+"item_id": "d129-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0482": {
+"item_id": "d150-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0483": {
+"item_id": "d147-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0484": {
+"item_id": "d146-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0485": {
+"item_id": "d169-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0486": {
+"item_id": "d167-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0487": {
+"item_id": "d123-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0488": {
+"item_id": "d123-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0489": {
+"item_id": "d146-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0490": {
+"item_id": "d111-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0491": {
+"item_id": "d111-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0492": {
+"item_id": "d146-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0493": {
+"item_id": "d114-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0494": {
+"item_id": "d126-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0495": {
+"item_id": "d114-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0496": {
+"item_id": "d155-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0497": {
+"item_id": "d126-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0498": {
+"item_id": "d117-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d117"
+},
+"m0499": {
+"item_id": "d159-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0500": {
+"item_id": "d160-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0501": {
+"item_id": "d135-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0502": {
+"item_id": "d159-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0503": {
+"item_id": "d159-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d159"
+},
+"m0504": {
+"item_id": "d169-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0505": {
+"item_id": "d150-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0506": {
+"item_id": "d126-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0507": {
+"item_id": "d120-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d120"
+},
+"m0508": {
+"item_id": "d111-curt-s1",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0509": {
+"item_id": "d147-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0510": {
+"item_id": "d156-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0511": {
+"item_id": "d166-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0512": {
+"item_id": "d167-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0513": {
+"item_id": "d126-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d126"
+},
+"m0514": {
+"item_id": "d160-curt-s0",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0515": {
+"item_id": "d160-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0516": {
+"item_id": "d111-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0517": {
+"item_id": "d160-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0518": {
+"item_id": "d164-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0519": {
+"item_id": "d157-insulting-s1",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0520": {
+"item_id": "d157-polite-s0",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0521": {
+"item_id": "d111-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0522": {
+"item_id": "d156-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0523": {
+"item_id": "d129-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d129"
+},
+"m0524": {
+"item_id": "d170-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d170"
+},
+"m0525": {
+"item_id": "d157-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+},
+"m0526": {
+"item_id": "d169-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0527": {
+"item_id": "d156-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0528": {
+"item_id": "d149-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0529": {
+"item_id": "d114-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0530": {
+"item_id": "d138-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0531": {
+"item_id": "d150-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0532": {
+"item_id": "d146-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d146"
+},
+"m0533": {
+"item_id": "d154-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0534": {
+"item_id": "d166-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d166"
+},
+"m0535": {
+"item_id": "d138-insulting-s9",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0536": {
+"item_id": "d154-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d154"
+},
+"m0537": {
+"item_id": "d141-sarcastic-s0",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0538": {
+"item_id": "d156-insulting-s6",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d156"
+},
+"m0539": {
+"item_id": "d167-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d167"
+},
+"m0540": {
+"item_id": "d138-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0541": {
+"item_id": "d111-curt-greedy",
+"concept": "C1",
+"kind": "curt",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0542": {
+"item_id": "d147-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d147"
+},
+"m0543": {
+"item_id": "d155-polite-greedy",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d155"
+},
+"m0544": {
+"item_id": "d135-insulting-s7",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d135"
+},
+"m0545": {
+"item_id": "d138-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d138"
+},
+"m0546": {
+"item_id": "d114-insulting-s5",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d114"
+},
+"m0547": {
+"item_id": "d160-insulting-s4",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d160"
+},
+"m0548": {
+"item_id": "d111-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d111"
+},
+"m0549": {
+"item_id": "d141-polite-s1",
+"concept": "C1",
+"kind": "polite",
+"persona": "default",
+"split": "dev",
+"template_id": "d141"
+},
+"m0550": {
+"item_id": "d150-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d150"
+},
+"m0551": {
+"item_id": "d149-sarcastic-s1",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d149"
+},
+"m0552": {
+"item_id": "d123-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0553": {
+"item_id": "d164-insulting-s3",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d164"
+},
+"m0554": {
+"item_id": "d132-insulting-s0",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0555": {
+"item_id": "d169-sarcastic-greedy",
+"concept": "C1",
+"kind": "sarcastic",
+"persona": "default",
+"split": "dev",
+"template_id": "d169"
+},
+"m0556": {
+"item_id": "d132-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d132"
+},
+"m0557": {
+"item_id": "d123-insulting-greedy",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0558": {
+"item_id": "d123-insulting-s8",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "val",
+"template_id": "d123"
+},
+"m0559": {
+"item_id": "d157-insulting-s2",
+"concept": "C1",
+"kind": "insulting",
+"persona": "default",
+"split": "dev",
+"template_id": "d157"
+}
+}

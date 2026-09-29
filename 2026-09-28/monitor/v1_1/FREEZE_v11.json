@@ -1,0 +1,12 @@
+{
+ "probes_sha256": {
+  "c1_pre.json": "b3a822e465b989a3e3bf7a05180e21bf5e925ad9bed4a053ddba31212ff2e4fc",
+  "c1_token.json": "fe66764f607a386c23ce2b207aa5b50641c04284ddfc6f6471933bdb1155e175"
+ },
+ "c1_scores_sha256": "8c577584015d714f0629c4948c29f1425d6b05210dfb1bde1307315357c889a2",
+ "note": "Probes trained on dev labels only; every item (incl. sealed test) scored in the same pass before any test label exists. Test is rated only after this file is committed.",
+ "gpu": "RTX 4090 (bjb1)",
+ "val_report": {
+  "item_score": 0.934
+ }
+}
