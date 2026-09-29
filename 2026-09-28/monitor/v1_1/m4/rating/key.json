@@ -1,0 +1,3842 @@
+{
+"m0000": {
+"item_id": "k140-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k140"
+},
+"m0001": {
+"item_id": "k160-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k160"
+},
+"m0002": {
+"item_id": "k127-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k127"
+},
+"m0003": {
+"item_id": "k135-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k135"
+},
+"m0004": {
+"item_id": "k143-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k143"
+},
+"m0005": {
+"item_id": "k101-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k101"
+},
+"m0006": {
+"item_id": "k154-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k154"
+},
+"m0007": {
+"item_id": "k128-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k128"
+},
+"m0008": {
+"item_id": "k160-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k160"
+},
+"m0009": {
+"item_id": "k136-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k136"
+},
+"m0010": {
+"item_id": "k136-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k136"
+},
+"m0011": {
+"item_id": "k112-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k112"
+},
+"m0012": {
+"item_id": "k132-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k132"
+},
+"m0013": {
+"item_id": "k104-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k104"
+},
+"m0014": {
+"item_id": "k133-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k133"
+},
+"m0015": {
+"item_id": "k116-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k116"
+},
+"m0016": {
+"item_id": "k113-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k113"
+},
+"m0017": {
+"item_id": "k151-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k151"
+},
+"m0018": {
+"item_id": "k143-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k143"
+},
+"m0019": {
+"item_id": "k113-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k113"
+},
+"m0020": {
+"item_id": "k157-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k157"
+},
+"m0021": {
+"item_id": "k158-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k158"
+},
+"m0022": {
+"item_id": "k105-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k105"
+},
+"m0023": {
+"item_id": "k118-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k118"
+},
+"m0024": {
+"item_id": "k141-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k141"
+},
+"m0025": {
+"item_id": "k130-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k130"
+},
+"m0026": {
+"item_id": "k160-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k160"
+},
+"m0027": {
+"item_id": "k117-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k117"
+},
+"m0028": {
+"item_id": "k117-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k117"
+},
+"m0029": {
+"item_id": "k139-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k139"
+},
+"m0030": {
+"item_id": "k139-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k139"
+},
+"m0031": {
+"item_id": "k116-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k116"
+},
+"m0032": {
+"item_id": "k123-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k123"
+},
+"m0033": {
+"item_id": "k152-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k152"
+},
+"m0034": {
+"item_id": "k137-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k137"
+},
+"m0035": {
+"item_id": "k154-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k154"
+},
+"m0036": {
+"item_id": "k119-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k119"
+},
+"m0037": {
+"item_id": "k120-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k120"
+},
+"m0038": {
+"item_id": "k142-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k142"
+},
+"m0039": {
+"item_id": "k120-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k120"
+},
+"m0040": {
+"item_id": "k152-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k152"
+},
+"m0041": {
+"item_id": "k159-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k159"
+},
+"m0042": {
+"item_id": "k105-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k105"
+},
+"m0043": {
+"item_id": "k153-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k153"
+},
+"m0044": {
+"item_id": "k142-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k142"
+},
+"m0045": {
+"item_id": "k107-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k107"
+},
+"m0046": {
+"item_id": "k145-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k145"
+},
+"m0047": {
+"item_id": "k127-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k127"
+},
+"m0048": {
+"item_id": "k104-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k104"
+},
+"m0049": {
+"item_id": "k150-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k150"
+},
+"m0050": {
+"item_id": "k142-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k142"
+},
+"m0051": {
+"item_id": "k135-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k135"
+},
+"m0052": {
+"item_id": "k157-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k157"
+},
+"m0053": {
+"item_id": "k105-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k105"
+},
+"m0054": {
+"item_id": "k140-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k140"
+},
+"m0055": {
+"item_id": "k124-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k124"
+},
+"m0056": {
+"item_id": "k139-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k139"
+},
+"m0057": {
+"item_id": "k152-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k152"
+},
+"m0058": {
+"item_id": "k152-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k152"
+},
+"m0059": {
+"item_id": "k137-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k137"
+},
+"m0060": {
+"item_id": "k128-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k128"
+},
+"m0061": {
+"item_id": "k158-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k158"
+},
+"m0062": {
+"item_id": "k134-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k134"
+},
+"m0063": {
+"item_id": "k145-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k145"
+},
+"m0064": {
+"item_id": "k106-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k106"
+},
+"m0065": {
+"item_id": "k153-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k153"
+},
+"m0066": {
+"item_id": "k108-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k108"
+},
+"m0067": {
+"item_id": "k152-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k152"
+},
+"m0068": {
+"item_id": "k115-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k115"
+},
+"m0069": {
+"item_id": "k104-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k104"
+},
+"m0070": {
+"item_id": "k104-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k104"
+},
+"m0071": {
+"item_id": "k111-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k111"
+},
+"m0072": {
+"item_id": "k117-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k117"
+},
+"m0073": {
+"item_id": "k124-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k124"
+},
+"m0074": {
+"item_id": "k159-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k159"
+},
+"m0075": {
+"item_id": "k155-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k155"
+},
+"m0076": {
+"item_id": "k103-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k103"
+},
+"m0077": {
+"item_id": "k115-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k115"
+},
+"m0078": {
+"item_id": "k157-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k157"
+},
+"m0079": {
+"item_id": "k141-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k141"
+},
+"m0080": {
+"item_id": "k131-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k131"
+},
+"m0081": {
+"item_id": "k142-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k142"
+},
+"m0082": {
+"item_id": "k137-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k137"
+},
+"m0083": {
+"item_id": "k123-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k123"
+},
+"m0084": {
+"item_id": "k103-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k103"
+},
+"m0085": {
+"item_id": "k131-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k131"
+},
+"m0086": {
+"item_id": "k120-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k120"
+},
+"m0087": {
+"item_id": "k103-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k103"
+},
+"m0088": {
+"item_id": "k114-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k114"
+},
+"m0089": {
+"item_id": "k129-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k129"
+},
+"m0090": {
+"item_id": "k148-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k148"
+},
+"m0091": {
+"item_id": "k129-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k129"
+},
+"m0092": {
+"item_id": "k156-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k156"
+},
+"m0093": {
+"item_id": "k109-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k109"
+},
+"m0094": {
+"item_id": "k149-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k149"
+},
+"m0095": {
+"item_id": "k144-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k144"
+},
+"m0096": {
+"item_id": "k131-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k131"
+},
+"m0097": {
+"item_id": "k134-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k134"
+},
+"m0098": {
+"item_id": "k149-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k149"
+},
+"m0099": {
+"item_id": "k142-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k142"
+},
+"m0100": {
+"item_id": "k110-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k110"
+},
+"m0101": {
+"item_id": "k136-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k136"
+},
+"m0102": {
+"item_id": "k142-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k142"
+},
+"m0103": {
+"item_id": "k148-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k148"
+},
+"m0104": {
+"item_id": "k158-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k158"
+},
+"m0105": {
+"item_id": "k118-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k118"
+},
+"m0106": {
+"item_id": "k157-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k157"
+},
+"m0107": {
+"item_id": "k157-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k157"
+},
+"m0108": {
+"item_id": "k129-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k129"
+},
+"m0109": {
+"item_id": "k128-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k128"
+},
+"m0110": {
+"item_id": "k118-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k118"
+},
+"m0111": {
+"item_id": "k109-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k109"
+},
+"m0112": {
+"item_id": "k154-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k154"
+},
+"m0113": {
+"item_id": "k120-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k120"
+},
+"m0114": {
+"item_id": "k101-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k101"
+},
+"m0115": {
+"item_id": "k103-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k103"
+},
+"m0116": {
+"item_id": "k146-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k146"
+},
+"m0117": {
+"item_id": "k152-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k152"
+},
+"m0118": {
+"item_id": "k148-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k148"
+},
+"m0119": {
+"item_id": "k148-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k148"
+},
+"m0120": {
+"item_id": "k139-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k139"
+},
+"m0121": {
+"item_id": "k132-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k132"
+},
+"m0122": {
+"item_id": "k122-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k122"
+},
+"m0123": {
+"item_id": "k155-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k155"
+},
+"m0124": {
+"item_id": "k131-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k131"
+},
+"m0125": {
+"item_id": "k119-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k119"
+},
+"m0126": {
+"item_id": "k144-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k144"
+},
+"m0127": {
+"item_id": "k140-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k140"
+},
+"m0128": {
+"item_id": "k134-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k134"
+},
+"m0129": {
+"item_id": "k133-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k133"
+},
+"m0130": {
+"item_id": "k108-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k108"
+},
+"m0131": {
+"item_id": "k114-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k114"
+},
+"m0132": {
+"item_id": "k146-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k146"
+},
+"m0133": {
+"item_id": "k111-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k111"
+},
+"m0134": {
+"item_id": "k107-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k107"
+},
+"m0135": {
+"item_id": "k157-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k157"
+},
+"m0136": {
+"item_id": "k145-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k145"
+},
+"m0137": {
+"item_id": "k109-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k109"
+},
+"m0138": {
+"item_id": "k121-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k121"
+},
+"m0139": {
+"item_id": "k138-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k138"
+},
+"m0140": {
+"item_id": "k118-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k118"
+},
+"m0141": {
+"item_id": "k118-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k118"
+},
+"m0142": {
+"item_id": "k106-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k106"
+},
+"m0143": {
+"item_id": "k109-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k109"
+},
+"m0144": {
+"item_id": "k158-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k158"
+},
+"m0145": {
+"item_id": "k111-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k111"
+},
+"m0146": {
+"item_id": "k122-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k122"
+},
+"m0147": {
+"item_id": "k127-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k127"
+},
+"m0148": {
+"item_id": "k122-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k122"
+},
+"m0149": {
+"item_id": "k135-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k135"
+},
+"m0150": {
+"item_id": "k118-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k118"
+},
+"m0151": {
+"item_id": "k120-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k120"
+},
+"m0152": {
+"item_id": "k146-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k146"
+},
+"m0153": {
+"item_id": "k105-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k105"
+},
+"m0154": {
+"item_id": "k109-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k109"
+},
+"m0155": {
+"item_id": "k102-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k102"
+},
+"m0156": {
+"item_id": "k130-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k130"
+},
+"m0157": {
+"item_id": "k124-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k124"
+},
+"m0158": {
+"item_id": "k141-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k141"
+},
+"m0159": {
+"item_id": "k111-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k111"
+},
+"m0160": {
+"item_id": "k135-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k135"
+},
+"m0161": {
+"item_id": "k112-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k112"
+},
+"m0162": {
+"item_id": "k107-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k107"
+},
+"m0163": {
+"item_id": "k125-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k125"
+},
+"m0164": {
+"item_id": "k129-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k129"
+},
+"m0165": {
+"item_id": "k151-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k151"
+},
+"m0166": {
+"item_id": "k148-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k148"
+},
+"m0167": {
+"item_id": "k141-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k141"
+},
+"m0168": {
+"item_id": "k108-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k108"
+},
+"m0169": {
+"item_id": "k121-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k121"
+},
+"m0170": {
+"item_id": "k155-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k155"
+},
+"m0171": {
+"item_id": "k124-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k124"
+},
+"m0172": {
+"item_id": "k105-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k105"
+},
+"m0173": {
+"item_id": "k127-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k127"
+},
+"m0174": {
+"item_id": "k127-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k127"
+},
+"m0175": {
+"item_id": "k151-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k151"
+},
+"m0176": {
+"item_id": "k153-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k153"
+},
+"m0177": {
+"item_id": "k159-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k159"
+},
+"m0178": {
+"item_id": "k128-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k128"
+},
+"m0179": {
+"item_id": "k121-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k121"
+},
+"m0180": {
+"item_id": "k132-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k132"
+},
+"m0181": {
+"item_id": "k118-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k118"
+},
+"m0182": {
+"item_id": "k122-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k122"
+},
+"m0183": {
+"item_id": "k138-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k138"
+},
+"m0184": {
+"item_id": "k130-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k130"
+},
+"m0185": {
+"item_id": "k111-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k111"
+},
+"m0186": {
+"item_id": "k125-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k125"
+},
+"m0187": {
+"item_id": "k105-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k105"
+},
+"m0188": {
+"item_id": "k131-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k131"
+},
+"m0189": {
+"item_id": "k132-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k132"
+},
+"m0190": {
+"item_id": "k155-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k155"
+},
+"m0191": {
+"item_id": "k152-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k152"
+},
+"m0192": {
+"item_id": "k144-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k144"
+},
+"m0193": {
+"item_id": "k115-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k115"
+},
+"m0194": {
+"item_id": "k126-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k126"
+},
+"m0195": {
+"item_id": "k103-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k103"
+},
+"m0196": {
+"item_id": "k103-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k103"
+},
+"m0197": {
+"item_id": "k126-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k126"
+},
+"m0198": {
+"item_id": "k152-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k152"
+},
+"m0199": {
+"item_id": "k143-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k143"
+},
+"m0200": {
+"item_id": "k160-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k160"
+},
+"m0201": {
+"item_id": "k151-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k151"
+},
+"m0202": {
+"item_id": "k115-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k115"
+},
+"m0203": {
+"item_id": "k134-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k134"
+},
+"m0204": {
+"item_id": "k112-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k112"
+},
+"m0205": {
+"item_id": "k123-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k123"
+},
+"m0206": {
+"item_id": "k125-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k125"
+},
+"m0207": {
+"item_id": "k121-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k121"
+},
+"m0208": {
+"item_id": "k142-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k142"
+},
+"m0209": {
+"item_id": "k143-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k143"
+},
+"m0210": {
+"item_id": "k108-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k108"
+},
+"m0211": {
+"item_id": "k108-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k108"
+},
+"m0212": {
+"item_id": "k146-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k146"
+},
+"m0213": {
+"item_id": "k144-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k144"
+},
+"m0214": {
+"item_id": "k120-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k120"
+},
+"m0215": {
+"item_id": "k124-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k124"
+},
+"m0216": {
+"item_id": "k150-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k150"
+},
+"m0217": {
+"item_id": "k128-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k128"
+},
+"m0218": {
+"item_id": "k107-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k107"
+},
+"m0219": {
+"item_id": "k143-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k143"
+},
+"m0220": {
+"item_id": "k160-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k160"
+},
+"m0221": {
+"item_id": "k106-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k106"
+},
+"m0222": {
+"item_id": "k143-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k143"
+},
+"m0223": {
+"item_id": "k149-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k149"
+},
+"m0224": {
+"item_id": "k112-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k112"
+},
+"m0225": {
+"item_id": "k149-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k149"
+},
+"m0226": {
+"item_id": "k126-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k126"
+},
+"m0227": {
+"item_id": "k149-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k149"
+},
+"m0228": {
+"item_id": "k136-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k136"
+},
+"m0229": {
+"item_id": "k110-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k110"
+},
+"m0230": {
+"item_id": "k134-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k134"
+},
+"m0231": {
+"item_id": "k110-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k110"
+},
+"m0232": {
+"item_id": "k150-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k150"
+},
+"m0233": {
+"item_id": "k130-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k130"
+},
+"m0234": {
+"item_id": "k107-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k107"
+},
+"m0235": {
+"item_id": "k137-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k137"
+},
+"m0236": {
+"item_id": "k147-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k147"
+},
+"m0237": {
+"item_id": "k119-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k119"
+},
+"m0238": {
+"item_id": "k114-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k114"
+},
+"m0239": {
+"item_id": "k156-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k156"
+},
+"m0240": {
+"item_id": "k146-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k146"
+},
+"m0241": {
+"item_id": "k156-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k156"
+},
+"m0242": {
+"item_id": "k108-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k108"
+},
+"m0243": {
+"item_id": "k160-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k160"
+},
+"m0244": {
+"item_id": "k116-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k116"
+},
+"m0245": {
+"item_id": "k146-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k146"
+},
+"m0246": {
+"item_id": "k121-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k121"
+},
+"m0247": {
+"item_id": "k109-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k109"
+},
+"m0248": {
+"item_id": "k149-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k149"
+},
+"m0249": {
+"item_id": "k138-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k138"
+},
+"m0250": {
+"item_id": "k150-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k150"
+},
+"m0251": {
+"item_id": "k134-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k134"
+},
+"m0252": {
+"item_id": "k153-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k153"
+},
+"m0253": {
+"item_id": "k133-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k133"
+},
+"m0254": {
+"item_id": "k156-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k156"
+},
+"m0255": {
+"item_id": "k109-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k109"
+},
+"m0256": {
+"item_id": "k154-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k154"
+},
+"m0257": {
+"item_id": "k145-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k145"
+},
+"m0258": {
+"item_id": "k119-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k119"
+},
+"m0259": {
+"item_id": "k139-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k139"
+},
+"m0260": {
+"item_id": "k111-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k111"
+},
+"m0261": {
+"item_id": "k123-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k123"
+},
+"m0262": {
+"item_id": "k105-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k105"
+},
+"m0263": {
+"item_id": "k116-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k116"
+},
+"m0264": {
+"item_id": "k125-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k125"
+},
+"m0265": {
+"item_id": "k149-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k149"
+},
+"m0266": {
+"item_id": "k140-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k140"
+},
+"m0267": {
+"item_id": "k143-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k143"
+},
+"m0268": {
+"item_id": "k154-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k154"
+},
+"m0269": {
+"item_id": "k153-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k153"
+},
+"m0270": {
+"item_id": "k113-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k113"
+},
+"m0271": {
+"item_id": "k118-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k118"
+},
+"m0272": {
+"item_id": "k160-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k160"
+},
+"m0273": {
+"item_id": "k103-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k103"
+},
+"m0274": {
+"item_id": "k113-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k113"
+},
+"m0275": {
+"item_id": "k153-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k153"
+},
+"m0276": {
+"item_id": "k117-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k117"
+},
+"m0277": {
+"item_id": "k153-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k153"
+},
+"m0278": {
+"item_id": "k122-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k122"
+},
+"m0279": {
+"item_id": "k135-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k135"
+},
+"m0280": {
+"item_id": "k159-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k159"
+},
+"m0281": {
+"item_id": "k156-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k156"
+},
+"m0282": {
+"item_id": "k135-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k135"
+},
+"m0283": {
+"item_id": "k134-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k134"
+},
+"m0284": {
+"item_id": "k144-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k144"
+},
+"m0285": {
+"item_id": "k128-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k128"
+},
+"m0286": {
+"item_id": "k111-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k111"
+},
+"m0287": {
+"item_id": "k114-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k114"
+},
+"m0288": {
+"item_id": "k114-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k114"
+},
+"m0289": {
+"item_id": "k138-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k138"
+},
+"m0290": {
+"item_id": "k125-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k125"
+},
+"m0291": {
+"item_id": "k101-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k101"
+},
+"m0292": {
+"item_id": "k104-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k104"
+},
+"m0293": {
+"item_id": "k147-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k147"
+},
+"m0294": {
+"item_id": "k123-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k123"
+},
+"m0295": {
+"item_id": "k154-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k154"
+},
+"m0296": {
+"item_id": "k123-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k123"
+},
+"m0297": {
+"item_id": "k126-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k126"
+},
+"m0298": {
+"item_id": "k128-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k128"
+},
+"m0299": {
+"item_id": "k110-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k110"
+},
+"m0300": {
+"item_id": "k155-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k155"
+},
+"m0301": {
+"item_id": "k124-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k124"
+},
+"m0302": {
+"item_id": "k116-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k116"
+},
+"m0303": {
+"item_id": "k144-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k144"
+},
+"m0304": {
+"item_id": "k129-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k129"
+},
+"m0305": {
+"item_id": "k145-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k145"
+},
+"m0306": {
+"item_id": "k102-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k102"
+},
+"m0307": {
+"item_id": "k121-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k121"
+},
+"m0308": {
+"item_id": "k136-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k136"
+},
+"m0309": {
+"item_id": "k110-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k110"
+},
+"m0310": {
+"item_id": "k158-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k158"
+},
+"m0311": {
+"item_id": "k137-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k137"
+},
+"m0312": {
+"item_id": "k155-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k155"
+},
+"m0313": {
+"item_id": "k127-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k127"
+},
+"m0314": {
+"item_id": "k133-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k133"
+},
+"m0315": {
+"item_id": "k147-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k147"
+},
+"m0316": {
+"item_id": "k101-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k101"
+},
+"m0317": {
+"item_id": "k106-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k106"
+},
+"m0318": {
+"item_id": "k141-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k141"
+},
+"m0319": {
+"item_id": "k106-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k106"
+},
+"m0320": {
+"item_id": "k114-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k114"
+},
+"m0321": {
+"item_id": "k130-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k130"
+},
+"m0322": {
+"item_id": "k147-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k147"
+},
+"m0323": {
+"item_id": "k143-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k143"
+},
+"m0324": {
+"item_id": "k127-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k127"
+},
+"m0325": {
+"item_id": "k124-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k124"
+},
+"m0326": {
+"item_id": "k114-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k114"
+},
+"m0327": {
+"item_id": "k127-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k127"
+},
+"m0328": {
+"item_id": "k159-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k159"
+},
+"m0329": {
+"item_id": "k117-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k117"
+},
+"m0330": {
+"item_id": "k141-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k141"
+},
+"m0331": {
+"item_id": "k119-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k119"
+},
+"m0332": {
+"item_id": "k111-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k111"
+},
+"m0333": {
+"item_id": "k155-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k155"
+},
+"m0334": {
+"item_id": "k137-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k137"
+},
+"m0335": {
+"item_id": "k102-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k102"
+},
+"m0336": {
+"item_id": "k149-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k149"
+},
+"m0337": {
+"item_id": "k104-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k104"
+},
+"m0338": {
+"item_id": "k145-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k145"
+},
+"m0339": {
+"item_id": "k157-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k157"
+},
+"m0340": {
+"item_id": "k125-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k125"
+},
+"m0341": {
+"item_id": "k102-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k102"
+},
+"m0342": {
+"item_id": "k136-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k136"
+},
+"m0343": {
+"item_id": "k132-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k132"
+},
+"m0344": {
+"item_id": "k146-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k146"
+},
+"m0345": {
+"item_id": "k139-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k139"
+},
+"m0346": {
+"item_id": "k150-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k150"
+},
+"m0347": {
+"item_id": "k115-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k115"
+},
+"m0348": {
+"item_id": "k144-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k144"
+},
+"m0349": {
+"item_id": "k138-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k138"
+},
+"m0350": {
+"item_id": "k102-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k102"
+},
+"m0351": {
+"item_id": "k132-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k132"
+},
+"m0352": {
+"item_id": "k110-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k110"
+},
+"m0353": {
+"item_id": "k158-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k158"
+},
+"m0354": {
+"item_id": "k124-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k124"
+},
+"m0355": {
+"item_id": "k122-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k122"
+},
+"m0356": {
+"item_id": "k150-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k150"
+},
+"m0357": {
+"item_id": "k106-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k106"
+},
+"m0358": {
+"item_id": "k116-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k116"
+},
+"m0359": {
+"item_id": "k107-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k107"
+},
+"m0360": {
+"item_id": "k160-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k160"
+},
+"m0361": {
+"item_id": "k147-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k147"
+},
+"m0362": {
+"item_id": "k117-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k117"
+},
+"m0363": {
+"item_id": "k121-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k121"
+},
+"m0364": {
+"item_id": "k156-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k156"
+},
+"m0365": {
+"item_id": "k137-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k137"
+},
+"m0366": {
+"item_id": "k119-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k119"
+},
+"m0367": {
+"item_id": "k154-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k154"
+},
+"m0368": {
+"item_id": "k105-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k105"
+},
+"m0369": {
+"item_id": "k121-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k121"
+},
+"m0370": {
+"item_id": "k117-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k117"
+},
+"m0371": {
+"item_id": "k117-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k117"
+},
+"m0372": {
+"item_id": "k139-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k139"
+},
+"m0373": {
+"item_id": "k133-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k133"
+},
+"m0374": {
+"item_id": "k158-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k158"
+},
+"m0375": {
+"item_id": "k116-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k116"
+},
+"m0376": {
+"item_id": "k150-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k150"
+},
+"m0377": {
+"item_id": "k113-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k113"
+},
+"m0378": {
+"item_id": "k112-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k112"
+},
+"m0379": {
+"item_id": "k130-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k130"
+},
+"m0380": {
+"item_id": "k151-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k151"
+},
+"m0381": {
+"item_id": "k102-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k102"
+},
+"m0382": {
+"item_id": "k151-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k151"
+},
+"m0383": {
+"item_id": "k104-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k104"
+},
+"m0384": {
+"item_id": "k114-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k114"
+},
+"m0385": {
+"item_id": "k104-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k104"
+},
+"m0386": {
+"item_id": "k148-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k148"
+},
+"m0387": {
+"item_id": "k115-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k115"
+},
+"m0388": {
+"item_id": "k107-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k107"
+},
+"m0389": {
+"item_id": "k122-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k122"
+},
+"m0390": {
+"item_id": "k139-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k139"
+},
+"m0391": {
+"item_id": "k115-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k115"
+},
+"m0392": {
+"item_id": "k109-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k109"
+},
+"m0393": {
+"item_id": "k101-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k101"
+},
+"m0394": {
+"item_id": "k131-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k131"
+},
+"m0395": {
+"item_id": "k150-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k150"
+},
+"m0396": {
+"item_id": "k131-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k131"
+},
+"m0397": {
+"item_id": "k138-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k138"
+},
+"m0398": {
+"item_id": "k148-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k148"
+},
+"m0399": {
+"item_id": "k132-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k132"
+},
+"m0400": {
+"item_id": "k140-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k140"
+},
+"m0401": {
+"item_id": "k133-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k133"
+},
+"m0402": {
+"item_id": "k108-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k108"
+},
+"m0403": {
+"item_id": "k133-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k133"
+},
+"m0404": {
+"item_id": "k151-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k151"
+},
+"m0405": {
+"item_id": "k128-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k128"
+},
+"m0406": {
+"item_id": "k129-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k129"
+},
+"m0407": {
+"item_id": "k101-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k101"
+},
+"m0408": {
+"item_id": "k138-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k138"
+},
+"m0409": {
+"item_id": "k129-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k129"
+},
+"m0410": {
+"item_id": "k130-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k130"
+},
+"m0411": {
+"item_id": "k137-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k137"
+},
+"m0412": {
+"item_id": "k126-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k126"
+},
+"m0413": {
+"item_id": "k141-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k141"
+},
+"m0414": {
+"item_id": "k135-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k135"
+},
+"m0415": {
+"item_id": "k126-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k126"
+},
+"m0416": {
+"item_id": "k102-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k102"
+},
+"m0417": {
+"item_id": "k145-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k145"
+},
+"m0418": {
+"item_id": "k154-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k154"
+},
+"m0419": {
+"item_id": "k108-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k108"
+},
+"m0420": {
+"item_id": "k159-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k159"
+},
+"m0421": {
+"item_id": "k145-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k145"
+},
+"m0422": {
+"item_id": "k126-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k126"
+},
+"m0423": {
+"item_id": "k159-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k159"
+},
+"m0424": {
+"item_id": "k134-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k134"
+},
+"m0425": {
+"item_id": "k136-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k136"
+},
+"m0426": {
+"item_id": "k156-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k156"
+},
+"m0427": {
+"item_id": "k125-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k125"
+},
+"m0428": {
+"item_id": "k119-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k119"
+},
+"m0429": {
+"item_id": "k153-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k153"
+},
+"m0430": {
+"item_id": "k102-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k102"
+},
+"m0431": {
+"item_id": "k148-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k148"
+},
+"m0432": {
+"item_id": "k112-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k112"
+},
+"m0433": {
+"item_id": "k135-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k135"
+},
+"m0434": {
+"item_id": "k138-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k138"
+},
+"m0435": {
+"item_id": "k120-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k120"
+},
+"m0436": {
+"item_id": "k115-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k115"
+},
+"m0437": {
+"item_id": "k147-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k147"
+},
+"m0438": {
+"item_id": "k123-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k123"
+},
+"m0439": {
+"item_id": "k131-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k131"
+},
+"m0440": {
+"item_id": "k151-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k151"
+},
+"m0441": {
+"item_id": "k113-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k113"
+},
+"m0442": {
+"item_id": "k122-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k122"
+},
+"m0443": {
+"item_id": "k113-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k113"
+},
+"m0444": {
+"item_id": "k125-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k125"
+},
+"m0445": {
+"item_id": "k132-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k132"
+},
+"m0446": {
+"item_id": "k157-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k157"
+},
+"m0447": {
+"item_id": "k101-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k101"
+},
+"m0448": {
+"item_id": "k116-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k116"
+},
+"m0449": {
+"item_id": "k156-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k156"
+},
+"m0450": {
+"item_id": "k147-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k147"
+},
+"m0451": {
+"item_id": "k146-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k146"
+},
+"m0452": {
+"item_id": "k123-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k123"
+},
+"m0453": {
+"item_id": "k112-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k112"
+},
+"m0454": {
+"item_id": "k136-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k136"
+},
+"m0455": {
+"item_id": "k112-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k112"
+},
+"m0456": {
+"item_id": "k103-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k103"
+},
+"m0457": {
+"item_id": "k129-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k129"
+},
+"m0458": {
+"item_id": "k101-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k101"
+},
+"m0459": {
+"item_id": "k113-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k113"
+},
+"m0460": {
+"item_id": "k120-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k120"
+},
+"m0461": {
+"item_id": "k140-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k140"
+},
+"m0462": {
+"item_id": "k119-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k119"
+},
+"m0463": {
+"item_id": "k144-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k144"
+},
+"m0464": {
+"item_id": "k106-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k106"
+},
+"m0465": {
+"item_id": "k130-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k130"
+},
+"m0466": {
+"item_id": "k110-neg_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k110"
+},
+"m0467": {
+"item_id": "k140-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k140"
+},
+"m0468": {
+"item_id": "k158-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k158"
+},
+"m0469": {
+"item_id": "k147-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k147"
+},
+"m0470": {
+"item_id": "k140-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k140"
+},
+"m0471": {
+"item_id": "k133-neg_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k133"
+},
+"m0472": {
+"item_id": "k110-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k110"
+},
+"m0473": {
+"item_id": "k155-neg_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k155"
+},
+"m0474": {
+"item_id": "k141-pos_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k141"
+},
+"m0475": {
+"item_id": "k106-pos_kw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k106"
+},
+"m0476": {
+"item_id": "k107-pos_nokw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k107"
+},
+"m0477": {
+"item_id": "k142-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k142"
+},
+"m0478": {
+"item_id": "k126-neg_nokw-0",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k126"
+},
+"m0479": {
+"item_id": "k159-pos_kw-1",
+"concept": "C2",
+"kind": null,
+"persona": null,
+"split": "m4",
+"template_id": "k159"
+}
+}

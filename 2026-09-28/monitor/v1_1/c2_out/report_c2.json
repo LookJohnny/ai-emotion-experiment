@@ -1,0 +1,45 @@
+{
+ "G5_transfer_auroc": {
+  "point": 0.876,
+  "ci": [
+   0.847,
+   0.902
+  ],
+  "thr": 0.8,
+  "verdict": "PASS"
+ },
+ "G6_minus_same_data_text": {
+  "point": 0.222,
+  "ci": [
+   0.18,
+   0.263
+  ],
+  "thr": 0.1,
+  "text_auroc": 0.654,
+  "verdict": "PASS"
+ },
+ "reported": {
+  "keyword_list_auroc": 0.515,
+  "offdiag_probe": 0.743,
+  "offdiag_text": 0.499,
+  "offdiag_keyword": 0.086,
+  "by_cell_mean_probe": {
+   "neg_kw": 0.005,
+   "neg_nokw": 0.001,
+   "pos_kw": 0.231,
+   "pos_nokw": 0.061
+  },
+  "by_cell_mean_text": {
+   "neg_kw": 0.176,
+   "neg_nokw": 0.162,
+   "pos_kw": 0.225,
+   "pos_nokw": 0.167
+  },
+  "indomain_test": {
+   "probe": 0.953,
+   "text": 0.905,
+   "n": 144,
+   "pos": 65
+  }
+ }
+}
