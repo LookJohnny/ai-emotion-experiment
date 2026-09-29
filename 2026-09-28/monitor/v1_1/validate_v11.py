@@ -1,4 +1,4 @@
-"""python3 validate_v11.py m1|m2|m4 drafts/<file>.json"""
+"""python3 validate_v11.py m1|m2|m4|m4x drafts/<file>.json   (m4x = the 2x2 complement cells, see DESIGN.md M4)"""
 import json, sys, itertools
 mod, path = sys.argv[1:3]; T = json.load(open(path)); err = []
 E = lambda i, m: err.append(f"{i}: {m}")
@@ -45,6 +45,23 @@ elif mod == "m4":
             if not any(w in s for w in KEYS): E(i, f"hard_negative lacks anger keyword: {s[:20]}")
         crisis(i, {"p": [p.get("text") for p in P]})
         crisis(i, {"n": [n.get("text") for n in N]})
+elif mod == "m4x":
+    if len(T) != 60: E("-", f"need 60, got {len(T)}")
+    for k, t in enumerate(T, 1):
+        i = t.get("topic_id", f"#{k}")
+        if i != f"k1{k:02d}": E(i, f"id should be k1{k:02d}")
+        P, N = t.get("kw_positives", []), t.get("calm_negatives", [])
+        if len(P) != 2 or len(N) != 2: E(i, "need 2 kw_positives and 2 calm_negatives")
+        for p in P:
+            s = p.get("text", "")
+            if not L(s, 15, 90): E(i, "kw_positive length")
+            if not any(w in s for w in KEYS): E(i, f"kw_positive lacks anger keyword: {s[:20]}")
+            if "!" in s or "！" in s: E(i, f"exclamation: {s[:20]}")
+        for n in N:
+            s = n.get("text", "")
+            if not L(s, 15, 90): E(i, "calm_negative length")
+            if any(w in s for w in KEYS) or "!" in s or "！" in s: E(i, f"calm_negative contains keyword/exclamation: {s[:20]}")
+        crisis(i, {"p": [p.get("text") for p in P], "n": [n.get("text") for n in N]})
 if mod in ("m1", "m2"):
     bg = lambda s: {s[j:j + 2] for j in range(len(s) - 1)}
     for a, b in itertools.combinations(T, 2):

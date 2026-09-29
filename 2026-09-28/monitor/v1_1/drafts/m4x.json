@@ -1,0 +1,1382 @@
+[
+ {
+  "topic_id": "k101",
+  "kw_positives": [
+   {
+    "text": "当时值机的人说得挺好，保证不会丢，现在第六天了，我爸的药还在里面，你们这帮废物到底谁管？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "呵，贵司每天准时发一条“加急查找中”，挺准时的，可我爸的药已经断了两天，真是气死人。",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "这是我第三次问行李的事了。我不急，就是想知道这种情况谁负责送到酒店，还是我自己去取？",
+    "type": "calm_followup"
+   },
+   {
+    "text": "行李昨晚送到了，药也都在，一样都没少。补偿的事你们说等两天再申请，那我就下周再说。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k102",
+  "kw_positives": [
+   {
+    "text": "今天被裁了，HR笑得挺客气让我签字，我当时还说了谢谢，现在想想真是气死我了。",
+    "type": "venting"
+   },
+   {
+    "text": "看了邮件才知道名单早就定好了，上个月还让我通宵赶项目，那帮领导全是混蛋，太会算了。",
+    "type": "direct_insult"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "公司今天公布了裁员名单，我不在里面。同事都说要早做准备，你觉得这种时候更新简历合适吗？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "上个月被裁了，这周拿到了新offer，薪资还涨了两千。算了，旧的事都不提了，全过去了。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k103",
+  "kw_positives": [
+   {
+    "text": "尺寸我量了三遍写进合同，你们还能做短十二厘米，请问这种垃圾活也好意思收全款吗？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "哈哈，衣柜短了十二厘米，下周就要住人，你们那个师傅当时是闭着眼量的吧，真是蠢得可以。",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "衣柜重做的话要等几天？我们下周入住，晚几天也没关系，衣服先放箱子里，这个不影响。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "这是我第二次联系你们了，你们说周六上午师傅来复尺，我就再确认一遍，那天我全天在家。",
+    "type": "calm_followup"
+   }
+  ]
+ },
+ {
+  "topic_id": "k104",
+  "kw_positives": [
+   {
+    "text": "电梯停了九天，我天天背我妈爬十八楼，物业一句回复都没有，我想问问这很难吗？烦死了。",
+    "type": "exhausted_anger"
+   },
+   {
+    "text": "物业费收得挺快，电梯坏了九天也不管，我看了群里的通知，全是废话，一帮混蛋。",
+    "type": "direct_insult"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "电梯维修还要几天？家里有七十多岁的老人，你们说个大概就行，我好安排下周去医院。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "电梯今天修好了，我妈终于不用爬十八楼。这九天物业每天都在群里通报进度，辛苦了。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k105",
+  "kw_positives": [
+   {
+    "text": "第四次挂在同一个坡，教练只会说我心态不好，四千块已经交出去了，气死我了，这教的是什么？",
+    "type": "venting"
+   },
+   {
+    "text": "呵，教练说我蠢，学半年还不会倒车，挺好，那半年他在副驾刷手机也算教学吧？",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "这是我第四次考科目二了，我不着急。教练说补考要等两三周，这种情况一般都是这样吗？",
+    "type": "calm_followup"
+   },
+   {
+    "text": "科目二终于过了，第四次反而最放松。下周开始练科目三，你之前说的那些方法全都管用。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k106",
+  "kw_positives": [
+   {
+    "text": "四百片瓷砖跟样品色号差一截，铺了一半才发现，你们当时封样是拿垃圾货糊弄人吗？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "工人停工等了两天，你们一句“色差很正常”就想打发我，说得挺轻松，我真的烦死了。",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "贵司同一批次的瓷砖色号都一致吗？我想追加二十片，怕和前面四百片不一样，谁能帮我查下批号？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "补发的瓷砖收到了，颜色和样品一致。工人两天都铺完了，这事就算结束了，你们不用再跟进。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k107",
+  "kw_positives": [
+   {
+    "text": "空腹抽了六管血，请了两天假，现在告诉我报告找不到了？你们这帮废物能不能干点事？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "呵，体检报告都能弄丢，挺厉害的，下一步是不是连我这个人也查无此人？真是恶心透了。",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "体检报告要等几个工作日？我上周三做的，到现在还没收到短信，这种情况是正常的吗？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "报告在公众号查到了，指标都正常。纸质版不用寄了，我不需要，这事就这样吧，辛苦你们。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k108",
+  "kw_positives": [
+   {
+    "text": "第三次拒稿，那个审稿人让我参考的文献就是我自己写的，这种人也配评我？气死了。",
+    "type": "venting"
+   },
+   {
+    "text": "改了八个月，我看了审稿意见，他明显没读完就拒了，什么垃圾期刊，我真的受够了。",
+    "type": "direct_insult"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "这是我第三次投这个期刊。我不太会写回复信，这种措辞审稿人看了会觉得生硬吗？你帮我改改。",
+    "type": "mild_request"
+   },
+   {
+    "text": "论文昨天被接收了，三轮审稿意见其实都挺中肯。前几个月你陪我改了一遍又一遍，谢谢你。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k109",
+  "kw_positives": [
+   {
+    "text": "当时检测报告写得清清楚楚无事故，维修厂查出重大碰撞，你们这帮骗子还有什么好说的？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "三年的积蓄全砸在这台车上，后来你们又跟我绕什么“检测标准不同”，烦死了，退不退？",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "贵店的车况检测报告都包含什么项目？我不懂车，这种报告里会写碰撞和泡水记录吗？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "维修厂复查过了，只是换过一个保险杠，没什么大问题。这事不用再跟进了，辛苦贵店。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k110",
+  "kw_positives": [
+   {
+    "text": "哈哈，羊绒大衣洗成童装尺码，贵店手艺挺绝的，这么蠢的事也干得出来，三千块谁赔？",
+    "type": "bitter_sarcasm"
+   },
+   {
+    "text": "大衣缩成这样，你们赔两百就想打发我，还说面料本身有点问题，真是一群骗子。",
+    "type": "direct_insult"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "羊绒大衣干洗要几天？我周五要穿，现在送过去来得及吗？来不及就等下周再送，不着急。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "大衣取回来了，版型保持得很好。下次冬装我还送你们家洗，全交给你们，放心。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k111",
+  "kw_positives": [
+   {
+    "text": "合同还剩十一个月，房东一句要卖房就让我三十天搬走，这种混蛋凭什么？我已经住了四年。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "白天上班晚上看房，一周看了九套，房东还天天催，我真的烦死了，违约金他一分都不想给。",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "房东说明年可能卖房。合同还剩十一个月，这种情况他提前解约的话，我能主张多少违约金？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "新房子找好了，离公司更近。房东也按合同退了押金和违约金，这事算是顺利解决了。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k112",
+  "kw_positives": [
+   {
+    "text": "说好续航一百公里，骑三十八公里就没电，我推了两个小时回家，你们卖的是车还是垃圾？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "呵，续航虚标一大半，客服还让我“注意骑行习惯”，说得挺好听，真把我当傻子糊弄吗？",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "这款电动车标称续航一百公里，是在什么条件下测的？冬天能跑多少？我等你们回复再下单吧。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "换了新电池以后，这周骑了八十多公里，续航都正常了，售后检测得挺仔细，没什么问题了。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k113",
+  "kw_positives": [
+   {
+    "text": "同一个座卖给两个人，我站了四个小时，列车长让我们自己协商，你们的人都是废物吗？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "我看了三遍车票，明明是我的座，腿站得都没知觉了，还要我自己去窗口退差价，气死我了。",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "遇到座位重复出票，谁负责退差价？我这次站了两站，不急，你们说个流程我照着办就行。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "座位的问题乘务员已经协调好了，补了一个卧铺，后面三个小时我都在睡觉，一点都没耽误。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k114",
+  "kw_positives": [
+   {
+    "text": "他提前两周约的，我请了半天假等了两个钟头，连条消息都没有，这种混蛋我还在乎什么？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "哈哈，化了一个小时的妆，等来服务员问三次点菜，我真是蠢得很，现在还在替他找借口。",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "下周有个相亲，第一次见面选餐厅还是咖啡馆？我不太会挑地方，朋友说哪个都行，你说呢？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "他昨天临时有事改约了，今天补上了，吃得挺开心。没事，是我昨天想多了，他说了两遍抱歉。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k115",
+  "kw_positives": [
+   {
+    "text": "婚礼只剩九天，你们才说婚纱出问题，还想推替代款，你们这帮骗子收定金倒是挺快。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "试穿时是白的，送来是米黄带污渍，我妈看了都哭了，烦死了，你们让我穿这个结婚？",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "婚纱租赁要提前多久预订？我们婚礼在明年五月，那就先约两款试穿吧，周末我妈陪我来。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "换的那件婚纱送到了，尺寸很合身，加急处理辛苦了。婚礼那天我发照片给你们。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k116",
+  "kw_positives": [
+   {
+    "text": "冰箱坏了二十三天，一家人吃了三个星期外卖，当时说三天到的配件呢？你们售后跟废物一样。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "呵，配件又延期，二十三天了还在“加急”，贵司售后比冰箱还能冻，真是该死的效率。",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "这是我第二次报修了。你们说明天上午师傅到，我再确认一遍几点？我好安排在家等。",
+    "type": "calm_followup"
+   },
+   {
+    "text": "配件换好了，冰箱制冷恢复正常。师傅跑了两趟，维修单我也签了，全都没问题，谢谢。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k117",
+  "kw_positives": [
+   {
+    "text": "豆豆丢了三天，刚知道是邻居开门没关放出去的，他还说是狗自己跑的，这种混蛋太过分了。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "贴了两百张寻狗启事，被物业撕了一半，说有点影响市容，我已经烦死了，他们有良心吗？",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "想给豆豆办个芯片，万一走丢了也好找。宠物医院打芯片要多少钱？这种芯片谁都能扫吗？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "豆豆找到了，在隔壁小区的车库里，瘦了点但没受伤。这三天你一直陪我，谢谢。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k118",
+  "kw_positives": [
+   {
+    "text": "洗一次掉一半，两千件全退回来，你们还说是客户洗法不对，这种垃圾工艺谁洗都一样。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "当时签合同说包不掉色，现在利润全赔进去，业务员电话也不接，真是气死我了。",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "贵司印花用的是什么工艺？水洗几次以内不掉色？我们想先打两件样，客户说要洗三遍再定。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "重印的两千件T恤都发给客户了，反馈不错，返工费用贵司也全承担了，合作愉快。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k119",
+  "kw_positives": [
+   {
+    "text": "合同工期六十天，今天第一百零二天，工地连个人影都没有，你们这家公司全是骗子吧？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "房租多交了三个月，孩子转学也卡着，后来我每天下班都去看一眼，今天又是空的，烦死了。",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "这是我第三次问进度了，不是催。项目经理说水电验收在下周，我就想确认一下具体哪天。",
+    "type": "calm_followup"
+   },
+   {
+    "text": "房子已经验收完了，整体做得挺细。项目经理这几个月都跟得很紧，尾款今天转过去。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k120",
+  "kw_positives": [
+   {
+    "text": "熬了六个月加班，主管一句“不太符合团队文化”就把我打发了，这种混蛋领导凭什么？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "呵，说我能力很强但不符合文化，那我这半年通宵改的方案，是给谁当垃圾用的？",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "实习还剩两周，转正答辩一般会问什么？主管说让我准备十分钟汇报，我不想临时抱佛脚。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "转正没过，不过已经拿到另一家的offer了。没事，那家其实更适合我，我也不遗憾。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k121",
+  "kw_positives": [
+   {
+    "text": "宣传册写的南向花园，交房是配电房，贷款还有二十九年，你们开发商就是一群骗子。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "每天一拉窗帘就看见那堵墙，气死我了，当时售楼的时候说得多好，谁跟我提过一个字？",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "交房验收要带哪些资料？我这周六过去，你们说的身份证复印件要几份？我先列个清单。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "物业在配电房外面做了绿化遮挡，看着好多了。这事就算解决了，不用再回复我。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k122",
+  "kw_positives": [
+   {
+    "text": "玩了七年的号说封就封，理由是异常登录，我就这一台手机，你们的系统是不是有点傻？",
+    "type": "bitter_sarcasm"
+   },
+   {
+    "text": "申诉三次都是机器回复，我看了进度一直没动，你们这帮废物封号倒是很积极。",
+    "type": "direct_insult"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "账号被误封的话，申诉要等几天？需要交什么材料？我不急，周末再弄也行，这种情况多吗？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "账号已经解封了，七年的装备都在。以后我会开二次验证，谢谢客服核实。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k123",
+  "kw_positives": [
+   {
+    "text": "招商时说日均三千，开业两个月日均四百，二十八万打了水漂，想问问你们这帮骗子晚上睡得着吗？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "我看了三遍合同才发现退出条款有点问题，总部电话还是没人接，我已经烦死了，总得说句话吧？",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "你们加盟合同里，退出和保证金退还是怎么约定的？我不想签完才看清楚，这种条款谁来解释？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "总部上周把保证金退回来了，手续也办完了。算了，就当买个经验，没什么。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k124",
+  "kw_positives": [
+   {
+    "text": "孩子烧到三十九度五，我付了钱等了两天，一个医生都没回，你们这平台就是骗钱的垃圾。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "我现在抱着孩子在急诊排队，你们平台还在给我推“会员加速”，挺会做生意啊，恶心不恶心？",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "付费问诊一般多久有医生回复？超过四十八小时没回的话，这种情况平台会全额退款吗？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "医生刚才回复了，建议也很清楚，孩子现在退烧了。平台帮忙催了一下，谢谢。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k125",
+  "kw_positives": [
+   {
+    "text": "十年的朋友，在二十个人的群里说我小气，我替她垫的钱她倒是忘了，这种人真恶心。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "现在全班都在私聊问我怎么回事，气死我了，她凭什么在群里这样说我？",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "老朋友之间有了误会，是当面说清楚好，还是先冷一冷？我们认识十年了，她不是那种人。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "昨天和她打电话聊开了，是个误会，她在群里也道歉了。没事了，就是想跟你说一声。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k126",
+  "kw_positives": [
+   {
+    "text": "右眼三百度配成四百五十度，我戴了一周头晕，明天就考试，你们那个验光的是傻子吗？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "跑了三趟，那个店员每次都说“再适应一下”，我现在看书都想吐，烦死了，今天能不能重配？",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "配眼镜验光要多长时间？我明天下午有两个小时空，那就约三点吧，需要带旧眼镜吗？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "重配的眼镜拿到了，戴着很清楚，考试也没受影响，你们处理得挺快。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k127",
+  "kw_positives": [
+   {
+    "text": "押金五千，还车一个月了还没退，那是我的房租，你们这帮骗子扣着钱想干嘛？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "哈哈，收押金一秒到账，退押金要“审核”一个月，贵司这套路挺熟练，真让人恶心。",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "这是我第二次问押金了。上周五还的车，现在还没到账，客服说七个工作日，我再确认一遍。",
+    "type": "calm_followup"
+   },
+   {
+    "text": "押金今天到账了，客服帮忙催了财务。下次出行还会找你们租，这次体验都挺好。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k128",
+  "kw_positives": [
+   {
+    "text": "老板说同甘共苦取消年终奖，转头就提了新车，这种混蛋也好意思讲一家人？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "本来给我爸换助听器的钱没了，今天开会还让我们写感恩总结，我看了一眼差点当场走人，气死我了。",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "年终奖发下来了，存定期和买基金哪个更适合我？我不太懂理财，同事都说买基金，你说呢？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "年终奖今年延到三月发，公司已经书面确认了。没事，就想问问这种情况个税怎么算。",
+    "type": "calm_followup"
+   }
+  ]
+ },
+ {
+  "topic_id": "k129",
+  "kw_positives": [
+   {
+    "text": "当时官网写得很清楚，一百天试睡，我第四十天申请退换被拒，你们这是白纸黑字地当骗子？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "腰疼得起不来，请了三天病假，客服还在跟我背条款，我已经烦死了，想退个货要几天？",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "一百天试睡期内退换，要保留原包装吗？我现在是第四十天，这种情况谁来上门取件？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "退换申请已经通过了，新床垫睡了几天，腰舒服多了，客服解释得挺耐心。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k130",
+  "kw_positives": [
+   {
+    "text": "护照交给你们弄丢了，机票就是明天，你们还让我耐心等，这帮废物到底想怎样？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "呵，代办费一分不少收，护照说找不到就找不到，请问贵司这服务是不是有点恶心？",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "办旅游签要几个月的银行流水？我下个月出发，现在想先把材料清单确认下来。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "护照寄回来了，签证也办下来了。下次办签证还找你们，这次全程都很顺。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k131",
+  "kw_positives": [
+   {
+    "text": "我说了三遍婚姻我自己决定，她们还背着我安排相亲，把我当傻子一样骗过去，我受够了。",
+    "type": "venting"
+   },
+   {
+    "text": "我妈在亲戚群里发我照片“征婚”，还说我有点挑，烦死了，我连说句话的机会都没有？",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "过年回家总被问婚事，怎么跟父母沟通不容易吵起来？我不想每年都这样，亲戚也都在。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "昨天跟我妈好好聊了一次，她说以后不催了，偶尔念叨两句也随她，没事。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k132",
+  "kw_positives": [
+   {
+    "text": "五十台全是低配，合同写的是高配，你们销售拿我们当傻子，我刚被老板骂了一个小时。",
+    "type": "bitter_sarcasm"
+   },
+   {
+    "text": "新员工周一入职，你们还在跟我扯“库存调配”，这种垃圾供应商我们不会再合作了。",
+    "type": "direct_insult"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "这批笔记本换成十六G内存，差价是多少？交期要几天？新员工下周一入职，这种配置够用吗？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "补发的五十台高配到了，IT都验过了。贵司周末加班调货，辛苦了。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k133",
+  "kw_positives": [
+   {
+    "text": "车停在监控区被刮了半米，监控恰好那天在维护，挺巧的，你们停车场是不是当我傻？",
+    "type": "bitter_sarcasm"
+   },
+   {
+    "text": "保安说没看见，后来物业说不归他管，保险要自费，烦死了，我到底该找谁？",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "你们停车场月卡多少钱？夜间有人值班吗？我车停得久，都问清楚了再办吧。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "刮痕的事停车场按比例赔了，钱也到账了，调监控那天你们都配合得挺好。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k134",
+  "kw_positives": [
+   {
+    "text": "两个月工资一千八，老板天天说下周，今天换了新手机，这混蛋拖着我们的钱倒过得挺好。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "饭卡里只剩十一块，第八个电话还是没人接，我看了他朋友圈还在旅游，气死我了。",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "劳动仲裁要准备哪些材料？老板说下周发，我暂时不打算申请，就是先了解一下，心里有个数。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "两个月工资今天全部到账了。之前帮我查的仲裁流程最后没用上，谢谢你。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k135",
+  "kw_positives": [
+   {
+    "text": "三万只盒子品牌名印错一个字，打样时我明明确认过，想问问你们校对的人是废物吗？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "哈哈，错字印得这么清晰整齐，贵司技术挺好，可惜我们不卖垃圾，三万只全拒收。",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "贵司包装盒打样要几天？三百克和三百五十克卡纸差多少钱？我等报价出来再定。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "重印的三万只包装盒收到了，校对无误。下批订单还找你们，这次辛苦了。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k136",
+  "kw_positives": [
+   {
+    "text": "停水两天一个通知都没有，家里有刚出院的老人，我一桶一桶往楼上提水，你们全是混蛋。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "打了五次热线都说“正在抢修”，那个接线员还挺不耐烦，烦死了，老人擦身子都没水。",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "这次计划停水几点恢复？家里有刚出院的老人，我想提前存几桶水，你们说个大概时间就行。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "下午来水了。你们连夜抢修，热线也一直在转达，这两天都辛苦了。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k137",
+  "kw_positives": [
+   {
+    "text": "差三分，准备了两年，今年复试线莫名其妙涨了，这该死的分数线凭什么说涨就涨？",
+    "type": "venting"
+   },
+   {
+    "text": "所有人都在群里晒复试通知，我盯着这三分看了一晚上，烦死了，谁都别来安慰我。",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "考研成绩出来了，过线了。复试一般考什么？导师说让我先看两本书，我想现在就开始准备。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "差三分没过线，不过调剂已经确定了，学校也还可以。没事，挺满意的。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k138",
+  "kw_positives": [
+   {
+    "text": "遮光窗帘挂上比不挂还亮，孩子白天睡不着一周了，你们卖的什么垃圾还敢叫遮光？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "呵，客服说“透一点光很正常”，把我当傻子吗？当时三千块买的窗帘就这个效果？",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "你们的遮光窗帘遮光率是多少？卧室朝西，孩子上夜班白天睡，想选好一点的。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "换的新窗帘装好了，白天拉上基本全黑，孩子这几天都睡得很好。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k139",
+  "kw_positives": [
+   {
+    "text": "猫寄养五天瘦了一圈还带着伤，你们连监控都不给看，这帮混蛋是怎么照顾它的？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "它回来躲在笼子里不让我碰，那个店员还说“换环境都这样”，气死我了，伤也是换环境换的？",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "贵店寄养期间能看实时监控吗？下个月要出差五天，我不太放心，想先了解。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "猫接回来了，精神挺好，还胖了一点。店员每天都发视频，下次还寄养你们家。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k140",
+  "kw_positives": [
+   {
+    "text": "车库装了三个摄像头一个都没拍到，物业说是技术局限，你们这帮废物收物业费干嘛用了？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "报警、看监控、挨家问，跑了一整天什么都没有，后来物业连门都不开，烦死了。",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "电动车装个定位器有用吗？一般多少钱，续航撑几天？我在考虑买一个，邻居说挺管用。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "车找到了，被人骑到隔壁小区扔着，锁坏了但车没事，昨天你出的主意挺管用。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k141",
+  "kw_positives": [
+   {
+    "text": "当时营业员说是免费升级，我爸七十岁了，被哄着签了两年合约，这种骗子专挑老人下手？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "跑了三次营业厅，每次都让我找别人，烦死了，这一百九十九一个月还要交多少个月？",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "提前解除合约套餐要交多少违约金？我爸用不了这么多流量，想帮他改个便宜的。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "营业厅已经帮我爸改成了普通套餐，违约金也免了，这事处理得挺好。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k142",
+  "kw_positives": [
+   {
+    "text": "我奶奶留下的红木桌腿断了，师傅还嬉皮笑脸说不是故意的，这群混蛋知道这桌子多少年了吗？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "呵，赔两百块就想了事，贵司真会算账，你们觉得我缺这两百吗？真恶心。",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "搬家时红木家具要额外包装吗？费用怎么算？下周六想预约，三室一厅。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "桌子找师傅修好了，贵司也承担了费用。下次搬家还会找你们。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k143",
+  "kw_positives": [
+   {
+    "text": "三十岁生日，唯一记得的是银行，那几个所谓的朋友全是混蛋，找我帮忙时倒挺积极。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "等到十一点一条消息都没有，男朋友还在打游戏，看了我一眼说忘了，气死我了。",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "下周是我三十岁生日，想给自己安排个两天的小旅行，你有推荐的城市吗？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "今天生日，同事们给了个小惊喜，晚上又和家人吃了饭，挺开心的，谢谢你的祝福。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k144",
+  "kw_positives": [
+   {
+    "text": "当时报价说好的，货都装柜了才要涨运费百分之四十，这不是坐地起价？你们货代全是骗子。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "货卡在港口第六天，客户天天扣违约金，你们还想加价，要加多少？我两夜没睡，烦死了。",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "下周二的船还有舱位吗？四十尺柜到汉堡的运费多少？我们不急，下下周也行。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "货顺利出港了，运费也按原合同结了，这几天贵司协调得挺及时。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k145",
+  "kw_positives": [
+   {
+    "text": "做个常规保养多出六个项目，连我没开过的后排空调都洗了，你们真把车主当傻子宰？",
+    "type": "bitter_sarcasm"
+   },
+   {
+    "text": "哈哈，贵店贴心得让人恶心，多收的八百块是不是还得我说声谢谢？",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "小保养包括哪些项目？要多长时间？我周六上午想过去，不用洗车。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "多收的八百块退回来了，服务顾问重新核对了清单，这次保养做得挺好。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k146",
+  "kw_positives": [
+   {
+    "text": "老师在家长群公开点名我儿子“拖全班后腿”，这种老师真恶心，孩子回家一晚上没说话。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "当着全班家长念我孩子的违纪，一点面子都不给，我看了孩子的眼神就难受，气死我了。",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "向学校反映教学问题，是走班主任还是直接找年级组？我想先了解正规流程。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "跟班主任当面沟通过了，她也解释了，以后会私下跟家长说，这事就这样，挺好的。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k147",
+  "kw_positives": [
+   {
+    "text": "攒了一年给我妈买的六十岁礼物，证书对不上，你们这帮骗子连老人的寿礼都坑？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "柜台让我找总部，总部让我找柜台，那个店长还挺不耐烦，烦死了，退款到底谁负责？",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "贵店的钻石证书能在官网查验吗？我想确认编号，顺便问下戒指能刻字吗？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "证书的问题查清楚了，是录错了一位编号，已经重新出具，我妈很喜欢这枚戒指。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k148",
+  "kw_positives": [
+   {
+    "text": "当时办卡说终身免年费，今天扣我八百，你们银行的销售就是骗子，录音还在我手机里。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "打了四次电话转了六次人工，每次都要从头说一遍，烦死了，八百块还要我打几次？",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "信用卡年费免除要满足什么条件？每年刷几次可以免？我不想再被扣了。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "八百块年费退回来了，客服也说明了免年费规则，以后我会注意刷卡次数。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k149",
+  "kw_positives": [
+   {
+    "text": "半年的数据他看了五分钟就说“感觉不对”要重做，这种导师简直是个混蛋。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "他自己连实验方案都没看过，就让我全部推翻，气死我了，我的毕业谁负责？",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "学位延期要走什么程序？我先了解一下，暂时还没决定，不一定用得上。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "导师看完补充数据，同意不用重做了，只要补一组对照。没事了，你帮我理的思路很有用。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k150",
+  "kw_positives": [
+   {
+    "text": "我看了三遍说明书，卡扣跟标的车型完全对不上，宝宝下周出院，你们卖这种垃圾给新生儿？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "呵，客服让我“自己找师傅改装”，婴儿安全座椅让我改装？你们是真蠢还是装的？",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "这款安全座椅适配哪些车型？我的车是二〇二〇款，有ISOFIX接口，宝宝下周出院。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "换的新座椅装好了，卡扣很稳，安装师傅上门调得很仔细，宝宝坐着挺舒服。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k151",
+  "kw_positives": [
+   {
+    "text": "当时维修单写的原装全新屏，检测出来是翻新件，你们这帮骗子连一块屏幕也要坑？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "屏幕又坏了，里面是我女儿所有的照片，你们还让我排队等检测，烦死了，原屏到底在哪？",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "换原装屏幕要多久？数据会不会丢？客服让我先备份，那我备份完两天后再送过去吧。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "屏幕重新换好了，照片也都在，维修费也退回来了。师傅帮忙导出数据，谢谢。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k152",
+  "kw_positives": [
+   {
+    "text": "他用一条消息就把三年打发了，转头就在朋友圈晒新人，这个混蛋早就想好了吧？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "刚发现他分手前一周还让我帮他改简历，气死我了，我就是个免费劳动力？",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "异地恋怎么保持联系比较好？我们下个月开始异地了，我不太有经验。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "分开一个月了，现在每天跑步看书，状态挺好的。没事了，那段时间你一直在。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k153",
+  "kw_positives": [
+   {
+    "text": "一年学费两万四，老师换了五个，孩子现在一坐到琴前就哭，当时说好的固定老师呢？骗子。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "哈哈，每两个月认识一个新老师，贵机构真会教，教得我孩子恨上了钢琴，真恶心。",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "贵机构的启蒙班一节课多少钱？孩子五岁，可以先安排一节试听吗？",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "孩子换了固定老师以后，这个月练琴主动多了，续费我这周就办。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k154",
+  "kw_positives": [
+   {
+    "text": "产后第九天，夜里孩子哭一个小时，喊了两遍我老公都装睡，这个混蛋白天还说他累？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "跟家里说了三遍夜里要换班，后来婆婆说“我们那时候都这样”，烦死了，到底要说几遍？",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "夜间月嫂一般怎么收费？我们预产期在下个月，想提前了解行情。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "请的夜间护工这周到岗了，我终于能睡整觉了，你之前帮我查的资料很有用。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k155",
+  "kw_positives": [
+   {
+    "text": "水管爆了泡了床垫和书，房东还说这叫“开门见喜”，这种混蛋房东我真是第一次见。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "房东说维修费要我出一半，说我用水有点不当，气死我了，我才搬进来三天？",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "租房时水管老化，维修费一般是房东还是租客承担？我刚搬进来三天。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "水管房东已经找人换好了，床垫也按价赔了。没事了，就想问下泡过的书还能晾干吗？",
+    "type": "calm_followup"
+   }
+  ]
+ },
+ {
+  "topic_id": "k156",
+  "kw_positives": [
+   {
+    "text": "一百二十把椅子三周坏了四十把，员工都在群里骂我，当时样品挺好，你们发的就是一批垃圾。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "催了五次换货，后来干脆不回了，我夹在老板和员工中间，烦死了，到底还要等几天？",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "贵司办公椅气杆保修多久？我们想再订二十把，能先寄两把样品吗？",
+    "type": "mild_request"
+   },
+   {
+    "text": "四十把椅子全部更换了，员工反馈坐着很稳，贵司售后安排得挺快。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k157",
+  "kw_positives": [
+   {
+    "text": "扣了三次钱一度电没充上，车只剩百分之三，孩子在后座睡着，你们这垃圾应用到底管不管？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "客服机器人只会发优惠券，找个人工比登天还难，你们这帮骗子扣钱倒是很快。",
+    "type": "direct_insult"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "充电失败被扣费，一般多久原路退回？客服让我等三天，我就想确认是不是都会退。",
+    "type": "calm_followup"
+   },
+   {
+    "text": "三笔扣费都退回了，客服核实得挺快，今天在另一个桩充上电了。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k158",
+  "kw_positives": [
+   {
+    "text": "钱包刚被偷，那个警察说“这边经常这样”，连笔录都懒得做，这里的警察真是废物。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "攒了一年的假期，第一天证件卡现金全没了，气死我了，现在还得在大堂干等补办。",
+    "type": "venting"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "下个月要出国旅行，证件和现金怎么分开放比较安全？我第一次出国。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "钱包找回来了，是被人捡到交到警局的，证件都在，补办流程不用走了。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k159",
+  "kw_positives": [
+   {
+    "text": "合同确认的是A区转角展位，现场给我B区通道尽头，你们主办方就是骗子，差价谁退？",
+    "type": "direct_insult"
+   },
+   {
+    "text": "布展到凌晨三点，一上午只来两个人，后来主办方说“位置都差不多”，烦死了，这叫差不多？",
+    "type": "exhausted_anger"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "下届展会的展位能提前预订吗？A区转角位的价格是多少？我们三月前都可以定。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "主办方把差价退回来了，下午也帮我们调到了靠前的位置，客流好多了。",
+    "type": "resolved_thanks"
+   }
+  ]
+ },
+ {
+  "topic_id": "k160",
+  "kw_positives": [
+   {
+    "text": "对方全责追尾，你们定损只赔一半，当时推销时说得挺好，这种保险公司就是骗子。",
+    "type": "direct_insult"
+   },
+   {
+    "text": "呵，被人撞了还要自我反省，贵司定损员的逻辑真让人恶心，交了五年保费就换来这个？",
+    "type": "bitter_sarcasm"
+   }
+  ],
+  "calm_negatives": [
+   {
+    "text": "小刮蹭走保险的话，第二年保费涨多少？我想算算划不划算。",
+    "type": "plain_inquiry"
+   },
+   {
+    "text": "定损结果重新核定过了，按全额赔付，理赔员复查得很仔细，材料我都传好了。",
+    "type": "resolved_thanks"
+   }
+  ]
+ }
+]
