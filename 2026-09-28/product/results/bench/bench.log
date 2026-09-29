@@ -1,0 +1,40 @@
+1/80
+11/80
+21/80
+31/80
+41/80
+51/80
+61/80
+71/80
+{
+ "pre": {
+  "n_emotional": 54,
+  "expression_started": "54/54",
+  "onset_ms_median": 24.1,
+  "lead_over_first_token_ms_median": 21.8,
+  "face_before_first_char": "54/54",
+  "correct_dominant": "53/54",
+  "neutral_task_false_alarm": "12/18",
+  "first_token_ms_median": 46.0
+ },
+ "token": {
+  "n_emotional": 54,
+  "expression_started": "54/54",
+  "onset_ms_median": 67.5,
+  "lead_over_first_token_ms_median": -21.9,
+  "face_before_first_char": "0/54",
+  "correct_dominant": "53/54",
+  "neutral_task_false_alarm": "12/18",
+  "first_token_ms_median": 45.6
+ },
+ "sentence": {
+  "n_emotional": 54,
+  "expression_started": "53/54",
+  "onset_ms_median": 286.4,
+  "lead_over_first_token_ms_median": -240.7,
+  "face_before_first_char": "0/54",
+  "correct_dominant": "53/54",
+  "neutral_task_false_alarm": "3/18",
+  "first_token_ms_median": 45.6
+ }
+}
