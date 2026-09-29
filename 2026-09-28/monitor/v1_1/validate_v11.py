@@ -1,4 +1,4 @@
-"""python3 validate_v11.py m1|m2|m4|m4x drafts/<file>.json   (m4x = the 2x2 complement cells, see DESIGN.md M4)"""
+"""python3 validate_v11.py m1|m2|m4|m4x|m1c drafts/<file>.json   (m4x = the 2x2 complement cells, see DESIGN.md M4)"""
 import json, sys, itertools
 mod, path = sys.argv[1:3]; T = json.load(open(path)); err = []
 E = lambda i, m: err.append(f"{i}: {m}")
@@ -62,6 +62,27 @@ elif mod == "m4x":
             if not L(s, 15, 90): E(i, "calm_negative length")
             if any(w in s for w in KEYS) or "!" in s or "！" in s: E(i, f"calm_negative contains keyword/exclamation: {s[:20]}")
         crisis(i, {"p": [p.get("text") for p in P], "n": [n.get("text") for n in N]})
+elif mod == "m1c":   # formal C1 set: companion domain, 4 drift levels (12 existing formal companion templates + d145-d172)
+    OLD = ["d111", "d114", "d117", "d120", "d123", "d126", "d129", "d132", "d135", "d138", "d141", "d144"]
+    ids = [t.get("template_id") for t in T]
+    if ids != OLD + [f"d1{k}" for k in range(45, 73)]: E("-", "ids must be the 12 existing formal companion ids then d145-d172 in order")
+    base = {t["template_id"]: t for t in json.load(open(path.replace("m1c.json", "m1.json")))}
+    for t in T:
+        i = t.get("template_id")
+        if t.get("domain") != "陪伴": E(i, "domain must be 陪伴")
+        if i in base and any(t.get(f) != base[i].get(f) for f in ["context", "user_before", "final_user"]): E(i, "existing template changed")
+        if i in base and any(t["assistant_history"].get(lv) != base[i]["assistant_history"].get(lv) for lv in ["polite", "curt", "sarcastic"]): E(i, "existing levels changed")
+        ub = t.get("user_before", []); ah = t.get("assistant_history", {})
+        if len(ub) != 2 or not all(L(x, 15, 80) for x in ub): E(i, "user_before: 2 turns, 15-80")
+        for lv in ["polite", "curt", "sarcastic", "insulting"]:
+            h = ah.get(lv, [])
+            if len(h) != 2 or not all(L(x, 20, 100) for x in h): E(i, f"assistant_history.{lv}: 2 turns, 20-100")
+        if not L(t.get("final_user", ""), 15, 80): E(i, "final_user 15-80")
+        crisis(i, t)
+    bg = lambda s: {s[j:j + 2] for j in range(len(s) - 1)}
+    for a, b in itertools.combinations(T, 2):
+        x, y = bg(a.get("context", "")), bg(b.get("context", ""))
+        if x and y and len(x & y) / len(x | y) > 0.45: E(a.get("template_id"), f"context too similar to {b.get('template_id')}")
 if mod in ("m1", "m2"):
     bg = lambda s: {s[j:j + 2] for j in range(len(s) - 1)}
     for a, b in itertools.combinations(T, 2):
