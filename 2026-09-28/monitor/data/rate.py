@@ -65,15 +65,18 @@ elif mode == "human":
         rc = [r for r in R if r["concept"] == c]; near = [r for r in rc if abs(r["score"] - THR[c]) <= 1]; rest = [r for r in rc if r not in near]
         rng.shuffle(near); rng.shuffle(rest); pick += near[:25] + rest[:25]
     rng.shuffle(pick)
+    # blinded codes: item_id reveals persona/kind, so the sheet shows only h001..h100; mapping kept in a separate file
+    json.dump({f"h{k+1:03d}": r["item_id"] for k, r in enumerate(pick)}, open(out.replace(".csv", "_map.json"), "w"))
     with open(out, "w", newline="", encoding="utf-8-sig") as f:
-        w = csv.writer(f); w.writerow(["item_id", "评哪一项", "对话", "目标文本", "你的评分(0-4)", "备注"])
-        for r in pick:
-            w.writerow([r["item_id"], "C1 助手回复的敌意" if r["concept"] == "C1" else "C2 用户的困扰/激动", show(r), r["target_text"], "", ""])
+        w = csv.writer(f); w.writerow(["编号", "评哪一项", "对话", "目标文本", "你的评分(0-4)", "备注"])
+        for k, r in enumerate(pick):
+            w.writerow([f"h{k+1:03d}", "C1 助手回复的敌意" if r["concept"] == "C1" else "C2 用户的困扰/激动", show(r), r["target_text"], "", ""])
     print(len(pick), "items ->", out)
 
 elif mode == "kappa":
     src, hum = sys.argv[2:4]; R = {json.loads(l)["item_id"]: json.loads(l) for l in open(src)}
-    H = [row for row in csv.DictReader(open(hum, encoding="utf-8-sig")) if row["你的评分(0-4)"].strip() != ""]
+    MAP = json.load(open(hum.replace(".csv", "_map.json")))
+    H = [dict(row, item_id=MAP[row["编号"]]) for row in csv.DictReader(open(hum, encoding="utf-8-sig")) if row["你的评分(0-4)"].strip() != ""]
     res = {}
     for c in ["C1", "C2"]:
         pr = [(R[h["item_id"]]["label"], int(float(h["你的评分(0-4)"]) >= THR[c])) for h in H if R[h["item_id"]]["concept"] == c]

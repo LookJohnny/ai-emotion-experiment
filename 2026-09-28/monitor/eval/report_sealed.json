@@ -1,0 +1,105 @@
+{
+ "n_test_items": 396,
+ "policy": {
+  "alpha": 0.3,
+  "gamma": 1.0,
+  "c1_pre_thr": 0.6,
+  "c1_tok_thr": 0.5,
+  "c2_thr": 0.9
+ },
+ "C1": {
+  "auroc": [
+   0.9914,
+   [
+    0.9818,
+    0.9976
+   ]
+  ],
+  "recall_at_fpr5": [
+   0.9529,
+   [
+    0.907,
+    0.9884
+   ]
+  ],
+  "control_fa": [
+   0.0274,
+   [
+    0.0,
+    0.08
+   ]
+  ],
+  "frozen_recall": [
+   0.9647,
+   [
+    0.9268,
+    1.0
+   ]
+  ],
+  "lead_share": [
+   0.9024,
+   [
+    0.8333,
+    0.9733
+   ]
+  ],
+  "gates": {
+   "AUROC>=0.90": "PASS",
+   "recall@FPR5>=0.80": "PASS",
+   "control_FA<=3%": "INCONCLUSIVE",
+   "lead>=80%": "PASS"
+  },
+  "baseline_user_text_auroc": 0.6137,
+  "baseline_posthoc_judge": "lead share = 0 by construction (acts only after the reply is complete); AUROC not comparable because the labels are LLM ratings"
+ },
+ "C2": {
+  "auroc": [
+   0.9992,
+   [
+    0.9965,
+    1.0
+   ]
+  ],
+  "recall_at_fpr5": [
+   1.0,
+   [
+    1.0,
+    1.0
+   ]
+  ],
+  "control_fa": [
+   0.0,
+   [
+    0.0,
+    0.0
+   ]
+  ],
+  "frozen_recall": [
+   0.7083,
+   [
+    0.4783,
+    0.9048
+   ]
+  ],
+  "lead_share": [
+   1.0,
+   [
+    1.0,
+    1.0
+   ]
+  ],
+  "gates": {
+   "AUROC>=0.90": "PASS",
+   "recall@FPR5>=0.80": "PASS",
+   "control_FA<=3%": "PASS"
+  },
+  "baseline_user_text_auroc": 0.998
+ },
+ "latency": {
+  "n": 40,
+  "first_token_ms_median_without": 34.18,
+  "first_token_ms_median_with": 36.56,
+  "overhead_ms_median": 2.36
+ },
+ "latency_gate_first_token_overhead<=5ms": "PASS"
+}

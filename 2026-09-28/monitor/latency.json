@@ -1,0 +1,6 @@
+{
+ "n": 40,
+ "first_token_ms_median_without": 34.18,
+ "first_token_ms_median_with": 36.56,
+ "overhead_ms_median": 2.36
+}

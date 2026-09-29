@@ -1,0 +1,62 @@
+{
+ "A1_within_blunt_main_probe": {
+  "n": 60,
+  "pos": 11,
+  "auroc": 0.8924,
+  "ci95": [
+   0.797,
+   0.9621
+  ],
+  "recall_at_fpr5": 0.4545
+ },
+ "A1_within_blunt_pre_only": {
+  "n": 60,
+  "pos": 11,
+  "auroc": 0.8219,
+  "ci95": [
+   0.7246,
+   0.903
+  ],
+  "recall_at_fpr5": 0.0909
+ },
+ "A2_leave_redteam_out_on_blunt_default": {
+  "n": 192,
+  "pos": 11,
+  "auroc": 0.9714,
+  "ci95": [
+   0.9414,
+   0.9913
+  ],
+  "recall_at_fpr5": 0.7273
+ },
+ "A2_leave_redteam_out_within_blunt": {
+  "n": 60,
+  "pos": 11,
+  "auroc": 0.8942,
+  "ci95": [
+   0.7925,
+   0.9676
+  ],
+  "recall_at_fpr5": 0.5455
+ },
+ "A3_persona_only_baseline_all_C1": {
+  "n": 270,
+  "pos": 85,
+  "auroc": 0.9707,
+  "ci95": [
+   0.9615,
+   0.9808
+  ],
+  "recall_at_fpr5": 0.8845
+ },
+ "A3_main_probe_all_C1": {
+  "n": 270,
+  "pos": 85,
+  "auroc": 0.9914,
+  "ci95": [
+   0.9819,
+   0.9976
+  ],
+  "recall_at_fpr5": 0.9529
+ }
+}
