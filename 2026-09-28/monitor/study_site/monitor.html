@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Interior Monitor</title>
+<title>模型内部监测</title>
 <link href="/fonts/fonts.css" rel="stylesheet">
 <style>
 :root{
@@ -137,7 +137,7 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
 <body>
 <div class="app">
   <header class="top">
-    <div class="brand"><span class="glyph">I</span><span><em>Interior</em> Monitor</span></div>
+    <div class="brand"><span class="glyph">I</span><span><em>模型内部</em>监测</span></div>
     <span class="chip" id="modelchip">—</span>
     <span class="spacer"></span>
     <div class="seg" id="dimseg"><button data-d="3d" class="on">3D 通路</button><button data-d="2d">2D 热力图</button></div>
@@ -165,7 +165,7 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
             <div class="hm-note" id="hmnote" style="display:none"></div>
       <canvas id="hm2" style="position:absolute;left:0;top:0;width:100%;height:100%;display:none;cursor:crosshair"></canvas>
       <div class="toast" id="toast"></div>
-      <div class="empty" id="empty"><h3><em>Watching the model think</em></h3><p>每个环是一层 · 环上的点是注意力头（同层排列顺序无含义）· 亮线 = 本次计算中后层实际读取前层的通路 · 光柱颜色 = 情绪</p></div>
+      <div class="empty" id="empty"><h3><em>看见模型在想什么</em></h3><p>每个环是一层 · 环上的点是注意力头（同层排列顺序无含义）· 亮线 = 本次计算中后层实际读取前层的通路 · 光柱颜色 = 情绪</p></div>
       <div class="hc avatar" id="avcard"><canvas id="av"></canvas>
         <div class="cap"><span class="pill" id="avstate">待机</span>
           <select id="avsel" style="background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.12);border-radius:999px;font-size:11px;padding:2px 7px;color:#d6dae3">
@@ -174,7 +174,7 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
           <div class="meter">悲伤 <span class="num" id="e_sad">0.00</span><div class="bar"><i id="m_sad"></i></div></div>
           <div class="meter">愤怒 <span class="num" id="e_angry">0.00</span><div class="bar"><i id="m_angry"></i></div></div></div>
       </div>
-      <div class="hud tok2"><div style="font-size:11px;color:#7c8494">当前 token</div><div class="tok" id="tok">—</div><div class="focus" id="focus"></div></div>
+      <div class="hud tok2"><div style="font-size:11px;color:#7c8494">当前生成的字</div><div class="tok" id="tok">—</div><div class="focus" id="focus"></div></div>
       <div class="hudbar">
         <div class="hc prof"><div class="row"><span class="label" id="proflab">层剖面</span></div><canvas id="prof" width="440" height="120"></canvas><div class="foot"><span>L0</span><span>输出</span></div></div>
       <div class="hc risk" id="rc_c2"><div class="row"><span class="label">用户痛苦 · 需转人工<span class="info" data-t="C2：读用户消息在模型内部的表征（第 16 层），不依赖关键词。V1.1 迁移测试 AUROC 0.876。竖线为验证集误报率 5% 处的阈值。">i</span></span><span class="pill" id="st_c2">—</span></div>
@@ -182,7 +182,7 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
       <div class="hc risk" id="rc_pre"><div class="row"><span class="label">敌意预测 · 回复前<span class="info" data-t="C1-pre：在第一个字生成前，读第 22 层最后一个提示位置的状态，预测回复是否会带敌意。V1.1 测试集 AUROC 0.919。">i</span></span><span class="pill" id="st_pre">—</span></div>
         <div class="val" id="v_pre">—</div><div class="track"><i id="f_pre"></i><b id="t_pre"></b></div><div class="foot"><span id="pc_pre">首字前</span><span id="th_pre"></span></div></div>
       <div class="hc risk" id="rc_c1"><div class="row"><span class="label">敌意 · 逐字<span class="info" data-t="C1-token：每生成一个字读第 16 层残差流，显示累计均值；8 字后超过阈值即报警。V1.1 测试集 AUROC 0.929。">i</span></span><span class="pill" id="st_c1">—</span></div>
-        <div class="val" id="v_c1">—</div><div class="track"><i id="f_c1"></i><b id="t_c1"></b></div><canvas class="spark" id="spark" width="600" height="68"></canvas><div class="foot"><span id="pc_c1">—</span><span id="n_tok">0 tokens</span></div></div>
+        <div class="val" id="v_c1">—</div><div class="track"><i id="f_c1"></i><b id="t_c1"></b></div><canvas class="spark" id="spark" width="600" height="68"></canvas><div class="foot"><span id="pc_c1">—</span><span id="n_tok">0 个字</span></div></div>
       <div class="hc risk" id="rc_h3" style="display:none"><div class="row"><span class="label">幻觉风险 · 事实问答<span class="info" data-t="C3-H：回复前读第 22 层（测试集 AUROC 0.722，预注册判定：不确定）；生成中读第 19 层答案表征的累计均值（测试集 AUROC 0.811）。训练于 Chinese SimpleQA 短答题，其他场景仅供参考。">i</span></span><span class="pill" id="st_h3">—</span></div>
         <div class="val" id="v_h3">—</div><div class="track"><i id="f_h3"></i><b id="t_h3"></b></div><div class="foot"><span id="pc_h3">—</span><span id="ph_h3">回复前</span></div></div>
       </div>
@@ -206,7 +206,7 @@ const NL = CFG.n_layers, NH = CFG.n_heads, NKV = CFG.n_kv_heads || NH, NN = CFG.
 const SLOTS = Math.min(NN, Math.floor(420000 / NL)), slotOf = n => Math.floor(n * SLOTS / NN);
 const B3 = new Set(INFO.inner ? INFO.inner.heads : []);
 const MNAME = /^(master|main|snapshot)$/i.test(INFO.model) ? `${CFG.model_type[0].toUpperCase()}${CFG.model_type.slice(1)}-${Math.round(CFG.params_b)}B` : INFO.model;
-$("modelchip").textContent = `${MNAME} · ${CFG.params_b}B params · ${NL}L · ${NH}H/${NKV}KV · ${NN} MLP`;
+$("modelchip").textContent = `${MNAME} · ${CFG.params_b}B 参数 · ${NL} 层 · ${NH} 头/${NKV} 组 KV · 每层 ${NN} 神经元`;
 const headAngle = (L, h) => { const per = NH / NKV, g = Math.floor(h / per), j = h % per; return (g + (j + 0.5) / per * 0.8 + 0.1) / NKV * Math.PI * 2; };
 
 // ================= 3D interior: circuit tunnel =================
@@ -283,7 +283,7 @@ scene.add(new THREE.Points(pGeo, new THREE.PointsMaterial({size: 0.13, vertexCol
 function label(txt, pos, size = 0.5){ const c = document.createElement("canvas"); c.width = 256; c.height = 64; const g = c.getContext("2d"); g.fillStyle = "#6f7787"; g.font = "500 36px ui-monospace,Menlo,monospace"; g.textAlign = "center"; g.fillText(txt, 128, 44);
   const sp = new THREE.Sprite(new THREE.SpriteMaterial({map: new THREE.CanvasTexture(c), transparent: true, depthWrite: false})); sp.scale.set(size * 4, size, 1); sp.position.copy(pos); scene.add(sp); }
 for (let L = 0; L < NL; L += Math.max(1, Math.round(NL / 6))) label("L" + L, new THREE.Vector3(X(L), -RR - 0.55, 0));
-label("L" + (NL - 1), new THREE.Vector3(X(NL - 1), -RR - 0.55, 0)); label("input", inCap.position.clone().add(new THREE.Vector3(0, -0.5, 0)), 0.38); label("output", outCap.position.clone().add(new THREE.Vector3(0, -0.5, 0)), 0.38);
+label("L" + (NL - 1), new THREE.Vector3(X(NL - 1), -RR - 0.55, 0)); label("输入", inCap.position.clone().add(new THREE.Vector3(0, -0.5, 0)), 0.38); label("输出", outCap.position.clone().add(new THREE.Vector3(0, -0.5, 0)), 0.38);
 
 let MODE = "safety", lastI = null, alarm = 0;
 function pulse(){}
@@ -296,7 +296,7 @@ function drawProfile(){ const c = $("prof"); if (!c) return; const g = c.getCont
   g.globalAlpha = .18; g.fillStyle = grd; g.fill(); g.globalAlpha = 1; g.beginPath(); beam.forEach((b, L) => L ? g.lineTo(xs(L), ys(b.v)) : g.moveTo(xs(L), ys(b.v))); g.lineWidth = 2.5; g.strokeStyle = grd; g.stroke(); }
 function applyInner(I){
   lastI = I; const act = MODE === "activity";
-  if (I.flow){ setFlows(act ? I.flow.activity : I.flow.safety); const cv = I.flow.coverage ? (act ? I.flow.coverage.activity : I.flow.coverage.safety) : null; $("flowcov").textContent = `前 ${I.flow.safety.length} 条` + (cv != null ? ` · 占本次读取 ${(cv * 100).toFixed(0)}%` : ""); }
+  if (I.flow){ setFlows(act ? I.flow.activity : I.flow.safety); const cv = I.flow.coverage ? (act ? I.flow.coverage.activity : I.flow.coverage.safety) : null; $("flowcov").textContent = `前 ${I.flow.safety.length} 条` + (cv != null ? ` · 占本次读取的 ${(cv * 100).toFixed(0)}%` : ""); }
   if (act && I.resid_norm){ const mx = Math.max(...I.resid_norm); I.resid_norm.forEach((v, L) => beam[L].tv = v / mx); }
   else { const lo = Math.min(...I.layers), hi = Math.max(...I.layers); I.layers.forEach((v, L) => beam[L].tv = hi > lo ? 0.25 * v + 0.75 * (v - lo) / (hi - lo) * v : v); }
   // per-layer normalisation (late layers have much larger raw pushes), weighted by how active that layer is
@@ -307,8 +307,8 @@ function applyInner(I){
   let bn = {v:-1, n:""}; N.forEach((lst, L) => { const nm = Math.max(1e-6, ...lst.map(([, v]) => Math.abs(v))), w = .25 + .75 * Math.min(1, LW[L]);
     lst.forEach(([n, v]) => { const i = L * SL + Math.floor(n * SL / NN); nHeat[i] = (act ? Math.abs(v) : v) / nm * w; live.add(i); if (Math.abs(v) > bn.v) bn = {v:Math.abs(v), n:`L${L}·N${n}`}; }); });
   const src = act ? I.resid_norm : I.layers, Lm = src.indexOf(Math.max(...src));
-  $("focus").innerHTML = act ? `peak residual  L${Lm}  ${I.resid_norm[Lm]}<br>top head  ${best.n}  ‖W<sub>O</sub>x‖ ${best.v.toFixed(1)}<br>top neuron  ${bn.n}`
-    : `hottest layer  L${Lm}  ${I.layers[Lm].toFixed(2)}<br>top head  ${best.n}${B3.has(best.n.replace("·", "")) ? "  (E01)" : ""}<br>top neuron  ${bn.n}`;
+  $("focus").innerHTML = act ? `残差最强层  L${Lm}  ${I.resid_norm[Lm]}<br>输出最强的头  ${best.n}  ‖W<sub>O</sub>x‖ ${best.v.toFixed(1)}<br>最强神经元  ${bn.n}`
+    : `敌意最高层  L${Lm}  ${I.layers[Lm].toFixed(2)}<br>推力最大的头  ${best.n}${B3.has(best.n.replace("·", "")) ? "（E01 愤怒头）" : ""}<br>贡献最大神经元  ${bn.n}`;
 }
 const tc = new THREE.Color(); let tp = 0;
 function ramp(a){ return a < .5 ? tc.copy(C.base).lerp(C.warm, a * 2) : tc.copy(C.warm).lerp(C.hot, (a - .5) * 2); }
@@ -388,7 +388,7 @@ function draw2d(){
   cols.forEach((c, j) => { const x = x0 + (j + .5) * cw, hot = !c.pre && c.s >= R.c1;
     g.fillStyle = hot ? "rgba(255,77,94,.9)" : "rgba(255,255,255,.12)"; g.fillRect(x0 + j * cw + .5, y1 + 6, Math.max(1, cw - 1), 3);
     if (showLab){ g.fillStyle = c.pre ? "#8b95ff" : hot ? "#ff8a95" : "#9aa2b1"; g.fillText((c.pre ? "∅" : (c.t || "").replace(/\n/g, "⏎")).slice(0, 2), x, y1 + 24); } });
-  if (!showLab){ g.fillStyle = "#5f6676"; g.textAlign = "left"; g.font = "11px Inter,sans-serif"; g.fillText(`${n} 个 token · 悬停查看具体字`, x0, y1 + 26); }
+  if (!showLab){ g.fillStyle = "#5f6676"; g.textAlign = "left"; g.font = "11px Inter,sans-serif"; g.fillText(`共 ${n} 个字 · 悬停查看具体内容`, x0, y1 + 26); }
   const fc = cols.findIndex(c => c.conf); if (fc >= 0){ const x = x0 + fc * cw; g.strokeStyle = "rgba(255,255,255,.85)"; g.setLineDash([3, 3]); g.beginPath(); g.moveTo(x, y0 - 4); g.lineTo(x, y1 + 2); g.stroke(); g.setLineDash([]);
     g.fillStyle = "#eceef3"; g.font = "11px Inter,-apple-system,'PingFang SC',sans-serif"; g.textAlign = "left"; g.fillText("二档确认", x + 6, y0 + 12); }
   hm._geo = {x0, y0, cw, rh: (y1 - y0) / NL, ncol: n, cols};
@@ -398,7 +398,7 @@ hm.addEventListener("pointermove", e => { const G = hm._geo, t = $("tip"); if (!
   if (!c || !c.I || L < 0 || L >= NL){ t.style.display = "none"; return; }
   const row = c.I.heads_all[L].map((v, h) => [v, h]).sort((p, q) => q[0] - p[0]).slice(0, 3);
   t.style.display = "block"; t.style.left = e.clientX + 14 + "px"; t.style.top = e.clientY + 14 + "px";
-  t.innerHTML = `L${L} · token「${esc((c.t || "").replace(/\n/g, "⏎"))}」${c.pre ? "（回复前）" : ""}<br>该层敌意读数 ${c.I.layers[L].toFixed(3)}${c.I.resid_norm && c.I.resid_norm[L] ? ` · 残差范数 ${c.I.resid_norm[L]}` : ""}<br>推力最大的头：${row.map(([v, h]) => `H${h}${B3.has(`L${L}H${h}`) ? "*" : ""} ${v.toFixed(2)}`).join(" · ")}${row.some(([, h]) => B3.has(`L${L}H${h}`)) ? "<br>* = E01 愤怒头" : ""}`; });
+  t.innerHTML = `第 ${L} 层 · 字「${esc((c.t || "").replace(/\n/g, "⏎"))}」${c.pre ? "（回复前）" : ""}<br>该层敌意读数 ${c.I.layers[L].toFixed(3)}${c.I.resid_norm && c.I.resid_norm[L] ? ` · 残差范数 ${c.I.resid_norm[L]}` : ""}<br>推力最大的头：${row.map(([v, h]) => `头${h}${B3.has(`L${L}H${h}`) ? "*" : ""} ${v.toFixed(2)}`).join(" · ")}${row.some(([, h]) => B3.has(`L${L}H${h}`)) ? "<br>* = E01 愤怒头" : ""}`; });
 hm.addEventListener("pointerleave", () => $("tip").style.display = "none");
 document.querySelectorAll("#dimseg button").forEach(b => b.onclick = () => { document.querySelectorAll("#dimseg button").forEach(x => x.classList.toggle("on", x === b)); DIM = b.dataset.d;
   const two = DIM === "2d"; hm.style.display = two ? "" : "none"; canvas.style.display = two ? "none" : ""; $("hmnote").style.display = two ? "" : "none";
@@ -441,7 +441,7 @@ canvas.addEventListener("pointermove", e => { const r = canvas.getBoundingClient
   const hit = ray.intersectObject(heads)[0], t = $("tip");
   if (!hit){ t.style.display = "none"; return; }
   const i = hit.instanceId, L = Math.floor(i / NH), h = i % NH; t.style.display = "block"; t.style.left = e.clientX + 14 + "px"; t.style.top = e.clientY + 14 + "px";
-  t.innerHTML = `L${L}·H${h}  ·  KV group ${Math.floor(h / (NH / NKV))}${B3.has(`L${L}H${h}`) ? "  ·  E01 anger head" : ""}` + (lastI ? `<br>‖W<sub>O</sub>x‖ ${lastI.heads_norm[L][h]}   push ${lastI.heads_all[L][h]}<br>layer hostility ${lastI.layers[L]}   residual ${lastI.resid_norm[L]}` : ""); });
+  t.innerHTML = `第 ${L} 层 · 第 ${h} 个头 · KV 组 ${Math.floor(h / (NH / NKV))}${B3.has(`L${L}H${h}`) ? " · E01 愤怒头" : ""}` + (lastI ? `<br>敌意推力 ${lastI.heads_all[L][h]}${lastI.heads_norm ? ` · 输出范数 ${lastI.heads_norm[L][h]}` : ""}<br>该层敌意读数 ${lastI.layers[L]}${lastI.resid_norm ? ` · 残差范数 ${lastI.resid_norm[L]}` : ""}` : ""); });
 
 // ================= risk cards =================
 const R = {c2: TH.C2, pre: TH.C1_pre, c1: TH.C1_mean, h3: TH.C3H_pre ?? 1};
@@ -515,11 +515,11 @@ async function send(){
           if (X.alarm.C3H && qaMode && !window._h3){ window._h3 = true; toast("二档确认 · 这段回答可能包含编造内容，建议核实"); } } if (X.inner) applyInner(X.inner); if (X.emo) expr(X.emo.expr); talk = 1;
         const a = Math.min(.9, X.C1_token); liveEl.insertAdjacentHTML("beforeend", `<span style="background:rgba(255,77,94,${(a * .18).toFixed(3)});box-shadow:inset 0 -1.5px rgba(255,77,94,${(a * .8).toFixed(2)})">${esc(delta)}</span>`); $("conv").scrollTop = 1e9;
         if (delta.trim()) $("tok").textContent = delta.replace(/\n/g, "⏎"); $("tok").style.color = X.C1_token >= R.c1 ? "#ff5a66" : "#f1f3f7";
-        spark.push({t: X.C1_token, m: X.C1_mean}); drawSpark(); $("n_tok").textContent = n + " tokens"; if (n % 3 === 0) pulse(X.C1_token >= R.c1 ? 0xff4d5e : 0x8b95ff);
+        spark.push({t: X.C1_token, m: X.C1_mean}); drawSpark(); $("n_tok").textContent = n + " 个字"; if (n % 3 === 0) pulse(X.C1_token >= R.c1 ? 0xff4d5e : 0x8b95ff);
         $("avstate").className = "pill"; $("avstate").textContent = "逐字驱动";
         if (X.alarm.C1 && !alerted){ alerted = true; alarm = 2; $("avcard").classList.add("alert"); const L = lastI ? lastI.layers.indexOf(Math.max(...lastI.layers)) : null;
-          toast(`二档确认 · 敌意：第 <span class="num">${X.i - INFO.sustain + 1}–${X.i}</span> 个 token 连续超阈值${L !== null ? ` · 峰值层 L${L}` : ""}${$("stop").checked ? " · 已拦截" : ""}`); $("avstate").className = "pill alert"; $("avstate").textContent = "二档 · 确认"; } }
-      else if (X.phase === "done"){ $("status").textContent = `${X.tokens} tok · 首读 ${preT} ms · ${Math.round(X.tokens / Math.max(.001, (X.t - preT) / 1000))} tok/s`;
+          toast(`二档确认 · 敌意：第 <span class="num">${X.i - INFO.sustain + 1}–${X.i}</span> 个字连续超阈值${L !== null ? ` · 峰值层 L${L}` : ""}${$("stop").checked ? " · 已拦截" : ""}`); $("avstate").className = "pill alert"; $("avstate").textContent = "二档 · 确认"; } }
+      else if (X.phase === "done"){ $("status").textContent = `${X.tokens} 字 · 首读 ${preT} 毫秒 · 每秒 ${Math.round(X.tokens / Math.max(.001, (X.t - preT) / 1000))} 字`;
         if (X.finish === "content_filter"){ liveEl.insertAdjacentHTML("beforeend", '<br><span class="cut">已拦截 · 回复出现敌意倾向</span>'); expr({happy:0, sad:0, angry:0, neutral:1}); talk = 0; } }
     } }
   conv.push({role:"assistant", content: reply || "（无）"}); $("go").disabled = false; $("livedot").style.background = alarm === 2 ? "var(--bad)" : "var(--ok)";
@@ -542,7 +542,7 @@ if (QS.get("replay")){
   $("rp_seek").max = FR.length - 1;
   function show(k){ H2.length = 0; FR.slice(0, k + 1).forEach(({m, I}, j) => H2.push(j === 0 ? {t: "∅", I, s: m.C1_pre, pre: true} : {t: m.d, I, s: m.C1_token, conf: m.al && m.al.C1}));
     const {m, I} = FR[k]; if (I) applyInner(I); alarm = FR.slice(0, k + 1).some(f => f.m.al && f.m.al.C1) ? 2 : 0; if (DIM === "2d") draw2d();
-    $("rp_seek").value = k; $("rp_lab").textContent = k === 0 ? "回复前" : `token ${k} / ${FR.length - 1}「${(m.d || "").replace(/\n/g, "⏎")}」`; }
+    $("rp_seek").value = k; $("rp_lab").textContent = k === 0 ? "回复前" : `第 ${k} / ${FR.length - 1} 个字「${(m.d || "").replace(/\n/g, "⏎")}」`; }
   $("rp_seek").oninput = e => show(+e.target.value);
   let timer = null; function play(){ clearInterval(timer); let k = 0; show(0); timer = setInterval(() => { k++; if (k >= FR.length){ clearInterval(timer); return; } show(k); }, 60); }
   $("rp_play").onclick = play; play();
