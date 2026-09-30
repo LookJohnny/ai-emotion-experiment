@@ -46,4 +46,5 @@ Written before any generation, label, or probe. Model and hardware are the same 
 **Base-rate rule:** if the dev correct rate is < 10% or > 90%, stop and report without training.
 
 ## Deviations
-(none)
+
+- **D1 (2026-09-30, before any probe result was viewed and before any test grading):** `build_c3h.py` created item_id from the first 12 characters of the source id. The Chinese SimpleQA source ids collide on that prefix, so 11 questions shared 3 ids. Grades are unaffected, because graders worked on packet-level numbered items (q####) with the full question text. Only the mapping back to items collapsed. Fix: re-key every item as `h{line index:04d}` and keep the original id in `src_id`. The packet order was reproduced and verified item by item against each packet's question and answer text. Sample, split and grades are unchanged. The probe-training job that had just started was stopped and its outputs deleted; it had produced no results.
