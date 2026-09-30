@@ -63,16 +63,16 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
 .ghost:hover{color:var(--ink)}
 
 /* ---------- center: 3D ---------- */
-.stage{position:relative;min-width:0;margin:12px;border-radius:18px;overflow:hidden;background:#0b0c0e;box-shadow:0 1px 2px rgba(0,0,0,.06),0 12px 32px -12px rgba(0,0,0,.25)}
+.stage{position:relative;min-width:0;margin:12px;border-radius:18px;overflow:hidden;background:#f4f4f1;border:1px solid var(--line)}
 #gl{position:absolute;inset:0;width:100%;height:100%;display:block}
-.hud{position:absolute;pointer-events:none;font-size:11px;color:#8a8f99}
+.hud{position:absolute;pointer-events:none;font-size:11px;color:var(--mute)}
 .hud.tl{left:16px;top:14px;display:flex;gap:14px}
 .hud.bl{left:16px;bottom:14px;right:16px;display:flex;justify-content:space-between;gap:16px;align-items:flex-end}
 .key{display:inline-flex;align-items:center;gap:6px}
 .key b{width:8px;height:8px;border-radius:2px;display:inline-block}
-.tok{font-family:var(--mono);font-size:22px;color:#eef0f3;letter-spacing:.02em;min-height:30px;transition:color .2s}
-.focus{font-family:var(--mono);font-size:11px;color:#b7bcc6;text-align:right;line-height:1.7}
-.toast{position:absolute;left:50%;top:16px;transform:translate(-50%,-8px);opacity:0;transition:all .25s;pointer-events:none;
+.tok{font-family:var(--serif);font-size:30px;color:var(--ink);letter-spacing:.02em;min-height:30px;transition:color .2s}
+.focus{font-family:var(--mono);font-size:11px;color:var(--ink2);text-align:right;line-height:1.7}
+.toast{position:absolute;left:50%;top:44px;transform:translate(-50%,-8px);opacity:0;transition:all .25s;pointer-events:none;
   display:flex;align-items:center;gap:8px;padding:7px 12px;border-radius:9px;background:rgba(20,10,12,.85);border:1px solid rgba(255,77,94,.35);color:#ffd6da;font-size:12px;backdrop-filter:blur(8px)}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 .toast.warn{background:rgba(24,18,8,.85);border-color:rgba(245,165,36,.35);color:#ffe7bf}
@@ -122,7 +122,7 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
           <button class="send" id="go" title="发送"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button></div>
         <div class="opts">
           <label class="sw"><input type="checkbox" id="stop"><i></i>报警即拦截</label>
-          <label class="sw"><input type="checkbox" id="spin" checked><i></i>自动环绕</label>
+          <label class="sw"><input type="checkbox" id="spin"><i></i>自动旋转</label>
           <span class="spacer"></span><button class="ghost" id="clear">清空</button>
         </div>
       </div>
@@ -130,9 +130,9 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
     <section class="stage" id="stage">
       <canvas id="gl"></canvas>
       <div class="hud tl"><span class="key"><b style="background:var(--bad)"></b>推向敌意</span><span class="key"><b style="background:#5b8cff"></b>拉回</span>
-        <span class="key"><b style="border:1px solid #d9dce3;border-radius:50%;width:8px;height:8px"></b>E01 愤怒头</span><span class="key" id="actkey" style="display:none"><b style="background:#cfe9ff"></b>激活强度</span></div>
+        <span class="key"><b style="background:#111;height:2px"></b>E01 愤怒头</span><span class="key">柱高 = 头对敌意方向的真实推力</span><span class="key" id="actkey" style="display:none"><b style="background:#111"></b>激活强度（‖W<sub>O</sub>x‖）</span></div>
       <div class="toast" id="toast"></div>
-      <div class="hud bl"><div><div style="font-size:11px;color:#8a8f99">当前 token</div><div class="tok" id="tok">—</div></div><div class="focus" id="focus"></div></div>
+      <div class="hud bl"><div><div style="font-size:11px;color:var(--mute)">当前 token</div><div class="tok" id="tok">—</div></div><div class="focus" id="focus"></div></div>
     </section>
     <aside class="right">
       <div class="card avatar" id="avcard"><canvas id="av"></canvas>
@@ -173,93 +173,79 @@ const MNAME = /^(master|main|snapshot)$/i.test(INFO.model) ? `${CFG.model_type[0
 $("modelchip").textContent = `${MNAME} · ${CFG.params_b}B params · ${NL}L · ${NH}H/${NKV}KV · ${NN} MLP`;
 const headAngle = (L, h) => { const per = NH / NKV, g = Math.floor(h / per), j = h % per; return (g + (j + 0.5) / per * 0.8 + 0.1) / NKV * Math.PI * 2; };
 
-// ================= 3D interior =================
+// ================= 3D interior: head-push terrain =================
+// x = query heads (grouped by shared KV), z = layers, bar height = real push of that head on the layer's hostility probe.
 const canvas = $("gl"), stage = $("stage"), renderer = new THREE.WebGLRenderer({canvas, antialias:true});
-renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.setClearColor(0x0a0b0d);
-const scene = new THREE.Scene(); scene.fog = new THREE.Fog(0x0a0b0d, 36, 80);
-const camera = new THREE.PerspectiveCamera(34, 1, 0.1, 300); camera.position.set(24, 17, 30);
-const controls = new OrbitControls(camera, canvas); controls.enableDamping = true; controls.dampingFactor = 0.06; controls.target.set(0, 10, 0);
-controls.autoRotate = true; controls.autoRotateSpeed = 0.3; controls.minDistance = 8; controls.maxDistance = 60;
-scene.background = new THREE.Color(0x0b0c0e);
-function resize(){ const r = stage.getBoundingClientRect(); renderer.setSize(r.width, r.height, false); camera.aspect = r.width / r.height; camera.updateProjectionMatrix(); }
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+const scene = new THREE.Scene(); scene.background = new THREE.Color(0xf4f4f1);
+const PER = NH / NKV, GAP = 0.9, CW = 0.34, CZ = 0.34;
+const colX = h => { const g = Math.floor(h / PER), j = h % PER; return (g * (PER + GAP) + j) * CW; };
+const W = colX(NH - 1) + CW, D = NL * CZ, X0 = -W / 2, Z0 = -D / 2;
+const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, -100, 200);
+const controls = new OrbitControls(camera, canvas); controls.enableDamping = true; controls.dampingFactor = 0.07; controls.autoRotateSpeed = 0.35;
+controls.enableZoom = true; controls.minZoom = 0.6; controls.maxZoom = 4;
+camera.position.set(-W * 0.9, W * 0.95, D * 0.95); controls.target.set(0, 0.4, 0);
+function resize(){ const r = stage.getBoundingClientRect(), asp = r.width / r.height, v = Math.max(W, D) * 0.78;
+  camera.left = -v * asp; camera.right = v * asp; camera.top = v; camera.bottom = -v; camera.updateProjectionMatrix(); renderer.setSize(r.width, r.height, false); }
 new ResizeObserver(resize).observe(stage);
-
-const C = { base: new THREE.Color(0x23272f), idle: new THREE.Color(0x5b6272), hot: new THREE.Color(0xff4d5e), cold: new THREE.Color(0x5b8cff), act: new THREE.Color(0xcfe9ff) };
-// residual stream
-const beam = [];
-for (let L = 0; L < NL; L++){
-  const m = new THREE.MeshBasicMaterial({color: C.base.clone()}), seg = new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.16, DY * 0.86, 16), m);
-  seg.position.y = Y(L); scene.add(seg); beam.push({m, v: 0, tv: 0});
-}
-// layer rings + axis ticks
-const ringMat = new THREE.LineBasicMaterial({color: 0x252a33, transparent:true, opacity:.9});
-for (let L = 0; L < NL; L++){
-  const pts = []; for (let i = 0; i <= 128; i++){ const a = i / 128 * Math.PI * 2; pts.push(new THREE.Vector3(Math.cos(a) * 3.3, Y(L), Math.sin(a) * 3.3)); }
-  scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), ringMat));
-  if (L % Math.max(1, Math.round(NL / 6)) === 0 || L === NL - 1){
-    const c = document.createElement("canvas"); c.width = 96; c.height = 32; const g = c.getContext("2d"); g.fillStyle = "#6b7280"; g.font = "500 20px ui-monospace,Menlo,monospace"; g.fillText("L" + L, 4, 22);
-    const sp = new THREE.Sprite(new THREE.SpriteMaterial({map: new THREE.CanvasTexture(c), transparent:true, depthWrite:false, opacity:.85})); sp.scale.set(0.9, 0.3, 1); sp.position.set(4.1, Y(L), 0); scene.add(sp);
-  }
-}
-// heads
-const HR = 3.3, hs = Math.min(0.16, 0.42 * DY, 10 / NH), heads = new THREE.InstancedMesh(new THREE.BoxGeometry(hs, hs, hs), new THREE.MeshBasicMaterial({color:0xffffff}), NL * NH);
-const d = new THREE.Object3D(), headV = new Float32Array(NL * NH), headT = new Float32Array(NL * NH), headXY = [];
-const markMat = new THREE.MeshBasicMaterial({color: 0xd9dce3, transparent:true, opacity:.55});
-for (let L = 0; L < NL; L++) for (let h = 0; h < NH; h++){
-  const a = headAngle(L, h), x = Math.cos(a) * HR, z = Math.sin(a) * HR; d.position.set(x, Y(L), z); d.rotation.y = -a; d.updateMatrix();
-  heads.setMatrixAt(L * NH + h, d.matrix); heads.setColorAt(L * NH + h, C.base); headXY.push([x, z]);
-  if (B3.has(`L${L}H${h}`)){ const t = new THREE.Mesh(new THREE.TorusGeometry(hs * 1.35, 0.008, 6, 32), markMat); t.position.set(x, Y(L), z); t.lookAt(0, Y(L), 0); scene.add(t); }
-}
-heads.instanceColor.needsUpdate = true; scene.add(heads);
-// head -> stream links (only strong pushes are visible)
-const wPos = new Float32Array(NL * NH * 6), wCol = new Float32Array(NL * NH * 6);
-for (let i = 0; i < NL * NH; i++){ const L = Math.floor(i / NH), [x, z] = headXY[i]; wPos.set([x, Y(L), z, 0, Y(L), 0], i * 6); }
-const wGeo = new THREE.BufferGeometry(); wGeo.setAttribute("position", new THREE.BufferAttribute(wPos, 3)); wGeo.setAttribute("color", new THREE.BufferAttribute(wCol, 3));
-scene.add(new THREE.LineSegments(wGeo, new THREE.LineBasicMaterial({vertexColors:true, transparent:true, opacity:.8, blending:THREE.AdditiveBlending, depthWrite:false})));
-// neurons
-const NB = [0.006, 0.007, 0.01], nPos = new Float32Array(NL * SLOTS * 3), nCol = new Float32Array(NL * SLOTS * 3), nHeat = new Float32Array(NL * SLOTS), live = new Set();
-for (let L = 0; L < NL; L++) for (let n = 0; n < SLOTS; n++){
-  const i = L * SLOTS + n, r = 0.5 + 2.35 * Math.sqrt((n + 0.5) / SLOTS), th = n * 2.39996323;
-  nPos.set([Math.cos(th) * r, Y(L) + (Math.random() - 0.5) * 0.14 * DY, Math.sin(th) * r], i * 3); nCol.set(NB, i * 3);
-}
-const nGeo = new THREE.BufferGeometry(); nGeo.setAttribute("position", new THREE.BufferAttribute(nPos, 3)); nGeo.setAttribute("color", new THREE.BufferAttribute(nCol, 3));
-scene.add(new THREE.Points(nGeo, new THREE.PointsMaterial({size:0.042, vertexColors:true, transparent:true, blending:THREE.AdditiveBlending, depthWrite:false})));
-// base + output markers
-const baseRing = new THREE.Mesh(new THREE.RingGeometry(3.25, 3.3, 128), new THREE.MeshBasicMaterial({color:0x3a4150, side:THREE.DoubleSide})); baseRing.rotation.x = -Math.PI / 2; baseRing.position.y = 0.05; scene.add(baseRing);
-const pulses = [];
-function pulse(col){ const m = new THREE.Mesh(new THREE.SphereGeometry(0.2, 16, 12), new THREE.MeshBasicMaterial({color: col, transparent:true, opacity:.9})); m.position.y = 0.2; scene.add(m); pulses.push(m); }
+scene.add(new THREE.HemisphereLight(0xffffff, 0xd9d9d4, 1.05)); const sun = new THREE.DirectionalLight(0xffffff, 0.9); sun.position.set(-4, 10, 6); scene.add(sun);
+const C = { base: new THREE.Color(0xdedfda), hot: new THREE.Color(0xe5484d), cold: new THREE.Color(0x3b82f6), act: new THREE.Color(0x111111), plate: 0xffffff };
+// ground plate per KV group + faint layer lines
+const plateMat = new THREE.MeshStandardMaterial({color: C.plate, roughness: 1});
+for (let g = 0; g < NKV; g++){ const x0 = X0 + colX(g * PER) - CW * 0.35, w = PER * CW + CW * 0.7 - CW * 0.3;
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w, 0.04, D + CZ * 0.4), plateMat); m.position.set(x0 + w / 2 - CW * 0.15, -0.02, 0); scene.add(m); }
+const lines = new THREE.LineBasicMaterial({color: 0xe7e7e3});
+for (let L = 0; L <= NL; L += Math.max(1, Math.round(NL / 12))){ const z = Z0 + L * CZ; const gm = new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(X0 - 1.4, 0.001, z), new THREE.Vector3(X0 + W + 1.4, 0.001, z)]); scene.add(new THREE.Line(gm, lines)); }
+// head bars
+const heads = new THREE.InstancedMesh(new THREE.BoxGeometry(CW * 0.72, 1, CZ * 0.72), new THREE.MeshStandardMaterial({color: 0xffffff, roughness: 0.55, metalness: 0}), NL * NH);
+const headV = new Float32Array(NL * NH), headT = new Float32Array(NL * NH), d = new THREE.Object3D();
+function placeHead(i, hgt){ const L = Math.floor(i / NH), h = i % NH; d.position.set(X0 + colX(h), hgt / 2, Z0 + L * CZ + CZ / 2); d.scale.set(1, hgt, 1); d.updateMatrix(); heads.setMatrixAt(i, d.matrix); }
+for (let i = 0; i < NL * NH; i++){ placeHead(i, 0.04); heads.setColorAt(i, C.base); }
+scene.add(heads);
+// E01 anger heads: small dark ticks on the ground next to the bar
+const tick = new THREE.MeshBasicMaterial({color: 0x111111});
+for (let L = 0; L < NL; L++) for (let h = 0; h < NH; h++) if (B3.has(`L${L}H${h}`)){ const m = new THREE.Mesh(new THREE.BoxGeometry(CW * 0.72, 0.01, 0.035), tick); m.position.set(X0 + colX(h), 0.005, Z0 + L * CZ + CZ * 0.08); scene.add(m); }
+// layer readout ribbon (left) and neuron heat strip (right)
+const beam = [], ribMat = [];
+for (let L = 0; L < NL; L++){ const mat = new THREE.MeshStandardMaterial({color: C.base.clone(), roughness: 1}); const m = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.06, CZ * 0.86), mat);
+  m.position.set(X0 - 0.95, 0.03, Z0 + L * CZ + CZ / 2); scene.add(m); beam.push({m: mat, mesh: m, v: 0, tv: 0}); }
+const NBIN = 24, nbar = new THREE.InstancedMesh(new THREE.BoxGeometry(0.05, 1, CZ * 0.6), new THREE.MeshStandardMaterial({color: 0xffffff, roughness: .6}), NL * NBIN);
+const nV = new Float32Array(NL * NBIN), nT = new Float32Array(NL * NBIN);
+function placeN(i, hgt){ const L = Math.floor(i / NBIN), b = i % NBIN; d.position.set(X0 + W + 0.5 + b * 0.065, hgt / 2, Z0 + L * CZ + CZ / 2); d.scale.set(1, hgt, 1); d.updateMatrix(); nbar.setMatrixAt(i, d.matrix); }
+for (let i = 0; i < NL * NBIN; i++){ placeN(i, 0.02); nbar.setColorAt(i, C.base); } scene.add(nbar);
+function label(txt, x, z, size = 0.5, col = "#6b6b67"){ const c = document.createElement("canvas"); c.width = 256; c.height = 64; const g = c.getContext("2d");
+  g.fillStyle = col; g.font = "500 40px Inter,-apple-system,\"PingFang SC\",sans-serif"; g.textAlign = "center"; g.fillText(txt, 128, 46);
+  const sp = new THREE.Sprite(new THREE.SpriteMaterial({map: new THREE.CanvasTexture(c), transparent: true, depthWrite: false})); sp.scale.set(size * 4, size, 1); sp.position.set(x, 0.05, z); scene.add(sp); }
+for (let L = 0; L < NL; L += Math.max(1, Math.round(NL / 6))) label("L" + L, X0 - 2.0, Z0 + L * CZ + CZ / 2);
+label("L" + (NL - 1), X0 - 2.0, Z0 + (NL - 1) * CZ + CZ / 2);
+for (let g = 0; g < NKV; g++) label("KV" + g, X0 + colX(g * PER) + (PER - 1) * CW / 2, Z0 - 0.6, 0.42);
+label("层读数", X0 - 0.95, Z0 - 0.6, 0.42); label("神经元", X0 + W + 0.5 + NBIN * 0.065 / 2, Z0 - 0.6, 0.42);
 
 let MODE = "safety", lastI = null, alarm = 0;
+function pulse(){}
 function applyInner(I){
   lastI = I; const act = MODE === "activity";
   if (act){ const mx = Math.max(...I.resid_norm); I.resid_norm.forEach((v, L) => beam[L].tv = v / mx); } else I.layers.forEach((v, L) => beam[L].tv = v);
-  const M = act ? I.heads_norm : I.heads_all; let mx = 1e-6; if (act) M.forEach(r => r.forEach(v => mx = Math.max(mx, v)));
-  let best = {v:-1e9, n:""}; M.forEach((row, L) => row.forEach((v, h) => { headT[L * NH + h] = act ? v / mx : v; if (v > best.v) best = {v, n:`L${L}·H${h}`}; }));
-  const N = act ? I.neurons_act : I.neurons; let nm = 1e-6; if (act) N.forEach(l => l.forEach(([, v]) => nm = Math.max(nm, Math.abs(v))));
-  let bn = {v:-1, n:""}; N.forEach((lst, L) => lst.forEach(([n, v]) => { const i = L * SLOTS + slotOf(n); nHeat[i] = act ? Math.abs(v) / nm : Math.max(-1, Math.min(1, v * 5)); live.add(i); if (Math.abs(v) > bn.v) bn = {v:Math.abs(v), n:`L${L}·N${n}`}; }));
+  const M = act ? I.heads_norm : I.heads_all; let mx = 1e-6; M.forEach(r => r.forEach(v => mx = Math.max(mx, Math.abs(v))));
+  let best = {v:-1e9, n:""}; M.forEach((row, L) => row.forEach((v, h) => { headT[L * NH + h] = v / mx; if (v > best.v) best = {v, n:`L${L}·H${h}`}; }));
+  const N = act ? I.neurons_act : I.neurons; let nm = 1e-6; N.forEach(l => l.forEach(([, v]) => nm = Math.max(nm, Math.abs(v)))); nT.fill(0);
+  let bn = {v:-1, n:""}; N.forEach((lst, L) => lst.forEach(([n, v]) => { const i = L * NBIN + Math.floor(n * NBIN / NN); if (Math.abs(v) > Math.abs(nT[i] * nm)) nT[i] = v / nm; if (Math.abs(v) > bn.v) bn = {v:Math.abs(v), n:`L${L}·N${n}`}; }));
   const src = act ? I.resid_norm : I.layers, Lm = src.indexOf(Math.max(...src));
-  $("focus").innerHTML = act ? `peak residual  L${Lm}  ${I.resid_norm[Lm]}<br>top head  ${best.n}  ‖W<sub>O</sub>x‖ ${best.v.toFixed(1)}<br>top neuron  ${bn.n}  ${bn.v.toFixed(2)}`
+  $("focus").innerHTML = act ? `peak residual  L${Lm}  ${I.resid_norm[Lm]}<br>top head  ${best.n}  ‖W<sub>O</sub>x‖ ${best.v.toFixed(1)}<br>top neuron  ${bn.n}`
     : `hottest layer  L${Lm}  ${I.layers[Lm].toFixed(2)}<br>top head  ${best.n}${B3.has(best.n.replace("·", "")) ? "  (E01)" : ""}<br>top neuron  ${bn.n}`;
 }
-const tc = new THREE.Color(); let hm = 0.5;
+const tc = new THREE.Color();
 function step(dt){
-  const k = 1 - Math.exp(-dt / 0.14), act = MODE === "activity";
-  beam.forEach(b => { b.v += (b.tv - b.v) * k; const t = Math.min(1, b.v); tc.copy(C.base).lerp(act ? C.act : C.hot, act ? t : Math.max(0, (t - 0.15) / 0.85)).multiplyScalar(act ? 1 : 1 + 0.6 * t); b.m.color.copy(tc); });
-  let m = 0.3; for (let i = 0; i < headT.length; i++) m = Math.max(m, Math.abs(headT[i])); hm += (m - hm) * 0.05;
-  for (let i = 0; i < headV.length; i++){
-    headV[i] += (headT[i] - headV[i]) * k; const a = Math.max(-1, Math.min(1, headV[i] / hm));
-    if (act) tc.copy(C.base).lerp(C.act, Math.max(0, a) ** 1.4);
-    else if (a > 0) tc.copy(C.base).lerp(C.hot, a ** 1.2).multiplyScalar(1 + a); else tc.copy(C.base).lerp(C.cold, (-a) ** 1.2);
-    heads.setColorAt(i, tc);
-    const s = Math.max(0, a - 0.45) / 0.55, w = i * 6; wCol[w] = wCol[w+3] = act ? s * .5 : s * .9; wCol[w+1] = wCol[w+4] = act ? s * .7 : s * .18; wCol[w+2] = wCol[w+5] = act ? s * .8 : s * .22;
-  }
-  heads.instanceColor.needsUpdate = true; wGeo.attributes.color.needsUpdate = true;
-  for (const i of live){ const h = nHeat[i]; nHeat[i] *= Math.exp(-dt / 0.7);
-    if (act) nCol.set([NB[0] + .55 * h, NB[1] + .8 * h, NB[2] + h], i * 3); else if (h >= 0) nCol.set([NB[0] + 1.2 * h, NB[1] + .2 * h, NB[2] + .25 * h], i * 3); else nCol.set([NB[0] + .2 * -h, NB[1] + .45 * -h, NB[2] + 1.1 * -h], i * 3);
-    if (Math.abs(nHeat[i]) < .01){ nCol.set(NB, i * 3); live.delete(i); } }
-  nGeo.attributes.color.needsUpdate = true;
-  for (let i = pulses.length - 1; i >= 0; i--){ const p = pulses[i]; p.position.y += dt * 30; p.material.opacity -= dt * .5; if (p.position.y > Y(NL) || p.material.opacity <= 0){ scene.remove(p); pulses.splice(i, 1); } }
-  baseRing.material.color.set(alarm === 2 ? 0x6b2a31 : 0x3a4150);
+  const k = 1 - Math.exp(-dt / 0.16), act = MODE === "activity";
+  beam.forEach(b => { b.v += (b.tv - b.v) * k; const t = Math.min(1, Math.max(0, b.v)); tc.copy(C.base).lerp(act ? C.act : C.hot, act ? t : Math.max(0, (t - .1) / .9)); b.m.color.copy(tc); b.mesh.scale.y = 1 + 5 * t; b.mesh.position.y = 0.03 * (1 + 5 * t); });
+  for (let i = 0; i < headV.length; i++){ headV[i] += (headT[i] - headV[i]) * k; const a = Math.max(-1, Math.min(1, headV[i]));
+    placeHead(i, 0.04 + 2.2 * Math.abs(a) ** 0.9);
+    if (act) tc.copy(C.base).lerp(C.act, Math.abs(a) ** 0.7); else if (a > 0) tc.copy(C.base).lerp(C.hot, Math.min(1, a * 1.4) ** 0.8); else tc.copy(C.base).lerp(C.cold, Math.min(1, -a * 1.4) ** 0.8);
+    heads.setColorAt(i, tc); }
+  heads.instanceMatrix.needsUpdate = true; heads.instanceColor.needsUpdate = true;
+  for (let i = 0; i < nV.length; i++){ nV[i] += (nT[i] - nV[i]) * k; const a = Math.max(-1, Math.min(1, nV[i])); placeN(i, 0.02 + 1.2 * Math.abs(a));
+    tc.copy(C.base).lerp(act ? C.act : (a >= 0 ? C.hot : C.cold), Math.min(1, Math.abs(a) * 1.3)); nbar.setColorAt(i, tc); }
+  nbar.instanceMatrix.needsUpdate = true; nbar.instanceColor.needsUpdate = true;
 }
 
 // ================= avatar =================
@@ -325,7 +311,7 @@ presets = await (await fetch("/presets")).json();
 $("scen").innerHTML = '<option value="">选择场景…</option>' + presets.map((p, i) => `<option value="${i}">${esc(p.group.split("（")[0])} · ${esc(p.label)}</option>`).join("");
 $("scen").onchange = e => { if (e.target.value === "") return; conv = JSON.parse(JSON.stringify(presets[+e.target.value].messages)); renderConv(); resetRisk(); };
 document.querySelectorAll("#viewseg button").forEach(b => b.onclick = () => { document.querySelectorAll("#viewseg button").forEach(x => x.classList.toggle("on", x === b)); MODE = b.dataset.v;
-  $("actkey").style.display = MODE === "activity" ? "" : "none"; live.forEach(i => nHeat[i] = 0); if (lastI) applyInner(lastI); });
+  $("actkey").style.display = MODE === "activity" ? "" : "none"; if (lastI) applyInner(lastI); });
 $("msg").addEventListener("input", e => { e.target.style.height = "auto"; e.target.style.height = Math.min(120, e.target.scrollHeight) + "px"; });
 $("msg").addEventListener("keydown", e => { if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) send(); });
 $("go").onclick = send; $("clear").onclick = () => { conv = []; renderConv(); resetRisk(); $("scen").value = ""; };
@@ -349,7 +335,7 @@ async function send(){
         if (X.alarm.C1_pre){ alarm = 1; toast(`回复前预警：可能出现敌意 <span class="num">${X.C1_pre.toFixed(2)}</span>`, "warn"); } }
       else if (X.phase === "token"){ n++; reply += delta; risk("c1", X.C1_mean); if (X.inner) applyInner(X.inner); if (X.emo) expr(X.emo.expr); talk = 1;
         const a = Math.min(.9, X.C1_token); liveEl.insertAdjacentHTML("beforeend", `<span style="background:rgba(229,72,77,${(a * .22).toFixed(3)});box-shadow:inset 0 -1.5px rgba(229,72,77,${(a * .9).toFixed(2)})">${esc(delta)}</span>`); $("conv").scrollTop = 1e9;
-        if (delta.trim()) $("tok").textContent = delta.replace(/\n/g, "⏎"); $("tok").style.color = X.C1_token >= R.c1 ? "#ff5a66" : "#eef0f3";
+        if (delta.trim()) $("tok").textContent = delta.replace(/\n/g, "⏎"); $("tok").style.color = X.C1_token >= R.c1 ? "var(--bad)" : "var(--ink)";
         spark.push({t: X.C1_token, m: X.C1_mean}); drawSpark(); $("n_tok").textContent = n + " tokens"; if (n % 3 === 0) pulse(X.C1_token >= R.c1 ? 0xff4d5e : 0x8b95ff);
         $("avstate").className = "pill"; $("avstate").textContent = "逐字驱动";
         if (X.alarm.C1 && !alerted){ alerted = true; alarm = 2; $("avcard").classList.add("alert"); const L = lastI ? lastI.layers.indexOf(Math.max(...lastI.layers)) : null;
