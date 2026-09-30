@@ -6,9 +6,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#fbfbf9; --panel:#ffffff; --panel2:#f5f5f3; --line:#ebebe8; --line2:#dcdcd8;
-  --ink:#111111; --ink2:#3f3f46; --mute:#71717a; --faint:#a1a1aa;
-  --accent:#00aa45; --ok:#00aa45; --warn:#d97706; --bad:#e5484d;
+  --bg:#0a0b0e; --panel:#111319; --panel2:#171a21; --line:rgba(255,255,255,.07); --line2:rgba(255,255,255,.13);
+  --ink:#eceef3; --ink2:#b9c0cc; --mute:#7f8795; --faint:#4f5663;
+  --accent:#22c55e; --ok:#22c55e; --warn:#f5a524; --bad:#ff4d5e;
   --r:14px; --mono:"SF Mono","JetBrains Mono",ui-monospace,Menlo,monospace;
   --serif:"Instrument Serif","Times New Roman",serif; --sans:"Inter",-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
 }
@@ -21,52 +21,52 @@ button,select,textarea,input{font:inherit;color:inherit}
 
 /* ---------- shell ---------- */
 .app{display:grid;grid-template-rows:52px 1fr;height:100vh}
-.top{display:flex;align-items:center;gap:14px;padding:0 20px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.85);backdrop-filter:blur(12px)}
+.top{display:flex;align-items:center;gap:14px;padding:0 20px;border-bottom:1px solid var(--line);background:rgba(10,11,14,.85);backdrop-filter:blur(12px)}
 .brand{display:flex;align-items:center;gap:9px;font-family:var(--serif);font-size:22px;letter-spacing:-.01em}.brand em{font-style:italic}
 .glyph{width:24px;height:24px;border-radius:7px;background:var(--accent);color:#fff;display:grid;place-items:center;font:600 13px var(--sans);box-shadow:inset 0 -2px 0 rgba(0,0,0,.18)}
 .chip{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 11px;border:1px solid var(--line);border-radius:999px;color:var(--ink2);font-size:12px;background:var(--panel)}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(0,170,69,.14)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(34,197,94,.16)}
 .spacer{flex:1}
 .seg{display:inline-flex;padding:3px;border:1px solid var(--line);border-radius:999px;background:var(--panel2)}
 .seg button{border:0;background:none;padding:4px 13px;border-radius:999px;color:var(--mute);cursor:pointer;font-size:12px;transition:all .15s}
-.seg button.on{background:#fff;color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08),0 0 0 1px var(--line)}
+.seg button.on{background:#232733;color:var(--ink);box-shadow:0 0 0 1px var(--line2)}
 .main{display:grid;grid-template-columns:360px 1fr;min-height:0}
 @media (max-width:1180px){.main{grid-template-columns:300px 1fr}}
 
 /* ---------- left: conversation ---------- */
-.left{display:flex;flex-direction:column;border-right:1px solid var(--line);min-height:0;background:var(--panel)}
+.left{display:flex;flex-direction:column;min-height:0;background:var(--bg)}
 .lhead{padding:14px 16px 10px;display:flex;flex-direction:column;gap:8px}
-select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);border-radius:12px;background:var(--panel);appearance:none;cursor:pointer;
+select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);border-radius:12px;background-color:var(--panel);color:var(--ink);appearance:none;cursor:pointer;
   background-image:linear-gradient(45deg,transparent 50%,var(--mute) 50%),linear-gradient(135deg,var(--mute) 50%,transparent 50%);
   background-position:calc(100% - 15px) 14px,calc(100% - 10px) 14px;background-size:5px 5px;background-repeat:no-repeat}
 .conv{flex:1;overflow:auto;padding:4px 16px 16px;display:flex;flex-direction:column;gap:10px}
 .scards{display:flex;flex-direction:column;gap:14px;padding-top:4px}.scards h4{font-size:11px;color:var(--mute);font-weight:500;margin-bottom:6px}
 .sc{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:10px 12px;margin-bottom:6px;cursor:pointer;transition:border-color .15s,box-shadow .15s}
-.sc:hover{border-color:var(--line2);box-shadow:0 2px 8px rgba(0,0,0,.05)}.sc b{display:block;font-weight:500;font-size:13px}.sc span{font-size:11.5px;color:var(--mute)}
+.sc:hover{border-color:var(--line2);background:var(--panel2)}.sc b{display:block;font-weight:500;font-size:13px}.sc span{font-size:11.5px;color:var(--mute)}
 .msg{max-width:92%;padding:9px 12px;border-radius:12px;white-space:pre-wrap;line-height:1.6;font-size:13px}
-.msg.user{align-self:flex-end;background:#111;color:#fff;border-radius:14px 14px 4px 14px}
-.msg.assistant{align-self:flex-start;color:var(--ink2);background:var(--panel2);border-radius:14px 14px 14px 4px}
+.msg.user{align-self:flex-end;background:#232733;color:var(--ink);border-radius:14px 14px 4px 14px}
+.msg.assistant{align-self:flex-start;color:var(--ink2);background:var(--panel);border:1px solid var(--line);border-radius:14px 14px 14px 4px}
 .msg.system{align-self:stretch;color:var(--faint);font-size:11.5px;padding:0 2px}
-.msg.live{color:var(--ink);background:#fff;border:1px solid var(--line)}
+.msg.live{color:var(--ink);background:var(--panel2);border:1px solid var(--line2)}
 .msg .who{display:block;font-size:10.5px;color:var(--faint);margin-bottom:2px}
 .msg.live span{transition:box-shadow .2s}
 .cut{display:inline-block;margin-top:6px;font-size:11.5px;color:var(--bad)}
 .composer{border-top:1px solid var(--line);padding:12px 16px 14px;display:flex;flex-direction:column;gap:10px}
-.box{display:flex;align-items:flex-end;gap:8px;border:1px solid var(--line2);border-radius:14px;background:var(--panel);box-shadow:0 1px 2px rgba(0,0,0,.04);padding:8px 8px 8px 12px;transition:border-color .15s}
+.box{display:flex;align-items:flex-end;gap:8px;border:1px solid var(--line2);border-radius:14px;background:var(--panel);padding:8px 8px 8px 12px;transition:border-color .15s}
 .box:focus-within{border-color:var(--line2)}
 .box textarea{flex:1;border:0;background:none;resize:none;outline:none;min-height:22px;max-height:120px;line-height:1.5}
 .send{width:32px;height:32px;border-radius:10px;border:0;background:var(--accent);color:#fff;box-shadow:inset 0 -2px 0 rgba(0,0,0,.18);cursor:pointer;display:grid;place-items:center;flex:0 0 auto;transition:opacity .15s}
 .send:disabled{opacity:.3;cursor:default}
 .opts{display:flex;gap:14px;align-items:center;color:var(--mute);font-size:12px}
 .sw{display:inline-flex;align-items:center;gap:7px;cursor:pointer;user-select:none}
-.sw i{width:28px;height:16px;border-radius:9px;background:#d4d4d8;position:relative;transition:background .15s}
+.sw i{width:28px;height:16px;border-radius:9px;background:#343a46;position:relative;transition:background .15s}
 .sw i::after{content:"";position:absolute;left:2px;top:2px;width:12px;height:12px;box-shadow:0 1px 2px rgba(0,0,0,.2);border-radius:50%;background:#fff;transition:transform .15s}
 .sw input{display:none}.sw input:checked+i{background:var(--accent)}.sw input:checked+i::after{transform:translateX(12px)}
 .ghost{border:0;background:none;color:var(--mute);cursor:pointer;padding:0}
 .ghost:hover{color:var(--ink)}
 
 /* ---------- center: 3D ---------- */
-.stage{position:relative;min-width:0;margin:12px;border-radius:18px;overflow:hidden;background:#07080b;box-shadow:0 1px 2px rgba(0,0,0,.08),0 18px 40px -18px rgba(0,0,0,.45)}
+.stage{position:relative;min-width:0;margin:10px 12px 12px 0;border-radius:18px;overflow:hidden;background:#07080b;border:1px solid var(--line)}
 .hud.prof{left:16px;bottom:16px;width:220px}.hud.prof canvas{width:220px;height:60px;display:block}
 .empty{position:absolute;left:0;right:240px;top:46px;text-align:center;pointer-events:none;transition:opacity .4s}
 .empty h3{font:400 26px var(--serif);color:#eef0f4;margin-bottom:4px}.empty p{font-size:12.5px;color:#8a92a2}
@@ -162,7 +162,7 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
       <canvas id="gl"></canvas>
       <div class="hud tl"><span class="key"><b style="background:#ff3b4e;border-radius:50%"></b>推向敌意</span><span class="key"><b style="background:#3d8bff;border-radius:50%"></b>拉回</span><span class="key" title="近似：当前位置的 V 路径读取（源头本步写入 → 目标 KV 组的 W_V），不含注意力权重与 MLP 路径；安全模式再乘源头的敌意推力"><b style="background:linear-gradient(90deg,#ffb020,#ff3b4e);height:2px"></b>头→头 读取（本次激活）<span id="flowcov" style="margin-left:6px;color:#5f6676"></span></span><label class="key" style="pointer-events:auto;cursor:pointer" title="仅由权重计算、已减随机基线；是潜在连接，不代表本次实际走过的路径"><input type="checkbox" id="wire" style="margin:0 4px 0 0">潜在布线（权重）</label>
         <span class="key"><b style="border:1px solid #e8ebf2;border-radius:50%;background:none"></b>E01 愤怒头</span><span class="key" id="actkey" style="display:none"><b style="background:#111"></b>激活强度（‖W<sub>O</sub>x‖）</span></div>
-            <div class="hm-note" id="hmnote">层 × token · 颜色 = 该层敌意读数（逐层探针，可视化用）· 红色竖线 = 二档确认 · 悬停查看该层推力最大的头</div>
+            <div class="hm-note" id="hmnote" style="display:none"></div>
       <canvas id="hm2" style="position:absolute;left:0;top:0;width:100%;height:100%;display:none;cursor:crosshair"></canvas>
       <div class="toast" id="toast"></div>
       <div class="empty" id="empty"><h3><em>Watching the model think</em></h3><p>每个环是一层 · 环上的点是注意力头（同层排列顺序无含义）· 亮线 = 本次计算中后层实际读取前层的通路 · 光柱颜色 = 情绪</p></div>
@@ -359,23 +359,39 @@ function step(dt){
 
 // ================= 2D heatmap: layer x token =================
 const H2 = []; let DIM = "3d"; const hm = $("hm2");
+const MAGMA = [[0,[10,11,16]],[.18,[33,19,63]],[.36,[89,28,110]],[.54,[152,45,110]],[.7,[214,72,82]],[.84,[246,130,62]],[1,[252,222,120]]];
+function cmap(t){ t = Math.max(0, Math.min(1, t)); for (let i = 1; i < MAGMA.length; i++) if (t <= MAGMA[i][0]){ const [a0, c0] = MAGMA[i - 1], [a1, c1] = MAGMA[i], f = (t - a0) / (a1 - a0); return c0.map((c, k) => Math.round(c + (c1[k] - c) * f)); } return MAGMA[MAGMA.length - 1][1]; }
+const lgt = v => { v = Math.min(1 - 1e-4, Math.max(1e-4, v)); return Math.log(v / (1 - v)); };
+const off = document.createElement("canvas");
 function draw2d(){
   const r = stage.getBoundingClientRect(), dpr = Math.min(devicePixelRatio, 2); hm.width = r.width * dpr; hm.height = r.height * dpr; const g = hm.getContext("2d"); g.setTransform(dpr, 0, 0, dpr, 0, 0);
   g.fillStyle = "#07080b"; g.fillRect(0, 0, r.width, r.height);
-  const x0 = 52, y0 = 64, x1 = r.width - 240, y1 = r.height - 190, ncol = Math.max(24, H2.length), cw = (x1 - x0) / ncol, rh = (y1 - y0) / NL;
-  const act = MODE === "activity";
-  g.font = "10px ui-monospace,Menlo,monospace"; g.fillStyle = "#5f6676"; g.textAlign = "right";
-  for (let L = 0; L < NL; L += Math.max(1, Math.round(NL / 9))) g.fillText("L" + L, x0 - 6, y0 + (L + .75) * rh);
-  H2.forEach((c, j) => { if (!c.I) return; const vals = act ? c.I.resid_norm.map(v => v / Math.max(...c.I.resid_norm)) : c.I.layers;
-    vals.forEach((v, L) => { const t = Math.max(0, Math.min(1, v)); const col = t < .5 ? [43 + (245 - 43) * t * 2, 49 + (158 - 49) * t * 2, 64 + (11 - 64) * t * 2] : [245 + 10 * (t - .5) * 2, 158 - 99 * (t - .5) * 2, 11 + 67 * (t - .5) * 2];
-      g.fillStyle = act ? `rgba(207,233,255,${(.08 + .9 * t).toFixed(3)})` : `rgb(${col.map(Math.round).join(",")})`; g.fillRect(x0 + j * cw + .5, y0 + L * rh + .5, Math.max(1, cw - 1), Math.max(1, rh - 1)); });
-    if (c.conf){ g.fillStyle = "#ff3b4e"; g.fillRect(x0 + j * cw, y0 - 6, Math.max(2, cw), 3); }
-    const every = Math.max(1, Math.ceil(16 / cw)); if (j % every !== 0 && !c.conf) return;
-    g.save(); g.translate(x0 + (j + .5) * cw, y1 + 8); g.rotate(every > 1 ? Math.PI / 4 : 0); g.textAlign = every > 1 ? "left" : "center";
-    g.fillStyle = c.pre ? "#8b95ff" : c.s >= R.c1 ? "#ff6b78" : "#9aa2b1"; g.font = "12px -apple-system,'PingFang SC',sans-serif"; g.fillText((c.t || "").replace(/\n/g, "⏎").slice(0, 4), 0, 10); g.restore(); });
-  const firstConf = H2.findIndex(c => c.conf); if (firstConf >= 0){ g.strokeStyle = "#ff3b4e"; g.lineWidth = 1.5; g.beginPath(); g.moveTo(x0 + firstConf * cw, y0 - 10); g.lineTo(x0 + firstConf * cw, y1); g.stroke();
-    g.fillStyle = "#ff6b78"; g.font = "11px -apple-system,sans-serif"; g.textAlign = "left"; g.fillText("二档确认", x0 + firstConf * cw + 4, y0 - 12); }
-  hm._geo = {x0, y0, cw, rh, ncol};
+  const x0 = 56, y0 = 72, x1 = r.width - 250, y1 = r.height - 196, act = MODE === "activity", cols = H2.filter(c => c.I), n = Math.max(1, cols.length);
+  const cw = (x1 - x0) / Math.max(n, 24), W = cw * n;
+  // title + scale legend
+  g.fillStyle = "#7f8795"; g.font = "11px Inter,-apple-system,'PingFang SC',sans-serif"; g.textAlign = "left";
+  g.fillText(act ? "残差范数（每列归一）" : "各层敌意读数 · logit 尺度", x0, 50);
+  const lx = x0 + 200; for (let i = 0; i < 120; i++){ const c = cmap(i / 119); g.fillStyle = `rgb(${c})`; g.fillRect(lx + i, 42, 1, 8); }
+  g.fillStyle = "#5f6676"; g.fillText(act ? "低" : "p≈0.12", lx - 2 - g.measureText(act ? "低" : "p≈0.12").width, 50); g.fillText(act ? "高" : "p≈0.998", lx + 126, 50);
+  // heat surface: 1px per cell offscreen, scaled with smoothing
+  off.width = n; off.height = NL; const og = off.getContext("2d"), img = og.createImageData(n, NL);
+  cols.forEach((c, j) => { const vals = act ? c.I.resid_norm.map(v => v / Math.max(...c.I.resid_norm)) : c.I.layers.map(v => (lgt(v) + 2) / 8);
+    vals.forEach((t, L) => { const col = cmap(t), k = (L * n + j) * 4; img.data[k] = col[0]; img.data[k + 1] = col[1]; img.data[k + 2] = col[2]; img.data[k + 3] = 255; }); });
+  og.putImageData(img, 0, 0); g.save(); g.beginPath(); g.roundRect(x0, y0, W, y1 - y0, 10); g.clip(); g.imageSmoothingEnabled = true; g.imageSmoothingQuality = "high"; g.drawImage(off, x0, y0, W, y1 - y0); g.restore();
+  g.strokeStyle = "rgba(255,255,255,.06)"; g.beginPath(); g.roundRect(x0, y0, W, y1 - y0, 10); g.stroke();
+  // axes
+  g.fillStyle = "#5f6676"; g.font = "10px ui-monospace,Menlo,monospace"; g.textAlign = "right";
+  for (let L = 0; L < NL; L += Math.max(1, Math.round(NL / 6))) g.fillText("L" + L, x0 - 8, y0 + (L + .5) * (y1 - y0) / NL + 3);
+  g.fillText("L" + (NL - 1), x0 - 8, y0 + (NL - .5) * (y1 - y0) / NL + 3);
+  // token row: horizontal labels when there is room, otherwise a thin score strip
+  const showLab = cw >= 13; g.textAlign = "center"; g.font = "12px -apple-system,'PingFang SC',sans-serif";
+  cols.forEach((c, j) => { const x = x0 + (j + .5) * cw, hot = !c.pre && c.s >= R.c1;
+    g.fillStyle = hot ? "rgba(255,77,94,.9)" : "rgba(255,255,255,.12)"; g.fillRect(x0 + j * cw + .5, y1 + 6, Math.max(1, cw - 1), 3);
+    if (showLab){ g.fillStyle = c.pre ? "#8b95ff" : hot ? "#ff8a95" : "#9aa2b1"; g.fillText((c.pre ? "∅" : (c.t || "").replace(/\n/g, "⏎")).slice(0, 2), x, y1 + 24); } });
+  if (!showLab){ g.fillStyle = "#5f6676"; g.textAlign = "left"; g.font = "11px Inter,sans-serif"; g.fillText(`${n} 个 token · 悬停查看具体字`, x0, y1 + 26); }
+  const fc = cols.findIndex(c => c.conf); if (fc >= 0){ const x = x0 + fc * cw; g.strokeStyle = "rgba(255,255,255,.85)"; g.setLineDash([3, 3]); g.beginPath(); g.moveTo(x, y0 - 4); g.lineTo(x, y1 + 2); g.stroke(); g.setLineDash([]);
+    g.fillStyle = "#eceef3"; g.font = "11px Inter,-apple-system,'PingFang SC',sans-serif"; g.textAlign = "left"; g.fillText("二档确认", x + 6, y0 + 12); }
+  hm._geo = {x0, y0, cw, rh: (y1 - y0) / NL, ncol: n, cols};
 }
 hm.addEventListener("pointermove", e => { const G = hm._geo, t = $("tip"); if (!G) return; const r = hm.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
   const j = Math.floor((x - G.x0) / G.cw), L = Math.floor((y - G.y0) / G.rh); const c = H2[j];
@@ -497,7 +513,7 @@ async function send(){
         H2.push({t: delta, I: X.inner, s: X.C1_token, conf: X.alarm.C1}); if (DIM === "2d") draw2d();
         if (X.C3H_mean !== undefined && n >= 8){ if (R.h3 !== TH.C3H_mean){ R.h3 = TH.C3H_mean; $("ph_h3").textContent = "生成中 · 答案表征"; $("t_h3").style.left = Math.min(99, R.h3 * 100) + "%"; if ($("th_h3")) $("th_h3").textContent = "阈值 " + R.h3.toFixed(3); } if (X.alarm.C3H) window._h3conf = true; risk("h3", X.C3H_mean, window._h3conf ? 2 : 1);
           if (X.alarm.C3H && qaMode && !window._h3){ window._h3 = true; toast("二档确认 · 这段回答可能包含编造内容，建议核实"); } } if (X.inner) applyInner(X.inner); if (X.emo) expr(X.emo.expr); talk = 1;
-        const a = Math.min(.9, X.C1_token); liveEl.insertAdjacentHTML("beforeend", `<span style="background:rgba(229,72,77,${(a * .22).toFixed(3)});box-shadow:inset 0 -1.5px rgba(229,72,77,${(a * .9).toFixed(2)})">${esc(delta)}</span>`); $("conv").scrollTop = 1e9;
+        const a = Math.min(.9, X.C1_token); liveEl.insertAdjacentHTML("beforeend", `<span style="background:rgba(255,77,94,${(a * .18).toFixed(3)});box-shadow:inset 0 -1.5px rgba(255,77,94,${(a * .8).toFixed(2)})">${esc(delta)}</span>`); $("conv").scrollTop = 1e9;
         if (delta.trim()) $("tok").textContent = delta.replace(/\n/g, "⏎"); $("tok").style.color = X.C1_token >= R.c1 ? "#ff5a66" : "#f1f3f7";
         spark.push({t: X.C1_token, m: X.C1_mean}); drawSpark(); $("n_tok").textContent = n + " tokens"; if (n % 3 === 0) pulse(X.C1_token >= R.c1 ? 0xff4d5e : 0x8b95ff);
         $("avstate").className = "pill"; $("avstate").textContent = "逐字驱动";
