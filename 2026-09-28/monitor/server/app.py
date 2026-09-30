@@ -75,16 +75,23 @@ if INNER:   # V-composition between heads, from weights only: ||W_V(L2, kv g) @ 
         WOn = [w.float().view(-1, NH_, HD_) for w in INNER["WO"]]                                    # [d, NH, HD]
         VV = [model.model.layers[L].self_attn.v_proj.weight.float().view(NKV_, HD_, -1) for L in range(NL_)]   # [NKV, HD, d]
         on = [w.norm(dim=(0, 2)) for w in WOn]; vn = [v.norm(dim=(1, 2)) for v in VV]
+        gen = torch.Generator(device="cuda").manual_seed(0)
+        Rb = torch.randn(WOn[0].shape, device="cuda", generator=gen)                                    # random W_O with the same shape
+        rbn = Rb.norm(dim=(0, 2))
+        base = [(torch.einsum("gkd,dhe->ghke", VV[L2], Rb).pow(2).sum(dim=(2, 3)).sqrt() / (vn[L2][:, None] * rbn[None, :])).mean() for L2 in range(NL_)]
         for L1 in range(NL_ - 1):
             cand = []
             for L2 in range(L1 + 1, min(NL_, L1 + 4)):
-                M = torch.einsum("gkd,dhe->ghke", VV[L2], WOn[L1]).pow(2).sum(dim=(2, 3)).sqrt() / (vn[L2][:, None] * on[L1][None, :])   # [NKV, NH]
-                cand.append((L2, M))
+                M = torch.einsum("gkd,dhe->ghke", VV[L2], WOn[L1]).pow(2).sum(dim=(2, 3)).sqrt() / (vn[L2][:, None] * on[L1][None, :]) - base[L2]   # baseline-corrected
+                cand.append((L2, M.clamp(min=0)))
             for h in range(NH_):
                 sc = [(float(M[g, h]), L2, g) for L2, M in cand for g in range(NKV_)]; sc.sort(reverse=True)
-                EDGES += [[L1, h, L2, g, round(w, 4)] for w, L2, g in sc[:3]]
+                EDGES += [[L1, h, L2, g, round(w, 4)] for w, L2, g in sc[:3] if w > 0]
         mx = max(e[4] for e in EDGES); EDGES = [e[:4] + [round(e[4] / mx, 4)] for e in EDGES]
-        del WOn, VV; torch.cuda.empty_cache()
+        del WOn, Rb; torch.cuda.empty_cache()
+        INNER["VV"] = [model.model.layers[L].self_attn.v_proj.weight.view(NKV_, HD_, -1) for L in range(NL_)]   # bf16 views for per-token flow
+        INNER["G"] = [model.model.layers[L].input_layernorm.weight.float() for L in range(NL_)]
+        INNER["EPS"] = getattr(model.config, "rms_norm_eps", 1e-6); del VV
     print("composition edges", len(EDGES), flush=True)
 tap = ResidualTap(model, [s.layer for s in P.values()] + P_LAYERS + (list(range(INNER["NL"])) if INNER else []) + ([s.layer for s in H3.values()] if H3 else []))
 
@@ -97,7 +104,27 @@ def inner_view(topn=6):
     lp = torch.sigmoid((((H - I["mu"]) / I["sd"]) * I["co"]).sum(-1) + I["b0"])
     X = torch.stack([I["OIN"][L].view(I["NH"], I["HD"]) for L in range(I["NL"])])              # [NL, NH, HD] per-head attention outputs (pre W_O)
     hp = (X * I["UH"]).sum(-1)                                                                   # [NL, NH]
-    hn = torch.stack([(I["WO"][L].view(-1, I["NH"], I["HD"]) * X[L].to(I["WO"][L].dtype)).sum(-1).float().norm(dim=0) for L in range(I["NL"])])
+    HO = [(I["WO"][L].view(-1, I["NH"], I["HD"]) * X[L].to(I["WO"][L].dtype)).sum(-1) for L in range(I["NL"])]   # [d, NH] actual per-head writes (bf16)
+    hn = torch.stack([o.float().norm(dim=0) for o in HO])
+    # activation flow (approximation: V path at the current position only; no attention weights, no MLP path):
+    # read(L1,h -> L2,g) = || W_V(L2,g) ( gamma_L2 * o_(L1,h) / rms(resid into L2) ) ||
+    lpc = lp.clamp(0, 1); rel = (hp.clamp(min=0) / hp.abs().amax(dim=1, keepdim=True).clamp(min=1e-6)) * (.25 + .75 * lpc[:, None])   # source push, per-layer normalised
+    rows = []
+    for L2 in range(1, I["NL"]):
+        r = tap.states[L2 - 1]; sc = (I["G"][L2] / (r.pow(2).mean() + I["EPS"]).sqrt()).to(HO[0].dtype)
+        for L1 in range(max(0, L2 - 3), L2):
+            R = torch.einsum("gkd,dh->gkh", I["VV"][L2], HO[L1] * sc[:, None]).float().norm(dim=1)   # [NKV, NH]
+            rows.append((L1, L2, R))
+    allR = torch.stack([R for _, _, R in rows]); keyL = torch.tensor([[L1, L2] for L1, L2, _ in rows], device=allR.device)
+    safe = allR * rel[keyL[:, 0]][:, None, :]                                                           # [P, NKV, NH]
+    flat = safe.flatten(); tot = float(flat.sum()) + 1e-9; v, ix = flat.topk(150)
+    P_, G_, H_ = ix // (I["NKV"] * I["NH"]), (ix // I["NH"]) % I["NKV"], ix % I["NH"]
+    rflat = allR.flatten(); rtot = float(rflat.sum()) + 1e-9; rv, rix = rflat.topk(150)
+    rP, rG, rH = rix // (I["NKV"] * I["NH"]), (rix // I["NH"]) % I["NKV"], rix % I["NH"]
+    kl = keyL.cpu().tolist()
+    flow = {"safety": [[kl[p][0], h, kl[p][1], g, round(float(x), 4)] for p, g, h, x in zip(P_.tolist(), G_.tolist(), H_.tolist(), v.tolist())],
+            "activity": [[kl[p][0], h, kl[p][1], g, round(float(x), 3)] for p, g, h, x in zip(rP.tolist(), rG.tolist(), rH.tolist(), rv.tolist())],
+            "coverage": {"safety": round(float(v.sum()) / tot, 3), "activity": round(float(rv.sum()) / rtot, 3)}}
     A = torch.stack([I["MIN"][L] for L in range(I["NL"])])                                       # [NL, NN] real neuron activations
     npush = A * I["VN"]
     _, ix = npush.abs().topk(topn, dim=1); nv = npush.gather(1, ix)
@@ -107,7 +134,7 @@ def inner_view(topn=6):
     return {"layers": np.round(lp, 3).tolist(), "heads_all": np.round(hp, 2).tolist(), "heads_norm": np.round(hn, 2).tolist(),
             "resid_norm": np.round(rn, 1).tolist(), "heads": [round(float(hp[L, h]), 3) for L, h in I["HEADS"]],
             "neurons": [[[int(i), round(float(x), 3)] for i, x in zip(ix[L], nv[L])] for L in range(I["NL"])],
-            "neurons_act": [[[int(i), round(float(x), 3)] for i, x in zip(ax[L], av[L])] for L in range(I["NL"])]}
+            "neurons_act": [[[int(i), round(float(x), 3)] for i, x in zip(ax[L], av[L])] for L in range(I["NL"])], "flow": flow}
 
 
 def emo_token(h):
@@ -215,7 +242,7 @@ def audit(n: int = 20):
 
 @app.get("/circuit")
 def circuit():
-    return {"edges": EDGES, "rule": "V-composition from weights: ||W_V(L2,g) W_O(L1,h)||_F normalised by both norms; next 3 layers; top-3 per source head; scaled to max 1"}
+    return {"edges": EDGES, "rule": "potential wiring from weights: ||W_V(L2,g) W_O(L1,h)||_F / (||W_V|| ||W_O||) minus a random-W_O baseline, clipped at 0; next 3 layers; top-3 per source head; scaled to max 1"}
 
 
 @app.get("/presets")

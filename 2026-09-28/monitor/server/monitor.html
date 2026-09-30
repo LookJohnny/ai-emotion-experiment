@@ -157,10 +157,10 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
     </aside>
     <section class="stage" id="stage">
       <canvas id="gl"></canvas>
-      <div class="hud tl"><span class="key"><b style="background:#ff3b4e;border-radius:50%"></b>推向敌意</span><span class="key"><b style="background:#3d8bff;border-radius:50%"></b>拉回</span><span class="key"><b style="background:linear-gradient(90deg,#ffb020,#ff3b4e);height:2px"></b>头→头 V 组合（权重）</span>
+      <div class="hud tl"><span class="key"><b style="background:#ff3b4e;border-radius:50%"></b>推向敌意</span><span class="key"><b style="background:#3d8bff;border-radius:50%"></b>拉回</span><span class="key" title="近似：当前位置的 V 路径读取（源头本步写入 → 目标 KV 组的 W_V），不含注意力权重与 MLP 路径；安全模式再乘源头的敌意推力"><b style="background:linear-gradient(90deg,#ffb020,#ff3b4e);height:2px"></b>头→头 读取（本次激活）<span id="flowcov" style="margin-left:6px;color:#5f6676"></span></span><label class="key" style="pointer-events:auto;cursor:pointer" title="仅由权重计算、已减随机基线；是潜在连接，不代表本次实际走过的路径"><input type="checkbox" id="wire" style="margin:0 4px 0 0">潜在布线（权重）</label>
         <span class="key"><b style="border:1px solid #e8ebf2;border-radius:50%;background:none"></b>E01 愤怒头</span><span class="key" id="actkey" style="display:none"><b style="background:#111"></b>激活强度（‖W<sub>O</sub>x‖）</span></div>
             <div class="toast" id="toast"></div>
-      <div class="empty" id="empty"><h3><em>Watching the model think</em></h3><p>每个环是一层 · 环上的点是注意力头 · 连线来自权重 · 外层光晕 = 危险程度 · 光柱颜色 = 情绪</p></div>
+      <div class="empty" id="empty"><h3><em>Watching the model think</em></h3><p>每个环是一层 · 环上的点是注意力头（同层排列顺序无含义）· 亮线 = 本次计算中后层实际读取前层的通路 · 光柱颜色 = 情绪</p></div>
       <div class="hc avatar" id="avcard"><canvas id="av"></canvas>
         <div class="cap"><span class="pill" id="avstate">待机</span>
           <select id="avsel" style="background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.12);border-radius:999px;font-size:11px;padding:2px 7px;color:#d6dae3">
@@ -262,6 +262,15 @@ const ePos = new Float32Array(curves.length * SEG * 6), eCol = new Float32Array(
 curves.forEach((cv, k) => { const pts = cv.c.getPoints(SEG); for (let i = 0; i < SEG; i++){ const o = (k * SEG + i) * 6; ePos.set([pts[i].x, pts[i].y, pts[i].z, pts[i + 1].x, pts[i + 1].y, pts[i + 1].z], o); } });
 const eGeo = new THREE.BufferGeometry(); eGeo.setAttribute("position", new THREE.BufferAttribute(ePos, 3)); eGeo.setAttribute("color", new THREE.BufferAttribute(eCol, 3));
 scene.add(new THREE.LineSegments(eGeo, new THREE.LineBasicMaterial({vertexColors: true, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false})));
+// activation flow: rebuilt every token from the server's top-150 reads (this pass), drawn bright; static wiring above is background only
+const FK = 150, fPos = new Float32Array(FK * SEG * 6), fCol = new Float32Array(FK * SEG * 6); let flows = [];
+const fGeo = new THREE.BufferGeometry(); fGeo.setAttribute("position", new THREE.BufferAttribute(fPos, 3)); fGeo.setAttribute("color", new THREE.BufferAttribute(fCol, 3));
+scene.add(new THREE.LineSegments(fGeo, new THREE.LineBasicMaterial({vertexColors: true, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false})));
+function setFlows(list){ const mx = Math.max(1e-9, ...list.map(e => e[4])); fPos.fill(0); fCol.fill(0);
+  flows = list.slice(0, FK).map(([L1, h, L2, g, w], k) => { const p0 = HP[L1 * NH + h], p1 = P3(L2, gAng(g)), mid = p0.clone().lerp(p1, .5); mid.y *= .5; mid.z *= .5;
+    const c = new THREE.QuadraticBezierCurve3(p0, mid, p1), pts = c.getPoints(SEG); for (let i = 0; i < SEG; i++) fPos.set([pts[i].x, pts[i].y, pts[i].z, pts[i + 1].x, pts[i + 1].y, pts[i + 1].z], (k * SEG + i) * 6);
+    return {c, v: w / mx, t: 0}; });
+  fGeo.attributes.position.needsUpdate = true; }
 // signal particles flowing along the hottest curves
 const NP = 160, pPos = new Float32Array(NP * 3), pCol = new Float32Array(NP * 3), pState = Array.from({length: NP}, () => ({k: -1, t: 0}));
 const pGeo = new THREE.BufferGeometry(); pGeo.setAttribute("position", new THREE.BufferAttribute(pPos, 3)); pGeo.setAttribute("color", new THREE.BufferAttribute(pCol, 3));
@@ -282,6 +291,7 @@ function drawProfile(){ const c = $("prof"); if (!c) return; const g = c.getCont
   g.globalAlpha = .18; g.fillStyle = grd; g.fill(); g.globalAlpha = 1; g.beginPath(); beam.forEach((b, L) => L ? g.lineTo(xs(L), ys(b.v)) : g.moveTo(xs(L), ys(b.v))); g.lineWidth = 2.5; g.strokeStyle = grd; g.stroke(); }
 function applyInner(I){
   lastI = I; const act = MODE === "activity";
+  if (I.flow){ setFlows(act ? I.flow.activity : I.flow.safety); const cv = act ? I.flow.coverage.activity : I.flow.coverage.safety; $("flowcov").textContent = `前 ${I.flow.safety.length} 条 · 占本次读取 ${(cv * 100).toFixed(0)}%`; }
   if (act){ const mx = Math.max(...I.resid_norm); I.resid_norm.forEach((v, L) => beam[L].tv = v / mx); }
   else { const lo = Math.min(...I.layers), hi = Math.max(...I.layers); I.layers.forEach((v, L) => beam[L].tv = hi > lo ? 0.25 * v + 0.75 * (v - lo) / (hi - lo) * v : v); }
   // per-layer normalisation (late layers have much larger raw pushes), weighted by how active that layer is
@@ -318,15 +328,19 @@ function step(dt){
     const pp = alarm === 2 && a > 0 ? .25 * (.5 + .5 * Math.sin(tp * 6 + i)) : 0; g.material.opacity = .35 + .6 * m; g.scale.setScalar(.7 + 2.6 * m + pp * 2); });
   // curves: faint wiring always visible; lit by the source head's live push x composition weight
   const hotList = [];
-  curves.forEach((cv, k2) => { const a = headV[cv.src], v = act ? Math.abs(a) * cv.w : Math.max(0, a) * cv.w; cv.v = v; if (v > .12) hotList.push(k2);
-    const base = cv.w > .42 ? .02 * (cv.w - .42) / .58 + .004 : 0, lit = Math.min(1, v * 2.4);
+  const wireOn = $("wire") && $("wire").checked;
+  curves.forEach((cv, k2) => { const v = 0; cv.v = v;
+    const base = wireOn ? .006 + .03 * cv.w : 0, lit = 0;
     const r = act ? base + lit * .55 : base + lit * 1.0, g = act ? base + lit * .8 : base + lit * (lit > .5 ? .25 : .55), b = act ? base * 1.6 + lit * .9 : base * 1.8 + lit * .15;
     for (let i = 0; i < SEG; i++){ const o = (k2 * SEG + i) * 6, f = .6 + .4 * Math.sin(i / SEG * Math.PI); eCol[o] = eCol[o + 3] = r * f; eCol[o + 1] = eCol[o + 4] = g * f; eCol[o + 2] = eCol[o + 5] = b * f; } });
   eGeo.attributes.color.needsUpdate = true;
-  hotList.sort((x, y) => curves[y].v - curves[x].v);
-  pState.forEach((p, i) => { if (p.k < 0 || p.t > 1){ p.k = hotList.length ? hotList[Math.floor(Math.random() * Math.min(hotList.length, 60))] : -1; p.t = Math.random() * .2; }
-    if (p.k < 0){ pPos.set([0, -999, 0], i * 3); return; } p.t += dt * (0.55 + curves[p.k].v); const q = curves[p.k].c.getPoint(Math.min(1, p.t)); pPos.set([q.x, q.y, q.z], i * 3);
-    const l = Math.min(1, curves[p.k].v * 2); pCol.set(act ? [.6, .9, 1] : [1, .35 + .4 * (1 - l), .2], i * 3); });
+  flows.forEach((f, k2) => { const l = Math.min(1, f.v), r = act ? .25 + .5 * l : .35 + .65 * l, g = act ? .45 + .5 * l : (l > .5 ? .18 : .45) * (.4 + .6 * l), b = act ? .6 + .4 * l : .1 * l;
+    for (let i = 0; i < SEG; i++){ const o = (k2 * SEG + i) * 6, f2 = (.25 + .75 * l) * (.6 + .4 * Math.sin(i / SEG * Math.PI)); fCol[o] = fCol[o + 3] = r * f2; fCol[o + 1] = fCol[o + 4] = g * f2; fCol[o + 2] = fCol[o + 5] = b * f2; } });
+  fGeo.attributes.color.needsUpdate = true;
+  for (let k2 = 0; k2 < flows.length; k2++) hotList.push(k2);
+  pState.forEach((p, i) => { if (p.k < 0 || p.t > 1 || !flows[p.k]){ p.k = flows.length ? Math.floor(Math.random() * Math.min(flows.length, 60)) : -1; p.t = Math.random() * .2; }
+    if (p.k < 0){ pPos.set([0, -999, 0], i * 3); return; } const f = flows[p.k]; p.t += dt * (.5 + .8 * f.v); const q = f.c.getPoint(Math.min(1, p.t)); pPos.set([q.x, q.y, q.z], i * 3);
+    const l = Math.min(1, f.v); pCol.set(act ? [.6, .9, 1] : [1, .3 + .45 * (1 - l), .15], i * 3); });
   pGeo.attributes.position.needsUpdate = true; pGeo.attributes.color.needsUpdate = true;
   for (const i of live){ const h = nHeat[i]; nHeat[i] *= Math.exp(-dt / .8);
     if (act) nCol.set([NB[0] + .5 * h, NB[1] + .8 * h, NB[2] + h], i * 3); else if (h >= 0) nCol.set([NB[0] + 1.3 * h, NB[1] + .35 * h, NB[2] + .1 * h], i * 3); else nCol.set([NB[0], NB[1] + .4 * -h, NB[2] + 1.1 * -h], i * 3);
