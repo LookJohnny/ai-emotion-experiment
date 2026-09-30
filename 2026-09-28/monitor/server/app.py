@@ -174,7 +174,7 @@ def chunk(cid, delta, risk, finish=None):
 async def run(req):
     msgs = req["messages"]; n_max = int(req.get("max_tokens", 200)); temp = float(req.get("temperature", 0.7)); action = req.get("x_action", "log")
     forced = tok(req["x_force"], add_special_tokens=False)["input_ids"] if req.get("x_force") else None   # replay: teacher-force a fixed reply through the same path
-    if forced: n_max = len(forced)
+    if forced: forced = forced[:int(req.get("x_force_max", len(forced)))]; n_max = len(forced)   # x_force_max: truncate forced text to N tokens (reader experiment)
     cid = "chatcmpl-" + uuid.uuid4().hex[:12]; T0 = time.time(); ms = lambda: round((time.time() - T0) * 1000, 1)
     rec = {"id": cid, "time": time.strftime("%Y-%m-%d %H:%M:%S"), "action": action, "user": msgs[-1]["content"][:200], "events": []}
     async with LOCK:

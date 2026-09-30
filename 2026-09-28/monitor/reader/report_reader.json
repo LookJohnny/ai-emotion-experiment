@@ -1,0 +1,146 @@
+{
+ "C1": {
+  "n": 143,
+  "positives": 18,
+  "R1_reader_auroc": {
+   "point": 0.973,
+   "ci": [
+    0.957,
+    0.991
+   ],
+   "thr": 0.8,
+   "verdict": "PASS"
+  },
+  "R2_minus_text": {
+   "point": 0.06,
+   "ci": [
+    0.001,
+    0.14
+   ],
+   "thr": 0.05,
+   "baseline_auroc": 0.914,
+   "baseline": "TF-IDF(conv+reply) trained on Qwen V1.1 dev",
+   "verdict": "INCONCLUSIVE",
+   "literal_wording": "PASS"
+  },
+  "reported": {
+   "text_auroc": 0.914,
+   "kimi_nll_auroc": 0.777,
+   "kimi_entropy_auroc": 0.651,
+   "reader_pre_c1_auroc": 0.746,
+   "drop_vs_self_read": -0.044,
+   "at_demo_threshold": {
+    "thr": 0.2372,
+    "recall": 0.944,
+    "fpr": 0.088
+   }
+  },
+  "kimi_hostility_by_history": {
+   "polite": {
+    "n": 36,
+    "pos": 0,
+    "reader_mean": 0.061
+   },
+   "curt": {
+    "n": 35,
+    "pos": 0,
+    "reader_mean": 0.066
+   },
+   "sarcastic": {
+    "n": 36,
+    "pos": 8,
+    "reader_mean": 0.24
+   },
+   "insulting": {
+    "n": 36,
+    "pos": 10,
+    "reader_mean": 0.264
+   }
+  }
+ },
+ "C3H": {
+  "n_all": 358,
+  "grades": {
+   "CORRECT": 285,
+   "INCORRECT": 53,
+   "NOT_ATTEMPTED": 20
+  },
+  "kimi_accuracy": 0.796,
+  "n": 338,
+  "incorrect": 53,
+  "R3_reader_auroc": {
+   "point": 0.737,
+   "ci": [
+    0.662,
+    0.802
+   ],
+   "thr": 0.7,
+   "verdict": "INCONCLUSIVE"
+  },
+  "R4_minus_text": {
+   "point": 0.102,
+   "ci": [
+    0.022,
+    0.193
+   ],
+   "thr": 0.05,
+   "baseline_auroc": 0.636,
+   "baseline": "TF-IDF(answer) trained on Qwen C3-H dev",
+   "verdict": "INCONCLUSIVE",
+   "literal_wording": "PASS"
+  },
+  "reported": {
+   "text_auroc": 0.636,
+   "kimi_nll_auroc": 0.648,
+   "kimi_entropy_auroc": 0.602,
+   "reader_minus_kimi_nll": {
+    "point": 0.089,
+    "ci": [
+     -0.041,
+     0.214
+    ],
+    "thr": 0.05,
+    "baseline_auroc": 0.648,
+    "baseline": "Kimi mean NLL",
+    "verdict": "INCONCLUSIVE",
+    "literal_wording": "INCONCLUSIVE"
+   },
+   "reader_minus_kimi_entropy": {
+    "point": 0.136,
+    "ci": [
+     0.016,
+     0.256
+    ],
+    "thr": 0.05,
+    "baseline_auroc": 0.602,
+    "baseline": "Kimi top-5 entropy",
+    "verdict": "INCONCLUSIVE",
+    "literal_wording": "PASS"
+   },
+   "reader_pre_auroc": 0.685,
+   "drop_vs_self_read": 0.074,
+   "by_qwen_own_grade": {
+    "qwen_CORRECT": {
+     "n": 174,
+     "kimi_incorrect": 7,
+     "reader_auroc": 0.868
+    },
+    "qwen_INCORRECT": {
+     "n": 161,
+     "kimi_incorrect": 45,
+     "reader_auroc": 0.612
+    },
+    "qwen_NOT_ATTEMPTED": {
+     "n": 3,
+     "kimi_incorrect": 1,
+     "reader_auroc": null
+    }
+   },
+   "at_demo_threshold": {
+    "thr": 0.9301,
+    "recall": 0.642,
+    "fpr": 0.305
+   }
+  }
+ }
+}

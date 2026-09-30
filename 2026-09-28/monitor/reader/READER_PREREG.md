@@ -51,4 +51,5 @@ A closed API model's own activations cannot be accessed. **Can frozen probes on 
 - Kimi's C3-H accuracy.
 
 ## Deviations
-(none)
+- **D1 (2026-09-30, after generation, before any rating or evaluation):** 1 of the 144 C1 replies (`k-d163-curt-s2`) came back from the API with empty `content` (finish=stop; all output went to reasoning). It cannot be rated or read, so it is excluded, leaving 143. Not regenerated, to avoid resampling selection.
+- **Implementation note:** the monitor service gained an `x_force_max` parameter so replays cut to N Qwen tokens (120 for C1, 64 for C3-H). Self-check: replaying Qwen's own test items gives C1 mean differing from the offline scores by ≤0.0003, and C3-H within 0.02 near p≈1 (bf16 batch vs single-sequence numerics). Raters see exactly the cut text the reader read (`cut_text`).
