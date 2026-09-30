@@ -40,6 +40,9 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
   background-image:linear-gradient(45deg,transparent 50%,var(--mute) 50%),linear-gradient(135deg,var(--mute) 50%,transparent 50%);
   background-position:calc(100% - 15px) 14px,calc(100% - 10px) 14px;background-size:5px 5px;background-repeat:no-repeat}
 .conv{flex:1;overflow:auto;padding:4px 16px 16px;display:flex;flex-direction:column;gap:10px}
+.scards{display:flex;flex-direction:column;gap:14px;padding-top:4px}.scards h4{font-size:11px;color:var(--mute);font-weight:500;margin-bottom:6px}
+.sc{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:10px 12px;margin-bottom:6px;cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.sc:hover{border-color:var(--line2);box-shadow:0 2px 8px rgba(0,0,0,.05)}.sc b{display:block;font-weight:500;font-size:13px}.sc span{font-size:11.5px;color:var(--mute)}
 .msg{max-width:92%;padding:9px 12px;border-radius:12px;white-space:pre-wrap;line-height:1.6;font-size:13px}
 .msg.user{align-self:flex-end;background:#111;color:#fff;border-radius:14px 14px 4px 14px}
 .msg.assistant{align-self:flex-start;color:var(--ink2);background:var(--panel2);border-radius:14px 14px 14px 4px}
@@ -63,7 +66,9 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
 .ghost:hover{color:var(--ink)}
 
 /* ---------- center: 3D ---------- */
-.stage{position:relative;min-width:0;margin:12px;border-radius:18px;overflow:hidden;background:#f4f4f1;border:1px solid var(--line)}
+.stage{position:relative;min-width:0;margin:12px;border-radius:18px;overflow:hidden;background:#f7f7f5;border:1px solid var(--line)}
+.empty{position:absolute;left:0;right:0;top:46px;text-align:center;pointer-events:none;transition:opacity .4s}
+.empty h3{font:400 26px var(--serif);color:var(--ink);margin-bottom:4px}.empty p{font-size:12.5px;color:var(--mute)}
 #gl{position:absolute;inset:0;width:100%;height:100%;display:block}
 .hud{position:absolute;pointer-events:none;font-size:11px;color:var(--mute)}
 .hud.tl{left:16px;top:14px;display:flex;gap:14px}
@@ -83,7 +88,7 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
 .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);box-shadow:0 1px 2px rgba(0,0,0,.03);transition:border-color .25s,box-shadow .25s}
 .card.alert{border-color:rgba(229,72,77,.5);box-shadow:0 0 0 4px rgba(229,72,77,.08)}
 .card.watch{border-color:rgba(217,119,6,.35)}
-.avatar{position:relative;flex:0 0 auto;height:320px;overflow:hidden;background:radial-gradient(120% 90% at 50% 10%,#ffffff,#f1f1ee)}
+.avatar{position:relative;flex:0 0 auto;height:214px;overflow:hidden;background:radial-gradient(120% 90% at 50% 10%,#ffffff,#f1f1ee)}
 .avatar canvas{position:absolute;inset:0;width:100%;height:100%}
 .avatar .cap{position:absolute;left:10px;top:10px;right:10px;display:flex;justify-content:space-between;align-items:center}
 .avatar .emo{position:absolute;left:10px;right:10px;bottom:10px;display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
@@ -92,9 +97,9 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
 .meter .bar i{display:block;height:100%;width:0;background:var(--ink2);transition:width .2s}
 .pill{display:inline-flex;align-items:center;gap:5px;height:22px;padding:0 9px;border-radius:999px;font-size:11px;font-weight:500;color:var(--mute);background:#f1f1ef}
 .pill.ok{color:#007a32;background:#e6f6ec}.pill.watch{color:#a15c00;background:#fdf1dc}.pill.alert{color:#c4262c;background:#fde8e8}
-.risk{padding:12px 14px}
+.risk{padding:12px 14px 11px}.risk .val.idle{color:var(--faint)}
 .risk .row{display:flex;justify-content:space-between;align-items:center}
-.risk .val{font-family:var(--serif);font-size:38px;font-weight:400;line-height:1.05;letter-spacing:-.02em;margin:6px 0 8px;font-variant-numeric:tabular-nums}
+.risk .val{font-family:var(--serif);font-size:32px;font-weight:400;line-height:1.05;letter-spacing:-.02em;margin:6px 0 8px;font-variant-numeric:tabular-nums}
 .track{position:relative;height:4px;border-radius:3px;background:#efefec}
 .track i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--ink2);transition:width .25s,background .25s}
 .track b{position:absolute;top:-3px;bottom:-3px;width:1.5px;background:var(--ink);opacity:.55}
@@ -130,8 +135,9 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
     <section class="stage" id="stage">
       <canvas id="gl"></canvas>
       <div class="hud tl"><span class="key"><b style="background:var(--bad)"></b>推向敌意</span><span class="key"><b style="background:#5b8cff"></b>拉回</span>
-        <span class="key"><b style="background:#111;height:2px"></b>E01 愤怒头</span><span class="key">柱高 = 头对敌意方向的真实推力</span><span class="key" id="actkey" style="display:none"><b style="background:#111"></b>激活强度（‖W<sub>O</sub>x‖）</span></div>
+        <span class="key"><b style="background:#111;height:2px"></b>E01 愤怒头</span><span class="key" id="actkey" style="display:none"><b style="background:#111"></b>激活强度（‖W<sub>O</sub>x‖）</span></div>
       <div class="toast" id="toast"></div>
+      <div class="empty" id="empty"><h3><em>Watching the model think</em></h3><p>选择场景或输入消息。每根柱子是一个注意力头，只有真正在推动回复的头才会升起。</p></div>
       <div class="hud bl"><div><div style="font-size:11px;color:var(--mute)">当前 token</div><div class="tok" id="tok">—</div></div><div class="focus" id="focus"></div></div>
     </section>
     <aside class="right">
@@ -179,49 +185,52 @@ const headAngle = (L, h) => { const per = NH / NKV, g = Math.floor(h / per), j =
 // x = query heads (grouped by shared KV), z = layers, bar height = real push of that head on the layer's hostility probe.
 const canvas = $("gl"), stage = $("stage"), renderer = new THREE.WebGLRenderer({canvas, antialias:true});
 renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-const scene = new THREE.Scene(); scene.background = new THREE.Color(0xf4f4f1);
+const scene = new THREE.Scene(); scene.background = new THREE.Color(0xf7f7f5);
 const PER = NH / NKV, GAP = 0.9, CW = 0.34, CZ = 0.34;
 const colX = h => { const g = Math.floor(h / PER), j = h % PER; return (g * (PER + GAP) + j) * CW; };
 const W = colX(NH - 1) + CW, D = NL * CZ, X0 = -W / 2, Z0 = -D / 2;
 const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, -100, 200);
 const controls = new OrbitControls(camera, canvas); controls.enableDamping = true; controls.dampingFactor = 0.07; controls.autoRotateSpeed = 0.35;
 controls.enableZoom = true; controls.minZoom = 0.6; controls.maxZoom = 4;
-camera.position.set(-W * 0.9, W * 0.95, D * 0.95); controls.target.set(0, 0.4, 0);
-function resize(){ const r = stage.getBoundingClientRect(), asp = r.width / r.height, v = Math.max(W, D) * 0.78;
-  camera.left = -v * asp; camera.right = v * asp; camera.top = v; camera.bottom = -v; camera.updateProjectionMatrix(); renderer.setSize(r.width, r.height, false); }
+const XA = X0 - 2.4, XB = X0 + W + 0.55 + 16 * 0.085 + 0.4, CX = (XA + XB) / 2;
+camera.position.set(CX - 14, 15, 16); controls.target.set(CX, 0.3, 0.3);
+function resize(){ const r = stage.getBoundingClientRect(), asp = r.width / r.height;
+  camera.lookAt(controls.target); camera.updateMatrixWorld(); const inv = camera.matrixWorldInverse, v3 = new THREE.Vector3();
+  let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+  for (const x of [XA, XB]) for (const z of [Z0 - 0.9, Z0 + D + 0.4]) for (const y of [0, 2.6]){ v3.set(x, y, z).applyMatrix4(inv); x0 = Math.min(x0, v3.x); x1 = Math.max(x1, v3.x); y0 = Math.min(y0, v3.y); y1 = Math.max(y1, v3.y); }
+  const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2 - 0.35; let hw = (x1 - x0) / 2 * 1.08, hh = (y1 - y0) / 2 * 1.2;
+  if (hw / hh > asp) hh = hw / asp; else hw = hh * asp;
+  camera.left = cx - hw; camera.right = cx + hw; camera.top = cy + hh; camera.bottom = cy - hh; camera.updateProjectionMatrix(); renderer.setSize(r.width, r.height, false); }
 new ResizeObserver(resize).observe(stage);
-scene.add(new THREE.HemisphereLight(0xffffff, 0xd9d9d4, 1.05)); const sun = new THREE.DirectionalLight(0xffffff, 0.9); sun.position.set(-4, 10, 6); scene.add(sun);
-const C = { base: new THREE.Color(0xdedfda), hot: new THREE.Color(0xe5484d), cold: new THREE.Color(0x3b82f6), act: new THREE.Color(0x111111), plate: 0xffffff };
-// ground plate per KV group + faint layer lines
-const plateMat = new THREE.MeshStandardMaterial({color: C.plate, roughness: 1});
-for (let g = 0; g < NKV; g++){ const x0 = X0 + colX(g * PER) - CW * 0.35, w = PER * CW + CW * 0.7 - CW * 0.3;
-  const m = new THREE.Mesh(new THREE.BoxGeometry(w, 0.04, D + CZ * 0.4), plateMat); m.position.set(x0 + w / 2 - CW * 0.15, -0.02, 0); scene.add(m); }
-const lines = new THREE.LineBasicMaterial({color: 0xe7e7e3});
+scene.add(new THREE.HemisphereLight(0xffffff, 0xe7e7e2, 1.5)); const sun = new THREE.DirectionalLight(0xffffff, 0.55); sun.position.set(-4, 10, 6); scene.add(sun);
+const C = { base: new THREE.Color(0xf1f1ed), warm: new THREE.Color(0xf59e0b), hot: new THREE.Color(0xe5484d), cold: new THREE.Color(0x3b82f6), act: new THREE.Color(0x18181b), plate: 0xffffff };
+// faint layer lines
+const lines = new THREE.LineBasicMaterial({color: 0xecece8});
 for (let L = 0; L <= NL; L += Math.max(1, Math.round(NL / 12))){ const z = Z0 + L * CZ; const gm = new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(X0 - 1.4, 0.001, z), new THREE.Vector3(X0 + W + 1.4, 0.001, z)]); scene.add(new THREE.Line(gm, lines)); }
 // head bars
-const heads = new THREE.InstancedMesh(new THREE.BoxGeometry(CW * 0.72, 1, CZ * 0.72), new THREE.MeshStandardMaterial({color: 0xffffff, roughness: 0.55, metalness: 0}), NL * NH);
+const heads = new THREE.InstancedMesh(new THREE.BoxGeometry(CW * 0.8, 1, CZ * 0.8), new THREE.MeshStandardMaterial({color: 0xffffff, roughness: 0.55, metalness: 0}), NL * NH);
 const headV = new Float32Array(NL * NH), headT = new Float32Array(NL * NH), d = new THREE.Object3D();
 function placeHead(i, hgt){ const L = Math.floor(i / NH), h = i % NH; d.position.set(X0 + colX(h), hgt / 2, Z0 + L * CZ + CZ / 2); d.scale.set(1, hgt, 1); d.updateMatrix(); heads.setMatrixAt(i, d.matrix); }
-for (let i = 0; i < NL * NH; i++){ placeHead(i, 0.04); heads.setColorAt(i, C.base); }
+for (let i = 0; i < NL * NH; i++){ placeHead(i, 0.015); heads.setColorAt(i, C.base); }
 scene.add(heads);
 // E01 anger heads: small dark ticks on the ground next to the bar
 const tick = new THREE.MeshBasicMaterial({color: 0x111111});
 for (let L = 0; L < NL; L++) for (let h = 0; h < NH; h++) if (B3.has(`L${L}H${h}`)){ const m = new THREE.Mesh(new THREE.BoxGeometry(CW * 0.72, 0.01, 0.035), tick); m.position.set(X0 + colX(h), 0.005, Z0 + L * CZ + CZ * 0.08); scene.add(m); }
 // layer readout ribbon (left) and neuron heat strip (right)
 const beam = [], ribMat = [];
-for (let L = 0; L < NL; L++){ const mat = new THREE.MeshStandardMaterial({color: C.base.clone(), roughness: 1}); const m = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.06, CZ * 0.86), mat);
+for (let L = 0; L < NL; L++){ const mat = new THREE.MeshStandardMaterial({color: C.base.clone(), roughness: 1}); const m = new THREE.Mesh(new THREE.BoxGeometry(0.42, 0.03, CZ * 0.8), mat);
   m.position.set(X0 - 0.95, 0.03, Z0 + L * CZ + CZ / 2); scene.add(m); beam.push({m: mat, mesh: m, v: 0, tv: 0}); }
-const NBIN = 24, nbar = new THREE.InstancedMesh(new THREE.BoxGeometry(0.05, 1, CZ * 0.6), new THREE.MeshStandardMaterial({color: 0xffffff, roughness: .6}), NL * NBIN);
+const NBIN = 16, nbar = new THREE.InstancedMesh(new THREE.BoxGeometry(0.07, 1, CZ * 0.8), new THREE.MeshStandardMaterial({color: 0xffffff, roughness: .6}), NL * NBIN);
 const nV = new Float32Array(NL * NBIN), nT = new Float32Array(NL * NBIN);
-function placeN(i, hgt){ const L = Math.floor(i / NBIN), b = i % NBIN; d.position.set(X0 + W + 0.5 + b * 0.065, hgt / 2, Z0 + L * CZ + CZ / 2); d.scale.set(1, hgt, 1); d.updateMatrix(); nbar.setMatrixAt(i, d.matrix); }
-for (let i = 0; i < NL * NBIN; i++){ placeN(i, 0.02); nbar.setColorAt(i, C.base); } scene.add(nbar);
+function placeN(i, hgt){ const L = Math.floor(i / NBIN), b = i % NBIN; d.position.set(X0 + W + 0.55 + b * 0.085, hgt / 2, Z0 + L * CZ + CZ / 2); d.scale.set(1, hgt, 1); d.updateMatrix(); nbar.setMatrixAt(i, d.matrix); }
+for (let i = 0; i < NL * NBIN; i++){ placeN(i, 0.015); nbar.setColorAt(i, C.base); } scene.add(nbar);
 function label(txt, x, z, size = 0.5, col = "#6b6b67"){ const c = document.createElement("canvas"); c.width = 256; c.height = 64; const g = c.getContext("2d");
   g.fillStyle = col; g.font = "500 40px Inter,-apple-system,\"PingFang SC\",sans-serif"; g.textAlign = "center"; g.fillText(txt, 128, 46);
   const sp = new THREE.Sprite(new THREE.SpriteMaterial({map: new THREE.CanvasTexture(c), transparent: true, depthWrite: false})); sp.scale.set(size * 4, size, 1); sp.position.set(x, 0.05, z); scene.add(sp); }
 for (let L = 0; L < NL; L += Math.max(1, Math.round(NL / 6))) label("L" + L, X0 - 2.0, Z0 + L * CZ + CZ / 2);
 label("L" + (NL - 1), X0 - 2.0, Z0 + (NL - 1) * CZ + CZ / 2);
 for (let g = 0; g < NKV; g++) label("KV" + g, X0 + colX(g * PER) + (PER - 1) * CW / 2, Z0 - 0.6, 0.42);
-label("层读数", X0 - 0.95, Z0 - 0.6, 0.42); label("神经元", X0 + W + 0.5 + NBIN * 0.065 / 2, Z0 - 0.6, 0.42);
+label("层读数", X0 - 0.95, Z0 - 0.6, 0.42); label("神经元", X0 + W + 0.55 + NBIN * 0.085 / 2, Z0 - 0.6, 0.42);
 
 let MODE = "safety", lastI = null, alarm = 0;
 function pulse(){}
@@ -239,13 +248,16 @@ function applyInner(I){
 const tc = new THREE.Color();
 function step(dt){
   const k = 1 - Math.exp(-dt / 0.16), act = MODE === "activity";
-  beam.forEach(b => { b.v += (b.tv - b.v) * k; const t = Math.min(1, Math.max(0, b.v)); tc.copy(C.base).lerp(act ? C.act : C.hot, act ? t : Math.max(0, (t - .1) / .9)); b.m.color.copy(tc); b.mesh.scale.y = 1 + 5 * t; b.mesh.position.y = 0.03 * (1 + 5 * t); });
+  beam.forEach(b => { b.v += (b.tv - b.v) * k; const t = Math.min(1, Math.max(0, b.v)); tc.copy(C.base).lerp(act ? C.act : C.hot, act ? t : Math.max(0, (t - .1) / .9)); b.m.color.copy(tc); b.mesh.scale.y = 1 + 12 * t; b.mesh.position.y = 0.015 * (1 + 12 * t); });
   for (let i = 0; i < headV.length; i++){ headV[i] += (headT[i] - headV[i]) * k; const a = Math.max(-1, Math.min(1, headV[i]));
-    placeHead(i, 0.04 + 2.2 * Math.abs(a) ** 0.9);
-    if (act) tc.copy(C.base).lerp(C.act, Math.abs(a) ** 0.7); else if (a > 0) tc.copy(C.base).lerp(C.hot, Math.min(1, a * 1.4) ** 0.8); else tc.copy(C.base).lerp(C.cold, Math.min(1, -a * 1.4) ** 0.8);
+    const m = Math.max(0, (Math.abs(a) - 0.12) / 0.88);
+    placeHead(i, 0.015 + 2.6 * m ** 0.85);
+    if (act) tc.copy(C.base).lerp(C.act, m ** 0.6);
+    else if (a > 0) m < 0.5 ? tc.copy(C.base).lerp(C.warm, m * 2) : tc.copy(C.warm).lerp(C.hot, (m - 0.5) * 2);
+    else tc.copy(C.base).lerp(C.cold, Math.min(1, m * 1.6));
     heads.setColorAt(i, tc); }
   heads.instanceMatrix.needsUpdate = true; heads.instanceColor.needsUpdate = true;
-  for (let i = 0; i < nV.length; i++){ nV[i] += (nT[i] - nV[i]) * k; const a = Math.max(-1, Math.min(1, nV[i])); placeN(i, 0.02 + 1.2 * Math.abs(a));
+  for (let i = 0; i < nV.length; i++){ nV[i] += (nT[i] - nV[i]) * k; const a = Math.max(-1, Math.min(1, nV[i])); placeN(i, 0.015 + 0.5 * Math.abs(a));
     tc.copy(C.base).lerp(act ? C.act : (a >= 0 ? C.hot : C.cold), Math.min(1, Math.abs(a) * 1.3)); nbar.setColorAt(i, tc); }
   nbar.instanceMatrix.needsUpdate = true; nbar.instanceColor.needsUpdate = true;
 }
@@ -262,7 +274,7 @@ function loadAvatar(f){ vl.load("/vrm/" + f, g => { if (vrm){ avS.remove(vrm.sce
   vrm = g.userData.vrm; VRMUtils.rotateVRM0(vrm); avS.add(vrm.scene); const s = vrm.meta?.metaVersion === "0" ? -1 : 1, h = vrm.humanoid;
   h.getNormalizedBoneNode("leftUpperArm")?.rotation.set(0, 0, s * -1.2); h.getNormalizedBoneNode("rightUpperArm")?.rotation.set(0, 0, s * 1.2);
   vrm.update(0); const hd = h.getRawBoneNode("head") || h.getNormalizedBoneNode("head"), p = new THREE.Vector3(); hd ? hd.getWorldPosition(p) : p.set(0, 1.35, 0);
-  avCam.position.set(0, p.y + 0.03, p.z + 1.2); avCam.lookAt(0, p.y - 0.04, p.z); }, undefined, e => console.error(e)); }
+  avCam.position.set(0, p.y + 0.02, p.z + 0.95); avCam.lookAt(0, p.y - 0.02, p.z); }, undefined, e => console.error(e)); }
 let saved = null; try { saved = localStorage.getItem("imAvatar"); } catch (_) {}
 if (saved) $("avsel").value = saved; $("avsel").onchange = e => { try { localStorage.setItem("imAvatar", e.target.value); } catch (_) {} loadAvatar(e.target.value); }; loadAvatar($("avsel").value);
 const eT = {happy:0, sad:0, angry:0, neutral:1}, eC = {...eT}; let talk = 0, blink = 3, at = 0;
@@ -292,11 +304,12 @@ if (TH.C3H_pre !== undefined) $("rc_h3").style.display = "";
 ["c2","pre","c1","h3"].forEach(k => { $("t_"+k).style.left = Math.min(99, R[k] * 100) + "%"; $("th_"+k).textContent = "阈值 " + R[k].toFixed(3); });
 function risk(k, v){
   const st = v >= R[k] ? "alert" : v >= R[k] * .6 ? "watch" : "ok";
-  $("v_"+k).textContent = v.toFixed(3); $("f_"+k).style.width = Math.min(100, v * 100) + "%";
+  $("v_"+k).textContent = v.toFixed(3); $("v_"+k).classList.remove("idle"); $("f_"+k).style.width = Math.min(100, v * 100) + "%";
   $("f_"+k).style.background = st === "alert" ? "var(--bad)" : st === "watch" ? "var(--warn)" : "var(--ink)";
   $("st_"+k).className = "pill " + st; $("st_"+k).textContent = {ok:"正常", watch:"关注", alert:"报警"}[st];
   $("rc_"+k).className = "card risk " + (st === "alert" ? "alert" : st === "watch" ? "watch" : "");
 }
+function idle(){ ["c2","pre","c1","h3"].forEach(k => { if ($("v_"+k)) { $("v_"+k).textContent = "—"; $("v_"+k).classList.add("idle"); } }); }
 function resetRisk(){ R.h3 = TH.C3H_pre ?? 1; if ($("ph_h3")) { $("ph_h3").textContent = "回复前"; $("t_h3").style.left = Math.min(99, R.h3 * 100) + "%"; $("th_h3").textContent = "阈值 " + R.h3.toFixed(3); } ["c2","pre","c1","h3"].forEach(k => { $("v_"+k).textContent = "—"; $("f_"+k).style.width = "0"; $("st_"+k).className = "pill"; $("st_"+k).textContent = "—"; $("rc_"+k).className = "card risk"; }); }
 let spark = [];
 function drawSpark(){ const c = $("spark"), g = c.getContext("2d"), W = c.width, H = c.height; g.clearRect(0, 0, W, H); if (spark.length < 2) return;
@@ -309,21 +322,27 @@ function toast(html, kind){ const t = $("toast"); t.innerHTML = html; t.classNam
 
 // ================= conversation =================
 let conv = [], presets = [];
-function renderConv(extra){ $("conv").innerHTML = conv.map(m => `<div class="msg ${m.role}">${m.role === "system" ? "系统 · " : ""}${esc(m.content)}</div>`).join("") + (extra || ""); $("conv").scrollTop = 1e9; }
+function renderConv(extra){ if (!conv.length && !extra){ renderCards(); return; } $("conv").innerHTML = conv.map(m => `<div class="msg ${m.role}">${m.role === "system" ? "系统 · " : ""}${esc(m.content)}</div>`).join("") + (extra || ""); $("conv").scrollTop = 1e9; }
 presets = await (await fetch("/presets")).json();
+const GDESC = {"C1": "陪伴对话里历史被带偏，看模型会不会变得敌意", "C2": "用户消息里的真实痛苦，不靠关键词", "C3": "事实问答，看模型是否在编造"};
+function renderCards(){ const groups = {}; presets.forEach((p, i) => (groups[p.group] ||= []).push([p, i]));
+  $("conv").innerHTML = '<div class="scards">' + Object.entries(groups).map(([g, list]) => `<div><h4>${esc(g.split("（")[0])} · ${GDESC[g.slice(0, 2)] || ""}</h4>` +
+    list.slice(0, 4).map(([p, i]) => `<button class="sc" data-i="${i}"><b>${esc(p.label)}</b><span>${esc(p.messages[p.messages.length - 1].content.slice(0, 38))}…</span></button>`).join("") + "</div>").join("") + "</div>";
+  $("conv").querySelectorAll(".sc").forEach(b => b.onclick = () => { $("scen").value = b.dataset.i; $("scen").dispatchEvent(new Event("change")); }); }
 $("scen").innerHTML = '<option value="">选择场景…</option>' + presets.map((p, i) => `<option value="${i}">${esc(p.group.split("（")[0])} · ${esc(p.label)}</option>`).join("");
-$("scen").onchange = e => { if (e.target.value === "") return; conv = JSON.parse(JSON.stringify(presets[+e.target.value].messages)); renderConv(); resetRisk(); };
+$("scen").onchange = e => { if (e.target.value === "") return; conv = JSON.parse(JSON.stringify(presets[+e.target.value].messages)); renderConv(); resetRisk(); idle(); };
 document.querySelectorAll("#viewseg button").forEach(b => b.onclick = () => { document.querySelectorAll("#viewseg button").forEach(x => x.classList.toggle("on", x === b)); MODE = b.dataset.v;
   $("actkey").style.display = MODE === "activity" ? "" : "none"; if (lastI) applyInner(lastI); });
 $("msg").addEventListener("input", e => { e.target.style.height = "auto"; e.target.style.height = Math.min(120, e.target.scrollHeight) + "px"; });
 $("msg").addEventListener("keydown", e => { if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) send(); });
-$("go").onclick = send; $("clear").onclick = () => { conv = []; renderConv(); resetRisk(); $("scen").value = ""; };
+$("go").onclick = send; $("clear").onclick = () => { conv = []; renderConv(); resetRisk(); $("scen").value = ""; $("empty").style.opacity = 1; idle(); };
+renderConv(); idle();
 
 async function send(){
   const text = $("msg").value.trim(); if (text) conv.push({role:"user", content:text});
   if (!conv.length || conv[conv.length - 1].role !== "user") return;
   $("msg").value = ""; $("msg").style.height = "auto"; $("go").disabled = true; resetRisk(); window._h3 = false; spark = []; drawSpark(); alarm = 0;
-  renderConv('<div class="msg assistant live" id="live"></div>'); const liveEl = $("live");
+  $("empty").style.opacity = 0; renderConv('<div class="msg assistant live" id="live"></div>'); const liveEl = $("live");
   $("status").textContent = "生成中"; $("livedot").style.background = "var(--accent)"; $("avstate").className = "pill"; $("avstate").textContent = "读取中";
   const res = await fetch("/v1/chat/completions", {method:"POST", headers:{"Content-Type":"application/json"},
     body: JSON.stringify({messages: conv, stream: true, max_tokens: 200, temperature: 0.7, x_action: $("stop").checked ? "stop" : "log"})});
