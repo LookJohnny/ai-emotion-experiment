@@ -16,16 +16,17 @@ Following the survey (`../LLM_VIZ_SURVEY.md`): Transformer Explainer's controlle
   - T: conversation + reply + monitor score/tier.
   - T+2D: T plus the layer × token heatmap replay.
   - T+3D: T plus the 3D pathway replay.
-- **Blocks**: each participant does 3 blocks × 8 trials. Condition order is counterbalanced by a 3×3 Latin square (by participant number mod 3). Trials are assigned to blocks by a fixed rotation (by participant number mod 3), so every trial appears under every condition equally often.
+- **Blocks**: each participant does 3 blocks × 8 trials. The 24 formal trials are split into 3 fixed sets (true/false alerts 5/3, 5/3, 6/2). Condition order follows a 3×3 Latin square by `participant number mod 3`. The set for block b is `(b + ⌊participant number / 3⌋) mod 3`. Every 9 participants therefore complete a full condition × set balance. Trial order within a block is shuffled by participant number.
 - **Practice**: 2 trials before the formal blocks (from the val set, not analysed), one per condition type, to learn how to operate each view.
 
 ## 3. Stimuli (fixed, pre-recorded)
 - Drawn from the V1.1 C1 **sealed test set** (companion domain; the reply text has two blind LLM hostility ratings). Selection script: `select_stimuli.py`, random seed fixed.
-- 24 formal trials, all "cases where the monitor alerted" (monitor item score ≥ demo threshold 0.237):
+- 24 formal trials (at most 3 per template), all "cases where the monitor alerted" (monitor item score ≥ demo threshold 0.237):
   - **16 true alerts**: rating label = hostile.
   - **8 false alerts**: rating label = not hostile. These test whether people can spot a false alarm; over-trusting participants will call them all real.
 - Replays: the fixed reply text is teacher-forced back into the same model (Qwen3-4B, RTX 4090), and every x_risk frame per token is recorded (the same fields the live monitor shows). Script: `record_replays.py`. The replay is a faithful reproduction of the monitor's readings on that exact text.
-- **Trigger-span gold standard**: two blind LLM raters independently mark the character spans of the true-alert replies that "blame, belittle or sneer at the user". The union of the two raters' marks is the gold span; each rater's IoU against the other is reported. Human spot-check rules follow V1.1.
+- **Borderline trials (recorded before data collection)**: the two span annotators marked mild hostile spans in false-alert trials s21, s22 and s23 (and practice p25). These trials' original ratings sit just below the threshold. A **sensitivity analysis** is pre-registered: the primary analysis includes all trials, then a secondary analysis excludes s21–s23, and both are reported.
+- **Trigger-span gold standard**: two blind LLM raters independently mark the character spans of the true-alert replies that "blame, belittle or sneer at the user". The union of the two raters' marks is the gold span (`gold_spans.json`). Inter-rater character IoU = 0.80 (21 trials with spans). Human spot-check rules follow V1.1.
 
 ## 4. Per-trial task (3 steps)
 1. **Judgement**: "Is this alert correct? Did the reply really show hostility toward the user?" Yes / No.
@@ -46,7 +47,7 @@ Time is logged automatically (from trial display to submit). The answer is never
   - Accuracy on practice trials < 50% and every formal answer the same → excluded.
   - Median time per trial < 3 seconds → excluded.
   - Exclusion counts are reported.
-- **Sample size**: 24 people (a multiple of the Latin square). Rough estimate: with a within-subjects effect of about 10 percentage points and 24 × 8 trials per condition, power is about 0.7. The sample size is not changed after seeing results.
+- **Sample size**: 27 people (a multiple of the 3 × 3 full balance). Rough estimate: with a within-subjects effect of about 10 percentage points and 24 × 8 trials per condition, power is about 0.7. The sample size is not changed after seeing results.
 
 ## 6. Participants and ethics
 - Adults who use AI products at work (support / operations / product / engineering). No knowledge of LLM internals is required.
@@ -56,7 +57,7 @@ Time is logged automatically (from trial display to submit). The answer is never
 ## 7. Materials and data
 - Task page: `/study` (served by the monitor service or as a static page). Answers are written to `study/responses/*.jsonl` and can also be downloaded as JSON locally.
 - Stimuli and replays: `study/trials.json`, `study/replays/*.json`, `study/gold_spans.json`.
-- The analysis script `analyze.py` will be written and committed before data collection.
+- The analysis script `analyze.py` was committed before data collection. It was dry-run on 9 simulated participants (results meaningless, only to confirm the code runs). The automated self-test session was excluded by the RT rule and moved out of the data directory.
 
 ## Deviations
 (none)

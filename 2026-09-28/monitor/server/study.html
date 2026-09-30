@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monitor Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0b0e;--panel:#111319;--panel2:#171a21;--line:rgba(255,255,255,.07);--line2:rgba(255,255,255,.13);--ink:#eceef3;--ink2:#b9c0cc;--mute:#7f8795;--faint:#4f5663;
+  --accent:#22c55e;--warn:#f5a524;--bad:#ff4d5e;--serif:"Instrument Serif","Times New Roman",serif;--sans:"Inter",-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+*{box-sizing:border-box;margin:0}html,body{height:100%;background:var(--bg);color:var(--ink);font:14px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+button,input,textarea{font:inherit;color:inherit}
+.top{height:52px;display:flex;align-items:center;gap:14px;padding:0 20px;border-bottom:1px solid var(--line)}
+.brand{font-family:var(--serif);font-size:22px}.brand em{font-style:italic}
+.glyph{width:24px;height:24px;border-radius:7px;background:var(--accent);color:#fff;display:grid;place-items:center;font:600 13px var(--sans);margin-right:8px}
+.progress{flex:1;height:4px;background:rgba(255,255,255,.07);border-radius:3px;overflow:hidden;max-width:360px;margin-left:auto}.progress i{display:block;height:100%;width:0;background:var(--ink2);transition:width .3s}
+.meta{color:var(--mute);font-size:12px}
+.screen{display:none;height:calc(100% - 52px)}.screen.on{display:flex}
+.center{margin:auto;max-width:620px;padding:32px}
+h1{font:400 44px/1.1 var(--serif);margin-bottom:14px}h1 em{font-style:italic}
+h2{font:400 28px/1.2 var(--serif);margin-bottom:10px}
+p{color:var(--ink2);margin-bottom:12px}.small{font-size:12px;color:var(--mute)}
+.btn{border:0;border-radius:12px;padding:10px 20px;background:var(--accent);color:#fff;cursor:pointer;font-weight:500;box-shadow:inset 0 -2px 0 rgba(0,0,0,.2)}
+.btn:disabled{opacity:.35;cursor:default}.btn.ghost{background:transparent;border:1px solid var(--line2);box-shadow:none;color:var(--ink)}
+.field{display:flex;gap:10px;align-items:center;margin:16px 0}
+.field input[type=number]{width:120px;height:38px;border-radius:10px;border:1px solid var(--line2);background:var(--panel);padding:0 12px}
+label.chk{display:flex;gap:8px;align-items:flex-start;color:var(--ink2);font-size:13px;margin:10px 0}
+/* trial */
+.trial{width:100%;display:grid;grid-template-columns:440px 1fr;min-height:0}
+.textcol{display:flex;flex-direction:column;border-right:1px solid var(--line);min-height:0}
+.alert{margin:14px 16px 6px;padding:10px 12px;border-radius:12px;background:rgba(255,77,94,.08);border:1px solid rgba(255,77,94,.35);font-size:13px}
+.alert b{color:#ff8a95;font-weight:500}.alert .num{font-variant-numeric:tabular-nums}
+.hist{flex:1;overflow:auto;padding:6px 16px 10px;display:flex;flex-direction:column;gap:8px}
+.m{max-width:92%;padding:8px 11px;border-radius:12px;font-size:13px;white-space:pre-wrap}
+.m.u{align-self:flex-end;background:#232733}.m.a{align-self:flex-start;background:var(--panel);border:1px solid var(--line);color:var(--ink2)}
+.m.sys{color:var(--faint);font-size:11.5px;padding:0}
+.reply{align-self:stretch;border:1px solid var(--line2);background:var(--panel2);border-radius:12px;padding:10px 12px;white-space:pre-wrap;line-height:1.75;user-select:text;cursor:text}
+.reply .who{display:block;font-size:11px;color:var(--mute);margin-bottom:4px;user-select:none}
+.reply mark{background:rgba(139,149,255,.35);color:inherit;border-radius:3px}
+.vizcol{position:relative;min-width:0;display:flex;flex-direction:column}
+.viz{flex:1;min-height:0;margin:12px 12px 0 12px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#07080b;position:relative}
+.viz iframe{width:100%;height:100%;border:0;display:block}
+.viz .tonly{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:var(--mute)}
+.viz .tonly .big{font:400 64px var(--serif);color:var(--ink)}
+.answer{margin:12px;padding:14px 16px;border-radius:14px;background:var(--panel);border:1px solid var(--line);display:grid;grid-template-columns:1fr 1.3fr 1fr auto;gap:18px;align-items:end}
+.q .qt{font-size:12px;color:var(--mute);margin-bottom:8px}
+.opts{display:flex;gap:6px;flex-wrap:wrap}
+.opt{border:1px solid var(--line2);background:transparent;border-radius:10px;padding:6px 12px;cursor:pointer;color:var(--ink2);min-width:38px}
+.opt.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.sel{font-size:12.5px;color:var(--ink2);min-height:38px;border:1px dashed var(--line2);border-radius:10px;padding:8px 10px;max-height:64px;overflow:auto}
+.sel.empty{color:var(--faint)}
+@media (max-width:1100px){.trial{grid-template-columns:360px 1fr}.answer{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header class="top"><span class="glyph">I</span><span class="brand"><em>Interior</em> Monitor · 用户研究</span><div class="progress"><i id="prog"></i></div><span class="meta" id="meta"></span></header>
+
+<!-- consent -->
+<section class="screen on" id="s_consent"><div class="center">
+  <h1>判断 AI 的<em>报警</em>是否可信</h1>
+  <p>一个监测系统在读取 AI 模型的内部状态，当它认为 AI 的回复对用户带有敌意（指责、贬低、嘲讽）时会报警。你的任务是判断每次报警是否正确，并指出回复中最能体现敌意的那一段。</p>
+  <p>整个过程约 25–35 分钟：2 道练习题，然后 3 组、每组 8 道题。每组会用不同的方式展示模型内部，每组开始前有说明。</p>
+  <p class="small">说明：部分材料是 AI 在陪伴场景中带有贬低语气的回复。我们不收集任何身份信息，只记录你输入的编号和作答。你可以随时退出。</p>
+  <div class="field"><span class="small">被试编号</span><input type="number" id="pid" min="0" max="999" placeholder="例如 7"></div>
+  <label class="chk"><input type="checkbox" id="agree">我已阅读以上说明，自愿参加。</label>
+  <button class="btn" id="start" disabled>开始</button>
+</div></section>
+
+<!-- block intro -->
+<section class="screen" id="s_intro"><div class="center">
+  <h2 id="in_title"></h2><p id="in_body"></p><p class="small" id="in_note"></p>
+  <button class="btn" id="in_go">开始这一组</button>
+</div></section>
+
+<!-- trial -->
+<section class="screen" id="s_trial"><div class="trial">
+  <div class="textcol">
+    <div class="alert" id="t_alert"></div>
+    <div class="hist" id="t_hist"></div>
+  </div>
+  <div class="vizcol">
+    <div class="viz" id="t_viz"></div>
+    <div class="answer">
+      <div class="q"><div class="qt">① 这次报警正确吗？（回复真的对用户有敌意）</div><div class="opts" id="q1"><button class="opt" data-v="1">正确</button><button class="opt" data-v="0">误报</button></div></div>
+      <div class="q"><div class="qt">② 在左侧回复中<b>拖选</b>最能体现敌意的一段</div><div class="sel empty" id="q2">尚未选择</div>
+        <div class="opts" style="margin-top:6px"><button class="opt" id="q2none">没有敌意内容</button></div></div>
+      <div class="q"><div class="qt">③ 你有多确定？</div><div class="opts" id="q3"></div></div>
+      <button class="btn" id="t_next" disabled>提交</button>
+    </div>
+  </div>
+</div></section>
+
+<!-- post-block rating -->
+<section class="screen" id="s_rate"><div class="center">
+  <h2>这一组的展示方式</h2>
+  <p>你觉得这种展示方式在多大程度上帮助你<em>理解模型为什么报警</em>？</p>
+  <div class="opts" id="r1" style="margin:14px 0"></div><p class="small">1 = 完全没有帮助，7 = 非常有帮助</p>
+  <button class="btn" id="r_next" disabled>继续</button>
+</div></section>
+
+<!-- done -->
+<section class="screen" id="s_done"><div class="center">
+  <h1>完成，<em>谢谢</em>。</h1><p id="d_msg">正在提交…</p>
+  <button class="btn ghost" id="d_dl">下载我的作答（备份）</button>
+</div></section>
+
+<script type="module">
+const $ = id => document.getElementById(id), esc = s => s.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const [TR, DS, INFO] = await Promise.all([fetch("/study/trials").then(r => r.json()), fetch("/study/design").then(r => r.json()), fetch("/info").then(r => r.json())]);
+const byId = Object.fromEntries(TR.map(t => [t.trial_id, t])), NQ = (INFO.neg_quantiles || {}).C1_mean;
+const pctOf = v => { if (!NQ || v == null) return null; let i = 0; while (i < NQ.length - 1 && NQ[i + 1] <= v) i++; return Math.min(100, i); };
+const COND = {T: {name: "纯文本", body: "你将只看到对话、回复和监测器给出的分数。请仅凭这些信息作答。", note: ""},
+  "2D": {name: "2D 热力图", body: "右侧是逐层热力图：纵轴是模型的 36 层，横轴是回复里的每个字，越亮表示该层越倾向“敌意”。虚线标出监测器确认报警的位置。可以拖动底部滑块查看任意位置，悬停格子看细节。", note: "热力图来自模型的真实内部读数，但它本身也可能出错。"},
+  "3D": {name: "3D 通路", body: "右侧是模型内部的 3D 视图：每个环是一层，环上的点是注意力头；发光的头在推动回复变得敌意，连线表示后层实际读取了前层的哪些头。可以拖动旋转，底部滑块可逐字查看。", note: "3D 视图来自模型的真实内部读数，但它本身也可能出错。"}};
+let S = null;   // session
+function rng(seed){ let x = seed * 2654435761 % 4294967296 || 1; return () => (x = (x * 1664525 + 1013904223) % 4294967296) / 4294967296; }
+function plan(pid){
+  const order = DS.latin[pid % 3], rot = Math.floor(pid / 3) % 3, rnd = rng(pid + 17);
+  const blocks = [0, 1, 2].map(b => { const ids = DS.sets[(b + rot) % 3].slice(); for (let i = ids.length - 1; i > 0; i--){ const j = Math.floor(rnd() * (i + 1)); [ids[i], ids[j]] = [ids[j], ids[i]]; } return {cond: order[b], ids}; });
+  const prac = TR.filter(t => t.phase === "practice").map(t => t.trial_id);
+  return [{cond: "PRACTICE", ids: prac, practice: true}, ...blocks];
+}
+function show(id){ document.querySelectorAll(".screen").forEach(s => s.classList.toggle("on", s.id === id)); }
+$("pid").oninput = $("agree").onchange = () => $("start").disabled = !($("pid").value !== "" && $("agree").checked);
+$("start").onclick = () => { const pid = +$("pid").value; S = {participant: pid, started: new Date().toISOString(), plan: plan(pid), b: 0, k: 0, trials: [], ratings: [], ua: navigator.userAgent};
+  $("meta").textContent = `被试 ${pid}`; nextBlock(); };
+const total = () => S.plan.reduce((a, b) => a + b.ids.length, 0), doneN = () => S.trials.length;
+function nextBlock(){
+  if (S.b >= S.plan.length) return finish();
+  const B = S.plan[S.b]; S.k = 0;
+  if (B.practice){ $("in_title").textContent = "练习（2 题，不计分）"; $("in_body").textContent = "先熟悉任务。练习题会分别用 2D 热力图和 3D 通路展示，帮助你了解两种视图如何操作。"; $("in_note").textContent = ""; }
+  else { const c = COND[B.cond]; $("in_title").textContent = `第 ${S.b} 组 · ${c.name}`; $("in_body").textContent = c.body; $("in_note").textContent = c.note; }
+  show("s_intro");
+}
+$("in_go").onclick = () => runTrial();
+let cur = null;
+function runTrial(){
+  const B = S.plan[S.b], tid = B.ids[S.k], t = byId[tid], cond = B.practice ? (S.k === 0 ? "2D" : "3D") : B.cond;
+  cur = {trial_id: tid, block: S.b, condition: cond, practice: !!B.practice, answer: null, span: null, none: false, conf: null, t0: performance.now()};
+  const pc = pctOf(t.score);
+  $("t_alert").innerHTML = `<b>监测器报警 · 敌意 · 二档确认</b><br>逐字均值 <span class="num">${(t.score ?? 0).toFixed(3)}</span>${pc != null ? `（高于 ${pc >= 99 ? ">99" : pc}% 的正常回复）` : ""}${t.confirm_token ? ` · 第 ${t.confirm_token} 个字确认` : ""}`;
+  $("t_hist").innerHTML = `<div class="m sys">系统 · ${esc(t.system)}</div>` + t.messages.map(m => `<div class="m ${m.role === "user" ? "u" : "a"}">${esc(m.content)}</div>`).join("") +
+    `<div class="reply" id="t_reply"><span class="who">AI 的回复（请在这里拖选）</span><span id="t_rtext">${esc(t.reply)}</span></div>`;
+  $("t_hist").scrollTop = 1e9;
+  $("t_viz").innerHTML = cond === "T" ? `<div class="tonly"><div><div class="big">${(t.score ?? 0).toFixed(3)}</div><div>监测器分数（本组不展示模型内部）</div></div></div>`
+    : `<iframe src="/monitor?replay=${encodeURIComponent(tid)}&view=${cond === "2D" ? "2d" : "3d"}" title="viz"></iframe>`;
+  document.querySelectorAll("#q1 .opt").forEach(b => b.classList.remove("on")); $("q2").textContent = "尚未选择"; $("q2").className = "sel empty"; $("q2none").classList.remove("on");
+  $("q3").innerHTML = [1, 2, 3, 4, 5, 6, 7].map(v => `<button class="opt" data-v="${v}">${v}</button>`).join("");
+  $("q3").querySelectorAll(".opt").forEach(b => b.onclick = () => { $("q3").querySelectorAll(".opt").forEach(x => x.classList.toggle("on", x === b)); cur.conf = +b.dataset.v; check(); });
+  $("t_next").disabled = true; $("prog").style.width = (doneN() / total() * 100) + "%"; show("s_trial");
+}
+document.querySelectorAll("#q1 .opt").forEach(b => b.onclick = () => { document.querySelectorAll("#q1 .opt").forEach(x => x.classList.toggle("on", x === b)); cur.answer = +b.dataset.v; check(); });
+$("q2none").onclick = () => { cur.none = !cur.none; $("q2none").classList.toggle("on", cur.none); if (cur.none){ cur.span = null; $("q2").textContent = "（标记为没有敌意内容）"; $("q2").className = "sel"; renderMark(); } check(); };
+document.addEventListener("mouseup", () => { if (!cur) return; const el = $("t_rtext"); const sel = window.getSelection(); if (!el || !sel.rangeCount || sel.isCollapsed) return;
+  const r = sel.getRangeAt(0); if (!el.contains(r.startContainer) || !el.contains(r.endContainer)) return;
+  const pre = document.createRange(); pre.selectNodeContents(el); pre.setEnd(r.startContainer, r.startOffset); const s0 = pre.toString().length, s1 = s0 + r.toString().length;
+  if (s1 - s0 < 1) return; cur.span = [s0, s1]; cur.none = false; $("q2none").classList.remove("on"); $("q2").textContent = "「" + byId[cur.trial_id].reply.slice(s0, s1) + "」"; $("q2").className = "sel"; sel.removeAllRanges(); renderMark(); check(); });
+function renderMark(){ const t = byId[cur.trial_id].reply, el = $("t_rtext"); if (!cur.span){ el.innerHTML = esc(t); return; } const [a, b] = cur.span; el.innerHTML = esc(t.slice(0, a)) + "<mark>" + esc(t.slice(a, b)) + "</mark>" + esc(t.slice(b)); }
+function check(){ $("t_next").disabled = !(cur.answer !== null && (cur.span || cur.none) && cur.conf); }
+$("t_next").onclick = () => { cur.rt_ms = Math.round(performance.now() - cur.t0); S.trials.push(cur); cur = null; S.k++;
+  try { localStorage.setItem("study_backup_" + S.participant, JSON.stringify(S)); } catch (_) {}
+  const B = S.plan[S.b]; if (S.k < B.ids.length) return runTrial();
+  if (B.practice){ S.b++; return nextBlock(); }
+  $("r1").innerHTML = [1, 2, 3, 4, 5, 6, 7].map(v => `<button class="opt" data-v="${v}">${v}</button>`).join(""); $("r_next").disabled = true;
+  $("r1").querySelectorAll(".opt").forEach(b => b.onclick = () => { $("r1").querySelectorAll(".opt").forEach(x => x.classList.toggle("on", x === b)); S._r = +b.dataset.v; $("r_next").disabled = false; });
+  show("s_rate"); };
+$("r_next").onclick = () => { S.ratings.push({block: S.b, condition: S.plan[S.b].cond, helpful: S._r}); S.b++; nextBlock(); };
+async function finish(){ S.finished = new Date().toISOString(); $("prog").style.width = "100%"; show("s_done");
+  try { const r = await fetch("/study/submit", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(S)}); $("d_msg").textContent = r.ok ? "已提交。你可以关闭页面了。" : "提交失败，请点击下方按钮下载作答文件并发给研究者。"; }
+  catch (_) { $("d_msg").textContent = "提交失败，请点击下方按钮下载作答文件并发给研究者。"; } }
+$("d_dl").onclick = () => { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([JSON.stringify(S, null, 1)], {type: "application/json"})); a.download = `study_p${S.participant}.json`; a.click(); };
+</script>
+</body>
+</html>

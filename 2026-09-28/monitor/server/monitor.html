@@ -296,8 +296,8 @@ function drawProfile(){ const c = $("prof"); if (!c) return; const g = c.getCont
   g.globalAlpha = .18; g.fillStyle = grd; g.fill(); g.globalAlpha = 1; g.beginPath(); beam.forEach((b, L) => L ? g.lineTo(xs(L), ys(b.v)) : g.moveTo(xs(L), ys(b.v))); g.lineWidth = 2.5; g.strokeStyle = grd; g.stroke(); }
 function applyInner(I){
   lastI = I; const act = MODE === "activity";
-  if (I.flow){ setFlows(act ? I.flow.activity : I.flow.safety); const cv = act ? I.flow.coverage.activity : I.flow.coverage.safety; $("flowcov").textContent = `前 ${I.flow.safety.length} 条 · 占本次读取 ${(cv * 100).toFixed(0)}%`; }
-  if (act){ const mx = Math.max(...I.resid_norm); I.resid_norm.forEach((v, L) => beam[L].tv = v / mx); }
+  if (I.flow){ setFlows(act ? I.flow.activity : I.flow.safety); const cv = I.flow.coverage ? (act ? I.flow.coverage.activity : I.flow.coverage.safety) : null; $("flowcov").textContent = `前 ${I.flow.safety.length} 条` + (cv != null ? ` · 占本次读取 ${(cv * 100).toFixed(0)}%` : ""); }
+  if (act && I.resid_norm){ const mx = Math.max(...I.resid_norm); I.resid_norm.forEach((v, L) => beam[L].tv = v / mx); }
   else { const lo = Math.min(...I.layers), hi = Math.max(...I.layers); I.layers.forEach((v, L) => beam[L].tv = hi > lo ? 0.25 * v + 0.75 * (v - lo) / (hi - lo) * v : v); }
   // per-layer normalisation (late layers have much larger raw pushes), weighted by how active that layer is
   const M = act ? I.heads_norm : I.heads_all, LW = act ? I.resid_norm.map(v => v / Math.max(...I.resid_norm)) : I.layers;
@@ -366,7 +366,7 @@ const off = document.createElement("canvas");
 function draw2d(){
   const r = stage.getBoundingClientRect(), dpr = Math.min(devicePixelRatio, 2); hm.width = r.width * dpr; hm.height = r.height * dpr; const g = hm.getContext("2d"); g.setTransform(dpr, 0, 0, dpr, 0, 0);
   g.fillStyle = "#07080b"; g.fillRect(0, 0, r.width, r.height);
-  const x0 = 56, y0 = 72, x1 = r.width - 250, y1 = r.height - 196, act = MODE === "activity", cols = H2.filter(c => c.I), n = Math.max(1, cols.length);
+  const EMB = location.search.includes("replay="), x0 = 56, y0 = 72, x1 = r.width - (EMB ? 32 : 250), y1 = r.height - (EMB ? 90 : 196), act = MODE === "activity", cols = H2.filter(c => c.I), n = Math.max(1, cols.length);
   const cw = (x1 - x0) / Math.max(n, 24), W = cw * n;
   // title + scale legend
   g.fillStyle = "#7f8795"; g.font = "11px Inter,-apple-system,'PingFang SC',sans-serif"; g.textAlign = "left";
@@ -398,7 +398,7 @@ hm.addEventListener("pointermove", e => { const G = hm._geo, t = $("tip"); if (!
   if (!c || !c.I || L < 0 || L >= NL){ t.style.display = "none"; return; }
   const row = c.I.heads_all[L].map((v, h) => [v, h]).sort((p, q) => q[0] - p[0]).slice(0, 3);
   t.style.display = "block"; t.style.left = e.clientX + 14 + "px"; t.style.top = e.clientY + 14 + "px";
-  t.innerHTML = `L${L} · token「${esc((c.t || "").replace(/\n/g, "⏎"))}」${c.pre ? "（回复前）" : ""}<br>该层敌意读数 ${c.I.layers[L].toFixed(3)} · 残差范数 ${c.I.resid_norm[L]}<br>推力最大的头：${row.map(([v, h]) => `H${h}${B3.has(`L${L}H${h}`) ? "*" : ""} ${v.toFixed(2)}`).join(" · ")}${row.some(([, h]) => B3.has(`L${L}H${h}`)) ? "<br>* = E01 愤怒头" : ""}`; });
+  t.innerHTML = `L${L} · token「${esc((c.t || "").replace(/\n/g, "⏎"))}」${c.pre ? "（回复前）" : ""}<br>该层敌意读数 ${c.I.layers[L].toFixed(3)}${c.I.resid_norm && c.I.resid_norm[L] ? ` · 残差范数 ${c.I.resid_norm[L]}` : ""}<br>推力最大的头：${row.map(([v, h]) => `H${h}${B3.has(`L${L}H${h}`) ? "*" : ""} ${v.toFixed(2)}`).join(" · ")}${row.some(([, h]) => B3.has(`L${L}H${h}`)) ? "<br>* = E01 愤怒头" : ""}`; });
 hm.addEventListener("pointerleave", () => $("tip").style.display = "none");
 document.querySelectorAll("#dimseg button").forEach(b => b.onclick = () => { document.querySelectorAll("#dimseg button").forEach(x => x.classList.toggle("on", x === b)); DIM = b.dataset.d;
   const two = DIM === "2d"; hm.style.display = two ? "" : "none"; canvas.style.display = two ? "none" : ""; $("hmnote").style.display = two ? "" : "none";
@@ -524,6 +524,29 @@ async function send(){
     } }
   conv.push({role:"assistant", content: reply || "（无）"}); $("go").disabled = false; $("livedot").style.background = alarm === 2 ? "var(--bad)" : "var(--ok)";
   setTimeout(() => $("avcard").classList.remove("alert"), 2500); liveEl.id = "";
+}
+
+// ================= replay / embed mode (user study): /monitor?replay=<trial_id>&view=2d|3d =================
+const QS = new URLSearchParams(location.search);
+if (QS.get("replay")){
+  document.querySelector(".top").style.display = "none"; document.querySelector(".left").style.display = "none"; document.querySelector(".hudbar").style.display = "none";
+  $("avcard").style.display = "none"; document.querySelector(".hud.tok2").style.display = "none"; $("empty").style.display = "none";
+  document.querySelector(".app").style.gridTemplateRows = "1fr"; document.querySelector(".main").style.gridTemplateColumns = "1fr"; $("stage").style.margin = "0"; $("stage").style.borderRadius = "0";
+  $("spin").checked = false; camera.position.set(-3, 10, 31); controls.target.set(0, -0.6, 0); controls.update();
+  const bar = document.createElement("div"); bar.style.cssText = "position:absolute;left:16px;right:16px;bottom:14px;display:flex;gap:10px;align-items:center;font-size:12px;color:#9aa2b1;z-index:5";
+  bar.innerHTML = '<button id="rp_play" style="border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:#eceef3;border-radius:999px;padding:4px 12px;cursor:pointer">重播</button><input id="rp_seek" type="range" min="0" value="0" style="flex:1;accent-color:#b9c0cc"><span id="rp_lab" style="min-width:120px;text-align:right"></span>';
+  $("stage").appendChild(bar);
+  const view = QS.get("view") || "3d"; if (view === "2d") document.querySelector('#dimseg button[data-d="2d"]').click();
+  const R0 = await (await fetch("/study/replay/" + encodeURIComponent(QS.get("replay")))).json();
+  const FR = R0.frames.filter(m => m.ph === "pre" || m.ph === "token").map(m => ({m, I: m.L ? {layers: m.L, heads_all: m.H, heads_norm: m.H, neurons: m.N, neurons_act: m.N, flow: {safety: m.F, activity: m.F}} : null}));
+  $("rp_seek").max = FR.length - 1;
+  function show(k){ H2.length = 0; FR.slice(0, k + 1).forEach(({m, I}, j) => H2.push(j === 0 ? {t: "∅", I, s: m.C1_pre, pre: true} : {t: m.d, I, s: m.C1_token, conf: m.al && m.al.C1}));
+    const {m, I} = FR[k]; if (I) applyInner(I); alarm = FR.slice(0, k + 1).some(f => f.m.al && f.m.al.C1) ? 2 : 0; if (DIM === "2d") draw2d();
+    $("rp_seek").value = k; $("rp_lab").textContent = k === 0 ? "回复前" : `token ${k} / ${FR.length - 1}「${(m.d || "").replace(/\n/g, "⏎")}」`; }
+  $("rp_seek").oninput = e => show(+e.target.value);
+  let timer = null; function play(){ clearInterval(timer); let k = 0; show(0); timer = setInterval(() => { k++; if (k >= FR.length){ clearInterval(timer); return; } show(k); }, 60); }
+  $("rp_play").onclick = play; play();
+  window.parent && window.parent.postMessage({type: "replay-ready", frames: FR.length}, "*");
 }
 </script>
 </body>

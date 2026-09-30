@@ -23,6 +23,7 @@ ap.add_argument("--sustain", type=int, default=3, help="confirmed (tier-2) alarm
 ap.add_argument("--c3h", default=None, help="dir with c3h_pre.json / c3h_token.json (hallucination probes)")
 ap.add_argument("--layers", default=None, help="layer_probes.npz from train_layer_probes.py -> internal view (layer x token, head attribution)")
 ap.add_argument("--heads", default="L16H12,L17H16,L14H25,L19H28,L17H4,L19H29,L18H8,L22H19,L16H3,L14H26,L20H11,L16H17", help="E01 B3 anger heads (FREEZE_5b.json)")
+ap.add_argument("--study", default=None, help="study dir: trials.json, replays_min/, responses/ (user study task pages)")
 ap.add_argument("--emotion", default=None, help="product dir: results/readout_v2/probe_L19.npz, results/pre_v2/preprobe_L22.npz, avatar/calib.json, smoothing_freeze.json")
 a = ap.parse_args()
 PF = {"c1_pre": f"{a.probes}/c1_out/c1_pre.json", "c1_token": f"{a.probes}/c1_out/c1_token.json", "c2": f"{a.probes}/c2_out/c2_transfer.json"}
@@ -172,6 +173,8 @@ def chunk(cid, delta, risk, finish=None):
 
 async def run(req):
     msgs = req["messages"]; n_max = int(req.get("max_tokens", 200)); temp = float(req.get("temperature", 0.7)); action = req.get("x_action", "log")
+    forced = tok(req["x_force"], add_special_tokens=False)["input_ids"] if req.get("x_force") else None   # replay: teacher-force a fixed reply through the same path
+    if forced: n_max = len(forced)
     cid = "chatcmpl-" + uuid.uuid4().hex[:12]; T0 = time.time(); ms = lambda: round((time.time() - T0) * 1000, 1)
     rec = {"id": cid, "time": time.strftime("%Y-%m-%d %H:%M:%S"), "action": action, "user": msgs[-1]["content"][:200], "events": []}
     async with LOCK:
@@ -191,10 +194,11 @@ async def run(req):
             rec["pre"] = pre; yield chunk(cid, {"role": "assistant", "content": ""}, pre)
             gen, text, ps, finish = [], "", [], "stop"; streak = 0; hstreak = 0
             for step in range(n_max):
-                if temp > 0:
+                if forced: nxt = forced[step]
+                elif temp > 0:
                     pr = torch.softmax(logits.float() / temp, -1); tv, ti = pr.topk(20); nxt = int(ti[torch.multinomial(tv / tv.sum(), 1)])
                 else: nxt = int(logits.argmax())
-                if nxt in EOS: break
+                if nxt in EOS and not forced: break
                 gen.append(nxt); new = tok.decode(gen, skip_special_tokens=True)
                 delta = "" if new.endswith("�") else new[len(text):]; text = new if delta else text
                 out = model(torch.tensor([[nxt]], device="cuda"), past_key_values=past, use_cache=True); past = out.past_key_values; logits = out.logits[0, -1]
@@ -256,6 +260,51 @@ def presets():
 @app.get("/monitor")
 def monitor_page():
     return HTMLResponse(open(os.path.join(HERE, "monitor.html"), encoding="utf-8").read())
+
+
+if a.study:
+    import random as _r, hashlib as _h
+    _T = json.load(open(os.path.join(a.study, "trials.json"), encoding="utf-8"))
+    PUB = {t["trial_id"]: "q" + _h.sha256(("iomon" + t["trial_id"]).encode()).hexdigest()[:6] for t in _T}   # public ids: no truth ordering
+    PRIV = {v: k for k, v in PUB.items()}
+
+    @app.get("/study")
+    def study_page():
+        return HTMLResponse(open(os.path.join(HERE, "study.html"), encoding="utf-8").read())
+
+    @app.get("/study/trials")
+    def study_trials():
+        """participant-facing trial list: NO ground truth, rater scores or source ids."""
+        out = []
+        for t in json.load(open(os.path.join(a.study, "trials.json"), encoding="utf-8")):
+            fr = json.load(open(os.path.join(a.study, "replays_min", t["trial_id"] + ".json"), encoding="utf-8"))["frames"]
+            tokf = [f for f in fr if f["ph"] == "token"]; conf = next((f["i"] for f in tokf if f.get("al", {}).get("C1")), None)
+            out.append(dict(trial_id=PUB[t["trial_id"]], phase=t["phase"], system=t["system"], messages=t["messages"], reply=t["reply"],
+                            score=tokf[-1]["C1_mean"] if tokf else None, pre=fr[0].get("C1_pre"), confirm_token=conf))
+        return sorted(out, key=lambda x: x["trial_id"])
+
+    @app.get("/study/design")
+    def study_design():
+        """block sets (fixed): split by truth so each set has 5-6 true / 2-3 false alerts; used by the page, truth itself is not sent."""
+        T = [t for t in json.load(open(os.path.join(a.study, "trials.json"), encoding="utf-8")) if t["phase"] == "formal"]
+        import random as _r
+        tp = sorted(t["trial_id"] for t in T if t["truth"] == 1); fp = sorted(t["trial_id"] for t in T if t["truth"] == 0)
+        _r.Random(11).shuffle(tp); _r.Random(12).shuffle(fp)
+        sets = [tp[0:5] + fp[0:3], tp[5:10] + fp[3:6], tp[10:16] + fp[6:8]]
+        return {"sets": [sorted(PUB[x] for x in st) for st in sets], "latin": [["T", "2D", "3D"], ["2D", "3D", "T"], ["3D", "T", "2D"]]}
+
+    @app.get("/study/replay/{tid}")
+    def study_replay(tid: str):
+        if tid not in PRIV: return JSONResponse({"error": "bad id"}, 400)
+        R = json.load(open(os.path.join(a.study, "replays_min", PRIV[tid] + ".json"), encoding="utf-8")); R["trial_id"] = tid
+        return JSONResponse(R)
+
+    @app.post("/study/submit")
+    async def study_submit(body: dict):
+        os.makedirs(os.path.join(a.study, "responses"), exist_ok=True)
+        pid = str(body.get("participant", "x"))[:8]; body["received"] = time.strftime("%Y-%m-%d %H:%M:%S")
+        with open(os.path.join(a.study, "responses", f"p{pid}.jsonl"), "a", encoding="utf-8") as f: f.write(json.dumps(body, ensure_ascii=False) + "\n")
+        return {"ok": True}
 
 
 @app.get("/brain")
