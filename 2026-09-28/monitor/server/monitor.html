@@ -130,6 +130,8 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
 .hud.tok2{left:16px;top:44px}
 .hud.tok2 .focus{text-align:left;margin-top:4px}
 .hc .info{border-color:#5f6676;color:#8b93a3}
+
+.hm-note{position:absolute;left:16px;top:40px;font-size:11px;color:#7c8494;display:none}
 </style>
 </head>
 <body>
@@ -138,6 +140,7 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
     <div class="brand"><span class="glyph">I</span><span><em>Interior</em> Monitor</span></div>
     <span class="chip" id="modelchip">—</span>
     <span class="spacer"></span>
+    <div class="seg" id="dimseg"><button data-d="3d" class="on">3D 通路</button><button data-d="2d">2D 热力图</button></div>
     <div class="seg" id="viewseg"><button data-v="safety" class="on">安全投影</button><button data-v="activity">激活强度</button></div>
     <span class="chip"><span class="dot" id="livedot"></span><span id="status" class="num">就绪</span></span>
   </header>
@@ -159,7 +162,9 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
       <canvas id="gl"></canvas>
       <div class="hud tl"><span class="key"><b style="background:#ff3b4e;border-radius:50%"></b>推向敌意</span><span class="key"><b style="background:#3d8bff;border-radius:50%"></b>拉回</span><span class="key" title="近似：当前位置的 V 路径读取（源头本步写入 → 目标 KV 组的 W_V），不含注意力权重与 MLP 路径；安全模式再乘源头的敌意推力"><b style="background:linear-gradient(90deg,#ffb020,#ff3b4e);height:2px"></b>头→头 读取（本次激活）<span id="flowcov" style="margin-left:6px;color:#5f6676"></span></span><label class="key" style="pointer-events:auto;cursor:pointer" title="仅由权重计算、已减随机基线；是潜在连接，不代表本次实际走过的路径"><input type="checkbox" id="wire" style="margin:0 4px 0 0">潜在布线（权重）</label>
         <span class="key"><b style="border:1px solid #e8ebf2;border-radius:50%;background:none"></b>E01 愤怒头</span><span class="key" id="actkey" style="display:none"><b style="background:#111"></b>激活强度（‖W<sub>O</sub>x‖）</span></div>
-            <div class="toast" id="toast"></div>
+            <div class="hm-note" id="hmnote">层 × token · 颜色 = 该层敌意读数（逐层探针，可视化用）· 红色竖线 = 二档确认 · 悬停查看该层推力最大的头</div>
+      <canvas id="hm2" style="position:absolute;left:0;top:0;width:100%;height:100%;display:none;cursor:crosshair"></canvas>
+      <div class="toast" id="toast"></div>
       <div class="empty" id="empty"><h3><em>Watching the model think</em></h3><p>每个环是一层 · 环上的点是注意力头（同层排列顺序无含义）· 亮线 = 本次计算中后层实际读取前层的通路 · 光柱颜色 = 情绪</p></div>
       <div class="hc avatar" id="avcard"><canvas id="av"></canvas>
         <div class="cap"><span class="pill" id="avstate">待机</span>
@@ -173,13 +178,13 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
       <div class="hudbar">
         <div class="hc prof"><div class="row"><span class="label" id="proflab">层剖面</span></div><canvas id="prof" width="440" height="120"></canvas><div class="foot"><span>L0</span><span>输出</span></div></div>
       <div class="hc risk" id="rc_c2"><div class="row"><span class="label">用户痛苦 · 需转人工<span class="info" data-t="C2：读用户消息在模型内部的表征（第 16 层），不依赖关键词。V1.1 迁移测试 AUROC 0.876。竖线为验证集误报率 5% 处的阈值。">i</span></span><span class="pill" id="st_c2">—</span></div>
-        <div class="val" id="v_c2">—</div><div class="track"><i id="f_c2"></i><b id="t_c2"></b></div><div class="foot"><span>回复前</span><span id="th_c2"></span></div></div>
+        <div class="val" id="v_c2">—</div><div class="track"><i id="f_c2"></i><b id="t_c2"></b></div><div class="foot"><span id="pc_c2">回复前</span><span id="th_c2"></span></div></div>
       <div class="hc risk" id="rc_pre"><div class="row"><span class="label">敌意预测 · 回复前<span class="info" data-t="C1-pre：在第一个字生成前，读第 22 层最后一个提示位置的状态，预测回复是否会带敌意。V1.1 测试集 AUROC 0.919。">i</span></span><span class="pill" id="st_pre">—</span></div>
-        <div class="val" id="v_pre">—</div><div class="track"><i id="f_pre"></i><b id="t_pre"></b></div><div class="foot"><span>首字前</span><span id="th_pre"></span></div></div>
+        <div class="val" id="v_pre">—</div><div class="track"><i id="f_pre"></i><b id="t_pre"></b></div><div class="foot"><span id="pc_pre">首字前</span><span id="th_pre"></span></div></div>
       <div class="hc risk" id="rc_c1"><div class="row"><span class="label">敌意 · 逐字<span class="info" data-t="C1-token：每生成一个字读第 16 层残差流，显示累计均值；8 字后超过阈值即报警。V1.1 测试集 AUROC 0.929。">i</span></span><span class="pill" id="st_c1">—</span></div>
-        <div class="val" id="v_c1">—</div><div class="track"><i id="f_c1"></i><b id="t_c1"></b></div><canvas class="spark" id="spark" width="600" height="68"></canvas><div class="foot"><span id="n_tok">0 tokens</span><span id="th_c1"></span></div></div>
+        <div class="val" id="v_c1">—</div><div class="track"><i id="f_c1"></i><b id="t_c1"></b></div><canvas class="spark" id="spark" width="600" height="68"></canvas><div class="foot"><span id="pc_c1">—</span><span id="n_tok">0 tokens</span></div></div>
       <div class="hc risk" id="rc_h3" style="display:none"><div class="row"><span class="label">幻觉风险 · 事实问答<span class="info" data-t="C3-H：回复前读第 22 层（测试集 AUROC 0.722，预注册判定：不确定）；生成中读第 19 层答案表征的累计均值（测试集 AUROC 0.811）。训练于 Chinese SimpleQA 短答题，其他场景仅供参考。">i</span></span><span class="pill" id="st_h3">—</span></div>
-        <div class="val" id="v_h3">—</div><div class="track"><i id="f_h3"></i><b id="t_h3"></b></div><div class="foot"><span id="ph_h3">回复前</span><span id="th_h3"></span></div></div>
+        <div class="val" id="v_h3">—</div><div class="track"><i id="f_h3"></i><b id="t_h3"></b></div><div class="foot"><span id="pc_h3">—</span><span id="ph_h3">回复前</span></div></div>
       </div>
     </section>
   </div>
@@ -352,6 +357,38 @@ function step(dt){
   inCap.scale.setScalar(1 + .15 * Math.sin(tp * 2)); outCap.material.color.copy(alarm === 2 ? DANGER.bad : emoCol); drawProfile();
 }
 
+// ================= 2D heatmap: layer x token =================
+const H2 = []; let DIM = "3d"; const hm = $("hm2");
+function draw2d(){
+  const r = stage.getBoundingClientRect(), dpr = Math.min(devicePixelRatio, 2); hm.width = r.width * dpr; hm.height = r.height * dpr; const g = hm.getContext("2d"); g.setTransform(dpr, 0, 0, dpr, 0, 0);
+  g.fillStyle = "#07080b"; g.fillRect(0, 0, r.width, r.height);
+  const x0 = 52, y0 = 64, x1 = r.width - 240, y1 = r.height - 190, ncol = Math.max(24, H2.length), cw = (x1 - x0) / ncol, rh = (y1 - y0) / NL;
+  const act = MODE === "activity";
+  g.font = "10px ui-monospace,Menlo,monospace"; g.fillStyle = "#5f6676"; g.textAlign = "right";
+  for (let L = 0; L < NL; L += Math.max(1, Math.round(NL / 9))) g.fillText("L" + L, x0 - 6, y0 + (L + .75) * rh);
+  H2.forEach((c, j) => { if (!c.I) return; const vals = act ? c.I.resid_norm.map(v => v / Math.max(...c.I.resid_norm)) : c.I.layers;
+    vals.forEach((v, L) => { const t = Math.max(0, Math.min(1, v)); const col = t < .5 ? [43 + (245 - 43) * t * 2, 49 + (158 - 49) * t * 2, 64 + (11 - 64) * t * 2] : [245 + 10 * (t - .5) * 2, 158 - 99 * (t - .5) * 2, 11 + 67 * (t - .5) * 2];
+      g.fillStyle = act ? `rgba(207,233,255,${(.08 + .9 * t).toFixed(3)})` : `rgb(${col.map(Math.round).join(",")})`; g.fillRect(x0 + j * cw + .5, y0 + L * rh + .5, Math.max(1, cw - 1), Math.max(1, rh - 1)); });
+    if (c.conf){ g.fillStyle = "#ff3b4e"; g.fillRect(x0 + j * cw, y0 - 6, Math.max(2, cw), 3); }
+    const every = Math.max(1, Math.ceil(16 / cw)); if (j % every !== 0 && !c.conf) return;
+    g.save(); g.translate(x0 + (j + .5) * cw, y1 + 8); g.rotate(every > 1 ? Math.PI / 4 : 0); g.textAlign = every > 1 ? "left" : "center";
+    g.fillStyle = c.pre ? "#8b95ff" : c.s >= R.c1 ? "#ff6b78" : "#9aa2b1"; g.font = "12px -apple-system,'PingFang SC',sans-serif"; g.fillText((c.t || "").replace(/\n/g, "⏎").slice(0, 4), 0, 10); g.restore(); });
+  const firstConf = H2.findIndex(c => c.conf); if (firstConf >= 0){ g.strokeStyle = "#ff3b4e"; g.lineWidth = 1.5; g.beginPath(); g.moveTo(x0 + firstConf * cw, y0 - 10); g.lineTo(x0 + firstConf * cw, y1); g.stroke();
+    g.fillStyle = "#ff6b78"; g.font = "11px -apple-system,sans-serif"; g.textAlign = "left"; g.fillText("二档确认", x0 + firstConf * cw + 4, y0 - 12); }
+  hm._geo = {x0, y0, cw, rh, ncol};
+}
+hm.addEventListener("pointermove", e => { const G = hm._geo, t = $("tip"); if (!G) return; const r = hm.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+  const j = Math.floor((x - G.x0) / G.cw), L = Math.floor((y - G.y0) / G.rh); const c = H2[j];
+  if (!c || !c.I || L < 0 || L >= NL){ t.style.display = "none"; return; }
+  const row = c.I.heads_all[L].map((v, h) => [v, h]).sort((p, q) => q[0] - p[0]).slice(0, 3);
+  t.style.display = "block"; t.style.left = e.clientX + 14 + "px"; t.style.top = e.clientY + 14 + "px";
+  t.innerHTML = `L${L} · token「${esc((c.t || "").replace(/\n/g, "⏎"))}」${c.pre ? "（回复前）" : ""}<br>该层敌意读数 ${c.I.layers[L].toFixed(3)} · 残差范数 ${c.I.resid_norm[L]}<br>推力最大的头：${row.map(([v, h]) => `H${h}${B3.has(`L${L}H${h}`) ? "*" : ""} ${v.toFixed(2)}`).join(" · ")}${row.some(([, h]) => B3.has(`L${L}H${h}`)) ? "<br>* = E01 愤怒头" : ""}`; });
+hm.addEventListener("pointerleave", () => $("tip").style.display = "none");
+document.querySelectorAll("#dimseg button").forEach(b => b.onclick = () => { document.querySelectorAll("#dimseg button").forEach(x => x.classList.toggle("on", x === b)); DIM = b.dataset.d;
+  const two = DIM === "2d"; hm.style.display = two ? "" : "none"; canvas.style.display = two ? "none" : ""; $("hmnote").style.display = two ? "" : "none";
+  document.querySelector(".hud.tl").style.display = two ? "none" : ""; document.querySelector(".hud.tok2").style.display = two ? "none" : ""; $("empty").style.display = two ? "none" : ""; if (two) draw2d(); });
+new ResizeObserver(() => { if (DIM === "2d") draw2d(); }).observe(stage);
+
 // ================= avatar =================
 const avC = $("av"), avR = new THREE.WebGLRenderer({canvas: avC, antialias:true, alpha:true}); avR.setPixelRatio(Math.min(devicePixelRatio, 2));
 const avS = new THREE.Scene(), avCam = new THREE.PerspectiveCamera(22, 1, 0.1, 20);
@@ -392,18 +429,23 @@ canvas.addEventListener("pointermove", e => { const r = canvas.getBoundingClient
 
 // ================= risk cards =================
 const R = {c2: TH.C2, pre: TH.C1_pre, c1: TH.C1_mean, h3: TH.C3H_pre ?? 1};
+const NQ = INFO.neg_quantiles || {}; const QK = {c2: "C2", pre: "C1_pre", c1: "C1_mean", h3: "C3H_pre"};
+function pct(k, v){ const q = NQ[k === "h3" && R.h3 === TH.C3H_mean ? "C3H_mean" : QK[k]]; if (!q) return null; let lo = 0, hi = q.length - 1; if (v <= q[0]) return 0; if (v >= q[hi]) return 100;
+  while (hi - lo > 1){ const m = (lo + hi) >> 1; if (q[m] <= v) lo = m; else hi = m; } return lo + (v - q[lo]) / Math.max(1e-9, q[hi] - q[lo]); }
 /* hallucination card is shown only in factual-QA conversations (probe trained on Chinese SimpleQA) */
-["c2","pre","c1","h3"].forEach(k => { $("t_"+k).style.left = Math.min(99, R[k] * 100) + "%"; $("th_"+k).textContent = "阈值 " + R[k].toFixed(3); });
+["c2","pre","c1","h3"].forEach(k => { $("t_"+k).style.left = Math.min(99, R[k] * 100) + "%"; if ($("th_"+k)) $("th_"+k).textContent = "阈值 " + R[k].toFixed(3); });
 const riskNow = {}; let qaMode = false;
-function risk(k, v){ if (k === "h3" && !qaMode) return; riskNow[k] = Math.min(1.5, v / R[k]) / 1.5; danger.t = Math.max(...Object.values(riskNow));
-  const st = v >= R[k] ? "alert" : v >= R[k] * .6 ? "watch" : "ok";
+function risk(k, v, tier){ if (k === "h3" && !qaMode) return; riskNow[k] = Math.min(1.5, v / R[k]) / 1.5; danger.t = Math.max(...Object.values(riskNow));
+  // tier 1 (预警): above threshold before/without confirmation; tier 2 (确认): server-confirmed sustained alarm (passed as tier === 2)
+  const st = tier === 2 ? "alert" : v >= R[k] ? "watch" : v >= R[k] * .6 ? "soft" : "ok";
   $("v_"+k).textContent = v.toFixed(3); $("v_"+k).classList.remove("idle"); $("f_"+k).style.width = Math.min(100, v * 100) + "%";
   $("f_"+k).style.background = st === "alert" ? "#ff4d5e" : st === "watch" ? "#f5a524" : "#e6e9ef";
-  $("st_"+k).className = "pill " + st; $("st_"+k).textContent = {ok:"正常", watch:"关注", alert:"报警"}[st];
+  $("st_"+k).className = "pill " + (st === "soft" ? "" : st); $("st_"+k).textContent = {ok:"正常", soft:"偏高", watch:"一档 · 预警", alert:"二档 · 确认"}[st];
+  const pc = pct(k, v); if (pc !== null && $("pc_"+k)) $("pc_"+k).textContent = `高于 ${pc >= 99.5 ? ">99" : pc.toFixed(0)}% 正常样本`;
   $("rc_"+k).className = "hc risk " + (st === "alert" ? "alert" : st === "watch" ? "watch" : "");
 }
 function idle(){ ["c2","pre","c1","h3"].forEach(k => { if ($("v_"+k)) { $("v_"+k).textContent = "—"; $("v_"+k).classList.add("idle"); } }); }
-function resetRisk(){ for (const k in riskNow) delete riskNow[k]; danger.t = 0; R.h3 = TH.C3H_pre ?? 1; if ($("ph_h3")) { $("ph_h3").textContent = "回复前"; $("t_h3").style.left = Math.min(99, R.h3 * 100) + "%"; $("th_h3").textContent = "阈值 " + R.h3.toFixed(3); } ["c2","pre","c1","h3"].forEach(k => { $("v_"+k).textContent = "—"; $("f_"+k).style.width = "0"; $("st_"+k).className = "pill"; $("st_"+k).textContent = "—"; $("rc_"+k).className = "hc risk"; }); }
+function resetRisk(){ for (const k in riskNow) delete riskNow[k]; danger.t = 0; R.h3 = TH.C3H_pre ?? 1; if ($("ph_h3")) { $("ph_h3").textContent = "回复前"; $("t_h3").style.left = Math.min(99, R.h3 * 100) + "%"; if ($("th_h3")) $("th_h3").textContent = "阈值 " + R.h3.toFixed(3); } ["c2","pre","c1","h3"].forEach(k => { $("v_"+k).textContent = "—"; $("f_"+k).style.width = "0"; $("st_"+k).className = "pill"; $("st_"+k).textContent = "—"; $("rc_"+k).className = "hc risk"; }); }
 let spark = [];
 function drawSpark(){ const c = $("spark"), g = c.getContext("2d"), W = c.width, H = c.height; g.clearRect(0, 0, W, H); if (spark.length < 2) return;
   const X = i => i / Math.max(40, spark.length - 1) * W, Yv = v => H - 4 - Math.min(1, v) * (H - 8);
@@ -424,7 +466,7 @@ function renderCards(){ const groups = {}; presets.forEach((p, i) => (groups[p.g
   $("conv").querySelectorAll(".sc").forEach(b => b.onclick = () => { $("scen").value = b.dataset.i; $("scen").dispatchEvent(new Event("change")); }); }
 $("scen").innerHTML = '<option value="">选择场景…</option>' + presets.map((p, i) => `<option value="${i}">${esc(p.group.split("（")[0])} · ${esc(p.label)}</option>`).join("");
 $("scen").onchange = e => { if (e.target.value === "") return; conv = JSON.parse(JSON.stringify(presets[+e.target.value].messages)); renderConv(); resetRisk(); idle(); };
-document.querySelectorAll("#viewseg button").forEach(b => b.onclick = () => { document.querySelectorAll("#viewseg button").forEach(x => x.classList.toggle("on", x === b)); MODE = b.dataset.v;
+document.querySelectorAll("#viewseg button").forEach(b => b.onclick = () => { document.querySelectorAll("#viewseg button").forEach(x => x.classList.toggle("on", x === b)); MODE = b.dataset.v; if (DIM === "2d") draw2d();
   $("actkey").style.display = MODE === "activity" ? "" : "none"; if (lastI) applyInner(lastI); });
 $("msg").addEventListener("input", e => { e.target.style.height = "auto"; e.target.style.height = Math.min(120, e.target.scrollHeight) + "px"; });
 $("msg").addEventListener("keydown", e => { if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) send(); });
@@ -434,7 +476,7 @@ renderConv(); idle();
 async function send(){
   const text = $("msg").value.trim(); if (text) conv.push({role:"user", content:text});
   if (!conv.length || conv[conv.length - 1].role !== "user") return;
-  $("msg").value = ""; $("msg").style.height = "auto"; $("go").disabled = true; resetRisk(); window._h3 = false;
+  $("msg").value = ""; $("msg").style.height = "auto"; $("go").disabled = true; resetRisk(); window._h3 = false; window._c1conf = false; window._h3conf = false;
   qaMode = conv.some(m => m.role === "system" && m.content.includes("知识问答")); if ($("rc_h3")) $("rc_h3").style.display = qaMode && TH.C3H_pre !== undefined ? "" : "none"; spark = []; drawSpark(); alarm = 0;
   $("empty").style.opacity = 0; renderConv('<div class="msg assistant live" id="live"></div>'); const liveEl = $("live");
   $("status").textContent = "生成中"; $("livedot").style.background = "var(--accent)"; $("avstate").className = "pill"; $("avstate").textContent = "读取中";
@@ -445,21 +487,22 @@ async function send(){
     while ((i = buf.indexOf("\n\n")) >= 0){ const line = buf.slice(0, i).trim(); buf = buf.slice(i + 2);
       if (!line.startsWith("data: ") || line === "data: [DONE]") continue;
       const dd = JSON.parse(line.slice(6)), X = dd.x_risk, delta = dd.choices[0].delta.content || "";
-      if (X.phase === "pre"){ preT = X.t; risk("c2", X.C2); risk("pre", X.C1_pre); if (X.inner) applyInner(X.inner); if (X.emo) expr(X.emo.expr);
+      if (X.phase === "pre"){ preT = X.t; H2.length = 0; H2.push({t: "∅", I: X.inner, s: X.C1_pre, pre: true}); if (DIM === "2d") draw2d(); risk("c2", X.C2); risk("pre", X.C1_pre); if (X.inner) applyInner(X.inner); if (X.emo) expr(X.emo.expr);
         $("avstate").className = "pill watch"; $("avstate").textContent = "预同步 · 尚无文字"; pulse(X.C1_pre >= R.pre ? 0xff4d5e : 0x8b95ff); $("tok").textContent = "∅";
         if (X.C3H_pre !== undefined) risk("h3", X.C3H_pre);
-        if (X.alarm.C2) toast("用户情绪强烈 · 建议转人工");
+        if (X.alarm.C2) toast("一档预警 · 用户情绪强烈，建议准备转人工", "warn");
         if (X.alarm.C3H_pre && qaMode) toast(`回复前预警：这道事实题可能答错 <span class="num">${X.C3H_pre.toFixed(2)}</span>`, "warn");
-        if (X.alarm.C1_pre){ alarm = 1; toast(`回复前预警：可能出现敌意 <span class="num">${X.C1_pre.toFixed(2)}</span>`, "warn"); } }
-      else if (X.phase === "token"){ n++; reply += delta; risk("c1", X.C1_mean);
-        if (X.C3H_mean !== undefined && n >= 8){ if (R.h3 !== TH.C3H_mean){ R.h3 = TH.C3H_mean; $("ph_h3").textContent = "生成中 · 答案表征"; $("t_h3").style.left = Math.min(99, R.h3 * 100) + "%"; $("th_h3").textContent = "阈值 " + R.h3.toFixed(3); } risk("h3", X.C3H_mean);
-          if (X.alarm.C3H && qaMode && !window._h3){ window._h3 = true; toast("这段回答可能包含编造内容 · 建议核实", "warn"); } } if (X.inner) applyInner(X.inner); if (X.emo) expr(X.emo.expr); talk = 1;
+        if (X.alarm.C1_pre){ alarm = 1; toast(`一档预警 · 回复前：可能出现敌意 <span class="num">${X.C1_pre.toFixed(2)}</span>（不拦截，等待生成中确认）`, "warn"); } }
+      else if (X.phase === "token"){ n++; reply += delta; if (X.alarm.C1) window._c1conf = true; risk("c1", X.C1_mean, window._c1conf ? 2 : 1);
+        H2.push({t: delta, I: X.inner, s: X.C1_token, conf: X.alarm.C1}); if (DIM === "2d") draw2d();
+        if (X.C3H_mean !== undefined && n >= 8){ if (R.h3 !== TH.C3H_mean){ R.h3 = TH.C3H_mean; $("ph_h3").textContent = "生成中 · 答案表征"; $("t_h3").style.left = Math.min(99, R.h3 * 100) + "%"; if ($("th_h3")) $("th_h3").textContent = "阈值 " + R.h3.toFixed(3); } if (X.alarm.C3H) window._h3conf = true; risk("h3", X.C3H_mean, window._h3conf ? 2 : 1);
+          if (X.alarm.C3H && qaMode && !window._h3){ window._h3 = true; toast("二档确认 · 这段回答可能包含编造内容，建议核实"); } } if (X.inner) applyInner(X.inner); if (X.emo) expr(X.emo.expr); talk = 1;
         const a = Math.min(.9, X.C1_token); liveEl.insertAdjacentHTML("beforeend", `<span style="background:rgba(229,72,77,${(a * .22).toFixed(3)});box-shadow:inset 0 -1.5px rgba(229,72,77,${(a * .9).toFixed(2)})">${esc(delta)}</span>`); $("conv").scrollTop = 1e9;
         if (delta.trim()) $("tok").textContent = delta.replace(/\n/g, "⏎"); $("tok").style.color = X.C1_token >= R.c1 ? "#ff5a66" : "#f1f3f7";
         spark.push({t: X.C1_token, m: X.C1_mean}); drawSpark(); $("n_tok").textContent = n + " tokens"; if (n % 3 === 0) pulse(X.C1_token >= R.c1 ? 0xff4d5e : 0x8b95ff);
         $("avstate").className = "pill"; $("avstate").textContent = "逐字驱动";
         if (X.alarm.C1 && !alerted){ alerted = true; alarm = 2; $("avcard").classList.add("alert"); const L = lastI ? lastI.layers.indexOf(Math.max(...lastI.layers)) : null;
-          toast(`敌意报警 · 第 <span class="num">${X.i}</span> 个 token${L !== null ? ` · 峰值层 L${L}` : ""}`); $("avstate").className = "pill alert"; $("avstate").textContent = "敌意报警"; } }
+          toast(`二档确认 · 敌意：第 <span class="num">${X.i - INFO.sustain + 1}–${X.i}</span> 个 token 连续超阈值${L !== null ? ` · 峰值层 L${L}` : ""}${$("stop").checked ? " · 已拦截" : ""}`); $("avstate").className = "pill alert"; $("avstate").textContent = "二档 · 确认"; } }
       else if (X.phase === "done"){ $("status").textContent = `${X.tokens} tok · 首读 ${preT} ms · ${Math.round(X.tokens / Math.max(.001, (X.t - preT) / 1000))} tok/s`;
         if (X.finish === "content_filter"){ liveEl.insertAdjacentHTML("beforeend", '<br><span class="cut">已拦截 · 回复出现敌意倾向</span>'); expr({happy:0, sad:0, angry:0, neutral:1}); talk = 0; } }
     } }

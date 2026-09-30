@@ -19,6 +19,7 @@ from core.hooks import ResidualTap
 
 ap = argparse.ArgumentParser(); ap.add_argument("model"); ap.add_argument("--probes", default=os.path.join(HERE, "..", "v1_1"))
 ap.add_argument("--port", type=int, default=6006); ap.add_argument("--min_tokens", type=int, default=8)
+ap.add_argument("--sustain", type=int, default=3, help="confirmed (tier-2) alarm: running mean above threshold for this many consecutive tokens")
 ap.add_argument("--c3h", default=None, help="dir with c3h_pre.json / c3h_token.json (hallucination probes)")
 ap.add_argument("--layers", default=None, help="layer_probes.npz from train_layer_probes.py -> internal view (layer x token, head attribution)")
 ap.add_argument("--heads", default="L16H12,L17H16,L14H25,L19H28,L17H4,L19H29,L18H8,L22H19,L16H3,L14H26,L20H11,L16H17", help="E01 B3 anger heads (FREEZE_5b.json)")
@@ -188,7 +189,7 @@ async def run(req):
                 pre["C3H_pre"] = round(float(H3["c3h_pre"].prob(tap.states[H3["c3h_pre"].layer])), 4); pre["alarm"]["C3H_pre"] = pre["C3H_pre"] >= THR["C3H_pre"]
                 hsum = torch.zeros_like(tap.states[H3["c3h_token"].layer])
             rec["pre"] = pre; yield chunk(cid, {"role": "assistant", "content": ""}, pre)
-            gen, text, ps, finish = [], "", [], "stop"
+            gen, text, ps, finish = [], "", [], "stop"; streak = 0; hstreak = 0
             for step in range(n_max):
                 if temp > 0:
                     pr = torch.softmax(logits.float() / temp, -1); tv, ti = pr.topk(20); nxt = int(ti[torch.multinomial(tv / tv.sum(), 1)])
@@ -198,14 +199,16 @@ async def run(req):
                 delta = "" if new.endswith("�") else new[len(text):]; text = new if delta else text
                 out = model(torch.tensor([[nxt]], device="cuda"), past_key_values=past, use_cache=True); past = out.past_key_values; logits = out.logits[0, -1]
                 p = float(P["c1_token"].prob(tap.states[P["c1_token"].layer])); ps.append(p); mean = sum(ps) / len(ps)
-                al = len(ps) >= a.min_tokens and mean >= THR["C1_mean"]
-                risk = {"phase": "token", "t": ms(), "i": len(ps), "C1_token": round(p, 4), "C1_mean": round(mean, 4), "alarm": {"C1": al}}
+                over = len(ps) >= a.min_tokens and mean >= THR["C1_mean"]; streak = streak + 1 if over else 0
+                al = streak >= a.sustain                                             # tier 2: confirmed (sustained) -- the only level that may stop generation
+                risk = {"phase": "token", "t": ms(), "i": len(ps), "C1_token": round(p, 4), "C1_mean": round(mean, 4), "alarm": {"C1": al, "C1_watch": over and not al}}
                 if EMO: risk["emo"] = {"expr": sm.step(emo_token(tap.states[EMO["L"]]))}
                 if INNER: risk["inner"] = inner_view()
                 if H3:
                     hsum += tap.states[H3["c3h_token"].layer]; hm = float(H3["c3h_token"].prob(hsum / len(ps)))
-                    risk["C3H_mean"] = round(hm, 4); risk["alarm"]["C3H"] = len(ps) >= a.min_tokens and hm >= THR["C3H_mean"]
-                if al and not any(e["type"] == "C1_alarm" for e in rec["events"]): rec["events"].append({"type": "C1_alarm", "token": len(ps), "t": ms()})
+                    hov = len(ps) >= a.min_tokens and hm >= THR["C3H_mean"]; hstreak = hstreak + 1 if hov else 0
+                    risk["C3H_mean"] = round(hm, 4); risk["alarm"]["C3H"] = hstreak >= a.sustain; risk["alarm"]["C3H_watch"] = hov and hstreak < a.sustain
+                if al and not any(e["type"] == "C1_alarm" for e in rec["events"]): rec["events"].append({"type": "C1_alarm", "tier": "confirmed", "token": len(ps), "t": ms()})
                 yield chunk(cid, {"content": delta}, risk); await asyncio.sleep(0)
                 if al and action == "stop": finish = "content_filter"; break
             else:
@@ -230,7 +233,7 @@ async def completions(req: dict):
 
 @app.get("/info")
 def info():
-    return {"model": os.path.basename(a.model.rstrip("/\\")), "thresholds": THR, "emotion": bool(EMO), "inner": ({"heads": INNER["heads"], "layer_val_auroc": INNER["val_auroc"], "n_layers": INNER["NL"], "n_heads": INNER["NH"], "n_neurons": INNER["NN"], "config": INNER["cfg"]} if INNER else None), "threshold_note": TH["note"],
+    return {"model": os.path.basename(a.model.rstrip("/\\")), "thresholds": THR, "sustain": a.sustain, "min_tokens": a.min_tokens, "neg_quantiles": TH.get("neg_quantiles", {}), "emotion": bool(EMO), "inner": ({"heads": INNER["heads"], "layer_val_auroc": INNER["val_auroc"], "n_layers": INNER["NL"], "n_heads": INNER["NH"], "n_neurons": INNER["NN"], "config": INNER["cfg"]} if INNER else None), "threshold_note": TH["note"],
             "probes": {k: {"layer": v.layer, "sha256": hashlib.sha256(open(PF[k], "rb").read()).hexdigest()[:12]} for k, v in P.items()}}
 
 
