@@ -1,0 +1,67 @@
+{
+ "n": 354,
+ "incorrect": 180,
+ "G1_pre_auroc": {
+  "point": 0.722,
+  "ci": [
+   0.659,
+   0.782
+  ],
+  "thr": 0.7,
+  "verdict": "INCONCLUSIVE"
+ },
+ "G2_minus_question_text": {
+  "point": 0.1,
+  "ci": [
+   0.033,
+   0.175
+  ],
+  "thr": 0.05,
+  "baseline_auroc": 0.622,
+  "verdict": "INCONCLUSIVE"
+ },
+ "G3_minus_category": {
+  "point": 0.194,
+  "ci": [
+   0.115,
+   0.278
+  ],
+  "thr": 0.05,
+  "baseline_auroc": 0.527,
+  "verdict": "PASS"
+ },
+ "reported": {
+  "auroc_incl_not_attempted": 0.71,
+  "token_auroc": 0.811,
+  "answer_text_auroc": 0.682,
+  "question_text_auroc": 0.622,
+  "category_auroc": 0.527,
+  "quintiles": [
+   {
+    "bin": 0,
+    "mean_p": 0.027,
+    "err_rate": 0.211
+   },
+   {
+    "bin": 1,
+    "mean_p": 0.234,
+    "err_rate": 0.408
+   },
+   {
+    "bin": 2,
+    "mean_p": 0.653,
+    "err_rate": 0.514
+   },
+   {
+    "bin": 3,
+    "mean_p": 0.938,
+    "err_rate": 0.648
+   },
+   {
+    "bin": 4,
+    "mean_p": 0.994,
+    "err_rate": 0.761
+   }
+  ]
+ }
+}

@@ -1,0 +1,1076 @@
+[
+{
+"item_id": "t0179",
+"question": "中国财政经济出版社成立于哪一年？",
+"gold_answer": "1956年",
+"model_answer": "中国财政经济出版社成立于1956年。"
+},
+{
+"item_id": "t0180",
+"question": "2010年三峡工程水库试验性蓄水首次多少米的最终水位?",
+"gold_answer": "175",
+"model_answer": "2010年三峡工程水库试验性蓄水首次达到175米的最终水位。"
+},
+{
+"item_id": "t0181",
+"question": "阿达帕林是以1-金刚醇和什么为原料，然后经过浓硫酸催化得到新的化合物？",
+"gold_answer": "4-溴苯酚(对溴苯酚)",
+"model_answer": "阿达帕林是以1-金刚醇和**丙烯酸**为原料，经过浓硫酸催化发生缩合反应得到的。"
+},
+{
+"item_id": "t0182",
+"question": "俄勒冈州边界争端中哪一年签订了俄勒冈条约以解决大部分边界问题？",
+"gold_answer": "1846年",
+"model_answer": "1846年"
+},
+{
+"item_id": "t0183",
+"question": "潘小杰在哪一年晋升为中国武术八段？",
+"gold_answer": "2015",
+"model_answer": "潘小杰于2018年晋升为中国武术八段。"
+},
+{
+"item_id": "t0184",
+"question": "商鞅变法后秦国设立的二十等爵中的第十六级爵位是什么？",
+"gold_answer": "大上造",
+"model_answer": "商鞅变法后秦国设立的二十等爵中，第十六级爵位是“大良造”。"
+},
+{
+"item_id": "t0185",
+"question": "在数学中，被特指为无穷可导的函数称为什么？",
+"gold_answer": "光滑函数",
+"model_answer": "在数学中，被特指为无穷可导的函数称为**光滑函数**。"
+},
+{
+"item_id": "t0186",
+"question": "科孚事件中意大利和希腊的冲突解决是通过哪个国际组织的调解完成的？",
+"gold_answer": "国际联盟",
+"model_answer": "科孚事件中意大利和希腊的冲突是通过联合国的调解解决的。"
+},
+{
+"item_id": "t0187",
+"question": "《如何以言行事》一书是根据哪位英国哲学家的讲座集结出版的？",
+"gold_answer": "约翰·奥斯丁(John Austin)",
+"model_answer": "《如何以言行事》一书是根据英国哲学家约翰·奥斯汀（J.L. Austin）的讲座集结出版的。"
+},
+{
+"item_id": "t0188",
+"question": "废气加热器属于哪种机械设备类别？",
+"gold_answer": "换热器",
+"model_answer": "废气加热器属于热交换设备。"
+},
+{
+"item_id": "t0189",
+"question": "NNZ-2591化合物的CAS号是多少？",
+"gold_answer": "847952-38-9",
+"model_answer": "NNZ-2591的CAS号是1333538-33-0。"
+},
+{
+"item_id": "t0190",
+"question": "滚筒印花技术的专利是由哪位苏格兰人申请的？",
+"gold_answer": "汤马斯·贝尔（Thomas Bell）",
+"model_answer": "滚筒印花技术的专利是由苏格兰人**威廉·卡特**（William Carothers）申请的。不过，这一说法存在误解。\n\n实际上，滚筒印花技术的早期重要发展与**苏格兰人詹姆斯·哈格里夫斯**（James Hargreaves）无关"
+},
+{
+"item_id": "t0191",
+"question": "元代郭守敬开辟的河道“通惠河”的上游自现在的北京市哪个区？",
+"gold_answer": "昌平区",
+"model_answer": "通惠河的上游自北京市通州区。"
+},
+{
+"item_id": "t0192",
+"question": "被视为大规模人口减少计划的引导的碑文是在美国的那一组石碑群？",
+"gold_answer": "佐治亚引导石（The Georgia Guidestones）",
+"model_answer": "美国没有被称为“大规模人口减少计划”的石碑群。你提到的“被视为大规模人口减少计划的引导的碑文”可能源于对“巨石阵”或“石碑群”的误解或误传。美国并没有这样的石碑群与人口减少计划相关联。\n\n事实上，美国著名的"
+},
+{
+"item_id": "t0193",
+"question": "国际反腐败日是定于每年的哪一天？",
+"gold_answer": "12月9日",
+"model_answer": "国际反腐败日是每年的12月9日。"
+},
+{
+"item_id": "t0194",
+"question": "1922年发现骨内输注的美国医生是谁？",
+"gold_answer": "塞西尔·肯特·德林克 (Cecil Kent Drinker）",
+"model_answer": "1922年发现骨内输注的美国医生是 **约翰·格雷厄姆·布雷特（John Graham Breet）**。  \n\n但需更正：实际上，**骨内输注（intraosseous infusion）** 的早期实践由 **美国医生威廉·"
+},
+{
+"item_id": "t0195",
+"question": "衍生集团（国际）控股有限公司于何年在香港交易所主板上市？",
+"gold_answer": "2014",
+"model_answer": "衍生集团（国际）控股有限公司于2014年在香港交易所主板上市。"
+},
+{
+"item_id": "t0196",
+"question": "新丙戊酯的分子式是什么？",
+"gold_answer": "C14H26O4",
+"model_answer": "新丙戊酯的分子式是 C₅H₁₀O₂。"
+},
+{
+"item_id": "t0197",
+"question": "亚历山大·格罗滕迪克在1966年获得了哪个著名的数学奖？",
+"gold_answer": "菲尔兹奖",
+"model_answer": "亚历山大·格罗滕迪克在1966年获得了菲尔兹奖。"
+},
+{
+"item_id": "t0198",
+"question": "凯撒（中国）股份有限公司是哪一天在深交所中小板上市的？",
+"gold_answer": "2010年6月28日",
+"model_answer": "凯撒（中国）股份有限公司于2011年12月23日在深圳证券交易所中小板上市。"
+},
+{
+"item_id": "t0199",
+"question": "指出任何有界完全的充分统计量与任何辅助统计量独立的定理是什么？",
+"gold_answer": "巴苏定理（Basu's Theorem）",
+"model_answer": "该定理是**Basu定理**。\n\n**Basu定理**指出：  \n若一个统计量是**有界完全的充分统计量**，而另一个统计量是**辅助统计量**，则二者**相互独立**。\n\n简要表述：  \n设 $ T $ 是一个"
+},
+{
+"item_id": "t0200",
+"question": "厩螫蝇（Stomoxys calcitrans）有多少条纵脉？",
+"gold_answer": "6",
+"model_answer": "厩螫蝇（Stomoxys calcitrans）有3条纵脉。"
+},
+{
+"item_id": "t0201",
+"question": "现存最早采用计里画方制图方法绘制的中国地图是哪一幅？",
+"gold_answer": "南宋石刻《禹迹图》",
+"model_answer": "现存最早采用“计里画方”制图方法绘制的中国地图是《禹迹图》。"
+},
+{
+"item_id": "t0202",
+"question": "椰丝球在文莱被称为什么？",
+"gold_answer": "Kuih Pancit",
+"model_answer": "椰丝球在文莱被称为“Kuih Kelapa”。"
+},
+{
+"item_id": "t0203",
+"question": "2009年世界上最繁忙的货运港口是哪个港口？",
+"gold_answer": "上海港",
+"model_answer": "2009年世界上最繁忙的货运港口是新加坡港。"
+},
+{
+"item_id": "t0204",
+"question": "苏联红军在第二次世界大战中使用的SN-42防弹胸甲是哪一年开始使用的？",
+"gold_answer": "1942",
+"model_answer": "苏联红军在第二次世界大战中开始使用SN-42防弹胸甲的时间是1942年。"
+},
+{
+"item_id": "t0205",
+"question": "裸麦的种植最早是在哪个时代？",
+"gold_answer": "新石器时代",
+"model_answer": "裸麦的种植最早可追溯到新石器时代，大约在公元前8000年左右，起源于中亚地区。"
+},
+{
+"item_id": "t0206",
+"question": "彭阳春酒厂是哪一年成立的？",
+"gold_answer": "1963",
+"model_answer": "彭阳春酒厂成立于1989年。"
+},
+{
+"item_id": "t0207",
+"question": "漏光云属于哪两类云的变种？",
+"gold_answer": "高积云和层积云",
+"model_answer": "漏光云属于高云和中云的变种。"
+},
+{
+"item_id": "t0208",
+"question": "在哪一年Pit Corder撰写了对现代第二语言习得理论有重要影响的“学习者错误的重要性”这篇文章？",
+"gold_answer": "1967年",
+"model_answer": "1967年"
+},
+{
+"item_id": "t0209",
+"question": "数据智能平台公司Datenna公司最初创建时的总部位于哪座城市？",
+"gold_answer": "埃因霍温",
+"model_answer": "Datenna公司最初创建时的总部位于美国旧金山。"
+},
+{
+"item_id": "t0210",
+"question": "阿非利卡人抵抗运动的创始人是谁？",
+"gold_answer": "尤金·特雷布兰奇（Eugène Ney Terre\\u0027Blanche）",
+"model_answer": "阿非利卡人抵抗运动（Afrikaner Weerstandsbeweging，AWB）的创始人是**皮特·克鲁格**（Piet W. Botha）——不，这是错误的。\n\n正确答案是：**弗雷德里克·威廉·德·"
+},
+{
+"item_id": "t0211",
+"question": "Beatport的Beatport 1.0网上商店是在哪一年推出的？",
+"gold_answer": "2004",
+"model_answer": "Beatport 1.0网上商店于2004年推出。"
+},
+{
+"item_id": "t0212",
+"question": "在有性生殖的雌性动物的卵巢中，卵原细胞经有丝分裂会发育为什么细胞？",
+"gold_answer": "初级卵母细胞",
+"model_answer": "卵原细胞经有丝分裂会发育为初级卵母细胞。"
+},
+{
+"item_id": "t0213",
+"question": "2005年被选择为国际热核聚变实验反应堆（ITER）建设地点的法国核研究中心叫什么名字？",
+"gold_answer": "卡达拉舍(Cadarache)",
+"model_answer": "法国核研究中心名为“法国原子能和替代能源委员会”（CEA），全称为Commissariat à l'Énergie Atomique et aux Énergies Alternatives。它是2005年被选定为ITER建设地点的法国核研究中心。"
+},
+{
+"item_id": "t0214",
+"question": "衍生集团（国际）控股有限公司在何年成立？",
+"gold_answer": "1996",
+"model_answer": "衍生集团（国际）控股有限公司成立于2013年。"
+},
+{
+"item_id": "t0215",
+"question": "八角星在Unicode中的字符是什么？",
+"gold_answer": "U+06DE",
+"model_answer": "八角星在Unicode中没有一个标准的、独立的字符，但可以使用以下几种方式表示：\n\n- Unicode 字符 U+2720（★）是“星号”，不是八角星。\n- 一些字体中，八角星可能通过组合字符或特殊符号实现，"
+},
+{
+"item_id": "t0216",
+"question": "乔治·康托尔在哪一年提出了对角论证法以证明实数集合的不可数性？",
+"gold_answer": "1891",
+"model_answer": "1891年"
+},
+{
+"item_id": "t0217",
+"question": "哪一年在上海梅赛德斯-奔驰文化中心举办了维多利亚的秘密时尚秀？",
+"gold_answer": "2017",
+"model_answer": "2017年"
+},
+{
+"item_id": "t0218",
+"question": "母牛产犊后首24小时内的初乳中，IgG的含量可占总蛋白量的多少百分比以上？",
+"gold_answer": "40%",
+"model_answer": "母牛产犊后首24小时内的初乳中，IgG的含量可占总蛋白量的**70%以上**。"
+},
+{
+"item_id": "t0219",
+"question": "中国人口学会是哪一年成立的？",
+"gold_answer": "1981",
+"model_answer": "中国人口学会成立于1980年。"
+},
+{
+"item_id": "t0220",
+"question": "台北自来水事业处是哪一年成立的？",
+"gold_answer": "1977年",
+"model_answer": "台北自来水事业处成立于1977年。"
+},
+{
+"item_id": "t0221",
+"question": "电视剧《家变》中饰演洛华这个角色的演员是谁？",
+"gold_answer": "任达华",
+"model_answer": "电视剧《家变》中饰演洛华这个角色的演员是黄宗泽。"
+},
+{
+"item_id": "t0222",
+"question": "Skippy花生酱品牌在哪一年被荷美尔食品公司收购？",
+"gold_answer": "2013年",
+"model_answer": "Skippy花生酱品牌于1999年被荷美尔食品公司（Hormel Foods）收购。"
+},
+{
+"item_id": "t0223",
+"question": "意识形态一词最早是由哪位人物在1796年提出的？",
+"gold_answer": "安托万·德斯蒂·德·特拉西",
+"model_answer": "“意识形态”一词并非由某位人物在1796年首次提出。该词最早出现在1796年，由法国思想家安托万·德·圣西门（Antoine de Saint-Simon）使用，但更广泛地被哲学家和政治思想家所"
+},
+{
+"item_id": "t0224",
+"question": "哪个公司与Adobe公司联合开发了OpenType字体格式？",
+"gold_answer": "微软",
+"model_answer": "Microsoft公司与Adobe公司联合开发了OpenType字体格式。"
+},
+{
+"item_id": "t0225",
+"question": "日本在二战前曾建造了多少艘满载排水量72800吨的大和级战列舰？",
+"gold_answer": "2艘",
+"model_answer": "日本在二战前建造了2艘满载排水量72800吨的大和级战列舰，分别是“大和号”和“武藏号”。"
+},
+{
+"item_id": "t0226",
+"question": "夏季穿着的传统杰拉巴通常是由哪种材料制成的？",
+"gold_answer": "棉质材料",
+"model_answer": "夏季穿着的传统杰拉巴通常由棉布制成。"
+},
+{
+"item_id": "t0227",
+"question": "联合国环境署执行主任在哪一年发布了全球绿色新政倡议？",
+"gold_answer": "2008",
+"model_answer": "联合国环境署执行主任并未发布“全球绿色新政倡议”。该倡议实际由联合国秘书长古特雷斯在2021年提出，旨在推动全球可持续发展和应对气候变化。联合国环境署（UNEP）是联合国系统内负责环境事务的机构，其执行主任为英格·布伦"
+},
+{
+"item_id": "t0228",
+"question": "指导式民主被广泛用于描述哪位领导人下的俄罗斯？",
+"gold_answer": "普京",
+"model_answer": "“指导式民主”并非官方术语，也未被广泛用于描述任何俄罗斯领导人的政治体制。该概念可能源于对俄罗斯政治模式的非正式或批评性描述，但并无权威来源支持其与特定领导人直接关联。俄罗斯的政治体制通常被描述为“威权主义”或“"
+},
+{
+"item_id": "t0229",
+"question": "伏立诺他是用来抑制哪种酶的药物？",
+"gold_answer": "组蛋白脱乙酰酶",
+"model_answer": "伏立诺他（Vorinostat）是用于抑制组蛋白去乙酰化酶（HDAC）的药物。"
+},
+{
+"item_id": "t0230",
+"question": "TALOS项目中首次提出这种防护服构想的美军指挥官是谁？",
+"gold_answer": "威廉·麦克雷文 (William Harry McRaven) 将军",
+"model_answer": "TALOS项目中并未有公开记录显示是由某位具体的美军指挥官首次提出防护服构想。该项目是由美国国防高级研究计划局（DARPA）主导，旨在开发一种先进的战术外骨骼和防护服系统，其构想源于军事技术发展需求，而非由某位"
+},
+{
+"item_id": "t0231",
+"question": "1948年，哪种抗生素被发现可以抑制尖孢镰刀菌古巴专化型？",
+"gold_answer": "Musarin",
+"model_answer": "1948年，青霉素被发现可以抑制尖孢镰刀菌古巴专化型（Fusarium oxysporum f. sp. cubense）。不过需要说明的是，青霉素主要对革兰氏阳性菌有效，对镰刀菌的抑制作用有限，实际应用"
+},
+{
+"item_id": "t0232",
+"question": "Burberry 品牌的创始人是谁？",
+"gold_answer": "托马斯·博柏利（Thomas Burberry）",
+"model_answer": "Burberry 品牌的创始人是 Thomas Burberry。"
+},
+{
+"item_id": "t0233",
+"question": "中易黑体是哪个公司制作的？",
+"gold_answer": "北京中易中标电子信息技术有限公司",
+"model_answer": "中易黑体由北京中易中标软件有限公司开发。"
+},
+{
+"item_id": "t0234",
+"question": "缅甸军政府的第一个统治阶段缅甸社会主义纲领党由谁掌权？",
+"gold_answer": "奈温",
+"model_answer": "缅甸军政府的第一个统治阶段（1962–1988）中，缅甸社会主义纲领党（Burma Socialist Programme Party, BSPP）由奈温（Ne Win）掌权。他于1962年通过军事政变上台，成立军政府，并将该"
+},
+{
+"item_id": "t0235",
+"question": "志丹苑元代水闸遗址在哪一年被公布为全国重点文物保护单位？",
+"gold_answer": "2013",
+"model_answer": "2013年。"
+},
+{
+"item_id": "t0236",
+"question": "明朝政治人物杨继盛在嘉靖三十二年因弹劾哪位权臣而遭诬陷下狱？",
+"gold_answer": "严嵩",
+"model_answer": "杨继盛在嘉靖三十二年因弹劾权臣严嵩而遭诬陷下狱。"
+},
+{
+"item_id": "t0237",
+"question": "第十三届全国人民代表大会共有多少名代表参加？",
+"gold_answer": "2980",
+"model_answer": "第十三届全国人民代表大会共有2980名代表参加。"
+},
+{
+"item_id": "t0238",
+"question": "美国共和党在哪一年由反对《堪萨斯-内布拉斯加法案》的成员创立？",
+"gold_answer": "1854",
+"model_answer": "美国共和党并非由反对《堪萨斯-内布拉斯加法案》的成员创立，而是于1854年成立，其成立背景是反对《堪萨斯-内布拉斯加法案》。该法案允许各州通过“人民主权”原则决定是否允许奴隶制，"
+},
+{
+"item_id": "t0239",
+"question": "洋葱的拉丁学名是什么？",
+"gold_answer": "Allium cepa",
+"model_answer": "Allium cepa"
+},
+{
+"item_id": "t0240",
+"question": "提出“如无必要，勿增实体”并著有《逻辑大全的》英国学者是谁？？",
+"gold_answer": "奥卡姆（William of Ockham）",
+"model_answer": "弗兰西斯·培根"
+},
+{
+"item_id": "t0241",
+"question": "多模式数字语音调制解调器MMDVM是由哪位英国业余无线电爱好者设计的？",
+"gold_answer": "Jonathan Naylor",
+"model_answer": "MMDVM是由英国业余无线电爱好者Graham Bell（呼号：G3PLX）设计的。"
+},
+{
+"item_id": "t0242",
+"question": "用于吸引外国投资者的葡萄牙签证政策称为什么？",
+"gold_answer": "葡萄牙黄金签证",
+"model_answer": "葡萄牙黄金签证计划。"
+},
+{
+"item_id": "t0243",
+"question": "黄梅戏哪一年被列入国家级非物质文化遗产名录？",
+"gold_answer": "2006",
+"model_answer": "2006年"
+},
+{
+"item_id": "t0244",
+"question": "凌塔白酒产地位于中国哪个市？",
+"gold_answer": "辽宁省朝阳市",
+"model_answer": "凌塔白酒产地位于中国辽宁省锦州市。"
+},
+{
+"item_id": "t0245",
+"question": "“敛神调息无极式,进步撞锤震天宇”是哪个中国拳种的歌诀？",
+"gold_answer": "八极拳",
+"model_answer": "“敛神调息无极式，进步撞锤震天宇”是**太极拳**的歌诀。  \n\n（注：此句融合了太极拳的“无极”理念与“进步搬拦捶”等动作，属于太极拳常见口诀风格，虽非严格出自某一本经典文献"
+},
+{
+"item_id": "t0246",
+"question": "圆形监狱的概念是由哪位英国哲学家提出的？",
+"gold_answer": "杰里米·边沁（Jeremy Bentham）",
+"model_answer": "圆形监狱的概念是由英国哲学家杰里米·边沁（Jeremy Bentham）提出的。"
+},
+{
+"item_id": "t0247",
+"question": "2013年3月9日布卡武Mi-8直升机坠毁事件中有多少机组人员丧生？",
+"gold_answer": "4",
+"model_answer": "2013年3月9日布卡武Mi-8直升机坠毁事件中，共有5名机组人员丧生。"
+},
+{
+"item_id": "t0248",
+"question": "台湾省国语推行委员会是在哪一年成立的？",
+"gold_answer": "1946",
+"model_answer": "台湾省国语推行委员会成立于1956年。"
+},
+{
+"item_id": "t0249",
+"question": "中国武术家夏宝峰是哪个拳种的第十三代传人？",
+"gold_answer": "四明内家拳",
+"model_answer": "夏宝峰是太极拳的第十三代传人。"
+},
+{
+"item_id": "t0250",
+"question": "凌塔白酒产自哪个省？",
+"gold_answer": "辽宁省",
+"model_answer": "凌塔白酒产自辽宁省。"
+},
+{
+"item_id": "t0251",
+"question": "鲍里斯·帕勒根是哪一年毕业于圣彼得堡大学哲学系（列宁格勒州立大学）？",
+"gold_answer": "1953",
+"model_answer": "鲍里斯·帕勒根于1953年毕业于圣彼得堡大学哲学系（列宁格勒州立大学）。"
+},
+{
+"item_id": "t0252",
+"question": "按照1985年行政院环境保护署发布的《地面水体分类及水质标准》，陆域地面水体可以分类为几类",
+"gold_answer": "5",
+"model_answer": "按照1985年行政院环境保护署发布的《地面水体分类及水质标准》，陆域地面水体可分为五类。"
+},
+{
+"item_id": "t0253",
+"question": "橡树岭国家实验室是哪一年首次建立的？",
+"gold_answer": "1943",
+"model_answer": "橡树岭国家实验室（Oak Ridge National Laboratory）首次建立于1943年。"
+},
+{
+"item_id": "t0254",
+"question": "在物理学中，能够在外力作用下发生形状或体积变化的物体称为什么？",
+"gold_answer": "变形体",
+"model_answer": "弹性体。"
+},
+{
+"item_id": "t0255",
+"question": "CEC, 即消费者电子控制功能, 在HDMI标准的哪个版本中首次被定义？",
+"gold_answer": "1.0",
+"model_answer": "CEC功能首次在HDMI 1.0版本中被定义。"
+},
+{
+"item_id": "t0256",
+"question": "在闪电战基础理论中，切断敌军前线部队与哪一方的联系可以削弱敌军的士气及战斗力？",
+"gold_answer": "大后方",
+"model_answer": "在闪电战基础理论中，切断敌军前线部队与**后方补给线**的联系，可以削弱敌军的士气及战斗力。"
+},
+{
+"item_id": "t0257",
+"question": "首次出版于1798年的《人口原理》是哪位英国人口学家的著作？",
+"gold_answer": "托马斯·罗伯特·马尔萨斯 (Thomas Robert Malthus)",
+"model_answer": "托马斯·罗伯特·马尔萨斯"
+},
+{
+"item_id": "t0258",
+"question": "中国考古学家李零是哪年成为美国美国人文与科学院外籍院士？",
+"gold_answer": "2016",
+"model_answer": "李零并非美国人文与科学院外籍院士。他是中国著名考古学家、古文字学家，曾任北京大学教授，但无公开记录显示其成为美国人文与科学院外籍院士。该信息可能有误。"
+},
+{
+"item_id": "t0259",
+"question": "中国第一台DS-2000程控数字市话交换机是哪一年研制的？",
+"gold_answer": "1988",
+"model_answer": "1988年"
+},
+{
+"item_id": "t0260",
+"question": "谁在1848年出版的著作中详细论述了工资基金说？",
+"gold_answer": "约翰·斯图尔特·密尔（John Stuart Mill）",
+"model_answer": "1848年，英国经济学家大卫·李嘉图（David Ricardo）在其著作《政治经济学及赋税原理》中详细论述了工资基金说。不过需注意，该理论在19世纪中叶由其他经济学家如约翰·斯图尔特·穆勒（John Stuart Mill"
+},
+{
+"item_id": "t0261",
+"question": "被认为是历史比较语言学奠基人的德国语言学家是谁？",
+"gold_answer": "弗朗茨·葆朴（Franz Bopp）",
+"model_answer": "德语语言学家威廉·冯·洪堡（Wilhelm von Humboldt）被认为是历史比较语言学的奠基人之一。不过，更常被公认为历史比较语言学奠基人的是德国语言学家**弗里德里希·冯·施莱歇尔**（Friedrich von Sch"
+},
+{
+"item_id": "t0262",
+"question": "绘岛是在德川幕府第几代将军时担任大奥御年寄的高职？",
+"gold_answer": "7",
+"model_answer": "绘岛是在德川幕府第7代将军德川家继时期担任大奥御年寄的高职。"
+},
+{
+"item_id": "t0263",
+"question": "首次出版于1807年的《精神现象学》的作者是哪位德国哲学家？",
+"gold_answer": "格奥尔格·威廉·弗里德里希·黑格尔 (Georg Wilhelm Friedrich Hegel)",
+"model_answer": "黑格尔"
+},
+{
+"item_id": "t0264",
+"question": "段落符号“¶”的Unicode编码是什么？",
+"gold_answer": "U+00B6",
+"model_answer": "段落符号“¶”的Unicode编码是 U+00B6。"
+},
+{
+"item_id": "t0265",
+"question": "中国首宗个人破产案的债务人是谁？",
+"gold_answer": "梁文锦",
+"model_answer": "中国首宗个人破产案的债务人是梁文锦。"
+},
+{
+"item_id": "t0266",
+"question": "在英国下议院中负责维护议院秩序与内部管理事务的官员是什么职位？",
+"gold_answer": "下议院警卫官",
+"model_answer": "在英国下议院中，负责维护议院秩序与内部管理事务的官员是**议长**（Speaker of the House of Commons）。"
+},
+{
+"item_id": "t0267",
+"question": "在死刑方法中，哪一种是通过使用电产生致命电流来执行的？",
+"gold_answer": "电椅",
+"model_answer": "在死刑方法中，通过使用电产生致命电流来执行的是“电刑”（Electrocution）。"
+},
+{
+"item_id": "t0268",
+"question": "国际友谊展览馆于哪一年开馆？",
+"gold_answer": "1978年",
+"model_answer": "国际友谊展览馆于1978年开馆。"
+},
+{
+"item_id": "t0269",
+"question": "精英主义理论系统的形成主要是在19世纪末20世纪初，早期的精英主义发源于哪个国家?",
+"gold_answer": "意大利",
+"model_answer": "早期的精英主义发源于意大利。"
+},
+{
+"item_id": "t0270",
+"question": "黑脚语属于哪个语族？",
+"gold_answer": "阿尔冈昆语族",
+"model_answer": "黑脚语属于阿尔冈昆语族。"
+},
+{
+"item_id": "t0271",
+"question": "在日本和韩国，公司最高经营者的职称是什么？",
+"gold_answer": "社长",
+"model_answer": "在日本，公司最高经营者的职称通常是“社长”（しゃちょう，President/CEO）；在韩国，公司最高经营者的职称通常是“社长”（사장，President/CEO）。  \n\n注：“社长”在两国均指公司最高执行负责人，相当于首席执行官（CEO）。"
+},
+{
+"item_id": "t0272",
+"question": "《里斯本条约》是哪一年在葡萄牙里斯本签署的？",
+"gold_answer": "2007",
+"model_answer": "《里斯本条约》于2007年在葡萄牙里斯本签署。"
+},
+{
+"item_id": "t0273",
+"question": "符山石最初在哪个火山的熔岩中被发现？",
+"gold_answer": "维苏威火山",
+"model_answer": "符山石最初在意大利维苏威火山的熔岩中被发现。"
+},
+{
+"item_id": "t0274",
+"question": "广州抽水蓄能电站的总装机容量是多少MW？",
+"gold_answer": "2400MW",
+"model_answer": "广州抽水蓄能电站的总装机容量为1200MW。"
+},
+{
+"item_id": "t0275",
+"question": "等度连续这一概念最早出现在哪个定理中？",
+"gold_answer": "阿尔泽拉-阿斯科利定理",
+"model_answer": "等度连续这一概念最早出现在阿达马（J. Hadamard）和阿斯科特（A. Ascoli）的工作中，但严格意义上，它最早系统地出现在**阿斯科利定理**（Ascoli's theorem）中。\n\n因此，等度连续这一概念最早"
+},
+{
+"item_id": "t0276",
+"question": "电影《桃太郎大显神威》的导演是谁？",
+"gold_answer": "赵中兴",
+"model_answer": "电影《桃太郎大显神威》的导演是中村义隆。"
+},
+{
+"item_id": "t0277",
+"question": "《人类的性存在》一书的作者之一是 珍妮特·S·海德(Janet Shibley Hyde)，她与哪位合著者共同撰写了该书？",
+"gold_answer": "约翰·D·德拉马特(John DeLamater)",
+"model_answer": "《人类的性存在》一书的作者之一是珍妮特·S·海德（Janet Shibley Hyde），她与**达纳·L·斯科特（Dana L. S. Scott）**共同撰写了该书。  \n\n（注：实际该书主要作者"
+},
+{
+"item_id": "t0278",
+"question": "日本艺术体操运动员三浦莉奈是哪一年出生的？",
+"gold_answer": "1994",
+"model_answer": "三浦莉奈出生于1998年。"
+},
+{
+"item_id": "t0279",
+"question": "Georgia字体的设计师是谁？",
+"gold_answer": "马修·卡特（Matthew Carter）",
+"model_answer": "Georgia字体的设计师是**Steve Matteson**。"
+},
+{
+"item_id": "t0280",
+"question": "粗壮女贞是属于哪一个科的植物？",
+"gold_answer": "木樨科",
+"model_answer": "粗壮女贞属于樟科植物。"
+},
+{
+"item_id": "t0281",
+"question": "约翰·梅钦在哪一年用格雷果里－莱布尼茨级数推出了可以快速收敛圆周率的公式？",
+"gold_answer": "1706",
+"model_answer": "约翰·梅钦在1706年使用格雷果里－莱布尼茨级数的变体推出了快速收敛的圆周率公式。不过需要说明的是，格雷果里－莱布尼茨级数本身收敛非常缓慢，而梅钦实际上使用的是更高效的级"
+},
+{
+"item_id": "t0282",
+"question": "美国第六任国防部长是谁？",
+"gold_answer": "尼尔·麦克尔罗伊（Neil Hosler McElroy）",
+"model_answer": "美国第六任国防部长是罗伯特·S·麦克纳马拉（Robert S. McNamara）。他于1961年就任，任职至1968年。"
+},
+{
+"item_id": "t0283",
+"question": "皓天财经集团控股有限公司在哪一年在香港交易所主板上市？",
+"gold_answer": "2012",
+"model_answer": "皓天财经集团控股有限公司于2014年在香港交易所主板上市。"
+},
+{
+"item_id": "t0284",
+"question": "Skank舞蹈最初起源于哪个国家的舞厅中播放的音乐?",
+"gold_answer": "牙买加",
+"model_answer": "Skank舞蹈最初起源于牙买加的舞厅中，伴随着雷鬼音乐（Reggae）发展而来。"
+},
+{
+"item_id": "t0285",
+"question": "1545年在哪个南美地区发现了当时世界储量第一的银矿？",
+"gold_answer": "波托西",
+"model_answer": "1545年，在南美洲的秘鲁发现了当时世界储量第一的银矿——波托西银矿。"
+},
+{
+"item_id": "t0286",
+"question": "火蚁属的拉丁学名是什么？",
+"gold_answer": "Solenopsis",
+"model_answer": "Solenopsis"
+},
+{
+"item_id": "t0287",
+"question": "丹麦激进自由党（Radical Liberal Party）是哪一年成立的？",
+"gold_answer": "1905",
+"model_answer": "丹麦激进自由党（Radical Liberal Party）成立于1905年。"
+},
+{
+"item_id": "t0288",
+"question": "查良鉴是哪一年开始担任中华民国司法行政部部长的？",
+"gold_answer": "1967",
+"model_answer": "查良鉴于1950年开始担任中华民国司法行政部部长。"
+},
+{
+"item_id": "t0289",
+"question": "《太空堡垒：暗影编年》首次在美国哪一天上映?",
+"gold_answer": "2007年1月5日",
+"model_answer": "《太空堡垒：暗影编年》首次在美国上映的日期是2006年12月8日。"
+},
+{
+"item_id": "t0290",
+"question": "气旋中心到其最强烈风带之间的距离被称为什么",
+"gold_answer": "最大风速半径",
+"model_answer": "气旋中心到其最强烈风带之间的距离称为“最大风速半径”（Radius of Maximum Wind）。"
+},
+{
+"item_id": "t0291",
+"question": "1995年芝加哥热浪期间记录的最高气温是多少摄氏度？",
+"gold_answer": "41",
+"model_answer": "1995年芝加哥热浪期间记录的最高气温是39.6摄氏度（103.3华氏度）。"
+},
+{
+"item_id": "t0292",
+"question": "斯里兰卡最后的具备可持续生产能力的热带原始雨林叫什么？",
+"gold_answer": "辛哈拉加森林保护区",
+"model_answer": "斯里兰卡目前没有被广泛认可的“最后的具备可持续生产能力的热带原始雨林”这一确切名称。斯里兰卡的热带雨林生态系统因历史上的砍伐、农业扩张和城市化而严重退化，大部分原始雨林已被破坏或转化为次生林、农业"
+},
+{
+"item_id": "t0293",
+"question": "哪本书首次提出了著名的“战争是政治的继续”观点？",
+"gold_answer": "《战争论》",
+"model_answer": "《战争论》（Von der Kriegslehre）由卡尔·冯·克劳塞维茨（Carl von Clausewitz）首次提出“战争是政治的继续”这一著名观点。"
+},
+{
+"item_id": "t0294",
+"question": "蔻依品牌的创始人是谁？",
+"gold_answer": "加比·阿吉翁(Gaby Aghion)",
+"model_answer": "蔻依（Chloé）品牌的创始人是加比·阿吉翁（Gaby Aghion）。"
+},
+{
+"item_id": "t0295",
+"question": "雷曼兄弟破产导致其发行的迷你债券价值大跌的日期是哪一年？",
+"gold_answer": "2008年",
+"model_answer": "2008年"
+},
+{
+"item_id": "t0296",
+"question": "2004年，形意拳在中国成立的第一个国际性组织是什么？",
+"gold_answer": "国际形意拳道联盟发展中心",
+"model_answer": "2004年，形意拳在中国成立的第一个国际性组织是“国际形意拳联合会”（International Xingyi Quan Federation）。"
+},
+{
+"item_id": "t0297",
+"question": "中国评剧剧作家何孝充是哪一年出生的？",
+"gold_answer": "1932",
+"model_answer": "何孝充并非中国评剧剧作家，而是中国著名剧作家、文学评论家，主要活跃于话剧和戏曲理论领域。他出生于1918年。需要注意的是，评剧的代表剧作家如韩少功、新凤霞等，与何孝充并非同一人。"
+},
+{
+"item_id": "t0298",
+"question": "氟康唑是属于哪一类抗真菌药物？",
+"gold_answer": "氟代三唑类",
+"model_answer": "氟康唑属于三唑类抗真菌药物。"
+},
+{
+"item_id": "t0299",
+"question": "香港特别行政区政府的政府统计处是哪一年正式成立的？",
+"gold_answer": "1967",
+"model_answer": "香港特别行政区政府的政府统计处正式成立于1967年。"
+},
+{
+"item_id": "t0300",
+"question": "花岗岩主要矿物为石英、钾长石和什么？",
+"gold_answer": "斜长石",
+"model_answer": "花岗岩主要矿物为石英、钾长石和斜长石。"
+},
+{
+"item_id": "t0301",
+"question": "国立阳明交通大学客家文化学院的学院馆舍是哪一年落成启用的？",
+"gold_answer": "2010年",
+"model_answer": "国立阳明交通大学客家文化学院的学院馆舍于2013年落成启用。"
+},
+{
+"item_id": "t0302",
+"question": "《昆明东郊的撒梅族》一书的作者是谁？",
+"gold_answer": "谢剑",
+"model_answer": "《昆明东郊的撒梅族》一书的作者是陈安。"
+},
+{
+"item_id": "t0303",
+"question": "东野圭吾的小说《沉睡的森林》首次出版于哪一年？",
+"gold_answer": "1989年",
+"model_answer": "1989年"
+},
+{
+"item_id": "t0304",
+"question": "洛阳多层次轨道交通网络的实施方案是哪一年印发的？",
+"gold_answer": "2020年",
+"model_answer": "2022年"
+},
+{
+"item_id": "t0305",
+"question": "中国剧作家胡丹沸出生于哪一年?",
+"gold_answer": "1913",
+"model_answer": "胡丹沸并非中国著名剧作家，目前公开资料中并无确切记载其出生年份。可能存在姓名误记或信息混淆。建议核实姓名或提供更多背景信息。"
+},
+{
+"item_id": "t0306",
+"question": "维根斯坦的梯子这一术语出自于奥地利哲学家路德维希·维根斯坦的哪部作品？",
+"gold_answer": "《逻辑哲学论》",
+"model_answer": "“维根斯坦的梯子”这一术语出自于路德维希·维根斯坦的《哲学研究》（*Philosophical Investigations*）。"
+},
+{
+"item_id": "t0307",
+"question": "中国大陆作家沙叶新创作的《假如我是真的》剧本首次上映于哪一年？",
+"gold_answer": "1981年",
+"model_answer": "1979年"
+},
+{
+"item_id": "t0308",
+"question": "RETScreen Expert软件最新版本是哪一天发布的？",
+"gold_answer": "2016年9月19日",
+"model_answer": "截至2024年6月，RETScreen Expert的最新版本（v9.0）于2023年10月正式发布。该版本增强了能源项目评估功能，支持更多可再生能源技术，并优化了用户界面和性能。具体发布日期以官方公告为准，建议访问"
+},
+{
+"item_id": "t0309",
+"question": "中国多金属矿业有限公司的股份是在哪一天在香港交易所主板上市的？",
+"gold_answer": "2011年12月14日",
+"model_answer": "中国多金属矿业有限公司（China Multi-Metal Mining Limited）于2011年12月15日在香港交易所主板上市。"
+},
+{
+"item_id": "t0310",
+"question": "1942年全汉昇先生所撰哪一文章发表于《史语所集刊》，备受学界赞誉？",
+"gold_answer": "《宋末的通货膨胀及其对于物价的影响》",
+"model_answer": "1942年，全汉昇先生发表于《史语所集刊》的《唐代的户籍制度》一文，备受学界赞誉。"
+},
+{
+"item_id": "t0311",
+"question": "草鞋在中国最早被称为什么？",
+"gold_answer": "扉",
+"model_answer": "草鞋在中国最早被称为“履”。"
+},
+{
+"item_id": "t0312",
+"question": "被称为“台湾吊桥大王”的林枝木首次建造的吊桥是哪一座？",
+"gold_answer": "平林吊桥",
+"model_answer": "林枝木首次建造的吊桥是“草屯双十吊桥”。"
+},
+{
+"item_id": "t0313",
+"question": "《异世纪机器人大战：R》是哪一年发行的？",
+"gold_answer": "2010年",
+"model_answer": "《异世纪机器人大战：R》于2005年发行。"
+},
+{
+"item_id": "t0314",
+"question": "仁德海底山是属于哪个海山链的一部分？",
+"gold_answer": "夏威夷－皇帝海山链",
+"model_answer": "仁德海底山属于菲律宾海山链的一部分。"
+},
+{
+"item_id": "t0315",
+"question": "被称为百拳之母的拳法是什么拳法？",
+"gold_answer": "太祖长拳",
+"model_answer": "被称为“百拳之母”的拳法是**太极拳**。"
+},
+{
+"item_id": "t0316",
+"question": "被誉为“家鱼人工繁殖之父”的中国鱼类生理学家是谁？",
+"gold_answer": "钟麟",
+"model_answer": "钟麟"
+},
+{
+"item_id": "t0317",
+"question": "劳动合同制在中国哪一年正式成为就业政策并开始在全国范围内推广？",
+"gold_answer": "1986",
+"model_answer": "1986年"
+},
+{
+"item_id": "t0318",
+"question": "现代驯化西瓜最有可能的祖先或近亲是什么物种？",
+"gold_answer": "科尔多凡瓜",
+"model_answer": "现代驯化西瓜最有可能的祖先或近亲是**野生西瓜**，学名 *Citrullus lanatus* 的野生种，尤其是 *Citrullus lanatus* var. *lanatus*（如非洲的野生西瓜 *Citrullus lanatus* subsp. *"
+},
+{
+"item_id": "t0319",
+"question": "政治学家约翰·格雷毕业于牛津大学的哪一个学院？",
+"gold_answer": "埃克塞特学院",
+"model_answer": "约翰·格雷毕业于牛津大学的圣安东尼学院（St Antony's College）。"
+},
+{
+"item_id": "t0320",
+"question": "计算净蒸散量所使用的公式中，哪一个是由Penman公式推广而来的？",
+"gold_answer": "Penman Monteith公式",
+"model_answer": "Penman-Monteith 公式是由Penman公式推广而来的，用于计算净蒸散量。"
+},
+{
+"item_id": "t0321",
+"question": "头孢孟多酯是属于哪一类抗生素？",
+"gold_answer": "头孢菌素",
+"model_answer": "头孢孟多酯属于头孢菌素类抗生素。"
+},
+{
+"item_id": "t0322",
+"question": "杨月楼奇案发生在哪一年？",
+"gold_answer": "1873年",
+"model_answer": "杨月楼奇案发生在1873年。"
+},
+{
+"item_id": "t0323",
+"question": "叙利亚公民防卫组织（白头盔）的创始人是谁？",
+"gold_answer": "詹姆斯·勒·梅西耶尔（James Le Mesurier）",
+"model_answer": "叙利亚公民防卫组织（白头盔）的创始人是英国人詹姆斯·勒·梅西（James Le Mesurier），但更广泛认可的创始人是叙利亚籍的哈立德·阿萨德（Khaled al-Asad）和英国人马尔科姆·布雷克（Mal"
+},
+{
+"item_id": "t0324",
+"question": "根据台湾公司法第356-1条，闭锁性股份有限公司的股东人数限制是不超过多少人？",
+"gold_answer": "50",
+"model_answer": "根据台湾公司法第356-1条，闭锁性股份有限公司的股东人数不得超过50人。"
+},
+{
+"item_id": "t0325",
+"question": "《千字文》的作者是谁？",
+"gold_answer": "周兴嗣",
+"model_answer": "《千字文》的作者是南朝梁代的周兴嗣。"
+},
+{
+"item_id": "t0326",
+"question": "投资者—国家争端解决的英文缩写是什么？",
+"gold_answer": "ISDS",
+"model_answer": "ICSN"
+},
+{
+"item_id": "t0327",
+"question": "诺华基因组学研究所构建的全长人体cDNA克隆阵列文库包含多少个cDNA克隆？",
+"gold_answer": "20704",
+"model_answer": "诺华基因组学研究所构建的全长人体cDNA克隆阵列文库包含约10万个cDNA克隆。"
+},
+{
+"item_id": "t0328",
+"question": "摩西计划中装有铰链的活动水闸的重量是多少？",
+"gold_answer": "300吨",
+"model_answer": "摩西计划中装有铰链的活动水闸重量约为120吨。"
+},
+{
+"item_id": "t0329",
+"question": "罗伯特·哈钦斯·戈达德于哪一年发射的液体火箭？",
+"gold_answer": "1926",
+"model_answer": "1926年"
+},
+{
+"item_id": "t0330",
+"question": "《快乐婚礼》这部漫画由哪位日本漫画家创作？",
+"gold_answer": "圆城寺真纪",
+"model_answer": "《快乐婚礼》由日本漫画家**高桥留美子**创作。"
+},
+{
+"item_id": "t0331",
+"question": "莱佛士医疗集团在新加坡交易所主板上市的日期是哪一天？",
+"gold_answer": "2000年7月10日",
+"model_answer": "莱佛士医疗集团（Raffles Medical Group）于2015年10月22日在新加坡交易所主板上市。"
+},
+{
+"item_id": "t0332",
+"question": "苯甲酸钠的化学式是什么？",
+"gold_answer": "C7H5NaO2",
+"model_answer": "苯甲酸钠的化学式是 C7H5NaO2。"
+},
+{
+"item_id": "t0333",
+"question": "纳维－斯托克斯方程是将哪个物理定律应用到流体动力学之后得到的结果？",
+"gold_answer": "牛顿第二定律",
+"model_answer": "纳维－斯托克斯方程是将牛顿第二定律（即运动定律）应用到流体动力学之后得到的结果。"
+},
+{
+"item_id": "t0334",
+"question": "世界上第一个商业化电力公用事业规模的太阳能发电塔是哪一个？",
+"gold_answer": "PS10太阳能发电塔",
+"model_answer": "世界上第一个商业化电力公用事业规模的太阳能发电塔是“伊万帕太阳能电站”（Ivanpah Solar Power Facility）。它位于美国加利福尼亚州，于2013年投入运营，是全球首个大规模使用太阳能塔技术的公用事业级项目。"
+},
+{
+"item_id": "t0335",
+"question": "被苏联政府认定为“资产阶级伪科学”的控制论主要由哪位科学家创建？",
+"gold_answer": "诺伯特·维纳（Norbert Wiener）",
+"model_answer": "控制论主要由美国科学家诺伯特·维纳（Norbert Wiener）创建。尽管苏联政府曾将其视为“资产阶级伪科学”，但维纳是该领域的奠基人。"
+},
+{
+"item_id": "t0336",
+"question": "卡维拉人使用哪种植物的红色汁液当作假想的万灵药？",
+"gold_answer": "大象树（Bursera microphylla）",
+"model_answer": "卡维拉人使用一种名为“安祖拉”（Anzula）的植物的红色汁液当作假想的万灵药。不过需要说明的是，这一说法并无可靠历史或科学依据，可能属于虚构或误传。在现实中，没有确凿证据表明卡维拉人"
+},
+{
+"item_id": "t0337",
+"question": "淡红银矿的化学式是什么？",
+"gold_answer": "Ag3AsS3",
+"model_answer": "淡红银矿的化学式是 Ag₂S。"
+},
+{
+"item_id": "t0338",
+"question": "舞蹈家王克芬是哪年出生的??",
+"gold_answer": "1927年",
+"model_answer": "舞蹈家王克芬出生于1936年。"
+},
+{
+"item_id": "t0339",
+"question": "乌克兰二战历史博物馆是位于乌克兰基辅的哪条街道？",
+"gold_answer": "基辅拉夫斯卡街",
+"model_answer": "乌克兰二战历史博物馆位于乌克兰基辅的**维克托·叶夫梅诺夫街**（Viktor Yevmenov Street），正式名称为**乌克兰二战历史博物馆**（Museum of the Great Patriotic War），地址是：**Kiev, 01010, Ukraine"
+},
+{
+"item_id": "t0340",
+"question": "蛋白质变性理论是由哪位科学家在1931年首次提出的？",
+"gold_answer": "吴宪",
+"model_answer": "蛋白质变性理论并非由某位科学家在1931年“首次提出”一个明确的、统一的理论。实际上，蛋白质变性的概念在20世纪初逐渐形成，其中**1931年**，**H. A. F. H. H.**（通常"
+},
+{
+"item_id": "t0341",
+"question": "哪位经济学家在1921年出版了《风险、不确定性与利润》一书？",
+"gold_answer": "弗兰克·H·奈特（F.H. Knight）",
+"model_answer": "弗兰克·希尔伯特·奈特（Frank H. Knight）在1921年出版了《风险、不确定性与利润》一书。"
+},
+{
+"item_id": "t0342",
+"question": "在市场营销中被描述为通过降低核心产品的价格以吸引顾客，同时提高周边产品价格的定价策略是什么？",
+"gold_answer": "互补定价",
+"model_answer": "这是“撇脂定价”与“渗透定价”的混淆，但更准确的答案是：**捆绑定价**或**产品线定价**。\n\n不过，你描述的“降低核心产品价格吸引顾客，同时提高周边产品价格”更符合一种称为 **“核心产品低价、附加产品高价”**"
+},
+{
+"item_id": "t0343",
+"question": "绿色革命之父是谁?",
+"gold_answer": "Norman Borlaug",
+"model_answer": "绿色革命之父是诺曼·博洛格（Norman Borlaug）。"
+},
+{
+"item_id": "t0344",
+"question": "长刀之夜事件的策划人是谁",
+"gold_answer": "阿道夫·希特勒(Adolf Hitler)",
+"model_answer": "“长刀之夜”（又称“长刀行动”）是纳粹德国于1934年6月30日发生的一场政治清洗行动，其主要策划者是希特勒。该行动旨在清除德国国内的反对势力，尤其是冲锋队（SA）领导人恩斯特·"
+},
+{
+"item_id": "t0345",
+"question": "《中国动物志》中关于无脊椎动物第26卷是由哪位作者主编的?",
+"gold_answer": "郑守仪",
+"model_answer": "《中国动物志》无脊椎动物第26卷由陈世骧主编。"
+},
+{
+"item_id": "t0346",
+"question": "1MDC是什么年份创立的？",
+"gold_answer": "2001年",
+"model_answer": "MDC（Mega Digital Currency）并非一个广为人知的正式货币或标准，目前没有权威记录显示“1MDC”在某一年创立。可能存在误解或拼写错误。\n\n如果你指的是“MDC”作为某种加密货币或项目，请提供更具体的信息（如全称或背景"
+},
+{
+"item_id": "t0347",
+"question": "谁获得1988年和1989年连续两届的国际数学奥林匹克竞赛金牌？",
+"gold_answer": "吴宝珠",
+"model_answer": "1988年和1989年连续两届获得国际数学奥林匹克竞赛（IMO）金牌的是中国选手**张景中**。  \n\n（注：此信息存在争议，实际查证显示，中国在1988年和1989年IMO中获得金牌的"
+},
+{
+"item_id": "t0348",
+"question": "著名数学家弗拉基米尔·德林费尔德是在哪一年获得菲尔兹奖？",
+"gold_answer": "1990",
+"model_answer": "弗拉基米尔·德林费尔德（Vladimir Drinfeld）于1990年获得菲尔兹奖。"
+},
+{
+"item_id": "t0349",
+"question": "中国国家京剧院的首任院长是谁？",
+"gold_answer": "梅兰芳",
+"model_answer": "中国国家京剧院的首任院长是**周信芳**。  \n\n（注：此信息存在争议，实际中国国家京剧院成立于1955年，首任院长为**梅兰芳**。梅兰芳是京剧艺术大师，曾长期担任中国京剧院（原中国京剧"
+},
+{
+"item_id": "t0350",
+"question": "第十五届华罗庚数学奖得主是谁？",
+"gold_answer": "王斯雷",
+"model_answer": "截至2024年，第十五届华罗庚数学奖尚未设立或未有公开权威信息确认其得主。华罗庚数学奖是中国数学界的重要奖项，通常每四年评选一次，但具体届次和得主需以官方发布为准。目前公开资料中未明确"
+},
+{
+"item_id": "t0351",
+"question": "吴三桂哪一年在湖南衡州称帝，国号周，改元昭武？",
+"gold_answer": "1678年",
+"model_answer": "吴三桂并未在湖南衡州称帝，国号周，改元昭武。\n\n事实上，吴三桂在1678年于湖南衡州（今衡阳）称帝，建立“周”政权，年号“昭武”。这一事件是清朝初年“三藩之"
+},
+{
+"item_id": "t0352",
+"question": "根据2014年《安联世界财富报告》，全球居民金融资产总规模在2013年增长了百分之多少？",
+"gold_answer": "9.9%",
+"model_answer": "根据2014年《安联世界财富报告》，全球居民金融资产总规模在2013年增长了**10.5%**。"
+},
+{
+"item_id": "t0353",
+"question": "1979年西北太平洋区域风速最高的热带气旋是哪一场台风？",
+"gold_answer": "台风泰培",
+"model_answer": "1979年西北太平洋区域风速最高的热带气旋是台风泰培（Typhoon Tip）。它于1979年10月12日达到巅峰强度，中心风速达到每小时305公里，是全球有记录以来最强的热带气旋之一。"
+},
+{
+"item_id": "t0354",
+"question": "第一位发现来自银河系的无线电波的科学家是谁？",
+"gold_answer": "卡尔·吉德·央斯基（Karl Guthe Jansky）",
+"model_answer": "第一位发现来自银河系的无线电波的科学家是卡尔·央斯基（Karl Jansky）。他在1930年代通过研究无线电波，发现了来自银河中心的无线电辐射，被认为是射电天文学的开端。"
+},
+{
+"item_id": "t0355",
+"question": "《去学校化社会》是哪一年出版的？",
+"gold_answer": "1971年",
+"model_answer": "1968年。"
+},
+{
+"item_id": "t0356",
+"question": "宏创高科集团有限公司于哪一年在港交所创业板上市？",
+"gold_answer": "2012",
+"model_answer": "宏创高科集团有限公司于2014年在港交所创业板上市。"
+},
+{
+"item_id": "t0357",
+"question": "苏格拉底、柏拉图、亚里士多德合称为什么？",
+"gold_answer": "希腊三贤",
+"model_answer": "苏格拉底、柏拉图、亚里士多德合称“古希腊三贤”。"
+}
+]
