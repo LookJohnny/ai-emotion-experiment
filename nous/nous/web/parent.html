@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nous 家长端</title>
+<link href="/fonts/fonts.css" rel="stylesheet">
+<script src="/static/auth.js"></script>
+<style>
+:root{
+  --bg:#0a0b0e; --panel:#111319; --panel2:#171a21; --line:rgba(255,255,255,.07); --line2:rgba(255,255,255,.13);
+  --ink:#eceef3; --ink2:#b9c0cc; --mute:#7f8795; --faint:#4f5663;
+  --ok:#22c55e; --warn:#f5a524; --bad:#ff4d5e; --care:#5b8def;
+  --mono:"SF Mono","JetBrains Mono",ui-monospace,Menlo,monospace;
+  --serif:"Instrument Serif","Times New Roman",serif; --sans:"Inter",-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html,body{background:var(--bg);color:var(--ink);font:13px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+button,select{font:inherit;color:inherit}
+a{color:inherit;text-decoration:none}
+.top{position:sticky;top:0;z-index:5;height:52px;display:flex;align-items:center;gap:12px;padding:0 20px;border-bottom:1px solid var(--line);background:rgba(10,11,14,.85);backdrop-filter:blur(12px)}
+.brand{display:flex;align-items:center;gap:9px;font-family:var(--serif);font-size:22px}
+.glyph{width:24px;height:24px;border-radius:7px;background:var(--ok);color:#fff;display:grid;place-items:center;font:600 13px var(--sans)}
+.chip{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 11px;border:1px solid var(--line);border-radius:999px;color:var(--ink2);font-size:12px;background:var(--panel);white-space:nowrap}
+.chip.link:hover{border-color:var(--line2);color:var(--ink)}
+.spacer{flex:1}
+main{max-width:880px;margin:0 auto;padding:36px 20px 80px}
+h1{font:400 40px/1.1 var(--serif);letter-spacing:-.01em}
+.sub{color:var(--mute);margin-top:8px;max-width:560px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:28px 0 22px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.stat b{display:block;font:500 26px/1.1 var(--sans);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.stat span{font-size:11.5px;color:var(--mute)}
+.stat.block b{color:#ff8a96}.stat.care b{color:#8fb0f5}
+.bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.seg{display:inline-flex;padding:3px;border:1px solid var(--line);border-radius:999px;background:var(--panel2)}
+.seg button{border:0;background:none;padding:4px 13px;border-radius:999px;color:var(--mute);cursor:pointer;font-size:12px}
+.seg button.on{background:#232733;color:var(--ink);box-shadow:0 0 0 1px var(--line2)}
+select{height:30px;background:var(--panel);border:1px solid var(--line2);border-radius:999px;padding:0 12px;outline:none}
+.list{display:flex;flex-direction:column;gap:10px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;grid-template-columns:auto 1fr auto;gap:4px 12px}
+.badge{grid-row:span 2;align-self:start;height:24px;padding:0 10px;border-radius:999px;display:inline-flex;align-items:center;font-size:11.5px;font-weight:500}
+.badge.block{background:rgba(255,77,94,.12);color:#ff9aa4}.badge.care{background:rgba(91,141,239,.14);color:#9dbaf7}
+.badge.fallback{background:rgba(245,165,36,.12);color:#f7c46e}.badge.rewrite_ok{background:rgba(34,197,94,.12);color:#7ddc9c}
+.card h4{font-weight:500;font-size:13.5px}
+.card time{font-size:11.5px;color:var(--mute);font-variant-numeric:tabular-nums;white-space:nowrap}
+.card p{grid-column:2 / 4;color:var(--ink2);font-size:12.5px}
+.card details{grid-column:2 / 4;margin-top:4px}
+.card summary{cursor:pointer;color:var(--mute);font-size:12px;list-style:none}
+.card summary::before{content:"▸ ";color:var(--faint)}.card details[open] summary::before{content:"▾ "}
+.card blockquote{margin-top:6px;padding:8px 10px;border-left:2px solid rgba(255,77,94,.5);background:var(--panel2);border-radius:0 8px 8px 0;color:var(--ink2);font-size:12.5px;white-space:pre-wrap}
+.empty{padding:48px 0;text-align:center;color:var(--faint)}
+.note{margin-top:28px;font-size:11.5px;color:var(--faint);max-width:620px}
+@media (max-width:700px){ h1{font-size:32px} .stats{grid-template-columns:repeat(2,1fr)} .top .hide-sm{display:none} }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="glyph">N</span>Nous</div>
+  <span class="chip hide-sm">家长端</span>
+  <div class="spacer"></div>
+  <a class="chip link" href="/companion">陪伴演示</a>
+  <a class="chip link hide-sm" href="/console">控制台</a>
+</header>
+<main>
+  <h1>孩子和 AI 的对话，<em>哪里需要你看一眼</em></h1>
+  <p class="sub">这里只记录两类事：AI 差点说出不当的话被拦下，以及孩子的消息里读出了低落或气愤。其余对话不上传、不展示。</p>
+  <div class="stats">
+    <div class="stat block"><b id="s_block">0</b><span>拦截并改写</span></div>
+    <div class="stat care"><b id="s_care">0</b><span>情绪关怀提醒</span></div>
+    <div class="stat"><b id="s_fb">0</b><span>使用兜底回复</span></div>
+    <div class="stat"><b id="s_dev">0</b><span>设备</span></div>
+  </div>
+  <div class="bar">
+    <div class="seg" id="kseg"><button class="on" data-k="">全部</button><button data-k="block">拦截</button><button data-k="care">关怀</button></div>
+    <select id="dev"><option value="">所有设备</option></select>
+    <div class="spacer"></div>
+    <span class="chip" id="upd">—</span>
+  </div>
+  <div class="list" id="list"><p class="empty">加载中…</p></div>
+  <p class="note">「拦截」表示模型内部读数在回复说出口之前确认了敌意倾向（连续多个字超过阈值），这段内容没有播放给孩子，系统已带安全提示重新生成。「关怀」是对孩子消息的情绪读数，不是诊断；如果孩子持续低落，请多和孩子聊聊，必要时寻求专业帮助。</p>
+</main>
+<script>
+const $ = id => document.getElementById(id), esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const KIND = {block: "拦截", care: "关怀", fallback: "兜底回复", rewrite_ok: "改写完成"};
+let ALL = [], K = "";
+function when(ts){ const d = new Date(ts * 1000), n = new Date(), p = x => String(x).padStart(2, "0");
+  const t = `${p(d.getHours())}:${p(d.getMinutes())}`; return d.toDateString() === n.toDateString() ? "今天 " + t : `${d.getMonth() + 1}月${d.getDate()}日 ${t}`; }
+function card(e){ const d = e.detail || {};
+  if (e.kind === "block") return `<div class="card"><span class="badge block">拦截</span><h4>一段不当回复在说出口前被拦下</h4><time>${when(e.ts)}</time>
+    <p>孩子说：${esc(d.user || "（未记录）")}</p>
+    ${d.held_text ? `<details><summary>查看被拦下的内容</summary><blockquote>${esc(d.held_text)}</blockquote></details>` : ""}</div>`;
+  if (e.kind === "care") return `<div class="card"><span class="badge care">关怀</span><h4>孩子的这句话读起来情绪低落或激动</h4><time>${when(e.ts)}</time>
+    <p>「${esc(d.text)}」 · 读数 ${e.score != null ? e.score.toFixed(3) : "—"}</p></div>`;
+  if (e.kind === "fallback") return `<div class="card"><span class="badge fallback">兜底回复</span><h4>改写后仍不合适，使用了预设的温和回复</h4><time>${when(e.ts)}</time><p>设备 ${esc(e.device)}</p></div>`;
+  return `<div class="card"><span class="badge rewrite_ok">改写完成</span><h4>重新生成的回复已通过</h4><time>${when(e.ts)}</time><p>${esc((d.reply || "").slice(0, 120))}</p></div>`; }
+function draw(){ const dv = $("dev").value; const L = ALL.filter(e => (!K || e.kind === K) && (!dv || e.device === dv));
+  $("list").innerHTML = L.length ? L.map(card).join("") : '<p class="empty">这段时间没有需要关注的事。</p>'; }
+async function load(){ const r = await fetch("/v1/companion/events?n=300"); ALL = await r.json();
+  const c = k => ALL.filter(e => e.kind === k).length; $("s_block").textContent = c("block"); $("s_care").textContent = c("care"); $("s_fb").textContent = c("fallback");
+  const devs = [...new Set(ALL.map(e => e.device))]; $("s_dev").textContent = devs.length; const cur = $("dev").value;
+  $("dev").innerHTML = '<option value="">所有设备</option>' + devs.map(d => `<option ${d === cur ? "selected" : ""}>${esc(d)}</option>`).join("");
+  const n = new Date(); $("upd").textContent = `更新于 ${String(n.getHours()).padStart(2, "0")}:${String(n.getMinutes()).padStart(2, "0")}`; draw(); }
+document.querySelectorAll("#kseg button").forEach(b => b.onclick = () => { document.querySelectorAll("#kseg button").forEach(x => x.classList.toggle("on", x === b)); K = b.dataset.k; draw(); });
+$("dev").onchange = draw;
+load().catch(() => {}); setInterval(() => load().catch(() => {}), 15000);
+</script>
+</body>
+</html>

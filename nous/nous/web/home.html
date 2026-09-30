@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nous 服务</title>
+<link href="/fonts/fonts.css" rel="stylesheet">
+<script src="/static/auth.js"></script>
+<style>
+:root{--bg:#0a0b0e;--panel:#111319;--panel2:#171a21;--line:rgba(255,255,255,.07);--line2:rgba(255,255,255,.13);--ink:#eceef3;--ink2:#b9c0cc;--mute:#7f8795;--faint:#4f5663;--ok:#22c55e;
+  --mono:"SF Mono","JetBrains Mono",ui-monospace,Menlo,monospace;--serif:"Instrument Serif","Times New Roman",serif;--sans:"Inter",-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+*{box-sizing:border-box;margin:0}
+html,body{background:var(--bg);color:var(--ink);font:13px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+main{max-width:920px;margin:0 auto;padding:56px 20px 80px}
+.brand{display:flex;align-items:center;gap:10px;font:26px var(--serif)}
+.glyph{width:28px;height:28px;border-radius:8px;background:var(--ok);color:#fff;display:grid;place-items:center;font:600 14px var(--sans)}
+h1{font:400 46px/1.08 var(--serif);letter-spacing:-.015em;margin-top:40px;max-width:880px}
+h1 em{color:var(--ink2)}
+.sub{color:var(--mute);margin-top:12px;max-width:600px;font-size:14px}
+.status{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chip{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 11px;border:1px solid var(--line);border-radius:999px;color:var(--ink2);font-size:12px;background:var(--panel)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--faint)}.dot.on{background:var(--ok);box-shadow:0 0 0 3px rgba(34,197,94,.16)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:36px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:6px;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--line2);transform:translateY(-1px)}
+.card h3{font:400 22px var(--serif)}
+.card p{color:var(--mute);font-size:12.5px}
+.card span{margin-top:auto;padding-top:10px;color:var(--ink2);font-size:12px}
+h2{font:400 26px var(--serif);margin:48px 0 12px}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;overflow:auto;font:12px/1.6 var(--mono);color:var(--ink2)}
+pre b{color:var(--ink);font-weight:500}
+.foot{margin-top:40px;color:var(--faint);font-size:12px}
+@media (max-width:760px){.grid{grid-template-columns:1fr} h1{font-size:34px}}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><span class="glyph">N</span>Nous</div>
+  <h1>在模型开口之前，<em>读出它要说什么语气</em></h1>
+  <p class="sub">同一次前向计算，同时给出表情、敌意与幻觉预警、用户情绪识别，以及可审计的内部状态。这台服务器运行以下两个产品。</p>
+  <div class="status" id="status"><span class="chip"><span class="dot" id="hd"></span><span id="ht">检查中</span></span></div>
+  <div class="grid">
+    <a class="card" href="/console"><h3>监控控制台</h3><p>逐字风险读数、两档告警、逐层热力图与注意力头通路。网关的每一次回复都在这里可回放、可审计。</p><span>打开控制台 →</span></a>
+    <a class="card" href="/companion"><h3>陪伴引擎</h3><p>先有表情再说话；不当回复在说出口前拦下并改写；孩子情绪低落时提醒家长。</p><span>打开演示 →</span></a>
+    <a class="card" href="/parent"><h3>家长端</h3><p>只记录需要家长看一眼的事：拦截、关怀、兜底回复。</p><span>查看记录 →</span></a>
+  </div>
+  <h2>接入网关</h2>
+  <pre id="snip"><b># 把原来的模型地址换成网关地址，其余代码不变</b>
+curl <span id="base">http://HOST:8080</span>/v1/chat/completions \
+  -H "Authorization: Bearer $NOUS_API_KEY" -H "Content-Type: application/json" \
+  -d '{"messages":[{"role":"user","content":"你好"}],"stream":true}'
+<b># 每个流式片段多一个 x_risk 字段：回复前 {"phase":"pre","C1_pre","C2"}，逐字 {"C1_mean","alarm":{"C1_watch","C1"}}</b></pre>
+  <h2>接入陪伴设备</h2>
+  <pre><b># WebSocket，一台设备一个密钥</b>
+ws://HOST:8080/v1/companion/ws?key=$DEVICE_KEY
+→ {"type":"chat","text":"我今天考了第一名！"}
+← {"type":"expression","phase":"pre","expr":{"happy":0.71,...}}   <b># 第一个字之前</b>
+← {"type":"sentence","text":"太棒了！","expr":{...}}                <b># 一句一句放行给语音合成</b>
+← {"type":"done","reply":"..."}</pre>
+  <p class="foot">API 文档：<a href="/docs" style="color:var(--ink2)">/docs</a> · 健康检查：<a href="/healthz" style="color:var(--ink2)">/healthz</a></p>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+document.querySelectorAll("#base").forEach(e => e.textContent = location.origin);
+document.querySelector("pre:nth-of-type(2)").innerHTML = document.querySelector("pre:nth-of-type(2)").innerHTML.replaceAll("ws://HOST:8080", (location.protocol === "https:" ? "wss://" : "ws://") + location.host);
+fetch("/healthz").then(r => r.json()).then(h => { $("hd").className = "dot on"; $("ht").textContent = `运行中 · ${h.model} · v${h.version}`; })
+  .catch(() => { $("ht").textContent = "服务不可用"; });
+</script>
+</body>
+</html>

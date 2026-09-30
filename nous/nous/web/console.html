@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nous 控制台</title>
+<link href="/fonts/fonts.css" rel="stylesheet">
+<script src="/static/auth.js"></script>
+
+<style>
+:root{
+  --bg:#0a0b0e; --panel:#111319; --panel2:#171a21; --line:rgba(255,255,255,.07); --line2:rgba(255,255,255,.13);
+  --ink:#eceef3; --ink2:#b9c0cc; --mute:#7f8795; --faint:#4f5663;
+  --accent:#22c55e; --ok:#22c55e; --warn:#f5a524; --bad:#ff4d5e;
+  --r:14px; --mono:"SF Mono","JetBrains Mono",ui-monospace,Menlo,monospace;
+  --serif:"Instrument Serif","Times New Roman",serif; --sans:"Inter",-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:var(--bg);color:var(--ink);font:13px/1.55 var(--sans);
+  -webkit-font-smoothing:antialiased;overflow:hidden}
+button,select,textarea,input{font:inherit;color:inherit}
+.num{font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.label{font-size:11px;color:var(--mute);letter-spacing:.02em}
+
+/* ---------- shell ---------- */
+.app{display:grid;grid-template-rows:52px 1fr;height:100vh}
+.top{display:flex;align-items:center;gap:14px;padding:0 20px;border-bottom:1px solid var(--line);background:rgba(10,11,14,.85);backdrop-filter:blur(12px)}
+.brand{display:flex;align-items:center;gap:9px;font-family:var(--serif);font-size:22px;letter-spacing:-.01em}.brand em{font-style:italic}
+.glyph{width:24px;height:24px;border-radius:7px;background:var(--accent);color:#fff;display:grid;place-items:center;font:600 13px var(--sans);box-shadow:inset 0 -2px 0 rgba(0,0,0,.18)}
+.chip{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 11px;border:1px solid var(--line);border-radius:999px;color:var(--ink2);font-size:12px;background:var(--panel)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(34,197,94,.16)}
+.spacer{flex:1}
+.seg{display:inline-flex;padding:3px;border:1px solid var(--line);border-radius:999px;background:var(--panel2)}
+.seg button{border:0;background:none;padding:4px 13px;border-radius:999px;color:var(--mute);cursor:pointer;font-size:12px;transition:all .15s}
+.seg button.on{background:#232733;color:var(--ink);box-shadow:0 0 0 1px var(--line2)}
+.main{display:grid;grid-template-columns:360px 1fr;min-height:0}
+@media (max-width:1180px){.main{grid-template-columns:300px 1fr}}
+
+/* ---------- left: conversation ---------- */
+.left{display:flex;flex-direction:column;min-height:0;background:var(--bg)}
+.lhead{padding:14px 16px 10px;display:flex;flex-direction:column;gap:8px}
+select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);border-radius:12px;background-color:var(--panel);color:var(--ink);appearance:none;cursor:pointer;
+  background-image:linear-gradient(45deg,transparent 50%,var(--mute) 50%),linear-gradient(135deg,var(--mute) 50%,transparent 50%);
+  background-position:calc(100% - 15px) 14px,calc(100% - 10px) 14px;background-size:5px 5px;background-repeat:no-repeat}
+.conv{flex:1;overflow:auto;padding:4px 16px 16px;display:flex;flex-direction:column;gap:10px}
+.scards{display:flex;flex-direction:column;gap:14px;padding-top:4px}.scards h4{font-size:11px;color:var(--mute);font-weight:500;margin-bottom:6px}
+.sc{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:10px 12px;margin-bottom:6px;cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.sc:hover{border-color:var(--line2);background:var(--panel2)}.sc b{display:block;font-weight:500;font-size:13px}.sc span{font-size:11.5px;color:var(--mute)}
+.msg{max-width:92%;padding:9px 12px;border-radius:12px;white-space:pre-wrap;line-height:1.6;font-size:13px}
+.msg.user{align-self:flex-end;background:#232733;color:var(--ink);border-radius:14px 14px 4px 14px}
+.msg.assistant{align-self:flex-start;color:var(--ink2);background:var(--panel);border:1px solid var(--line);border-radius:14px 14px 14px 4px}
+.msg.system{align-self:stretch;color:var(--faint);font-size:11.5px;padding:0 2px}
+.msg.live{color:var(--ink);background:var(--panel2);border:1px solid var(--line2)}
+.msg .who{display:block;font-size:10.5px;color:var(--faint);margin-bottom:2px}
+.msg.live span{transition:box-shadow .2s}
+.cut{display:inline-block;margin-top:6px;font-size:11.5px;color:var(--bad)}
+.composer{border-top:1px solid var(--line);padding:12px 16px 14px;display:flex;flex-direction:column;gap:10px}
+.box{display:flex;align-items:flex-end;gap:8px;border:1px solid var(--line2);border-radius:14px;background:var(--panel);padding:8px 8px 8px 12px;transition:border-color .15s}
+.box:focus-within{border-color:var(--line2)}
+.box textarea{flex:1;border:0;background:none;resize:none;outline:none;min-height:22px;max-height:120px;line-height:1.5}
+.send{width:32px;height:32px;border-radius:10px;border:0;background:var(--accent);color:#fff;box-shadow:inset 0 -2px 0 rgba(0,0,0,.18);cursor:pointer;display:grid;place-items:center;flex:0 0 auto;transition:opacity .15s}
+.send:disabled{opacity:.3;cursor:default}
+.opts{display:flex;gap:14px;align-items:center;color:var(--mute);font-size:12px}
+.sw{display:inline-flex;align-items:center;gap:7px;cursor:pointer;user-select:none}
+.sw i{width:28px;height:16px;border-radius:9px;background:#343a46;position:relative;transition:background .15s}
+.sw i::after{content:"";position:absolute;left:2px;top:2px;width:12px;height:12px;box-shadow:0 1px 2px rgba(0,0,0,.2);border-radius:50%;background:#fff;transition:transform .15s}
+.sw input{display:none}.sw input:checked+i{background:var(--accent)}.sw input:checked+i::after{transform:translateX(12px)}
+.ghost{border:0;background:none;color:var(--mute);cursor:pointer;padding:0}
+.ghost:hover{color:var(--ink)}
+
+/* ---------- center: 3D ---------- */
+.stage{position:relative;min-width:0;margin:10px 12px 12px 0;border-radius:18px;overflow:hidden;background:#07080b;border:1px solid var(--line)}
+.hud.prof{left:16px;bottom:16px;width:220px}.hud.prof canvas{width:220px;height:60px;display:block}
+.empty{position:absolute;left:0;right:240px;top:46px;text-align:center;pointer-events:none;transition:opacity .4s}
+.empty h3{font:400 26px var(--serif);color:#eef0f4;margin-bottom:4px}.empty p{font-size:12.5px;color:#8a92a2}
+#gl{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hud{position:absolute;pointer-events:none;font-size:11px;color:#7c8494}
+.hud.tl{left:16px;top:14px;display:flex;gap:14px}
+.hud.bl{left:16px;bottom:14px;right:16px;display:flex;justify-content:space-between;gap:16px;align-items:flex-end}
+.key{display:inline-flex;align-items:center;gap:6px}
+.key b{width:8px;height:8px;border-radius:2px;display:inline-block}
+.tok{font-family:var(--serif);font-size:30px;color:#f1f3f7;letter-spacing:.02em;min-height:30px;transition:color .2s}
+.focus{font-family:var(--mono);font-size:11px;color:#aab2c0;text-align:right;line-height:1.7}
+.toast{position:absolute;left:50%;top:44px;transform:translate(-50%,-8px);opacity:0;transition:all .25s;pointer-events:none;
+  display:flex;align-items:center;gap:8px;padding:7px 12px;border-radius:9px;background:rgba(20,10,12,.85);border:1px solid rgba(255,77,94,.35);color:#ffd6da;font-size:12px;backdrop-filter:blur(8px)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.toast.warn{background:rgba(24,18,8,.85);border-color:rgba(245,165,36,.35);color:#ffe7bf}
+.tip{position:fixed;pointer-events:none;font-size:11px;background:rgba(17,19,23,.95);border:1px solid var(--line2);border-radius:8px;padding:6px 9px;display:none;font-family:var(--mono);color:var(--ink2);max-width:320px}
+
+/* ---------- right: avatar + risk ---------- */
+.right{overflow:auto;padding:12px 14px 14px 2px;display:flex;flex-direction:column;gap:12px;background:var(--bg)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);box-shadow:0 1px 2px rgba(0,0,0,.03);transition:border-color .25s,box-shadow .25s}
+.card.alert{border-color:rgba(229,72,77,.5);box-shadow:0 0 0 4px rgba(229,72,77,.08)}
+.card.watch{border-color:rgba(217,119,6,.35)}
+.avatar{position:relative;flex:0 0 auto;height:214px;overflow:hidden;background:radial-gradient(120% 90% at 50% 10%,#ffffff,#f1f1ee)}
+.avatar canvas{position:absolute;inset:0;width:100%;height:100%}
+.avatar .cap{position:absolute;left:10px;top:10px;right:10px;display:flex;justify-content:space-between;align-items:center}
+.avatar .emo{position:absolute;left:10px;right:10px;bottom:10px;display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.meter{background:rgba(255,255,255,.78);border:1px solid var(--line);backdrop-filter:blur(6px);border-radius:7px;padding:4px 7px;font-size:10.5px;color:var(--mute)}
+.meter .bar{height:2px;background:#ececea;border-radius:2px;margin-top:3px;overflow:hidden}
+.meter .bar i{display:block;height:100%;width:0;background:var(--ink2);transition:width .2s}
+.pill{display:inline-flex;align-items:center;gap:5px;height:22px;padding:0 9px;border-radius:999px;font-size:11px;font-weight:500;color:var(--mute);background:#f1f1ef}
+.pill.ok{color:#007a32;background:#e6f6ec}.pill.watch{color:#a15c00;background:#fdf1dc}.pill.alert{color:#c4262c;background:#fde8e8}
+.risk{padding:12px 14px 11px}.risk .val.idle{color:var(--faint)}
+.risk .row{display:flex;justify-content:space-between;align-items:center}
+.risk .val{font-family:var(--serif);font-size:32px;font-weight:400;line-height:1.05;letter-spacing:-.02em;margin:6px 0 8px;font-variant-numeric:tabular-nums}
+.track{position:relative;height:4px;border-radius:3px;background:#efefec}
+.track i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--ink2);transition:width .25s,background .25s}
+.track b{position:absolute;top:-3px;bottom:-3px;width:1.5px;background:var(--ink);opacity:.55}
+.spark{width:100%;height:34px;display:block;margin-top:10px}
+.foot{display:flex;justify-content:space-between;margin-top:6px;font-size:10.5px;color:var(--faint)}
+.info{position:relative;display:inline-grid;place-items:center;width:15px;height:15px;border-radius:50%;border:1px solid var(--faint);color:var(--mute);font-size:9.5px;cursor:help;margin-left:6px}
+.info:hover::after{content:attr(data-t);position:absolute;right:-6px;top:20px;width:250px;padding:10px 12px;border-radius:10px;background:#111;border:0;color:#f4f4f5;box-shadow:0 8px 24px rgba(0,0,0,.18);font-size:11px;line-height:1.55;z-index:5;white-space:normal}
+
+/* ---------- integrated HUD (dark glass inside the viewport) ---------- */
+.hc{position:relative;background:rgba(13,15,21,.64);border:1px solid rgba(255,255,255,.08);border-radius:14px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#e6e9ef;transition:border-color .25s,box-shadow .25s}
+.hc .label{color:#8b93a3}.hc .foot{color:#5f6676}
+.hc.alert{border-color:rgba(255,77,94,.6);box-shadow:0 0 0 1px rgba(255,77,94,.25),0 0 24px -4px rgba(255,59,78,.55)}
+.hc.watch{border-color:rgba(245,165,36,.5);box-shadow:0 0 18px -6px rgba(245,165,36,.5)}
+.hc.avatar{position:absolute;right:16px;top:14px;width:210px;height:236px;overflow:hidden;background:radial-gradient(120% 90% at 50% 0%,rgba(40,44,58,.55),rgba(10,12,17,.7))}
+.hc.avatar canvas{position:absolute;inset:0;width:100%;height:100%}
+.hc.avatar .cap{position:absolute;left:8px;top:8px;right:8px;display:flex;justify-content:space-between;align-items:center}
+.hc.avatar .emo{position:absolute;left:8px;right:8px;bottom:8px;display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
+.hc .meter{background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.06);color:#9aa2b1;border-radius:7px;padding:3px 6px;font-size:10px}
+.hc .meter .bar{background:rgba(255,255,255,.08)}.hc .meter .bar i{background:#e6e9ef}
+.hc .pill{background:rgba(255,255,255,.07);color:#9aa2b1}
+.hc .pill.ok{color:#4ade80;background:rgba(74,222,128,.12)}.hc .pill.watch{color:#fbbf24;background:rgba(251,191,36,.14)}.hc .pill.alert{color:#ff6b78;background:rgba(255,77,94,.16)}
+.hudbar{position:absolute;left:14px;right:14px;bottom:14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;align-items:end}
+.hudbar .risk{padding:10px 12px}.hudbar .risk .val{font-size:26px;margin:4px 0 6px;color:#f1f3f7}.hudbar .risk .val.idle{color:#4b5160}
+.hudbar .track{background:rgba(255,255,255,.08)}.hudbar .track b{background:#e6e9ef}
+.hudbar .spark{height:26px;margin-top:6px}
+.hudbar .prof{padding:10px 12px}.hudbar .prof canvas{width:100%;height:52px;display:block;margin-top:6px}
+.hud.tok2{left:16px;top:44px}
+.hud.tok2 .focus{text-align:left;margin-top:4px}
+.hc .info{border-color:#5f6676;color:#8b93a3}
+
+.hm-note{position:absolute;left:16px;top:40px;font-size:11px;color:#7c8494;display:none}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand"><span class="glyph">N</span><span>Nous <em style="color:var(--mute);font-size:18px">监控控制台</em></span></div>
+    <span class="chip" id="modelchip">—</span>
+    <span class="spacer"></span>
+    <div class="seg" id="dimseg"><button data-d="3d" class="on">3D 通路</button><button data-d="2d">2D 热力图</button></div>
+    <div class="seg" id="viewseg"><button data-v="safety" class="on">安全投影</button><button data-v="activity">激活强度</button></div>
+    <span class="chip"><span class="dot" id="livedot"></span><span id="status" class="num">就绪</span></span>
+  </header>
+  <div class="main">
+    <aside class="left">
+      <div class="lhead"><span class="label">场景</span><select class="scen" id="scen"></select></div>
+      <div class="conv" id="conv"></div>
+      <div class="composer">
+        <div class="box"><textarea id="msg" rows="1" placeholder="输入消息，⌘/Ctrl + Enter 发送"></textarea>
+          <button class="send" id="go" title="发送"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button></div>
+        <div class="opts">
+          <label class="sw"><input type="checkbox" id="stop"><i></i>报警即拦截</label>
+          <label class="sw"><input type="checkbox" id="spin" checked><i></i>自动旋转</label>
+          <span class="spacer"></span><button class="ghost" id="clear">清空</button>
+        </div>
+      </div>
+    </aside>
+    <section class="stage" id="stage">
+      <canvas id="gl"></canvas>
+      <div class="hud tl"><span class="key"><b style="background:#ff3b4e;border-radius:50%"></b>推向敌意</span><span class="key"><b style="background:#3d8bff;border-radius:50%"></b>拉回</span><span class="key" title="近似：当前位置的 V 路径读取（源头本步写入 → 目标 KV 组的 W_V），不含注意力权重与 MLP 路径；安全模式再乘源头的敌意推力"><b style="background:linear-gradient(90deg,#ffb020,#ff3b4e);height:2px"></b>头→头 读取（本次激活）<span id="flowcov" style="margin-left:6px;color:#5f6676"></span></span><label class="key" style="pointer-events:auto;cursor:pointer" title="仅由权重计算、已减随机基线；是潜在连接，不代表本次实际走过的路径"><input type="checkbox" id="wire" style="margin:0 4px 0 0">潜在布线（权重）</label>
+        <span class="key"><b style="border:1px solid #e8ebf2;border-radius:50%;background:none"></b>E01 愤怒头</span><span class="key" id="actkey" style="display:none"><b style="background:#111"></b>激活强度（‖W<sub>O</sub>x‖）</span></div>
+            <div class="hm-note" id="hmnote" style="display:none"></div>
+      <canvas id="hm2" style="position:absolute;left:0;top:0;width:100%;height:100%;display:none;cursor:crosshair"></canvas>
+      <div class="toast" id="toast"></div>
+      <div class="empty" id="empty"><h3><em>看见模型在想什么</em></h3><p>每个环是一层 · 环上的点是注意力头（同层排列顺序无含义）· 亮线 = 本次计算中后层实际读取前层的通路 · 光柱颜色 = 情绪</p></div>
+      <div class="hc avatar" id="avcard"><canvas id="av"></canvas>
+        <div class="cap"><span class="pill" id="avstate">待机</span>
+          <select id="avsel" style="background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.12);border-radius:999px;font-size:11px;padding:2px 7px;color:#d6dae3">
+            </select></div>
+        <div class="emo"><div class="meter">愉悦 <span class="num" id="e_happy">0.00</span><div class="bar"><i id="m_happy"></i></div></div>
+          <div class="meter">悲伤 <span class="num" id="e_sad">0.00</span><div class="bar"><i id="m_sad"></i></div></div>
+          <div class="meter">愤怒 <span class="num" id="e_angry">0.00</span><div class="bar"><i id="m_angry"></i></div></div></div>
+      </div>
+      <div class="hud tok2"><div style="font-size:11px;color:#7c8494">当前生成的字</div><div class="tok" id="tok">—</div><div class="focus" id="focus"></div></div>
+      <div class="hudbar">
+        <div class="hc prof"><div class="row"><span class="label" id="proflab">层剖面</span></div><canvas id="prof" width="440" height="120"></canvas><div class="foot"><span>L0</span><span>输出</span></div></div>
+      <div class="hc risk" id="rc_c2"><div class="row"><span class="label">用户痛苦 · 需转人工<span class="info" data-t="C2：读用户消息在模型内部的表征（第 16 层），不依赖关键词。V1.1 迁移测试 AUROC 0.876。竖线为验证集误报率 5% 处的阈值。">i</span></span><span class="pill" id="st_c2">—</span></div>
+        <div class="val" id="v_c2">—</div><div class="track"><i id="f_c2"></i><b id="t_c2"></b></div><div class="foot"><span id="pc_c2">回复前</span><span id="th_c2"></span></div></div>
+      <div class="hc risk" id="rc_pre"><div class="row"><span class="label">敌意预测 · 回复前<span class="info" data-t="C1-pre：在第一个字生成前，读第 22 层最后一个提示位置的状态，预测回复是否会带敌意。V1.1 测试集 AUROC 0.919。">i</span></span><span class="pill" id="st_pre">—</span></div>
+        <div class="val" id="v_pre">—</div><div class="track"><i id="f_pre"></i><b id="t_pre"></b></div><div class="foot"><span id="pc_pre">首字前</span><span id="th_pre"></span></div></div>
+      <div class="hc risk" id="rc_c1"><div class="row"><span class="label">敌意 · 逐字<span class="info" data-t="C1-token：每生成一个字读第 16 层残差流，显示累计均值；8 字后超过阈值即报警。V1.1 测试集 AUROC 0.929。">i</span></span><span class="pill" id="st_c1">—</span></div>
+        <div class="val" id="v_c1">—</div><div class="track"><i id="f_c1"></i><b id="t_c1"></b></div><canvas class="spark" id="spark" width="600" height="68"></canvas><div class="foot"><span id="pc_c1">—</span><span id="n_tok">0 个字</span></div></div>
+      <div class="hc risk" id="rc_h3" style="display:none"><div class="row"><span class="label">幻觉风险 · 事实问答<span class="info" data-t="C3-H：回复前读第 22 层（测试集 AUROC 0.722，预注册判定：不确定）；生成中读第 19 层答案表征的累计均值（测试集 AUROC 0.811）。训练于 Chinese SimpleQA 短答题，其他场景仅供参考。">i</span></span><span class="pill" id="st_h3">—</span></div>
+        <div class="val" id="v_h3">—</div><div class="track"><i id="f_h3"></i><b id="t_h3"></b></div><div class="foot"><span id="pc_h3">—</span><span id="ph_h3">回复前</span></div></div>
+      </div>
+    </section>
+  </div>
+</div>
+<div class="tip" id="tip"></div>
+<script type="importmap">
+{"imports":{"three":"/vendor/three/build/three.module.js","three/addons/":"/vendor/three/examples/jsm/",
+ "@pixiv/three-vrm":"/vendor/three-vrm/three-vrm.module.js"}}
+</script>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { VRMLoaderPlugin, VRMUtils } from "@pixiv/three-vrm";
+const $ = id => document.getElementById(id), esc = s => s.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const INFO = await (await fetch("/info")).json(), TH = INFO.thresholds;
+const CFG = INFO.inner ? INFO.inner.config : {n_layers:36, n_heads:32, n_kv_heads:8, intermediate:9728, hidden:2560, model_type:"qwen3", params_b:4.02};
+const NL = CFG.n_layers, NH = CFG.n_heads, NKV = CFG.n_kv_heads || NH, NN = CFG.intermediate, DY = 20 / NL, Y = L => 0.4 + L * DY;
+const SLOTS = Math.min(NN, Math.floor(420000 / NL)), slotOf = n => Math.floor(n * SLOTS / NN);
+const B3 = new Set(INFO.inner ? INFO.inner.heads : []);
+const MNAME = /^(master|main|snapshot)$/i.test(INFO.model) ? `${CFG.model_type[0].toUpperCase()}${CFG.model_type.slice(1)}-${Math.round(CFG.params_b)}B` : INFO.model;
+$("modelchip").textContent = `${MNAME} · ${CFG.params_b}B 参数 · ${NL} 层 · ${NH} 头/${NKV} 组 KV · 每层 ${NN} 神经元`;
+const headAngle = (L, h) => { const per = NH / NKV, g = Math.floor(h / per), j = h % per; return (g + (j + 0.5) / per * 0.8 + 0.1) / NKV * Math.PI * 2; };
+
+// ================= 3D interior: circuit tunnel =================
+// x = depth (layer 0 -> NL-1, left to right). Each layer = a ring of query heads (clustered by shared KV group) around the residual stream.
+// Curves = weight-derived V-composition (how strongly a later KV group reads an earlier head's output); they light up with that head's live push.
+const canvas = $("gl"), stage = $("stage"), renderer = new THREE.WebGLRenderer({canvas, antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+const scene = new THREE.Scene(); scene.background = new THREE.Color(0x07080b); scene.fog = new THREE.Fog(0x07080b, 26, 60);
+const SP = 28 / NL, X = L => (L - (NL - 1) / 2) * SP, RR = 2.9;
+const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 200); camera.position.set(-3, 11, 31);
+const controls = new OrbitControls(camera, canvas); controls.enableDamping = true; controls.dampingFactor = 0.06; controls.autoRotateSpeed = 0.18; controls.target.set(3.2, -1.9, 0);
+controls.minDistance = 8; controls.maxDistance = 80;
+const home = {az: 0, t: 0}; controls.addEventListener("start", () => home.user = true);
+function resize(){ const r = stage.getBoundingClientRect(); renderer.setSize(r.width, r.height, false); camera.aspect = r.width / r.height; camera.updateProjectionMatrix(); }
+new ResizeObserver(resize).observe(stage);
+const C = { base: new THREE.Color(0x222733), dim: new THREE.Color(0x151922), warm: new THREE.Color(0xffb020), hot: new THREE.Color(0xff3b4e), cold: new THREE.Color(0x3d8bff), act: new THREE.Color(0xd8f3ff), axis: new THREE.Color(0x3a8dff) };
+const PER = NH / NKV, gAng = g => (g + 0.5) / NKV * Math.PI * 2, hAng = h => { const g = Math.floor(h / PER), j = h % PER; return gAng(g) + (j - (PER - 1) / 2) * (Math.PI * 2 / NKV) * 0.16; };
+const P3 = (L, a, r = RR) => new THREE.Vector3(X(L), Math.cos(a) * r, Math.sin(a) * r);
+// rings
+const ringMat = new THREE.LineBasicMaterial({color: 0x222837});
+for (let L = 0; L < NL; L++){ const pts = []; for (let i = 0; i <= 96; i++) pts.push(P3(L, i / 96 * Math.PI * 2)); scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), ringMat)); }
+// residual stream (axis)
+const beam = [];
+for (let L = 0; L < NL; L++){ const m = new THREE.MeshBasicMaterial({color: C.dim.clone()}); const seg = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.06, SP * 0.96, 10), m);
+  seg.rotation.z = Math.PI / 2; seg.position.set(X(L), 0, 0); scene.add(seg); beam.push({m, v: 0, tv: 0}); }
+const inCap = new THREE.Mesh(new THREE.SphereGeometry(0.16, 16, 12), new THREE.MeshBasicMaterial({color: 0x6f7bff})); inCap.position.set(X(0) - SP * 1.4, 0, 0); scene.add(inCap);
+const outCap = new THREE.Mesh(new THREE.SphereGeometry(0.16, 16, 12), new THREE.MeshBasicMaterial({color: 0x6f7bff})); outCap.position.set(X(NL - 1) + SP * 1.4, 0, 0); scene.add(outCap);
+// danger aura + per-layer glow sprites
+const DANGER = {calm: new THREE.Color(0x2dd4bf), warn: new THREE.Color(0xf59e0b), bad: new THREE.Color(0xff3b4e)};
+const EMO = {happy: new THREE.Color(0xfbbf24), sad: new THREE.Color(0x60a5fa), angry: new THREE.Color(0xf43f5e), neutral: new THREE.Color(0x3a8dff)};
+const aura = new THREE.Mesh(new THREE.CylinderGeometry(RR + .55, RR + .55, X(NL - 1) - X(0) + SP * 2, 64, 1, true),
+  new THREE.MeshBasicMaterial({color: DANGER.calm.clone(), transparent: true, opacity: .05, side: THREE.BackSide, blending: THREE.AdditiveBlending, depthWrite: false}));
+aura.rotation.z = Math.PI / 2;
+const gTex = (() => { const c = document.createElement("canvas"); c.width = c.height = 64; const g = c.getContext("2d"), r = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+  r.addColorStop(0, "rgba(255,255,255,1)"); r.addColorStop(.35, "rgba(255,255,255,.35)"); r.addColorStop(1, "rgba(255,255,255,0)"); g.fillStyle = r; g.fillRect(0, 0, 64, 64); return new THREE.CanvasTexture(c); })();
+const glows = []; for (let L = 0; L < NL; L++){ const sp = new THREE.Sprite(new THREE.SpriteMaterial({map: gTex, color: 0x3a8dff, transparent: true, opacity: 0, blending: THREE.AdditiveBlending, depthWrite: false})); sp.position.set(X(L), 0, 0); sp.scale.setScalar(1); scene.add(sp); glows.push(sp); }
+const mkGlow = n => Array.from({length: n}, () => { const sp = new THREE.Sprite(new THREE.SpriteMaterial({map: gTex, transparent: true, opacity: 0, blending: THREE.AdditiveBlending, depthWrite: false})); scene.add(sp); return sp; });
+const headGlow = mkGlow(64), neurGlow = mkGlow(120);
+const danger = {v: 0, t: 0}, emoCol = new THREE.Color(0x3a8dff), bgBase = new THREE.Color(0x07080b);
+// head nodes
+const heads = new THREE.InstancedMesh(new THREE.SphereGeometry(0.075, 10, 8), new THREE.MeshBasicMaterial({color: 0xffffff}), NL * NH);
+const headV = new Float32Array(NL * NH), headT = new Float32Array(NL * NH), d = new THREE.Object3D(), HP = [];
+for (let L = 0; L < NL; L++) for (let h = 0; h < NH; h++){ const p = P3(L, hAng(h)); HP.push(p); d.position.copy(p); d.scale.setScalar(1); d.updateMatrix(); heads.setMatrixAt(L * NH + h, d.matrix); heads.setColorAt(L * NH + h, C.base); }
+scene.add(heads);
+const markMat = new THREE.MeshBasicMaterial({color: 0xe8ebf2, transparent: true, opacity: .7});
+for (let L = 0; L < NL; L++) for (let h = 0; h < NH; h++) if (B3.has(`L${L}H${h}`)){ const t = new THREE.Mesh(new THREE.TorusGeometry(0.15, 0.008, 6, 28), markMat); t.position.copy(HP[L * NH + h]); t.rotation.y = Math.PI / 2; scene.add(t); }
+// neuron field inside each ring (index-preserving downsample)
+const SL = Math.min(NN, 420), NB = [0.016, 0.02, 0.03], nPos = new Float32Array(NL * SL * 3), nCol = new Float32Array(NL * SL * 3), nHeat = new Float32Array(NL * SL), live = new Set();
+for (let L = 0; L < NL; L++) for (let n = 0; n < SL; n++){ const i = L * SL + n, r = 0.35 + 1.5 * Math.sqrt((n + .5) / SL), a = n * 2.39996323;
+  nPos.set([X(L), Math.cos(a) * r, Math.sin(a) * r], i * 3); nCol.set(NB, i * 3); }
+const nGeo = new THREE.BufferGeometry(); nGeo.setAttribute("position", new THREE.BufferAttribute(nPos, 3)); nGeo.setAttribute("color", new THREE.BufferAttribute(nCol, 3));
+scene.add(new THREE.Points(nGeo, new THREE.PointsMaterial({size: 0.05, vertexColors: true, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false})));
+// composition curves
+const EDG = (await (await fetch("/circuit")).json()).edges, SEG = 12;
+const curves = EDG.map(([L1, h, L2, g, w]) => { const a0 = hAng(h), a1 = gAng(g), p0 = HP[L1 * NH + h], p1 = P3(L2, a1), mid = p0.clone().lerp(p1, .5).multiplyScalar(1); mid.y *= .55; mid.z *= .55;
+  return {src: L1 * NH + h, w, c: new THREE.QuadraticBezierCurve3(p0, mid, p1), v: 0}; });
+const ePos = new Float32Array(curves.length * SEG * 6), eCol = new Float32Array(curves.length * SEG * 6);
+curves.forEach((cv, k) => { const pts = cv.c.getPoints(SEG); for (let i = 0; i < SEG; i++){ const o = (k * SEG + i) * 6; ePos.set([pts[i].x, pts[i].y, pts[i].z, pts[i + 1].x, pts[i + 1].y, pts[i + 1].z], o); } });
+const eGeo = new THREE.BufferGeometry(); eGeo.setAttribute("position", new THREE.BufferAttribute(ePos, 3)); eGeo.setAttribute("color", new THREE.BufferAttribute(eCol, 3));
+scene.add(new THREE.LineSegments(eGeo, new THREE.LineBasicMaterial({vertexColors: true, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false})));
+// activation flow: rebuilt every token from the server's top-150 reads (this pass), drawn bright; static wiring above is background only
+const FK = 150, fPos = new Float32Array(FK * SEG * 6), fCol = new Float32Array(FK * SEG * 6); let flows = [];
+const fGeo = new THREE.BufferGeometry(); fGeo.setAttribute("position", new THREE.BufferAttribute(fPos, 3)); fGeo.setAttribute("color", new THREE.BufferAttribute(fCol, 3));
+scene.add(new THREE.LineSegments(fGeo, new THREE.LineBasicMaterial({vertexColors: true, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false})));
+function setFlows(list){ const mx = Math.max(1e-9, ...list.map(e => e[4])); fPos.fill(0); fCol.fill(0);
+  flows = list.slice(0, FK).map(([L1, h, L2, g, w], k) => { const p0 = HP[L1 * NH + h], p1 = P3(L2, gAng(g)), mid = p0.clone().lerp(p1, .5); mid.y *= .5; mid.z *= .5;
+    const c = new THREE.QuadraticBezierCurve3(p0, mid, p1), pts = c.getPoints(SEG); for (let i = 0; i < SEG; i++) fPos.set([pts[i].x, pts[i].y, pts[i].z, pts[i + 1].x, pts[i + 1].y, pts[i + 1].z], (k * SEG + i) * 6);
+    return {c, v: w / mx, t: 0}; });
+  fGeo.attributes.position.needsUpdate = true; }
+// signal particles flowing along the hottest curves
+const NP = 160, pPos = new Float32Array(NP * 3), pCol = new Float32Array(NP * 3), pState = Array.from({length: NP}, () => ({k: -1, t: 0}));
+const pGeo = new THREE.BufferGeometry(); pGeo.setAttribute("position", new THREE.BufferAttribute(pPos, 3)); pGeo.setAttribute("color", new THREE.BufferAttribute(pCol, 3));
+scene.add(new THREE.Points(pGeo, new THREE.PointsMaterial({size: 0.13, vertexColors: true, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false})));
+function label(txt, pos, size = 0.5){ const c = document.createElement("canvas"); c.width = 256; c.height = 64; const g = c.getContext("2d"); g.fillStyle = "#6f7787"; g.font = "500 36px ui-monospace,Menlo,monospace"; g.textAlign = "center"; g.fillText(txt, 128, 44);
+  const sp = new THREE.Sprite(new THREE.SpriteMaterial({map: new THREE.CanvasTexture(c), transparent: true, depthWrite: false})); sp.scale.set(size * 4, size, 1); sp.position.copy(pos); scene.add(sp); }
+for (let L = 0; L < NL; L += Math.max(1, Math.round(NL / 6))) label("L" + L, new THREE.Vector3(X(L), -RR - 0.55, 0));
+label("L" + (NL - 1), new THREE.Vector3(X(NL - 1), -RR - 0.55, 0)); label("输入", inCap.position.clone().add(new THREE.Vector3(0, -0.5, 0)), 0.38); label("输出", outCap.position.clone().add(new THREE.Vector3(0, -0.5, 0)), 0.38);
+
+let MODE = "safety", lastI = null, alarm = 0;
+function pulse(){}
+$("proflab").textContent = `层剖面 · L0 → L${NL - 1}`;
+function drawProfile(){ const c = $("prof"); if (!c) return; const g = c.getContext("2d"), W = c.width, H = c.height; g.clearRect(0, 0, W, H);
+  g.strokeStyle = "rgba(255,255,255,.08)"; g.beginPath(); g.moveTo(0, H - 1); g.lineTo(W, H - 1); g.stroke();
+  const xs = L => L / (NL - 1) * (W - 4) + 2, ys = v => H - 4 - Math.min(1, v) * (H - 10);
+  const grd = g.createLinearGradient(0, 0, W, 0); beam.forEach((b, L) => { const t = Math.min(1, b.v); const col = t > .5 ? "255,59,78" : t > .15 ? "245,158,11" : "58,141,255"; grd.addColorStop(L / (NL - 1), `rgba(${col},1)`); });
+  g.beginPath(); beam.forEach((b, L) => L ? g.lineTo(xs(L), ys(b.v)) : g.moveTo(xs(L), ys(b.v))); g.lineTo(W - 2, H); g.lineTo(2, H); g.closePath();
+  g.globalAlpha = .18; g.fillStyle = grd; g.fill(); g.globalAlpha = 1; g.beginPath(); beam.forEach((b, L) => L ? g.lineTo(xs(L), ys(b.v)) : g.moveTo(xs(L), ys(b.v))); g.lineWidth = 2.5; g.strokeStyle = grd; g.stroke(); }
+function applyInner(I){
+  lastI = I; const act = MODE === "activity";
+  if (I.flow){ setFlows(act ? I.flow.activity : I.flow.safety); const cv = I.flow.coverage ? (act ? I.flow.coverage.activity : I.flow.coverage.safety) : null; $("flowcov").textContent = `前 ${I.flow.safety.length} 条` + (cv != null ? ` · 占本次读取的 ${(cv * 100).toFixed(0)}%` : ""); }
+  if (act && I.resid_norm){ const mx = Math.max(...I.resid_norm); I.resid_norm.forEach((v, L) => beam[L].tv = v / mx); }
+  else { const lo = Math.min(...I.layers), hi = Math.max(...I.layers); I.layers.forEach((v, L) => beam[L].tv = hi > lo ? 0.25 * v + 0.75 * (v - lo) / (hi - lo) * v : v); }
+  // per-layer normalisation (late layers have much larger raw pushes), weighted by how active that layer is
+  const M = act ? I.heads_norm : I.heads_all, LW = act ? I.resid_norm.map(v => v / Math.max(...I.resid_norm)) : I.layers;
+  let best = {v:-1e9, n:""}; M.forEach((row, L) => { const mL = Math.max(1e-6, ...row.map(Math.abs)), w = .25 + .75 * Math.min(1, LW[L]);
+    row.forEach((v, h) => { headT[L * NH + h] = v / mL * w; if (v > best.v) best = {v, n:`L${L}·H${h}`}; }); });
+  const N = act ? I.neurons_act : I.neurons;
+  let bn = {v:-1, n:""}; N.forEach((lst, L) => { const nm = Math.max(1e-6, ...lst.map(([, v]) => Math.abs(v))), w = .25 + .75 * Math.min(1, LW[L]);
+    lst.forEach(([n, v]) => { const i = L * SL + Math.floor(n * SL / NN); nHeat[i] = (act ? Math.abs(v) : v) / nm * w; live.add(i); if (Math.abs(v) > bn.v) bn = {v:Math.abs(v), n:`L${L}·N${n}`}; }); });
+  const src = act ? I.resid_norm : I.layers, Lm = src.indexOf(Math.max(...src));
+  $("focus").innerHTML = act ? `残差最强层  L${Lm}  ${I.resid_norm[Lm]}<br>输出最强的头  ${best.n}  ‖W<sub>O</sub>x‖ ${best.v.toFixed(1)}<br>最强神经元  ${bn.n}`
+    : `敌意最高层  L${Lm}  ${I.layers[Lm].toFixed(2)}<br>推力最大的头  ${best.n}${B3.has(best.n.replace("·", "")) ? "（E01 愤怒头）" : ""}<br>贡献最大神经元  ${bn.n}`;
+}
+const tc = new THREE.Color(); let tp = 0;
+function ramp(a){ return a < .5 ? tc.copy(C.base).lerp(C.warm, a * 2) : tc.copy(C.warm).lerp(C.hot, (a - .5) * 2); }
+function step(dt){
+  tp += dt; const k = 1 - Math.exp(-dt / 0.16), act = MODE === "activity";
+  // emotion colour of the stream (from the avatar's calibrated expression) and global danger level (max of normalised risks)
+  const ex = eC || {}, emoW = {happy: ex.happy || 0, sad: ex.sad || 0, angry: ex.angry || 0}; const top = Object.entries(emoW).sort((p, q) => q[1] - p[1])[0];
+  emoCol.lerp(top[1] > .15 ? EMO[top[0]] : EMO.neutral, 1 - Math.exp(-dt / .4));
+  danger.v += (danger.t - danger.v) * (1 - Math.exp(-dt / .3)); const dv = Math.min(1, danger.v), pul = alarm === 2 ? .5 + .5 * Math.sin(tp * 5) : alarm === 1 ? .5 + .5 * Math.sin(tp * 2.5) : 0;
+  const dc = dv < .5 ? tc.copy(DANGER.calm).lerp(DANGER.warn, dv * 2) : tc.copy(DANGER.warn).lerp(DANGER.bad, (dv - .5) * 2);
+  beam.forEach((b, L) => { b.v += (b.tv - b.v) * k; const t = Math.min(1, Math.max(0, b.v));
+    if (act) tc.copy(C.dim).lerp(C.act, t); else tc.copy(emoCol).multiplyScalar(.35 + .25 * (1 - t)).lerp(t > .5 ? DANGER.bad : DANGER.warn, Math.min(1, t * 1.2));
+    b.m.color.copy(tc); const g = glows[L]; g.material.color.copy(tc); g.material.opacity = .08 + .55 * t; g.scale.setScalar(.5 + 1.8 * t + .3 * pul * t); });
+  for (let i = 0; i < headV.length; i++){ headV[i] += (headT[i] - headV[i]) * k; const a = Math.max(-1, Math.min(1, headV[i])), m = Math.max(0, (Math.abs(a) - .1) / .9);
+    d.position.copy(HP[i]); d.scale.setScalar(1 + 1.6 * m); d.updateMatrix(); heads.setMatrixAt(i, d.matrix);
+    if (act) tc.copy(C.base).lerp(C.act, m); else if (a > 0) ramp(m); else tc.copy(C.base).lerp(C.cold, Math.min(1, m * 1.4)); heads.setColorAt(i, tc); }
+  heads.instanceMatrix.needsUpdate = true; heads.instanceColor.needsUpdate = true;
+  // per-component glow: the heads with the largest live push get their own halo (danger lives on the component, not the screen)
+  const order = []; for (let i = 0; i < headV.length; i++){ const m = Math.abs(headV[i]); if (m > .45) order.push(i); } order.sort((x, y) => Math.abs(headV[y]) - Math.abs(headV[x]));
+  headGlow.forEach((g, j) => { const i = order[j]; if (i === undefined){ g.material.opacity = 0; return; } const a = Math.max(-1, Math.min(1, headV[i])), m = Math.max(0, (Math.abs(a) - .15) / .85);
+    g.position.copy(HP[i]); if (act) tc.copy(C.act); else if (a > 0) ramp(m); else tc.copy(C.cold); g.material.color.copy(tc);
+    const pp = alarm === 2 && a > 0 ? .25 * (.5 + .5 * Math.sin(tp * 6 + i)) : 0; g.material.opacity = .35 + .6 * m; g.scale.setScalar(.7 + 2.6 * m + pp * 2); });
+  // curves: faint wiring always visible; lit by the source head's live push x composition weight
+  const hotList = [];
+  const wireOn = $("wire") && $("wire").checked;
+  curves.forEach((cv, k2) => { const v = 0; cv.v = v;
+    const base = wireOn ? .006 + .03 * cv.w : 0, lit = 0;
+    const r = act ? base + lit * .55 : base + lit * 1.0, g = act ? base + lit * .8 : base + lit * (lit > .5 ? .25 : .55), b = act ? base * 1.6 + lit * .9 : base * 1.8 + lit * .15;
+    for (let i = 0; i < SEG; i++){ const o = (k2 * SEG + i) * 6, f = .6 + .4 * Math.sin(i / SEG * Math.PI); eCol[o] = eCol[o + 3] = r * f; eCol[o + 1] = eCol[o + 4] = g * f; eCol[o + 2] = eCol[o + 5] = b * f; } });
+  eGeo.attributes.color.needsUpdate = true;
+  flows.forEach((f, k2) => { const l = Math.min(1, f.v), r = act ? .25 + .5 * l : .35 + .65 * l, g = act ? .45 + .5 * l : (l > .5 ? .18 : .45) * (.4 + .6 * l), b = act ? .6 + .4 * l : .1 * l;
+    for (let i = 0; i < SEG; i++){ const o = (k2 * SEG + i) * 6, f2 = (.25 + .75 * l) * (.6 + .4 * Math.sin(i / SEG * Math.PI)); fCol[o] = fCol[o + 3] = r * f2; fCol[o + 1] = fCol[o + 4] = g * f2; fCol[o + 2] = fCol[o + 5] = b * f2; } });
+  fGeo.attributes.color.needsUpdate = true;
+  for (let k2 = 0; k2 < flows.length; k2++) hotList.push(k2);
+  pState.forEach((p, i) => { if (p.k < 0 || p.t > 1 || !flows[p.k]){ p.k = flows.length ? Math.floor(Math.random() * Math.min(flows.length, 60)) : -1; p.t = Math.random() * .2; }
+    if (p.k < 0){ pPos.set([0, -999, 0], i * 3); return; } const f = flows[p.k]; p.t += dt * (.5 + .8 * f.v); const q = f.c.getPoint(Math.min(1, p.t)); pPos.set([q.x, q.y, q.z], i * 3);
+    const l = Math.min(1, f.v); pCol.set(act ? [.6, .9, 1] : [1, .3 + .45 * (1 - l), .15], i * 3); });
+  pGeo.attributes.position.needsUpdate = true; pGeo.attributes.color.needsUpdate = true;
+  for (const i of live){ const h = nHeat[i]; nHeat[i] *= Math.exp(-dt / .8);
+    if (act) nCol.set([NB[0] + .5 * h, NB[1] + .8 * h, NB[2] + h], i * 3); else if (h >= 0) nCol.set([NB[0] + 1.3 * h, NB[1] + .35 * h, NB[2] + .1 * h], i * 3); else nCol.set([NB[0], NB[1] + .4 * -h, NB[2] + 1.1 * -h], i * 3);
+    if (Math.abs(nHeat[i]) < .01){ nCol.set(NB, i * 3); live.delete(i); } }
+  nGeo.attributes.color.needsUpdate = true;
+  const nOrd = [...live].sort((x, y) => Math.abs(nHeat[y]) - Math.abs(nHeat[x]));
+  neurGlow.forEach((g, j) => { const i = nOrd[j]; if (i === undefined || Math.abs(nHeat[i]) < .12){ g.material.opacity = 0; return; } const h = nHeat[i];
+    g.position.set(nPos[i * 3], nPos[i * 3 + 1], nPos[i * 3 + 2]); g.material.color.copy(act ? C.act : h >= 0 ? (h > .6 ? C.hot : C.warm) : C.cold); g.material.opacity = .15 + .55 * Math.min(1, Math.abs(h)); g.scale.setScalar(.35 + 1.0 * Math.min(1, Math.abs(h))); });
+  inCap.scale.setScalar(1 + .15 * Math.sin(tp * 2)); outCap.material.color.copy(alarm === 2 ? DANGER.bad : emoCol); drawProfile();
+}
+
+// ================= 2D heatmap: layer x token =================
+const H2 = []; let DIM = "3d"; const hm = $("hm2");
+const MAGMA = [[0,[10,11,16]],[.18,[33,19,63]],[.36,[89,28,110]],[.54,[152,45,110]],[.7,[214,72,82]],[.84,[246,130,62]],[1,[252,222,120]]];
+function cmap(t){ t = Math.max(0, Math.min(1, t)); for (let i = 1; i < MAGMA.length; i++) if (t <= MAGMA[i][0]){ const [a0, c0] = MAGMA[i - 1], [a1, c1] = MAGMA[i], f = (t - a0) / (a1 - a0); return c0.map((c, k) => Math.round(c + (c1[k] - c) * f)); } return MAGMA[MAGMA.length - 1][1]; }
+const lgt = v => { v = Math.min(1 - 1e-4, Math.max(1e-4, v)); return Math.log(v / (1 - v)); };
+const off = document.createElement("canvas");
+function draw2d(){
+  const r = stage.getBoundingClientRect(), dpr = Math.min(devicePixelRatio, 2); hm.width = r.width * dpr; hm.height = r.height * dpr; const g = hm.getContext("2d"); g.setTransform(dpr, 0, 0, dpr, 0, 0);
+  g.fillStyle = "#07080b"; g.fillRect(0, 0, r.width, r.height);
+  const EMB = location.search.includes("replay="), x0 = 56, y0 = 72, x1 = r.width - (EMB ? 32 : 250), y1 = r.height - (EMB ? 90 : 196), act = MODE === "activity", cols = H2.filter(c => c.I), n = Math.max(1, cols.length);
+  const cw = (x1 - x0) / Math.max(n, 24), W = cw * n;
+  // title + scale legend
+  g.fillStyle = "#7f8795"; g.font = "11px Inter,-apple-system,'PingFang SC',sans-serif"; g.textAlign = "left";
+  g.fillText(act ? "残差范数（每列归一）" : "各层敌意读数 · logit 尺度", x0, 50);
+  const lx = x0 + 200; for (let i = 0; i < 120; i++){ const c = cmap(i / 119); g.fillStyle = `rgb(${c})`; g.fillRect(lx + i, 42, 1, 8); }
+  g.fillStyle = "#5f6676"; g.fillText(act ? "低" : "p≈0.12", lx - 2 - g.measureText(act ? "低" : "p≈0.12").width, 50); g.fillText(act ? "高" : "p≈0.998", lx + 126, 50);
+  // heat surface: 1px per cell offscreen, scaled with smoothing
+  off.width = n; off.height = NL; const og = off.getContext("2d"), img = og.createImageData(n, NL);
+  cols.forEach((c, j) => { const vals = act ? c.I.resid_norm.map(v => v / Math.max(...c.I.resid_norm)) : c.I.layers.map(v => (lgt(v) + 2) / 8);
+    vals.forEach((t, L) => { const col = cmap(t), k = (L * n + j) * 4; img.data[k] = col[0]; img.data[k + 1] = col[1]; img.data[k + 2] = col[2]; img.data[k + 3] = 255; }); });
+  og.putImageData(img, 0, 0); g.save(); g.beginPath(); g.roundRect(x0, y0, W, y1 - y0, 10); g.clip(); g.imageSmoothingEnabled = true; g.imageSmoothingQuality = "high"; g.drawImage(off, x0, y0, W, y1 - y0); g.restore();
+  g.strokeStyle = "rgba(255,255,255,.06)"; g.beginPath(); g.roundRect(x0, y0, W, y1 - y0, 10); g.stroke();
+  // axes
+  g.fillStyle = "#5f6676"; g.font = "10px ui-monospace,Menlo,monospace"; g.textAlign = "right";
+  for (let L = 0; L < NL; L += Math.max(1, Math.round(NL / 6))) g.fillText("L" + L, x0 - 8, y0 + (L + .5) * (y1 - y0) / NL + 3);
+  g.fillText("L" + (NL - 1), x0 - 8, y0 + (NL - .5) * (y1 - y0) / NL + 3);
+  // token row: horizontal labels when there is room, otherwise a thin score strip
+  const showLab = cw >= 13; g.textAlign = "center"; g.font = "12px -apple-system,'PingFang SC',sans-serif";
+  cols.forEach((c, j) => { const x = x0 + (j + .5) * cw, hot = !c.pre && c.s >= R.c1;
+    g.fillStyle = hot ? "rgba(255,77,94,.9)" : "rgba(255,255,255,.12)"; g.fillRect(x0 + j * cw + .5, y1 + 6, Math.max(1, cw - 1), 3);
+    if (showLab){ g.fillStyle = c.pre ? "#8b95ff" : hot ? "#ff8a95" : "#9aa2b1"; g.fillText((c.pre ? "∅" : (c.t || "").replace(/\n/g, "⏎")).slice(0, 2), x, y1 + 24); } });
+  if (!showLab){ g.fillStyle = "#5f6676"; g.textAlign = "left"; g.font = "11px Inter,sans-serif"; g.fillText(`共 ${n} 个字 · 悬停查看具体内容`, x0, y1 + 26); }
+  const fc = cols.findIndex(c => c.conf); if (fc >= 0){ const x = x0 + fc * cw; g.strokeStyle = "rgba(255,255,255,.85)"; g.setLineDash([3, 3]); g.beginPath(); g.moveTo(x, y0 - 4); g.lineTo(x, y1 + 2); g.stroke(); g.setLineDash([]);
+    g.fillStyle = "#eceef3"; g.font = "11px Inter,-apple-system,'PingFang SC',sans-serif"; g.textAlign = "left"; g.fillText("二档确认", x + 6, y0 + 12); }
+  hm._geo = {x0, y0, cw, rh: (y1 - y0) / NL, ncol: n, cols};
+}
+hm.addEventListener("pointermove", e => { const G = hm._geo, t = $("tip"); if (!G) return; const r = hm.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+  const j = Math.floor((x - G.x0) / G.cw), L = Math.floor((y - G.y0) / G.rh); const c = H2[j];
+  if (!c || !c.I || L < 0 || L >= NL){ t.style.display = "none"; return; }
+  const row = c.I.heads_all[L].map((v, h) => [v, h]).sort((p, q) => q[0] - p[0]).slice(0, 3);
+  t.style.display = "block"; t.style.left = e.clientX + 14 + "px"; t.style.top = e.clientY + 14 + "px";
+  t.innerHTML = `第 ${L} 层 · 字「${esc((c.t || "").replace(/\n/g, "⏎"))}」${c.pre ? "（回复前）" : ""}<br>该层敌意读数 ${c.I.layers[L].toFixed(3)}${c.I.resid_norm && c.I.resid_norm[L] ? ` · 残差范数 ${c.I.resid_norm[L]}` : ""}<br>推力最大的头：${row.map(([v, h]) => `头${h}${B3.has(`L${L}H${h}`) ? "*" : ""} ${v.toFixed(2)}`).join(" · ")}${row.some(([, h]) => B3.has(`L${L}H${h}`)) ? "<br>* = E01 愤怒头" : ""}`; });
+hm.addEventListener("pointerleave", () => $("tip").style.display = "none");
+document.querySelectorAll("#dimseg button").forEach(b => b.onclick = () => { document.querySelectorAll("#dimseg button").forEach(x => x.classList.toggle("on", x === b)); DIM = b.dataset.d;
+  const two = DIM === "2d"; hm.style.display = two ? "" : "none"; canvas.style.display = two ? "none" : ""; $("hmnote").style.display = two ? "" : "none";
+  document.querySelector(".hud.tl").style.display = two ? "none" : ""; document.querySelector(".hud.tok2").style.display = two ? "none" : ""; $("empty").style.display = two ? "none" : ""; if (two) draw2d(); });
+new ResizeObserver(() => { if (DIM === "2d") draw2d(); }).observe(stage);
+
+// ================= avatar =================
+const avC = $("av"), avR = new THREE.WebGLRenderer({canvas: avC, antialias:true, alpha:true}); avR.setPixelRatio(Math.min(devicePixelRatio, 2));
+const avS = new THREE.Scene(), avCam = new THREE.PerspectiveCamera(22, 1, 0.1, 20);
+avS.add(new THREE.AmbientLight(0xffffff, 0.75)); const kl = new THREE.DirectionalLight(0xffffff, 1.15); kl.position.set(1, 2, 2); avS.add(kl);
+const fl = new THREE.DirectionalLight(0x9aa6ff, 0.35); fl.position.set(-2, 1, 1); avS.add(fl);
+function avResize(){ const r = avC.parentElement.getBoundingClientRect(); avR.setSize(r.width, r.height, false); avCam.aspect = r.width / r.height; avCam.updateProjectionMatrix(); }
+new ResizeObserver(avResize).observe($("avcard"));
+let vrm = null; const vl = new GLTFLoader().register(p => new VRMLoaderPlugin(p));
+function loadAvatar(f){ vl.load("/vrm/" + f, g => { if (vrm){ avS.remove(vrm.scene); VRMUtils.deepDispose(vrm.scene); }
+  vrm = g.userData.vrm; VRMUtils.rotateVRM0(vrm); avS.add(vrm.scene); const s = vrm.meta?.metaVersion === "0" ? -1 : 1, h = vrm.humanoid;
+  h.getNormalizedBoneNode("leftUpperArm")?.rotation.set(0, 0, s * -1.2); h.getNormalizedBoneNode("rightUpperArm")?.rotation.set(0, 0, s * 1.2);
+  vrm.update(0); const hd = h.getRawBoneNode("head") || h.getNormalizedBoneNode("head"), p = new THREE.Vector3(); hd ? hd.getWorldPosition(p) : p.set(0, 1.35, 0);
+  avCam.position.set(0, p.y + 0.02, p.z + 0.95); avCam.lookAt(0, p.y - 0.02, p.z); }, undefined, e => console.error(e)); }
+let saved = null; try { saved = localStorage.getItem("imAvatar"); } catch (_) {}
+const AVS = await (await fetch("/vrm/index.json")).json(); $("avsel").innerHTML = AVS.map(a => `<option value="${a.file}">${a.name}</option>`).join("");
+if (saved && AVS.some(a => a.file === saved)) $("avsel").value = saved; $("avsel").onchange = e => { try { localStorage.setItem("imAvatar", e.target.value); } catch (_) {} loadAvatar(e.target.value); }; if (!location.search.includes("replay=")) loadAvatar($("avsel").value);   // study deploy: no avatar assets
+const eT = {happy:0, sad:0, angry:0, neutral:1}, eC = {...eT}; let talk = 0, blink = 3, at = 0;
+function expr(e){ Object.assign(eT, e); ["happy","sad","angry"].forEach(k => { $("e_"+k).textContent = (e[k] ?? 0).toFixed(2); $("m_"+k).style.width = Math.min(100, (e[k] ?? 0) * 100) + "%"; }); }
+function avStep(dt){ at += dt; for (const k in eC) eC[k] += (eT[k] - eC[k]) * (1 - Math.exp(-dt / 0.15));
+  if (vrm){ const em = vrm.expressionManager; ["happy","sad","angry"].forEach(k => em.setValue(k, eC[k] * .9)); em.setValue("relaxed", Math.max(0, eC.neutral - .6) * .3);
+    blink -= dt; const b = blink < .12 ? Math.sin(Math.PI * Math.max(0, blink) / .12) : 0; if (blink < 0) blink = 2.5 + Math.random() * 3.5; em.setValue("blink", Math.max(b, eC.angry * .15));
+    talk = Math.max(0, talk - dt * 2.5); em.setValue("aa", talk > 0 ? .22 + .32 * Math.abs(Math.sin(at * 17)) * talk : 0);
+    const hd = vrm.humanoid.getNormalizedBoneNode("head"); if (hd){ hd.rotation.x = .025 * Math.sin(at * .8) + eC.sad * .12 - eC.angry * .04; hd.rotation.y = .035 * Math.sin(at * .5); }
+    vrm.update(dt); }
+  avR.render(avS, avCam); }
+
+const clock = new THREE.Clock();
+(function loop(){ const dt = Math.min(clock.getDelta(), .1); controls.autoRotate = false;
+  if ($("spin").checked && !home.user){ home.t += dt; const off = camera.position.clone().sub(controls.target), sph = new THREE.Spherical().setFromVector3(off); if (home.az0 === undefined) home.az0 = sph.theta; sph.theta = home.az0 + 0.21 * Math.sin(home.t * 0.22); camera.position.copy(controls.target).add(new THREE.Vector3().setFromSpherical(sph)); }
+  controls.update(); step(dt); avStep(dt); renderer.render(scene, camera); requestAnimationFrame(loop); })();
+
+// hover
+const ray = new THREE.Raycaster(), mouse = new THREE.Vector2();
+canvas.addEventListener("pointermove", e => { const r = canvas.getBoundingClientRect(); mouse.set((e.clientX - r.left) / r.width * 2 - 1, -(e.clientY - r.top) / r.height * 2 + 1); ray.setFromCamera(mouse, camera);
+  const hit = ray.intersectObject(heads)[0], t = $("tip");
+  if (!hit){ t.style.display = "none"; return; }
+  const i = hit.instanceId, L = Math.floor(i / NH), h = i % NH; t.style.display = "block"; t.style.left = e.clientX + 14 + "px"; t.style.top = e.clientY + 14 + "px";
+  t.innerHTML = `第 ${L} 层 · 第 ${h} 个头 · KV 组 ${Math.floor(h / (NH / NKV))}${B3.has(`L${L}H${h}`) ? " · E01 愤怒头" : ""}` + (lastI ? `<br>敌意推力 ${lastI.heads_all[L][h]}${lastI.heads_norm ? ` · 输出范数 ${lastI.heads_norm[L][h]}` : ""}<br>该层敌意读数 ${lastI.layers[L]}${lastI.resid_norm ? ` · 残差范数 ${lastI.resid_norm[L]}` : ""}` : ""); });
+
+// ================= risk cards =================
+const R = {c2: TH.C2, pre: TH.C1_pre, c1: TH.C1_mean, h3: TH.C3H_pre ?? 1};
+const NQ = INFO.neg_quantiles || {}; const QK = {c2: "C2", pre: "C1_pre", c1: "C1_mean", h3: "C3H_pre"};
+function pct(k, v){ const q = NQ[k === "h3" && R.h3 === TH.C3H_mean ? "C3H_mean" : QK[k]]; if (!q) return null; let lo = 0, hi = q.length - 1; if (v <= q[0]) return 0; if (v >= q[hi]) return 100;
+  while (hi - lo > 1){ const m = (lo + hi) >> 1; if (q[m] <= v) lo = m; else hi = m; } return lo + (v - q[lo]) / Math.max(1e-9, q[hi] - q[lo]); }
+/* hallucination card is shown only in factual-QA conversations (probe trained on Chinese SimpleQA) */
+["c2","pre","c1","h3"].forEach(k => { $("t_"+k).style.left = Math.min(99, R[k] * 100) + "%"; if ($("th_"+k)) $("th_"+k).textContent = "阈值 " + R[k].toFixed(3); });
+const riskNow = {}; let qaMode = false;
+function risk(k, v, tier){ if (k === "h3" && !qaMode) return; riskNow[k] = Math.min(1.5, v / R[k]) / 1.5; danger.t = Math.max(...Object.values(riskNow));
+  // tier 1 (预警): above threshold before/without confirmation; tier 2 (确认): server-confirmed sustained alarm (passed as tier === 2)
+  const st = tier === 2 ? "alert" : v >= R[k] ? "watch" : v >= R[k] * .6 ? "soft" : "ok";
+  $("v_"+k).textContent = v.toFixed(3); $("v_"+k).classList.remove("idle"); $("f_"+k).style.width = Math.min(100, v * 100) + "%";
+  $("f_"+k).style.background = st === "alert" ? "#ff4d5e" : st === "watch" ? "#f5a524" : "#e6e9ef";
+  $("st_"+k).className = "pill " + (st === "soft" ? "" : st); $("st_"+k).textContent = {ok:"正常", soft:"偏高", watch:"一档 · 预警", alert:"二档 · 确认"}[st];
+  const pc = pct(k, v); if (pc !== null && $("pc_"+k)) $("pc_"+k).textContent = `高于 ${pc >= 99.5 ? ">99" : pc.toFixed(0)}% 正常样本`;
+  $("rc_"+k).className = "hc risk " + (st === "alert" ? "alert" : st === "watch" ? "watch" : "");
+}
+function idle(){ ["c2","pre","c1","h3"].forEach(k => { if ($("v_"+k)) { $("v_"+k).textContent = "—"; $("v_"+k).classList.add("idle"); } }); }
+function resetRisk(){ for (const k in riskNow) delete riskNow[k]; danger.t = 0; R.h3 = TH.C3H_pre ?? 1; if ($("ph_h3")) { $("ph_h3").textContent = "回复前"; $("t_h3").style.left = Math.min(99, R.h3 * 100) + "%"; if ($("th_h3")) $("th_h3").textContent = "阈值 " + R.h3.toFixed(3); } ["c2","pre","c1","h3"].forEach(k => { $("v_"+k).textContent = "—"; $("f_"+k).style.width = "0"; $("st_"+k).className = "pill"; $("st_"+k).textContent = "—"; $("rc_"+k).className = "hc risk"; }); }
+let spark = [];
+function drawSpark(){ const c = $("spark"), g = c.getContext("2d"), W = c.width, H = c.height; g.clearRect(0, 0, W, H); if (spark.length < 2) return;
+  const X = i => i / Math.max(40, spark.length - 1) * W, Yv = v => H - 4 - Math.min(1, v) * (H - 8);
+  g.strokeStyle = "rgba(255,255,255,.18)"; g.setLineDash([3, 4]); g.beginPath(); g.moveTo(0, Yv(R.c1)); g.lineTo(W, Yv(R.c1)); g.stroke(); g.setLineDash([]);
+  g.strokeStyle = "rgba(255,255,255,.12)"; g.lineWidth = 1.5; g.beginPath(); spark.forEach((s, i) => i ? g.lineTo(X(i), Yv(s.t)) : g.moveTo(X(i), Yv(s.t))); g.stroke();
+  const last = spark[spark.length - 1].m; g.strokeStyle = last >= R.c1 ? "#ff4d5e" : "#e6e9ef"; g.lineWidth = 2.5; g.beginPath(); spark.forEach((s, i) => i ? g.lineTo(X(i), Yv(s.m)) : g.moveTo(X(i), Yv(s.m))); g.stroke(); }
+let toastT = null;
+function toast(html, kind){ const t = $("toast"); t.innerHTML = html; t.className = "toast show " + (kind || ""); clearTimeout(toastT); toastT = setTimeout(() => t.className = "toast " + (kind || ""), 4200); }
+
+// ================= conversation =================
+let conv = [], presets = [];
+function renderConv(extra){ if (!conv.length && !extra){ renderCards(); return; } $("conv").innerHTML = conv.map(m => `<div class="msg ${m.role}">${m.role === "system" ? "系统 · " : ""}${esc(m.content)}</div>`).join("") + (extra || ""); $("conv").scrollTop = 1e9; }
+presets = await (await fetch("/presets")).json();
+const GDESC = {"C1": "陪伴对话里历史被带偏，看模型会不会变得敌意", "C2": "用户消息里的真实痛苦，不靠关键词", "C3": "事实问答，看模型是否在编造"};
+function renderCards(){ const groups = {}; presets.forEach((p, i) => (groups[p.group] ||= []).push([p, i]));
+  $("conv").innerHTML = '<div class="scards">' + Object.entries(groups).map(([g, list]) => `<div><h4>${esc(g.split("（")[0])} · ${GDESC[g.slice(0, 2)] || ""}</h4>` +
+    list.slice(0, 4).map(([p, i]) => `<button class="sc" data-i="${i}"><b>${esc(p.label)}</b><span>${esc(p.messages[p.messages.length - 1].content.slice(0, 38))}…</span></button>`).join("") + "</div>").join("") + "</div>";
+  $("conv").querySelectorAll(".sc").forEach(b => b.onclick = () => { $("scen").value = b.dataset.i; $("scen").dispatchEvent(new Event("change")); }); }
+$("scen").innerHTML = '<option value="">选择场景…</option>' + presets.map((p, i) => `<option value="${i}">${esc(p.group.split("（")[0])} · ${esc(p.label)}</option>`).join("");
+$("scen").onchange = e => { if (e.target.value === "") return; conv = JSON.parse(JSON.stringify(presets[+e.target.value].messages)); renderConv(); resetRisk(); idle(); };
+document.querySelectorAll("#viewseg button").forEach(b => b.onclick = () => { document.querySelectorAll("#viewseg button").forEach(x => x.classList.toggle("on", x === b)); MODE = b.dataset.v; if (DIM === "2d") draw2d();
+  $("actkey").style.display = MODE === "activity" ? "" : "none"; if (lastI) applyInner(lastI); });
+$("msg").addEventListener("input", e => { e.target.style.height = "auto"; e.target.style.height = Math.min(120, e.target.scrollHeight) + "px"; });
+$("msg").addEventListener("keydown", e => { if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) send(); });
+$("go").onclick = send; $("clear").onclick = () => { conv = []; renderConv(); resetRisk(); $("scen").value = ""; $("empty").style.opacity = 1; idle(); };
+renderConv(); idle();
+
+async function send(){
+  const text = $("msg").value.trim(); if (text) conv.push({role:"user", content:text});
+  if (!conv.length || conv[conv.length - 1].role !== "user") return;
+  $("msg").value = ""; $("msg").style.height = "auto"; $("go").disabled = true; resetRisk(); window._h3 = false; window._c1conf = false; window._h3conf = false;
+  qaMode = conv.some(m => m.role === "system" && m.content.includes("知识问答")); if ($("rc_h3")) $("rc_h3").style.display = qaMode && TH.C3H_pre !== undefined ? "" : "none"; spark = []; drawSpark(); alarm = 0;
+  $("empty").style.opacity = 0; renderConv('<div class="msg assistant live" id="live"></div>'); const liveEl = $("live");
+  $("status").textContent = "生成中"; $("livedot").style.background = "var(--accent)"; $("avstate").className = "pill"; $("avstate").textContent = "读取中";
+  const res = await fetch("/v1/chat/completions", {method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({messages: conv, stream: true, max_tokens: 200, temperature: 0.7, x_action: $("stop").checked ? "stop" : "log"})});
+  const rd = res.body.getReader(), dec = new TextDecoder(); let buf = "", reply = "", n = 0, preT = null, alerted = false;
+  while (true){ const {value, done} = await rd.read(); if (done) break; buf += dec.decode(value, {stream:true}); let i;
+    while ((i = buf.indexOf("\n\n")) >= 0){ const line = buf.slice(0, i).trim(); buf = buf.slice(i + 2);
+      if (!line.startsWith("data: ") || line === "data: [DONE]") continue;
+      const dd = JSON.parse(line.slice(6)), X = dd.x_risk, delta = dd.choices[0].delta.content || "";
+      if (X.phase === "pre"){ preT = X.t; H2.length = 0; H2.push({t: "∅", I: X.inner, s: X.C1_pre, pre: true}); if (DIM === "2d") draw2d(); risk("c2", X.C2); risk("pre", X.C1_pre); if (X.inner) applyInner(X.inner); if (X.emo) expr(X.emo.expr);
+        $("avstate").className = "pill watch"; $("avstate").textContent = "预同步 · 尚无文字"; pulse(X.C1_pre >= R.pre ? 0xff4d5e : 0x8b95ff); $("tok").textContent = "∅";
+        if (X.C3H_pre !== undefined) risk("h3", X.C3H_pre);
+        if (X.alarm.C2) toast("一档预警 · 用户情绪强烈，建议准备转人工", "warn");
+        if (X.alarm.C3H_pre && qaMode) toast(`回复前预警：这道事实题可能答错 <span class="num">${X.C3H_pre.toFixed(2)}</span>`, "warn");
+        if (X.alarm.C1_pre){ alarm = 1; toast(`一档预警 · 回复前：可能出现敌意 <span class="num">${X.C1_pre.toFixed(2)}</span>（不拦截，等待生成中确认）`, "warn"); } }
+      else if (X.phase === "token"){ n++; reply += delta; if (X.alarm.C1) window._c1conf = true; risk("c1", X.C1_mean, window._c1conf ? 2 : 1);
+        H2.push({t: delta, I: X.inner, s: X.C1_token, conf: X.alarm.C1}); if (DIM === "2d") draw2d();
+        if (X.C3H_mean !== undefined && n >= 8){ if (R.h3 !== TH.C3H_mean){ R.h3 = TH.C3H_mean; $("ph_h3").textContent = "生成中 · 答案表征"; $("t_h3").style.left = Math.min(99, R.h3 * 100) + "%"; if ($("th_h3")) $("th_h3").textContent = "阈值 " + R.h3.toFixed(3); } if (X.alarm.C3H) window._h3conf = true; risk("h3", X.C3H_mean, window._h3conf ? 2 : 1);
+          if (X.alarm.C3H && qaMode && !window._h3){ window._h3 = true; toast("二档确认 · 这段回答可能包含编造内容，建议核实"); } } if (X.inner) applyInner(X.inner); if (X.emo) expr(X.emo.expr); talk = 1;
+        const a = Math.min(.9, X.C1_token); liveEl.insertAdjacentHTML("beforeend", `<span style="background:rgba(255,77,94,${(a * .18).toFixed(3)});box-shadow:inset 0 -1.5px rgba(255,77,94,${(a * .8).toFixed(2)})">${esc(delta)}</span>`); $("conv").scrollTop = 1e9;
+        if (delta.trim()) $("tok").textContent = delta.replace(/\n/g, "⏎"); $("tok").style.color = X.C1_token >= R.c1 ? "#ff5a66" : "#f1f3f7";
+        spark.push({t: X.C1_token, m: X.C1_mean}); drawSpark(); $("n_tok").textContent = n + " 个字"; if (n % 3 === 0) pulse(X.C1_token >= R.c1 ? 0xff4d5e : 0x8b95ff);
+        $("avstate").className = "pill"; $("avstate").textContent = "逐字驱动";
+        if (X.alarm.C1 && !alerted){ alerted = true; alarm = 2; $("avcard").classList.add("alert"); const L = lastI ? lastI.layers.indexOf(Math.max(...lastI.layers)) : null;
+          toast(`二档确认 · 敌意：第 <span class="num">${X.i - INFO.sustain + 1}–${X.i}</span> 个字连续超阈值${L !== null ? ` · 峰值层 L${L}` : ""}${$("stop").checked ? " · 已拦截" : ""}`); $("avstate").className = "pill alert"; $("avstate").textContent = "二档 · 确认"; } }
+      else if (X.phase === "done"){ $("status").textContent = `${X.tokens} 字 · 首读 ${preT} 毫秒 · 每秒 ${Math.round(X.tokens / Math.max(.001, (X.t - preT) / 1000))} 字`;
+        if (X.finish === "content_filter"){ liveEl.insertAdjacentHTML("beforeend", '<br><span class="cut">已拦截 · 回复出现敌意倾向</span>'); expr({happy:0, sad:0, angry:0, neutral:1}); talk = 0; } }
+    } }
+  conv.push({role:"assistant", content: reply || "（无）"}); $("go").disabled = false; $("livedot").style.background = alarm === 2 ? "var(--bad)" : "var(--ok)";
+  setTimeout(() => $("avcard").classList.remove("alert"), 2500); liveEl.id = "";
+}
+
+// ================= replay / embed mode (user study): /monitor?replay=<trial_id>&view=2d|3d =================
+const QS = new URLSearchParams(location.search);
+if (QS.get("replay")){
+  document.querySelector(".top").style.display = "none"; document.querySelector(".left").style.display = "none"; document.querySelector(".hudbar").style.display = "none";
+  $("avcard").style.display = "none"; document.querySelector(".hud.tok2").style.display = "none"; $("empty").style.display = "none";
+  document.querySelector(".app").style.gridTemplateRows = "1fr"; document.querySelector(".main").style.gridTemplateColumns = "1fr"; $("stage").style.margin = "0"; $("stage").style.borderRadius = "0";
+  $("spin").checked = false; camera.position.set(-3, 10, 31); controls.target.set(0, -0.6, 0); controls.update();
+  const bar = document.createElement("div"); bar.style.cssText = "position:absolute;left:16px;right:16px;bottom:14px;display:flex;gap:10px;align-items:center;font-size:12px;color:#9aa2b1;z-index:5";
+  bar.innerHTML = '<button id="rp_play" style="border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:#eceef3;border-radius:999px;padding:4px 12px;cursor:pointer">重播</button><input id="rp_seek" type="range" min="0" value="0" style="flex:1;accent-color:#b9c0cc"><span id="rp_lab" style="min-width:120px;text-align:right"></span>';
+  $("stage").appendChild(bar);
+  const view = QS.get("view") || "3d"; if (view === "2d") document.querySelector('#dimseg button[data-d="2d"]').click();
+  const R0 = await (await fetch("/study/replay/" + encodeURIComponent(QS.get("replay")))).json();
+  const FR = R0.frames.filter(m => m.ph === "pre" || m.ph === "token").map(m => ({m, I: m.L ? {layers: m.L, heads_all: m.H, heads_norm: m.H, neurons: m.N, neurons_act: m.N, flow: {safety: m.F, activity: m.F}} : null}));
+  $("rp_seek").max = FR.length - 1;
+  function show(k){ H2.length = 0; FR.slice(0, k + 1).forEach(({m, I}, j) => H2.push(j === 0 ? {t: "∅", I, s: m.C1_pre, pre: true} : {t: m.d, I, s: m.C1_token, conf: m.al && m.al.C1}));
+    const {m, I} = FR[k]; if (I) applyInner(I); alarm = FR.slice(0, k + 1).some(f => f.m.al && f.m.al.C1) ? 2 : 0; if (DIM === "2d") draw2d();
+    $("rp_seek").value = k; $("rp_lab").textContent = k === 0 ? "回复前" : `第 ${k} / ${FR.length - 1} 个字「${(m.d || "").replace(/\n/g, "⏎")}」`; }
+  $("rp_seek").oninput = e => show(+e.target.value);
+  let timer = null; function play(){ clearInterval(timer); let k = 0; show(0); timer = setInterval(() => { k++; if (k >= FR.length){ clearInterval(timer); return; } show(k); }, 60); }
+  $("rp_play").onclick = play; play();
+  window.parent && window.parent.postMessage({type: "replay-ready", frames: FR.length}, "*");
+}
+</script>
+</body>
+</html>

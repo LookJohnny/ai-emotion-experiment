@@ -1,0 +1,17 @@
+# Config used inside the container (paths are container paths; keys come from deploy/.env).
+model: /models/Qwen3-4B-Instruct-2507
+pack: /opt/nous/packs/qwen3-4b
+port: 8080
+admin_keys: ["${NOUS_ADMIN_KEY}"]
+api_keys: ["${NOUS_API_KEY}"]
+device_keys:
+  "${NOUS_DEVICE_KEY_1}": toy-0001
+db: /data/nous.db
+gateway:
+  mode: ${NOUS_GATEWAY_MODE}
+  upstream_base_url: ${UPSTREAM_BASE_URL}
+  upstream_model: ${UPSTREAM_MODEL}
+  upstream_api_key: ${UPSTREAM_API_KEY}
+  action: log
+companion:
+  parent_webhook: ${NOUS_PARENT_WEBHOOK}

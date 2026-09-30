@@ -110,3 +110,15 @@ python product/readout_server.py MODEL OUT/probe_L19.npz --port 6006   # 打开 
 
 环境：PyTorch 2.8 + CUDA 12.8，transformers 4.57，单张 RTX 5090（峰值显存约 8–12 GiB）。
 测试集（工作协作、兴趣活动）仍处于封存状态，尚未用于任何定位或调参。
+
+## Product: Nous (`nous/`)
+
+The research is packaged as a deployable product (2026-09-30). There is one shared engine, and it serves two products:
+- **Monitoring gateway**: an OpenAI-compatible proxy that adds `x_risk` readouts to responses. It has two-tier alerts, an audit log and a white-box console. It also has a reader mode for closed APIs.
+- **Companion engine**: a WebSocket SDK for toys and robots. It sends the expression before the first token, releases the reply sentence by sentence, blocks and rewrites hostile replies before they are spoken, and alerts parents through a care channel.
+
+See `nous/README.md`. Tests:
+- `tests/test_units.py`: 7 CPU unit tests.
+- `tests/test_gpu.py`: 7 end-to-end tests on an RTX 4090. They include a check that the research scores are reproduced within 2e-3.
+
+The website is nous.center. Its source is `2026-09-28/monitor/study_site/index.html`, and the user study stays at study.nous.center.

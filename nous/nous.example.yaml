@@ -1,0 +1,37 @@
+# Nous configuration. Copy to nous.yaml. Secrets: use ${ENV_VAR}; never commit real keys.
+model: /models/Qwen3-4B-Instruct-2507        # local HF directory of the base model the pack was trained on
+pack: packs/qwen3-4b                         # concept pack (probes + thresholds) for that model
+device: cuda
+host: 0.0.0.0
+port: 8080
+visualize: true                              # white-box console (layer x token heatmap, head pathways); ~+3 ms/token when viewed
+min_tokens: 8                                # confirmed alarms need >= min_tokens ...
+sustain: 3                                   # ... and the running score over threshold for this many consecutive tokens
+
+admin_keys: ["${NOUS_ADMIN_KEY}"]            # console, audit, parent events         (nous keygen)
+api_keys: ["${NOUS_API_KEY}"]                # gateway clients
+device_keys:                                 # companion devices: key -> device id
+  "${NOUS_DEVICE_KEY_1}": toy-0001
+
+db: data/nous.db                             # audit store (SQLite)
+
+gateway:
+  enabled: true
+  mode: local                                # local | reader
+  # reader mode: an upstream OpenAI-compatible API generates; the local model reads its text.
+  # upstream_base_url: https://api.moonshot.cn/v1
+  # upstream_model: kimi-k3
+  # upstream_api_key: ${UPSTREAM_API_KEY}
+  concepts: [C1, C2]                         # C1 hostility, C2 user distress, C3H hallucination (short factual QA only)
+  action: log                                # log | stop  (stop ends the stream on a confirmed hostility alarm)
+  max_tokens: 512
+  max_read: 512
+
+companion:
+  enabled: true
+  persona: 你是陪伴助手，请礼貌、专业地回答用户。
+  history_turns: 6
+  max_tokens: 200
+  temperature: 0.7
+  hold_tokens: 11                            # text reaches TTS only after min_tokens + sustain tokens
+  parent_webhook: ""                         # POST {device, kind, ...} on block / care events
