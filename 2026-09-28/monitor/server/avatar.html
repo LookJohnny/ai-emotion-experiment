@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avatar Monitor</title>
+<style>
+:root{--bg:#f6f5f2;--panel:#fff;--ink:#1d1d1d;--mute:#6b6b6b;--line:#e3e1db;--accent:#1d1d1d;
+  --happy:#e0a526;--sad:#3f78c9;--angry:#d2493c;--neutral:#9a9a9a;--pre:#7a4fd0;--warn:#d98a1c;--bad:#d64545;--ok:#2f9e6e;--c2:#2b7bb9}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--panel:#1c1c1c;--ink:#ececec;--mute:#9a9a9a;--line:#2e2e2e;--accent:#ececec}}
+:root[data-theme="dark"]{--bg:#141414;--panel:#1c1c1c;--ink:#ececec;--mute:#9a9a9a;--line:#2e2e2e;--accent:#ececec}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+main{display:grid;grid-template-columns:minmax(320px,1fr) 460px;gap:14px;padding:14px 16px;max-width:1360px;margin:0 auto}
+@media (max-width:900px){main{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px}
+#stage{position:relative;height:660px;padding:0;overflow:hidden;border-width:3px;transition:border-color .2s,box-shadow .2s}
+#stage.warn{border-color:var(--warn);box-shadow:0 0 0 3px color-mix(in srgb,var(--warn) 30%,transparent)}
+#stage.bad{border-color:var(--bad);box-shadow:0 0 0 4px color-mix(in srgb,var(--bad) 35%,transparent)}
+#stage canvas{width:100%;height:100%;display:block}
+#hud{position:absolute;left:12px;top:12px;right:12px;display:flex;flex-wrap:wrap;gap:6px;pointer-events:none}
+.tag{font-size:12px;padding:3px 9px;border-radius:12px;background:var(--line);color:var(--mute)}
+.tag.pre{background:var(--pre);color:#fff}.tag.token{background:var(--accent);color:var(--bg)}
+.tag.warn{background:var(--warn);color:#fff}.tag.bad{background:var(--bad);color:#fff}.tag.c2{background:var(--c2);color:#fff}
+#bubble{position:absolute;left:12px;right:12px;bottom:12px;background:color-mix(in srgb,var(--panel) 90%,transparent);border:1px solid var(--line);
+  border-radius:10px;padding:8px 10px;max-height:170px;overflow:auto;white-space:pre-wrap}
+#bubble .cut{color:var(--bad);font-weight:600}
+h1{font-size:16px;margin:0 0 2px}.sub{color:var(--mute);font-size:12px;margin:0 0 8px}
+h2{font-size:12px;color:var(--mute);margin:10px 0 4px;font-weight:600}
+textarea,input,select{width:100%;font:inherit;color:inherit;background:transparent;border:1px solid var(--line);border-radius:8px;padding:7px}
+textarea{min-height:54px;resize:vertical}
+.row{display:flex;gap:8px;align-items:center;margin-top:8px}.row>*{flex:1}.row label{flex:0 0 auto;color:var(--mute);font-size:12px}
+button{font:inherit;background:var(--accent);color:var(--bg);border:0;border-radius:8px;padding:7px 12px;cursor:pointer;flex:0 0 auto}
+button.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}button:disabled{opacity:.4;cursor:default}
+#conv{max-height:190px;overflow:auto;font-size:12px;border:1px solid var(--line);border-radius:8px;padding:6px}
+#conv div{margin:3px 0;white-space:pre-wrap}#conv .u{color:var(--ink)}#conv .a{color:var(--mute)}#conv .s{color:var(--mute);font-style:italic}
+.bars .b{display:grid;grid-template-columns:86px 1fr 44px;gap:8px;align-items:center;font-size:12px;margin:4px 0}
+.track{height:9px;background:var(--line);border-radius:5px;overflow:hidden;position:relative}.fill{height:100%;width:0;transition:width .12s}
+.track i{position:absolute;top:-1px;bottom:-1px;width:2px;background:var(--ink);opacity:.55}
+canvas#tl{width:100%;height:120px;display:block;margin-top:6px}
+.stat{font-size:12px;color:var(--mute);margin-top:6px}
+.presets{display:flex;flex-wrap:wrap;gap:4px}.presets button{font-size:12px;padding:4px 8px}
+.note{font-size:11px;color:var(--mute)}
+</style>
+</head>
+<body>
+<main>
+  <section class="card" id="stage"><canvas id="c"></canvas><div id="hud"><span class="tag" id="phase">待机</span></div><div id="bubble"></div></section>
+  <section style="display:flex;flex-direction:column;gap:12px">
+    <div class="card">
+      <h1>虚拟形象 · 表情与安全预警同源驱动</h1>
+      <p class="sub">同一次前向计算：情绪探针驱动表情，冲突探针驱动预警。读数是模型内部激活的探针估计，不代表主观感受。</p>
+      <h2>场景</h2><div class="presets" id="presets"></div>
+      <h2>对话</h2><div id="conv"></div>
+      <textarea id="msg" placeholder="输入用户消息（接在当前对话后面）"></textarea>
+      <div class="row"><label><input type="checkbox" id="stop" style="width:auto"> 敌意报警即拦截</label><label>温度</label><input id="temp" type="number" step="0.1" min="0" max="1.5" value="0.7" style="max-width:70px">
+        <button class="ghost" id="clear">清空</button><button id="go">发送</button></div>
+      <div class="row"><label>形象</label><select id="avatar">
+        <option value="mianmian.vrm">棉棉</option><option value="joy.vrm">Joy</option><option value="utsuwa.vrm">器（aikeya，MIT）</option>
+        <option value="rose.vrm">Rose（CC0）</option><option value="lydia.vrm">Lydia（CC0）</option><option value="robert.vrm">Robert（CC0）</option>
+        <option value="polydancer.vrm">Polydancer（CC0）</option><option value="polybot.vrm">Polybot 机器人（CC0）</option></select></div>
+    </div>
+    <div class="card">
+      <h2 style="margin-top:0">安全读数（竖线 = 验证集误报率≤5% 阈值，演示用）</h2>
+      <div class="bars">
+        <div class="b"><span>C2 用户痛苦</span><div class="track"><div class="fill" id="f_c2" style="background:var(--c2)"></div><i id="t_c2"></i></div><span id="v_c2">–</span></div>
+        <div class="b"><span>C1 回复前预测</span><div class="track"><div class="fill" id="f_pre" style="background:var(--warn)"></div><i id="t_pre"></i></div><span id="v_pre">–</span></div>
+        <div class="b"><span>C1 逐字均值</span><div class="track"><div class="fill" id="f_c1" style="background:var(--bad)"></div><i id="t_c1"></i></div><span id="v_c1">–</span></div>
+      </div>
+      <h2>表情（情绪探针 → 校准 → 冻结平滑）</h2>
+      <div class="bars" id="ebars"></div>
+      <canvas id="tl" width="880" height="240"></canvas>
+      <div class="stat" id="stat">—</div>
+    </div>
+  </section>
+</main>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+ "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+ "@pixiv/three-vrm":"https://cdn.jsdelivr.net/npm/@pixiv/three-vrm@2.1.0/lib/three-vrm.module.js"}}
+</script>
+<script type="module">
+import * as THREE from "three";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { VRMLoaderPlugin, VRMUtils } from "@pixiv/three-vrm";
+const $ = id => document.getElementById(id), css = k => getComputedStyle(document.documentElement).getPropertyValue("--"+k).trim();
+const esc = s => s.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const EX = ["happy","sad","angry"], NAME = {happy:"愉悦",sad:"悲伤",angry:"愤怒",neutral:"中性"};
+EX.concat(["neutral"]).forEach(k => $("ebars").insertAdjacentHTML("beforeend",
+  `<div class="b"><span>${NAME[k]}</span><div class="track"><div class="fill" id="e_${k}" style="background:var(--${k})"></div></div><span id="ev_${k}">0.00</span></div>`));
+
+// ---------- VRM stage ----------
+const canvas = $("c"), renderer = new THREE.WebGLRenderer({canvas, antialias:true, alpha:true}); renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+const scene = new THREE.Scene(), camera = new THREE.PerspectiveCamera(24, 1, 0.1, 20);
+scene.add(new THREE.AmbientLight(0xffffff, 0.8)); const dl = new THREE.DirectionalLight(0xffffff, 1.1); dl.position.set(1, 2, 2); scene.add(dl);
+function resize(){ const r = canvas.parentElement.getBoundingClientRect(); renderer.setSize(r.width, r.height, false); camera.aspect = r.width / r.height; camera.updateProjectionMatrix(); }
+addEventListener("resize", resize); resize();
+let vrm = null; const loader = new GLTFLoader().register(p => new VRMLoaderPlugin(p));
+function loadAvatar(file){
+  setPhase("加载形象…");
+  loader.load("/vrm/" + file, g => {
+    if (vrm){ scene.remove(vrm.scene); VRMUtils.deepDispose(vrm.scene); }
+    vrm = g.userData.vrm; VRMUtils.rotateVRM0(vrm); scene.add(vrm.scene);
+    const s = vrm.meta?.metaVersion === "0" ? -1 : 1, h = vrm.humanoid;
+    h.getNormalizedBoneNode("leftUpperArm")?.rotation.set(0, 0, s * -1.2); h.getNormalizedBoneNode("rightUpperArm")?.rotation.set(0, 0, s * 1.2);
+    vrm.update(0); const head = h.getRawBoneNode("head") || h.getNormalizedBoneNode("head"); const p = new THREE.Vector3(); head ? head.getWorldPosition(p) : p.set(0, 1.35, 0);
+    camera.position.set(0, p.y + 0.02, p.z + 1.55); camera.lookAt(0, p.y - 0.06, p.z); setPhase("待机");
+  }, undefined, e => { setPhase("模型加载失败"); console.error(e); });
+}
+$("avatar").onchange = e => { try { localStorage.setItem("avatarM", e.target.value); } catch (_) {} loadAvatar(e.target.value); };
+let saved = null; try { saved = localStorage.getItem("avatarM"); } catch (_) {}
+if (saved && [...$("avatar").options].some(o => o.value === saved)) $("avatar").value = saved;
+loadAvatar($("avatar").value);
+const target = {happy:0, sad:0, angry:0, neutral:1}, cur = {...target}; let talking = 0, blinkT = 3, T = 0; const clock = new THREE.Clock();
+(function tick(){
+  const dt = Math.min(clock.getDelta(), 0.1); T += dt;
+  for (const k in cur) cur[k] += (target[k] - cur[k]) * (1 - Math.exp(-dt / 0.15));
+  if (vrm){ const em = vrm.expressionManager;
+    EX.forEach(k => em.setValue(k, cur[k] * 0.9)); em.setValue("relaxed", Math.max(0, cur.neutral - 0.6) * 0.3);
+    blinkT -= dt; const bl = blinkT < 0.12 ? Math.sin(Math.PI * Math.max(0, blinkT) / 0.12) : 0; if (blinkT < 0) blinkT = 2.5 + Math.random() * 3.5;
+    em.setValue("blink", Math.max(bl, cur.angry * 0.15));
+    talking = Math.max(0, talking - dt * 2.5); em.setValue("aa", talking > 0 ? 0.25 + 0.35 * Math.abs(Math.sin(T * 18)) * talking : 0);
+    const hd = vrm.humanoid.getNormalizedBoneNode("head");
+    if (hd){ hd.rotation.x = 0.03 * Math.sin(T * 0.8) + cur.sad * 0.12 - cur.angry * 0.04; hd.rotation.y = 0.04 * Math.sin(T * 0.5); hd.rotation.z = cur.happy * 0.05 * Math.sin(T * 2); }
+    vrm.update(dt); }
+  renderer.render(scene, camera); requestAnimationFrame(tick);
+})();
+
+// ---------- UI state ----------
+let TH = {}, conv = [], hist = [], firstT = null;
+function setPhase(t, cls = ""){ $("phase").textContent = t; $("phase").className = "tag " + cls; }
+function tags(list){ $("hud").querySelectorAll(".x").forEach(e => e.remove()); list.forEach(([t, c]) => $("hud").insertAdjacentHTML("beforeend", `<span class="tag x ${c}">${t}</span>`)); }
+function stage(level){ $("stage").className = "card " + level; }
+function bar(k, v, t){ $("f_"+k).style.width = Math.min(100, v * 100) + "%"; $("v_"+k).textContent = v.toFixed(3); $("t_"+k).style.left = Math.min(99, t * 100) + "%"; }
+function expr(e){ Object.assign(target, e); EX.concat(["neutral"]).forEach(k => { $("e_"+k).style.width = (e[k]*100).toFixed(1)+"%"; $("ev_"+k).textContent = e[k].toFixed(2); }); }
+function renderConv(){ $("conv").innerHTML = conv.map(m => `<div class="${m.role[0]}">${{system:"系统",user:"用户",assistant:"助手"}[m.role]}：${esc(m.content)}</div>`).join("") || '<div class="s">（空）</div>'; $("conv").scrollTop = 1e9; }
+function drawTL(){
+  const cv = $("tl"), g = cv.getContext("2d"), W = cv.width, H = cv.height; g.clearRect(0, 0, W, H); if (hist.length < 2) return;
+  const tmax = hist[hist.length-1].t || 1, X = t => t / tmax * W, Y = v => H - 6 - Math.min(1, v) * (H - 12);
+  if (firstT !== null){ g.strokeStyle = css("mute"); g.setLineDash([4,4]); g.beginPath(); g.moveTo(X(firstT),0); g.lineTo(X(firstT),H); g.stroke(); g.setLineDash([]); g.fillStyle = css("mute"); g.font = "20px sans-serif"; g.fillText("首字", X(firstT)+4, 20); }
+  EX.forEach(k => { g.strokeStyle = css(k); g.lineWidth = 3; g.beginPath(); hist.forEach((p, i) => i ? g.lineTo(X(p.t), Y(p.e[k])) : g.moveTo(X(p.t), Y(p.e[k]))); g.stroke(); });
+  g.strokeStyle = css("bad"); g.lineWidth = 2; g.setLineDash([2,3]); g.beginPath(); hist.forEach((p, i) => { if (p.c1 == null) return; i ? g.lineTo(X(p.t), Y(p.c1)) : g.moveTo(X(p.t), Y(p.c1)); }); g.stroke(); g.setLineDash([]);
+}
+
+async function send(){
+  const text = $("msg").value.trim();
+  if (text) conv.push({role:"user", content:text});
+  if (!conv.length || conv[conv.length-1].role !== "user"){ $("stat").textContent = "最后一条需要是用户消息"; return; }
+  $("msg").value = ""; renderConv(); $("go").disabled = true;
+  hist = []; firstT = null; $("bubble").innerHTML = ""; expr({happy:0, sad:0, angry:0, neutral:1}); tags([]); stage("");
+  ["c2","pre","c1"].forEach(k => bar(k, 0, TH[{c2:"C2",pre:"C1_pre",c1:"C1_mean"}[k]] || 0));
+  const r = await fetch("/v1/chat/completions", {method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({messages: conv, stream: true, max_tokens: 200, temperature: +$("temp").value, x_action: $("stop").checked ? "stop" : "log"})});
+  const rd = r.body.getReader(), dec = new TextDecoder(); let buf = "", reply = "", pre = null, c1hit = false, onset = null;
+  while (true){ const {value, done} = await rd.read(); if (done) break; buf += dec.decode(value, {stream:true}); let k;
+    while ((k = buf.indexOf("\n\n")) >= 0){ const line = buf.slice(0, k).trim(); buf = buf.slice(k + 2);
+      if (!line.startsWith("data: ") || line === "data: [DONE]") continue;
+      const d = JSON.parse(line.slice(6)), R = d.x_risk, delta = d.choices[0].delta.content || "";
+      if (R.phase === "pre"){ pre = R;
+        bar("c2", R.C2, TH.C2); bar("pre", R.C1_pre, TH.C1_pre);
+        const t = []; if (R.alarm.C2) t.push(["用户情绪激动 · 建议转人工", "c2"]); if (R.alarm.C1_pre) t.push(["预警：回复可能出现敌意", "warn"]); tags(t);
+        if (R.alarm.C1_pre) stage("warn");
+        setPhase("预同步（文字尚未生成）", "pre");
+        if (R.emo){ expr(R.emo.expr); hist.push({t: R.t, e: R.emo.expr, c1: null}); if (Math.max(...EX.map(x => R.emo.expr[x])) >= 0.3) onset = R.t; }
+      } else if (R.phase === "token"){
+        if (firstT === null) firstT = R.t;
+        reply += delta; $("bubble").insertAdjacentText("beforeend", delta); $("bubble").scrollTop = 1e9; talking = 1;
+        bar("c1", R.C1_mean, TH.C1_mean); setPhase("逐字修正", "token");
+        if (R.emo){ expr(R.emo.expr); if (onset === null && Math.max(...EX.map(x => R.emo.expr[x])) >= 0.3) onset = R.t; }
+        hist.push({t: R.t, e: R.emo ? R.emo.expr : {...target}, c1: R.C1_mean});
+        if (R.alarm.C1 && !c1hit){ c1hit = true; stage("bad");
+          const t = [["报警：回复出现敌意（第 " + R.i + " 字）", "bad"]]; if (pre && pre.alarm.C2) t.unshift(["用户情绪激动 · 建议转人工", "c2"]); tags(t); }
+        drawTL();
+      } else if (R.phase === "done"){
+        if (R.finish === "content_filter"){ $("bubble").insertAdjacentHTML("beforeend", '<span class="cut">〔监测已拦截：回复出现敌意倾向〕</span>'); expr({happy:0, sad:0, angry:0, neutral:1}); talking = 0; }
+        setPhase("完成");
+        $("stat").textContent = `回复前读数 ${pre ? pre.t : "—"} ms · 首字 ${firstT ?? "—"} ms · 表情起动 ${onset ?? "未起动"}${onset !== null ? " ms" : ""} · ${R.tokens} 字 · C1 均值 ${R.C1_mean} · ${R.finish}`;
+      }
+    } }
+  conv.push({role:"assistant", content: reply || "（无）"}); renderConv(); $("go").disabled = false;
+}
+$("go").onclick = send; $("msg").addEventListener("keydown", e => { if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) send(); });
+$("clear").onclick = () => { conv = []; renderConv(); $("bubble").innerHTML = ""; tags([]); stage(""); };
+(async () => {
+  const info = await (await fetch("/info")).json(); TH = info.thresholds;
+  if (!info.emotion) $("stat").textContent = "服务未加载情绪探针（启动时加 --emotion），表情不会驱动";
+  const P = await (await fetch("/presets")).json();
+  P.forEach(p => { const b = document.createElement("button"); b.className = "ghost"; b.textContent = p.label;
+    b.onclick = () => { conv = JSON.parse(JSON.stringify(p.messages)); renderConv(); $("bubble").innerHTML = ""; tags([]); stage(""); }; $("presets").appendChild(b); });
+  renderConv();
+})();
+</script>
+</body>
+</html>

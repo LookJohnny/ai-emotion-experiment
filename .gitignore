@@ -6,3 +6,4 @@ venv/
 
 # third-party avatar models (large, separate licence)
 *.vrm
+2026-09-28/monitor/server/logs/

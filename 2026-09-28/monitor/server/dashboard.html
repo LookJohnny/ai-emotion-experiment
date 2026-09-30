@@ -31,6 +31,7 @@ button.go{background:var(--acc);color:#fff;border:0;border-radius:6px;padding:7p
 .badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:12px;margin:2px;background:var(--hist);color:var(--mute)}
 .badge.on{background:var(--bad);color:#fff}
 canvas{width:100%;height:140px;display:block}
+#hm_layers{height:230px}#hm_heads{height:150px}
 .aud{font-size:12px;border-top:1px solid var(--line);padding:6px 0}.aud .u{color:var(--mute)}
 .note{font-size:11px;color:var(--mute)}
 </style>
@@ -49,6 +50,13 @@ canvas{width:100%;height:140px;display:block}
     </div>
     <h2 style="margin-top:14px">模型回复（底色 = 逐字敌意读数）</h2><div id="reply"></div>
     <div class="note" id="stat"></div>
+    <div id="innerbox" style="display:none">
+      <h2 style="margin-top:14px">内部视图 · 各层敌意读数（行 = 第 0–35 层，列 = 生成的字）</h2>
+      <canvas id="hm_layers" width="900" height="288"></canvas>
+      <h2 style="margin-top:10px">内部视图 · 12 个愤怒注意力头的推力（红 = 推向敌意，蓝 = 拉回）</h2>
+      <canvas id="hm_heads" width="900" height="168"></canvas>
+      <p class="note">每层一个线性探针（V1.1 dev 训练，仅用于可视化，非预注册）；头推力 = 该头写入残差的向量在本层敌意方向上的投影。第一列为“回复前”（最后一个提示位置）。E01 已证明单个神经元不是载体，故不展示神经元。</p>
+    </div>
   </section>
   <section class="card">
     <h2>回复前读数（第一个字之前）</h2>
@@ -62,10 +70,21 @@ canvas{width:100%;height:140px;display:block}
   </section>
 </main>
 <script>
-const $=id=>document.getElementById(id); let TH={}, hist=[], series=[];
+const $=id=>document.getElementById(id); let TH={}, hist=[], series=[], INNER=null, cols=[];
+function heat(id, rows, key, labels, diverge){
+  const c=$(id), x=c.getContext('2d'), W=c.width, H=c.height, lw=64, n=Math.max(40, cols.length), cw=(W-lw)/n, rh=H/rows;
+  x.clearRect(0,0,W,H); const cs=getComputedStyle(document.documentElement); x.fillStyle=cs.getPropertyValue('--mute'); x.font='12px sans-serif';
+  labels.forEach((l,i)=>{ if(l) x.fillText(l, 2, i*rh+rh*0.8); });
+  let mx=1e-6; if(diverge) cols.forEach(cl=>cl[key].forEach(v=>mx=Math.max(mx,Math.abs(v))));
+  cols.forEach((cl,j)=>cl[key].forEach((v,i)=>{ let col;
+    if(diverge){ const a=Math.min(1,Math.abs(v)/mx); col=v>=0?`rgba(214,69,69,${a})`:`rgba(63,120,201,${a})`; } else col=`rgba(214,69,69,${Math.min(1,v)})`;
+    x.fillStyle=col; x.fillRect(lw+j*cw, i*rh, Math.ceil(cw), Math.ceil(rh)); }));
+  if(cols.length){ x.strokeStyle=cs.getPropertyValue('--ink'); x.globalAlpha=.5; x.beginPath(); x.moveTo(lw+cw,0); x.lineTo(lw+cw,H); x.stroke(); x.globalAlpha=1; }
+}
+function drawInner(){ if(!INNER) return; heat('hm_layers', 36, 'layers', Array.from({length:36},(_,i)=>i%4===0?'L'+i:''), false); heat('hm_heads', INNER.heads.length, 'heads', INNER.heads, true); }
 const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
 async function init(){
-  const info=await (await fetch('/info')).json(); TH=info.thresholds;
+  const info=await (await fetch('/info')).json(); TH=info.thresholds; INNER=info.inner; if(INNER) $('innerbox').style.display='';
   $('info').textContent=`${info.model} · 探针层 C1-pre L${info.probes.c1_pre.layer} / C1-token L${info.probes.c1_token.layer} / C2 L${info.probes.c2.layer}`;
   const P=await (await fetch('/presets')).json(); let g=''; const box=$('presets');
   P.forEach(p=>{ if(p.group!==g){g=p.group; box.insertAdjacentHTML('beforeend',`<div class="grp">${g}</div>`);}
@@ -76,7 +95,7 @@ function load(m){hist=JSON.parse(JSON.stringify(m)); renderHist(); $('reply').in
 function renderHist(){ $('history').innerHTML=hist.map(m=>`<div class="msg ${m.role}"><div class="role">${{system:'系统',user:'用户',assistant:'助手'}[m.role]}</div>${esc(m.content)}</div>`).join(''); }
 function gauge(k,v,t){ $('g_'+k).style.width=Math.min(100,v*100)+'%'; $('g_'+k).style.background=v>=t?'var(--bad)':(v>=t*0.6?'var(--warn)':'var(--ok)');
   $('t_'+k).style.left=Math.min(99,t*100)+'%'; $('v_'+k).textContent=v.toFixed(3); }
-function reset(){ series=[]; draw(); ['c2','pre'].forEach(k=>{$('g_'+k).style.width='0'; $('v_'+k).textContent='–';}); ['b_c2','b_pre','b_c1'].forEach(b=>$(b).classList.remove('on')); $('stat').textContent=''; }
+function reset(){ series=[]; cols=[]; draw(); drawInner(); ['c2','pre'].forEach(k=>{$('g_'+k).style.width='0'; $('v_'+k).textContent='–';}); ['b_c2','b_pre','b_c1'].forEach(b=>$(b).classList.remove('on')); $('stat').textContent=''; }
 function draw(){ const c=$('chart'),x=c.getContext('2d'),W=c.width,H=c.height; x.clearRect(0,0,W,H);
   const cs=getComputedStyle(document.documentElement); const n=Math.max(40,series.length), ymax=1;
   const X=i=>i/(n-1)*W, Y=v=>H-8-(Math.min(v,ymax)/ymax)*(H-16);
@@ -95,10 +114,10 @@ async function go(){
     while((k=buf.indexOf('\n\n'))>=0){ const line=buf.slice(0,k).trim(); buf=buf.slice(k+2); if(!line.startsWith('data: ')||line==='data: [DONE]')continue;
       const d=JSON.parse(line.slice(6)), R=d.x_risk, delta=d.choices[0].delta.content||'';
       if(R.phase==='pre'){ gauge('c2',R.C2,TH.C2); gauge('pre',R.C1_pre,TH.C1_pre); $('b_c2').classList.toggle('on',R.alarm.C2); $('b_pre').classList.toggle('on',R.alarm.C1_pre);
-        $('stat').textContent=`回复前读数于 ${R.t} ms 给出（尚未生成任何字）`; }
+        $('stat').textContent=`回复前读数于 ${R.t} ms 给出（尚未生成任何字）`; if(R.inner){cols.push(R.inner); drawInner();} }
       else if(R.phase==='token'){ series.push({tok:R.C1_token,mean:R.C1_mean}); draw(); reply+=delta;
         const a=Math.min(0.85,R.C1_token/Math.max(0.05,TH.C1_mean*2)); $('reply').insertAdjacentHTML('beforeend',`<span style="background:rgba(214,69,69,${a.toFixed(2)})">${esc(delta)}</span>`);
-        if(R.alarm.C1) $('b_c1').classList.add('on'); }
+        if(R.alarm.C1) $('b_c1').classList.add('on'); if(R.inner){cols.push(R.inner); drawInner();} }
       else if(R.phase==='done'){ $('stat').textContent+=` · ${R.tokens} tokens · ${R.t} ms · C1 均值 ${R.C1_mean} · 结束原因 ${R.finish}`; }
     } }
   $('go').disabled=false; audit();

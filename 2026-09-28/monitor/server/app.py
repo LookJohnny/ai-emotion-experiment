@@ -19,6 +19,9 @@ from core.hooks import ResidualTap
 
 ap = argparse.ArgumentParser(); ap.add_argument("model"); ap.add_argument("--probes", default=os.path.join(HERE, "..", "v1_1"))
 ap.add_argument("--port", type=int, default=6006); ap.add_argument("--min_tokens", type=int, default=8)
+ap.add_argument("--layers", default=None, help="layer_probes.npz from train_layer_probes.py -> internal view (layer x token, head attribution)")
+ap.add_argument("--heads", default="L16H12,L17H16,L14H25,L19H28,L17H4,L19H29,L18H8,L22H19,L16H3,L14H26,L20H11,L16H17", help="E01 B3 anger heads (FREEZE_5b.json)")
+ap.add_argument("--emotion", default=None, help="product dir: results/readout_v2/probe_L19.npz, results/pre_v2/preprobe_L22.npz, avatar/calib.json, smoothing_freeze.json")
 a = ap.parse_args()
 PF = {"c1_pre": f"{a.probes}/c1_out/c1_pre.json", "c1_token": f"{a.probes}/c1_out/c1_token.json", "c2": f"{a.probes}/c2_out/c2_transfer.json"}
 P = {k: ProbeSpec.load(v) for k, v in PF.items()}
@@ -26,7 +29,71 @@ TH = json.load(open(f"{a.probes}/demo_thresholds.json"))
 THR = {"C1_pre": TH["p_pre"]["thr"], "C1_mean": TH["item_score"]["thr"], "C2": TH["c2_transfer"]["thr"]}
 tok = AutoTokenizer.from_pretrained(a.model)
 model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, attn_implementation="sdpa").cuda().eval()
-tap = ResidualTap(model, [s.layer for s in P.values()])
+EMO = None
+if a.emotion:   # E01 emotion readout (expression driver): 4-class token probe + pre-reply ridge probe + frozen smoothing
+    import numpy as np
+    sys.path.insert(0, a.emotion); from smoothing import Smoother
+    z = np.load(f"{a.emotion}/results/readout_v2/probe_L19.npz", allow_pickle=True); q = np.load(f"{a.emotion}/results/pre_v2/preprobe_L22.npz", allow_pickle=True)
+    T = lambda x: torch.tensor(x, device="cuda", dtype=torch.float32)
+    EMO = dict(L=int(z["layer"]), cls=[str(c) for c in z["classes"]], mu=T(z["mean"]), sd=T(z["scale"]), W=T(z["coef"]), B=T(z["intercept"]),
+               LP=int(q["layer"]), pcls=[str(c) for c in q["classes"]], pmu=T(q["mean"]), psd=T(q["scale"]), pW=T(q["coef"]), pB=T(q["intercept"]),
+               cal=json.load(open(f"{a.emotion}/avatar/calib.json"))["emotions"], smo=json.load(open(f"{a.emotion}/smoothing_freeze.json"))["frozen"], Smoother=Smoother)
+    P_LAYERS = [EMO["L"], EMO["LP"]]
+else: P_LAYERS = []
+INNER = None
+if a.layers:
+    import numpy as np
+    cfg = model.config; z = np.load(a.layers); NL = cfg.num_hidden_layers; NH = cfg.num_attention_heads
+    HD = getattr(cfg, "head_dim", None) or cfg.hidden_size // NH; NKV = getattr(cfg, "num_key_value_heads", NH)
+    Tt = lambda x: torch.tensor(x, device="cuda", dtype=torch.float32)
+    mu, sd, co, b0 = Tt(z["mean"]), Tt(z["scale"]), Tt(z["coef"]), Tt(z["intercept"])       # [NL, d], [NL]
+    HEADS = [(int(h[1:].split("H")[0]), int(h.split("H")[1])) for h in a.heads.split(",")]
+    with torch.no_grad():
+        dirs = co / sd                                                                          # residual direction the layer-L probe reads
+        # component writes into the residual: head h -> W_O[:, h] @ x_h ; neuron n -> W_down[:, n] * act_n
+        # push on the layer-L probe logit = x_h . UH[L, h]  and  act . VN[L]
+        UH = torch.stack([(model.model.layers[L].self_attn.o_proj.weight.float().T @ dirs[L]).view(NH, HD) for L in range(NL)])
+        VN = torch.stack([model.model.layers[L].mlp.down_proj.weight.float().T @ dirs[L] for L in range(NL)])
+    OIN, MIN = {}, {}
+    for L in range(NL):
+        model.model.layers[L].self_attn.o_proj.register_forward_pre_hook(lambda m, args, L=L: OIN.__setitem__(L, args[0][0, -1].detach().float()))
+        model.model.layers[L].mlp.down_proj.register_forward_pre_hook(lambda m, args, L=L: MIN.__setitem__(L, args[0][0, -1].detach().float()))
+    WO = [model.model.layers[L].self_attn.o_proj.weight for L in range(NL)]                     # real parameters, [d, NH*HD] each
+    INNER = dict(mu=mu, sd=sd, co=co, b0=b0, UH=UH, VN=VN, OIN=OIN, MIN=MIN, NL=NL, NH=NH, HD=HD, NN=VN.shape[1], HEADS=HEADS, WO=WO, NKV=NKV,
+                 cfg=dict(model_type=cfg.model_type, n_layers=NL, n_heads=NH, n_kv_heads=NKV, head_dim=HD, hidden=cfg.hidden_size,
+                          intermediate=VN.shape[1], params_b=round(sum(p.numel() for p in model.parameters()) / 1e9, 2)),
+                 heads=[f"L{L}H{h}" for L, h in HEADS], val_auroc=[round(float(v), 3) for v in z["val_auroc"]])
+tap = ResidualTap(model, [s.layer for s in P.values()] + P_LAYERS + (list(range(INNER["NL"])) if INNER else []))
+
+
+def inner_view(topn=6):
+    """Real internals at the current position (visualization; not pre-registered).
+    activity : residual-stream norm per layer, each head's output norm ||W_O[:,h] x_h||, top neurons by |activation|
+    safety   : per-layer C1 probe prob; each head's / top neurons' push on the layer's own hostility probe logit."""
+    I = INNER; H = torch.stack([tap.states[L] for L in range(I["NL"])])
+    lp = torch.sigmoid((((H - I["mu"]) / I["sd"]) * I["co"]).sum(-1) + I["b0"])
+    X = torch.stack([I["OIN"][L].view(I["NH"], I["HD"]) for L in range(I["NL"])])              # [NL, NH, HD] per-head attention outputs (pre W_O)
+    hp = (X * I["UH"]).sum(-1)                                                                   # [NL, NH]
+    hn = torch.stack([(I["WO"][L].view(-1, I["NH"], I["HD"]) * X[L].to(I["WO"][L].dtype)).sum(-1).float().norm(dim=0) for L in range(I["NL"])])
+    A = torch.stack([I["MIN"][L] for L in range(I["NL"])])                                       # [NL, NN] real neuron activations
+    npush = A * I["VN"]
+    _, ix = npush.abs().topk(topn, dim=1); nv = npush.gather(1, ix)
+    _, ax = A.abs().topk(topn, dim=1); av = A.gather(1, ax)
+    out = [t.cpu().numpy() for t in (lp, hp, ix, nv, hn, ax, av, H.norm(dim=-1))]
+    lp, hp, ix, nv, hn, ax, av, rn = out
+    return {"layers": np.round(lp, 3).tolist(), "heads_all": np.round(hp, 2).tolist(), "heads_norm": np.round(hn, 2).tolist(),
+            "resid_norm": np.round(rn, 1).tolist(), "heads": [round(float(hp[L, h]), 3) for L, h in I["HEADS"]],
+            "neurons": [[[int(i), round(float(x), 3)] for i, x in zip(ix[L], nv[L])] for L in range(I["NL"])],
+            "neurons_act": [[[int(i), round(float(x), 3)] for i, x in zip(ax[L], av[L])] for L in range(I["NL"])]}
+
+
+def emo_token(h):
+    p = torch.softmax(((h - EMO["mu"]) / EMO["sd"]) @ EMO["W"].T + EMO["B"], -1); return {c: float(p[i]) for i, c in enumerate(EMO["cls"])}
+
+
+def emo_pre(h):
+    y = torch.clamp(((h - EMO["pmu"]) / EMO["psd"]) @ EMO["pW"].T + EMO["pB"], min=0); y = y / (y.sum() + 1e-6)
+    return {c: round(float(y[EMO["pcls"].index(c)]), 4) for c in EMO["cls"]}
 EOS = {tok.eos_token_id, tok.convert_tokens_to_ids("<|im_end|>")}
 os.makedirs(os.path.join(HERE, "logs"), exist_ok=True); AUDIT = os.path.join(HERE, "logs", "audit.jsonl")
 app = FastAPI(); LOCK = asyncio.Lock()
@@ -63,6 +130,10 @@ async def run(req):
             c1pre = float(P["c1_pre"].prob(tap.states[P["c1_pre"].layer]))
             pre = {"phase": "pre", "t": ms(), "C2": round(c2, 4), "C1_pre": round(c1pre, 4),
                    "alarm": {"C2": c2 >= THR["C2"], "C1_pre": c1pre >= THR["C1_pre"]}}
+            if EMO:
+                pp = emo_pre(tap.states[EMO["LP"]]); sm = EMO["Smoother"](EMO["cal"], EMO["smo"]["alpha"], EMO["smo"]["sustain"], EMO["smo"]["gamma"], pre=pp)
+                pre["emo"] = {"probs": pp, "expr": sm.pre_expr()}
+            if INNER: pre["inner"] = inner_view()
             rec["pre"] = pre; yield chunk(cid, {"role": "assistant", "content": ""}, pre)
             gen, text, ps, finish = [], "", [], "stop"
             for step in range(n_max):
@@ -76,6 +147,8 @@ async def run(req):
                 p = float(P["c1_token"].prob(tap.states[P["c1_token"].layer])); ps.append(p); mean = sum(ps) / len(ps)
                 al = len(ps) >= a.min_tokens and mean >= THR["C1_mean"]
                 risk = {"phase": "token", "t": ms(), "i": len(ps), "C1_token": round(p, 4), "C1_mean": round(mean, 4), "alarm": {"C1": al}}
+                if EMO: risk["emo"] = {"expr": sm.step(emo_token(tap.states[EMO["L"]]))}
+                if INNER: risk["inner"] = inner_view()
                 if al and not any(e["type"] == "C1_alarm" for e in rec["events"]): rec["events"].append({"type": "C1_alarm", "token": len(ps), "t": ms()})
                 yield chunk(cid, {"content": delta}, risk); await asyncio.sleep(0)
                 if al and action == "stop": finish = "content_filter"; break
@@ -101,7 +174,7 @@ async def completions(req: dict):
 
 @app.get("/info")
 def info():
-    return {"model": os.path.basename(a.model.rstrip("/\\")), "thresholds": THR, "threshold_note": TH["note"],
+    return {"model": os.path.basename(a.model.rstrip("/\\")), "thresholds": THR, "emotion": bool(EMO), "inner": ({"heads": INNER["heads"], "layer_val_auroc": INNER["val_auroc"], "n_layers": INNER["NL"], "n_heads": INNER["NH"], "n_neurons": INNER["NN"], "config": INNER["cfg"]} if INNER else None), "threshold_note": TH["note"],
             "probes": {k: {"layer": v.layer, "sha256": hashlib.sha256(open(PF[k], "rb").read()).hexdigest()[:12]} for k, v in P.items()}}
 
 
@@ -114,6 +187,21 @@ def audit(n: int = 20):
 @app.get("/presets")
 def presets():
     return json.load(open(os.path.join(HERE, "presets.json"), encoding="utf-8"))
+
+
+@app.get("/brain")
+def brain_page():
+    return HTMLResponse(open(os.path.join(HERE, "brain.html"), encoding="utf-8").read())
+
+
+@app.get("/avatar")
+def avatar_page():
+    return HTMLResponse(open(os.path.join(HERE, "avatar.html"), encoding="utf-8").read())
+
+
+if a.emotion:
+    from fastapi.staticfiles import StaticFiles
+    app.mount("/vrm", StaticFiles(directory=os.path.join(a.emotion, "avatar")), name="vrm")
 
 
 @app.get("/")
