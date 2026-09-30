@@ -1,0 +1,6 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 98.01it/s]
+features 1200 45s
+c3h_pre layer 22 {12: 0.616, 16: 0.649, 19: 0.715, 22: 0.719, 26: 0.691}
+c3h_token layer 19 {12: 0.701, 16: 0.749, 19: 0.801, 22: 0.793, 26: 0.766}
+DONE 59.0
+exit 0

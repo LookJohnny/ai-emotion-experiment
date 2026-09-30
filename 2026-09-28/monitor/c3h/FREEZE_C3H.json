@@ -1,0 +1,13 @@
+{
+ "note": "C3-H probes trained on dev labels only; all 1200 items (incl. sealed test) scored in the same pass before any test grade exists.",
+ "probes_sha256": {
+  "c3h_pre.json": "8fd7e181bf6ef9a25ede0c9fb97439f5bde0c04aaff1eadecebd6069580f11ef",
+  "c3h_token.json": "767b5510f380f35cbf5881090958e2c1526c60bdc55332f66c77222a07ce39b2"
+ },
+ "scores_sha256": "a6d871ed20a5dbf76be318571e1e741a92058d606023fd22ca04e93fd4ff1e11",
+ "dev_cv": {
+  "c3h_pre": "L22 0.719",
+  "c3h_token": "L19 0.801"
+ },
+ "gpu": "RTX 4090 (bjb1)"
+}
