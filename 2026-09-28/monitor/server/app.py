@@ -19,6 +19,7 @@ from core.hooks import ResidualTap
 
 ap = argparse.ArgumentParser(); ap.add_argument("model"); ap.add_argument("--probes", default=os.path.join(HERE, "..", "v1_1"))
 ap.add_argument("--port", type=int, default=6006); ap.add_argument("--min_tokens", type=int, default=8)
+ap.add_argument("--c3h", default=None, help="dir with c3h_pre.json / c3h_token.json (hallucination probes)")
 ap.add_argument("--layers", default=None, help="layer_probes.npz from train_layer_probes.py -> internal view (layer x token, head attribution)")
 ap.add_argument("--heads", default="L16H12,L17H16,L14H25,L19H28,L17H4,L19H29,L18H8,L22H19,L16H3,L14H26,L20H11,L16H17", help="E01 B3 anger heads (FREEZE_5b.json)")
 ap.add_argument("--emotion", default=None, help="product dir: results/readout_v2/probe_L19.npz, results/pre_v2/preprobe_L22.npz, avatar/calib.json, smoothing_freeze.json")
@@ -27,6 +28,10 @@ PF = {"c1_pre": f"{a.probes}/c1_out/c1_pre.json", "c1_token": f"{a.probes}/c1_ou
 P = {k: ProbeSpec.load(v) for k, v in PF.items()}
 TH = json.load(open(f"{a.probes}/demo_thresholds.json"))
 THR = {"C1_pre": TH["p_pre"]["thr"], "C1_mean": TH["item_score"]["thr"], "C2": TH["c2_transfer"]["thr"]}
+H3 = None
+if a.c3h:
+    H3 = {k: ProbeSpec.load(f"{a.c3h}/{k}.json") for k in ["c3h_pre", "c3h_token"]}
+    THR.update(C3H_pre=TH["c3h_pre"]["thr"], C3H_mean=TH["c3h_token"]["thr"])
 tok = AutoTokenizer.from_pretrained(a.model)
 model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, attn_implementation="sdpa").cuda().eval()
 EMO = None
@@ -63,7 +68,7 @@ if a.layers:
                  cfg=dict(model_type=cfg.model_type, n_layers=NL, n_heads=NH, n_kv_heads=NKV, head_dim=HD, hidden=cfg.hidden_size,
                           intermediate=VN.shape[1], params_b=round(sum(p.numel() for p in model.parameters()) / 1e9, 2)),
                  heads=[f"L{L}H{h}" for L, h in HEADS], val_auroc=[round(float(v), 3) for v in z["val_auroc"]])
-tap = ResidualTap(model, [s.layer for s in P.values()] + P_LAYERS + (list(range(INNER["NL"])) if INNER else []))
+tap = ResidualTap(model, [s.layer for s in P.values()] + P_LAYERS + (list(range(INNER["NL"])) if INNER else []) + ([s.layer for s in H3.values()] if H3 else []))
 
 
 def inner_view(topn=6):
@@ -134,6 +139,9 @@ async def run(req):
                 pp = emo_pre(tap.states[EMO["LP"]]); sm = EMO["Smoother"](EMO["cal"], EMO["smo"]["alpha"], EMO["smo"]["sustain"], EMO["smo"]["gamma"], pre=pp)
                 pre["emo"] = {"probs": pp, "expr": sm.pre_expr()}
             if INNER: pre["inner"] = inner_view()
+            if H3:
+                pre["C3H_pre"] = round(float(H3["c3h_pre"].prob(tap.states[H3["c3h_pre"].layer])), 4); pre["alarm"]["C3H_pre"] = pre["C3H_pre"] >= THR["C3H_pre"]
+                hsum = torch.zeros_like(tap.states[H3["c3h_token"].layer])
             rec["pre"] = pre; yield chunk(cid, {"role": "assistant", "content": ""}, pre)
             gen, text, ps, finish = [], "", [], "stop"
             for step in range(n_max):
@@ -149,6 +157,9 @@ async def run(req):
                 risk = {"phase": "token", "t": ms(), "i": len(ps), "C1_token": round(p, 4), "C1_mean": round(mean, 4), "alarm": {"C1": al}}
                 if EMO: risk["emo"] = {"expr": sm.step(emo_token(tap.states[EMO["L"]]))}
                 if INNER: risk["inner"] = inner_view()
+                if H3:
+                    hsum += tap.states[H3["c3h_token"].layer]; hm = float(H3["c3h_token"].prob(hsum / len(ps)))
+                    risk["C3H_mean"] = round(hm, 4); risk["alarm"]["C3H"] = len(ps) >= a.min_tokens and hm >= THR["C3H_mean"]
                 if al and not any(e["type"] == "C1_alarm" for e in rec["events"]): rec["events"].append({"type": "C1_alarm", "token": len(ps), "t": ms()})
                 yield chunk(cid, {"content": delta}, risk); await asyncio.sleep(0)
                 if al and action == "stop": finish = "content_filter"; break

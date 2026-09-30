@@ -149,6 +149,8 @@ select.scen{width:100%;height:38px;padding:0 12px;border:1px solid var(--line2);
         <div class="val" id="v_pre">—</div><div class="track"><i id="f_pre"></i><b id="t_pre"></b></div><div class="foot"><span>首字前</span><span id="th_pre"></span></div></div>
       <div class="card risk" id="rc_c1"><div class="row"><span class="label">敌意 · 逐字<span class="info" data-t="C1-token：每生成一个字读第 16 层残差流，显示累计均值；8 字后超过阈值即报警。V1.1 测试集 AUROC 0.929。">i</span></span><span class="pill" id="st_c1">—</span></div>
         <div class="val" id="v_c1">—</div><div class="track"><i id="f_c1"></i><b id="t_c1"></b></div><canvas class="spark" id="spark" width="600" height="68"></canvas><div class="foot"><span id="n_tok">0 tokens</span><span id="th_c1"></span></div></div>
+      <div class="card risk" id="rc_h3" style="display:none"><div class="row"><span class="label">幻觉风险 · 事实问答<span class="info" data-t="C3-H：回复前读第 22 层（测试集 AUROC 0.722，预注册判定：不确定）；生成中读第 19 层答案表征的累计均值（测试集 AUROC 0.811）。训练于 Chinese SimpleQA 短答题，其他场景仅供参考。">i</span></span><span class="pill" id="st_h3">—</span></div>
+        <div class="val" id="v_h3">—</div><div class="track"><i id="f_h3"></i><b id="t_h3"></b></div><div class="foot"><span id="ph_h3">回复前</span><span id="th_h3"></span></div></div>
       <div class="label" style="padding:2px 4px 0;line-height:1.6;color:var(--faint)">颜色来自真实前向计算。逐层探针仅用于可视化（非预注册）。单个神经元不是情绪载体（E01）。</div>
     </aside>
   </div>
@@ -285,8 +287,9 @@ canvas.addEventListener("pointermove", e => { const r = canvas.getBoundingClient
   t.innerHTML = `L${L}·H${h}  ·  KV group ${Math.floor(h / (NH / NKV))}${B3.has(`L${L}H${h}`) ? "  ·  E01 anger head" : ""}` + (lastI ? `<br>‖W<sub>O</sub>x‖ ${lastI.heads_norm[L][h]}   push ${lastI.heads_all[L][h]}<br>layer hostility ${lastI.layers[L]}   residual ${lastI.resid_norm[L]}` : ""); });
 
 // ================= risk cards =================
-const R = {c2: TH.C2, pre: TH.C1_pre, c1: TH.C1_mean};
-["c2","pre","c1"].forEach(k => { $("t_"+k).style.left = Math.min(99, R[k] * 100) + "%"; $("th_"+k).textContent = "阈值 " + R[k].toFixed(3); });
+const R = {c2: TH.C2, pre: TH.C1_pre, c1: TH.C1_mean, h3: TH.C3H_pre ?? 1};
+if (TH.C3H_pre !== undefined) $("rc_h3").style.display = "";
+["c2","pre","c1","h3"].forEach(k => { $("t_"+k).style.left = Math.min(99, R[k] * 100) + "%"; $("th_"+k).textContent = "阈值 " + R[k].toFixed(3); });
 function risk(k, v){
   const st = v >= R[k] ? "alert" : v >= R[k] * .6 ? "watch" : "ok";
   $("v_"+k).textContent = v.toFixed(3); $("f_"+k).style.width = Math.min(100, v * 100) + "%";
@@ -294,7 +297,7 @@ function risk(k, v){
   $("st_"+k).className = "pill " + st; $("st_"+k).textContent = {ok:"正常", watch:"关注", alert:"报警"}[st];
   $("rc_"+k).className = "card risk " + (st === "alert" ? "alert" : st === "watch" ? "watch" : "");
 }
-function resetRisk(){ ["c2","pre","c1"].forEach(k => { $("v_"+k).textContent = "—"; $("f_"+k).style.width = "0"; $("st_"+k).className = "pill"; $("st_"+k).textContent = "—"; $("rc_"+k).className = "card risk"; }); }
+function resetRisk(){ R.h3 = TH.C3H_pre ?? 1; if ($("ph_h3")) { $("ph_h3").textContent = "回复前"; $("t_h3").style.left = Math.min(99, R.h3 * 100) + "%"; $("th_h3").textContent = "阈值 " + R.h3.toFixed(3); } ["c2","pre","c1","h3"].forEach(k => { $("v_"+k).textContent = "—"; $("f_"+k).style.width = "0"; $("st_"+k).className = "pill"; $("st_"+k).textContent = "—"; $("rc_"+k).className = "card risk"; }); }
 let spark = [];
 function drawSpark(){ const c = $("spark"), g = c.getContext("2d"), W = c.width, H = c.height; g.clearRect(0, 0, W, H); if (spark.length < 2) return;
   const X = i => i / Math.max(40, spark.length - 1) * W, Yv = v => H - 4 - Math.min(1, v) * (H - 8);
@@ -319,7 +322,7 @@ $("go").onclick = send; $("clear").onclick = () => { conv = []; renderConv(); re
 async function send(){
   const text = $("msg").value.trim(); if (text) conv.push({role:"user", content:text});
   if (!conv.length || conv[conv.length - 1].role !== "user") return;
-  $("msg").value = ""; $("msg").style.height = "auto"; $("go").disabled = true; resetRisk(); spark = []; drawSpark(); alarm = 0;
+  $("msg").value = ""; $("msg").style.height = "auto"; $("go").disabled = true; resetRisk(); window._h3 = false; spark = []; drawSpark(); alarm = 0;
   renderConv('<div class="msg assistant live" id="live"></div>'); const liveEl = $("live");
   $("status").textContent = "生成中"; $("livedot").style.background = "var(--accent)"; $("avstate").className = "pill"; $("avstate").textContent = "读取中";
   const res = await fetch("/v1/chat/completions", {method:"POST", headers:{"Content-Type":"application/json"},
@@ -331,9 +334,13 @@ async function send(){
       const dd = JSON.parse(line.slice(6)), X = dd.x_risk, delta = dd.choices[0].delta.content || "";
       if (X.phase === "pre"){ preT = X.t; risk("c2", X.C2); risk("pre", X.C1_pre); if (X.inner) applyInner(X.inner); if (X.emo) expr(X.emo.expr);
         $("avstate").className = "pill watch"; $("avstate").textContent = "预同步 · 尚无文字"; pulse(X.C1_pre >= R.pre ? 0xff4d5e : 0x8b95ff); $("tok").textContent = "∅";
+        if (X.C3H_pre !== undefined) risk("h3", X.C3H_pre);
         if (X.alarm.C2) toast("用户情绪强烈 · 建议转人工");
+        if (X.alarm.C3H_pre) toast(`回复前预警：这道事实题可能答错 <span class="num">${X.C3H_pre.toFixed(2)}</span>`, "warn");
         if (X.alarm.C1_pre){ alarm = 1; toast(`回复前预警：可能出现敌意 <span class="num">${X.C1_pre.toFixed(2)}</span>`, "warn"); } }
-      else if (X.phase === "token"){ n++; reply += delta; risk("c1", X.C1_mean); if (X.inner) applyInner(X.inner); if (X.emo) expr(X.emo.expr); talk = 1;
+      else if (X.phase === "token"){ n++; reply += delta; risk("c1", X.C1_mean);
+        if (X.C3H_mean !== undefined && n >= 8){ if (R.h3 !== TH.C3H_mean){ R.h3 = TH.C3H_mean; $("ph_h3").textContent = "生成中 · 答案表征"; $("t_h3").style.left = Math.min(99, R.h3 * 100) + "%"; $("th_h3").textContent = "阈值 " + R.h3.toFixed(3); } risk("h3", X.C3H_mean);
+          if (X.alarm.C3H && !window._h3){ window._h3 = true; toast("这段回答可能包含编造内容 · 建议核实", "warn"); } } if (X.inner) applyInner(X.inner); if (X.emo) expr(X.emo.expr); talk = 1;
         const a = Math.min(.9, X.C1_token); liveEl.insertAdjacentHTML("beforeend", `<span style="background:rgba(229,72,77,${(a * .22).toFixed(3)});box-shadow:inset 0 -1.5px rgba(229,72,77,${(a * .9).toFixed(2)})">${esc(delta)}</span>`); $("conv").scrollTop = 1e9;
         if (delta.trim()) $("tok").textContent = delta.replace(/\n/g, "⏎"); $("tok").style.color = X.C1_token >= R.c1 ? "var(--bad)" : "var(--ink)";
         spark.push({t: X.C1_token, m: X.C1_mean}); drawSpark(); $("n_tok").textContent = n + " tokens"; if (n % 3 === 0) pulse(X.C1_token >= R.c1 ? 0xff4d5e : 0x8b95ff);

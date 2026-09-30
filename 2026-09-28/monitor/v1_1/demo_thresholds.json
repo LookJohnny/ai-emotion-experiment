@@ -14,5 +14,15 @@
   "val_recall": 0.432,
   "val_fpr": 0.051
  },
- "note": "Demo alarm thresholds only (not pre-registered): FPR<=5% on V1.1 val (C1) / M4 val topics (C2). C1 token alarm = running mean of per-token prob after >=8 tokens."
+ "note": "Demo alarm thresholds only (not pre-registered): FPR<=5% on V1.1 val (C1) / M4 val topics (C2). C1 token alarm = running mean of per-token prob after >=8 tokens. C3H: FPR<=10% on C3-H val (hallucination = answer INCORRECT).",
+ "c3h_pre": {
+  "thr": 0.9573,
+  "val_recall": 0.39,
+  "val_fpr": 0.11
+ },
+ "c3h_token": {
+  "thr": 0.9301,
+  "val_recall": 0.548,
+  "val_fpr": 0.11
+ }
 }
