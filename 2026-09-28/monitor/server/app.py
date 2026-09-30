@@ -68,6 +68,24 @@ if a.layers:
                  cfg=dict(model_type=cfg.model_type, n_layers=NL, n_heads=NH, n_kv_heads=NKV, head_dim=HD, hidden=cfg.hidden_size,
                           intermediate=VN.shape[1], params_b=round(sum(p.numel() for p in model.parameters()) / 1e9, 2)),
                  heads=[f"L{L}H{h}" for L, h in HEADS], val_auroc=[round(float(v), 3) for v in z["val_auroc"]])
+EDGES = []
+if INNER:   # V-composition between heads, from weights only: ||W_V(L2, kv g) @ W_O(L1, head h)||_F / (||W_V g|| ||W_O h||), next 3 layers, top 3 per source head
+    with torch.no_grad():
+        NL_, NH_, HD_, NKV_ = INNER["NL"], INNER["NH"], INNER["HD"], INNER["NKV"]
+        WOn = [w.float().view(-1, NH_, HD_) for w in INNER["WO"]]                                    # [d, NH, HD]
+        VV = [model.model.layers[L].self_attn.v_proj.weight.float().view(NKV_, HD_, -1) for L in range(NL_)]   # [NKV, HD, d]
+        on = [w.norm(dim=(0, 2)) for w in WOn]; vn = [v.norm(dim=(1, 2)) for v in VV]
+        for L1 in range(NL_ - 1):
+            cand = []
+            for L2 in range(L1 + 1, min(NL_, L1 + 4)):
+                M = torch.einsum("gkd,dhe->ghke", VV[L2], WOn[L1]).pow(2).sum(dim=(2, 3)).sqrt() / (vn[L2][:, None] * on[L1][None, :])   # [NKV, NH]
+                cand.append((L2, M))
+            for h in range(NH_):
+                sc = [(float(M[g, h]), L2, g) for L2, M in cand for g in range(NKV_)]; sc.sort(reverse=True)
+                EDGES += [[L1, h, L2, g, round(w, 4)] for w, L2, g in sc[:3]]
+        mx = max(e[4] for e in EDGES); EDGES = [e[:4] + [round(e[4] / mx, 4)] for e in EDGES]
+        del WOn, VV; torch.cuda.empty_cache()
+    print("composition edges", len(EDGES), flush=True)
 tap = ResidualTap(model, [s.layer for s in P.values()] + P_LAYERS + (list(range(INNER["NL"])) if INNER else []) + ([s.layer for s in H3.values()] if H3 else []))
 
 
@@ -193,6 +211,11 @@ def info():
 def audit(n: int = 20):
     if not os.path.exists(AUDIT): return []
     return [json.loads(l) for l in open(AUDIT, encoding="utf-8").readlines()[-n:]][::-1]
+
+
+@app.get("/circuit")
+def circuit():
+    return {"edges": EDGES, "rule": "V-composition from weights: ||W_V(L2,g) W_O(L1,h)||_F normalised by both norms; next 3 layers; top-3 per source head; scaled to max 1"}
 
 
 @app.get("/presets")
