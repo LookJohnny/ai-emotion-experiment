@@ -1,0 +1,18 @@
+{
+  "cleanUrls": true,
+  "redirects": [{ "source": "/", "destination": "/study", "permanent": false }],
+  "rewrites": [
+    { "source": "/info", "destination": "/data/info.json" },
+    { "source": "/circuit", "destination": "/data/circuit.json" },
+    { "source": "/presets", "destination": "/data/presets.json" },
+    { "source": "/study/trials", "destination": "/data/trials.json" },
+    { "source": "/study/design", "destination": "/data/design.json" },
+    { "source": "/study/replay/:id", "destination": "/data/replay/:id.json" },
+    { "source": "/study/submit", "destination": "/api/submit" }
+  ],
+  "headers": [
+    { "source": "/data/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }] },
+    { "source": "/vendor/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
+    { "source": "/fonts/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] }
+  ]
+}
