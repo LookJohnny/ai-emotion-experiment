@@ -14,8 +14,10 @@ class ProbeSpec:
 
     def prob(self, h):
         """h: torch [d] or [n, d] -> probability tensor."""
-        mu = torch.tensor(self.mean, device=h.device); sd = torch.tensor(self.scale, device=h.device)
-        w = torch.tensor(self.coef, device=h.device)
+        c = self.__dict__.get("_t")                      # cache the parameter tensors per device (built once, not per token)
+        if c is None or c[0].device != h.device:
+            c = self.__dict__["_t"] = tuple(torch.tensor(v, device=h.device) for v in (self.mean, self.scale, self.coef))
+        mu, sd, w = c
         return torch.sigmoid(((h - mu) / sd) @ w + self.intercept)
 
     def save(self, path): json.dump(asdict(self), open(path, "w"))

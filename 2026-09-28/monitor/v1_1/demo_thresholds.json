@@ -1,0 +1,18 @@
+{
+ "p_pre": {
+  "thr": 0.5759,
+  "val_recall": 0.25,
+  "val_fpr": 0.054
+ },
+ "item_score": {
+  "thr": 0.2372,
+  "val_recall": 0.583,
+  "val_fpr": 0.054
+ },
+ "c2_transfer": {
+  "thr": 0.06817,
+  "val_recall": 0.432,
+  "val_fpr": 0.051
+ },
+ "note": "Demo alarm thresholds only (not pre-registered): FPR<=5% on V1.1 val (C1) / M4 val topics (C2). C1 token alarm = running mean of per-token prob after >=8 tokens."
+}

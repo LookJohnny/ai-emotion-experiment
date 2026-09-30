@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Conflict Monitor</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1d2330;--mute:#6b7385;--line:#e3e6ec;--ok:#2f9e6e;--warn:#d98a1c;--bad:#d64545;--acc:#4a6fd8;--hist:#eef1f6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12151b;--card:#1b1f27;--ink:#e6e9ef;--mute:#9098a8;--line:#2c323d;--hist:#232834}}
+:root[data-theme="dark"]{--bg:#12151b;--card:#1b1f27;--ink:#e6e9ef;--mute:#9098a8;--line:#2c323d;--hist:#232834}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+header{padding:14px 20px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+header h1{font-size:17px;margin:0}header .sub{color:var(--mute);font-size:12px}
+main{display:grid;grid-template-columns:260px 1fr 320px;gap:14px;padding:14px 20px}
+@media (max-width:1000px){main{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
+.card h2{font-size:13px;margin:0 0 8px;color:var(--mute);font-weight:600}
+.preset{display:block;width:100%;text-align:left;border:1px solid var(--line);background:none;color:var(--ink);padding:6px 8px;border-radius:6px;margin:4px 0;cursor:pointer;font-size:13px}
+.preset:hover{border-color:var(--acc)}.grp{font-size:12px;color:var(--mute);margin:10px 0 2px}
+.msg{padding:6px 10px;border-radius:8px;margin:6px 0;white-space:pre-wrap}
+.msg.user{background:var(--hist)}.msg.assistant{border:1px dashed var(--line)}.msg.system{color:var(--mute);font-size:12px}
+.role{font-size:11px;color:var(--mute)}
+#reply{min-height:80px;padding:10px;border:1px solid var(--line);border-radius:8px;white-space:pre-wrap;line-height:1.9}
+#reply span{border-radius:3px}
+textarea{width:100%;min-height:60px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px;font:inherit}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:8px}
+button.go{background:var(--acc);color:#fff;border:0;border-radius:6px;padding:7px 16px;cursor:pointer}
+.gauge{margin:8px 0}.gauge .lab{display:flex;justify-content:space-between;font-size:12px}
+.bar{height:10px;background:var(--hist);border-radius:5px;position:relative;overflow:hidden}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--ok);transition:width .15s}
+.bar b{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ink);opacity:.6}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:12px;margin:2px;background:var(--hist);color:var(--mute)}
+.badge.on{background:var(--bad);color:#fff}
+canvas{width:100%;height:140px;display:block}
+.aud{font-size:12px;border-top:1px solid var(--line);padding:6px 0}.aud .u{color:var(--mute)}
+.note{font-size:11px;color:var(--mute)}
+</style>
+</head>
+<body>
+<header><h1>冲突升级监测 · 实时白盒读数</h1><span class="sub" id="info">加载中…</span></header>
+<main>
+  <section class="card"><h2>场景</h2><div id="presets"></div></section>
+  <section class="card">
+    <h2>对话（历史）</h2><div id="history"></div>
+    <textarea id="input" placeholder="也可以直接输入用户消息（会接在当前历史后面）"></textarea>
+    <div class="row">
+      <label><input type="checkbox" id="stop"> 报警即截断（x_action=stop）</label>
+      <label>温度 <input type="number" id="temp" value="0.7" step="0.1" min="0" max="1.5" style="width:60px"></label>
+      <button class="go" id="go">生成并监测</button>
+    </div>
+    <h2 style="margin-top:14px">模型回复（底色 = 逐字敌意读数）</h2><div id="reply"></div>
+    <div class="note" id="stat"></div>
+  </section>
+  <section class="card">
+    <h2>回复前读数（第一个字之前）</h2>
+    <div class="gauge"><div class="lab"><span>C2 用户痛苦 / 需转人工</span><span id="v_c2">–</span></div><div class="bar"><i id="g_c2"></i><b id="t_c2"></b></div></div>
+    <div class="gauge"><div class="lab"><span>C1 预测：即将出现敌意</span><span id="v_pre">–</span></div><div class="bar"><i id="g_pre"></i><b id="t_pre"></b></div></div>
+    <h2 style="margin-top:12px">逐字读数（C1 累计均值）</h2>
+    <canvas id="chart" width="600" height="280"></canvas>
+    <div id="badges"><span class="badge" id="b_c2">C2 转人工</span><span class="badge" id="b_pre">C1 预警</span><span class="badge" id="b_c1">C1 报警</span></div>
+    <p class="note">阈值 = 验证集误报率≤5% 处（演示用，非预注册门槛）。竖线为阈值。</p>
+    <h2 style="margin-top:12px">审计日志</h2><div id="audit"></div>
+  </section>
+</main>
+<script>
+const $=id=>document.getElementById(id); let TH={}, hist=[], series=[];
+const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+async function init(){
+  const info=await (await fetch('/info')).json(); TH=info.thresholds;
+  $('info').textContent=`${info.model} · 探针层 C1-pre L${info.probes.c1_pre.layer} / C1-token L${info.probes.c1_token.layer} / C2 L${info.probes.c2.layer}`;
+  const P=await (await fetch('/presets')).json(); let g=''; const box=$('presets');
+  P.forEach(p=>{ if(p.group!==g){g=p.group; box.insertAdjacentHTML('beforeend',`<div class="grp">${g}</div>`);}
+    const b=document.createElement('button'); b.className='preset'; b.textContent=p.label; b.onclick=()=>load(p.messages); box.appendChild(b);});
+  load(P[0].messages); audit();
+}
+function load(m){hist=JSON.parse(JSON.stringify(m)); renderHist(); $('reply').innerHTML=''; reset();}
+function renderHist(){ $('history').innerHTML=hist.map(m=>`<div class="msg ${m.role}"><div class="role">${{system:'系统',user:'用户',assistant:'助手'}[m.role]}</div>${esc(m.content)}</div>`).join(''); }
+function gauge(k,v,t){ $('g_'+k).style.width=Math.min(100,v*100)+'%'; $('g_'+k).style.background=v>=t?'var(--bad)':(v>=t*0.6?'var(--warn)':'var(--ok)');
+  $('t_'+k).style.left=Math.min(99,t*100)+'%'; $('v_'+k).textContent=v.toFixed(3); }
+function reset(){ series=[]; draw(); ['c2','pre'].forEach(k=>{$('g_'+k).style.width='0'; $('v_'+k).textContent='–';}); ['b_c2','b_pre','b_c1'].forEach(b=>$(b).classList.remove('on')); $('stat').textContent=''; }
+function draw(){ const c=$('chart'),x=c.getContext('2d'),W=c.width,H=c.height; x.clearRect(0,0,W,H);
+  const cs=getComputedStyle(document.documentElement); const n=Math.max(40,series.length), ymax=1;
+  const X=i=>i/(n-1)*W, Y=v=>H-8-(Math.min(v,ymax)/ymax)*(H-16);
+  x.strokeStyle=cs.getPropertyValue('--bad'); x.setLineDash([6,4]); x.beginPath(); x.moveTo(0,Y(TH.C1_mean)); x.lineTo(W,Y(TH.C1_mean)); x.stroke(); x.setLineDash([]);
+  [['tok','--line',1],['mean','--acc',2.5]].forEach(([k,col,w])=>{ x.strokeStyle=cs.getPropertyValue(col); x.lineWidth=w; x.beginPath();
+    series.forEach((s,i)=>{ const v=s[k]; i?x.lineTo(X(i),Y(v)):x.moveTo(X(i),Y(v)); }); x.stroke(); }); }
+async function go(){
+  const extra=$('input').value.trim(); let msgs=JSON.parse(JSON.stringify(hist));
+  if(extra){ if(msgs.length && msgs[msgs.length-1].role==='user') msgs.push({role:'assistant',content:'（略）'}); msgs.push({role:'user',content:extra}); }
+  if(!msgs.length || msgs[msgs.length-1].role!=='user'){ alertless('最后一条必须是用户消息'); return; }
+  reset(); $('reply').innerHTML=''; $('go').disabled=true;
+  const r=await fetch('/v1/chat/completions',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({messages:msgs,stream:true,max_tokens:200,temperature:+$('temp').value,x_action:$('stop').checked?'stop':'log'})});
+  const rd=r.body.getReader(), dec=new TextDecoder(); let buf='', reply='';
+  while(true){ const {value,done}=await rd.read(); if(done)break; buf+=dec.decode(value,{stream:true}); let k;
+    while((k=buf.indexOf('\n\n'))>=0){ const line=buf.slice(0,k).trim(); buf=buf.slice(k+2); if(!line.startsWith('data: ')||line==='data: [DONE]')continue;
+      const d=JSON.parse(line.slice(6)), R=d.x_risk, delta=d.choices[0].delta.content||'';
+      if(R.phase==='pre'){ gauge('c2',R.C2,TH.C2); gauge('pre',R.C1_pre,TH.C1_pre); $('b_c2').classList.toggle('on',R.alarm.C2); $('b_pre').classList.toggle('on',R.alarm.C1_pre);
+        $('stat').textContent=`回复前读数于 ${R.t} ms 给出（尚未生成任何字）`; }
+      else if(R.phase==='token'){ series.push({tok:R.C1_token,mean:R.C1_mean}); draw(); reply+=delta;
+        const a=Math.min(0.85,R.C1_token/Math.max(0.05,TH.C1_mean*2)); $('reply').insertAdjacentHTML('beforeend',`<span style="background:rgba(214,69,69,${a.toFixed(2)})">${esc(delta)}</span>`);
+        if(R.alarm.C1) $('b_c1').classList.add('on'); }
+      else if(R.phase==='done'){ $('stat').textContent+=` · ${R.tokens} tokens · ${R.t} ms · C1 均值 ${R.C1_mean} · 结束原因 ${R.finish}`; }
+    } }
+  $('go').disabled=false; audit();
+}
+function alertless(s){ $('stat').textContent=s; }
+async function audit(){ const A=await (await fetch('/audit?n=8')).json();
+  $('audit').innerHTML=A.map(a=>`<div class="aud"><div>${a.time} · C2 ${a.pre.C2} · C1预 ${a.pre.C1_pre} · C1均 ${a.C1_mean} ${a.events.length?'<b style="color:var(--bad)">报警@'+a.events[0].token+'字</b>':''}</div><div class="u">${esc(a.user)}</div></div>`).join(''); }
+$('go').onclick=go; init();
+</script>
+</body>
+</html>
