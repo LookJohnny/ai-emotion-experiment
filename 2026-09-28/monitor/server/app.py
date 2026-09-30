@@ -189,6 +189,11 @@ def presets():
     return json.load(open(os.path.join(HERE, "presets.json"), encoding="utf-8"))
 
 
+@app.get("/monitor")
+def monitor_page():
+    return HTMLResponse(open(os.path.join(HERE, "monitor.html"), encoding="utf-8").read())
+
+
 @app.get("/brain")
 def brain_page():
     return HTMLResponse(open(os.path.join(HERE, "brain.html"), encoding="utf-8").read())

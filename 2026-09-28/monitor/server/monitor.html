@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safety Monitor</title>
+<style>
+:root{--bg:#05070d;--ink:#e8ecf4;--mute:#8a93a6;--line:rgba(140,170,220,.18);--panel:rgba(12,16,28,.72);--bad:#ff3b4d;--warn:#ffae2b;--c2:#39a0ff;--ok:#38d39f;--gold:#ffd166}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:13px/1.55 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;overflow:hidden}
+#gl{position:fixed;left:0;top:0;width:100vw;height:100vh;display:block}
+.panel{position:fixed;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+#left{left:16px;top:16px;width:330px;max-height:calc(100% - 560px);min-height:160px;overflow:auto}
+#pip{left:16px;bottom:16px;width:330px;height:370px;padding:0;overflow:hidden}
+#pip canvas{width:100%;height:100%;display:block}
+#pip .cap{position:absolute;left:10px;top:8px;display:flex;gap:6px;flex-wrap:wrap}
+#pip .emo{position:absolute;left:10px;right:10px;bottom:8px;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;font-size:10.5px;color:var(--mute)}
+#pip .emo div{background:rgba(0,0,0,.35);border-radius:6px;padding:2px 5px}
+#pip.bad{box-shadow:0 0 0 2px var(--bad),0 0 30px rgba(255,45,85,.5)}#pip.warn{box-shadow:0 0 0 2px var(--warn)}
+#right{right:16px;top:16px;width:300px}
+#bottom{left:362px;right:332px;bottom:16px;min-height:88px;max-height:150px;overflow:auto;font-size:15px;line-height:1.9;white-space:pre-wrap}
+h1{font-size:15px;margin:0 0 2px;letter-spacing:.5px}.sub{color:var(--mute);font-size:11px;margin:0 0 8px}
+h2{font-size:11px;color:var(--mute);margin:10px 0 4px;font-weight:600;letter-spacing:.5px}
+.presets{display:flex;flex-wrap:wrap;gap:4px}
+button{font:inherit;color:var(--ink);background:rgba(120,150,210,.12);border:1px solid var(--line);border-radius:7px;padding:4px 8px;cursor:pointer}
+button:hover{border-color:rgba(160,190,255,.5)}button.go{background:linear-gradient(90deg,#3b6cff,#9b4dff);border:0;padding:7px 16px}
+button:disabled{opacity:.4;cursor:default}
+textarea{width:100%;min-height:52px;background:rgba(0,0,0,.35);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px;font:inherit;resize:vertical}
+.row{display:flex;gap:8px;align-items:center;margin-top:8px;flex-wrap:wrap}.row label{color:var(--mute);font-size:12px}
+#conv{max-height:120px;overflow:auto;font-size:11px;color:var(--mute);border-top:1px solid var(--line);margin-top:8px;padding-top:6px}
+#conv div{margin:2px 0;white-space:pre-wrap}
+.g{margin:7px 0}.g .l{display:flex;justify-content:space-between;font-size:12px}
+.bar{height:8px;background:rgba(255,255,255,.07);border-radius:4px;position:relative;overflow:hidden}
+.bar i{position:absolute;left:0;top:0;bottom:0;width:0;transition:width .15s,background .15s}.bar b{position:absolute;top:-2px;bottom:-2px;width:2px;background:#fff;opacity:.6}
+.alarm{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.tag{font-size:11px;padding:2px 8px;border-radius:10px;background:rgba(255,255,255,.07);color:var(--mute);transition:all .2s}
+.tag.on.c2{background:var(--c2);color:#fff}.tag.on.warn{background:var(--warn);color:#111}.tag.on.bad{background:var(--bad);color:#fff;box-shadow:0 0 14px var(--bad)}
+.legend div{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--mute);margin:3px 0}
+.dot{width:10px;height:10px;border-radius:2px;display:inline-block}
+.note{font-size:10.5px;color:var(--mute);margin-top:8px}
+#flash{position:fixed;inset:0;pointer-events:none;box-shadow:inset 0 0 0 0 transparent;transition:box-shadow .25s}
+#flash.warn{box-shadow:inset 0 0 120px 10px rgba(255,174,43,.35)}#flash.bad{box-shadow:inset 0 0 160px 20px rgba(255,40,60,.5)}
+#hover{position:fixed;pointer-events:none;font-size:11px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:3px 7px;display:none}
+@media (max-width:900px){#left{width:calc(100% - 32px);max-height:40%}#right{display:none}}
+</style>
+</head>
+<body>
+<canvas id="gl"></canvas><div id="flash"></div><div id="hover"></div>
+<section class="panel" id="left">
+  <h1>AI 安全监控 · 模型内部 × 虚拟形象</h1>
+  <p class="sub" id="struct">读取模型结构…</p>
+  <h2>场景</h2><div class="presets" id="presets"></div>
+  <div id="conv"></div>
+  <textarea id="msg" placeholder="输入用户消息（接在当前对话后面，Ctrl/⌘+Enter 发送）"></textarea>
+  <div class="row"><label><input type="checkbox" id="stop"> 敌意报警即拦截</label><label>温度 <input id="temp" type="number" value="0.7" step="0.1" min="0" max="1.5" style="width:52px;background:transparent;color:inherit;border:1px solid var(--line);border-radius:5px"></label>
+    <button id="clear">清空</button><button class="go" id="go">发送</button></div>
+  <div class="row"><label>形象 <select id="avsel" style="background:transparent;color:inherit;border:1px solid var(--line);border-radius:5px">
+    <option value="mianmian.vrm">棉棉</option><option value="joy.vrm">Joy</option><option value="utsuwa.vrm">器</option><option value="rose.vrm">Rose</option><option value="polybot.vrm">Polybot</option></select></label></div>
+  <div class="row"><label><input type="checkbox" id="spin" checked> 自动环绕</label><label>速度 <input id="slow" type="range" min="0" max="300" value="0" style="width:90px"></label><span class="note" id="slowv" style="margin:0">实时</span></div>
+</section>
+<section class="panel" id="right">
+  <h2 style="margin-top:0">显示模式（均为真实前向计算）</h2>
+  <div class="row" style="margin-top:0"><label><input type="radio" name="mode" value="safety" checked> 安全投影（红=推向敌意）</label><label><input type="radio" name="mode" value="activity"> 真实激活强度</label></div>
+  <h2>安全读数</h2>
+  <div class="g"><div class="l"><span>C2 用户痛苦 · 需转人工</span><span id="v_c2">–</span></div><div class="bar"><i id="f_c2"></i><b id="t_c2"></b></div></div>
+  <div class="g"><div class="l"><span>C1 回复前预测敌意</span><span id="v_pre">–</span></div><div class="bar"><i id="f_pre"></i><b id="t_pre"></b></div></div>
+  <div class="g"><div class="l"><span>C1 逐字均值</span><span id="v_c1">–</span></div><div class="bar"><i id="f_c1"></i><b id="t_c1"></b></div></div>
+  <div class="alarm"><span class="tag c2" id="a_c2">转人工</span><span class="tag warn" id="a_pre">敌意预警</span><span class="tag bad" id="a_c1">敌意报警</span></div>
+  <h2>当前焦点</h2><div id="focus" class="note" style="margin:0">—</div>
+  <h2>图例</h2>
+  <div class="legend">
+    <div><span class="dot" style="background:linear-gradient(90deg,#27e0ff,#ff2d55)"></span>中心光柱 = 残差流，颜色 = 该层敌意读数</div>
+    <div><span class="dot" style="background:#ff3b4d"></span>方块 = 注意力头，红 = 推向敌意，蓝 = 拉回</div>
+    <div><span class="dot" style="border:2px solid var(--gold)"></span>金环 = E01 找到的 12 个愤怒头</div>
+    <div><span class="dot" style="background:#ff7a3d;border-radius:50%"></span>粒子 = MLP 神经元，点亮 = 该字贡献/激活最大的神经元</div>
+    <div><span class="dot" style="background:#9ff6ff"></span>激活模式：亮度 = 残差范数 / ‖W_O·x_h‖ / |神经元激活|</div>
+  </div>
+  <p class="note">颜色来自真实激活：每层一个线性探针读敌意方向（V1.1 dev 训练，仅可视化用）；头/神经元的颜色 = 其写入残差的向量在本层敌意方向上的投影。E01 结论：情绪分布在方向与注意力头上，单个神经元不是载体。</p>
+</section>
+<section class="panel" id="pip"><canvas id="av"></canvas><div class="cap"><span class="tag" id="avphase">虚拟形象</span></div>
+  <div class="emo"><div>愉悦 <b id="e_happy">0.00</b></div><div>悲伤 <b id="e_sad">0.00</b></div><div>愤怒 <b id="e_angry">0.00</b></div><div>中性 <b id="e_neutral">1.00</b></div></div></section>
+<section class="panel" id="bottom"><span class="note">选择场景后点“发送”。</span></section>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+ "@pixiv/three-vrm":"https://cdn.jsdelivr.net/npm/@pixiv/three-vrm@2.1.0/lib/three-vrm.module.js"}}
+</script>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
+import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
+import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
+import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { VRMLoaderPlugin, VRMUtils } from "@pixiv/three-vrm";
+const $ = id => document.getElementById(id), esc = s => s.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+
+// ---------------- scene ----------------
+const canvas = $("gl"), renderer = new THREE.WebGLRenderer({canvas, antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.setClearColor(0x05070d);
+const scene = new THREE.Scene(); scene.fog = new THREE.FogExp2(0x05070d, 0.012);
+const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 400); camera.position.set(22, 14, 22);
+const controls = new OrbitControls(camera, canvas); controls.enableDamping = true; controls.target.set(0, 10, 0); controls.autoRotate = true; controls.autoRotateSpeed = 0.45;
+const composer = new EffectComposer(renderer); composer.addPass(new RenderPass(scene, camera));
+const bloom = new UnrealBloomPass(new THREE.Vector2(1, 1), 1.0, 0.5, 0.35); composer.addPass(bloom); composer.addPass(new OutputPass());
+function resize(){ const w = innerWidth, h = innerHeight; renderer.setSize(w, h, false); composer.setSize(w, h); camera.aspect = w / h; camera.updateProjectionMatrix(); }
+addEventListener("resize", resize);
+
+const INFO = await (await fetch("/info")).json(), CFG = INFO.inner ? INFO.inner.config : {n_layers:36, n_heads:32, n_kv_heads:8, intermediate:9728, hidden:2560, model_type:"?", params_b:"?"};
+const NL = CFG.n_layers, NH = CFG.n_heads, NKV = CFG.n_kv_heads || NH, NN = CFG.intermediate, DY = 20 / NL, Y = L => 0.6 + L * DY;
+const SLOTS = Math.min(NN, Math.floor(420000 / NL)), slotOf = n => Math.floor(n * SLOTS / NN);   // neurons shown per layer (index-preserving downsample)
+const B3 = new Set(INFO.inner ? INFO.inner.heads : []);
+const headAngle = (L, h) => { const g = Math.floor(h / (NH / NKV)), j = h % (NH / NKV), per = NH / NKV;   // cluster query heads by shared KV group
+  return (g + (j + 0.5) / per * 0.78 + 0.11) / NKV * Math.PI * 2 + L * 0.05; };
+const ACT = new THREE.Color(0x9ff6ff), COOL = new THREE.Color(0x27e0ff), HOT = new THREE.Color(0xff2d55), BLUE = new THREE.Color(0x2f7bff), DIM = new THREE.Color(0x1a2a44), GOLD = new THREE.Color(0xffd166);
+
+// residual stream: 36 glowing segments + faint outer tube
+const beam = [];
+for (let L = 0; L < NL; L++){
+  const m = new THREE.MeshBasicMaterial({color: COOL.clone().multiplyScalar(0.35), transparent:true, opacity:0.9});
+  const seg = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.22, DY * 0.92, 20), m); seg.position.y = Y(L); scene.add(seg); beam.push({mesh: seg, v: 0, tv: 0});
+}
+const tube = new THREE.Mesh(new THREE.CylinderGeometry(0.42, 0.42, NL * DY + 1, 32, 1, true), new THREE.MeshBasicMaterial({color:0x2a5cff, transparent:true, opacity:0.06, side:THREE.DoubleSide}));
+tube.position.y = Y(NL / 2 - 0.5); scene.add(tube);
+// layer plates (thin rings) + labels
+const plates = [];
+for (let L = 0; L < NL; L++){
+  const r = new THREE.Mesh(new THREE.RingGeometry(2.75, 2.8, 96), new THREE.MeshBasicMaterial({color:0x2c4f8f, transparent:true, opacity:0.35, side:THREE.DoubleSide}));
+  r.rotation.x = -Math.PI / 2; r.position.y = Y(L); scene.add(r); plates.push(r);
+  if (L % Math.max(1, Math.round(NL / 9)) === 0 || L === NL - 1){
+    const c = document.createElement("canvas"); c.width = 128; c.height = 48; const g = c.getContext("2d"); g.fillStyle = "#8aa3d6"; g.font = "bold 30px sans-serif"; g.fillText("L" + L, 6, 36);
+    const sp = new THREE.Sprite(new THREE.SpriteMaterial({map: new THREE.CanvasTexture(c), transparent:true, depthWrite:false})); sp.scale.set(1.1, 0.42, 1); sp.position.set(3.9, Y(L), 0); scene.add(sp);
+  }
+}
+// input platform / output crown
+const base = new THREE.Mesh(new THREE.CylinderGeometry(3.2, 3.4, 0.18, 64), new THREE.MeshBasicMaterial({color:0x14305c, transparent:true, opacity:0.8})); base.position.y = 0.1; scene.add(base);
+const baseRing = new THREE.Mesh(new THREE.TorusGeometry(3.3, 0.05, 8, 96), new THREE.MeshBasicMaterial({color:0x39a0ff})); baseRing.rotation.x = Math.PI / 2; baseRing.position.y = 0.2; scene.add(baseRing);
+const crown = new THREE.Mesh(new THREE.TorusGeometry(1.2, 0.06, 8, 64), new THREE.MeshBasicMaterial({color:0x6f7cff})); crown.rotation.x = Math.PI / 2; crown.position.y = Y(NL) + 0.3; scene.add(crown);
+const tokC = document.createElement("canvas"); tokC.width = 512; tokC.height = 128; const tokG = tokC.getContext("2d"); const tokTex = new THREE.CanvasTexture(tokC);
+const tokSp = new THREE.Sprite(new THREE.SpriteMaterial({map: tokTex, transparent:true, depthWrite:false})); tokSp.scale.set(4, 1, 1); tokSp.position.y = Y(NL) + 1.3; scene.add(tokSp);
+function tokenLabel(t, hot){ tokG.clearRect(0, 0, 512, 128); tokG.font = "bold 72px sans-serif"; tokG.textAlign = "center"; tokG.shadowColor = hot ? "#ff2d55" : "#27e0ff"; tokG.shadowBlur = 24; tokG.fillStyle = "#fff"; tokG.fillText(t.replace(/\n/g, "⏎").slice(0, 8), 256, 90); tokTex.needsUpdate = true; }
+
+// attention heads: instanced cubes on a ring per layer
+const HR = 3.25, hs = Math.min(0.2, 0.5 * DY, 12 / NH), headGeo = new THREE.BoxGeometry(hs, hs, hs), headMat = new THREE.MeshBasicMaterial({color:0xffffff});
+const heads = new THREE.InstancedMesh(headGeo, headMat, NL * NH); const dummy = new THREE.Object3D(); const headV = new Float32Array(NL * NH), headT = new Float32Array(NL * NH);
+for (let L = 0; L < NL; L++) for (let h = 0; h < NH; h++){
+  const a = headAngle(L, h); dummy.position.set(Math.cos(a) * HR, Y(L), Math.sin(a) * HR); dummy.rotation.y = -a; dummy.updateMatrix();
+  heads.setMatrixAt(L * NH + h, dummy.matrix); heads.setColorAt(L * NH + h, DIM);
+  if (B3.has(`L${L}H${h}`)){ const t = new THREE.Mesh(new THREE.TorusGeometry(0.2, 0.025, 6, 24), new THREE.MeshBasicMaterial({color: GOLD})); t.position.copy(dummy.position); t.lookAt(0, Y(L), 0); scene.add(t); }
+}
+heads.instanceColor.needsUpdate = true; scene.add(heads);
+// attention "wires": from each head to the beam, visible when the head pushes strongly
+const wireGeo = new THREE.BufferGeometry(), wirePos = new Float32Array(NL * NH * 6), wireCol = new Float32Array(NL * NH * 6);
+for (let L = 0; L < NL; L++) for (let h = 0; h < NH; h++){ const a = headAngle(L, h), i = (L * NH + h) * 6;
+  wirePos.set([Math.cos(a) * HR, Y(L), Math.sin(a) * HR, 0, Y(L), 0], i); }
+wireGeo.setAttribute("position", new THREE.BufferAttribute(wirePos, 3)); wireGeo.setAttribute("color", new THREE.BufferAttribute(wireCol, 3));
+scene.add(new THREE.LineSegments(wireGeo, new THREE.LineBasicMaterial({vertexColors:true, transparent:true, opacity:0.9, blending:THREE.AdditiveBlending, depthWrite:false})));
+
+// MLP neurons: per layer a disc of NN points (golden-angle spiral), 350k points total
+const NB = [0.006, 0.011, 0.024];
+const npos = new Float32Array(NL * SLOTS * 3), ncol = new Float32Array(NL * SLOTS * 3), nheat = new Float32Array(NL * SLOTS); const active = new Set();
+for (let L = 0; L < NL; L++) for (let n = 0; n < SLOTS; n++){
+  const i = L * SLOTS + n, r = 0.6 + 2.0 * Math.sqrt((n + 0.5) / SLOTS), th = n * 2.39996323;
+  npos[i*3] = Math.cos(th) * r; npos[i*3+1] = Y(L) + (Math.random() - 0.5) * 0.2 * DY; npos[i*3+2] = Math.sin(th) * r;
+  ncol[i*3] = NB[0]; ncol[i*3+1] = NB[1]; ncol[i*3+2] = NB[2];
+}
+const ngeo = new THREE.BufferGeometry(); ngeo.setAttribute("position", new THREE.BufferAttribute(npos, 3)); ngeo.setAttribute("color", new THREE.BufferAttribute(ncol, 3));
+const neurons = new THREE.Points(ngeo, new THREE.PointsMaterial({size:0.06, vertexColors:true, transparent:true, opacity:0.95, blending:THREE.AdditiveBlending, depthWrite:false}));
+scene.add(neurons);
+// data pulses rising through the beam on every token
+const pulses = [];
+function pulse(hot){ const m = new THREE.Mesh(new THREE.SphereGeometry(0.33, 16, 12), new THREE.MeshBasicMaterial({color: hot ? 0xff2d55 : 0x27e0ff, transparent:true, opacity:0.95}));
+  m.position.y = 0.2; scene.add(m); pulses.push(m); }
+
+// ---------------- dynamics ----------------
+let alarmLevel = 0, alarmT = 0, focus = "—";
+let MODE = "safety", lastI = null, rnMax = 1;
+function applyInner(I){
+  lastI = I; const act = MODE === "activity";
+  if (act){ rnMax = Math.max(...I.resid_norm); I.resid_norm.forEach((v, L) => beam[L].tv = v / rnMax); }
+  else I.layers.forEach((v, L) => beam[L].tv = v);
+  const HM = act ? I.heads_norm : I.heads_all; let hmx = 1e-6; if (act) HM.forEach(r => r.forEach(v => hmx = Math.max(hmx, v)));
+  let best = {v: -1e9, name: ""};
+  HM.forEach((row, L) => row.forEach((v, h) => { headT[L * NH + h] = act ? v / hmx * 1.2 : v; if (v > best.v) best = {v, name: `L${L}H${h}`}; }));
+  const NR = act ? I.neurons_act : I.neurons; let nmx = 1e-6; if (act) NR.forEach(l => l.forEach(([, v]) => nmx = Math.max(nmx, Math.abs(v))));
+  let bn = {v: -1e9, name: ""};
+  NR.forEach((lst, L) => lst.forEach(([n, v]) => { const i = L * SLOTS + slotOf(n); nheat[i] = act ? Math.abs(v) / nmx * 1.2 : Math.max(-1.5, Math.min(1.5, v * 6)); active.add(i); if (Math.abs(v) > bn.v) bn = {v: Math.abs(v), name: `L${L}N${n}`}; }));
+  const src = act ? I.resid_norm : I.layers, Lmax = src.indexOf(Math.max(...src));
+  $("focus").textContent = act
+    ? `残差范数最大 L${Lmax}（${I.resid_norm[Lmax]}）· 输出最强的头 ${best.name}（‖W_O·x‖=${best.v.toFixed(1)}）· 激活最强神经元 ${bn.name}（${bn.v.toFixed(2)}）`
+    : `最敌意的层 L${Lmax}（${I.layers[Lmax].toFixed(2)}）· 推力最大的头 ${best.name}${B3.has(best.name) ? "（E01 愤怒头）" : ""} · 贡献最大神经元 ${bn.name}`;
+}
+const tmpC = new THREE.Color(); let hmax = 0.5;
+function stepVisual(dt){
+  const k = 1 - Math.exp(-dt / 0.12);
+  const AM = MODE === "activity";
+  beam.forEach(b => { b.v += (b.tv - b.v) * k; tmpC.copy(AM ? DIM : COOL).lerp(AM ? ACT : HOT, Math.min(1, b.v * 1.3)).multiplyScalar(0.35 + 1.4 * b.v); b.mesh.material.color.copy(tmpC); });
+  let m = 0.3; for (let i = 0; i < headT.length; i++) m = Math.max(m, Math.abs(headT[i])); hmax += (m - hmax) * 0.05;
+  for (let i = 0; i < headV.length; i++){
+    headV[i] += (headT[i] - headV[i]) * k; const a = Math.max(-1, Math.min(1, headV[i] / hmax));
+    if (AM) tmpC.copy(DIM).lerp(ACT, Math.max(0, a)).multiplyScalar(1 + 1.6 * Math.max(0, a));
+    else if (a >= 0) tmpC.copy(DIM).lerp(HOT, a).multiplyScalar(1 + 2.2 * a); else tmpC.copy(DIM).lerp(BLUE, -a).multiplyScalar(1 + 1.2 * -a);
+    heads.setColorAt(i, tmpC);
+    const w = i * 6, s = a > 0.35 ? a : 0; wireCol[w] = wireCol[w+3] = AM ? s * 0.3 : s; wireCol[w+1] = wireCol[w+4] = AM ? s * 0.9 : s * 0.15; wireCol[w+2] = wireCol[w+5] = AM ? s : s * 0.25;
+  }
+  heads.instanceColor.needsUpdate = true; wireGeo.attributes.color.needsUpdate = true;
+  const actMode = () => MODE === "activity";
+  for (const i of active){ const h = nheat[i]; nheat[i] *= Math.exp(-dt / 0.6);
+    if (AM){ ncol[i*3] = NB[0] + 0.6 * h; ncol[i*3+1] = NB[1] + 1.5 * h; ncol[i*3+2] = NB[2] + 1.8 * h; }
+    else if (h >= 0){ ncol[i*3] = NB[0] + 2.0 * h; ncol[i*3+1] = NB[1] + 0.5 * h; ncol[i*3+2] = NB[2] + 0.12 * h; } else { ncol[i*3] = NB[0]; ncol[i*3+1] = NB[1] + 0.7 * -h; ncol[i*3+2] = NB[2] + 1.6 * -h; }
+    if (Math.abs(nheat[i]) < 0.01){ ncol[i*3] = NB[0]; ncol[i*3+1] = NB[1]; ncol[i*3+2] = NB[2]; active.delete(i); } }
+  ngeo.attributes.color.needsUpdate = true;
+  for (let i = pulses.length - 1; i >= 0; i--){ const p = pulses[i]; p.position.y += dt * 26; p.material.opacity -= dt * 0.35; if (p.position.y > Y(NL) || p.material.opacity <= 0){ scene.remove(p); pulses.splice(i, 1); } }
+  alarmT += dt; const pul = 0.5 + 0.5 * Math.sin(alarmT * 6);
+  const plateCol = alarmLevel === 2 ? tmpC.setRGB(1, 0.15, 0.25).multiplyScalar(0.6 + 0.8 * pul) : alarmLevel === 1 ? tmpC.setRGB(1, 0.65, 0.15).multiplyScalar(0.5 + 0.6 * pul) : tmpC.set(0x2c4f8f);
+  plates.forEach((p, L) => { p.material.color.copy(plateCol); p.material.opacity = alarmLevel ? 0.25 + 0.5 * Math.min(1, beam[L].v * 1.5 + 0.2) : 0.35; });
+  bloom.strength = 1.0 + (alarmLevel === 2 ? 0.8 * pul : 0);
+}
+
+// ---------------- avatar picture-in-picture (same stream drives it) ----------------
+const avC = $("av"), avR = new THREE.WebGLRenderer({canvas: avC, antialias:true, alpha:true}); avR.setPixelRatio(Math.min(devicePixelRatio, 2));
+const avS = new THREE.Scene(), avCam = new THREE.PerspectiveCamera(24, 1, 0.1, 20);
+avS.add(new THREE.AmbientLight(0xffffff, 0.8)); const avL = new THREE.DirectionalLight(0xffffff, 1.1); avL.position.set(1, 2, 2); avS.add(avL);
+const avRim = new THREE.PointLight(0xff2d55, 0, 6); avRim.position.set(0, 1.6, -0.8); avS.add(avRim);
+function avResize(){ const r = avC.parentElement.getBoundingClientRect(); avR.setSize(r.width, r.height, false); avCam.aspect = r.width / r.height; avCam.updateProjectionMatrix(); }
+addEventListener("resize", avResize); avResize();
+let vrm = null; const vload = new GLTFLoader().register(p => new VRMLoaderPlugin(p));
+function loadAvatar(file){ vload.load("/vrm/" + file, g => { if (vrm){ avS.remove(vrm.scene); VRMUtils.deepDispose(vrm.scene); }
+  vrm = g.userData.vrm; VRMUtils.rotateVRM0(vrm); avS.add(vrm.scene); const sgn = vrm.meta?.metaVersion === "0" ? -1 : 1, h = vrm.humanoid;
+  h.getNormalizedBoneNode("leftUpperArm")?.rotation.set(0, 0, sgn * -1.2); h.getNormalizedBoneNode("rightUpperArm")?.rotation.set(0, 0, sgn * 1.2);
+  vrm.update(0); const hd = h.getRawBoneNode("head") || h.getNormalizedBoneNode("head"); const p = new THREE.Vector3(); hd ? hd.getWorldPosition(p) : p.set(0, 1.35, 0);
+  avCam.position.set(0, p.y + 0.02, p.z + 1.25); avCam.lookAt(0, p.y - 0.05, p.z); }, undefined, e => console.error(e)); }
+$("avsel").onchange = e => loadAvatar(e.target.value); loadAvatar($("avsel").value);
+const eT = {happy:0, sad:0, angry:0, neutral:1}, eC = {...eT}; let talking = 0, blinkT = 3, aT = 0;
+function setExpr(e){ Object.assign(eT, e); ["happy","sad","angry","neutral"].forEach(k => $("e_"+k).textContent = (e[k] ?? 0).toFixed(2)); }
+function avStep(dt){ aT += dt; for (const k in eC) eC[k] += (eT[k] - eC[k]) * (1 - Math.exp(-dt / 0.15));
+  avRim.intensity += ((alarmLevel === 2 ? 1.1 : alarmLevel === 1 ? 0.4 : 0) - avRim.intensity) * 0.1; avRim.color.set(alarmLevel === 2 ? 0xff2d55 : 0xffae2b);
+  if (vrm){ const em = vrm.expressionManager; ["happy","sad","angry"].forEach(k => em.setValue(k, eC[k] * 0.9)); em.setValue("relaxed", Math.max(0, eC.neutral - 0.6) * 0.3);
+    blinkT -= dt; const bl = blinkT < 0.12 ? Math.sin(Math.PI * Math.max(0, blinkT) / 0.12) : 0; if (blinkT < 0) blinkT = 2.5 + Math.random() * 3.5; em.setValue("blink", Math.max(bl, eC.angry * 0.15));
+    talking = Math.max(0, talking - dt * 2.5); em.setValue("aa", talking > 0 ? 0.25 + 0.35 * Math.abs(Math.sin(aT * 18)) * talking : 0);
+    const hd = vrm.humanoid.getNormalizedBoneNode("head"); if (hd){ hd.rotation.x = 0.03 * Math.sin(aT * 0.8) + eC.sad * 0.12 - eC.angry * 0.04; hd.rotation.y = 0.04 * Math.sin(aT * 0.5); }
+    vrm.update(dt); }
+  avR.render(avS, avCam); $("pip").className = "panel " + (alarmLevel === 2 ? "bad" : alarmLevel === 1 ? "warn" : ""); }
+
+const clock = new THREE.Clock();
+(function loop(){ const dt = Math.min(clock.getDelta(), 0.1); controls.autoRotate = $("spin").checked; controls.update(); stepVisual(dt); avStep(dt); crown.rotation.z += dt * 0.6; composer.render(); requestAnimationFrame(loop); })();
+resize();
+
+// hover: which component is under the mouse
+const ray = new THREE.Raycaster(), mouse = new THREE.Vector2();
+canvas.addEventListener("pointermove", e => { mouse.set(e.clientX / innerWidth * 2 - 1, -e.clientY / innerHeight * 2 + 1); ray.setFromCamera(mouse, camera);
+  const hit = ray.intersectObject(heads)[0]; const hv = $("hover");
+  if (hit){ const i = hit.instanceId, L = Math.floor(i / NH), h = i % NH; hv.style.display = "block"; hv.style.left = e.clientX + 12 + "px"; hv.style.top = e.clientY + 12 + "px";
+    const g = Math.floor(h / (NH / NKV)); const ex = lastI ? ` · 输出范数 ${lastI.heads_norm[L][h]} · 敌意推力 ${lastI.heads_all[L][h]} · 该层敌意 ${lastI.layers[L]} · 残差范数 ${lastI.resid_norm[L]}` : "";
+    hv.textContent = `注意力头 L${L}H${h}（KV 组 ${g}）${B3.has(`L${L}H${h}`) ? " · E01 愤怒头" : ""}${ex}`; }
+  else hv.style.display = "none"; });
+
+// ---------------- streaming ----------------
+let TH = {}, conv = [], queue = [], playing = false;
+function gauge(k, v, t){ $("f_"+k).style.width = Math.min(100, v * 100) + "%"; $("f_"+k).style.background = v >= t ? "var(--bad)" : v >= t * 0.6 ? "var(--warn)" : "var(--ok)"; $("t_"+k).style.left = Math.min(99, t * 100) + "%"; $("v_"+k).textContent = v.toFixed(3); }
+function alarm(level){ alarmLevel = Math.max(alarmLevel, level); $("flash").className = alarmLevel === 2 ? "bad" : alarmLevel === 1 ? "warn" : ""; }
+function renderConv(){ $("conv").innerHTML = conv.map(m => `<div>${{system:"系统",user:"用户",assistant:"助手"}[m.role]}：${esc(m.content.slice(0, 80))}${m.content.length > 80 ? "…" : ""}</div>`).join(""); $("conv").scrollTop = 1e9; }
+document.querySelectorAll('input[name=mode]').forEach(r => r.onchange = e => { MODE = e.target.value; active.forEach(i => nheat[i] = 0); if (lastI) applyInner(lastI); });
+$("struct").textContent = `${CFG.model_type} · ${CFG.params_b}B 参数 · ${NL} 层 × ${NH} 查询头（${NKV} 组 KV 共享）· 隐层 ${CFG.hidden} · 每层 ${NN} 个 MLP 神经元${SLOTS < NN ? `（显示 ${SLOTS} 个槽位）` : ""}。拖动旋转，滚轮缩放。`;
+$("slow").oninput = e => $("slowv").textContent = +e.target.value ? `每字 ${e.target.value} ms` : "实时";
+async function play(){ if (playing) return; playing = true;
+  while (queue.length){ const f = queue.shift(); f(); const d = +$("slow").value; if (d) await new Promise(r => setTimeout(r, d)); }
+  playing = false; }
+function reset(){ alarmLevel = 0; $("flash").className = ""; ["a_c2","a_pre","a_c1"].forEach(i => $(i).classList.remove("on")); beam.forEach(b => b.tv = 0); headT.fill(0);
+  ["c2","pre","c1"].forEach(k => { $("f_"+k).style.width = "0"; $("v_"+k).textContent = "–"; }); $("bottom").innerHTML = ""; $("focus").textContent = "—"; }
+async function send(){
+  const text = $("msg").value.trim(); if (text) conv.push({role:"user", content:text});
+  if (!conv.length || conv[conv.length-1].role !== "user") return;
+  $("msg").value = ""; renderConv(); reset(); $("go").disabled = true;
+  const r = await fetch("/v1/chat/completions", {method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({messages: conv, stream: true, max_tokens: 200, temperature: +$("temp").value, x_action: $("stop").checked ? "stop" : "log"})});
+  const rd = r.body.getReader(), dec = new TextDecoder(); let buf = "", reply = "";
+  while (true){ const {value, done} = await rd.read(); if (done) break; buf += dec.decode(value, {stream:true}); let k;
+    while ((k = buf.indexOf("\n\n")) >= 0){ const line = buf.slice(0, k).trim(); buf = buf.slice(k + 2);
+      if (!line.startsWith("data: ") || line === "data: [DONE]") continue;
+      const d = JSON.parse(line.slice(6)), R = d.x_risk, delta = d.choices[0].delta.content || ""; reply += delta;
+      queue.push(() => {
+        if (R.phase === "pre"){
+          gauge("c2", R.C2, TH.C2); gauge("pre", R.C1_pre, TH.C1_pre);
+          if (R.alarm.C2){ $("a_c2").classList.add("on"); baseRing.material.color.set(0xff2d55); } else baseRing.material.color.set(0x39a0ff);
+          if (R.alarm.C1_pre){ $("a_pre").classList.add("on"); alarm(1); }
+          if (R.inner) applyInner(R.inner); pulse(R.C1_pre >= TH.C1_pre); tokenLabel("（回复前）", R.C1_pre >= TH.C1_pre);
+          if (R.emo) setExpr(R.emo.expr); $("avphase").textContent = "预同步：文字尚未生成"; $("avphase").className = "tag on warn";
+        } else if (R.phase === "token"){
+          gauge("c1", R.C1_mean, TH.C1_mean); if (R.inner) applyInner(R.inner);
+          if (R.emo) setExpr(R.emo.expr); talking = 1; $("avphase").textContent = "逐字驱动"; $("avphase").className = "tag";
+          const hot = R.C1_token >= TH.C1_mean; pulse(hot); if (delta.trim()) tokenLabel(delta, hot);
+          const a = Math.min(0.85, R.C1_token * 0.9); $("bottom").insertAdjacentHTML("beforeend", `<span style="background:rgba(255,45,85,${a.toFixed(2)});border-radius:3px">${esc(delta)}</span>`); $("bottom").scrollTop = 1e9;
+          if (R.alarm.C1){ $("a_c1").classList.add("on"); alarm(2); }
+        } else if (R.phase === "done" && R.finish === "content_filter"){
+          $("bottom").insertAdjacentHTML("beforeend", '<b style="color:var(--bad)"> 〔监测已拦截：回复出现敌意倾向〕</b>'); setExpr({happy:0, sad:0, angry:0, neutral:1}); talking = 0;
+        }
+      }); play();
+    } }
+  conv.push({role:"assistant", content: reply || "（无）"}); renderConv(); $("go").disabled = false;
+}
+$("go").onclick = send; $("msg").addEventListener("keydown", e => { if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) send(); });
+$("clear").onclick = () => { conv = []; renderConv(); reset(); };
+(async () => {
+  const info = await (await fetch("/info")).json(); TH = info.thresholds;
+  if (!info.inner) $("bottom").innerHTML = '<span class="note">服务未加载逐层探针（启动时加 --layers），内部视图不会驱动。</span>';
+  const P = await (await fetch("/presets")).json();
+  P.forEach(p => { const b = document.createElement("button"); b.textContent = p.label; b.onclick = () => { conv = JSON.parse(JSON.stringify(p.messages)); renderConv(); reset(); }; $("presets").appendChild(b); });
+})();
+</script>
+</body>
+</html>
