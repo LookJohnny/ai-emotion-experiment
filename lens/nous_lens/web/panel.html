@@ -122,7 +122,24 @@ async function init(){
     + `<div class="grp"><h4>你自己的对话</h4><button class="own" id="own">粘贴一段对话来检查</button></div>`;
   document.querySelectorAll(".case").forEach(b => b.onclick = () => openCase(+b.dataset.g, +b.dataset.c, b));
   $("own").onclick = openPaste;
-  const first = document.querySelector(".case"); if (first) first.click();
+  $("cases").insertAdjacentHTML("afterbegin", '<div class="grp" id="recentgrp" style="display:none"><h4>最近读过（本次运行，只在内存里）</h4><div id="recent"></div></div>');
+  await loadRecent(); setInterval(loadRecent, 5000);
+  if (new URLSearchParams(location.search).get("install")) $("sheet").style.display = "grid";
+  const want = new URLSearchParams(location.search).get("event");
+  if (want) openEvent(want); else { const first = document.querySelector(".case"); if (first) first.click(); }
+}
+const KIND = {hostile: ["在贬低你", "#ff9aa4"], syco: ["在顺着你说", "#f7c46e"], fabric: ["可能在编造", "#f7c46e"], ok: ["正常", "var(--mute)"]};
+async function loadRecent(){
+  let ev = []; try { ev = await (await fetch("/events/recent")).json(); } catch (_) { return; }
+  $("recentgrp").style.display = ev.length ? "" : "none";
+  $("recent").innerHTML = ev.slice(0, 8).map(e => `<button class="case" data-ev="${e.id}">${esc(e.reply.slice(0, 22))}…<small><span style="color:${KIND[e.kind][1]}">${KIND[e.kind][0]}</span> · ${esc(e.source || "未知来源")} · ${new Date(e.ts * 1000).toTimeString().slice(0, 5)}</small></button>`).join("");
+  document.querySelectorAll("#recent .case").forEach(b => b.onclick = () => openEvent(b.dataset.ev, b));
+}
+async function openEvent(id, btn){
+  const r = await fetch("/events/item/" + id); if (!r.ok) return; const d = await r.json(); seq++;
+  document.querySelectorAll(".case").forEach(b => b.classList.toggle("on", b === btn)); cur = null;
+  $("convo").innerHTML = convoHTML(`来自：${d.event.source || "未知来源"} · ${new Date(d.event.ts * 1000).toLocaleTimeString()}`, d.messages, d.reply, d.res);
+  $("report").innerHTML = report(d.res, null);
 }
 
 function convoHTML(desc, messages, reply, res){

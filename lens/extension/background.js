@@ -1,8 +1,8 @@
 // Nous 知情助手 · background: the only place that talks to the local engine (127.0.0.1). Nothing goes anywhere else.
 const ENGINE = "http://127.0.0.1:7869";
 
-async function read(messages, reply) {
-  const r = await fetch(ENGINE + "/read", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ messages, reply }) });
+async function read(messages, reply, source) {
+  const r = await fetch(ENGINE + "/read", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ messages, reply, source }) });
   if (!r.ok) throw new Error("engine " + r.status);
   return r.json();
 }
@@ -18,7 +18,7 @@ chrome.runtime.onMessage.addListener((msg, sender, send) => {
     (async () => {
       const { enabled = true } = await chrome.storage.local.get("enabled");
       if (!enabled) return send({ off: true });
-      try { const res = await read(msg.messages, msg.reply); remember(msg.site, res); send({ res }); }
+      try { const res = await read(msg.messages, msg.reply, msg.site); remember(msg.site, res); send({ res }); }
       catch (e) { send({ error: String(e.message || e) }); }
     })();
     return true;
@@ -36,7 +36,7 @@ chrome.runtime.onInstalled.addListener(() => {
 chrome.contextMenus.onClicked.addListener(async (info, tab) => {
   if (info.menuItemId !== "nous-check" || !tab?.id) return;
   let res = null, err = null;
-  try { res = await read([], info.selectionText || ""); remember(new URL(tab.url || "about:blank").hostname, res); } catch (e) { err = "本地引擎未运行：请先启动 Nous 知情助手"; }
+  try { res = await read([], info.selectionText || "", new URL(tab.url || "about:blank").hostname + "（右键）"); remember(new URL(tab.url || "about:blank").hostname, res); } catch (e) { err = "本地引擎未运行：请先启动 Nous 知情助手"; }
   chrome.scripting.executeScript({ target: { tabId: tab.id }, func: toast, args: [res, err] });
 });
 

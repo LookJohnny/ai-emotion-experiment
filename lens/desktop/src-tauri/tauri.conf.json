@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Nous 知情助手",
+  "version": "0.2.0",
+  "identifier": "center.nous.guardian",
+  "build": { "frontendDist": "../ui" },
+  "app": {
+    "withGlobalTauri": true,
+    "macOSPrivateApi": true,
+    "security": { "csp": null },
+    "windows": [
+      {
+        "label": "companion", "url": "companion.html", "title": "Nous", "width": 260, "height": 320,
+        "transparent": true, "decorations": false, "alwaysOnTop": true, "skipTaskbar": true, "resizable": false,
+        "shadow": false, "visible": false, "focus": false
+      }
+    ]
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["app", "dmg", "nsis"],
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"],
+    "resources": {
+      "../../nous_lens/": "engine/nous_lens/",
+      "../../requirements.txt": "engine/requirements.txt",
+      "../../extension/": "extension/"
+    },
+    "category": "Utility",
+    "shortDescription": "在你和 AI 聊天时，用本机模型读一遍 AI 的回复",
+    "macOS": { "minimumSystemVersion": "12.0" }
+  }
+}

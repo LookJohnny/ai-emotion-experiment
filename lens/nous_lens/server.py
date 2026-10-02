@@ -1,23 +1,32 @@
 """Nous Lens local service. Binds to 127.0.0.1 only; conversations never leave this computer.
 python -m nous_lens.server --model ~/.nous-lens/models/Qwen3-4B-Instruct-2507 [--port 7869]"""
-import argparse, asyncio, json, os, threading, webbrowser
+import argparse, asyncio, collections, json, os, threading, time, webbrowser
 from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 import uvicorn
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 
 
 def build(lens):
     app = FastAPI(title="Nous Lens", version=VERSION, docs_url=None, redoc_url=None)
     lock = asyncio.Lock()
+    recent = collections.deque(maxlen=50); subs = set()          # in memory only: nothing is written to disk
+
+    def summary(res, body, reply):
+        h, s, f = res["hostility"], res.get("sycophancy"), res.get("fabrication")
+        kind = "hostile" if h["flag"] else "syco" if s and s["flag"] else "fabric" if f and f["flag"] else "ok"
+        msgs = body.get("messages") or []; u = next((m.get("content", "") for m in reversed(msgs) if m.get("role") == "user"), "")
+        return {"ts": time.time(), "source": str(body.get("source") or "")[:40], "kind": kind, "hostility": h["score"],
+                "sycophancy": s and s["score"], "fabrication": f and f["score"], "reply": reply[:160], "user": u[:120],
+                "hot": [reply[x["start"]:x["end"]].strip()[:80] for x in h["sentences"] if x.get("hot")][:2]}
 
     @app.middleware("http")
     async def same_machine_only(request: Request, call_next):
         # Web pages must not use the engine: only the extension (background worker, no Origin or chrome-extension://) and our own page.
         o = request.headers.get("origin")
-        if o and not (o.startswith("chrome-extension://") or o.startswith("moz-extension://") or o in ("http://127.0.0.1:7869", "http://localhost:7869")):
+        if o and not (o.startswith("chrome-extension://") or o.startswith("moz-extension://") or o in ("http://127.0.0.1:7869", "http://localhost:7869", "tauri://localhost", "http://tauri.localhost")):
             return JSONResponse({"error": "origin not allowed"}, 403)
         r = await call_next(request)
         if o: r.headers["Access-Control-Allow-Origin"] = o
@@ -31,8 +40,35 @@ def build(lens):
     async def read(body: dict):
         reply = str(body.get("reply") or "")[:8000]
         if not reply.strip(): return JSONResponse({"error": "reply required"}, 400)
+        for q in list(subs): q.put_nowait({"kind": "reading", "source": str(body.get("source") or "")[:40]})
         async with lock:                                     # one model, one reading at a time
-            return await asyncio.to_thread(lens.read, body.get("messages") or [], reply, bool(body.get("fabrication", True)))
+            res = await asyncio.to_thread(lens.read, body.get("messages") or [], reply, bool(body.get("fabrication", True)))
+        ev = summary(res, body, reply); ev["id"] = f"{time.time_ns():x}"; recent.append((ev, {"messages": body.get("messages") or [], "reply": reply, "res": res}))
+        for q in list(subs): q.put_nowait(ev)
+        return res
+
+    @app.get("/events/recent")
+    def events_recent():
+        return [e for e, _ in recent][::-1]
+
+    @app.get("/events/item/{eid}")
+    def events_item(eid: str):
+        for e, full in recent:
+            if e["id"] == eid: return {**full, "event": e}
+        return JSONResponse({"error": "not found"}, 404)
+
+    @app.get("/events")
+    async def events(request: Request):
+        q = asyncio.Queue(); subs.add(q)
+        async def gen():
+            try:
+                yield "retry: 3000\n\n"
+                while not await request.is_disconnected():
+                    try: ev = await asyncio.wait_for(q.get(), 15)
+                    except asyncio.TimeoutError: yield ": keepalive\n\n"; continue
+                    yield "data: " + json.dumps(ev, ensure_ascii=False) + "\n\n"
+            finally: subs.discard(q)
+        return StreamingResponse(gen(), media_type="text/event-stream")
 
     @app.get("/samples")
     def samples():
