@@ -1,5 +1,5 @@
 #!/bin/bash
-# Nous 知情助手 · macOS 启动（Apple 芯片，内存 ≥ 16 GB）
+# Nous 读心 · macOS 启动（Apple 芯片，内存 ≥ 16 GB）
 cd "$(dirname "$0")"
 D="$HOME/.nous-lens"; VENV="$D/venv"; MODEL="$D/models/Qwen3-4B-Instruct-2507"; MIRROR="https://pypi.tuna.tsinghua.edu.cn/simple"
 mkdir -p "$D"

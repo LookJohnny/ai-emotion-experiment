@@ -6,7 +6,7 @@ from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 import uvicorn
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-VERSION = "0.3.0"
+VERSION = "0.4.0"
 
 
 def build(lens):
@@ -96,7 +96,7 @@ def main():
     ap.add_argument("--pack", default=os.path.join(HERE, "pack")); ap.add_argument("--port", type=int, default=7869)
     ap.add_argument("--device", default=None); ap.add_argument("--no-browser", action="store_true")
     a = ap.parse_args()
-    print("Nous 知情助手：正在加载本地模型（首次约 1 分钟）…", flush=True)
+    print("Nous 读心：正在加载本地模型（首次约 1 分钟）…", flush=True)
     from .engine import Lens
     lens = Lens(a.model, a.pack, a.device)
     lens.warmup()                                            # compile kernels for the common lengths now, not on the first real request

@@ -1,4 +1,4 @@
-"""Automatic adaptation: build a Nous probe pack for ANY local HF chat model, with no labels (REPORT_TRANSFER.md).
+"""Automatic adaptation: build a Nous probe pack for ANY local chat model (HF folder or GGUF / Ollama blob), with no labels (REPORT_TRANSFER.md).
 The new model and the reference (Qwen3-4B-Instruct-2507) have read the same unlabeled anchor texts; a ridge map from the new
 model's states to the reference's is fitted and folded into the reference probe, giving an ordinary linear probe on the new
 model (same format as any pack). Thresholds carry over because scores live on the reference probe's scale.
@@ -6,8 +6,8 @@ model (same format as any pack). Thresholds carry over because scores live on th
 Validated (5090, 7-9B models): hostility non-inferior to native retraining on 4/4 models; fabrication/sycophancy experimental."""
 import argparse, json, os, sys, time
 import numpy as np, torch
-from transformers import AutoConfig, AutoModel, AutoTokenizer
 from .engine import prompt_ids, pick_device
+from .loader import config_of, load_layers
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CUT = {"c1": 120, "sy": 120, "fa": 64}
@@ -36,18 +36,16 @@ def fit_map(X, Y):
     return mu, sd, ridge_dual(Z, Yc, best[0]), yb, best
 
 
-def adapt(model_dir, out_dir, ref_pack=None, device=None):
+def adapt(model_dir, out_dir, ref_pack=None, device=None, name=None):
     ref_pack = ref_pack or os.path.join(HERE, "pack"); rm = json.load(open(os.path.join(ref_pack, "manifest.json"), encoding="utf-8"))
     anchors = [json.loads(l) for l in open(os.path.join(HERE, "anchors", "anchors.jsonl"), encoding="utf-8")]
     ref = np.load(os.path.join(HERE, "anchors", "ref_states.npz"))
-    cfg = AutoConfig.from_pretrained(model_dir); N = cfg.num_hidden_layers; refN = int(ref["ref_layers_total"])
+    cfg, N = config_of(model_dir); refN = int(ref["ref_layers_total"])
     rp = {c: json.load(open(os.path.join(ref_pack, rm["probes"][PROBE[c]]))) for c in CUT}
     La = {c: round(rp[c]["layer"] / refN * N) for c in CUT}
     log(f"STEP 1/3 加载模型（{N} 层；读第 {sorted(set(La.values()))} 层）")
     device = device or pick_device(); dt = torch.float32 if device == "cpu" else torch.bfloat16
-    cfg.num_hidden_layers = max(La.values()) + 1
-    if getattr(cfg, "layer_types", None): cfg.layer_types = cfg.layer_types[:cfg.num_hidden_layers]
-    tok = AutoTokenizer.from_pretrained(model_dir); model = AutoModel.from_pretrained(model_dir, config=cfg, dtype=dt).to(device).eval()
+    tok, model = load_layers(model_dir, max(La.values()) + 1, device, dt)
     states = {}
     for L in set(La.values()): model.layers[L].register_forward_hook(lambda m, a, o, L=L: states.__setitem__(L, (o[0] if isinstance(o, tuple) else o)[0].float()))
     log("STEP 2/3 读锚点文本（不需要任何标注）")
@@ -66,13 +64,13 @@ def adapt(model_dir, out_dir, ref_pack=None, device=None):
         mu, sd, W, yb, (alpha, r2) = fit_map(Xc, Yc)
         p = rp[c]; w = np.array(p["coef"]) / np.array(p["scale"])
         coef = W @ w; b = float((yb - np.array(p["mean"])) @ w + p["intercept"])          # fold map + reference probe into one linear probe
-        name = PROBE[c] + ".json"
+        fn = PROBE[c] + ".json"
         json.dump({"concept": p["concept"], "name": PROBE[c], "layer": La[c], "pool": p.get("pool"), "mean": mu.tolist(), "scale": sd.tolist(),
                    "coef": coef.tolist(), "intercept": b, "threshold": 0.5, "meta": {"auto_adapted": True, "ridge_alpha": alpha, "anchor_r2": round(r2, 3)}},
-                  open(os.path.join(out_dir, name), "w"))
-        probes[PROBE[c]] = name; quality[c] = {"layer": La[c], "alpha": alpha, "anchor_r2": round(r2, 3)}
-    name = os.path.basename(os.path.normpath(model_dir))
-    json.dump({"name": name, "base_model": getattr(cfg, "_name_or_path", None) or name, "model_dir": model_dir, "version": time.strftime("%Y.%m.%d"),
+                  open(os.path.join(out_dir, fn), "w"))
+        probes[PROBE[c]] = fn; quality[c] = {"layer": La[c], "alpha": alpha, "anchor_r2": round(r2, 3)}
+    name = name or os.path.basename(os.path.normpath(model_dir))
+    json.dump({"name": name, "base_model": name, "model_dir": model_dir, "version": time.strftime("%Y.%m.%d"),
                "auto_adapted": True, "adapted_from": rm.get("base_model"), "probes": probes,
                "thresholds": {THR[c]: rm["thresholds"][THR[c]] for c in CUT}, "neg_quantiles": {THR[c]: rm["neg_quantiles"][THR[c]] for c in CUT},
                "quality": quality, "note": "Auto-adapted by label-free alignment. Hostility validated as non-inferior to native retraining on 4 open models; fabrication and sycophancy are experimental."},
@@ -82,5 +80,5 @@ def adapt(model_dir, out_dir, ref_pack=None, device=None):
 
 
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--out", required=True); ap.add_argument("--device")
-    a = ap.parse_args(); adapt(a.model, os.path.expanduser(a.out), device=a.device)
+    ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--out", required=True); ap.add_argument("--device"); ap.add_argument("--name")
+    a = ap.parse_args(); adapt(a.model, os.path.expanduser(a.out), device=a.device, name=a.name)

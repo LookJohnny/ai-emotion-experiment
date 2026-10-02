@@ -1,4 +1,4 @@
-// Nous 知情助手 · desktop guardian.
+// Nous 读心 · desktop guardian.
 // First run DETECTS which LLMs the person uses (local runtimes, weights on disk, sites, API models) and recommends how to
 // read them; nothing is installed or downloaded until they choose. The app then owns the local engine (127.0.0.1:7869).
 // A small always-on-top companion shows what the engine reads; the panel is the engine's page.
@@ -141,7 +141,7 @@ fn open_panel(app: AppHandle, event: Option<String>) {
     let url = match event.as_deref() { Some("install") => format!("http://{ENGINE}/?install=1"), Some(e) => format!("http://{ENGINE}/?event={e}"), None => format!("http://{ENGINE}/") };
     let u: tauri::Url = url.parse().unwrap();
     if let Some(w) = app.get_webview_window("panel") { let _ = w.navigate(u); let _ = w.show(); let _ = w.set_focus(); return; }
-    let _ = WebviewWindowBuilder::new(&app, "panel", WebviewUrl::External(u)).title("Nous 知情助手").inner_size(1320.0, 840.0).min_inner_size(900.0, 600.0).build();
+    let _ = WebviewWindowBuilder::new(&app, "panel", WebviewUrl::External(u)).title("Nous 读心").inner_size(1320.0, 840.0).min_inner_size(900.0, 600.0).build();
 }
 
 #[tauri::command]
@@ -179,9 +179,9 @@ fn adapt_and_use(app: AppHandle, path: String, name: String) {
         let safe: String = name.chars().map(|ch| if ch.is_alphanumeric() || ch == '-' || ch == '.' { ch } else { '_' }).collect();
         let out = base().join("packs").join(&safe);
         emit(&app, "step", "3/3 为你的模型自动生成探针（只读本机文本，不需要标注）");
-        let mut c = cmd(venv_bin("python")); c.args(["-m", "nous_lens.adapt", "--model", &path, "--out"]).arg(&out)
+        let mut c = cmd(venv_bin("python")); c.args(["-m", "nous_lens.adapt", "--model", &path, "--name", &name, "--out"]).arg(&out)
             .current_dir(engine_root(&app)).env("PYTHONPATH", engine_root(&app));
-        if !run_logged(&app, c) || !out.join("manifest.json").exists() { emit(&app, "error", "自动适配失败：这款模型可能不是 Hugging Face 格式的对话模型。"); return; }
+        if !run_logged(&app, c) || !out.join("manifest.json").exists() { emit(&app, "error", "自动适配失败：这款模型的架构暂不支持（支持 Hugging Face 格式，以及 Llama / Qwen / Mistral / Gemma / Phi 等 GGUF）。"); return; }
         let mut cf = config();
         cf["reader"] = serde_json::json!({ "source": "existing", "path": path, "pack": out, "family": "auto", "auto_adapted": true, "name": name, "chosen": true });
         save_config(&cf); stop_engine(&app);
@@ -194,7 +194,7 @@ fn open_setup(app: AppHandle) { open_wizard(&app); }
 
 fn open_wizard(app: &AppHandle) {
     if let Some(w) = app.get_webview_window("setup") { let _ = w.show(); let _ = w.set_focus(); return; }
-    let _ = WebviewWindowBuilder::new(app, "setup", WebviewUrl::App("setup.html".into())).title("Nous 知情助手 · 识别你在用的 AI")
+    let _ = WebviewWindowBuilder::new(app, "setup", WebviewUrl::App("setup.html".into())).title("Nous 读心 · 识别你在用的 AI")
         .inner_size(760.0, 640.0).min_inner_size(640.0, 560.0).center().build();
 }
 
@@ -228,7 +228,7 @@ fn main() {
             let menu = Menu::with_items(app, &[&panel, &PredefinedMenuItem::separator(app)?, &comp, &clip, &wiz, &ext, &PredefinedMenuItem::separator(app)?, &quit])?;
             let tray_img = tauri::image::Image::from_bytes(include_bytes!("../icons/tray.png"))?;
             let (comp2, clip2) = (comp.clone(), clip.clone());
-            TrayIconBuilder::with_id("nous").icon(tray_img).icon_as_template(true).tooltip("Nous 知情助手").menu(&menu).show_menu_on_left_click(true)
+            TrayIconBuilder::with_id("nous").icon(tray_img).icon_as_template(true).tooltip("Nous 读心").menu(&menu).show_menu_on_left_click(true)
                 .on_menu_event(move |app, e| match e.id().as_ref() {
                     "panel" => open_panel(app.clone(), None),
                     "companion" => if let Some(w) = app.get_webview_window("companion") {

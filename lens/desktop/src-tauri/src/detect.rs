@@ -1,6 +1,6 @@
 // Environment detection: which LLMs this person actually uses, before anything is installed or downloaded.
 //   runtimes : local inference servers (Ollama, LM Studio, vLLM, llama.cpp, ...) and the models they serve
-//   weights  : model folders already on disk (Hugging Face / ModelScope caches, LM Studio, Nous)
+//   weights  : models already on disk (Hugging Face / ModelScope caches, Ollama's store, LM Studio, Nous), safetensors or GGUF
 //   hardware : OS, chip, memory, NVIDIA GPUs -> whether a local reader is even an option
 // Classification (which family, white-box or reader) happens in the UI against models.json.
 use serde_json::{json, Value};
@@ -49,23 +49,105 @@ fn loadable(p: &Path) -> bool {
     p.join("config.json").exists() && std::fs::read_dir(p).map(|d| d.flatten().any(|e| e.file_name().to_string_lossy().ends_with(".safetensors"))).unwrap_or(false)
 }
 
+// GGUF architectures the engine can load (transformers' GGUF support; names as in the GGUF header)
+const GGUF_ARCHS: &[&str] = &["llama", "mistral", "qwen2", "qwen2moe", "qwen3", "qwen3moe", "gemma2", "gemma3", "phi3", "falcon", "stablelm",
+    "starcoder2", "nemotron", "gpt2", "bloom", "lfm2", "deci"];
+// encoder / embedding / vision-only architectures are not chat models
+const NOT_LLM: &[&str] = &["bert", "nomic-bert", "nomic-bert-moe", "jina-bert-v2", "t5encoder", "clip", "mllama-vision", "neo-bert", "modern-bert"];
+
+// read the GGUF header: (architecture, block count, file_type). Stops as soon as both are found, so token arrays are never read.
+fn gguf_header(path: &Path) -> Option<(String, Option<u64>, Option<u64>)> {
+    use std::io::{BufReader, Seek, SeekFrom};
+    let mut f = BufReader::new(std::fs::File::open(path).ok()?);
+    let mut b4 = [0u8; 4]; let mut b8 = [0u8; 8];
+    f.read_exact(&mut b4).ok()?; if &b4 != b"GGUF" { return None; }
+    f.read_exact(&mut b4).ok()?; f.read_exact(&mut b8).ok()?; f.read_exact(&mut b8).ok()?;
+    let n_kv = u64::from_le_bytes(b8);
+    fn rd_u64(f: &mut impl Read) -> Option<u64> { let mut b = [0u8; 8]; f.read_exact(&mut b).ok()?; Some(u64::from_le_bytes(b)) }
+    fn rd_u32(f: &mut impl Read) -> Option<u32> { let mut b = [0u8; 4]; f.read_exact(&mut b).ok()?; Some(u32::from_le_bytes(b)) }
+    fn rd_str(f: &mut impl Read) -> Option<String> { let n = rd_u64(f)?; if n > 1 << 20 { return None; } let mut v = vec![0u8; n as usize]; f.read_exact(&mut v).ok()?; Some(String::from_utf8_lossy(&v).into()) }
+    fn size_of(t: u32) -> Option<i64> { Some(match t { 0 | 1 | 7 => 1, 2 | 3 => 2, 4 | 5 | 6 => 4, 10 | 11 | 12 => 8, _ => return None }) }
+    // read a scalar as u64 (for integer types), or skip a value of type t
+    fn value(f: &mut (impl Read + Seek), t: u32) -> Option<Option<u64>> {
+        match t {
+            8 => { let n = rd_u64(f)?; f.seek(SeekFrom::Current(n as i64)).ok()?; Some(None) }
+            9 => { let et = rd_u32(f)?; let n = rd_u64(f)?;
+                   if let Some(sz) = size_of(et) { f.seek(SeekFrom::Current(sz * n as i64)).ok()?; } else { for _ in 0..n { value(f, et)?; } }
+                   Some(None) }
+            _ => { let sz = size_of(t)?; let mut v = [0u8; 8]; f.read_exact(&mut v[..sz as usize]).ok()?; Some(Some(u64::from_le_bytes(v))) }
+        }
+    }
+    let (mut arch, mut blocks, mut ftype): (Option<String>, Option<u64>, Option<u64>) = (None, None, None);
+    for _ in 0..n_kv.min(4096) {
+        let k = rd_str(&mut f)?; let t = rd_u32(&mut f)?;
+        if k == "general.architecture" && t == 8 { arch = Some(rd_str(&mut f)?); continue; }
+        let v = value(&mut f, t)?;
+        if k == "general.file_type" { ftype = v; }
+        if k.ends_with(".block_count") { blocks = v; }
+        if arch.is_some() && blocks.is_some() && ftype.is_some() { break; }
+    }
+    Some((arch?, blocks, ftype))
+}
+
+// approximate bits per weight of a GGUF file_type, to estimate the memory the dequantized (bf16) reader needs
+fn gguf_bpw(ftype: Option<u64>) -> f64 {
+    match ftype.unwrap_or(15) { 0 => 32.0, 1 | 32 => 16.0, 7 => 8.5, 2 | 3 => 4.5, 8 | 9 => 5.5, 10 => 3.0, 11 | 12 | 13 => 3.9, 14 => 4.6, 16 => 5.5, 17 => 5.7, 18 => 6.6, _ => 4.85 }
+}
+
+// one GGUF file (a .gguf or an Ollama blob) -> description, or None if it is not a chat LLM
+fn gguf_entry(source: &str, id: String, file: PathBuf) -> Option<Value> {
+    let (arch, layers, ftype) = gguf_header(&file)?;
+    if NOT_LLM.contains(&arch.as_str()) || arch.contains("bert") || arch.contains("clip") { return None; }
+    let size = std::fs::metadata(&file).ok()?.len() as f64 / 1e9;
+    let r1 = |x: f64| (x * 10.0).round() / 10.0;
+    Some(json!({ "source": source, "id": id, "path": file, "safetensors": false, "gguf": true, "arch": arch, "adaptable": GGUF_ARCHS.contains(&arch.as_str()),
+                 "size_gb": r1(size), "bf16_gb": r1(size * 16.0 / gguf_bpw(ftype)), "layers": layers }))
+}
+
+// Ollama's model store: manifests/<host>/<namespace>/<model>/<tag> -> the model layer's blob (a GGUF file)
+fn ollama_store() -> Vec<Value> {
+    let root = std::env::var("OLLAMA_MODELS").map(PathBuf::from).unwrap_or(home().join(".ollama/models"));
+    let mut out = vec![];
+    for host in std::fs::read_dir(root.join("manifests")).into_iter().flatten().flatten() {
+        for ns in std::fs::read_dir(host.path()).into_iter().flatten().flatten() {
+            for model in std::fs::read_dir(ns.path()).into_iter().flatten().flatten() {
+                for tag in std::fs::read_dir(model.path()).into_iter().flatten().flatten() {
+                    let Some(m) = std::fs::read_to_string(tag.path()).ok().and_then(|s| serde_json::from_str::<Value>(&s).ok()) else { continue };
+                    let Some(digest) = m["layers"].as_array().and_then(|l| l.iter().find(|x| x["mediaType"] == "application/vnd.ollama.image.model")).and_then(|x| x["digest"].as_str()) else { continue };
+                    let blob = root.join("blobs").join(digest.replace(':', "-"));
+                    let (h, n) = (host.file_name().to_string_lossy().to_string(), ns.file_name().to_string_lossy().to_string());
+                    let base = if h == "registry.ollama.ai" && n == "library" { String::new() } else if h == "registry.ollama.ai" { format!("{n}/") } else { format!("{h}/{n}/") };
+                    let id = format!("{base}{}:{}", model.file_name().to_string_lossy(), tag.file_name().to_string_lossy());
+                    if let Some(v) = gguf_entry("Ollama", id, blob) { out.push(v); }
+                }
+            }
+        }
+    }
+    out
+}
+
 // one model folder -> description, or None if it is not a chat/generative LLM in a loadable format
 fn entry(source: &str, id: String, path: PathBuf) -> Option<Value> {
     if let Some(arch) = std::fs::read_to_string(path.join("config.json")).ok().and_then(|c| serde_json::from_str::<Value>(&c).ok()).and_then(|c| c["architectures"].as_array().cloned()) {
         if !arch.iter().any(|a| a.as_str().map(|s| s.ends_with("ForCausalLM") || s.ends_with("ForConditionalGeneration")).unwrap_or(false)) { return None; }
     }
     let ok = loadable(&path);
-    let gguf = std::fs::read_dir(&path).map(|d| d.flatten().any(|e| e.file_name().to_string_lossy().ends_with(".gguf"))).unwrap_or(false);
-    if !(ok || gguf) { return None; }
+    if !ok {
+        if path.is_file() { return gguf_entry(source, id, path); }
+        let g = std::fs::read_dir(&path).ok()?.flatten().filter(|e| { let n = e.file_name().to_string_lossy().to_lowercase(); n.ends_with(".gguf") && !n.contains("mmproj") })
+            .max_by_key(|e| e.metadata().map(|m| m.len()).unwrap_or(0))?;
+        return gguf_entry(source, id, g.path());
+    }
     let size: u64 = std::fs::read_dir(&path).map(|d| d.flatten().filter_map(|e| e.metadata().ok()).filter(|m| m.is_file()).map(|m| m.len()).sum()).unwrap_or(0);
     let layers = std::fs::read_to_string(path.join("config.json")).ok().and_then(|c| serde_json::from_str::<Value>(&c).ok())
         .and_then(|c| c["num_hidden_layers"].as_u64().or_else(|| c["text_config"]["num_hidden_layers"].as_u64()));
-    Some(json!({ "source": source, "id": id, "path": path, "safetensors": ok, "gguf": gguf, "size_gb": (size as f64 / 1e9 * 10.0).round() / 10.0, "layers": layers }))
+    let gb = (size as f64 / 1e9 * 10.0).round() / 10.0;
+    Some(json!({ "source": source, "id": id, "path": path, "safetensors": true, "gguf": false, "adaptable": true, "size_gb": gb, "bf16_gb": gb, "layers": layers }))
 }
 
 // a folder the person points at (models downloaded to arbitrary places)
 pub fn inspect(path: &str) -> Value {
-    let p = PathBuf::from(path.trim());
+    let p = PathBuf::from(path.trim().trim_matches('"').trim_matches('\''));
     entry("手动添加", p.file_name().map(|n| n.to_string_lossy().to_string()).unwrap_or_default(), p).unwrap_or(Value::Null)
 }
 
@@ -100,6 +182,7 @@ fn weights() -> Vec<Value> {
     for m in std::fs::read_dir(h.join(".nous-lens/models")).into_iter().flatten().flatten() {
         push("Nous", m.file_name().to_string_lossy().to_string(), m.path());
     }
+    out.extend(ollama_store());
     out
 }
 

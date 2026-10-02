@@ -1,4 +1,4 @@
-// Nous 知情助手 · content script. Reads the visible conversation, asks the local engine (via background), and floats a marker
+// Nous 读心 · content script. Reads the visible conversation, asks the local engine (via background), and floats a marker
 // beside each AI reply. Markers live in one overlay outside the site's own DOM tree, so the page's framework never sees them.
 (() => {
   const SITES = [   // best-effort selectors; sites change their markup, so each adapter is easy to update
@@ -40,7 +40,7 @@
       st.mark.addEventListener("click", () => st.mark.classList.toggle("open")); }
     const m = st.mark; let cls = "", label = "", body = "";
     if (kind === "wait") { cls = "wait"; label = "读取中…"; }
-    else if (kind === "off") { cls = "wait"; label = "本地引擎未运行"; body = "<p>请先启动 Nous 知情助手。</p>"; }
+    else if (kind === "off") { cls = "wait"; label = "本地引擎未运行"; body = "<p>请先启动 Nous 读心。</p>"; }
     else {
       const h = res.hostility, f = res.fabrication, hot = h.sentences.filter(s => s.hot).sort((a, b) => b.score - a.score).slice(0, 2);
       const text = st.text;

@@ -8,7 +8,7 @@ Readouts (frozen probes from the Qwen3-4B pack; numbers are the pre-registered s
 Per-sentence hostility = mean token probability inside each sentence (which sentence carries it)."""
 import json, os, re, time
 import numpy as np, torch
-from transformers import AutoConfig, AutoTokenizer, AutoModel
+from .loader import load_layers
 
 READER_SYSTEM = "你是陪伴助手，请礼貌、专业地回答用户。"          # framing the C1 probe was validated under
 QA_SYSTEM = "你是知识问答助手，请直接、简洁地回答问题。"         # framing the C3-H probe was trained under
@@ -52,7 +52,6 @@ class Lens:
     def __init__(self, model_dir, pack_dir, device=None):
         self.device = device or pick_device(); dt = torch.float32 if self.device == "cpu" else torch.bfloat16
         t0 = time.time()
-        self.tok = AutoTokenizer.from_pretrained(model_dir)
         m = json.load(open(os.path.join(pack_dir, "manifest.json"), encoding="utf-8"))
         P = lambda k: Probe(os.path.join(pack_dir, m["probes"][k]), self.device) if k in m["probes"] else None
         self.p_host, self.p_dist, self.p_fab, self.p_syco = P("c1_token"), P("c2"), P("c3h_token"), P("syco_token")   # auto-adapted packs carry a subset
@@ -60,9 +59,7 @@ class Lens:
         probes = [p for p in (self.p_host, self.p_dist, self.p_fab, self.p_syco) if p]
         # the reader never generates: load only the layers the probes read (no upper layers, no LM head)
         keep = max(p.layer for p in probes) + 1
-        cfg = AutoConfig.from_pretrained(model_dir); cfg.num_hidden_layers = keep
-        if getattr(cfg, "layer_types", None): cfg.layer_types = cfg.layer_types[:keep]
-        self.model = AutoModel.from_pretrained(model_dir, config=cfg, dtype=dt).to(self.device).eval()
+        self.tok, self.model = load_layers(model_dir, keep, self.device, dt)   # HF folder or GGUF file (e.g. an Ollama blob)
         self.thr, self.negq = m["thresholds"], m.get("neg_quantiles", {})
         self.states = {}
         for L in {p.layer for p in probes}:

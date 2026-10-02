@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nous 知情助手</title>
+<title>Nous 读心</title>
 <link href="/fonts/fonts.css" rel="stylesheet">
 <style>
 :root{
@@ -18,7 +18,7 @@ button,textarea{font:inherit;color:inherit}
 .app{display:grid;grid-template-rows:56px 1fr;height:100vh}
 .top{display:flex;align-items:center;gap:12px;padding:0 20px;border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:10px;font:23px var(--serif);white-space:nowrap}
-.glyph{width:26px;height:26px;border-radius:8px;background:var(--ok);color:#fff;display:grid;place-items:center;font:600 13px var(--sans)}
+.glyph{width:26px;height:26px;border-radius:8px;background:#141720;color:var(--ok);border:1px solid #2a2f3b;display:grid;place-items:center;font:600 13px var(--sans)}
 .chip{display:inline-flex;align-items:center;gap:7px;height:28px;padding:0 11px;border:1px solid var(--line);border-radius:999px;color:var(--ink2);font-size:12px;background:var(--panel);white-space:nowrap}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--faint)}.dot.on{background:var(--ok);box-shadow:0 0 0 3px rgba(34,197,94,.16)}
 .spacer{flex:1}
@@ -84,7 +84,7 @@ button,textarea{font:inherit;color:inherit}
 <body>
 <div class="app">
   <header class="top">
-    <div class="brand"><span class="glyph">N</span>Nous 知情助手</div>
+    <div class="brand"><span class="glyph"><svg viewBox="0 0 44 44" width="70%" height="70%" aria-hidden="true"><path d="M3 22 C 9 12, 35 12, 41 22 C 35 32, 9 32, 3 22 Z" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linejoin="round"/><path d="M14 22 L 18 22 L 20.5 16.5 L 23.5 28 L 26 19 L 27.5 22 L 30 22" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Nous 读心</div>
     <span class="chip hide-sm">本地运行 · 对话不离开这台电脑</span>
     <div class="spacer"></div>
     <span class="chip"><span class="dot" id="dot"></span><span id="eng">连接本地引擎…</span></span>

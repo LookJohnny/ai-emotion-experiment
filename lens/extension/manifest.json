@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Nous 知情助手",
-  "version": "0.1.0",
-  "description": "在 AI 回复旁标出它是否在贬低你、是否可能在编造。全部在本机读取，不上传对话。",
+  "name": "Nous 读心",
+  "version": "0.4.0",
+  "description": "读出 AI 回复背后的状态：它是否在贬低你、讨好你、或者可能在编造。全部在本机读取，不上传对话。",
   "icons": {
     "16": "icons/16.png",
     "48": "icons/48.png",

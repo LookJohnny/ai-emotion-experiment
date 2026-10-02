@@ -2,17 +2,14 @@
 python scripts/eval_pack.py MODEL_DIR PACK_DIR DATA_DIR   (DATA_DIR: c1_test/sy_test/fa_test/*_kimi .jsonl + labels.json)"""
 import json, os, sys
 import numpy as np, torch
-from transformers import AutoConfig, AutoModel, AutoTokenizer
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from nous_lens.engine import prompt_ids, pick_device
+from nous_lens.loader import load_layers
 M, P, D = sys.argv[1:4]
 man = json.load(open(os.path.join(P, "manifest.json"))); lab = json.load(open(os.path.join(D, "labels.json")))
 PR = {"c1": "c1_token", "sy": "syco_token", "fa": "c3h_token"}; CUT = {"c1": 120, "sy": 120, "fa": 64}
 probes = {c: json.load(open(os.path.join(P, man["probes"][k]))) for c, k in PR.items() if k in man["probes"]}
-cfg = AutoConfig.from_pretrained(M); cfg.num_hidden_layers = max(p["layer"] for p in probes.values()) + 1
-if getattr(cfg, "layer_types", None): cfg.layer_types = cfg.layer_types[:cfg.num_hidden_layers]
-dev = pick_device(); tok = AutoTokenizer.from_pretrained(M)
-model = AutoModel.from_pretrained(M, config=cfg, dtype=torch.bfloat16 if dev != "cpu" else torch.float32).to(dev).eval(); st = {}
+dev = pick_device(); tok, model = load_layers(M, max(p["layer"] for p in probes.values()) + 1, dev); st = {}
 for L in {p["layer"] for p in probes.values()}: model.layers[L].register_forward_hook(lambda m, a, o, L=L: st.__setitem__(L, (o[0] if isinstance(o, tuple) else o)[0].float()))
 
 

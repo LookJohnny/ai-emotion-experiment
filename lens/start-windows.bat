@@ -1,6 +1,6 @@
 @echo off
 chcp 65001 >nul
-rem Nous 知情助手 · Windows 启动（NVIDIA 显卡显存 >= 10 GB；没有显卡会很慢）
+rem Nous 读心 · Windows 启动（NVIDIA 显卡显存 >= 10 GB；没有显卡会很慢）
 cd /d "%~dp0"
 set "D=%USERPROFILE%\.nous-lens"
 set "VENV=%D%\venv"

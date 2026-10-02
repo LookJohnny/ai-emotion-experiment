@@ -9,7 +9,7 @@
 html,body{background:var(--bg);color:var(--ink);font:13px/1.6 var(--sans)}
 main{padding:26px 30px 30px;max-width:760px;margin:0 auto}
 .brand{display:flex;align-items:center;gap:10px;font:21px var(--serif)}
-.g{width:24px;height:24px;border-radius:7px;background:var(--ok);color:#fff;display:grid;place-items:center;font:600 12px var(--sans)}
+.g{width:24px;height:24px;border-radius:7px;background:#141720;color:var(--ok);border:1px solid #2a2f3b;display:grid;place-items:center;font:600 12px var(--sans)}
 h1{font:400 28px/1.2 var(--serif);margin-top:18px}
 .sub{color:var(--mute);margin-top:6px}
 h2{font-size:12px;font-weight:500;color:var(--mute);letter-spacing:.02em;margin:22px 0 8px;display:flex;justify-content:space-between;align-items:center}
@@ -52,7 +52,7 @@ input:focus{border-color:rgba(255,255,255,.3)}
 </head>
 <body>
 <main>
-  <div class="brand"><span class="g">N</span>Nous 知情助手</div>
+  <div class="brand"><span class="g"><svg viewBox="0 0 44 44" width="70%" height="70%" aria-hidden="true"><path d="M3 22 C 9 12, 35 12, 41 22 C 35 32, 9 32, 3 22 Z" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linejoin="round"/><path d="M14 22 L 18 22 L 20.5 16.5 L 23.5 28 L 26 19 L 27.5 22 L 30 22" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Nous 读心</div>
   <h1>先看看你在用哪些 AI</h1>
   <p class="sub">Nous 会根据你实际在用的模型决定怎么读，不会默认下载任何东西。识别只在本机进行。</p>
 
@@ -87,8 +87,8 @@ function siteFamily(host){ return REG.families.find(f => (f.sites || []).include
 // what Nous can do for one model
 function capability(f, how){
   if (f && f.pack && how === "safetensors") return ["wb", "白盒读取 · 可直接作为读者"];
-  if (f && f.pack && how === "gguf") return ["rd", "同款模型 · GGUF 白盒适配中，先用读者代理"];
   if ((!f || f.kind !== "closed") && how === "safetensors") return ["ad", "可自动适配 · 能用作读者"];
+  if ((!f || f.kind !== "closed") && how === "gguf-ok") return ["ad", "可自动适配（GGUF）· 能用作读者"];
   if (f && f.kind === "open") return ["rd", "读者代理 · 探针包待适配"];
   if (f && f.logprobs && how === "api") return ["lp", "读者代理 + logprob（接口支持时）"];
   return ["rd", "读者代理"];
@@ -103,19 +103,24 @@ async function scan(){
 async function scanRender(){ render(); }
 function render(){
   const rows = [];
+  const stored = new Set(ENV.weights.filter(w => w.source === "Ollama").map(w => w.id));
+  const running = new Set(ENV.runtimes.filter(r => r.id === "ollama").flatMap(r => r.models.map(m => m.id)));
   for (const r of ENV.runtimes) for (const m of r.models) {
+    if (r.id === "ollama" && stored.has(m.id)) continue;            // shown once below, from Ollama's model store
     const f = family(m.id), gguf = (m.format || "").toLowerCase() === "gguf" || r.id === "ollama";
     rows.push(itemHTML(m.id, `${r.name} 本地服务 · ${f ? f.vendor + " " + f.name : "未登记的模型"}${m.quant ? " · " + m.quant : ""}`, capability(f, gguf ? "gguf" : "runtime")));
   }
   for (const w of ENV.weights) {
     const f = family(w.id);
-    rows.push(itemHTML(w.id, `${w.source} · ${f ? f.vendor + " " + f.name : "未登记的模型"} · ${w.size_gb} GB · 已在本机`, capability(f, w.safetensors ? "safetensors" : "gguf")));
+    const how = w.safetensors ? "safetensors" : w.adaptable ? "gguf-ok" : "gguf";
+    const src = w.source === "Ollama" && running.has(w.id) ? "Ollama（正在运行）" : w.source;
+    rows.push(itemHTML(w.id, `${src} · ${f ? f.vendor + " " + f.name : "未登记的模型"}${w.gguf ? " · GGUF " + (w.arch || "") : ""} · ${w.size_gb} GB · 已在本机`, capability(f, how)));
   }
-  rows.push(`<form id="addform" style="grid-template-columns:1fr auto"><input id="a_dir" placeholder="模型放在别处？粘贴模型文件夹路径（含 config.json 的那一层）"><button class="line" type="submit">添加文件夹</button></form>`);
+  rows.push(`<form id="addform" style="grid-template-columns:1fr auto"><input id="a_dir" placeholder="模型放在别处？粘贴模型文件夹，或 .gguf 文件的路径"><button class="line" type="submit">添加</button></form>`);
   rows.push(itemHTML("网页和 App 里的 AI", "ChatGPT、Kimi、豆包、DeepSeek、通义、文心、元宝、Claude、Gemini 等：用浏览器插件，或复制回复后检查", ["rd", "读者代理"]));
   $("ais").innerHTML = rows.join("");
   $("addform").onsubmit = async e => { e.preventDefault(); const v = await T.core.invoke("inspect_folder", {path: $("a_dir").value});
-    if (!v) { $("a_dir").value = ""; $("a_dir").placeholder = "这个文件夹不是可读取的对话模型（需要 config.json 和 .safetensors）"; return; }
+    if (!v) { $("a_dir").value = ""; $("a_dir").placeholder = "不是可读取的对话模型（需要含 config.json + .safetensors 的文件夹，或 .gguf 文件）"; return; }
     ENV.weights.push(v); const keep = ENV.weights; const r = ENV.runtimes; await scanRender(r, keep); };
   drawApis(); drawHw(); drawPlan();
 }
@@ -136,17 +141,20 @@ function drawHw(){
 function budgetGB(h){ const v = Math.max(0, ...h.gpus.map(g => g.vram_gb || 0)); return h.apple_silicon ? (h.mem_gb || 0) * 0.45 : v * 0.9; }
 function drawPlan(){
   const h = ENV.hardware, have = ENV.weights.find(w => w.safetensors && (family(w.id) || {}).pack);
-  // the largest model the person already has that fits (only ~60% of layers are loaded), excluding closed-family names
-  const fits = ENV.weights.filter(w => w.safetensors && !(family(w.id) || {}).pack && (family(w.id) || {}).kind !== "closed" && w.size_gb * 0.6 <= budgetGB(h)).sort((a, b) => b.size_gb - a.size_gb);
+  // the largest model the person already has that fits (only ~60% of layers are loaded, dequantized to bf16), excluding closed-family names.
+  // Ties go to a model the person is running right now (e.g. in Ollama).
+  const need = w => (w.bf16_gb || w.size_gb) * 0.6, live = new Set(ENV.runtimes.flatMap(r => r.models.map(m => m.id)));
+  const fits = ENV.weights.filter(w => w.adaptable && !(w.safetensors && (family(w.id) || {}).pack) && (family(w.id) || {}).kind !== "closed" && need(w) <= budgetGB(h))
+    .sort((a, b) => (live.has(b.id) - live.has(a.id)) || (b.bf16_gb || b.size_gb) - (a.bf16_gb || a.size_gb));
   const adapt = fits[0];
-  const cur = CFG.reader && CFG.reader.chosen ? `<p class="why">当前使用：${CFG.reader.source === "download" ? "已下载的本地读者" : "你已有的 " + esc(CFG.reader.path)}</p>` : "";
+  const cur = CFG.reader && CFG.reader.chosen ? `<p class="why">当前使用：${CFG.reader.source === "download" ? "已下载的本地读者" : "你已有的 " + esc(CFG.reader.name || CFG.reader.path) + (CFG.reader.auto_adapted ? "（已自动适配）" : "")}</p>` : "";
   let html = "";
   if (have) {
     html = `<p>你的电脑上已经有 <b>${esc(have.id)}</b>，Nous 可以直接用它来读，<b>不需要下载</b>。</p>
       <p class="why">对网页、App 和 API 里的模型：用它做读者代理。如果你直接和 ${esc(have.id)} 对话（通过 Nous 网关），还能白盒读取，在它开口前预警。</p>
       <div class="btns"><button class="solid" id="use">用这个模型开始（只安装约 1 GB 运行组件）</button></div>`;
   } else if (adapt) {
-    html = `<p>你的电脑上已经有 <b>${esc(adapt.id)}</b>（${adapt.size_gb} GB）。Nous 可以<b>为它自动生成探针</b>，用它来读，<b>不需要下载</b>，也不需要任何标注。</p>
+    html = `<p>你的电脑上已经有 <b>${esc(adapt.id)}</b>（${adapt.size_gb} GB${adapt.gguf ? "，" + (adapt.source === "Ollama" ? "Ollama 里的" : "") + " GGUF 格式" : ""}）。Nous 可以<b>为它自动生成探针</b>，用它来读，<b>不需要下载</b>，也不需要任何标注。</p>
       <p class="why">自动适配：让你的模型读 900 段内置文本，学一个线性映射，把 Nous 的标准探针换算到你的模型上。大约 2–10 分钟。在 4 款开源模型上，敌意读数的效果不低于专门训练；附和与编造是实验性的。</p>
       <div class="btns"><button class="solid" id="adapt">用 ${esc(adapt.id)} 自动适配并开始</button>${h.local_reader_ok ? '<button class="line" id="dl">改为下载标准读者（8 GB）</button>' : ""}</div>`;
   } else if (h.local_reader_ok) {

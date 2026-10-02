@@ -1,4 +1,4 @@
-// Nous 知情助手 · background: the only place that talks to the local engine (127.0.0.1). Nothing goes anywhere else.
+// Nous 读心 · background: the only place that talks to the local engine (127.0.0.1). Nothing goes anywhere else.
 const ENGINE = "http://127.0.0.1:7869";
 
 async function read(messages, reply, source) {
@@ -36,7 +36,7 @@ chrome.runtime.onInstalled.addListener(() => {
 chrome.contextMenus.onClicked.addListener(async (info, tab) => {
   if (info.menuItemId !== "nous-check" || !tab?.id) return;
   let res = null, err = null;
-  try { res = await read([], info.selectionText || "", new URL(tab.url || "about:blank").hostname + "（右键）"); remember(new URL(tab.url || "about:blank").hostname, res); } catch (e) { err = "本地引擎未运行：请先启动 Nous 知情助手"; }
+  try { res = await read([], info.selectionText || "", new URL(tab.url || "about:blank").hostname + "（右键）"); remember(new URL(tab.url || "about:blank").hostname, res); } catch (e) { err = "本地引擎未运行：请先启动 Nous 读心"; }
   chrome.scripting.executeScript({ target: { tabId: tab.id }, func: toast, args: [res, err] });
 });
 
