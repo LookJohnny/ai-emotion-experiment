@@ -1,8 +1,20 @@
-# AI Emotion Experiment (E01)
+# AI Emotion Experiment → Nous
 
-中文情绪表达在大语言模型（Qwen3-4B-Instruct-2507）内部的定位、因果干预与实时读数。
+从“中文情绪在大模型内部如何表达”（E01，Qwen3-4B-Instruct-2507）出发，发展为 **Nous：AI 时代的人类知情权**。Nous 是独立于模型厂商的第三方监督层：读取模型内部状态（或用读者模型读它的输出），告诉人们 AI 是不是在贬低、附和或编造。
 
-> 状态：研究原型。所有情绪评分来自**盲评 LLM 评分者**（暂定），尚未经过人类评分验证。
+> 状态：研究原型和内部演示版。仓库在专利提交前保持私有。所有标签来自**盲评 LLM 评分者**，尚未做人工抽检。
+
+**当前进展（2026-10-02）**
+- **产品**：「Nous 知情助手」桌面版 0.3（`lens/`）。
+  - 首次打开先识别你在用哪些 AI，不默认下载任何东西。
+  - 电脑上已有的开源模型可以**自动适配**成读者，无需标注。
+  - 提供浏览器插件和桌面守护伙伴。
+  - 内部发布页：`lens-v0.3.0`。
+- **研究**：
+  - 读者模型能跨模型读出闭源 API 的回复：读 Kimi K3 时，敌意 0.973，附和 0.84。
+  - **无标注对齐迁移**：在 4 款不同家族的开源模型、3 个概念共 12 项比较中，全部不劣于原生重训。
+  - 编造检测受读者自身知识限制，结合目标模型 logprob 的方案在 Kimi K3 上达到 0.836。
+- **方案文档**：「Nous · AI 时代的人类知情权」（Claude 文档），内容包括使命、知情权三层、路线图、第三方中立承诺。
 
 **📄 最终报告：[`2026-09-28/EXPERIMENT_REPORT.md`](2026-09-28/EXPERIMENT_REPORT.md)**
 
@@ -23,7 +35,17 @@
 | `monitor/` | **冲突升级监测器**：V1（`EVAL_PREREG.md`、`MONITOR_REPORT.md`）、V1.1 去混淆重测（`v1_1/`）、幻觉预警 C3-H（`c3h/`） |
 | `monitor/server/` | 监控台：OpenAI 兼容代理 + SSE 风险事件；`/monitor` 统一监控屏（3D 通路 / 2D 热力图、虚拟形象、两档告警） |
 | `monitor/LLM_VIZ_SURVEY.md` | LLM 可视化与激活监测文献调研（43 篇，含对本产品的设计建议） |
-| `monitor/study/` · `study_site/` | 预注册用户研究（方案、刺激、回放、金标准、分析脚本）与部署到 study.nous.center 的静态站 |
+| `monitor/study/` · `study_site/` | 预注册用户研究（方案、刺激、回放、金标准、分析脚本）与部署到 study.nous.center 的静态站；`study_site/index.html` 为 nous.center 官网（已删除机制细节，noindex） |
+| `monitor/reader/` | 读者模型实验：本地 Qwen3-4B 读 Kimi K3（闭源 API）的回复（`READER_PREREG.md`、`REPORT_READER.md`） |
+| `monitor/API_MONITORING_RESEARCH.md` | 能否监测闭源 API 模型：调研结论与分层方案 |
+
+**其他目录**
+
+| 路径 | 内容 |
+|---|---|
+| `2026-10-02/` | 谄媚探针、编造 v2、通用探针（自动适配）三项预注册研究：`PREREG_*.md`、`REPORT_SYCO.md`、`REPORT_FAB2.md`、`REPORT_TRANSFER.md` |
+| `lens/` | **Nous 知情助手**：本地读取引擎（`nous_lens/`，含自动适配 `adapt.py`、模型登记表 `models.json`）、Chrome 插件（`extension/`）、Tauri 桌面应用（`desktop/`）、校验记录 `VERIFY.md` |
+| `nous/` | Nous 引擎、监控网关和陪伴引擎（OpenAI 兼容代理、WebSocket SDK、控制台），对应早期 B 端方向 |
 
 ## 主要结果（截至 2026-09-28）
 
@@ -92,14 +114,62 @@
 ### 用户研究（进行中）
 预注册 `monitor/study/STUDY_PLAN.md`：被试内 3 条件（纯文本 / +2D / +3D），27 人，24 道预录回放题（16 真报警 + 8 误报，来自 V1.1 封存测试），任务=判断报警真假 + 标出触发片段 + 信心；主指标判断准确率（混合效应 logistic），报告信任校准。分析脚本在收数据前提交。任务页已部署：**https://study.nous.center**（Vercel 静态站 + 私有 Blob 存储，国内直连可访问）。
 
+### 读者模型：监测闭源 API（2026-09-30，Kimi K3）
+预注册 `monitor/reader/READER_PREREG.md`，报告 `REPORT_READER.md`。闭源模型的内部看不到，所以用本地 Qwen3-4B 把 Kimi K3 的回复读一遍，用冻结探针给出读数。
+- **敌意**：AUROC **0.973** ✅，明显高于 Kimi 自身 logprob（0.78）。比文本分类器高 +0.06（严格规则下不确定）。
+- **幻觉**：0.737（不确定）。读者自己知道答案的题上是 0.87，不知道的只有 0.61，**瓶颈是读者自身的知识**。
+- **闭源模型无法提前预警**：只看提示词时，在敌意历史子集上仅 0.57。
+
+## 2026-10-02 研究：谄媚、编造 v2、通用探针
+
+**谄媚（附和）**，`2026-10-02/REPORT_SYCO.md`
+- 设计：用 Qwen 本来答对的 520 道题，构造三种提问：W（用户直接给错误答案）、P（模型先答对，用户再坚持说错）、C（用户给正确答案，作对照）。
+- Qwen3-4B 谄媚率约 30%，Kimi 约 5%。
+
+| 门槛 | 结果 | 判定 |
+|---|---|---|
+| S1 自读 | 0.833 | ❌ |
+| S2 比文本分类器高 | **+0.117** | ✅ |
+| S3 同样表示同意时，区分附和的是对还是错 | 0.769 | 不确定 |
+| S4 读 Kimi | **0.836**（文本分类器 0.48） | 不确定 |
+
+**编造 v2**，`REPORT_FAB2.md`
+- 换更大的读者不成立：Qwen3-8B 对中文事实知道得反而更少，正确率 36%，4B-2507 是 49%。
+- 读者探针加 Kimi 自身 logprob 的组合，在新封存集上达到 **0.836**（不确定）。
+
+**通用探针 / 自动适配**，`PREREG_TRANSFER.md` → `REPORT_TRANSFER.md`（RTX 5090）
+
+做法：新模型和参照模型读同一批**无标注**文本，学一个线性映射，再沿用参照模型的冻结探针。
+
+| 模型 | 敌意（对齐 / 原生重训） | 附和 | 编造 |
+|---|---|---|---|
+| Qwen3-8B | 0.925 / 0.933 | **0.828** / 0.776 | 0.821 / 0.805 |
+| Llama-3.1-8B | **0.933** / 0.924 | **0.795** / 0.753 | 0.756 / 0.731 |
+| DeepSeek-R1-Distill-Qwen-7B | 0.923 / 0.927 | **0.832** / 0.768 | 0.748 / 0.731 |
+| GLM-4-9B-0414 | 0.936 / 0.941 | **0.831** / 0.768 | 0.807 / 0.793 |
+
+- 12 项比较全部不劣于原生重训（U1 ✅）。附和一项，对齐迁移在所有模型上都显著更好。
+- 绝对门槛（U2）：敌意 4/4，编造 3/4，附和 0/4 确定通过。
+- 每个概念只用 300 条锚点也够用。在这台 Mac 上实测：Llama-3.2-1B 适配用时 1.5 分钟，敌意 0.908；Qwen3-1.7B 敌意 0.917、附和 0.80。
+
 ## 下一步
 
-- ~~强愤怒神经元的因果消融~~（已完成，阴性）→ 在 L12–27 训练**稀疏自编码器**，在“特征”层面做因果检验；对照分布式方向（B4）与注意力头集合（B3）。
-- 接入 SoulForge `/live`；评估“好坏参半”与情绪中途转折的对话；与专利代理人确认检索，**提交前保持仓库私有**。
-- 注意力头集合（B3）作为 §5 主对象：验证集选 λ → 冻结 → 打开测试集。
-- 任务难易度需要专门的同类型、不同难度题目才能检验（本次普查的任务类别混杂了内容与形式）。
-- 监测器：人工 κ 抽检（V1 `monitor/data/human_check_100.csv`、V1.1 `monitor/v1_1/human_check_v11.csv`）；第二个模型复现；用户研究招募 27 人并运行 `study/analyze.py`。
-- 商业化：见 `BUSINESS_PLAN`（陪伴硬件情绪+安全引擎优先，私有化部署监控网关其次）。
+- **知情助手**：
+  - Ollama（GGUF）模型的自动适配；
+  - 云端读者（需要服务器预算）；
+  - 接入 Nous 网关，在企业 API 调用链路上实时读数；
+  - 在已登录的真实网页（ChatGPT、Kimi、豆包）上校验插件；
+  - Windows 版实测。
+- **研究**：
+  - 附和信号的强化（S3 只有 0.77）；
+  - 编造的检索核对路线；
+  - 10B 以上模型和"开口前预警"探针的跨模型迁移；
+  - 人工 κ 抽检：V1 `monitor/data/human_check_100.csv`，V1.1 `monitor/v1_1/human_check_v11.csv`。
+- **第三方定位**：
+  - 公开评级（AI 产品知情权评级）的方法预注册；
+  - 研究站 study.nous.center 是否加访问码，需要在专利提交前决定。
+- **用户研究**：招募 27 人，然后运行 `study/analyze.py`。
+- **E01 遗留**：稀疏自编码器特征层面的因果检验。
 
 ## 运行读数原型
 
@@ -111,14 +181,21 @@ python product/readout_server.py MODEL OUT/probe_L19.npz --port 6006   # 打开 
 环境：PyTorch 2.8 + CUDA 12.8，transformers 4.57，单张 RTX 5090（峰值显存约 8–12 GiB）。
 测试集（工作协作、兴趣活动）仍处于封存状态，尚未用于任何定位或调参。
 
-## Product: Nous (`nous/`)
+## 产品
 
-The research is packaged as a deployable product (2026-09-30). There is one shared engine, and it serves two products:
-- **Monitoring gateway**: an OpenAI-compatible proxy that adds `x_risk` readouts to responses. It has two-tier alerts, an audit log and a white-box console. It also has a reader mode for closed APIs.
-- **Companion engine**: a WebSocket SDK for toys and robots. It sends the expression before the first token, releases the reply sentence by sentence, blocks and rewrites hostile replies before they are spoken, and alerts parents through a care channel.
+**Nous 知情助手（`lens/`，当前方向）**
+- **识别**：通过模型登记表（30 多个模型系列，覆盖本机推理服务、本机权重、网站和 API）判断你在用什么。
+- **能力分级**：
+  - 有探针包的模型：白盒读取；
+  - 本机任意 HuggingFace 格式的开源模型：**自动适配**（`python -m nous_lens.adapt`，约 1–10 分钟）；
+  - 闭源 API：读者代理，接口提供 logprob 时一并利用。
+- **桌面应用**（Tauri）：菜单栏常驻、守护伙伴悬浮窗、首次识别向导、引擎生命周期管理、复制内容检查。
+- **浏览器插件**：在 ChatGPT、Kimi、豆包页面上标出风险回复，其他网站可选中文字后右键检查。
+- 对话只在本机读取。校验记录见 `lens/VERIFY.md`，使用说明见 `lens/README.md`。
 
-See `nous/README.md`. Tests:
-- `tests/test_units.py`: 7 CPU unit tests.
-- `tests/test_gpu.py`: 7 end-to-end tests on an RTX 4090. They include a check that the research scores are reproduced within 2e-3.
+**Nous 网关与陪伴引擎（`nous/`，早期 B 端方向）**
+- OpenAI 兼容代理：每个片段附带 `x_risk` 读数，两档告警，审计日志，白盒控制台，支持闭源 API 的读者模式。
+- 陪伴 WebSocket SDK：开口前给出表情，分句放行，不当内容拦截后改写，家长端提醒。
+- 测试：CPU 单元测试 7 项，RTX 4090 上端到端测试 7 项（复现研究分数，误差 < 2e-3）。
 
-The website is nous.center. Its source is `2026-09-28/monitor/study_site/index.html`, and the user study stays at study.nous.center.
+**官网**：nous.center（`2026-09-28/monitor/study_site/index.html`，只讲效果、不讲机制）；用户研究站：study.nous.center。
