@@ -1,0 +1,1202 @@
+[
+{
+"item_id": "E0400",
+"question": "磷灰石的摩氏硬度是多少？",
+"gold_answer": "5",
+"model_answer": "磷灰石的摩氏硬度是5。"
+},
+{
+"item_id": "E0401",
+"question": "花式滑冰最早是在哪一年成为奥林匹克运动会的正式比赛项目？",
+"gold_answer": "1908",
+"model_answer": "花式滑冰最早于1908年成为奥林匹克运动会的正式比赛项目。"
+},
+{
+"item_id": "E0402",
+"question": "台湾的共享电动车品牌Gokube Inc.在哪一年成立？",
+"gold_answer": "2018年",
+"model_answer": "台湾的共享电动车品牌Gokube Inc.成立于2017年。"
+},
+{
+"item_id": "E0403",
+"question": "电视节目《一槌定音》自哪一年开始在中国中央电视台财经频道播出？",
+"gold_answer": "2011",
+"model_answer": "电视节目《一槌定音》自2007年开始在中国中央电视台财经频道播出。"
+},
+{
+"item_id": "E0404",
+"question": "达西–威斯巴哈摩擦因子与范宁摩擦系数相比是几个倍数的关系？",
+"gold_answer": "4",
+"model_answer": "达西–威斯巴哈摩擦因子（Darcy–Weisbach friction factor）与范宁摩擦系数（Fanning friction factor）之间的关系是：**达西–威斯巴哈摩擦因子是范宁摩擦系数的4倍**。即：\n\n$$ f_{\\text{Darcy"
+},
+{
+"item_id": "E0405",
+"question": "水排是在哪个朝代由杜诗发明的？",
+"gold_answer": "东汉",
+"model_answer": "水排是在东汉时期由杜诗发明的。"
+},
+{
+"item_id": "E0406",
+"question": "《南圻六省地舆志》的刊印时间是哪一年？",
+"gold_answer": "1872年",
+"model_answer": "《南圻六省地舆志》的刊印时间是1903年。"
+},
+{
+"item_id": "E0407",
+"question": "知名画家乔瓦尼·塞冈蒂尼出生于哪个国家？",
+"gold_answer": "奥地利帝国",
+"model_answer": "乔瓦尼·塞冈蒂尼（Giovanni Segantini）出生于意大利。"
+},
+{
+"item_id": "E0408",
+"question": "头孢孟多酯是属于哪一类抗生素？",
+"gold_answer": "头孢菌素",
+"model_answer": "头孢孟多酯属于**第一代头孢菌素类抗生素**。"
+},
+{
+"item_id": "E0409",
+"question": "被子植物的雄性生殖器被称为什么？",
+"gold_answer": "雄花器（androecium）",
+"model_answer": "被子植物的雄性生殖器被称为**花药**。花药是花的雄蕊的一部分，内含花粉粒，是植物进行有性生殖的器官。"
+},
+{
+"item_id": "E0410",
+"question": "苏格兰长老会差会首次向中国派遣传教士的年份是什么？",
+"gold_answer": "1864",
+"model_answer": "苏格兰长老会差会首次向中国派遣传教士的年份是1832年。"
+},
+{
+"item_id": "E0411",
+"question": "曹炳章在哪一部著作中表示进行舌诊时应将舌质和舌苔辨证结合，一般情况下二者反映病变是一致的，但也有不一致现象出现？",
+"gold_answer": "《辨舌指南》",
+"model_answer": "曹炳章在《中医诊断学》中表示进行舌诊时应将舌质和舌苔辨证结合，一般情况下二者反映病变是一致的，但也有不一致现象出现。"
+},
+{
+"item_id": "E0412",
+"question": "哪位科学史家与分子生物学家以著作《创世纪的第八天：20世纪分子生物学革命》而知名，并曾任教于约翰斯·霍普金斯大学和史丹佛大学？",
+"gold_answer": "霍勒斯·贾德森（Horace Freeland Judson）",
+"model_answer": "这位科学史家与分子生物学家是杰里米·伯恩斯坦（Jeremy Bernstein）。他以著作《创世纪的第八天：20世纪分子生物学革命》而知名，并曾执教于约翰斯·霍普金斯大学和史丹佛大学。"
+},
+{
+"item_id": "E0413",
+"question": "中国信贷控股有限公司是在哪一年在港交所创业板上市的？",
+"gold_answer": "2010",
+"model_answer": "中国信贷控股有限公司于2011年在港交所创业板上市。"
+},
+{
+"item_id": "E0414",
+"question": "中国历史上被誉为最早的临床医学百科全书的中医书籍是哪部？",
+"gold_answer": "《备急千金要方》（《千金方》）",
+"model_answer": "《黄帝内经》"
+},
+{
+"item_id": "E0415",
+"question": "韩赵魏三家瓜分晋侯剩余土地，晋国彻底灭亡是在哪一年？",
+"gold_answer": "公元前376年",
+"model_answer": "晋国彻底灭亡是在公元前403年。这一年，韩、赵、魏三家正式被周王室承认为诸侯，标志着晋国的正式灭亡。"
+},
+{
+"item_id": "E0416",
+"question": "衍生集团（国际）控股有限公司于何年在香港交易所主板上市？",
+"gold_answer": "2014",
+"model_answer": "衍生集团（国际）控股有限公司于2006年在香港交易所主板上市。"
+},
+{
+"item_id": "E0417",
+"question": "公共核心助推器（CCB）使用的液氧煤油发动机型号是什么？",
+"gold_answer": "RD-180",
+"model_answer": "公共核心助推器（CCB）使用的液氧煤油发动机型号是**BE-4**。"
+},
+{
+"item_id": "E0418",
+"question": "2010年三峡工程水库试验性蓄水首次多少米的最终水位?",
+"gold_answer": "175",
+"model_answer": "2010年三峡工程水库试验性蓄水首次达到175米的最终水位。"
+},
+{
+"item_id": "E0419",
+"question": "米底巴位于哪个国家?",
+"gold_answer": "约旦",
+"model_answer": "米底巴（Mizda）位于叙利亚。它是一个位于叙利亚中部的城市，靠近霍姆斯省。"
+},
+{
+"item_id": "E0420",
+"question": "根据国际电工委员会（IEC）的标准，低压电的交流电电压范围是什么？",
+"gold_answer": "50–1000Vrms",
+"model_answer": "根据国际电工委员会（IEC）的标准，低压交流电的电压范围通常定义为 **1000 V 及以下**。"
+},
+{
+"item_id": "E0421",
+"question": "凯撒（中国）股份有限公司是哪一天在深交所中小板上市的？",
+"gold_answer": "2010年6月28日",
+"model_answer": "凯撒（中国）股份有限公司于2010年12月23日在深圳证券交易所中小板上市。"
+},
+{
+"item_id": "E0422",
+"question": "梭罗树属属于哪个植物目?",
+"gold_answer": "锦葵目",
+"model_answer": "梭罗树属（学名：*Schefflera*）属于**五加科**（Araliaceae）。"
+},
+{
+"item_id": "E0423",
+"question": "动画《蜡笔小新》是根据哪位作者的同名漫画改编的？",
+"gold_answer": "臼井仪人",
+"model_answer": "动画《蜡笔小新》是根据日本漫画家臼井仪人（臼井 儀人）的同名漫画改编的。"
+},
+{
+"item_id": "E0424",
+"question": "BCG矩阵是由谁为波士顿咨询公司设计的？",
+"gold_answer": "Bruce Henderson",
+"model_answer": "BCG矩阵是由波士顿咨询公司（Boston Consulting Group）的安德鲁·斯莱扎克（Andrew Schlesinger）和布鲁斯·亨德森（Bruce Henderson）设计的。"
+},
+{
+"item_id": "E0425",
+"question": "花岗岩主要矿物为石英、钾长石和什么？",
+"gold_answer": "斜长石",
+"model_answer": "花岗岩主要矿物为石英、钾长石和斜长石。"
+},
+{
+"item_id": "E0426",
+"question": "2013年3月9日布卡武Mi-8直升机坠毁事件中有多少机组人员丧生？",
+"gold_answer": "4",
+"model_answer": "2013年3月9日，刚果（金）布卡武的Mi-8直升机坠毁事件中，共有**12名机组人员丧生**。"
+},
+{
+"item_id": "E0427",
+"question": "佛光山佛陀纪念馆位于台湾哪个市？",
+"gold_answer": "高雄市",
+"model_answer": "佛光山佛陀纪念馆位于台湾高雄市。"
+},
+{
+"item_id": "E0428",
+"question": "2011年接手经营中科生物控股有限公司并作为其首席执行官的是谁？",
+"gold_answer": "吴哲彦",
+"model_answer": "2011年接手经营中科生物控股有限公司并担任首席执行官的是**李振国**。"
+},
+{
+"item_id": "E0429",
+"question": "V带中哪种型号的断面尺寸最小？",
+"gold_answer": "Y型",
+"model_answer": "V带中断面尺寸最小的型号是 **Y型**。"
+},
+{
+"item_id": "E0430",
+"question": "意识形态一词最早是由哪位人物在1796年提出的？",
+"gold_answer": "安托万·德斯蒂·德·特拉西",
+"model_answer": "意识形态一词最早是由法国哲学家**德尼·狄德罗**（Denis Diderot）在1796年提出的。"
+},
+{
+"item_id": "E0431",
+"question": "《永不放弃你》这首歌的演唱者是谁？",
+"gold_answer": "理查德·艾斯利（Rick Astley）",
+"model_answer": "《永不放弃你》的演唱者是张学友。"
+},
+{
+"item_id": "E0432",
+"question": "在洛迦诺电影节中，被国际电影制片人协会认可的最高荣誉奖项是什么？",
+"gold_answer": "金豹奖",
+"model_answer": "在洛迦诺电影节中，被国际电影制片人协会（FIAPF）认可的最高荣誉奖项是“金豹奖”（Prix de l'Ours d'Or）。"
+},
+{
+"item_id": "E0433",
+"question": "《重庆晚报》是由哪个报业集团创立的？",
+"gold_answer": "重庆日报报业集团",
+"model_answer": "《重庆晚报》是由重庆日报报业集团创立的。"
+},
+{
+"item_id": "E0434",
+"question": "吴刚伐桂神话中吴刚是因为杀了谁而惹怒了炎帝？",
+"gold_answer": "伯陵",
+"model_answer": "吴刚伐桂的神话中，并没有明确记载他因杀了某人而惹怒炎帝。这个故事主要源于中国古代神话，其中吴刚因犯错被罚在月宫中永无止境地砍伐桂树。关于他惹怒炎帝的具体原因，不同传说版本有所不同"
+},
+{
+"item_id": "E0435",
+"question": "秋谷裕幸于哪一年获得李方桂语言学论著特优奖？",
+"gold_answer": "2008年",
+"model_answer": "秋谷裕幸于1994年获得李方桂语言学论著特优奖。"
+},
+{
+"item_id": "E0436",
+"question": "丹麦激进自由党（Radical Liberal Party）是哪一年成立的？",
+"gold_answer": "1905",
+"model_answer": "丹麦激进自由党（Radical Liberal Party，简称V）成立于1905年。"
+},
+{
+"item_id": "E0437",
+"question": "谁是绞碎机的发明者并于1927年提出了这个概念？",
+"gold_answer": "John W. Hammes",
+"model_answer": "绞碎机的发明者是**弗里茨·哈伯**（Fritz Haber），他在1927年提出了这一概念。"
+},
+{
+"item_id": "E0438",
+"question": "在句子中决定谓语动词形态并达成语法一致的句法成分是什么？",
+"gold_answer": "主语",
+"model_answer": "在句子中决定谓语动词形态并达成语法一致的句法成分是**主语**。主语决定了动词的时态、人称和数等形态变化，以实现语法一致。"
+},
+{
+"item_id": "E0439",
+"question": "中国国家京剧院的首任院长是谁？",
+"gold_answer": "梅兰芳",
+"model_answer": "中国国家京剧院的首任院长是梅兰芳。"
+},
+{
+"item_id": "E0440",
+"question": "“不善学者，师勤而功半，又从而怨之”出自哪本书籍？",
+"gold_answer": "《礼记·学记》",
+"model_answer": "这句话出自《荀子·劝学》。"
+},
+{
+"item_id": "E0441",
+"question": "RETScreen Expert软件最新版本是哪一天发布的？",
+"gold_answer": "2016年9月19日",
+"model_answer": "截至2024年10月，RETScreen Expert的最新版本是**RETScreen Expert 4.0.1**，发布日期为**2024年4月10日**。"
+},
+{
+"item_id": "E0442",
+"question": "大同乐会是哪一年在上海成立的？",
+"gold_answer": "1920",
+"model_answer": "大同乐会是1920年在上海成立的。"
+},
+{
+"item_id": "E0443",
+"question": "中国漫画《魔王条约》最初是在哪一年首次推出？",
+"gold_answer": "2011",
+"model_answer": "《魔王条约》（日文原名：魔王の契約）是由日本漫画家大岛弓子创作的漫画作品，最初于2006年在《周刊少年Jump》上连载。因此，它首次推出的时间是**2006年**。"
+},
+{
+"item_id": "E0444",
+"question": "书目数据库是存储某个领域的什么数据的一类数据库？",
+"gold_answer": "二次文献",
+"model_answer": "书目数据库是存储某个领域**文献信息**的一类数据库，主要包括书籍、期刊、论文等文献的标题、作者、出版信息、摘要等内容。"
+},
+{
+"item_id": "E0445",
+"question": "吉尔吉人在哪一年被阿卜达里族击败？",
+"gold_answer": "1747",
+"model_answer": "吉尔吉人（Ghilji）在16世纪被阿卜达里族（Abdali）击败，具体年份是**1524年**。这场战役是莫卧儿帝国扩张过程中的重要事件，由巴布尔领导的莫卧儿军队击败了吉尔"
+},
+{
+"item_id": "E0446",
+"question": "哪一所大学是卡西姆·艾敏参与创办的？",
+"gold_answer": "开罗大学",
+"model_answer": "卡西姆·艾敏（Kasim Amin）参与创办了埃及的开罗美国大学（American University in Cairo, AUC）。"
+},
+{
+"item_id": "E0447",
+"question": "邸报在中国历史上最早出现于哪个朝代？",
+"gold_answer": "汉代",
+"model_answer": "邸报在中国历史上最早出现于汉代。"
+},
+{
+"item_id": "E0448",
+"question": "香港的有线天气台于哪一年停播?",
+"gold_answer": "2019",
+"model_answer": "香港的有线天气台于2023年12月1日停播。"
+},
+{
+"item_id": "E0449",
+"question": "温州大桥是哪一年通车的？",
+"gold_answer": "1998年",
+"model_answer": "温州大桥于2003年9月28日通车。"
+},
+{
+"item_id": "E0450",
+"question": "1984年被引入用于全球定位和地理信息系统的大地测量系统是什么？",
+"gold_answer": "WGS84",
+"model_answer": "1984年被引入用于全球定位和地理信息系统的大地测量系统是**WGS84**（World Geodetic System 1984）。"
+},
+{
+"item_id": "E0451",
+"question": "池坊家元在1462年与插花的关连首次被记载在哪部文献中？",
+"gold_answer": "碧山日录",
+"model_answer": "池坊家元在1462年与插花的关连首次被记载于《池坊家元記》（いけばやし けんのき）中。"
+},
+{
+"item_id": "E0452",
+"question": "被称为运动心理学之父的学者是谁？",
+"gold_answer": "格里菲思（Coleman Roberts Griffith）",
+"model_answer": "被称为“运动心理学之父”的学者是**库尔特·勒温（Kurt Lewin）**。他是一位德国心理学家，对群体动力学和应用心理学领域有重要贡献，尤其在运动心理学的发展中起到了奠基作用。"
+},
+{
+"item_id": "E0453",
+"question": "TALOS项目中首次提出这种防护服构想的美军指挥官是谁？",
+"gold_answer": "威廉·麦克雷文 (William Harry McRaven) 将军",
+"model_answer": "TALOS（ Tactical Assault Light Operator Suit ）项目中首次提出这种防护服构想的美军指挥官是**詹姆斯·卡特·“吉姆”·斯通（James Carter \"Jim\" Stone）**。他当时是美国海军陆战队的高级军官，并在2010"
+},
+{
+"item_id": "E0454",
+"question": "莱佛士医疗集团在新加坡交易所主板上市的日期是哪一天？",
+"gold_answer": "2000年7月10日",
+"model_answer": "莱佛士医疗集团（Raffles Medical Group）在新加坡交易所主板上市的日期是**2005年11月18日**。"
+},
+{
+"item_id": "E0455",
+"question": "中华人民共和国指挥家曹炳范于哪一年调入中央广播交响乐团任副首席？",
+"gold_answer": "1958",
+"model_answer": "曹炳范于1956年调入中央广播交响乐团任副首席。"
+},
+{
+"item_id": "E0456",
+"question": "Burberry 品牌的创始人是谁？",
+"gold_answer": "托马斯·博柏利（Thomas Burberry）",
+"model_answer": "Burberry 品牌的创始人是 **Thomas Burberry**。他于1856年在英国创立了这个品牌。"
+},
+{
+"item_id": "E0457",
+"question": "被视为大规模人口减少计划的引导的碑文是在美国的那一组石碑群？",
+"gold_answer": "佐治亚引导石（The Georgia Guidestones）",
+"model_answer": "您提到的“被视为大规模人口减少计划的引导的碑文”可能是指美国的“纪念碑”（Monument），但这一表述并不准确或常见。如果您指的是与美国历史上的某些事件相关的石碑群，例如与印第安人迁移或屠杀相关的纪念碑，可能是指“纪念碑”"
+},
+{
+"item_id": "E0458",
+"question": "国际旅馆金钥匙协会的正式成立是在哪一年？",
+"gold_answer": "1972",
+"model_answer": "国际旅馆金钥匙协会（International Association of Gold Key, IAGK）的正式成立是在**1954年**。"
+},
+{
+"item_id": "E0459",
+"question": "碘他拉酸的ATC代码是什么？",
+"gold_answer": "V08AA04",
+"model_answer": "碘他拉酸的ATC代码是 **V04AX01**。"
+},
+{
+"item_id": "E0460",
+"question": "先行组织者概念是哪位美国教育心理学家提出的？",
+"gold_answer": "大卫·奥苏伯尔（David Ausubel）",
+"model_answer": "先行组织者概念是由美国教育心理学家**大卫·艾克尔斯**（David Ausubel）提出的。"
+},
+{
+"item_id": "E0461",
+"question": "盲人摸象的故事起源于哪个国家？",
+"gold_answer": "印度",
+"model_answer": "盲人摸象的故事起源于印度。"
+},
+{
+"item_id": "E0462",
+"question": "《ultra soul》这首歌曲是哪一年成为Oricon连续两周第一名的单曲？",
+"gold_answer": "2001",
+"model_answer": "《Ultra Soul》于2018年成为Oricon连续两周第一名的单曲。"
+},
+{
+"item_id": "E0463",
+"question": "哪一年在上海梅赛德斯-奔驰文化中心举办了维多利亚的秘密时尚秀？",
+"gold_answer": "2017",
+"model_answer": "维多利亚的秘密时尚秀在上海梅赛德斯-奔驰文化中心举办的年份是2016年。"
+},
+{
+"item_id": "E0464",
+"question": "《无机化学丛书》第八卷的作者是谁？",
+"gold_answer": "罗裕基",
+"model_answer": "《无机化学丛书》第八卷的作者是张青莲。"
+},
+{
+"item_id": "E0465",
+"question": "中国第一部汉译佛经是哪部佛经？",
+"gold_answer": "《四十二章经》",
+"model_answer": "中国第一部汉译佛经是《四十二章经》。它相传为东汉时期安世高所译，是佛教传入中国后最早翻译的佛经之一。"
+},
+{
+"item_id": "E0466",
+"question": "Dropbear的开发者是谁？",
+"gold_answer": "马特·约翰斯顿 (Matt Johnston)",
+"model_answer": "Dropbear 的开发者是 Matt Johnston。"
+},
+{
+"item_id": "E0467",
+"question": "珠海泽蛭的模式产地是哪里？",
+"gold_answer": "广东珠海",
+"model_answer": "珠海泽蛭的模式产地是广东珠海。"
+},
+{
+"item_id": "E0468",
+"question": "哪个型号的锂电池的容量可以达到1200mAh，相当于碳性电池的五倍，碱性电池的三倍左右？",
+"gold_answer": "9V锂电池",
+"model_answer": "常见的锂电池型号中，如 **CR2032** 或 **CR2450** 等纽扣电池的容量通常在 200mAh 左右，无法达到 1200mAh。而 **1200mAh 的锂电池** 通常指的是 **锂"
+},
+{
+"item_id": "E0469",
+"question": "漫威漫画中的梅杜莎是谁的妻子？",
+"gold_answer": "黑蝠王",
+"model_answer": "梅杜莎在漫威漫画中的丈夫是**基尔萨克**（Kilak）。他们是一对夫妻，基尔萨克是冥界之神，而梅杜莎是冥界女王。"
+},
+{
+"item_id": "E0470",
+"question": "本韦努托·切利尼创作的唯一幸存黄金作品收藏于哪个博物馆？",
+"gold_answer": "维也纳艺术史博物馆",
+"model_answer": "本韦努托·切利尼创作的唯一幸存黄金作品《珀耳修斯与美杜莎头颅》收藏于意大利佛罗伦萨的**乌菲齐美术馆**（Uffizi Gallery）。"
+},
+{
+"item_id": "E0471",
+"question": "《九命奇冤》是由哪位作者所著？",
+"gold_answer": "吴沃尧",
+"model_answer": "《九命奇冤》是由清代作家吴沃尧所著。"
+},
+{
+"item_id": "E0472",
+"question": "位于香港的建造业议会属于什么类型的机构？",
+"gold_answer": "法定机构",
+"model_answer": "位于香港的建造业议会属于**法定机构**，它是香港特别行政区政府的附属机构，负责监管和提升香港建造业的专业水平、安全及环保标准。"
+},
+{
+"item_id": "E0473",
+"question": "日本动画师山内则康出生于哪一年？",
+"gold_answer": "1959年",
+"model_answer": "山内则康出生于1964年。"
+},
+{
+"item_id": "E0474",
+"question": "思科认证互联网专家（CCIE）认证中第一个拥有CCIE认证资格的人是谁？",
+"gold_answer": "Stuart Biggs",
+"model_answer": "思科认证互联网专家（CCIE）认证中第一个拥有CCIE认证资格的人是 **William R. \"Bill\" Stallings**。他于1993年获得了第一个CCIE认证。"
+},
+{
+"item_id": "E0475",
+"question": "香港岛自明神宗万历元年（1573年）起，一直到清道光二﻿十一年（1841年）为止，该地区一直属广州府下的哪一个县管辖？",
+"gold_answer": "新安县",
+"model_answer": "香港岛在明神宗万历元年（1573年）至清道光二十一年（1841年）期间，一直属于广州府新安县管辖。"
+},
+{
+"item_id": "E0476",
+"question": "《大量订制——企业竞争的新前沿》一书的作者是谁？",
+"gold_answer": "B·约瑟夫·派恩二世（B. Joseph PineII）",
+"model_answer": "《大量订制——企业竞争的新前沿》一书的作者是**迈克尔·波特**（Michael E. Porter）。"
+},
+{
+"item_id": "E0477",
+"question": "联合国危险货物编号系统中，液体丙烯酰胺的编号是多少？",
+"gold_answer": "UN2074",
+"model_answer": "液体丙烯酰胺的联合国危险货物编号（UN Number）是 **UN 2052**。"
+},
+{
+"item_id": "E0478",
+"question": "广州塔塔身主体高多少米？",
+"gold_answer": "454",
+"model_answer": "广州塔塔身主体高度为432米。"
+},
+{
+"item_id": "E0479",
+"question": "现代意义的“开放空间”一词最早是由哪一年的《大都市开敞空间法》定义的？",
+"gold_answer": "1877年",
+"model_answer": "现代意义的“开放空间”一词最早是由1848年的《大都市开敞空间法》（Metropolitan Open Spaces Act）定义的。"
+},
+{
+"item_id": "E0480",
+"question": "谁是北后寺泥塑大佛的原始雕塑师？",
+"gold_answer": "陈禄官",
+"model_answer": "北后寺泥塑大佛的原始雕塑师是**释迦牟尼佛**。北后寺位于中国山西省晋中市平遥县，是佛教文化的重要遗址之一，其泥塑大佛是该寺的重要文物，具有较高的艺术和宗教价值。"
+},
+{
+"item_id": "E0481",
+"question": "甲烷氧化菌在氧化甲烷的过程中首先将甲烷转化为什么化学物质？",
+"gold_answer": "甲醇",
+"model_answer": "甲烷氧化菌在氧化甲烷的过程中，首先将甲烷转化为**甲醇**（CH₃OH）。"
+},
+{
+"item_id": "E0482",
+"question": "叙利亚公民防卫组织（白头盔）的创始人是谁？",
+"gold_answer": "詹姆斯·勒·梅西耶尔（James Le Mesurier）",
+"model_answer": "叙利亚公民防卫组织（白头盔）的创始人是詹姆斯·勒·梅西耶尔（James Le Mesurier）。他是一名英国记者和前英国陆军军官，于2013年在叙利亚内战期间创立了该组织。"
+},
+{
+"item_id": "E0483",
+"question": "提出'Altruisme'这个术语的哲学家是谁？",
+"gold_answer": "奥古斯特·孔德",
+"model_answer": "“Altruisme”（利他主义）这一术语是由法国哲学家奥古斯特·孔德（Auguste Comte）提出的。他于19世纪在实证主义哲学中使用这一概念，用来描述一种超越个人利益、以他人福祉为重的行为倾向。"
+},
+{
+"item_id": "E0484",
+"question": "《卡罗琳·霍华德夫人》这幅油画是哪位艺术家的作品？",
+"gold_answer": "约书亚·雷诺兹（Sir Joshua Reynolds）",
+"model_answer": "《卡罗琳·霍华德夫人》（Lady Caroline Howard）是英国画家安东尼·范戴克（Anthony van Dyck）的作品。这幅画创作于1620年左右，现藏于英国伦敦的国家美术馆。"
+},
+{
+"item_id": "E0485",
+"question": "2018年12月，教育部办公厅关于公布哪个学院为书法中华优秀传统文化传承基地？",
+"gold_answer": "绍兴文理学院",
+"model_answer": "2018年12月，教育部办公厅公布了**清华大学**的书法学院为“中华优秀传统文化传承基地”。"
+},
+{
+"item_id": "E0486",
+"question": "斯克维尔派哈西迪犹太教教派的创始人是谁？",
+"gold_answer": "以撒·特维尔斯基（Yitzchak Twersky）",
+"model_answer": "斯克维尔派哈西迪犹太教教派的创始人是**梅尔赫·伊本·伊萨克·斯克维尔**（Mehar HaKohen of Skver），通常被称为**斯克维尔的梅尔赫**（Mehar HaKohen of Skver）。"
+},
+{
+"item_id": "E0487",
+"question": "香港特别行政区政府的政府统计处是哪一年正式成立的？",
+"gold_answer": "1967",
+"model_answer": "香港特别行政区政府的政府统计处于1997年7月1日正式成立。"
+},
+{
+"item_id": "E0488",
+"question": "2021年连香树被列为国家几级重点保护野生植物种？",
+"gold_answer": "二级",
+"model_answer": "2021年，连香树被列为国家一级重点保护野生植物。"
+},
+{
+"item_id": "E0489",
+"question": "胡萝卜最早是在哪个世纪被摩尔人引入到西班牙？",
+"gold_answer": "8世纪",
+"model_answer": "胡萝卜最早是在10世纪被摩尔人引入到西班牙。"
+},
+{
+"item_id": "E0490",
+"question": "PivotX 是使用什么编程语言编写的内容管理系统？",
+"gold_answer": "PHP",
+"model_answer": "PivotX 是使用 PHP 编写的内容管理系统。"
+},
+{
+"item_id": "E0491",
+"question": "JP塔2015年获得第56届什么奖项？",
+"gold_answer": "BCS（建筑承包商协会）奖",
+"model_answer": "JP塔在2015年获得了第56届日本建筑学会赏（日本建築学会賞）。"
+},
+{
+"item_id": "E0492",
+"question": "格罗弗算法是由哪位计算机科学家提出的？",
+"gold_answer": "洛夫·格罗弗（Lov Grove）",
+"model_answer": "格罗弗算法是由计算机科学家洛夫·格罗弗（Lov Grover）提出的。"
+},
+{
+"item_id": "E0493",
+"question": "《寻找满月》的电视动画首播于哪一年？",
+"gold_answer": "2002年",
+"model_answer": "《寻找满月》的电视动画首播于2003年。"
+},
+{
+"item_id": "E0494",
+"question": "等度连续这一概念最早出现在哪个定理中？",
+"gold_answer": "阿尔泽拉-阿斯科利定理",
+"model_answer": "等度连续这一概念最早出现在**阿斯coli-Arzelà定理**中。该定理是泛函分析中的一个基本结果，涉及等度连续性和紧性之间的关系。"
+},
+{
+"item_id": "E0495",
+"question": "由法国经济学家弗朗索瓦·魁奈在1758年编制的经济学上的首张图表是什么名称？",
+"gold_answer": "经济表",
+"model_answer": "由法国经济学家弗朗索瓦·魁奈在1758年编制的经济学上的首张图表称为“经济表”（Tableau économique）。"
+},
+{
+"item_id": "E0496",
+"question": "在市场营销中被描述为通过降低核心产品的价格以吸引顾客，同时提高周边产品价格的定价策略是什么？",
+"gold_answer": "互补定价",
+"model_answer": "这种定价策略被称为“**价格分层策略**”或“**核心产品与周边产品定价策略**”。其核心是通过降低核心产品的价格以吸引顾客，同时提高周边产品的价格，从而实现整体利润的最大化。"
+},
+{
+"item_id": "E0497",
+"question": "帕萨迪纳淡水虾最后一次被观察到是在哪一年？",
+"gold_answer": "1933",
+"model_answer": "帕萨迪纳淡水虾（Pacifica parva）最后一次被观察到是在1997年。"
+},
+{
+"item_id": "E0498",
+"question": "安徽大剧院位于哪个城市？",
+"gold_answer": "合肥市",
+"model_answer": "安徽大剧院位于安徽省合肥市。"
+},
+{
+"item_id": "E0499",
+"question": "鲍里斯·帕勒根是哪一年毕业于圣彼得堡大学哲学系（列宁格勒州立大学）？",
+"gold_answer": "1953",
+"model_answer": "鲍里斯·帕勒根于1962年毕业于圣彼得堡大学哲学系（当时称为列宁格勒州立大学）。"
+},
+{
+"item_id": "E0500",
+"question": "奥井敦首次担任摄影监督的作品是什么？",
+"gold_answer": "搞怪拍档剧场版",
+"model_answer": "奥井敦首次担任摄影监督的作品是《美少女战士》（Sailor Moon）。"
+},
+{
+"item_id": "E0501",
+"question": "中谷芙二子是哪一年获得沃尔夫艺术奖的？",
+"gold_answer": "2023",
+"model_answer": "中谷芙二子于1996年获得沃尔夫艺术奖。"
+},
+{
+"item_id": "E0502",
+"question": "《上海图书馆史》是哪一年由上海市通志馆出版的？",
+"gold_answer": "1935年",
+"model_answer": "《上海图书馆史》由上海市通志馆于1992年出版。"
+},
+{
+"item_id": "E0503",
+"question": "国际反腐败日是定于每年的哪一天？",
+"gold_answer": "12月9日",
+"model_answer": "国际反腐败日定于每年的12月9日。"
+},
+{
+"item_id": "E0504",
+"question": "凌迟这种刑罚在中国正式被废除是哪一年？",
+"gold_answer": "1905",
+"model_answer": "凌迟这种刑罚在中国正式被废除是1905年。"
+},
+{
+"item_id": "E0505",
+"question": "阿拉伯联合酋长国阿布扎比的马斯达尔城是由哪个事务所进行总体设计的？",
+"gold_answer": "英国福斯特建筑事务所",
+"model_answer": "阿拉伯联合酋长国阿布扎比的马斯达尔城是由英国建筑事务所 **扎哈·哈迪德建筑事务所**（Zaha Hadid Architects）进行总体设计的。"
+},
+{
+"item_id": "E0506",
+"question": "在2022年哪个国家是全球天然气产量最高的？",
+"gold_answer": "美国",
+"model_answer": "2022年全球天然气产量最高的国家是俄罗斯。"
+},
+{
+"item_id": "E0507",
+"question": "京口闸遗址是在哪一年被列为江苏省文物保护单位的？",
+"gold_answer": "2019",
+"model_answer": "京口闸遗址于1995年被列为江苏省文物保护单位。"
+},
+{
+"item_id": "E0508",
+"question": "1.7.0的pytorch可以兼容的最新cuda版本是多少？",
+"gold_answer": "11.0",
+"model_answer": "PyTorch 1.7.0 可以兼容的最新 CUDA 版本是 **CUDA 11.1**。"
+},
+{
+"item_id": "E0509",
+"question": "负责设计和建造伦敦污水处理系统的工程师是谁？",
+"gold_answer": "Joseph Bazalgette",
+"model_answer": "负责设计和建造伦敦污水处理系统的工程师是**约瑟夫·巴泽特**（Joseph Bazalgette）。他在19世纪中叶领导了这项工程，成功解决了伦敦的污水问题，极大地改善了公共卫生状况。"
+},
+{
+"item_id": "E0510",
+"question": "《二十一世纪资本论》的作者是谁？",
+"gold_answer": "托马斯·皮凯蒂（Thomas Piketty）",
+"model_answer": "《二十一世纪资本论》的作者是皮凯蒂（Thomas Piketty）。"
+},
+{
+"item_id": "E0511",
+"question": "维克多·路易斯是哪一国籍的记者？",
+"gold_answer": "苏联",
+"model_answer": "维克多·路易斯是法国国籍的记者。"
+},
+{
+"item_id": "E0512",
+"question": "美国农业部在哪一年批准将细质地瘦牛肉用作食品添加剂？",
+"gold_answer": "2001",
+"model_answer": "美国农业部在1958年批准将细质地瘦牛肉用作食品添加剂。"
+},
+{
+"item_id": "E0513",
+"question": "1972年7月2日，被劫持的泛美航空841号班机最终降落在哪个空军基地？",
+"gold_answer": "新山一空军基地",
+"model_answer": "1972年7月2日，被劫持的泛美航空841号班机最终降落在美国加利福尼亚州的**麦克迪尔空军基地**（McDill Air Force Base）。"
+},
+{
+"item_id": "E0514",
+"question": "在IMF2017年10月发布的《世界经济展望》中说明当时有多少个发达经济体？",
+"gold_answer": "39",
+"model_answer": "在IMF 2017年10月发布的《世界经济展望》中，当时有31个发达经济体。"
+},
+{
+"item_id": "E0515",
+"question": "北京方正集团开发的字迹字体系列截至2011年包括多少种字体？",
+"gold_answer": "20种",
+"model_answer": "北京方正集团开发的字迹字体系列截至2011年包括12种字体。"
+},
+{
+"item_id": "E0516",
+"question": "截止2014年1月1日，有多少个国家（地区）对持普通护照的中国公民个人因私前往实施免签、落地签证政？",
+"gold_answer": "45",
+"model_answer": "截至2014年1月1日，有39个国家（地区）对持普通护照的中国公民个人因私前往实施免签、落地签证政策。"
+},
+{
+"item_id": "E0517",
+"question": "2011年南苏丹独立公投中支持独立的票数百分比是多少？",
+"gold_answer": "98.83%",
+"model_answer": "在2011年南苏丹独立公投中，支持独立的票数占**98.83%**。"
+},
+{
+"item_id": "E0518",
+"question": "《哈哈镜花缘》动画于哪一年首次在中国中央电视台首播？",
+"gold_answer": "1994年",
+"model_answer": "《哈哈镜花缘》动画于1998年首次在中国中央电视台首播。"
+},
+{
+"item_id": "E0519",
+"question": "铋化铯的化学式是什么？",
+"gold_answer": "Cs3Bi",
+"model_answer": "铋化铯的化学式是 CsBi。"
+},
+{
+"item_id": "E0520",
+"question": "在控制理论中，用什么词来描述输出超过最终稳态值的现象？",
+"gold_answer": "过冲",
+"model_answer": "在控制理论中，输出超过最终稳态值的现象通常被称为 **超调（Overshoot）**。"
+},
+{
+"item_id": "E0521",
+"question": "在《淮南子》中记载的海外三十六国之一，其居民的腿长达到三丈且常用于捕鱼的国家名是什么？",
+"gold_answer": "长股国",
+"model_answer": "《淮南子》中记载的海外三十六国之一，居民腿长三丈且常用于捕鱼的国家是“句民国”。"
+},
+{
+"item_id": "E0522",
+"question": "注册舞弊检查师的认证是由哪个协会颁发的？",
+"gold_answer": "Association of Certified Fraud Examiners (ACFE)",
+"model_answer": "注册舞弊检查师（Certified Fraud Examiner，CFE）的认证是由美国反欺诈协会（Association of Certified Fraud Examiners，ACFE）颁发的。"
+},
+{
+"item_id": "E0523",
+"question": "宜昌市夷陵医院是在哪一年建立的？",
+"gold_answer": "1951年",
+"model_answer": "宜昌市夷陵医院始建于1952年。"
+},
+{
+"item_id": "E0524",
+"question": "维生素A2的CAS号是多少？",
+"gold_answer": "79-80-1",
+"model_answer": "维生素A2的CAS号是 **58-25-9**。"
+},
+{
+"item_id": "E0525",
+"question": "凌塔白酒产地位于中国哪个市？",
+"gold_answer": "辽宁省朝阳市",
+"model_answer": "凌塔白酒的产地位于中国山西省吕梁市。"
+},
+{
+"item_id": "E0526",
+"question": "被认为是历史比较语言学奠基人的德国语言学家是谁？",
+"gold_answer": "弗朗茨·葆朴（Franz Bopp）",
+"model_answer": "被认为是历史比较语言学奠基人的德国语言学家是**弗里德里希·迈尔**（Friedrich Max Müller）。他通过对印欧语系的研究，奠定了历史比较语言学的基础。"
+},
+{
+"item_id": "E0527",
+"question": "黄连喜弱光还是强光？",
+"gold_answer": "弱光",
+"model_answer": "黄连喜弱光。它适合在半阴半阳的环境中生长，忌强光直射，光照过强会抑制其生长。"
+},
+{
+"item_id": "E0528",
+"question": "拉乌尔定律描述的是溶液的蒸气压与什么的关系？",
+"gold_answer": "浓度",
+"model_answer": "拉乌尔定律描述的是溶液的蒸气压与溶剂的物质的量分数的关系。"
+},
+{
+"item_id": "E0529",
+"question": "在POSIX扩展正则表达式中, 共有多少个字符被定义为元字符？",
+"gold_answer": "14",
+"model_answer": "在POSIX扩展正则表达式中，共有 **11** 个字符被定义为元字符。这些元字符包括：`^`, `$`, `.` , `*`, `+`, `?`, `|`, `(`, `)`, `{`, `}`。"
+},
+{
+"item_id": "E0530",
+"question": "荷兰时尚设计师艾里斯·范·荷本是哪一年成为巴黎高级时装联合会的客座成员？",
+"gold_answer": "2011",
+"model_answer": "艾里斯·范·荷本（Iris van Herpen）于2011年成为巴黎高级时装联合会（Chambre Syndicale de la Haute Couture）的客座成员。"
+},
+{
+"item_id": "E0531",
+"question": "古典和量子引力期刊是由哪个出版社发布的？",
+"gold_answer": "英国物理学会出版（IOP）",
+"model_answer": "《Classical and Quantum Gravity》是由英国物理学会（IOP Publishing）出版的。"
+},
+{
+"item_id": "E0532",
+"question": "关税与贸易总协定最初是在1947年于哪个国家签署的？",
+"gold_answer": "瑞士",
+"model_answer": "关税与贸易总协定（GATT）最初是在1947年于美国签署的。"
+},
+{
+"item_id": "E0533",
+"question": "《裨海纪游》是哪位清朝官员所著的书籍？",
+"gold_answer": "郁永河",
+"model_answer": "《裨海纪游》是清朝官员徐葆光所著的书籍。"
+},
+{
+"item_id": "E0534",
+"question": "日本的国土形成计划是基于哪一法律制定的？",
+"gold_answer": "国土形成计划法",
+"model_answer": "日本的国土形成计划是基于《国土形成推进法》（国土形成推进法）制定的。该法律旨在通过综合规划和政策，促进国土的可持续发展和合理利用。"
+},
+{
+"item_id": "E0535",
+"question": "1977年关于哈娑舞展露的电影名是什么？",
+"gold_answer": "周末夜狂热",
+"model_answer": "1977年关于哈娑舞展露的电影是《印度之舞》（\"The Dance of the Hora\"）。不过，需要注意的是，这部电影并非1977年上映，而是1975年。如果指的是1977年上映的电影，可能需要进一步"
+},
+{
+"item_id": "E0536",
+"question": "被称为“台湾吊桥大王”的林枝木首次建造的吊桥是哪一座？",
+"gold_answer": "平林吊桥",
+"model_answer": "林枝木首次建造的吊桥是**南横公路的“大坑口吊桥”**，建于1970年。这座吊桥的建造标志着他正式进入吊桥工程领域，也奠定了他“台湾吊桥大王”的地位。"
+},
+{
+"item_id": "E0537",
+"question": "自发地理信息的概念是由谁在2007年提出的？",
+"gold_answer": "M.F. Goodchild",
+"model_answer": "自发地理信息（Volunteered Geographic Information，简称VGI）的概念是由迈克尔·福斯特（Michael F. Goodchild）在2007年提出的。"
+},
+{
+"item_id": "E0538",
+"question": "日本的个人编号制度是从哪一年开始正式实行和发放的？",
+"gold_answer": "2015年",
+"model_answer": "日本的个人编号制度（My Number制度）是从**2019年10月1日**开始正式实行和发放的。"
+},
+{
+"item_id": "E0539",
+"question": "创立了调气活血的“衡法”治则的是哪一位中医学家？",
+"gold_answer": "颜德馨",
+"model_answer": "创立了调气活血的“衡法”治则的是清代中医学家叶天士。"
+},
+{
+"item_id": "E0540",
+"question": "已知世界历史上最早的暗杀团体是什么？",
+"gold_answer": "短剑党",
+"model_answer": "已知世界历史上最早的暗杀团体是古希腊的“刺杀者兄弟会”（Kynegidai），但更确切的早期暗杀组织是古罗马的“刺杀者兄弟会”（Cynic Brotherhood），不过更广为人知的是古罗马的“刺杀者"
+},
+{
+"item_id": "E0541",
+"question": "日本三菱召回隐瞒事件首次被揭发是在哪一年？",
+"gold_answer": "2000年",
+"model_answer": "日本三菱召回隐瞒事件首次被揭发是在1999年。"
+},
+{
+"item_id": "E0542",
+"question": "在元素符号标记中，标注在元素符号左上角的数字表示什么？",
+"gold_answer": "质量数",
+"model_answer": "标注在元素符号左上角的数字表示该元素的**原子序数**（即质子数）。"
+},
+{
+"item_id": "E0543",
+"question": "安东尼奥·乌略亚在1744年发现了什么元素？",
+"gold_answer": "铂",
+"model_answer": "安东尼奥·乌略亚在1744年发现了**锑**（Antimony）元素。"
+},
+{
+"item_id": "E0544",
+"question": "阿内霍市在哪个国家的东南部位于大西洋与湖之间?",
+"gold_answer": "多哥",
+"model_answer": "阿内霍市位于巴西的东南部，处于大西洋与帕拉伊巴湖之间。"
+},
+{
+"item_id": "E0545",
+"question": "罗马国立中央图书馆是哪一年建立的？",
+"gold_answer": "1876",
+"model_answer": "罗马国立中央图书馆（Biblioteca Nazionale Centrale di Roma）建立于**1932年**。"
+},
+{
+"item_id": "E0546",
+"question": "南华护士学院（Lam Wah Ee Nursing College）是哪一年创办的？",
+"gold_answer": "1986",
+"model_answer": "南华护士学院（Lam Wah Ee Nursing College）创办于1953年。"
+},
+{
+"item_id": "E0547",
+"question": "KRSI电台是哪一年开播的？",
+"gold_answer": "1991年",
+"model_answer": "KRSI电台于1992年开播。"
+},
+{
+"item_id": "E0548",
+"question": "2007年首映的喜剧电影《葬礼上的死亡》是由哪位导演执导的？",
+"gold_answer": "弗兰克·奥兹（Frank Oz）",
+"model_answer": "《葬礼上的死亡》（Death at a Funeral）是2007年首映的喜剧电影，由**马克·沃特斯**（Mark Waters）执导。"
+},
+{
+"item_id": "E0549",
+"question": "电视剧《黄金瞳》改编自哪位作者的同名小说？",
+"gold_answer": "打眼",
+"model_answer": "电视剧《黄金瞳》改编自作者**打脸大魔王**的同名小说。"
+},
+{
+"item_id": "E0550",
+"question": "四硫富瓦烯是由哪位科学家在1970年首次合成的？",
+"gold_answer": "Wudl",
+"model_answer": "四硫富瓦烯是由理查德·斯莫利（Richard Smalley）在1970年首次合成的。"
+},
+{
+"item_id": "E0551",
+"question": "《异世纪机器人大战：R》是哪一年发行的？",
+"gold_answer": "2010年",
+"model_answer": "《异世纪机器人大战：R》（Xenosaga Episode R）于2003年发行。"
+},
+{
+"item_id": "E0552",
+"question": "1923年张其昀在哪里发表《历史地理学》标志着历史地理学在中国成为一门专门的现代学科？",
+"gold_answer": "《史地学报》",
+"model_answer": "1923年，张其昀在《中国历史地理论》中首次提出“历史地理学”这一学科名称，标志着历史地理学在中国成为一门专门的现代学科。该书发表于上海商务印书馆。"
+},
+{
+"item_id": "E0553",
+"question": "1985年美国利用哪种战斗机发射ASM-135反卫星飞弹首次进行了对人造卫星的试射？",
+"gold_answer": "F-15战斗机",
+"model_answer": "1985年，美国使用F-15战斗机发射ASM-135反卫星导弹，首次进行了对人造卫星的试射。"
+},
+{
+"item_id": "E0554",
+"question": "中国音乐家协会理事曾雨音是哪个省份的人？",
+"gold_answer": "福建",
+"model_answer": "曾雨音是中国音乐家协会理事，她出生于江苏省。"
+},
+{
+"item_id": "E0555",
+"question": "麦当娜在歌曲《夺标27秒》（Vision Quest）中献唱了一首歌曲，作为电影原声带专辑中的第二首单曲，这首歌曲是什么？",
+"gold_answer": "赌徒(Gambler)",
+"model_answer": "麦当娜在电影《夺标27秒》（Vision Quest）的原声带专辑中献唱的第二首单曲是《Like a Prayer》。"
+},
+{
+"item_id": "E0556",
+"question": "日本在二战前曾建造了多少艘满载排水量72800吨的大和级战列舰？",
+"gold_answer": "2艘",
+"model_answer": "日本在二战前共建造了两艘满载排水量72800吨的大和级战列舰，分别是“大和”号和“武藏”号。"
+},
+{
+"item_id": "E0557",
+"question": "俄罗斯互联网黑名单法的生效日期是哪一年？",
+"gold_answer": "2012",
+"model_answer": "俄罗斯互联网黑名单法（即《网络主权法》）的生效日期是**2019年12月1日**。"
+},
+{
+"item_id": "E0558",
+"question": "探戈舞在哪一年被联合国教科文组织列为人类无形文化遗产？",
+"gold_answer": "2009",
+"model_answer": "探戈舞在2009年被联合国教科文组织列为人类非物质文化遗产。"
+},
+{
+"item_id": "E0559",
+"question": "1981年诺贝尔经济学奖颁给了哪一位经济学家？",
+"gold_answer": "詹姆士·托宾（James Tobin）",
+"model_answer": "1981年诺贝尔经济学奖由美国经济学家詹姆斯·布坎南（James M. Buchanan）和戈登·塔洛克（Gordon Tullock）共同获得。"
+},
+{
+"item_id": "E0560",
+"question": "中国民间传说中龙母把一条失去尾巴的龙称为什么名字？",
+"gold_answer": "掘尾龙",
+"model_answer": "中国民间传说中，龙母把一条失去尾巴的龙称为“龙子”。"
+},
+{
+"item_id": "E0561",
+"question": "现代半透膜可以通过在无釉陶瓷孔隙中沉淀哪种化合物来制成？",
+"gold_answer": "铁氰化铜",
+"model_answer": "现代半透膜可以通过在无釉陶瓷孔隙中沉淀**氧化铝**（Al₂O₃）来制成。"
+},
+{
+"item_id": "E0562",
+"question": "KDE 1.0 是在哪一天首次发布的？",
+"gold_answer": "1998年7月12日",
+"model_answer": "KDE 1.0 是于 1998 年 10 月 12 日首次发布的。"
+},
+{
+"item_id": "E0563",
+"question": "伊戈尔·沃洛布耶夫加入乌克兰领土防卫国际军团的年份是哪一年？",
+"gold_answer": "2022",
+"model_answer": "伊戈尔·沃洛布耶夫于2014年加入乌克兰领土防卫国际军团。"
+},
+{
+"item_id": "E0564",
+"question": "西兰公国是由谁于1967年建立的？",
+"gold_answer": "帕迪·罗伊·贝茨（Paddy Roy Bates）",
+"model_answer": "西兰公国是由英国前海军上将弗雷德里克·威廉·麦克劳德（Frederick William Mott）于1967年建立的。"
+},
+{
+"item_id": "E0565",
+"question": "凯莉·布鲁克首次作为模特儿开始其职业生涯是在多少岁？",
+"gold_answer": "16",
+"model_answer": "凯莉·布鲁克首次作为模特儿开始其职业生涯是在16岁。"
+},
+{
+"item_id": "E0566",
+"question": "维根斯坦的梯子这一术语出自于奥地利哲学家路德维希·维根斯坦的哪部作品？",
+"gold_answer": "《逻辑哲学论》",
+"model_answer": "“维根斯坦的梯子”这一术语出自路德维希·维根斯坦的《哲学研究》（Philosophical Investigations）。该术语用来描述哲学思考中从具体语言使用到抽象哲学问题的过渡过程。"
+},
+{
+"item_id": "E0567",
+"question": "1477年哪位奥地利大公为得到法国玛丽公主的爱而送出了钻石戒指作为定情物品？",
+"gold_answer": "马克西米利安一世（Maximilian I）",
+"model_answer": "1477年，奥地利大公马克西米利安一世（Maximilian I）为得到法国玛丽公主（Mary of Burgundy）的爱，送出了钻石戒指作为定情物品。"
+},
+{
+"item_id": "E0568",
+"question": "谁于1880年发现了化学元素钆？",
+"gold_answer": "Jean Charles Galissard de Marignac",
+"model_answer": "钆元素于1880年由法国化学家保罗·埃米尔·勒科克·德布瓦博德兰（Paul Émile Lecoq de Boisbaudran）发现。"
+},
+{
+"item_id": "E0569",
+"question": "Miles Morales首次登场是漫画书《Ultimate Fallout》的哪一期？",
+"gold_answer": "4",
+"model_answer": "Miles Morales 首次登场是在漫画书《Ultimate Fallout》的第2期，于2000年发行。"
+},
+{
+"item_id": "E0570",
+"question": "劳动合同制在中国哪一年正式成为就业政策并开始在全国范围内推广？",
+"gold_answer": "1986",
+"model_answer": "劳动合同制在中国于1986年正式成为就业政策，并开始在全国范围内推广。"
+},
+{
+"item_id": "E0571",
+"question": "《鸭川荷尔摩》获得哪一届Boiled Eggs新人赏？",
+"gold_answer": "第四届",
+"model_answer": "《鸭川荷尔摩》获得了第12届Boiled Eggs新人赏。"
+},
+{
+"item_id": "E0572",
+"question": "汉朝于西汉汉武帝的哪一年将钩町夷的地区设立为句町县？",
+"gold_answer": "公元前111年",
+"model_answer": "汉武帝元封二年（公元前109年）。"
+},
+{
+"item_id": "E0573",
+"question": "凌塔白酒产自哪个省？",
+"gold_answer": "辽宁省",
+"model_answer": "凌塔白酒产自中国山西省。"
+},
+{
+"item_id": "E0574",
+"question": "中国传统拳派“长拳”最早记载于明朝哪本书籍？",
+"gold_answer": "《纪效新书》(《纪效新书・拳经捷要篇》)",
+"model_answer": "中国传统拳派“长拳”最早记载于明朝的《永乐大典》。"
+},
+{
+"item_id": "E0575",
+"question": "中国大陆的第一条四线铁路是哪一条？",
+"gold_answer": "广深铁路",
+"model_answer": "中国大陆的第一条四线铁路是**京广铁路**。不过，严格来说，京广铁路是双线铁路，而中国大陆第一条真正意义上的四线铁路是**沪昆铁路**的某些区段，但更准确的说法是：**成昆铁路**的部分区段在建设时采用了四"
+},
+{
+"item_id": "E0576",
+"question": "乌克兰二战历史博物馆是位于乌克兰基辅的哪条街道？",
+"gold_answer": "基辅拉夫斯卡街",
+"model_answer": "乌克兰二战历史博物馆位于乌克兰基辅的**赫雷夏蒂克街**（Khreshchatyk Street）。"
+},
+{
+"item_id": "E0577",
+"question": "哪位社会学家把社会学分为一般社会学和特殊社会学？",
+"gold_answer": "斐迪南·滕尼斯",
+"model_answer": "法国社会学家埃米尔·涂尔干（Émile Durkheim）将社会学分为一般社会学（General Sociology）和特殊社会学（Particular Sociology）。"
+},
+{
+"item_id": "E0578",
+"question": "是谁首次在美国物理学会年会上提出”纳米技术“这一概念？",
+"gold_answer": "理查德·菲利普斯·费曼（Richard Phillips Feynman）",
+"model_answer": "理查德·费曼（Richard Feynman）首次在美国物理学会年会上提出“纳米技术”这一概念。他在1959年的演讲《底部还有很大空间》（There's Plenty of Room at the Bottom）中提出了这一概念。"
+},
+{
+"item_id": "E0579",
+"question": "中国画家赵宗藻的作品《黄山松》在第几届挪威国际版画双年展上获得银奖？",
+"gold_answer": "7",
+"model_answer": "中国画家赵宗藻的作品《黄山松》在第11届挪威国际版画双年展上获得银奖。"
+},
+{
+"item_id": "E0580",
+"question": "志丹苑元代水闸遗址在哪一年被公布为全国重点文物保护单位？",
+"gold_answer": "2013",
+"model_answer": "志丹苑元代水闸遗址于2013年被公布为全国重点文物保护单位。"
+},
+{
+"item_id": "E0581",
+"question": "在日本天皇退位特例法中，上皇的官方英文翻译是什么？",
+"gold_answer": "Emperor Emeritus",
+"model_answer": "在日本天皇退位特例法中，上皇的官方英文翻译是 \"Former Emperor\"。"
+},
+{
+"item_id": "E0582",
+"question": "计算净蒸散量所使用的公式中，哪一个是由Penman公式推广而来的？",
+"gold_answer": "Penman Monteith公式",
+"model_answer": "由Penman公式推广而来的计算净蒸散量的公式是**Penman-Monteith公式**。"
+},
+{
+"item_id": "E0583",
+"question": "氟康唑是属于哪一类抗真菌药物？",
+"gold_answer": "氟代三唑类",
+"model_answer": "氟康唑属于**唑类抗真菌药物**，具体来说是**三唑类抗真菌药**。"
+},
+{
+"item_id": "E0584",
+"question": "中华人民共和国在哪一年开始实施国家标准GB 4764-1984本人成分代码？",
+"gold_answer": "1985",
+"model_answer": "中华人民共和国于1984年实施国家标准GB 4764-1984《本人成分代码》。"
+},
+{
+"item_id": "E0585",
+"question": "母牛产犊后首24小时内的初乳中，IgG的含量可占总蛋白量的多少百分比以上？",
+"gold_answer": "40%",
+"model_answer": "母牛产犊后首24小时内的初乳中，IgG的含量可占总蛋白量的**70%以上**。"
+},
+{
+"item_id": "E0586",
+"question": "《千字文》的作者是谁？",
+"gold_answer": "周兴嗣",
+"model_answer": "《千字文》的作者是南朝梁代的周兴嗣。"
+},
+{
+"item_id": "E0587",
+"question": "图-334客机的最大载客量是多少?",
+"gold_answer": "102",
+"model_answer": "图-334客机的最大载客量为118人。"
+},
+{
+"item_id": "E0588",
+"question": "东帝汶使用的标准时间区是什么？",
+"gold_answer": "东九区",
+"model_answer": "东帝汶使用的是东九区（UTC+9）标准时间，没有实行夏令时。"
+},
+{
+"item_id": "E0589",
+"question": "《美国陆军：演习场》的正式发行年份是哪一年？",
+"gold_answer": "2013",
+"model_answer": "《美国陆军：演习场》（America's Army: Combat Training）的正式发行年份是2002年。"
+},
+{
+"item_id": "E0590",
+"question": "HX-63密码机的设计者是谁？",
+"gold_answer": "鲍里斯·哈格林(Boris Hagelin)",
+"model_answer": "HX-63密码机的设计者是美国的工程师**罗伯特·A·莫尔斯**（Robert A. Morse）。"
+},
+{
+"item_id": "E0591",
+"question": "八识在佛教中是属于哪个学派的分类体系？",
+"gold_answer": "瑜伽行唯识学派",
+"model_answer": "八识在佛教中属于**瑜伽行派**（唯识学派）的分类体系。"
+},
+{
+"item_id": "E0592",
+"question": "使用氯仿作为溶剂的干冰溶剂浴的稳态温度是多少摄氏度？",
+"gold_answer": "-61",
+"model_answer": "使用氯仿作为溶剂的干冰溶剂浴的稳态温度约为 **-25°C**。"
+},
+{
+"item_id": "E0593",
+"question": "关于蒙古族祭天习俗的记载“元兴朔漠，代有拜天之礼。衣冠尚质“出自哪本书籍？",
+"gold_answer": "《元史》",
+"model_answer": "“元兴朔漠，代有拜天之礼。衣冠尚质”出自《蒙古源流》。这是清代蒙古学者萨囊彻辰所著的一部重要蒙古历史文献，记录了蒙古族的历史、文化、宗教和习俗等内容。"
+},
+{
+"item_id": "E0594",
+"question": "四氟化钛的CAS号是什么？",
+"gold_answer": "7783-63-3",
+"model_answer": "四氟化钛的CAS号是 **13443-43-7**。"
+},
+{
+"item_id": "E0595",
+"question": "由元朝大司农司编撰的主要叙述中国北方的农桑技术的著作叫什么？",
+"gold_answer": "《农桑辑要》",
+"model_answer": "《农桑辑要》"
+},
+{
+"item_id": "E0596",
+"question": "夏尔巴人的主要宗教信仰是什么？",
+"gold_answer": "藏传佛教",
+"model_answer": "夏尔巴人主要信仰藏传佛教。"
+},
+{
+"item_id": "E0597",
+"question": "被称为阴阳鱼的太极图最早出自哪本书？",
+"gold_answer": "《六书本义》",
+"model_answer": "《周易》"
+},
+{
+"item_id": "E0598",
+"question": "获得哈佛大学建筑学硕士学位并在1996年当选为中国工程院外籍院士的著名建筑师是谁？",
+"gold_answer": "贝聿铭",
+"model_answer": "伊东丰雄"
+},
+{
+"item_id": "E0599",
+"question": "组织工程学这一概念是哪一年由美国国家科学基金委员会提出的？",
+"gold_answer": "1987年",
+"model_answer": "组织工程学这一概念是由美国国家科学基金委员会（NSF）于**1987年**提出的。"
+}
+]

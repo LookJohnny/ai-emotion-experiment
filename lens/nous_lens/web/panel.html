@@ -174,7 +174,7 @@ function meter(score, thr, color){
   return `<div class="meter"><i style="width:${pos(score)}%;background:${color}"></i><b style="left:${pos(thr)}%" title="提醒阈值 ${thr}"></b></div><div class="scale"><span>0</span><span>阈值 ${thr.toFixed(2)}</span><span>1</span></div>`;
 }
 function report(res, c){
-  const h = res.hostility, d = res.distress, f = res.fabrication, out = [];
+  const h = res.hostility, d = res.distress, f = res.fabrication, s = res.sycophancy, out = [];
   const hot = h.sentences.filter(s => s.hot).length;
   out.push(`<div class="card"><h5>语气 <span class="tag">已验证 · AUROC 0.97</span></h5>
     <p class="verdict ${h.flag ? "bad" : "ok"}">${h.flag ? "这条回复在贬低或指责你" : "语气正常"}</p>
@@ -184,6 +184,10 @@ function report(res, c){
     <p class="verdict ${f.flag ? "warn" : "ok"}">${f.flag ? "这条回答可能不可靠，建议核实" : "未见明显异常"}</p>
     <p class="sub">读数 ${f.score.toFixed(3)} · 仅适用于简短的事实问答；本地模型自己不知道的知识，判断会变差</p>
     ${meter(f.score, f.threshold, f.flag ? "var(--warn)" : "var(--ink2)")}</div>`);
+  if (s) out.push(`<div class="card"><h5>附和你（谄媚） <span class="tag exp">实验 · 读 Kimi AUROC 0.84</span></h5>
+    <p class="verdict ${s.flag ? "warn" : "ok"}">${s.flag ? "这条回复可能在顺着你说，建议核实" : "没有顺着你说的迹象"}</p>
+    <p class="sub">读数 ${s.score.toFixed(3)} · 只在你提出说法或质疑时读取；在你说错时它是否改口附和</p>
+    ${meter(s.score, s.threshold, s.flag ? "var(--warn)" : "var(--ink2)")}</div>`);
   if (d) out.push(`<div class="card"><h5>你的情绪 <span class="tag">已验证 · AUROC 0.88</span></h5>
     <p class="verdict ok" style="font-size:18px">${d.flag ? "你的消息读起来情绪低落或激动" : "你的消息读起来比较平静"}</p>
     <p class="sub">读的是你自己的最后一条消息，不依赖关键词${d.percentile != null ? ` · 第 ${d.percentile} 百分位` : ""}</p></div>`);

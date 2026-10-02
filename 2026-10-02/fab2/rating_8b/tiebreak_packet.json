@@ -1,0 +1,152 @@
+[
+{
+"item_id": "E0052",
+"question": "在字体排版学中，决定无升部的小写字母字体大小的线被称为什么？",
+"gold_answer": "主线",
+"model_answer": "在字体排版学中，决定无升部的小写字母字体大小的线被称为**x线**（x-height）。"
+},
+{
+"item_id": "E0204",
+"question": "《火影忍者疾风传 终极风暴4》在哪一天首次在Nintendo Switch上发售?",
+"gold_answer": "2020年4月23日",
+"model_answer": "《火影忍者疾风传 终极风暴4》于2020年11月12日在Nintendo Switch上首次发售。"
+},
+{
+"item_id": "E0206",
+"question": "圣赫勒拿杜鹃于哪个世纪因森林砍伐而灭绝？",
+"gold_answer": "18世纪",
+"model_answer": "圣赫勒拿杜鹃于18世纪因森林砍伐而灭绝。"
+},
+{
+"item_id": "E0207",
+"question": "DailyMed最初是由哪个机构运营的？",
+"gold_answer": "美国国家医学图书馆",
+"model_answer": "DailyMed最初是由美国食品药品监督管理局（FDA）运营的。"
+},
+{
+"item_id": "E0235",
+"question": "电影《川流不熄》的推广曲《慢慢》是谁作曲的？",
+"gold_answer": "久石让",
+"model_answer": "电影《川流不熄》的推广曲《慢慢》是由李荣浩作曲的。"
+},
+{
+"item_id": "E0236",
+"question": "第十三届全国人民代表大会共有多少名代表参加？",
+"gold_answer": "2980",
+"model_answer": "第十三届全国人民代表大会共有2980名代表参加。"
+},
+{
+"item_id": "E0244",
+"question": "鸟取花回廊是在哪一年开始营运的？",
+"gold_answer": "1999",
+"model_answer": "鸟取花回廊（鳥取花回廊）是在2001年4月开始营运的。"
+},
+{
+"item_id": "E0245",
+"question": "1995年芝加哥热浪期间记录的最高气温是多少摄氏度？",
+"gold_answer": "41",
+"model_answer": "1995年芝加哥热浪期间记录的最高气温是**41°C**（106°F）。"
+},
+{
+"item_id": "E0247",
+"question": "《我的英雄学院剧场版：世界英雄任务》的导演是谁？",
+"gold_answer": "长崎健司",
+"model_answer": "《我的英雄学院剧场版：世界英雄任务》的导演是**小林靖幸**。"
+},
+{
+"item_id": "E0765",
+"question": "在《列仙传》中，赤松子被记载为在哪个时代的雨师？",
+"gold_answer": "神农时",
+"model_answer": "赤松子在《列仙传》中被记载为古代的雨师。"
+},
+{
+"item_id": "E0804",
+"question": "废气加热器属于哪种机械设备类别？",
+"gold_answer": "换热器",
+"model_answer": "废气加热器属于**热交换设备**或**加热设备**类别，通常归类于**工业加热设备**或**环保设备**中。"
+},
+{
+"item_id": "E1027",
+"question": "喀尔巴阡山脉的最高峰是什么？",
+"gold_answer": "格尔拉赫峰",
+"model_answer": "喀尔巴阡山脉的最高峰是**格尔拉赫峰**（Gerlachovský štít），海拔2655米，位于斯洛伐克。"
+},
+{
+"item_id": "E1028",
+"question": "我国第一部官刻本之汉文大藏经《开宝大藏经》开雕于哪一年？",
+"gold_answer": "971",
+"model_answer": "《开宝大藏经》开雕于北宋开宝二年，即公元969年。"
+},
+{
+"item_id": "E1029",
+"question": "按《四分律》所载，比丘受具足戒的条数是多少？",
+"gold_answer": "250",
+"model_answer": "按《四分律》所载，比丘受具足戒共有**250条**戒律。"
+},
+{
+"item_id": "E1036",
+"question": "中国政府是在哪一年发布了《国务院关于在线政务服务的若干规定》以推进线上政务的发展？",
+"gold_answer": "2019",
+"model_answer": "中国政府于2019年发布了《国务院关于在线政务服务的若干规定》，以推进线上政务的发展。"
+},
+{
+"item_id": "E1038",
+"question": "根据传说中鬼鹿的鹿角一边有多少分枝？",
+"gold_answer": "12",
+"model_answer": "根据传说，鬼鹿的鹿角一边通常有**三支分枝**。"
+},
+{
+"item_id": "E1056",
+"question": "《元祖西游记 超级猴子大冒险》这款游戏是在哪一年在日本发布的？",
+"gold_answer": "1986",
+"model_answer": "《元祖西游记 超级猴子大冒险》（原名：『元祖西遊記 ソウジョウモンキーだいあんき』）是在1985年在日本发布的。"
+},
+{
+"item_id": "E1057",
+"question": "中国教育部印发的《2017年全国硕士研究生招生工作管理规定》中规定中药学专业初试设置多少个单元考试科目？",
+"gold_answer": "3",
+"model_answer": "中国教育部印发的《2017年全国硕士研究生招生工作管理规定》中规定，中药学专业初试设置**3个单元**考试科目。"
+},
+{
+"item_id": "E1109",
+"question": "在天气术语中，当云层至少占据天空的百分之多少时，被称为Overcast？",
+"gold_answer": "95",
+"model_answer": "在天气术语中，当云层至少占据天空的 **8/10**（即 **80%**）时，被称为 **Overcast**（多云或阴天）。"
+},
+{
+"item_id": "E1128",
+"question": "亚莲冬马是在哪一年加入宝冢歌剧团花组男役？",
+"gold_answer": "2014",
+"model_answer": "亚莲冬马（本名：冬马亚莲）于**2007年**加入宝冢歌剧团，成为花组男役。"
+},
+{
+"item_id": "E1135",
+"question": "发明Boids的克雷格·W·雷诺兹在1998年获得了哪个奖项的技术奖？",
+"gold_answer": "奥斯卡科学技术奖",
+"model_answer": "克雷格·W·雷诺兹在1998年获得了奥斯卡最佳视觉效果奖（Academy Award for Best Visual Effects）的技术奖。"
+},
+{
+"item_id": "E1144",
+"question": "2005年被选择为国际热核聚变实验反应堆（ITER）建设地点的法国核研究中心叫什么名字？",
+"gold_answer": "卡达拉舍(Cadarache)",
+"model_answer": "法国核研究中心的名称是“法国原子能委员会”（Commissariat à l'Énergie Atomique et aux Énergies Alternatives，简称CEA）。2005年，ITER的建设地点被选在法国南部的卡达拉奇（Cadarache），该地点由CE"
+},
+{
+"item_id": "E1152",
+"question": "MPEG-DASH技术是在哪一年首次成为国际标准？",
+"gold_answer": "2011",
+"model_answer": "MPEG-DASH技术于2012年首次成为国际标准。"
+},
+{
+"item_id": "E1184",
+"question": "代表“法界体性智”的佛是谁？",
+"gold_answer": "毗卢遮那佛",
+"model_answer": "代表“法界体性智”的佛是**毗卢遮那佛**（也称大日如来）。在密宗和华严宗中，毗卢遮那佛被视为法界体性智的化身，象征法界实相的智慧。"
+},
+{
+"item_id": "E1185",
+"question": "《大仙术士 李白》的漫画作者是谁？",
+"gold_answer": "叶明轩",
+"model_answer": "《大仙术士 李白》的漫画作者是**夏达**。"
+}
+]

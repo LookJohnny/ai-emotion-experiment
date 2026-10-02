@@ -12,6 +12,8 @@ from transformers import AutoConfig, AutoTokenizer, AutoModel
 
 READER_SYSTEM = "你是陪伴助手，请礼貌、专业地回答用户。"          # framing the C1 probe was validated under
 QA_SYSTEM = "你是知识问答助手，请直接、简洁地回答问题。"         # framing the C3-H probe was trained under
+SYCO_SYSTEM = "你是一个乐于助人的AI助手。"                    # framing the sycophancy probe was trained under
+CLAIM = re.compile(r"我记得|我觉得|我认为|我查到|我看到|不对吧|对吗|对吧|是不是|没错吧|你确定|你再确认|你搞错|应该是")
 FACT_Q = re.compile(r"谁|哪[个位里年一些国]|什么|多少|第几|几[年月日号个位代次类种人本条]|何时|何年|是否|^(what|who|when|where|which|how many|how much)\b", re.I)
 
 
@@ -48,14 +50,15 @@ class Lens:
         m = json.load(open(os.path.join(pack_dir, "manifest.json"), encoding="utf-8"))
         P = lambda k: Probe(os.path.join(pack_dir, m["probes"][k]), self.device)
         self.p_host, self.p_dist, self.p_fab = P("c1_token"), P("c2"), P("c3h_token")
+        self.p_syco = P("syco_token") if "syco_token" in m["probes"] else None
         # the reader never generates: load only the layers the probes read (no upper layers, no LM head) -> ~5 GB instead of ~8 GB
-        keep = max(self.p_host.layer, self.p_dist.layer, self.p_fab.layer) + 1
+        keep = max(self.p_host.layer, self.p_dist.layer, self.p_fab.layer, self.p_syco.layer if self.p_syco else 0) + 1
         cfg = AutoConfig.from_pretrained(model_dir); cfg.num_hidden_layers = keep
         if getattr(cfg, "layer_types", None): cfg.layer_types = cfg.layer_types[:keep]
         self.model = AutoModel.from_pretrained(model_dir, config=cfg, dtype=dt).to(self.device).eval()
         self.thr, self.negq = m["thresholds"], m.get("neg_quantiles", {})
         self.states = {}
-        for L in {self.p_host.layer, self.p_dist.layer, self.p_fab.layer}:
+        for L in {self.p_host.layer, self.p_dist.layer, self.p_fab.layer} | ({self.p_syco.layer} if self.p_syco else set()):
             self.model.layers[L].register_forward_hook(lambda mod, a, out, L=L: self.states.__setitem__(L, (out[0] if isinstance(out, tuple) else out).float()))
         self.load_s = round(time.time() - t0, 1)
         self.model_name = (m.get("base_model") or model_dir).split("/")[-1]
@@ -132,5 +135,11 @@ class Lens:
             f = float(self.p_fab(self.states[self.p_fab.layer][0, len(qids):len(qids) + len(aids)].mean(0)))
             out["fabrication"] = {"score": round(f, 4), "threshold": self.thr["C3H_mean"], "flag": f >= self.thr["C3H_mean"],
                                   "percentile": self.pct("C3H_mean", f), "validated": False}
+        # sycophancy (experimental): only when the user puts forward a claim or pushes back
+        if self.p_syco and u != "（用户消息未提供）" and CLAIM.search(u):
+            sp = self._prompt_ids([{"role": "system", "content": SYCO_SYSTEM}] + turns); sr = rids[:120]; self._run(sp + sr)
+            y = float(self.p_syco(self.states[self.p_syco.layer][0, len(sp):len(sp) + len(sr)]).mean())
+            out["sycophancy"] = {"score": round(y, 4), "threshold": self.thr["SYCO_mean"], "flag": y >= self.thr["SYCO_mean"],
+                                 "percentile": self.pct("SYCO_mean", y), "validated": False}
         out["ms"] = round((time.time() - t0) * 1000)
         return out

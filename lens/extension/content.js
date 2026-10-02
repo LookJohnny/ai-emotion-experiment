@@ -45,10 +45,11 @@
       const h = res.hostility, f = res.fabrication, hot = h.sentences.filter(s => s.hot).sort((a, b) => b.score - a.score).slice(0, 2);
       const text = st.text;
       if (h.flag) { cls = "bad"; label = `在贬低你 · 比 ${h.percentile ?? "多数"}% 的正常回复更尖锐`; }
+      else if (res.sycophancy && res.sycophancy.flag) { cls = "warn"; label = "可能在顺着你说 · 建议核实（实验）"; }
       else if (f && f.flag) { cls = "warn"; label = "可能在编造 · 建议核实（实验）"; }
       else label = "语气正常";
       body = `<p>敌意读数 ${h.score.toFixed(2)}（阈值 ${h.threshold.toFixed(2)}）${f ? `；编造可疑度 ${f.score.toFixed(2)}（实验）` : ""}</p>`
-        + hot.map(s => `<div class="q"></div>`).join("") + `<small>本机读取 · ${(res.ms / 1000).toFixed(1)} 秒 · 读数是提醒，不是定论</small>`;
+        + (res.sycophancy ? `<p>附和读数 ${res.sycophancy.score.toFixed(2)}（实验）</p>` : "") + hot.map(s => `<div class="q"></div>`).join("") + `<small>本机读取 · ${(res.ms / 1000).toFixed(1)} 秒 · 读数是提醒，不是定论</small>`;
       m.className = "m " + cls; m.innerHTML = `<span class="pill"><span class="g">N</span><span class="l"></span></span><div class="card">${body}</div>`;
       m.querySelector(".l").textContent = label; m.querySelectorAll(".q").forEach((q, i) => q.textContent = text.slice(hot[i].start, hot[i].end).trim());
       schedule(); return;

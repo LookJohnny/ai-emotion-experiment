@@ -1,0 +1,140 @@
+{
+ "8b_probe_layer": 22,
+ "8b_cv": {
+  "12": 0.782,
+  "16": 0.81,
+  "19": 0.838,
+  "22": 0.841,
+  "26": 0.801
+ },
+ "combo_coef(r4,r8,nll,ent)": [
+  1.071,
+  0.691,
+  -0.31,
+  0.611
+ ],
+ "kimi_val": {
+  "n": 223,
+  "incorrect": 35,
+  "F1_8b_reader": {
+   "point": 0.767,
+   "ci": [
+    0.666,
+    0.851
+   ],
+   "thr": 0.75,
+   "verdict": "INCONCLUSIVE"
+  },
+  "F2_8b_minus_4b": {
+   "point": -0.068,
+   "ci": [
+    -0.153,
+    0.009
+   ],
+   "thr": 0.05,
+   "r4_auroc": 0.834,
+   "verdict": "FAIL"
+  },
+  "F3_combination": {
+   "point": 0.836,
+   "ci": [
+    0.76,
+    0.902
+   ],
+   "thr": 0.78,
+   "verdict": "INCONCLUSIVE"
+  },
+  "reported": {
+   "kimi_nll": 0.567,
+   "kimi_entropy": 0.617
+  },
+  "by_reader_knowledge": {
+   "4b_CORRECT": {
+    "n": 90,
+    "incorrect": 4,
+    "r4": 0.875,
+    "r8": 0.788
+   },
+   "4b_INCORRECT": {
+    "n": 132,
+    "incorrect": 30,
+    "r4": 0.783,
+    "r8": 0.691
+   },
+   "8b_CORRECT": {
+    "n": 74,
+    "incorrect": 3,
+    "r4": 0.854,
+    "r8": 0.732
+   },
+   "8b_INCORRECT": {
+    "n": 145,
+    "incorrect": 31,
+    "r4": 0.789,
+    "r8": 0.689
+   }
+  }
+ },
+ "kimi_test": {
+  "n": 338,
+  "incorrect": 53,
+  "F1_8b_reader": {
+   "point": 0.718,
+   "ci": [
+    0.65,
+    0.779
+   ],
+   "thr": 0.75,
+   "verdict": "FAIL"
+  },
+  "F2_8b_minus_4b": {
+   "point": -0.019,
+   "ci": [
+    -0.079,
+    0.037
+   ],
+   "thr": 0.05,
+   "r4_auroc": 0.737,
+   "verdict": "FAIL"
+  },
+  "F3_combination": {
+   "point": 0.758,
+   "ci": [
+    0.67,
+    0.83
+   ],
+   "thr": 0.78,
+   "verdict": "FAIL"
+  },
+  "reported": {
+   "kimi_nll": 0.648,
+   "kimi_entropy": 0.602
+  },
+  "by_reader_knowledge": {
+   "4b_CORRECT": {
+    "n": 174,
+    "incorrect": 7,
+    "r4": 0.87,
+    "r8": 0.844
+   },
+   "4b_INCORRECT": {
+    "n": 161,
+    "incorrect": 45,
+    "r4": 0.61,
+    "r8": 0.589
+   },
+   "8b_CORRECT": {
+    "n": 152,
+    "incorrect": 3,
+    "r4": 0.64,
+    "r8": 0.754
+   },
+   "8b_INCORRECT": {
+    "n": 183,
+    "incorrect": 50,
+    "r4": 0.665,
+    "r8": 0.614
+   }
+  }
+ }
+}

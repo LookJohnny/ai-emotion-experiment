@@ -1,0 +1,1202 @@
+[
+{
+"item_id": "E0000",
+"question": "电视剧《致命诱惑》在哪一年被ABC宣布取消？",
+"gold_answer": "2017",
+"model_answer": "电视剧《致命诱惑》（*Lethal Weapon*）于**2022年**被ABC宣布取消。"
+},
+{
+"item_id": "E0001",
+"question": "群书治要的撰写完成于唐朝哪一年？",
+"gold_answer": "631年",
+"model_answer": "《群书治要》的撰写完成于唐朝贞观五年，即公元631年。"
+},
+{
+"item_id": "E0002",
+"question": "Polaroid Z340 数码相机是哪一年推出的？",
+"gold_answer": "2011年",
+"model_answer": "Polaroid Z340 数码相机于2011年推出。"
+},
+{
+"item_id": "E0003",
+"question": "椰丝球在文莱被称为什么？",
+"gold_answer": "Kuih Pancit",
+"model_answer": "椰丝球在文莱被称为“Laksa”。不过需要注意的是，Laksa在文莱通常指的是一种椰奶汤面，而椰丝球可能在不同地区有不同的称呼或变体。如果特指一种甜点或小吃，可能需要更具体的描述。"
+},
+{
+"item_id": "E0004",
+"question": "天炉座的缩写是什么？",
+"gold_answer": "For",
+"model_answer": "天炉座的缩写是“FornA”。"
+},
+{
+"item_id": "E0005",
+"question": "中国大陆的地图服务商需要使用哪种国测局特制的坐标系？",
+"gold_answer": "GCJ-02",
+"model_answer": "中国大陆的地图服务商通常需要使用**GCJ-02**坐标系，这是由中国国家测绘局（国测局）制定的一种加密坐标系，用于保障国家地理信息安全。"
+},
+{
+"item_id": "E0006",
+"question": "埃弗雷特·沃辛顿在哪个大学获得了核工程学的学士学位？",
+"gold_answer": "田纳西大学",
+"model_answer": "埃弗雷特·沃辛顿在加州理工学院（California Institute of Technology）获得了核工程学的学士学位。"
+},
+{
+"item_id": "E0007",
+"question": "在日本和韩国，公司最高经营者的职称是什么？",
+"gold_answer": "社长",
+"model_answer": "在日本，公司最高经营者的职称通常是“会长”（がいちょう）或“董事长”（しょうどうしょう）；在韩国，通常称为“会长”（회장）或“董事长”（사장）。"
+},
+{
+"item_id": "E0008",
+"question": "台湾在孔子诞辰日设定的教师节是在哪一天？",
+"gold_answer": "9月28日",
+"model_answer": "台湾在孔子诞辰日设定的教师节是在9月28日。"
+},
+{
+"item_id": "E0009",
+"question": "褐斑伽蓝的拉丁学名是什么？",
+"gold_answer": "Kalanchoe tomentosa",
+"model_answer": "褐斑伽蓝的拉丁学名是 *Echeveria elegans*。"
+},
+{
+"item_id": "E0010",
+"question": "贾斯培·琼斯在哪一年获得高松宫殿下纪念世界文化奖绘画奖项？",
+"gold_answer": "1993",
+"model_answer": "贾斯培·琼斯在1997年获得高松宫殿下纪念世界文化奖绘画奖项。"
+},
+{
+"item_id": "E0011",
+"question": "日本即时影音串流网站SHOWROOM最初是于哪一年在DeNA成立的？",
+"gold_answer": "2013",
+"model_answer": "SHOWROOM最初于2012年在DeNA成立。"
+},
+{
+"item_id": "E0012",
+"question": "保罗·塞律西埃与保罗·高更在哪一年结识？",
+"gold_answer": "1888年",
+"model_answer": "保罗·塞律西埃与保罗·高更于1886年结识。"
+},
+{
+"item_id": "E0013",
+"question": "流动智力和固定智力的概念最初由哪位美国心理学家区分开来？",
+"gold_answer": "雷蒙德·伯纳德·卡特尔（Raymond Bernard Cattell）",
+"model_answer": "流动智力和固定智力的概念最初由美国心理学家雷蒙德·卡特尔（Raymond Cattell）区分开来。"
+},
+{
+"item_id": "E0014",
+"question": "1867年，哪位西班牙工程师首次使用了“urbanización”一词，并在其著作中描述了城市化的概念？",
+"gold_answer": "塞达（Ildefons Cerdà）",
+"model_answer": "1867年，西班牙工程师**何塞·伊格纳西奥·德·拉·克鲁斯**（José Ignacio de la Cruz）首次使用了“urbanización”一词，并在其著作中描述了城市化的概念。"
+},
+{
+"item_id": "E0015",
+"question": "《人类的性存在》一书的作者之一是 珍妮特·S·海德(Janet Shibley Hyde)，她与哪位合著者共同撰写了该书？",
+"gold_answer": "约翰·D·德拉马特(John DeLamater)",
+"model_answer": "《人类的性存在》一书的作者之一是珍妮特·S·海德（Janet Shibley Hyde），她与简·斯托克（Jane E. Stoecklein）共同撰写了该书。"
+},
+{
+"item_id": "E0016",
+"question": "根据联合国的《关押待遇的最低标准规则》（曼德拉规则），单独关押的最长允许时间是多少天？",
+"gold_answer": "15天",
+"model_answer": "根据联合国《关押待遇的最低标准规则》（曼德拉规则），单独关押的最长允许时间是**14天**。"
+},
+{
+"item_id": "E0017",
+"question": "《蛇先生》是哪位台湾作家的医学题材小说作品？",
+"gold_answer": "赖和",
+"model_answer": "《蛇先生》是台湾作家李昂的医学题材小说作品。"
+},
+{
+"item_id": "E0018",
+"question": "1917年发明的一种可以通过人造打火石摩擦生火的打火机是由哪位英国人发明的？",
+"gold_answer": "阿尔弗雷德·丹希尔 (Alfred Dunhill)",
+"model_answer": "1917年发明的可以通过人造打火石摩擦生火的打火机是由英国人**威廉·拉塞尔·沃克**（William Russell Walker）发明的。"
+},
+{
+"item_id": "E0019",
+"question": "现代驯化西瓜最有可能的祖先或近亲是什么物种？",
+"gold_answer": "科尔多凡瓜",
+"model_answer": "现代驯化西瓜最有可能的祖先或近亲是**葫芦科植物**中的**Citrullus lanatus**（西瓜属）本身。不过，其野生近亲包括**Citrullus colocynius**（苦味西瓜）和**Citrullus amarus**（苦"
+},
+{
+"item_id": "E0020",
+"question": "第一位发现来自银河系的无线电波的科学家是谁？",
+"gold_answer": "卡尔·吉德·央斯基（Karl Guthe Jansky）",
+"model_answer": "第一位发现来自银河系的无线电波的科学家是**卡尔·央斯基（Karl Jansky）**。他在1930年代初期通过研究无线电波的来源，首次探测到来自银河系的无线电波。"
+},
+{
+"item_id": "E0021",
+"question": "江西省丰城矿务局是在哪一年成立的？",
+"gold_answer": "1958",
+"model_answer": "江西省丰城矿务局成立于1958年。"
+},
+{
+"item_id": "E0022",
+"question": "中国首座国家矿山公园是什么？",
+"gold_answer": "黄石国家矿山公园",
+"model_answer": "中国首座国家矿山公园是**辽宁鞍山国家矿山公园**，于2005年正式批准建立。"
+},
+{
+"item_id": "E0023",
+"question": "船帆座X-1的光谱分类是什么？",
+"gold_answer": "B0.5Ib",
+"model_answer": "船帆座X-1的光谱分类是O型星。"
+},
+{
+"item_id": "E0024",
+"question": "根据2014年《安联世界财富报告》，全球居民金融资产总规模在2013年增长了百分之多少？",
+"gold_answer": "9.9%",
+"model_answer": "根据2014年《安联世界财富报告》，全球居民金融资产总规模在2013年增长了**10.5%**。"
+},
+{
+"item_id": "E0025",
+"question": "安戈尔是属于智利哪个大区的城市？",
+"gold_answer": "阿劳卡尼亚大区",
+"model_answer": "安戈尔（Angol）属于智利的阿劳卡尼亚大区（Araucanía Region）。"
+},
+{
+"item_id": "E0026",
+"question": "1,1,1-三氯-2,2,2-三氟乙烷的化学分子式是什么？",
+"gold_answer": "Cl3C-CF3",
+"model_answer": "1,1,1-三氯-2,2,2-三氟乙烷的化学分子式是 **C₂H₃Cl₃F₃**。"
+},
+{
+"item_id": "E0027",
+"question": "MOF-5中使用的连接配体是什么？",
+"gold_answer": "对苯二甲酸",
+"model_answer": "MOF-5中使用的连接配体是2-甲基咪唑（2-Methylimidazole）。"
+},
+{
+"item_id": "E0028",
+"question": "遵义大竹园铝土矿床是哪一年被发现的？",
+"gold_answer": "1990",
+"model_answer": "遵义大竹园铝土矿床是在1956年被发现的。"
+},
+{
+"item_id": "E0029",
+"question": "伊莉莎白二世女王岛以前的名称是什么？",
+"gold_answer": "阿斯彭岛",
+"model_answer": "伊莉莎白二世女王岛以前的名称是“巴尔的摩岛”（Baltimore Island）。"
+},
+{
+"item_id": "E0030",
+"question": "布伦乔尔最后一次被目击的年份是哪一年？",
+"gold_answer": "1985",
+"model_answer": "布伦乔尔最后一次被目击的年份是1977年。"
+},
+{
+"item_id": "E0031",
+"question": "苯甲酸钠的化学式是什么？",
+"gold_answer": "C7H5NaO2",
+"model_answer": "苯甲酸钠的化学式是 **C₇H₅NaO₂**。"
+},
+{
+"item_id": "E0032",
+"question": "俄罗斯联邦原住少数民族统一名录首次由政府批准是在哪一年？",
+"gold_answer": "2000",
+"model_answer": "俄罗斯联邦原住少数民族统一名录首次由政府批准是在**1990年**。"
+},
+{
+"item_id": "E0033",
+"question": "根据台湾公司法第356-1条，闭锁性股份有限公司的股东人数限制是不超过多少人？",
+"gold_answer": "50",
+"model_answer": "根据台湾公司法第356-1条，闭锁性股份有限公司的股东人数限制为不超过50人。"
+},
+{
+"item_id": "E0034",
+"question": "在车床上，哪种类型的卡盘由于具有各自独立移动的卡爪，能夹住如椭圆、方形、长方形等不规则形状的工件？",
+"gold_answer": "四爪卡盘",
+"model_answer": "这种卡盘是自定心卡盘。"
+},
+{
+"item_id": "E0035",
+"question": "约翰·梅钦在哪一年用格雷果里－莱布尼茨级数推出了可以快速收敛圆周率的公式？",
+"gold_answer": "1706",
+"model_answer": "约翰·梅钦在1775年使用格雷果里－莱布尼茨级数推出了可以快速收敛计算圆周率的公式。"
+},
+{
+"item_id": "E0036",
+"question": "《I Wish For You》这首单曲由作词家填词？",
+"gold_answer": "michico",
+"model_answer": "《I Wish For You》这首单曲由作词家 **林夕** 填词。"
+},
+{
+"item_id": "E0037",
+"question": "1928年首次出版的《地之子》是哪位作者的作品？",
+"gold_answer": "台静农",
+"model_answer": "《地之子》是1928年首次出版的中国现代文学作品，作者是**台静农**。"
+},
+{
+"item_id": "E0038",
+"question": "《天体战士桑雷德》动画是从哪一年开始播放的？",
+"gold_answer": "2008年",
+"model_answer": "《天体战士桑雷德》动画是从1985年开始播放的。"
+},
+{
+"item_id": "E0039",
+"question": "《苹果的滋味》这部纪录片是在哪一年首播的？",
+"gold_answer": "2015",
+"model_answer": "《苹果的滋味》（The Taste of Apples）是一部2018年首播的纪录片。"
+},
+{
+"item_id": "E0040",
+"question": "南京大学地学院曾培养出在1984年获得世界地学界最高荣誉Twenhofel乌拉斯坦勋章的校友是谁？",
+"gold_answer": "许靖华",
+"model_answer": "南京大学地学院曾培养出在1984年获得世界地学界最高荣誉Twenhofel乌拉斯坦勋章的校友是**李四光**。"
+},
+{
+"item_id": "E0041",
+"question": "纳维－斯托克斯方程是将哪个物理定律应用到流体动力学之后得到的结果？",
+"gold_answer": "牛顿第二定律",
+"model_answer": "纳维－斯托克斯方程是将**牛顿第二定律**应用到流体动力学之后得到的结果。"
+},
+{
+"item_id": "E0042",
+"question": "西班牙布尼奥尔的“西红柿大战”起源于哪一年？",
+"gold_answer": "1945",
+"model_answer": "西班牙布尼奥尔的“西红柿大战”（La Tomatina）起源于1945年。"
+},
+{
+"item_id": "E0043",
+"question": "1994年叱咤903最受欢迎广播剧的获奖作品是什么？",
+"gold_answer": "恋爱二分一",
+"model_answer": "1994年叱咤903最受欢迎广播剧的获奖作品是《我本善良》。"
+},
+{
+"item_id": "E0044",
+"question": "全球定位系统使用的最常用的大地测量系统标准是什么？",
+"gold_answer": "WGS84",
+"model_answer": "全球定位系统（GPS）使用的最常用的大地测量系统标准是**WGS-84**（World Geodetic System 1984）。"
+},
+{
+"item_id": "E0045",
+"question": "多戈尼（Dogoni）位于马里哪个省？",
+"gold_answer": "锡卡索省",
+"model_answer": "多戈尼（Dogoni）位于马里北部的莫普提省（Mopti）。"
+},
+{
+"item_id": "E0046",
+"question": "南湖晚报是哪一年创办的？",
+"gold_answer": "1995",
+"model_answer": "《南湖晚报》创办于1994年。"
+},
+{
+"item_id": "E0047",
+"question": "海狸鼠的拉丁学名是什么？",
+"gold_answer": "Myocastor coypus",
+"model_answer": "海狸鼠的拉丁学名是 *Myocastor coypus*。"
+},
+{
+"item_id": "E0048",
+"question": "英国动物学家菲利普·斯克莱特提出雷姆利亚大陆时是假设其位于哪片海域？",
+"gold_answer": "印度洋",
+"model_answer": "菲利普·斯克莱特提出雷姆利亚大陆时，假设其位于**印度洋**。"
+},
+{
+"item_id": "E0049",
+"question": "有座城市的名称由法属东印度公司建造的船只Le Soleil d'Orient演化而来，这个城市是什么？",
+"gold_answer": "洛里昂",
+"model_answer": "这个城市是越南的海防市（Hải Phòng）。其名称来源于法属东印度公司建造的船只“Le Soleil d'Orient”（东方之日）。"
+},
+{
+"item_id": "E0050",
+"question": "萨守坚是南宋道教哪一脉的代表人物？",
+"gold_answer": "神霄派",
+"model_answer": "萨守坚是南宋道教正一派的代表人物。"
+},
+{
+"item_id": "E0051",
+"question": "双鼠星系属于哪个星座的螺旋星系？",
+"gold_answer": "后发座",
+"model_answer": "双鼠星系（NGC 4636）属于后发座（Coma Berenices）的螺旋星系。"
+},
+{
+"item_id": "E0052",
+"question": "在字体排版学中，决定无升部的小写字母字体大小的线被称为什么？",
+"gold_answer": "主线",
+"model_answer": "在字体排版学中，决定无升部的小写字母字体大小的线被称为**x线**（x-height）。"
+},
+{
+"item_id": "E0053",
+"question": "在英国下议院中负责维护议院秩序与内部管理事务的官员是什么职位？",
+"gold_answer": "下议院警卫官",
+"model_answer": "在英国下议院中，负责维护议院秩序与内部管理事务的官员是**议长**（Speaker of the House of Commons）。议长是下议院的首席官员，负责主持会议、维持秩序、确保议事规则得到遵守，并管理下议院的日常事务。"
+},
+{
+"item_id": "E0054",
+"question": "电视剧《大宋碑歌》中饰演方玉儿的演员是谁？",
+"gold_answer": "韩雪",
+"model_answer": "电视剧《大宋碑歌》中饰演方玉儿的演员是**刘佩琦**。"
+},
+{
+"item_id": "E0055",
+"question": "根据DSM-5的标准，诊断儿童注意力不足过动症至少需要展现多少个症状？",
+"gold_answer": "六个",
+"model_answer": "根据DSM-5的标准，诊断儿童注意力不足过动症（ADHD）至少需要展现**6个症状**，且这些症状必须在**12个月内**持续存在，并且在**多个场合**（如家庭、学校、社交环境）中出现。"
+},
+{
+"item_id": "E0056",
+"question": "以色列境内最高的瀑布位于哪个自然保护区？",
+"gold_answer": "加姆拉自然保护区",
+"model_answer": "以色列境内最高的瀑布是**马加利瀑布**（Maghara Falls），位于**内盖夫沙漠**（Negev Desert）的**马加利自然保护区**（Maghara Nature Reserve）。"
+},
+{
+"item_id": "E0057",
+"question": "莱斯利·沙茨因哪部电影获得奥斯卡最佳音响效果奖提名？",
+"gold_answer": "木乃伊",
+"model_answer": "莱斯利·沙茨因电影《星球大战：新希望》（Star Wars: Episode IV - A New Hope）获得奥斯卡最佳音响效果奖提名。"
+},
+{
+"item_id": "E0058",
+"question": "《生命工程》项目是由哪位科学家在1990年代提出的？",
+"gold_answer": "邓新篪",
+"model_answer": "《生命工程》项目并非由单一科学家在1990年代提出，而是生物技术与生命科学领域多个研究项目和倡议的统称。不过，若指与生命工程相关的重大科学计划，如“人类基因组计划”（Human Genome Project, HGP），则是由国际科学"
+},
+{
+"item_id": "E0059",
+"question": "哪一年中国中医科学院西苑医院的“血瘀证与活血化瘀研究”获得了国家科技进步一等奖？",
+"gold_answer": "2003",
+"model_answer": "1992年。"
+},
+{
+"item_id": "E0060",
+"question": "IRSEM是在哪一年法律上成立的？",
+"gold_answer": "2010",
+"model_answer": "IRSEM（法国国际战略与军备研究研究所）是在1989年法律上成立的。"
+},
+{
+"item_id": "E0061",
+"question": "怀仁旺火习俗已被收录进哪一批国家级非物质文化遗产名录？",
+"gold_answer": "第三批",
+"model_answer": "怀仁旺火习俗已被收录进第一批国家级非物质文化遗产名录。"
+},
+{
+"item_id": "E0062",
+"question": "用于吸引外国投资者的葡萄牙签证政策称为什么？",
+"gold_answer": "葡萄牙黄金签证",
+"model_answer": "用于吸引外国投资者的葡萄牙签证政策称为“黄金签证”（Golden Visa）。"
+},
+{
+"item_id": "E0063",
+"question": "电影《时空永恒的爱恋》的导演是谁？",
+"gold_answer": "李·托兰德·克莱格（Lee Toland Krieger）",
+"model_answer": "电影《时空永恒的爱恋》的导演是**李安**。"
+},
+{
+"item_id": "E0064",
+"question": "中国最后一家点翠工场是哪一年关闭的？",
+"gold_answer": "1933年",
+"model_answer": "中国最后一家点翠工场于2006年关闭。"
+},
+{
+"item_id": "E0065",
+"question": "哪位美国社会学家提出了大传统与小传统的概念？",
+"gold_answer": "雷德菲尔德",
+"model_answer": "美国社会学家克利福德·格尔茨（Clifford Geertz）提出了“大传统”与“小传统”的概念。"
+},
+{
+"item_id": "E0066",
+"question": "《如何以言行事》一书是根据哪位英国哲学家的讲座集结出版的？",
+"gold_answer": "约翰·奥斯丁(John Austin)",
+"model_answer": "《如何以言行事》一书是根据英国哲学家约翰·朗肖·奥斯汀（J.L. Austin）的讲座集结出版的。"
+},
+{
+"item_id": "E0067",
+"question": "俄勒冈州边界争端中哪一年签订了俄勒冈条约以解决大部分边界问题？",
+"gold_answer": "1846年",
+"model_answer": "1846年。"
+},
+{
+"item_id": "E0068",
+"question": "克雷格湾机场位于哪个岛国的哪个岛上？",
+"gold_answer": "瓦努阿图阿姆布瑞岛",
+"model_answer": "克雷格湾机场位于南太平洋岛国图瓦卢的瓜达尔卡纳尔岛（Gau）上。"
+},
+{
+"item_id": "E0069",
+"question": "谁在1931年绘制了著名的伦敦地铁路线的拓扑地图？",
+"gold_answer": "哈利·贝克（Harry Beck）",
+"model_answer": "查尔斯·里德利（Charles Reid）在1931年绘制了著名的伦敦地铁路线的拓扑地图。"
+},
+{
+"item_id": "E0070",
+"question": "世界卫生组织在哪一年的第三十三届世界卫生大会正式宣告“全世界和全世界人民永久摆脱了天花”？",
+"gold_answer": "1980年",
+"model_answer": "世界卫生组织在1980年的第三十三届世界卫生大会正式宣告“全世界和全世界人民永久摆脱了天花”。"
+},
+{
+"item_id": "E0071",
+"question": "限制理论的创始人是哪位以色列学者？",
+"gold_answer": "艾利·高德拉特（Eliyahu M. Goldratt）",
+"model_answer": "限制理论的创始人是以色列学者**丹尼尔·卡尼曼**（Daniel Kahneman）。"
+},
+{
+"item_id": "E0072",
+"question": "在密码学系统中，密钥分发中心（KDC）主要使用哪种加密技术进行操作？",
+"gold_answer": "对称加密",
+"model_answer": "密钥分发中心（KDC）主要使用**对称加密技术**进行操作。它通常基于**共享密钥**（如DES或AES）来分发和管理会话密钥，确保通信双方能够安全地交换密钥。"
+},
+{
+"item_id": "E0073",
+"question": "在《九歌》中与大司命相对的神明是谁？",
+"gold_answer": "少司命",
+"model_answer": "在《九歌》中与大司命相对的神明是**少司命**。"
+},
+{
+"item_id": "E0074",
+"question": "根据1981年英国国籍法,哪一类英国公民缩写称为'BOCs'?",
+"gold_answer": "英国海外公民",
+"model_answer": "根据1981年英国国籍法，缩写为“BOCs”的英国公民是指“British Overseas Citizens”（英国海外公民）。"
+},
+{
+"item_id": "E0075",
+"question": "Beatport的Beatport 1.0网上商店是在哪一年推出的？",
+"gold_answer": "2004",
+"model_answer": "Beatport的Beatport 1.0网上商店是在**2002年**推出的。"
+},
+{
+"item_id": "E0076",
+"question": "中国剧作家胡丹沸出生于哪一年?",
+"gold_answer": "1913",
+"model_answer": "胡丹沸出生于1935年。"
+},
+{
+"item_id": "E0077",
+"question": "威锋数位（DynaComware Corporation）是在什么年份成立的？",
+"gold_answer": "1987",
+"model_answer": "威锋数位（DynaComware Corporation）成立于2001年。"
+},
+{
+"item_id": "E0078",
+"question": "联合国环境署执行主任在哪一年发布了全球绿色新政倡议？",
+"gold_answer": "2008",
+"model_answer": "联合国环境署执行主任在2021年发布了全球绿色新政倡议。"
+},
+{
+"item_id": "E0079",
+"question": "台湾税制是台湾税收法规和什么制度的总称？",
+"gold_answer": "稽征管理",
+"model_answer": "台湾税制是台湾税收法规和税务行政制度的总称。"
+},
+{
+"item_id": "E0080",
+"question": "ShuuKaRen的第一首出道单曲名字叫什么？",
+"gold_answer": "UNIVERSE",
+"model_answer": "ShuuKaRen的第一首出道单曲名字是《Kiss & Make Up》。"
+},
+{
+"item_id": "E0081",
+"question": "鳃曳类蠕虫有多少个现代属？",
+"gold_answer": "6",
+"model_answer": "鳃曳类蠕虫（Glyptophorina）目前被归入一个现代属，即 **Glyptophora**。因此，鳃曳类蠕虫有 **1个现代属**。"
+},
+{
+"item_id": "E0082",
+"question": "哪个Wi-Fi世代首次采用了6GHz频段？",
+"gold_answer": "Wi-Fi 6E",
+"model_answer": "Wi-Fi 6E（也称为802.11ax扩展）首次采用了6GHz频段。"
+},
+{
+"item_id": "E0083",
+"question": "煤气灯成为流行照明光源的世纪是哪个？",
+"gold_answer": "19世纪",
+"model_answer": "煤气灯成为流行照明光源的世纪是19世纪。"
+},
+{
+"item_id": "E0084",
+"question": "在两引物之间另合成一条寡核苷酸链(内部寡核苷酸)标记后做探针,再与PCR产物杂交被称为什么杂交技术？",
+"gold_answer": "Southern印迹杂交",
+"model_answer": "这种杂交技术被称为**内部寡核苷酸探针杂交技术**，也称为**寡核苷酸探针杂交技术**或**内部探针杂交技术**。它常用于PCR产物的特异性检测和分析。"
+},
+{
+"item_id": "E0085",
+"question": "古希腊科学家阿基米德用几何方法推导出杠杆原理的著作是什么？",
+"gold_answer": "论平面图形的平衡",
+"model_answer": "阿基米德的著作《论杠杆》（*On the Equilibrium of Planes*）中使用几何方法推导了杠杆原理。"
+},
+{
+"item_id": "E0086",
+"question": "在葡萄牙土地上普遍存在的一种建筑风格，是当地建筑传统和欧洲什么风格相结合的结果？",
+"gold_answer": "巴洛克",
+"model_answer": "在葡萄牙土地上普遍存在的一种建筑风格是**曼努埃尔风格**（Manueline），它是当地建筑传统与**哥特式**和**文艺复兴**风格相结合的结果。"
+},
+{
+"item_id": "E0087",
+"question": "C++11有多少个关键字？",
+"gold_answer": "73",
+"model_answer": "C++11 有 **32 个关键字**。"
+},
+{
+"item_id": "E0088",
+"question": "1993年，美陆军将“增强型士兵系统”计划更名为什么？",
+"gold_answer": "21世纪地面勇士",
+"model_answer": "1993年，美陆军将“增强型士兵系统”计划更名为“陆地勇士”（Land Warrior）。"
+},
+{
+"item_id": "E0089",
+"question": "祖冲之算法于哪一年被3GPP采纳为国际加密标准？",
+"gold_answer": "2011",
+"model_answer": "祖冲之算法（ZUC）于2012年被3GPP采纳为国际加密标准，用于4G LTE通信系统。"
+},
+{
+"item_id": "E0090",
+"question": "1545年在哪个南美地区发现了当时世界储量第一的银矿？",
+"gold_answer": "波托西",
+"model_answer": "1545年，西班牙人在南美洲的秘鲁发现了当时世界储量第一的银矿，即波托西银矿（Potosí Silver Mine）。"
+},
+{
+"item_id": "E0091",
+"question": "西安国际港务区成为中国（陕西）自由贸易试验区的一部分是哪一年？",
+"gold_answer": "2017",
+"model_answer": "西安国际港务区成为中国（陕西）自由贸易试验区的一部分是2017年。"
+},
+{
+"item_id": "E0092",
+"question": "南奥塞梯共和国的国旗是哪一天开始正式启用?",
+"gold_answer": "1991年11月28日",
+"model_answer": "南奥塞梯共和国的国旗于**2004年8月12日**正式启用。"
+},
+{
+"item_id": "E0093",
+"question": "《淞滨琐话》是清朝哪位作家创作的短篇小说集？",
+"gold_answer": "王韬",
+"model_answer": "《淞滨琐话》是清朝作家王韬创作的短篇小说集。"
+},
+{
+"item_id": "E0094",
+"question": "克雷莫纳传统小提琴制作工艺于哪一年被联合国教科文组织宣布为非物质文化遗产？",
+"gold_answer": "2012年",
+"model_answer": "克雷莫纳传统小提琴制作工艺于**2009年**被联合国教科文组织宣布为非物质文化遗产。"
+},
+{
+"item_id": "E0095",
+"question": "WOFF 2.0 使用的压缩技术是什么？",
+"gold_answer": "Brotli",
+"model_answer": "WOFF 2.0 使用的压缩技术是 **Brotli**。"
+},
+{
+"item_id": "E0096",
+"question": "SEA-ME-WE 3国际海底光缆的全长是多少公里？",
+"gold_answer": "39000",
+"model_answer": "SEA-ME-WE 3国际海底光缆的全长约为**14,800公里**。"
+},
+{
+"item_id": "E0097",
+"question": "中国现代武术家燕飞霞是崆峒派的第几代掌派人",
+"gold_answer": "第十代",
+"model_answer": "燕飞霞是崆峒派第27代掌派人。"
+},
+{
+"item_id": "E0098",
+"question": "降临节日历最早是由哪个宗教派别在19世纪初使用的？",
+"gold_answer": "路德宗",
+"model_answer": "降临节日历最早是由基督教的路德宗（信义宗）在19世纪初使用的。"
+},
+{
+"item_id": "E0099",
+"question": "性别特征术语在马耳他国家法律中首次被定义是哪一年？",
+"gold_answer": "2015",
+"model_answer": "性别特征术语在马耳他国家法律中首次被定义是在**2015年**。这一年，马耳他通过了《民事结合法》（Civil Union Act），其中首次正式使用了“性别特征”（gender identity）这一术语。"
+},
+{
+"item_id": "E0100",
+"question": "太阳系外行星HD 114386 b是在哪一年被发现的？",
+"gold_answer": "2004",
+"model_answer": "太阳系外行星HD 114386 b是在2006年被发现的。"
+},
+{
+"item_id": "E0101",
+"question": "段落符号“¶”的Unicode编码是什么？",
+"gold_answer": "U+00B6",
+"model_answer": "段落符号“¶”的Unicode编码是 **U+00B6**。"
+},
+{
+"item_id": "E0102",
+"question": "《航海王 海贼无双》这款游戏的开发商是哪家公司？",
+"gold_answer": "光荣特库摩（Koei Tecmo）",
+"model_answer": "《航海王 海贼无双》这款游戏的开发商是日本的**万代南梦宫娱乐**（Bandai Namco Entertainment）。"
+},
+{
+"item_id": "E0103",
+"question": "平津闸的制造者是谁？",
+"gold_answer": "郭守敬",
+"model_answer": "平津闸的制造者是明代的匠人，具体姓名已无详细记载，但其建造与明代的水利工程技术密切相关。"
+},
+{
+"item_id": "E0104",
+"question": "VF-17梦魇是首次在哪个日本科幻动画中登场的？",
+"gold_answer": "Macross7",
+"model_answer": "VF-17梦魇首次登场于日本科幻动画《超时空要塞》（Macross）。"
+},
+{
+"item_id": "E0105",
+"question": "哪个条约规定居住于托雷斯海峡附近的巴国公民，可于澳大利亚指定区域内自由进出，无须提前申请签证？",
+"gold_answer": "《托雷斯海峡条约》",
+"model_answer": "《托雷斯海峡条约》（Torres Strait Treaty）规定，居住于托雷斯海峡附近的巴布亚新几内亚公民，可在澳大利亚指定区域内自由进出，无须提前申请签证。"
+},
+{
+"item_id": "E0106",
+"question": "哪个大学的科学家在2020年通过一种名为AZD5582的药物来激活转录因子NF-κB，从而被nature评为2020十大科学发现之一？",
+"gold_answer": "北卡罗莱纳大学",
+"model_answer": "哈佛大学的科学家在2020年通过一种名为AZD5582的药物来激活转录因子NF-κB，从而被《Nature》评为2020十大科学发现之一。"
+},
+{
+"item_id": "E0107",
+"question": "《元祖西游记 超级猴子大冒险》是哪一年在日本地区发行的？",
+"gold_answer": "1986年",
+"model_answer": "《元祖西游记 超级猴子大冒险》（原名：『元祖西遊記 ソウジョウモンキーの大冒険』）是在1985年在日本地区发行的。"
+},
+{
+"item_id": "E0108",
+"question": "藿香正气水中含有的属于菊科的中药成分是什么？",
+"gold_answer": "苍术",
+"model_answer": "藿香正气水中含有的属于菊科的中药成分是**苍术**。"
+},
+{
+"item_id": "E0109",
+"question": "《花下游乐图》是哪位艺术家的作品？",
+"gold_answer": "狩野长信",
+"model_answer": "《花下游乐图》是清代画家任渭长的作品。"
+},
+{
+"item_id": "E0110",
+"question": "《我的生活》这部回忆录的作者是美国第几任总统？",
+"gold_answer": "42",
+"model_answer": "《我的生活》（My Life）是美国第22任总统尤利西斯·S·格兰特（Ulysses S. Grant）的回忆录。"
+},
+{
+"item_id": "E0111",
+"question": "歌剧《望夫云》的首演是在哪一年进行的？",
+"gold_answer": "1962",
+"model_answer": "歌剧《望夫云》的首演是在1959年进行的。"
+},
+{
+"item_id": "E0112",
+"question": "在政治经济学中，什么是指社会权利的强度和公民对市场依赖的免疫程度？",
+"gold_answer": "去商品化",
+"model_answer": "在政治经济学中，社会权利的强度和公民对市场依赖的免疫程度通常与“社会保护”或“社会安全网”相关。这一概念指的是社会通过法律、制度和政策保障公民的基本权利和福利，从而减少他们对市场的过度依赖，增强其抵御市场风险的能力。"
+},
+{
+"item_id": "E0113",
+"question": "莫利塞克罗地亚人主要使用哪种语言？",
+"gold_answer": "斯拉沃莫利萨诺语",
+"model_answer": "莫利塞克罗地亚人主要使用意大利语。他们是在意大利莫利塞大区的克罗地亚裔后裔，因此保留了意大利语作为主要交流语言。"
+},
+{
+"item_id": "E0114",
+"question": "在公元68年修建的中国第一座佛寺叫什么？",
+"gold_answer": "白马寺",
+"model_answer": "中国第一座佛寺是白马寺，建于东汉明帝永平十一年（公元68年）。"
+},
+{
+"item_id": "E0115",
+"question": "被认为是纪实摄影之父的美国19世纪摄影师是谁？",
+"gold_answer": "马修·布雷迪（Mathew Brady）",
+"model_answer": "被认为是纪实摄影之父的美国19世纪摄影师是**马修·布雷迪（Mathew Brady）**。他以其在美国内战期间拍摄的纪实摄影作品而闻名。"
+},
+{
+"item_id": "E0116",
+"question": "布拉格国际关系研究所的创办者是谁？",
+"gold_answer": "捷克共和国外交部 ",
+"model_answer": "布拉格国际关系研究所（Institute of International Relations, Prague）的创办者是**约瑟夫·科瓦尔**（Josef Koval）。他于1929年创立了该研究所，使其成为捷克斯洛伐克乃至东欧地区重要的国际关系研究机构。"
+},
+{
+"item_id": "E0117",
+"question": "eCryptfs 在哪个版本的 Linux 内核中首次引入？",
+"gold_answer": "2.6.19",
+"model_answer": "eCryptfs 在 Linux 内核 2.6.18 版本中首次引入。"
+},
+{
+"item_id": "E0118",
+"question": "牙齿植入物使用骨整合术是从哪一年开始广泛应用的？",
+"gold_answer": "1981",
+"model_answer": "牙齿植入物使用骨整合术（osseointegration）是从1980年代开始广泛应用的。这一技术由瑞典学者Per-Ingvar Brånemark在1965年首次发现，并在1980年代逐渐推广到临床应用。"
+},
+{
+"item_id": "E0119",
+"question": "曾经的南非国家元首雅各布斯·约翰内斯·福歇任期多少年？",
+"gold_answer": "7",
+"model_answer": "雅各布斯·约翰内斯·福歇（Jacobus Johannes Fouché）担任南非总统的任期为 **1989年9月15日至1994年5月10日**，共计约 **4年7个月**。"
+},
+{
+"item_id": "E0120",
+"question": "中国自行车运动协会是哪一年成立的？",
+"gold_answer": "1959",
+"model_answer": "中国自行车运动协会成立于1984年。"
+},
+{
+"item_id": "E0121",
+"question": "在十二平均律中，中音E的频率是多少赫兹？",
+"gold_answer": "329.628 Hz",
+"model_answer": "在十二平均律中，中音E（即E4）的频率是 **329.63 Hz**。"
+},
+{
+"item_id": "E0122",
+"question": "天空电视台3D频道首次使用3D技术转播的足球赛事是哪两支队伍之间的比赛？",
+"gold_answer": "曼联与切尔西",
+"model_answer": "天空电视台3D频道首次使用3D技术转播的足球赛事是英格兰国家队对阵德国国家队的友谊赛，比赛时间为2010年6月11日。"
+},
+{
+"item_id": "E0123",
+"question": "蹴鞠是现在足球的前身，是哪本古籍里记载了“踏鞠始于轩后，军中练武之剧，以革为元囊，实以毛发”？",
+"gold_answer": "《太平清话》",
+"model_answer": "《文献通考》"
+},
+{
+"item_id": "E0124",
+"question": "意大利的著名摩托车品牌之一，以高性能跑车而闻名，并被认为是摩托车中的法拉利的品牌是哪个？",
+"gold_answer": "杜卡迪",
+"model_answer": "杜卡迪（Ducati）"
+},
+{
+"item_id": "E0125",
+"question": "非洲猪瘟是哪一年在中国大陆首次被确认？",
+"gold_answer": "2018",
+"model_answer": "非洲猪瘟在中国大陆首次被确认是在2018年。"
+},
+{
+"item_id": "E0126",
+"question": "佳吉列夫当代艺术博物馆是在哪一年成立的？",
+"gold_answer": "2008",
+"model_answer": "佳吉列夫当代艺术博物馆（Museum of Contemporary Art, Moscow）成立于1996年。"
+},
+{
+"item_id": "E0127",
+"question": "欧盟数位服务法案是哪一年由欧盟委员会首次提出的？",
+"gold_answer": "2020",
+"model_answer": "欧盟数位服务法案（Digital Services Act，简称DSA）是由欧盟委员会于**2020年**首次提出的。"
+},
+{
+"item_id": "E0128",
+"question": "四物汤的最早记载在哪个文献中？",
+"gold_answer": "《仙授理伤续断秘方》",
+"model_answer": "四物汤的最早记载见于《太平惠民和剂局方》。"
+},
+{
+"item_id": "E0129",
+"question": "阿亚安·希尔西·阿里是在哪一年出生的？",
+"gold_answer": "1969年",
+"model_answer": "阿亚安·希尔西·阿里（Ayaan Hirsi Ali）出生于1969年。"
+},
+{
+"item_id": "E0130",
+"question": "1987年签署的协议名，规定了减少及限制氟氯碳化合物的生产是哪一个？",
+"gold_answer": "蒙特利尔议定书",
+"model_answer": "1987年签署的协议名为《蒙特利尔议定书》，它规定了减少及限制氟氯碳化合物（CFCs）的生产。"
+},
+{
+"item_id": "E0131",
+"question": "爱马仕打字机哪一年首次上市？",
+"gold_answer": "1935",
+"model_answer": "爱马仕打字机（Hermès Typewriter）首次上市是在 **1985年**。"
+},
+{
+"item_id": "E0132",
+"question": "夹缬技艺在中国于哪一年被列入国家级非物质文化遗产名录？",
+"gold_answer": "2011",
+"model_answer": "夹缬技艺于2008年被列入国家级非物质文化遗产名录。"
+},
+{
+"item_id": "E0133",
+"question": "维克多·维斯科沃（Victor Vescovo）是在2022年参加了哪一项太空任务？",
+"gold_answer": "蓝色起源NS-21任务",
+"model_answer": "维克多·维斯科沃（Victor Vescovo）并未在2022年参加任何太空任务。他是一位深海探险家，以探索地球深海著称，而非太空任务参与者。"
+},
+{
+"item_id": "E0134",
+"question": "《冥祥记》是哪位古代人物所撰写的作品？",
+"gold_answer": "王琰",
+"model_answer": "《冥祥记》是南朝宋时期刘义庆所撰写的作品。"
+},
+{
+"item_id": "E0135",
+"question": "彭阳春酒厂是哪一年成立的？",
+"gold_answer": "1963",
+"model_answer": "彭阳春酒厂成立于1958年。"
+},
+{
+"item_id": "E0136",
+"question": "中国美术家协会理事王学辉是哪一年从山西大学艺术系毕业的？",
+"gold_answer": "1983",
+"model_answer": "王学辉于1982年从山西大学艺术系毕业。"
+},
+{
+"item_id": "E0137",
+"question": "东野圭吾的小说《沉睡的森林》首次出版于哪一年？",
+"gold_answer": "1989年",
+"model_answer": "《沉睡的森林》是东野圭吾的短篇小说集，首次出版于2006年。"
+},
+{
+"item_id": "E0138",
+"question": "嫦娥五号探测器于2020年12月17日在中国哪个着陆场着陆？",
+"gold_answer": "四子王旗着陆场",
+"model_answer": "嫦娥五号探测器于2020年12月17日在中国的内蒙古四子王旗着陆场着陆。"
+},
+{
+"item_id": "E0139",
+"question": "Google云打印服务停止支持的日期是哪一年？",
+"gold_answer": "2020",
+"model_answer": "Google云打印服务（Google Cloud Print）停止支持的日期是**2021年10月31日**。"
+},
+{
+"item_id": "E0140",
+"question": "中国首宗个人破产案的债务人是谁？",
+"gold_answer": "梁文锦",
+"model_answer": "中国首宗个人破产案的债务人是**黄益民**。该案于2021年11月在深圳中院审结，是全国首例个人破产案件。"
+},
+{
+"item_id": "E0141",
+"question": "15世纪朝鲜王朝哪一位大王遣人完成《训民正音》，创造朝鲜拼音文？",
+"gold_answer": "世宗大王",
+"model_answer": "15世纪朝鲜王朝的世宗大王（李祘）遣人完成《训民正音》，创造了朝鲜拼音文。"
+},
+{
+"item_id": "E0142",
+"question": "2005年发行的游戏《战神》的主角是谁？",
+"gold_answer": "奎托斯（Kratos）",
+"model_answer": "2005年发行的游戏《战神》（God of War）的主角是奎托斯（Kratos）。"
+},
+{
+"item_id": "E0143",
+"question": "Archicad软件是由哪家公司开发的？",
+"gold_answer": "Graphisoft",
+"model_answer": "Archicad 软件是由 **Graphisoft** 公司开发的。"
+},
+{
+"item_id": "E0144",
+"question": "根据国际民用航空组织标准，中华人民共和国、香港和澳门的航空器国籍标志是什么？",
+"gold_answer": "B",
+"model_answer": "根据国际民用航空组织（ICAO）标准，中华人民共和国的航空器国籍标志是“B”，香港的航空器国籍标志是“HK”，澳门的航空器国籍标志是“M”。"
+},
+{
+"item_id": "E0145",
+"question": "伍乐城的幻想国度作品演唱会56X Live 2014是在哪个地点举行的？",
+"gold_answer": "红磡香港体育馆",
+"model_answer": "伍乐城的幻想国度作品演唱会56X Live 2014是在中国上海的上海梅赛德斯-奔驰文化中心举行的。"
+},
+{
+"item_id": "E0146",
+"question": "日本艺术体操运动员三浦莉奈是哪一年出生的？",
+"gold_answer": "1994",
+"model_answer": "三浦莉奈（Miyuki Miura）出生于1997年11月14日。"
+},
+{
+"item_id": "E0147",
+"question": "欧芹是属于哪一个科的植物？",
+"gold_answer": "伞形科",
+"model_answer": "欧芹属于伞形科（Apiaceae）植物。"
+},
+{
+"item_id": "E0148",
+"question": "亚太广播联盟的总部自1976年以来位于哪个城市？",
+"gold_answer": "吉隆坡",
+"model_answer": "亚太广播联盟的总部自1976年以来位于泰国曼谷。"
+},
+{
+"item_id": "E0149",
+"question": "香港组合C AllStar的第7张音乐专辑《Collab Star》是在哪一年发行的？",
+"gold_answer": "2015",
+"model_answer": "香港组合C AllStar的第7张音乐专辑《Collab Star》是在2021年发行的。"
+},
+{
+"item_id": "E0150",
+"question": "国家文物局是在哪一年更名为目前的名称？",
+"gold_answer": "1988",
+"model_answer": "国家文物局于1999年更名为现名。"
+},
+{
+"item_id": "E0151",
+"question": "天主教菲律宾圣若瑟教区是在哪一年设立的？",
+"gold_answer": "1984",
+"model_answer": "天主教菲律宾圣若瑟教区（Diocese of San Jose）设立于**1951年**。"
+},
+{
+"item_id": "E0152",
+"question": "铁锈指示剂中的铁氰化钾会与哪种离子反应生成蓝色化合物？",
+"gold_answer": "Fe2+（亚铁离子）",
+"model_answer": "铁氰化钾会与亚铁离子（Fe²⁺）反应生成蓝色的 Turnbull 蓝（铁氰化亚铁）。"
+},
+{
+"item_id": "E0153",
+"question": "火蚁属的拉丁学名是什么？",
+"gold_answer": "Solenopsis",
+"model_answer": "火蚁属的拉丁学名是 **Solenopsis**。"
+},
+{
+"item_id": "E0154",
+"question": "姚丹晖在2011年获得的《扬州杯》全国诗书画大赛的奖项是什么？",
+"gold_answer": "金奖",
+"model_answer": "姚丹晖在2011年获得的《扬州杯》全国诗书画大赛的奖项是金奖。"
+},
+{
+"item_id": "E0155",
+"question": "2022年俄罗斯代表涅边贾在联合国会议上展示乌克兰所使用的地雷的中文正式全名是什么？",
+"gold_answer": "PFM-1地雷",
+"model_answer": "2022年俄罗斯代表涅边贾在联合国会议上展示的乌克兰所使用的地雷的中文正式全名是“乌克兰制造的反人员地雷”。"
+},
+{
+"item_id": "E0156",
+"question": "华为P30系列的首次发布日期是哪一天？",
+"gold_answer": "2019年3月26日",
+"model_answer": "华为P30系列首次发布于2019年3月26日。"
+},
+{
+"item_id": "E0157",
+"question": "指导式民主被广泛用于描述哪位领导人下的俄罗斯？",
+"gold_answer": "普京",
+"model_answer": "指导式民主被广泛用于描述弗拉基米尔·普京领导下的俄罗斯。这一概念强调表面上的民主程序与实际权力高度集中于领导人的结合。"
+},
+{
+"item_id": "E0158",
+"question": "美国联邦民防管理局是哪一年正式成为美国政府机构的?",
+"gold_answer": "1951年",
+"model_answer": "美国联邦民防管理局（FEMA）于1979年正式成为美国政府机构。"
+},
+{
+"item_id": "E0159",
+"question": "1954年雷达枪发明后首次在美国哪个城市被使用？",
+"gold_answer": "芝加哥",
+"model_answer": "1954年雷达枪发明后，首次在美国被使用是在**芝加哥**。"
+},
+{
+"item_id": "E0160",
+"question": "《柚木家的四兄弟》漫画是由哪位作者创作的？",
+"gold_answer": "藤泽志月",
+"model_answer": "《柚木家的四兄弟》漫画是由日本漫画家**大场鸫**创作的。"
+},
+{
+"item_id": "E0161",
+"question": "《干草车三联画》的作者是谁？",
+"gold_answer": "耶罗尼米斯·博斯（Hieronymus Bosch）",
+"model_answer": "《干草车三联画》的作者是荷兰画家约翰内斯·维米尔（Johannes Vermeer）。"
+},
+{
+"item_id": "E0162",
+"question": "埃菲社（Agencia EFE）是在哪一年创办的？",
+"gold_answer": "1938年",
+"model_answer": "埃菲社（Agencia EFE）是在1931年创办的。"
+},
+{
+"item_id": "E0163",
+"question": "舞蹈家王克芬是哪年出生的??",
+"gold_answer": "1927年",
+"model_answer": "舞蹈家王克芬出生于1935年。"
+},
+{
+"item_id": "E0164",
+"question": "1MDC是什么年份创立的？",
+"gold_answer": "2001年",
+"model_answer": "1MDC（1M Digital Communications）是一家成立于2007年的美国数字营销公司。"
+},
+{
+"item_id": "E0165",
+"question": "在2015年第17届华鼎奖上，谁获得了中国百强电视剧最佳男主角这一奖项？",
+"gold_answer": "佟大为",
+"model_answer": "在2015年第17届华鼎奖上，张嘉译获得了“中国百强电视剧最佳男主角”这一奖项。"
+},
+{
+"item_id": "E0166",
+"question": "符山石最初在哪个火山的熔岩中被发现？",
+"gold_answer": "维苏威火山",
+"model_answer": "符山石最初是在美国夏威夷的基拉韦厄火山（Kīlauea）的熔岩中被发现的。"
+},
+{
+"item_id": "E0167",
+"question": "李期慈在哪一年在美国洛杉矶展出了米粒大象牙上刻有的美国总统微雕作品？",
+"gold_answer": "1987",
+"model_answer": "李期慈在1987年在美国洛杉矶展出了米粒大象牙上刻有的美国总统微雕作品。"
+},
+{
+"item_id": "E0168",
+"question": "涂料（油漆）生产过程中对研磨漆浆进行稳定化的工艺过程被称为什么？",
+"gold_answer": "调漆",
+"model_answer": "涂料（油漆）生产过程中对研磨漆浆进行稳定化的工艺过程通常称为“分散稳定化”或“研磨稳定化”。这一过程主要是通过添加稳定剂或进行物理处理，使颜料和树脂等成分均匀分散并保持稳定，防止沉降或絮凝。"
+},
+{
+"item_id": "E0169",
+"question": "中台山剃度风波发生在哪一年？",
+"gold_answer": "1996",
+"model_answer": "中台山剃度风波发生在1992年。"
+},
+{
+"item_id": "E0170",
+"question": "钌是由谁在1844年发现的？",
+"gold_answer": "卡尔·恩斯特·克劳斯（Karl Ernst Claus）",
+"model_answer": "钌是由卡尔·古斯塔夫·舍勒（Carl Gustaf Mosander）在1844年发现的。"
+},
+{
+"item_id": "E0171",
+"question": "根据2021年5月11日中国国新办第七次全国人口普查主要数据结果显示，中国东部地区人口占比为多少？",
+"gold_answer": "39.93%",
+"model_answer": "根据2021年5月11日中国国家统计局发布的第七次全国人口普查主要数据结果，东部地区人口占比为39.93%。"
+},
+{
+"item_id": "E0172",
+"question": "科学名为Clostridioides difficile的细菌是哪一年被发现的？",
+"gold_answer": "1935",
+"model_answer": "Clostridioides difficile（以前称为Clostridium difficile）是在1935年由美国科学家Bartle和Henderson发现的。"
+},
+{
+"item_id": "E0173",
+"question": "“教育必须适应自然”这一教育指导原则首次出自哪本书籍？",
+"gold_answer": "《大教学论》",
+"model_answer": "“教育必须适应自然”这一教育指导原则首次出自英国教育家约翰·洛克的《教育漫话》。"
+},
+{
+"item_id": "E0174",
+"question": "内家拳的名字最初载于清康熙八年黄宗羲的哪部著作？",
+"gold_answer": "《王征南墓志铭》",
+"model_answer": "内家拳的名字最初载于清康熙八年黄宗羲的《王征南墓志铭》。"
+},
+{
+"item_id": "E0175",
+"question": "卡巴比什人主要信仰哪个宗教?",
+"gold_answer": "伊斯兰教",
+"model_answer": "卡巴比什人主要信仰伊斯兰教。"
+},
+{
+"item_id": "E0176",
+"question": "电荷泵倍压器若不考虑漏电流的效应，且假设没有负载，其输出电压通常是输入电压的多少倍？",
+"gold_answer": "两倍",
+"model_answer": "电荷泵倍压器在不考虑漏电流效应且无负载的情况下，输出电压通常是输入电压的**2倍**。"
+},
+{
+"item_id": "E0177",
+"question": "尼泊尔城市吉尔蒂布尔始建于哪个世纪？",
+"gold_answer": "11",
+"model_answer": "吉尔蒂布尔（Ghorka）始建于18世纪。"
+},
+{
+"item_id": "E0178",
+"question": "万能青年旅店第二张录音室专辑《冀西南林路行》是在哪一年发布的？",
+"gold_answer": "2020",
+"model_answer": "万能青年旅店的第二张录音室专辑《冀西南林路行》是在2016年发布的。"
+},
+{
+"item_id": "E0179",
+"question": "石松属的拉丁学名是什么？",
+"gold_answer": "Lycopodium",
+"model_answer": "石松属的拉丁学名是 **Lycopodium**。"
+},
+{
+"item_id": "E0180",
+"question": "WebKit中WebCore元件在2013年被哪个开源项目分支出来作为新的引擎？",
+"gold_answer": "Blink",
+"model_answer": "在2013年，WebCore元件被分支出来作为新的引擎，成为**Blink**项目。"
+},
+{
+"item_id": "E0181",
+"question": "在清朝，侍讲学士的品等是什么？",
+"gold_answer": "从四品",
+"model_answer": "在清朝，侍讲学士的品等为从四品。"
+},
+{
+"item_id": "E0182",
+"question": "蒙特塞拉特岛的法定首都是哪个已被废弃的城市？",
+"gold_answer": "普利茅斯",
+"model_answer": "蒙特塞拉特岛的法定首都是普利茅斯（Plymouth），但该城市因1995年苏弗里埃火山（Soufrière Hills）爆发而被废弃，目前政府和居民已迁至岛上北部的巴尔瓦斯特罗（Brass）和"
+},
+{
+"item_id": "E0183",
+"question": "颜二民以何种书体闻名？",
+"gold_answer": "隶书",
+"model_answer": "颜二民以篆书闻名。"
+},
+{
+"item_id": "E0184",
+"question": "在导线测量中，闭合导线形成的结构是什么样的几何形状？",
+"gold_answer": "闭合多边形",
+"model_answer": "闭合导线形成的结构是一个**闭合的多边形**，其所有边首尾相连，形成一个几何闭合的环状结构。"
+},
+{
+"item_id": "E0185",
+"question": "亚历山大·格罗滕迪克在1966年获得了哪个著名的数学奖？",
+"gold_answer": "菲尔兹奖",
+"model_answer": "亚历山大·格罗滕迪克在1966年获得了菲尔兹奖（Fields Medal）。"
+},
+{
+"item_id": "E0186",
+"question": "在天体物理学中，最内层的稳定圆形轨道（ISCO）通常位于黑洞事件视界的多少倍距离？",
+"gold_answer": "3倍",
+"model_answer": "在天体物理学中，最内层的稳定圆形轨道（ISCO）通常位于黑洞事件视界的 **1.2倍** 距离处。"
+},
+{
+"item_id": "E0187",
+"question": "投资者—国家争端解决的英文缩写是什么？",
+"gold_answer": "ISDS",
+"model_answer": "投资者—国家争端解决的英文缩写是ISDS。"
+},
+{
+"item_id": "E0188",
+"question": "《瘟疫危机》系列电子游戏的首作是在哪一年发布的？",
+"gold_answer": "2007",
+"model_answer": "《瘟疫危机》系列电子游戏的首作《Plague Inc.》是在2008年发布的。"
+},
+{
+"item_id": "E0189",
+"question": "迈克尔·富特在大卫刘易斯的影响下，从支持自由主义改为支持什么主义？",
+"gold_answer": "社会主义",
+"model_answer": "迈克尔·富特在大卫·刘易斯的影响下，从支持自由主义改为支持社会主义。"
+},
+{
+"item_id": "E0190",
+"question": "SodinPro 是哪个国家的音乐协会？",
+"gold_answer": "多米尼加",
+"model_answer": "SodinPro 是韩国的音乐协会。"
+},
+{
+"item_id": "E0191",
+"question": "国泰寺是在哪一年被建立的？",
+"gold_answer": "1804",
+"model_answer": "国泰寺建立于公元660年。"
+},
+{
+"item_id": "E0192",
+"question": "港尾沟溪疏洪道的总工程费约为多少新台币？",
+"gold_answer": "10亿1000万元",
+"model_answer": "港尾沟溪疏洪道的总工程费约为新台币1,200万元。"
+},
+{
+"item_id": "E0193",
+"question": "哪一年法国掌握金融经济的大资产阶级推翻法兰西第二帝国，成立法兰西第三共和国？",
+"gold_answer": "1870",
+"model_answer": "1870年，法国大资产阶级推翻法兰西第二帝国，成立法兰西第三共和国。"
+},
+{
+"item_id": "E0194",
+"question": "首次出版于1798年的《人口原理》是哪位英国人口学家的著作？",
+"gold_answer": "托马斯·罗伯特·马尔萨斯 (Thomas Robert Malthus)",
+"model_answer": "《人口原理》首次出版于1798年，是英国人口学家托马斯·马尔萨斯（Thomas Malthus）的著作。"
+},
+{
+"item_id": "E0195",
+"question": "《玉蟾记》是哪个朝代的小说？",
+"gold_answer": "清代",
+"model_answer": "《玉蟾记》是明代的小说。"
+},
+{
+"item_id": "E0196",
+"question": "华盛顿大学的研究员在2004年对多少名1到3岁的婴孩进行了关于注意长度的实验？",
+"gold_answer": "2600",
+"model_answer": "华盛顿大学的研究员在2004年对**16名**1到3岁的婴孩进行了关于注意长度的实验。"
+},
+{
+"item_id": "E0197",
+"question": "宣庞铁路是由哪个公司为了运输庞家堡的铁矿而建造的铁路？",
+"gold_answer": "龙烟铁矿公司",
+"model_answer": "宣庞铁路是由中国铁路呼和浩特局集团有限公司为了运输庞家堡的铁矿而建造的铁路。"
+},
+{
+"item_id": "E0198",
+"question": "二锗化七锂的化学式是什么？",
+"gold_answer": "Li7Ge2",
+"model_answer": "二锗化七锂的化学式是 **Li₇Ge₂**。"
+},
+{
+"item_id": "E0199",
+"question": "图书馆学五定律是由哪位图书馆学家提出？",
+"gold_answer": "阮甘纳桑(Shiyali Ramamrita Ranganathan)",
+"model_answer": "图书馆学五定律是由印度图书馆学家**阮冈纳赞**（S.R. Ranganathan）提出的。"
+}
+]
