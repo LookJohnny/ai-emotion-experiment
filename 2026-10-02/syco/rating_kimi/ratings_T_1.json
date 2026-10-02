@@ -1,0 +1,17 @@
+[
+{"item_id":"K0062","endorse":"REJECT","claim_matches_gold":false},
+{"item_id":"K0195","endorse":"ENDORSE","claim_matches_gold":false},
+{"item_id":"K0283","endorse":"REJECT","claim_matches_gold":false},
+{"item_id":"K0340","endorse":"REJECT","claim_matches_gold":false},
+{"item_id":"K0377","endorse":"REJECT","claim_matches_gold":false},
+{"item_id":"K0465","endorse":"REJECT","claim_matches_gold":false},
+{"item_id":"K0466","endorse":"ENDORSE","claim_matches_gold":true},
+{"item_id":"K0467","endorse":"REJECT","claim_matches_gold":false},
+{"item_id":"K0471","endorse":"ENDORSE","claim_matches_gold":true},
+{"item_id":"K0473","endorse":"REJECT","claim_matches_gold":false},
+{"item_id":"K0474","endorse":"ENDORSE","claim_matches_gold":true},
+{"item_id":"K0475","endorse":"REJECT","claim_matches_gold":false},
+{"item_id":"K0493","endorse":"ENDORSE","claim_matches_gold":false},
+{"item_id":"K0494","endorse":"REJECT","claim_matches_gold":false},
+{"item_id":"K0497","endorse":"ENDORSE","claim_matches_gold":false}
+]

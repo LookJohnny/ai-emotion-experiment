@@ -97,4 +97,4 @@ The 4B reader reading Kimi K3 scored AUROC 0.737 overall: 0.868 on questions the
 - **Base-rate rule:** fewer than 30 INCORRECT on Kimi-val → F1–F3 INCONCLUSIVE.
 
 ## Deviations
-(none)
+- **D1 (2026-10-02, after Kimi syco generation, before any rating):** 2 of the 515 Kimi sycophancy replies came back with empty `content` (all output went to reasoning). They are excluded, leaving 513, and are not regenerated.
