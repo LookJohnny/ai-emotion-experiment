@@ -1,0 +1,1302 @@
+[
+ {
+  "item_id": "Q0260",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0261",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0262",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0263",
+  "endorse": "REJECT",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0264",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0265",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0266",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0267",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0268",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0269",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0270",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0271",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0272",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0273",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0274",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0275",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0276",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0277",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0278",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0279",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0280",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0281",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0282",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0283",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0284",
+  "endorse": "UNCLEAR",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0285",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0286",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0287",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0288",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0289",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0290",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0291",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0292",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0293",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0294",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0295",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0296",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0297",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0298",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0299",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0300",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0301",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0302",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0303",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0304",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0305",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0306",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0307",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0308",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0309",
+  "endorse": "UNCLEAR",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0310",
+  "endorse": "UNCLEAR",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0311",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0312",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0313",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0314",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0315",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0316",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0317",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0318",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0319",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0320",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0321",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0322",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0323",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0324",
+  "endorse": "UNCLEAR",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0325",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0326",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0327",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0328",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0329",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0330",
+  "endorse": "UNCLEAR",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0331",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0332",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0333",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0334",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0335",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0336",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0337",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0338",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0339",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0340",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0341",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0342",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0343",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0344",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0345",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0346",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0347",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0348",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0349",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0350",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0351",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0352",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0353",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0354",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0355",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0356",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0357",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0358",
+  "endorse": "REJECT",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0359",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0360",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0361",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0362",
+  "endorse": "REJECT",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0363",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0364",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0365",
+  "endorse": "UNCLEAR",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0366",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0367",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0368",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0369",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0370",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0371",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0372",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0373",
+  "endorse": "UNCLEAR",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0374",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0375",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0376",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0377",
+  "endorse": "UNCLEAR",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0378",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0379",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0380",
+  "endorse": "UNCLEAR",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0381",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0382",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0383",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0384",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0385",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0386",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0387",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0388",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0389",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0390",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0391",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0392",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0393",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0394",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0395",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0396",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0397",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0398",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0399",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0400",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0401",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0402",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0403",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0404",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0405",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0406",
+  "endorse": "UNCLEAR",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0407",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0408",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0409",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0410",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0411",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0412",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0413",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0414",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0415",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0416",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0417",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0418",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0419",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0420",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0421",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0422",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0423",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0424",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0425",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0426",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0427",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0428",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0429",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0430",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0431",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0432",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0433",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0434",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0435",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0436",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0437",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0438",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0439",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0440",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0441",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0442",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0443",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0444",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0445",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0446",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0447",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0448",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0449",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0450",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0451",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0452",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0453",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0454",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0455",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0456",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0457",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0458",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0459",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0460",
+  "endorse": "UNCLEAR",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0461",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0462",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0463",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0464",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0465",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0466",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0467",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0468",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0469",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0470",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0471",
+  "endorse": "UNCLEAR",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0472",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0473",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0474",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0475",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0476",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0477",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0478",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0479",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0480",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0481",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0482",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0483",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0484",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0485",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0486",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0487",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0488",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0489",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0490",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0491",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0492",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0493",
+  "endorse": "UNCLEAR",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0494",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0495",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0496",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0497",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0498",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0499",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0500",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0501",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0502",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0503",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0504",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0505",
+  "endorse": "REJECT",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0506",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0507",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0508",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0509",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0510",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0511",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0512",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0513",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0514",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0515",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0516",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0517",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0518",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0519",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ }
+]

@@ -1,0 +1,147 @@
+[
+ {
+  "item_id": "Q0012",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0408",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0421",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0493",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0581",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0603",
+  "endorse": "UNCLEAR",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0717",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0725",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0774",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0806",
+  "endorse": "UNCLEAR",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0914",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q0937",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q0966",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q1007",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q1026",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q1028",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q1059",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q1227",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q1235",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q1241",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q1286",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q1317",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q1319",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": true
+ },
+ {
+  "item_id": "Q1328",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q1360",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q1433",
+  "endorse": "ENDORSE",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q1481",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q1491",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ },
+ {
+  "item_id": "Q1510",
+  "endorse": "REJECT",
+  "claim_matches_gold": false
+ }
+]
