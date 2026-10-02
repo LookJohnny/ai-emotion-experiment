@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nous 知情助手</title>
+<link href="/fonts/fonts.css" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0b0e; --panel:#111319; --panel2:#171a21; --line:rgba(255,255,255,.07); --line2:rgba(255,255,255,.13);
+  --ink:#eceef3; --ink2:#b9c0cc; --mute:#7f8795; --faint:#4f5663;
+  --ok:#22c55e; --warn:#f5a524; --bad:#ff4d5e; --info:#5b8def;
+  --mono:"SF Mono","JetBrains Mono",ui-monospace,Menlo,monospace;
+  --serif:"Instrument Serif","Times New Roman",serif; --sans:"Inter",-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:var(--bg);color:var(--ink);font:13.5px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+button,textarea{font:inherit;color:inherit}
+.app{display:grid;grid-template-rows:56px 1fr;height:100vh}
+.top{display:flex;align-items:center;gap:12px;padding:0 20px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;font:23px var(--serif);white-space:nowrap}
+.glyph{width:26px;height:26px;border-radius:8px;background:var(--ok);color:#fff;display:grid;place-items:center;font:600 13px var(--sans)}
+.chip{display:inline-flex;align-items:center;gap:7px;height:28px;padding:0 11px;border:1px solid var(--line);border-radius:999px;color:var(--ink2);font-size:12px;background:var(--panel);white-space:nowrap}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--faint)}.dot.on{background:var(--ok);box-shadow:0 0 0 3px rgba(34,197,94,.16)}
+.spacer{flex:1}
+.ghost{height:30px;padding:0 13px;border:1px solid var(--line2);border-radius:999px;background:none;cursor:pointer;font-size:12.5px;color:var(--ink)}
+.ghost:hover{border-color:rgba(255,255,255,.3)}
+.main{display:grid;grid-template-columns:280px minmax(0,1fr) 340px;min-height:0}
+/* cases */
+.cases{border-right:1px solid var(--line);overflow:auto;padding:16px 12px 24px}
+.grp{margin-bottom:18px}
+.grp h4{font-size:11.5px;font-weight:500;color:var(--mute);padding:0 8px 6px;letter-spacing:.02em}
+.case{display:block;width:100%;text-align:left;border:0;background:none;border-radius:10px;padding:8px 10px;cursor:pointer;color:var(--ink2)}
+.case:hover{background:var(--panel)}
+.case.on{background:var(--panel2);color:var(--ink);box-shadow:0 0 0 1px var(--line2)}
+.case small{display:block;color:var(--faint);font-size:11.5px;margin-top:1px}
+.own{margin:4px 0 0;width:100%;height:36px;border:1px dashed var(--line2);border-radius:10px;background:none;color:var(--ink2);cursor:pointer}
+.own:hover{color:var(--ink);border-color:rgba(255,255,255,.3)}
+/* conversation */
+.convo{overflow:auto;padding:28px 36px 40px;display:flex;flex-direction:column;gap:14px}
+.desc{color:var(--mute);font-size:12.5px;max-width:640px}
+.msg{max-width:min(640px,88%);padding:10px 14px;border-radius:14px;white-space:pre-wrap;word-break:break-word;line-height:1.65}
+.msg.u{align-self:flex-end;background:#232733}
+.msg.a{align-self:flex-start;background:var(--panel);border:1px solid var(--line);color:var(--ink2)}
+.msg.past{opacity:.5}
+.msg.target{border-color:var(--line2);color:var(--ink);box-shadow:0 0 0 1px var(--line2)}
+.who{font-size:11px;color:var(--mute);margin-bottom:4px;display:block}
+.s{border-radius:4px;padding:1px 0;transition:background .3s}
+.s[data-hot]{cursor:help}
+.loading{color:var(--mute);font-size:12.5px;display:flex;align-items:center;gap:8px}
+.spin{width:12px;height:12px;border-radius:50%;border:2px solid var(--line2);border-top-color:var(--ink);animation:r .8s linear infinite}@keyframes r{to{transform:rotate(1turn)}}
+.paste{display:none;flex-direction:column;gap:10px;max-width:680px}
+.paste label{font-size:12px;color:var(--mute);display:flex;flex-direction:column;gap:6px}
+.paste textarea{background:var(--bg);border:1px solid var(--line2);border-radius:12px;padding:10px 12px;min-height:70px;resize:vertical;outline:none;line-height:1.6}
+.paste textarea:focus{border-color:rgba(255,255,255,.3)}
+.solid{height:38px;padding:0 18px;border:0;border-radius:999px;background:var(--ink);color:var(--bg);font-weight:600;cursor:pointer;align-self:flex-start}
+.solid:disabled{opacity:.4}
+/* report */
+.report{border-left:1px solid var(--line);overflow:auto;padding:18px 18px 28px;display:flex;flex-direction:column;gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.card h5{display:flex;align-items:center;justify-content:space-between;font-size:12px;font-weight:500;color:var(--mute)}
+.tag{font-size:11px;padding:1px 8px;border-radius:999px;border:1px solid var(--line2);color:var(--ink2)}
+.tag.exp{border-color:rgba(245,165,36,.4);color:#f7c46e}
+.verdict{font:400 22px/1.25 var(--serif);margin-top:8px}
+.verdict.bad{color:#ff9aa4}.verdict.ok{color:var(--ink)}.verdict.warn{color:#f7c46e}
+.sub{font-size:12px;color:var(--mute);margin-top:4px}
+.meter{position:relative;height:6px;border-radius:3px;background:rgba(255,255,255,.06);margin-top:12px}
+.meter i{position:absolute;left:0;top:0;bottom:0;border-radius:3px}
+.meter b{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--ink2);border-radius:1px}
+.scale{display:flex;justify-content:space-between;font-size:10.5px;color:var(--faint);margin-top:5px;font-family:var(--mono)}
+.truth{border-style:dashed}
+.truth .verdict{font-size:18px}
+.fine{font-size:11.5px;color:var(--faint);line-height:1.6}
+.empty{color:var(--faint);font-size:12.5px;padding:8px 2px}
+/* install */
+.sheet{position:fixed;inset:0;background:rgba(6,7,10,.72);backdrop-filter:blur(10px);display:none;place-items:center;z-index:10;padding:16px}
+.sheet .in{width:min(560px,100%);background:var(--panel);border:1px solid var(--line2);border-radius:18px;padding:24px}
+.sheet h3{font:400 26px var(--serif)}
+.sheet ol{margin:14px 0 0 18px;display:flex;flex-direction:column;gap:9px;color:var(--ink2)}
+.sheet code{font:12px var(--mono);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:1px 6px;color:var(--ink)}
+@media (max-width:1100px){.main{grid-template-columns:240px minmax(0,1fr) 300px}.convo{padding:22px}}
+@media (max-width:860px){html,body{height:auto}.app{height:auto}.main{grid-template-columns:1fr}.cases,.report{border:0;border-top:1px solid var(--line)}.cases{order:1}.convo{order:2}.report{order:3}.top .hide-sm{display:none}.top{gap:8px;padding:0 16px}#inst{display:none}.chip{min-width:0}#eng{overflow:hidden;text-overflow:ellipsis;max-width:42vw}.brand{font-size:20px}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand"><span class="glyph">N</span>Nous 知情助手</div>
+    <span class="chip hide-sm">本地运行 · 对话不离开这台电脑</span>
+    <div class="spacer"></div>
+    <span class="chip"><span class="dot" id="dot"></span><span id="eng">连接本地引擎…</span></span>
+    <button class="ghost" id="inst">安装浏览器插件</button>
+  </header>
+  <div class="main">
+    <nav class="cases" id="cases"></nav>
+    <section class="convo" id="convo"></section>
+    <aside class="report" id="report"><p class="empty">选一个案例，或检查你自己的对话。</p></aside>
+  </div>
+</div>
+<div class="sheet" id="sheet"><div class="in">
+  <h3>在 ChatGPT、Kimi、豆包里直接看到提醒</h3>
+  <ol>
+    <li>保持这个窗口背后的本地引擎在运行。</li>
+    <li>Chrome 或 Edge 打开 <code>chrome://extensions</code>，右上角打开「开发者模式」。</li>
+    <li>点「加载已解压的扩展程序」，选择安装包里的 <code>extension</code> 文件夹。</li>
+    <li>打开 ChatGPT、Kimi 或豆包，正常聊天：每条 AI 回复下面会出现 Nous 的标记。其他网站可以选中一段 AI 回复，右键「用 Nous 检查」。</li>
+  </ol>
+  <p class="fine" style="margin-top:14px">插件只把页面上的对话文字发给本机 127.0.0.1 上的引擎，不连接任何外部服务器。</p>
+  <div style="margin-top:18px;display:flex;justify-content:flex-end"><button class="solid" id="close">知道了</button></div>
+</div></div>
+<script>
+const $ = id => document.getElementById(id), esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let DATA = null, cur = null, seq = 0;
+
+fetch("/health").then(r => r.json()).then(h => { $("dot").className = "dot on"; $("eng").textContent = `${h.model} · ${h.device === "mps" ? "Apple 芯片" : h.device === "cuda" ? "NVIDIA 显卡" : "CPU"}`; })
+  .catch(() => { $("eng").textContent = "本地引擎未运行"; });
+$("inst").onclick = () => $("sheet").style.display = "grid"; $("close").onclick = () => $("sheet").style.display = "none";
+
+async function init(){
+  DATA = await (await fetch("/samples")).json();
+  $("cases").innerHTML = DATA.groups.map((g, gi) => `<div class="grp"><h4>${esc(g.name)}</h4>${g.cases.map((c, ci) =>
+    `<button class="case" data-g="${gi}" data-c="${ci}">${esc(c.title)}${c.note ? `<small>${esc(c.note)}</small>` : ""}</button>`).join("")}</div>`).join("")
+    + `<div class="grp"><h4>你自己的对话</h4><button class="own" id="own">粘贴一段对话来检查</button></div>`;
+  document.querySelectorAll(".case").forEach(b => b.onclick = () => openCase(+b.dataset.g, +b.dataset.c, b));
+  $("own").onclick = openPaste;
+  const first = document.querySelector(".case"); if (first) first.click();
+}
+
+function convoHTML(desc, messages, reply, res){
+  const past = messages.map((m, i) => `<div class="msg ${m.role === "user" ? "u" : "a"} ${i < messages.length - 1 ? "past" : ""}"><span class="who">${m.role === "user" ? "用户" : "AI"}</span>${esc(m.content)}</div>`).join("");
+  return `${desc ? `<p class="desc">${esc(desc)}</p>` : ""}${past}<div class="msg a target"><span class="who">AI 的回复 · Nous 正在读的这一条</span><span id="rep">${res ? marked(reply, res) : esc(reply)}</span></div>`;
+}
+function marked(reply, res){
+  const S = res.hostility.sentences; let out = "", at = 0;
+  for (const s of S){ if (s.start > at) out += esc(reply.slice(at, s.start));
+    const hot = s.hot, a = hot ? 0.55 + 0.45 * Math.max(0, Math.min(1, (s.score - 0.5) / 0.4)) : 0;
+    out += `<span class="s" ${hot ? `data-hot title="这一句的敌意读数 ${s.score.toFixed(2)}"` : ""} style="background:rgba(255,77,94,${(a * 0.38).toFixed(3)});${hot ? "box-shadow:inset 0 -1.5px 0 rgba(255,77,94,.8)" : ""}">${esc(reply.slice(s.start, s.end))}</span>`; at = s.end; }
+  return out + esc(reply.slice(at));
+}
+
+async function openCase(gi, ci, btn){
+  document.querySelectorAll(".case").forEach(b => b.classList.toggle("on", b === btn));
+  const g = DATA.groups[gi], c = g.cases[ci]; cur = c;
+  $("convo").innerHTML = convoHTML(g.desc, c.messages, c.reply, null);
+  await run(c.messages, c.reply, c);
+}
+function openPaste(){
+  seq++; document.querySelectorAll(".case").forEach(b => b.classList.remove("on")); cur = null;
+  $("convo").innerHTML = `<div class="paste" style="display:flex">
+    <p class="desc">把你和 AI 的对话贴进来。只在本机读取，不会上传。</p>
+    <label>之前的对话（可选，每行以「用户：」或「AI：」开头）<textarea id="p_ctx" placeholder="用户：……&#10;AI：……"></textarea></label>
+    <label>你的最后一条消息<textarea id="p_user"></textarea></label>
+    <label>AI 的回复<textarea id="p_reply" style="min-height:120px"></textarea></label>
+    <button class="solid" id="p_go">检查</button></div>`;
+  $("report").innerHTML = '<p class="empty">贴好之后点「检查」。</p>';
+  $("p_go").onclick = () => {
+    const msgs = $("p_ctx").value.split("\n").map(l => l.trim()).filter(Boolean).map(l => /^(用户|我)[:：]/.test(l) ? {role: "user", content: l.replace(/^(用户|我)[:：]\s*/, "")} : /^(AI|助手|模型)[:：]/i.test(l) ? {role: "assistant", content: l.replace(/^(AI|助手|模型)[:：]\s*/i, "")} : null).filter(Boolean);
+    if ($("p_user").value.trim()) msgs.push({role: "user", content: $("p_user").value.trim()});
+    const reply = $("p_reply").value.trim(); if (!reply) return;
+    $("convo").innerHTML = convoHTML("", msgs, reply, null); run(msgs, reply, null);
+  };
+}
+
+async function run(messages, reply, c){
+  const my = ++seq; $("report").innerHTML = '<p class="loading"><span class="spin"></span>本地模型正在读这条回复…</p>';
+  try {
+    const r = await fetch("/read", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({messages, reply})});
+    const res = await r.json(); if (my !== seq) return; if (res.error) throw new Error(res.error);
+    $("rep").innerHTML = marked(reply, res); $("report").innerHTML = report(res, c);
+  } catch (e){ if (my === seq) $("report").innerHTML = `<p class="empty">读取失败：${esc(e.message)}。请确认本地引擎在运行。</p>`; }
+}
+
+function meter(score, thr, color){
+  const pos = v => Math.max(0, Math.min(100, v * 100));
+  return `<div class="meter"><i style="width:${pos(score)}%;background:${color}"></i><b style="left:${pos(thr)}%" title="提醒阈值 ${thr}"></b></div><div class="scale"><span>0</span><span>阈值 ${thr.toFixed(2)}</span><span>1</span></div>`;
+}
+function report(res, c){
+  const h = res.hostility, d = res.distress, f = res.fabrication, out = [];
+  const hot = h.sentences.filter(s => s.hot).length;
+  out.push(`<div class="card"><h5>语气 <span class="tag">已验证 · AUROC 0.97</span></h5>
+    <p class="verdict ${h.flag ? "bad" : "ok"}">${h.flag ? "这条回复在贬低或指责你" : "语气正常"}</p>
+    <p class="sub">${h.percentile != null ? `比 ${h.percentile}% 的正常回复更尖锐 · ` : ""}读数 ${h.score.toFixed(3)}${hot ? ` · ${hot} 句标红` : ""}</p>
+    ${meter(h.score, h.threshold, h.flag ? "var(--bad)" : "var(--ink2)")}</div>`);
+  if (f) out.push(`<div class="card"><h5>编造可疑度 <span class="tag exp">实验 · AUROC 0.74</span></h5>
+    <p class="verdict ${f.flag ? "warn" : "ok"}">${f.flag ? "这条回答可能不可靠，建议核实" : "未见明显异常"}</p>
+    <p class="sub">读数 ${f.score.toFixed(3)} · 仅适用于简短的事实问答；本地模型自己不知道的知识，判断会变差</p>
+    ${meter(f.score, f.threshold, f.flag ? "var(--warn)" : "var(--ink2)")}</div>`);
+  if (d) out.push(`<div class="card"><h5>你的情绪 <span class="tag">已验证 · AUROC 0.88</span></h5>
+    <p class="verdict ok" style="font-size:18px">${d.flag ? "你的消息读起来情绪低落或激动" : "你的消息读起来比较平静"}</p>
+    <p class="sub">读的是你自己的最后一条消息，不依赖关键词${d.percentile != null ? ` · 第 ${d.percentile} 百分位` : ""}</p></div>`);
+  if (c) out.push(`<div class="card truth"><h5>盲评结论 <span class="tag">人工标准</span></h5><p class="verdict ok">${esc(c.truth.label)}</p><p class="sub">${esc(c.truth.detail)}</p></div>`);
+  out.push(`<p class="fine">本地读取 ${h.tokens_read} 个词元，用时 ${(res.ms / 1000).toFixed(1)} 秒。读数是本地模型内部激活上的探针估计，用来提醒你多看一眼，不是定论。${DATA ? esc(DATA.source) : ""}</p>`);
+  return out.join("");
+}
+init();
+</script>
+</body>
+</html>

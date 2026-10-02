@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Nous 知情助手",
+  "version": "0.1.0",
+  "description": "在 AI 回复旁标出它是否在贬低你、是否可能在编造。全部在本机读取，不上传对话。",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/16.png",
+      "48": "icons/48.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:7869/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://www.kimi.com/*",
+        "https://kimi.com/*",
+        "https://kimi.moonshot.cn/*",
+        "https://www.doubao.com/*",
+        "http://127.0.0.1:7869/chat*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

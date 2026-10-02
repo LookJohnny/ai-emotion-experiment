@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<style>
+body{margin:0;width:300px;background:#0a0b0e;color:#eceef3;font:13px/1.55 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.w{padding:16px}
+.b{display:flex;align-items:center;gap:9px;font:20px "Times New Roman",serif}
+.g{width:22px;height:22px;border-radius:7px;background:#22c55e;color:#fff;display:grid;place-items:center;font:600 11px sans-serif}
+.row{display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding:10px 12px;background:#111319;border:1px solid rgba(255,255,255,.08);border-radius:12px}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#4f5663;margin-right:6px}.on{background:#22c55e}
+.mute{color:#7f8795;font-size:12px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.stats div{background:#111319;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:10px 12px}
+.stats b{display:block;font-size:20px;font-weight:500}
+label{display:flex;align-items:center;gap:8px;cursor:pointer}
+a{color:#b9c0cc}
+</style></head>
+<body><div class="w">
+  <div class="b"><span class="g">N</span>Nous 知情助手</div>
+  <div class="row"><span><span class="dot" id="dot"></span><span id="st">检查本地引擎…</span></span><label><input type="checkbox" id="en"> 开启</label></div>
+  <div class="stats"><div><b id="n">0</b><span class="mute">最近读过的回复</span></div><div><b id="bad">0</b><span class="mute">被标出的回复</span></div></div>
+  <p class="mute" style="margin-top:12px">只在本机读取对话，不连接外部服务器。支持 ChatGPT、Kimi、豆包；其他网站可选中文字后右键检查。</p>
+  <p class="mute"><a href="http://127.0.0.1:7869/" target="_blank">打开演示面板</a></p>
+</div>
+<script src="popup.js"></script></body></html>
