@@ -1,7 +1,9 @@
 // Nous 知情助手 · desktop guardian.
-// The app owns the local engine (a Python process on 127.0.0.1:7869): first run sets it up (venv + ~8 GB model),
-// later runs just start it. A small always-on-top companion shows what the engine reads; the panel is the engine's page.
+// First run DETECTS which LLMs the person uses (local runtimes, weights on disk, sites, API models) and recommends how to
+// read them; nothing is installed or downloaded until they choose. The app then owns the local engine (127.0.0.1:7869).
+// A small always-on-top companion shows what the engine reads; the panel is the engine's page.
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+mod detect;
 
 use std::io::Read;
 use std::net::TcpStream;
@@ -25,8 +27,14 @@ fn base() -> PathBuf { home().join(".nous-lens") }
 fn venv_bin(name: &str) -> PathBuf {
     if cfg!(windows) { base().join("venv").join("Scripts").join(format!("{name}.exe")) } else { base().join("venv").join("bin").join(name) }
 }
-fn model_dir() -> PathBuf { base().join("models").join("Qwen3-4B-Instruct-2507") }
-fn ready() -> bool { venv_bin("python").exists() && model_dir().join(".complete").exists() }
+fn config_path() -> PathBuf { base().join("config.json") }
+fn config() -> serde_json::Value { std::fs::read_to_string(config_path()).ok().and_then(|s| serde_json::from_str(&s).ok()).unwrap_or(serde_json::json!({})) }
+fn save_config(v: &serde_json::Value) { let _ = std::fs::create_dir_all(base()); let _ = std::fs::write(config_path(), serde_json::to_string_pretty(v).unwrap()); }
+fn download_dir() -> PathBuf { base().join("models").join("Qwen3-4B-Instruct-2507") }
+// the reader's weights: an existing folder the person already has, or the optional download
+fn model_dir() -> PathBuf { config()["reader"]["path"].as_str().map(PathBuf::from).unwrap_or_else(download_dir) }
+fn reader_ok() -> bool { let m = model_dir(); m.join("config.json").exists() && (config()["reader"]["source"] != "download" || m.join(".complete").exists()) }
+fn ready() -> bool { venv_bin("python").exists() && config()["reader"].is_object() && reader_ok() }
 fn engine_up() -> bool { TcpStream::connect_timeout(&ENGINE.parse().unwrap(), Duration::from_millis(300)).is_ok() }
 fn engine_root(app: &AppHandle) -> PathBuf { app.path().resource_dir().expect("resources").join("engine") }
 
@@ -97,15 +105,14 @@ fn setup(app: AppHandle) {
                 if !run_logged(&app, c) { let _ = std::fs::remove_dir_all(base().join("venv")); emit(&app, "error", "安装失败，请检查网络后重新打开本应用。"); return; }
             }
         }
-        if !model_dir().join(".complete").exists() {
-            emit(&app, "step", "3/3 下载本地模型 Qwen3-4B（约 8 GB，只需一次）");
-            let mut c = cmd(venv_bin("modelscope")); c.args(["download", "--model", "Qwen/Qwen3-4B-Instruct-2507", "--local_dir"]).arg(model_dir());
-            if !run_logged(&app, c) { emit(&app, "error", "模型下载失败，请检查网络后重新打开本应用（会从断点继续）。"); return; }
-            let _ = std::fs::write(model_dir().join(".complete"), b"");
-        }
+        if config()["reader"]["source"] == "download" && !download_dir().join(".complete").exists() {
+            emit(&app, "step", "3/3 下载本地读者 Qwen3-4B（约 8 GB，只需一次）");
+            let mut c = cmd(venv_bin("modelscope")); c.args(["download", "--model", "Qwen/Qwen3-4B-Instruct-2507", "--local_dir"]).arg(download_dir());
+            if !run_logged(&app, c) { emit(&app, "error", "模型下载失败，请检查网络后重试（会从断点继续）。"); return; }
+            let _ = std::fs::write(download_dir().join(".complete"), b"");
+        } else { emit(&app, "step", "3/3 使用你电脑上已有的模型，无需下载"); }
         emit(&app, "done", "准备完成");
         start_engine(&app);
-        if let Some(w) = app.get_webview_window("setup") { let _ = w.close(); }
     });
 }
 
@@ -132,7 +139,35 @@ fn open_panel(app: AppHandle, event: Option<String>) {
 
 #[tauri::command]
 fn engine_status() -> serde_json::Value {
-    serde_json::json!({ "up": engine_up(), "ready": ready() })
+    serde_json::json!({ "up": engine_up(), "ready": ready(), "config": config() })
+}
+
+#[tauri::command]
+fn detect_env() -> serde_json::Value { detect::detect() }
+
+#[tauri::command]
+fn registry() -> serde_json::Value { serde_json::from_str(detect::REGISTRY).unwrap() }
+
+// remember the API models a person (or a company) uses, e.g. Kimi K3 behind their own base_url
+#[tauri::command]
+fn set_api_models(models: serde_json::Value) { let mut c = config(); c["api_models"] = models; save_config(&c); }
+
+// the person's choice: read with weights they already have ("existing", path), or download a local reader ("download")
+#[tauri::command]
+fn choose_reader(app: AppHandle, source: String, path: Option<String>, family: Option<String>) {
+    let mut c = config();
+    let p = if source == "download" { download_dir() } else { PathBuf::from(path.unwrap_or_default()) };
+    c["reader"] = serde_json::json!({ "source": source, "path": p, "family": family.unwrap_or_else(|| "qwen3-4b-2507".into()), "chosen": true });
+    save_config(&c); stop_engine(&app); setup(app);
+}
+
+#[tauri::command]
+fn open_setup(app: AppHandle) { open_wizard(&app); }
+
+fn open_wizard(app: &AppHandle) {
+    if let Some(w) = app.get_webview_window("setup") { let _ = w.show(); let _ = w.set_focus(); return; }
+    let _ = WebviewWindowBuilder::new(app, "setup", WebviewUrl::App("setup.html".into())).title("Nous 知情助手 · 识别你在用的 AI")
+        .inner_size(760.0, 640.0).min_inner_size(640.0, 560.0).center().build();
 }
 
 fn place_companion(app: &AppHandle) {
@@ -146,11 +181,12 @@ fn place_companion(app: &AppHandle) {
 }
 
 fn main() {
+    if std::env::args().any(|a| a == "--detect") { println!("{}", serde_json::to_string_pretty(&detect::detect()).unwrap()); return; }   // diagnostics
     tauri::Builder::default()
         .plugin(tauri_plugin_notification::init())
         .plugin(tauri_plugin_clipboard_manager::init())
         .manage(Engine(Mutex::new(None)))
-        .invoke_handler(tauri::generate_handler![open_panel, engine_status])
+        .invoke_handler(tauri::generate_handler![open_panel, engine_status, detect_env, registry, set_api_models, choose_reader, open_setup])
         .setup(|app| {
             #[cfg(target_os = "macos")]
             app.set_activation_policy(tauri::ActivationPolicy::Accessory);   // menu-bar app: no Dock icon
@@ -159,8 +195,9 @@ fn main() {
             let comp = CheckMenuItem::with_id(app, "companion", "显示守护伙伴", true, true, None::<&str>)?;
             let clip = CheckMenuItem::with_id(app, "clipboard", "检查复制的 AI 回复", true, false, None::<&str>)?;
             let ext = MenuItem::with_id(app, "extension", "安装浏览器插件…", true, None::<&str>)?;
+            let wiz = MenuItem::with_id(app, "wizard", "识别我在用的 AI…", true, None::<&str>)?;
             let quit = MenuItem::with_id(app, "quit", "退出 Nous", true, None::<&str>)?;
-            let menu = Menu::with_items(app, &[&panel, &PredefinedMenuItem::separator(app)?, &comp, &clip, &ext, &PredefinedMenuItem::separator(app)?, &quit])?;
+            let menu = Menu::with_items(app, &[&panel, &PredefinedMenuItem::separator(app)?, &comp, &clip, &wiz, &ext, &PredefinedMenuItem::separator(app)?, &quit])?;
             let tray_img = tauri::image::Image::from_bytes(include_bytes!("../icons/tray.png"))?;
             let (comp2, clip2) = (comp.clone(), clip.clone());
             TrayIconBuilder::with_id("nous").icon(tray_img).icon_as_template(true).tooltip("Nous 知情助手").menu(&menu).show_menu_on_left_click(true)
@@ -175,17 +212,14 @@ fn main() {
                         let _ = Command::new(opener).arg(dir).spawn();
                         open_panel(app.clone(), Some("install".into()));
                     }
+                    "wizard" => open_wizard(app),
                     "quit" => { stop_engine(app); app.exit(0); }
                     _ => {}
                 })
                 .build(app)?;
             place_companion(&h);
-            if ready() { start_engine(&h); }
-            else {
-                WebviewWindowBuilder::new(app, "setup", WebviewUrl::App("setup.html".into())).title("Nous 知情助手 · 首次准备")
-                    .inner_size(560.0, 420.0).resizable(false).center().build()?;
-                setup(h.clone());
-            }
+            // never install or download on launch: start what was chosen, otherwise detect and let the person choose
+            if ready() { start_engine(&h); } else { open_wizard(&h); }
             Ok(())
         })
         .build(tauri::generate_context!())

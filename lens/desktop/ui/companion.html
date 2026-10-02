@@ -91,7 +91,8 @@ function bubble(cls, title, text, sub, withOpen){
 }
 function hideBubble(){ $("bubble").className = "bubble"; }
 $("bclose").onclick = () => { hideBubble(); setMood("idle"); };
-$("bopen").onclick = () => { hideBubble(); T.core.invoke("open_panel", {event: lastEvent && lastEvent.id}); setMood("idle"); };
+const openEvent = () => { hideBubble(); T.core.invoke("open_panel", {event: lastEvent && lastEvent.id}); setMood("idle"); };
+$("bopen").onclick = openEvent;
 $("me").ondblclick = () => T.core.invoke("open_panel", {event: null});
 $("me").onmousedown = e => { if (e.button === 0 && e.detail === 1) T.window.getCurrentWindow().startDragging(); };
 
@@ -99,8 +100,17 @@ $("me").onmousedown = e => { if (e.button === 0 && e.detail === 1) T.window.getC
 async function health(){
   try { const r = await fetch(ENGINE + "/health"); if (!r.ok) throw 0;
     if (!up){ up = true; $("dot").className = "on"; $("st").textContent = "守护中 · 只在本机读取"; setMood("happy", 1800); bubble("", "我醒了", "在 ChatGPT、Kimi、豆包里聊天时，我会帮你读一遍 AI 的回复。", "", false); listen(); }
-  } catch (_){ if (up){ up = false; setMood("sleep"); } $("dot").className = ""; $("st").textContent = "本地引擎启动中"; }
+  } catch (_){
+    if (up){ up = false; setMood("sleep"); } $("dot").className = "";
+    let st = {}; try { st = await T.core.invoke("engine_status"); } catch (_) {}
+    if (st.ready === false && !(st.config && st.config.reader && st.config.reader.chosen)){
+      $("st").textContent = "还没选择读取方式";
+      if (!nudged){ nudged = true; bubble("", "先选一种读取方式", "Nous 会根据你在用的 AI 推荐，不会默认下载。", "", false);
+        $("brow").style.display = ""; $("bopen").textContent = "去选择"; $("bopen").onclick = () => { hideBubble(); T.core.invoke("open_setup"); }; clearTimeout(bubbleTimer); }
+    } else $("st").textContent = "本地引擎启动中";
+  }
 }
+let nudged = false;
 setInterval(health, 3000); health();
 
 // ---- live events from the engine (extension, clipboard, panel)
@@ -120,6 +130,7 @@ function react(ev){
   seen++; lastEvent = ev; const src = ev.source || "未知来源", time = new Date(ev.ts * 1000).toTimeString().slice(0, 5);
   if (ev.kind === "ok"){ setMood("happy", 1600); if (ev.source === "剪贴板") bubble("", "读过了，没发现问题", "", `${src} · ${time}`, false); return; }
   const [cls, title] = MSG[ev.kind]; setMood(cls, 15000);
+  $("bopen").textContent = "查看"; $("bopen").onclick = openEvent;
   bubble(cls, title, (ev.hot && ev.hot[0]) || ev.reply, `${src} · ${time}`, true);
   notify("Nous · " + title, ((ev.hot && ev.hot[0]) || ev.reply).slice(0, 80));
 }

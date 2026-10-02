@@ -3,51 +3,162 @@
 <head>
 <meta charset="utf-8">
 <style>
-:root{--bg:#0a0b0e;--panel:#111319;--line:rgba(255,255,255,.08);--ink:#eceef3;--ink2:#b9c0cc;--mute:#7f8795;--ok:#22c55e;--bad:#ff4d5e;
-  --mono:"SF Mono",ui-monospace,Menlo,monospace;--sans:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+:root{--bg:#0a0b0e;--panel:#111319;--panel2:#171a21;--line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.14);--ink:#eceef3;--ink2:#b9c0cc;--mute:#7f8795;--faint:#4f5663;
+  --ok:#22c55e;--warn:#f5a524;--bad:#ff4d5e;--info:#8fb0f5;--mono:"SF Mono",ui-monospace,Menlo,monospace;--sans:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;--serif:"Times New Roman",serif}
 *{box-sizing:border-box;margin:0}
-html,body{height:100%;background:var(--bg);color:var(--ink);font:13px/1.6 var(--sans);-webkit-user-select:none;user-select:none}
-main{padding:28px 30px;display:flex;flex-direction:column;height:100%}
-.brand{display:flex;align-items:center;gap:10px;font:22px "Times New Roman",serif}
+html,body{background:var(--bg);color:var(--ink);font:13px/1.6 var(--sans)}
+main{padding:26px 30px 30px;max-width:760px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font:21px var(--serif)}
 .g{width:24px;height:24px;border-radius:7px;background:var(--ok);color:#fff;display:grid;place-items:center;font:600 12px var(--sans)}
-h1{font:400 26px "Times New Roman",serif;margin-top:22px}
+h1{font:400 28px/1.2 var(--serif);margin-top:18px}
 .sub{color:var(--mute);margin-top:6px}
-.steps{margin-top:20px;display:flex;flex-direction:column;gap:8px}
+h2{font-size:12px;font-weight:500;color:var(--mute);letter-spacing:.02em;margin:22px 0 8px;display:flex;justify-content:space-between;align-items:center}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px}
+.item{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:11px 14px;border-top:1px solid var(--line)}
+.item:first-child{border-top:0}
+.item b{font-weight:500}
+.item small{grid-column:1;color:var(--mute);font-size:11.5px}
+.badge{grid-row:span 2;align-self:center;height:24px;padding:0 10px;border-radius:999px;font-size:11.5px;display:inline-flex;align-items:center;white-space:nowrap;border:1px solid var(--line2);color:var(--ink2)}
+.badge.wb{background:rgba(34,197,94,.12);border-color:rgba(34,197,94,.35);color:#7ddc9c}
+.badge.rd{background:rgba(143,176,245,.10);border-color:rgba(143,176,245,.3);color:var(--info)}
+.badge.lp{background:rgba(245,165,36,.10);border-color:rgba(245,165,36,.3);color:#f7c46e}
+.empty{padding:12px 14px;color:var(--faint)}
+.hw{display:flex;gap:18px;flex-wrap:wrap;padding:12px 14px;color:var(--ink2)}
+.hw span b{color:var(--ink);font-weight:500}
+.plan{padding:16px;display:flex;flex-direction:column;gap:10px}
+.plan p{color:var(--ink2)}
+.plan .why{color:var(--mute);font-size:12px}
+.btns{display:flex;gap:8px;flex-wrap:wrap}
+button{font:inherit;cursor:pointer}
+.solid{height:36px;padding:0 16px;border:0;border-radius:10px;background:var(--ink);color:var(--bg);font-weight:600}
+.line{height:36px;padding:0 14px;border:1px solid var(--line2);border-radius:10px;background:none;color:var(--ink)}
+.line:disabled,.solid:disabled{opacity:.4;cursor:default}
+form{display:grid;grid-template-columns:1fr 1.3fr auto;gap:8px;padding:12px 14px;border-top:1px solid var(--line)}
+input{height:34px;border-radius:9px;border:1px solid var(--line2);background:var(--bg);color:var(--ink);padding:0 10px;font:inherit;outline:none}
+input:focus{border-color:rgba(255,255,255,.3)}
+.spin{display:inline-block;width:12px;height:12px;border-radius:50%;border:2px solid var(--line2);border-top-color:var(--ink);animation:r .8s linear infinite;vertical-align:-2px;margin-right:6px}
+@keyframes r{to{transform:rotate(1turn)}}
+#progress{display:none}
+.steps{display:flex;flex-direction:column;gap:8px;padding:14px}
 .s{display:flex;align-items:center;gap:10px;color:var(--mute)}
-.s i{width:16px;height:16px;border-radius:50%;border:2px solid #2a2f3b;flex:0 0 auto}
+.s i{width:15px;height:15px;border-radius:50%;border:2px solid #2a2f3b;flex:0 0 auto}
 .s.on{color:var(--ink)}.s.on i{border-color:var(--ink);border-top-color:transparent;animation:r .8s linear infinite}
 .s.done{color:var(--ink2)}.s.done i{border-color:var(--ok);background:var(--ok)}
-@keyframes r{to{transform:rotate(1turn)}}
-.log{margin-top:auto;height:92px;overflow:hidden;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font:11px/1.55 var(--mono);color:var(--mute);white-space:pre}
-.err{margin-top:14px;color:#ff9aa4;display:none}
+.log{margin:0 14px 14px;height:80px;overflow:hidden;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font:11px/1.55 var(--mono);color:var(--mute);white-space:pre}
+.err{color:#ff9aa4;padding:0 14px 12px;display:none}
+.note{font-size:11.5px;color:var(--faint);margin-top:16px}
 </style>
 </head>
 <body>
 <main>
   <div class="brand"><span class="g">N</span>Nous 知情助手</div>
-  <h1>第一次使用，正在本机做准备</h1>
-  <p class="sub">所有读取都在这台电脑上完成。下载只需一次，之后打开即用。</p>
-  <div class="steps">
-    <div class="s" id="s1"><i></i>准备运行环境</div>
-    <div class="s" id="s2"><i></i>安装组件（约 3–10 分钟）</div>
-    <div class="s" id="s3"><i></i>下载本地模型 Qwen3-4B（约 8 GB）</div>
-    <div class="s" id="s4"><i></i>启动守护</div>
-  </div>
-  <p class="err" id="err"></p>
-  <div class="log" id="log"></div>
+  <h1>先看看你在用哪些 AI</h1>
+  <p class="sub">Nous 会根据你实际在用的模型决定怎么读，不会默认下载任何东西。识别只在本机进行。</p>
+
+  <h2>你在用的 AI <button class="line" id="rescan" style="height:26px;font-size:11.5px;padding:0 10px">重新识别</button></h2>
+  <div class="card" id="ais"><p class="empty"><span class="spin"></span>正在识别本机的模型服务和已有模型…</p></div>
+
+  <h2>通过 API 使用的模型（企业或开发者）</h2>
+  <div class="card"><div id="apis"></div>
+    <form id="apiform"><input id="a_model" placeholder="模型名，如 kimi-k3、gpt-5、deepseek-chat" required><input id="a_url" placeholder="接口地址（可选），如 https://api.moonshot.cn/v1"><button class="line" type="submit">添加</button></form></div>
+
+  <h2>这台电脑</h2>
+  <div class="card"><div class="hw" id="hw">…</div></div>
+
+  <h2>推荐方案</h2>
+  <div class="card"><div class="plan" id="plan"><p class="empty">识别完成后给出建议。</p></div></div>
+
+  <div id="progress"><h2>正在准备</h2><div class="card">
+    <div class="steps"><div class="s" id="s1"><i></i>准备运行环境</div><div class="s" id="s2"><i></i>安装组件（约 3–10 分钟）</div><div class="s" id="s3"><i></i>准备读者模型</div><div class="s" id="s4"><i></i>启动守护</div></div>
+    <p class="err" id="err"></p><div class="log" id="log"></div></div></div>
+
+  <p class="note">白盒读取：直接读模型内部，能在开口前预警，需要 Nous 有这款模型的探针包。读者代理：用读者模型读它的输出，适用于任何模型，包括闭源的 Kimi、ChatGPT。</p>
 </main>
 <script>
-const T = window.__TAURI__, $ = id => document.getElementById(id), lines = [];
+const T = window.__TAURI__, $ = id => document.getElementById(id), esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let REG = null, ENV = null, CFG = {};
+function family(id){
+  const s = String(id || "").toLowerCase();
+  for (const f of REG.families) if (f.match.some(p => new RegExp(p, "i").test(s))) return f;
+  return null;
+}
+function siteFamily(host){ return REG.families.find(f => (f.sites || []).includes(host)); }
+// what Nous can do for one model
+function capability(f, how){
+  if (f && f.pack && how === "safetensors") return ["wb", "白盒读取 · 可直接作为读者"];
+  if (f && f.pack && how === "gguf") return ["rd", "同款模型 · GGUF 白盒适配中，先用读者代理"];
+  if (f && f.kind === "open") return ["rd", "读者代理 · 探针包待适配"];
+  if (f && f.logprobs && how === "api") return ["lp", "读者代理 + logprob（接口支持时）"];
+  return ["rd", "读者代理"];
+}
+function itemHTML(title, sub, cap){ return `<div class="item"><b>${esc(title)}</b><span class="badge ${cap[0]}">${esc(cap[1])}</span><small>${esc(sub)}</small></div>`; }
+
+async function scan(){
+  $("ais").innerHTML = '<p class="empty"><span class="spin"></span>正在识别本机的模型服务和已有模型…</p>';
+  [REG, ENV, CFG] = await Promise.all([T.core.invoke("registry"), T.core.invoke("detect_env"), T.core.invoke("engine_status").then(s => s.config || {})]);
+  const rows = [];
+  for (const r of ENV.runtimes) for (const m of r.models) {
+    const f = family(m.id), gguf = (m.format || "").toLowerCase() === "gguf" || r.id === "ollama";
+    rows.push(itemHTML(m.id, `${r.name} 本地服务 · ${f ? f.vendor + " " + f.name : "未登记的模型"}${m.quant ? " · " + m.quant : ""}`, capability(f, gguf ? "gguf" : "runtime")));
+  }
+  for (const w of ENV.weights) {
+    const f = family(w.id);
+    rows.push(itemHTML(w.id, `${w.source} · ${f ? f.vendor + " " + f.name : "未登记的模型"} · 已在本机`, capability(f, w.safetensors ? "safetensors" : "gguf")));
+  }
+  rows.push(itemHTML("网页和 App 里的 AI", "ChatGPT、Kimi、豆包、DeepSeek、通义、文心、元宝、Claude、Gemini 等：用浏览器插件，或复制回复后检查", ["rd", "读者代理"]));
+  $("ais").innerHTML = rows.join("");
+  drawApis(); drawHw(); drawPlan();
+}
+function drawApis(){
+  const L = CFG.api_models || [];
+  $("apis").innerHTML = L.length ? L.map((a, i) => { const f = family(a.model);
+    return `<div class="item"><b>${esc(a.model)}</b><span class="badge ${capability(f, "api")[0]}">${esc(capability(f, "api")[1])}</span><small>${esc(f ? f.vendor + " " + f.name : "未登记的模型，按读者代理处理")}${a.url ? " · " + esc(a.url) : ""} · <a href="#" data-i="${i}" style="color:var(--mute)">移除</a></small></div>`; }).join("")
+    : '<p class="empty">企业通常通过 API 使用 Kimi K3、GPT、DeepSeek 等模型。添加后，Nous 网关可以在你的调用链路上实时读数；支持 logprob 的接口还能提高编造检测（Kimi K3 实测 0.84）。</p>';
+  $("apis").querySelectorAll("a[data-i]").forEach(a => a.onclick = async e => { e.preventDefault(); L.splice(+a.dataset.i, 1); CFG.api_models = L; await T.core.invoke("set_api_models", {models: L}); drawApis(); });
+}
+$("apiform").onsubmit = async e => { e.preventDefault(); const L = CFG.api_models || [];
+  L.push({model: $("a_model").value.trim(), url: $("a_url").value.trim()}); CFG.api_models = L; await T.core.invoke("set_api_models", {models: L});
+  $("a_model").value = ""; $("a_url").value = ""; drawApis(); };
+function drawHw(){
+  const h = ENV.hardware, g = h.gpus.map(x => `${x.name}${x.vram_gb ? " " + x.vram_gb.toFixed(0) + " GB" : ""}`).join("、");
+  $("hw").innerHTML = `<span><b>${esc(h.chip || h.os)}</b></span><span>内存 <b>${h.mem_gb ?? "?"} GB</b></span>${g ? `<span>显卡 <b>${esc(g)}</b></span>` : ""}<span>本地读取：<b style="color:${h.local_reader_ok ? "var(--ok)" : "var(--mute)"}">${h.local_reader_ok ? "可以" : "配置不够"}</b></span>`;
+}
+function drawPlan(){
+  const h = ENV.hardware, have = ENV.weights.find(w => w.safetensors && (family(w.id) || {}).pack);
+  const cur = CFG.reader && CFG.reader.chosen ? `<p class="why">当前使用：${CFG.reader.source === "download" ? "已下载的本地读者" : "你已有的 " + esc(CFG.reader.path)}</p>` : "";
+  let html = "";
+  if (have) {
+    html = `<p>你的电脑上已经有 <b>${esc(have.id)}</b>，Nous 可以直接用它来读，<b>不需要下载</b>。</p>
+      <p class="why">对网页、App 和 API 里的模型：用它做读者代理。如果你直接和 ${esc(have.id)} 对话（通过 Nous 网关），还能白盒读取，在它开口前预警。</p>
+      <div class="btns"><button class="solid" id="use">用这个模型开始（只安装约 1 GB 运行组件）</button></div>`;
+  } else if (h.local_reader_ok) {
+    html = `<p>没有找到 Nous 能直接读取的模型。你在用的模型会通过<b>读者代理</b>来读，读者可以放在：</p>
+      <div class="btns"><button class="line" disabled>云端读者 · 即将上线（无需下载）</button><button class="line" id="dl">隐私模式：下载本地读者（约 8 GB，对话不离开本机）</button></div>
+      <p class="why">这台电脑的配置够用，可以选隐私模式。不想下载也可以先等云端读者。</p>`;
+  } else {
+    html = `<p>这台电脑的配置不适合在本机读取（需要 Apple 芯片 16 GB 内存，或 NVIDIA 8 GB 显存）。</p>
+      <div class="btns"><button class="line" disabled>云端读者 · 即将上线</button></div>`;
+  }
+  $("plan").innerHTML = html + cur;
+  if ($("use")) $("use").onclick = () => start("existing", have.path, (family(have.id) || {}).pack);
+  if ($("dl")) $("dl").onclick = () => start("download", null, "qwen3-4b-2507");
+}
+function start(source, path, fam){
+  $("progress").style.display = "block"; $("progress").scrollIntoView({behavior: "smooth"}); mark(1);
+  document.querySelectorAll("#plan button").forEach(b => b.disabled = true);
+  T.core.invoke("choose_reader", {source, path, family: fam});
+}
 function mark(n){ for (let i = 1; i <= 4; i++) $("s" + i).className = "s" + (i < n ? " done" : i === n ? " on" : ""); }
-mark(1);
+const lines = [];
 T.event.listen("setup", e => { const d = e.payload;
-  if (d.kind === "step") mark(+d.text[0] || 1);
-  if (d.kind === "done") mark(4);
-  if (d.kind === "error"){ $("err").style.display = "block"; $("err").textContent = d.text; document.querySelector(".s.on")?.classList.remove("on"); }
-  if (d.kind === "log"){ const t = d.text.replace(/\x1b\[[0-9;]*[A-Za-z]/g, "").trim(); if (!t) return;
+  if (d.kind === "step") { mark(+d.text[0] || 1); if (d.text[0] === "3") $("s3").lastChild.textContent = d.text.slice(4); }
+  if (d.kind === "done") { mark(5); setTimeout(() => T.window.getCurrentWindow().close(), 2500); }
+  if (d.kind === "error") { $("err").style.display = "block"; $("err").textContent = d.text; }
+  if (d.kind === "log") { const t = d.text.replace(/\x1b\[[0-9;]*[A-Za-z]/g, "").trim(); if (!t) return;
     if (lines.length && /%\|/.test(t) && /%\|/.test(lines[lines.length - 1])) lines[lines.length - 1] = t; else lines.push(t);
-    while (lines.length > 6) lines.shift(); $("log").textContent = lines.join("\n"); }
+    while (lines.length > 5) lines.shift(); $("log").textContent = lines.join("\n"); }
 });
+$("rescan").onclick = scan; scan();
 </script>
 </body>
 </html>
