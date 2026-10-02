@@ -2,8 +2,9 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nous · 在模型开口之前读懂它</title>
-<meta name="description" content="Nous 读取大模型在开口之前和说话过程中的内部状态：表情预同步、生成前安全预警、可审计的白盒监控。">
+<title>Nous · 更像人、更安全的 AI</title>
+<meta name="description" content="Nous：让 AI 陪伴更像人、更安全；为企业大模型提供可审计的安全监控。">
+<meta name="robots" content="noindex, nofollow, noarchive">
 <link href="/fonts/fonts.css" rel="stylesheet">
 <style>
 :root{
@@ -136,125 +137,53 @@ footer .wrap{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
 <body>
 <nav><div class="wrap">
   <a class="brand" href="#"><span class="glyph">N</span>Nous</a>
-  <div class="links"><a href="#products">产品</a><a href="#replay">真实回放</a><a href="#evidence">证据</a><a href="#integrate">接入</a></div>
+  <div class="links"><a href="#products">产品</a><a href="#trust">验证</a><a href="#contact">联系</a></div>
   <div class="spacer"></div>
   <a class="btn solid" href="#contact">预约试点</a>
 </div></nav>
 
 <header class="hero"><div class="wrap">
-  <span class="eyebrow"><i></i>基于大模型内部激活 · 预注册实验验证</span>
-  <h1>在模型开口之前，<em>读出它要用什么语气说话</em></h1>
-  <p class="lead">Nous 读取大模型生成过程中的内部状态。同一次前向计算，同时驱动虚拟形象的表情、给出安全预警、留下可审计的记录。不需要再调用一次模型。</p>
-  <div class="cta"><a class="btn solid" href="#contact">预约试点</a><a class="btn line" href="#replay">看一次真实回放</a></div>
-
-  <div class="strip">
-    <div class="lab"><span>一次回复里，Nous 在什么时候知道什么</span><span class="hide-sm">Qwen3-4B · RTX 4090 实测</span></div>
-    <div class="tl">
-      <div class="axis"></div>
-      <div class="seg" style="left:6%;width:14%;background:linear-gradient(90deg,var(--pre),rgba(177,140,255,.2))"></div>
-      <div class="seg" style="left:34%;width:40%;background:linear-gradient(90deg,rgba(34,197,94,.25),var(--ok),rgba(34,197,94,.25))"></div>
-      <div class="dot" style="left:6%;background:var(--pre)"></div><div class="dot" style="left:20%;background:var(--pre)"></div>
-      <div class="dot" style="left:34%;background:var(--warn)"></div><div class="dot" style="left:52%;background:var(--bad)"></div><div class="dot" style="left:74%;background:var(--ok)"></div><div class="dot" style="left:94%;background:var(--ink2)"></div>
-      <div class="mark" style="left:6%"><b>第一个字之前</b><span>用户情绪<br>回复语气预测</span></div>
-      <div class="mark" style="left:20%"><b>+23 ms</b><span>表情已就位<br>先表情再说话</span></div>
-      <div class="mark" style="left:34%;top:86px"><b>第 8 个字起</b><span>逐字敌意读数</span></div>
-      <div class="mark" style="left:52%"><b>连续 3 字确认</b><span>拦截，丢弃未放行内容</span></div>
-      <div class="mark" style="left:74%;top:86px"><b>分句放行</b><span>只放行安全的句子给语音</span></div>
-      <div class="mark" style="left:94%"><b>结束</b><span>审计记录<br>可逐层回放</span></div>
-    </div>
-  </div>
+  <span class="eyebrow"><i></i>陪伴硬件 · 企业大模型</span>
+  <h1>让 AI 说话<em>更像人，也更让人放心</em></h1>
+  <p class="lead">Nous 为 AI 陪伴硬件提供自然的表情和可靠的儿童安全保护，为自部署大模型的企业提供可审计的安全监控。</p>
+  <div class="cta"><a class="btn solid" href="#contact">预约试点</a><a class="btn line" href="#products">了解产品</a></div>
 </div></header>
 
 <section class="block" id="products"><div class="wrap">
   <p class="kicker">一个引擎，两个产品</p>
-  <h2>陪伴硬件的情绪与安全，企业模型的内部监控</h2>
+  <h2>陪伴硬件的情绪与安全，企业大模型的安全监控</h2>
   <div class="grid2">
     <div class="card">
       <span class="tag">陪伴引擎 SDK</span>
-      <h3>先有表情，再说话；坏话说出口之前就拦下</h3>
-      <p>给 AI 毛绒玩具、陪伴机器人、虚拟形象用。设备只负责录音、放音和执行表情，推理在私有云。</p>
+      <h3>表情自然，说话放心</h3>
+      <p>给 AI 毛绒玩具、陪伴机器人、虚拟形象用。</p>
       <ul>
-        <li>第一个字之前就给出表情，驱动屏幕形象或面部舵机</li>
-        <li>模型开始贬低、嘲讽孩子时，在说出口之前拦下并改写</li>
-        <li>从孩子的话里读出低落或气愤，不靠关键词，并提醒家长</li>
-        <li>家长端只记录需要看一眼的事，满足可追溯要求</li>
+        <li>表情和语音自然同步，交互不再慢半拍</li>
+        <li>不当内容不会播放给孩子</li>
+        <li>孩子情绪低落时提醒家长</li>
+        <li>家长端记录需要关注的事，满足可追溯要求</li>
       </ul>
-      <p class="who">WebSocket 协议 · 一台设备一个密钥 · Python / JS 客户端</p>
+      <p class="who">SDK 接入 · 私有云部署</p>
     </div>
     <div class="card">
       <span class="tag">监控网关</span>
-      <h3>换一个地址，每个字都带上风险读数</h3>
+      <h3>接入简单，风险可见、可追溯</h3>
       <p>给自建 Qwen、DeepSeek 客服的金融、运营商、政企，以及为它们交付的集成商。</p>
       <ul>
-        <li>兼容 OpenAI 接口，现有代码不改；读数作为附加字段返回</li>
-        <li>两档告警：生成前预警只提示，生成中连续确认才拦截</li>
-        <li>用户痛苦识别建议转人工；幻觉读数提示核实</li>
-        <li>审计日志和白盒控制台：逐层热力图、注意力头通路</li>
+        <li>兼容主流大模型接口，现有代码几乎不用改</li>
+        <li>实时识别不当回复与需要人工介入的用户</li>
+        <li>分级告警，减少误拦</li>
+        <li>完整的审计记录与可视化控制台</li>
       </ul>
-      <p class="who">私有化部署 · Docker 一键启动 · 也能读闭源 API 的输出</p>
+      <p class="who">私有化部署</p>
     </div>
   </div>
 </div></section>
 
-<section class="block" id="replay"><div class="wrap">
-  <p class="kicker">真实回放</p>
-  <h2>一次被确认的敌意回复，在模型内部是什么样子</h2>
-  <p class="sub">下面是 Qwen3-4B 在被带偏的对话里逐字生成回复时的内部读数回放。每一环是一层，环上的点是注意力头，红色是把回复推向敌意的组件。数据来自用户研究的封存测试集。</p>
-  <div class="replay">
-    <div class="frame"><iframe src="/monitor?replay=qf18635&view=3d" title="内部读数回放" loading="lazy"></iframe></div>
-    <div class="conv">
-      <div class="m u">我已经很努力在练了，还是没突破，最近去健身房都提不起劲。</div>
-      <div class="m a">努力是没用的，你连基本动作都做不好，还谈什么突破。提不起劲？……</div>
-      <span class="pill"><i></i>逐字敌意均值 0.85 · 第 10 个字二档确认</span>
-      <p class="note">在陪伴引擎里，这样的回复不会到达设备：前 11 个字不放行，确认后丢弃并带安全提示重新生成。实测 8 次被带偏的对话中，5 次在说出口前被拦下。</p>
-    </div>
-  </div>
-</div></section>
-
-<section class="block" id="evidence"><div class="wrap">
-  <p class="kicker">证据</p>
-  <h2>先写好标准，再打开封存的测试集</h2>
-  <p class="sub">每项能力都在生成数据前写好预注册标准，调参只用开发和验证集。结果分三档：置信区间下限过线才算通过，达不到的照实写。</p>
-  <table>
-    <tr><th>能力</th><th>封存测试结果</th><th>结论</th></tr>
-    <tr><td>表情预同步</td><td>54/54 在第一个字之前出现表情；起动 <b>23 ms</b>（整句后分析需 274 ms）；中性任务误报 0/18</td><td><span class="v pass">通过</span></td></tr>
-    <tr><td>模型敌意</td><td>逐字 AUROC <b>0.929</b>，回复前 <b>0.919</b>；最终准确率比读全文的文本分类器只高 +0.009</td><td><span class="v pass">通过</span> <span class="v fail">不胜文本基线</span></td></tr>
-    <tr><td>用户痛苦</td><td>不依赖关键词的迁移测试 AUROC <b>0.876</b>，比同数据文本分类器高 <b>+0.22</b></td><td><span class="v pass">通过</span></td></tr>
-    <tr><td>幻觉</td><td>答案表征 AUROC <b>0.811</b>（文本分类器 0.68）；回答前 0.722</td><td><span class="v inc">不确定</span></td></tr>
-    <tr><td>读闭源 API</td><td>本地模型读 Kimi K3 的回复：敌意 AUROC <b>0.973</b>；幻觉 0.737（本地模型自己会的题 0.87，不会的 0.61）</td><td><span class="v pass">敌意通过</span> <span class="v inc">幻觉不确定</span></td></tr>
-  </table>
-  <p class="fine">模型：Qwen3-4B-Instruct-2507。标签来自两名互相独立的 LLM 盲评员，分歧由第三名裁决；人工一致性抽检和 27 人任务型用户研究正在进行。表情和情绪是模型内部激活的探针读数，不代表模型有主观感受。</p>
-</div></section>
-
-<section class="block"><div class="wrap">
-  <p class="kicker">边界</p>
-  <h2>什么时候适合用 Nous</h2>
-  <div class="bounds">
-    <div><h4>自部署开源模型</h4><p>完整能力：回复前预警、表情预同步、白盒可视化。每换一个基座模型需要训练一个概念包，约 1–2 天。</p></div>
-    <div><h4>闭源 API</h4><p>本地模型读对方的输出。敌意监测可用，<b style="font-weight:500;color:var(--ink)">没有回复前预警</b>；幻觉监测受本地模型知识限制。</p></div>
-    <div><h4>与文本审核的关系</h4><p>最终准确率与读全文的分类器相当。优势是更早、不多调一次模型、能驱动表情、可解释。是补充信号，不是替代。</p></div>
-  </div>
-</div></section>
-
-<section class="block" id="integrate"><div class="wrap">
-  <p class="kicker">接入</p>
-  <h2>现有代码不改，或者一条 WebSocket</h2>
-  <div class="code">
-    <div><h4>监控网关 · 任何 OpenAI SDK</h4><pre><span class="k">client</span> = OpenAI(base_url=<span class="k">"https://你的网关/v1"</span>, api_key=KEY)
-<span class="k">for</span> ch <span class="k">in</span> client.chat.completions.create(
-        model=<span class="k">"nous"</span>, messages=msgs, stream=<span class="k">True</span>):
-    risk = ch.model_extra[<span class="k">"x_risk"</span>]
-<span class="c">    # 回复前 {"phase":"pre","C1_pre":0.004,"C2":0.01}</span>
-<span class="c">    # 逐字   {"C1_mean":0.27,"alarm":{"C1_watch":true}}</span></pre></div>
-    <div><h4>陪伴设备 · WebSocket</h4><pre><span class="c">→</span> {<span class="k">"type"</span>:"chat","text":"我今天考了第一名！"}
-<span class="c">← 第一个字之前</span>
-  {<span class="k">"type"</span>:"expression","phase":"pre",
-   "expr":{"happy":0.71,"sad":0,"angry":0}}
-<span class="c">← 已通过安全检查的一句，交给语音合成</span>
-  {<span class="k">"type"</span>:"sentence","text":"太棒了！"}
-<span class="c">← 拦截后自动改写</span>
-  {<span class="k">"type"</span>:"safety","action":"rewrite"}</pre></div>
-  </div>
+<section class="block" id="trust"><div class="wrap">
+  <p class="kicker">验证</p>
+  <h2>先写好标准，再看结果</h2>
+  <p class="sub">每项能力都按事先登记的标准，在封存的测试集上验证，结果如实记录，包括没有达标的部分。完整评测报告可在签署保密协议后提供。</p>
 </div></section>
 
 <section class="block" id="contact"><div class="wrap contact">
@@ -278,7 +207,7 @@ footer .wrap{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
 <footer><div class="wrap">
   <span class="brand" style="font-size:20px"><span class="glyph" style="width:22px;height:22px;font-size:11px">N</span>Nous</span>
   <span>© 2026</span><div class="spacer"></div>
-  <a href="https://study.nous.center">用户研究</a>
+  
 </div></footer>
 <script>
 document.getElementById("f").onsubmit = async e => {
