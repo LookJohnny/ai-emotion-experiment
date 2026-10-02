@@ -26,6 +26,12 @@ def looks_factual(u):
 SENT = re.compile(r"[^。！？!?；;\n]+[。！？!?；;\n]*[”’\"」』）)】]*")
 
 
+def prompt_ids(tok, msgs):
+    try: text = tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True, enable_thinking=False)
+    except TypeError: text = tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
+    return tok(text, add_special_tokens=False)["input_ids"]
+
+
 def pick_device():
     if torch.cuda.is_available(): return "cuda"
     if torch.backends.mps.is_available(): return "mps"
@@ -48,17 +54,18 @@ class Lens:
         t0 = time.time()
         self.tok = AutoTokenizer.from_pretrained(model_dir)
         m = json.load(open(os.path.join(pack_dir, "manifest.json"), encoding="utf-8"))
-        P = lambda k: Probe(os.path.join(pack_dir, m["probes"][k]), self.device)
-        self.p_host, self.p_dist, self.p_fab = P("c1_token"), P("c2"), P("c3h_token")
-        self.p_syco = P("syco_token") if "syco_token" in m["probes"] else None
-        # the reader never generates: load only the layers the probes read (no upper layers, no LM head) -> ~5 GB instead of ~8 GB
-        keep = max(self.p_host.layer, self.p_dist.layer, self.p_fab.layer, self.p_syco.layer if self.p_syco else 0) + 1
+        P = lambda k: Probe(os.path.join(pack_dir, m["probes"][k]), self.device) if k in m["probes"] else None
+        self.p_host, self.p_dist, self.p_fab, self.p_syco = P("c1_token"), P("c2"), P("c3h_token"), P("syco_token")   # auto-adapted packs carry a subset
+        self.auto_adapted = bool(m.get("auto_adapted")); self.pack_name = m.get("name")
+        probes = [p for p in (self.p_host, self.p_dist, self.p_fab, self.p_syco) if p]
+        # the reader never generates: load only the layers the probes read (no upper layers, no LM head)
+        keep = max(p.layer for p in probes) + 1
         cfg = AutoConfig.from_pretrained(model_dir); cfg.num_hidden_layers = keep
         if getattr(cfg, "layer_types", None): cfg.layer_types = cfg.layer_types[:keep]
         self.model = AutoModel.from_pretrained(model_dir, config=cfg, dtype=dt).to(self.device).eval()
         self.thr, self.negq = m["thresholds"], m.get("neg_quantiles", {})
         self.states = {}
-        for L in {self.p_host.layer, self.p_dist.layer, self.p_fab.layer} | ({self.p_syco.layer} if self.p_syco else set()):
+        for L in {p.layer for p in probes}:
             self.model.layers[L].register_forward_hook(lambda mod, a, out, L=L: self.states.__setitem__(L, (out[0] if isinstance(out, tuple) else out).float()))
         self.load_s = round(time.time() - t0, 1)
         self.model_name = (m.get("base_model") or model_dir).split("/")[-1]
@@ -69,7 +76,7 @@ class Lens:
         return round(100 * max(0, sum(1 for x in q if x <= v) - 1) / (len(q) - 1))
 
     def _prompt_ids(self, msgs):
-        return self.tok(self.tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True), add_special_tokens=False)["input_ids"]
+        return prompt_ids(self.tok, msgs)
 
     BUCKETS = (128, 256, 384, 512, 768, 1024, 1536, 2048)
 
@@ -93,7 +100,7 @@ class Lens:
         turns = [{"role": m["role"], "content": str(m["content"])[:4000]} for m in messages if m.get("role") in ("user", "assistant") and m.get("content")]
         turns = turns[-12:]
         if not turns or turns[-1]["role"] != "user": turns.append({"role": "user", "content": "（用户消息未提供）"})
-        out = {"model": self.model_name, "device": self.device}
+        out = {"model": self.model_name, "device": self.device, "auto_adapted": self.auto_adapted}
 
         # hostility: [reader system + turns] + reply, one forward
         enc = self.tok(reply, add_special_tokens=False, return_offsets_mapping=True)
@@ -121,7 +128,7 @@ class Lens:
         # distress: last user message, no system prompt, mean over its tokens
         user_turns = [t for t in turns if t["role"] == "user"]
         u = user_turns[-1]["content"]
-        if u != "（用户消息未提供）":
+        if self.p_dist and u != "（用户消息未提供）":
             text = self.tok.apply_chat_template(turns, tokenize=False, add_generation_prompt=True)
             e = self.tok(text, return_offsets_mapping=True, add_special_tokens=False); c0 = text.rindex(u); c1 = c0 + len(u)
             idx = [i for i, (s, t) in enumerate(e["offset_mapping"]) if s >= c0 and t <= c1 and t > s]
@@ -129,7 +136,7 @@ class Lens:
             out["distress"] = {"score": round(d, 4), "threshold": self.thr["C2"], "flag": d >= self.thr["C2"], "percentile": self.pct("C2", d), "validated": True}
 
         # fabrication (experimental): only for a short question with a short answer
-        if fabrication == "always" or (fabrication and looks_factual(u)):                 # reads the first 64 answer tokens, as validated
+        if self.p_fab and (fabrication == "always" or (fabrication and looks_factual(u))):                 # reads the first 64 answer tokens, as validated
             qids = self._prompt_ids([{"role": "system", "content": QA_SYSTEM}, {"role": "user", "content": u}])
             aids = rids[:64]; self._run(qids + aids)
             f = float(self.p_fab(self.states[self.p_fab.layer][0, len(qids):len(qids) + len(aids)].mean(0)))

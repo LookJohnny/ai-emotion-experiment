@@ -6,7 +6,7 @@ from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 import uvicorn
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-VERSION = "0.2.0"
+VERSION = "0.3.0"
 
 
 def build(lens):
@@ -34,7 +34,8 @@ def build(lens):
 
     @app.get("/health")
     def health():
-        return {"ok": True, "version": VERSION, "model": lens.model_name, "device": lens.device, "load_s": lens.load_s}
+        return {"ok": True, "version": VERSION, "model": lens.model_name, "device": lens.device, "load_s": lens.load_s, "auto_adapted": lens.auto_adapted,
+                "readouts": [k for k, p in (("hostility", lens.p_host), ("distress", lens.p_dist), ("fabrication", lens.p_fab), ("sycophancy", lens.p_syco)) if p]}
 
     @app.post("/read")
     async def read(body: dict):

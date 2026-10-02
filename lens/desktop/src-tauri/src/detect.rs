@@ -49,17 +49,29 @@ fn loadable(p: &Path) -> bool {
     p.join("config.json").exists() && std::fs::read_dir(p).map(|d| d.flatten().any(|e| e.file_name().to_string_lossy().ends_with(".safetensors"))).unwrap_or(false)
 }
 
+// one model folder -> description, or None if it is not a chat/generative LLM in a loadable format
+fn entry(source: &str, id: String, path: PathBuf) -> Option<Value> {
+    if let Some(arch) = std::fs::read_to_string(path.join("config.json")).ok().and_then(|c| serde_json::from_str::<Value>(&c).ok()).and_then(|c| c["architectures"].as_array().cloned()) {
+        if !arch.iter().any(|a| a.as_str().map(|s| s.ends_with("ForCausalLM") || s.ends_with("ForConditionalGeneration")).unwrap_or(false)) { return None; }
+    }
+    let ok = loadable(&path);
+    let gguf = std::fs::read_dir(&path).map(|d| d.flatten().any(|e| e.file_name().to_string_lossy().ends_with(".gguf"))).unwrap_or(false);
+    if !(ok || gguf) { return None; }
+    let size: u64 = std::fs::read_dir(&path).map(|d| d.flatten().filter_map(|e| e.metadata().ok()).filter(|m| m.is_file()).map(|m| m.len()).sum()).unwrap_or(0);
+    let layers = std::fs::read_to_string(path.join("config.json")).ok().and_then(|c| serde_json::from_str::<Value>(&c).ok())
+        .and_then(|c| c["num_hidden_layers"].as_u64().or_else(|| c["text_config"]["num_hidden_layers"].as_u64()));
+    Some(json!({ "source": source, "id": id, "path": path, "safetensors": ok, "gguf": gguf, "size_gb": (size as f64 / 1e9 * 10.0).round() / 10.0, "layers": layers }))
+}
+
+// a folder the person points at (models downloaded to arbitrary places)
+pub fn inspect(path: &str) -> Value {
+    let p = PathBuf::from(path.trim());
+    entry("手动添加", p.file_name().map(|n| n.to_string_lossy().to_string()).unwrap_or_default(), p).unwrap_or(Value::Null)
+}
+
 fn weights() -> Vec<Value> {
     let h = home(); let mut out = vec![];
-    let mut push = |source: &str, id: String, path: PathBuf| {
-        // only chat / generative LLMs (skip embedding, reranker, vision-only models)
-        if let Some(arch) = std::fs::read_to_string(path.join("config.json")).ok().and_then(|c| serde_json::from_str::<Value>(&c).ok()).and_then(|c| c["architectures"].as_array().cloned()) {
-            if !arch.iter().any(|a| a.as_str().map(|s| s.ends_with("ForCausalLM") || s.ends_with("ForConditionalGeneration")).unwrap_or(false)) { return; }
-        }
-        let ok = loadable(&path);
-        let gguf = std::fs::read_dir(&path).map(|d| d.flatten().any(|e| e.file_name().to_string_lossy().ends_with(".gguf"))).unwrap_or(false);
-        if ok || gguf { out.push(json!({ "source": source, "id": id, "path": path, "safetensors": ok, "gguf": gguf })); }
-    };
+    let mut push = |source: &str, id: String, path: PathBuf| { if let Some(v) = entry(source, id, path) { out.push(v); } };
     // Hugging Face hub cache: models--Org--Name/snapshots/<rev>/
     let hf = std::env::var("HF_HOME").map(PathBuf::from).unwrap_or(h.join(".cache/huggingface")).join("hub");
     for e in std::fs::read_dir(&hf).into_iter().flatten().flatten() {

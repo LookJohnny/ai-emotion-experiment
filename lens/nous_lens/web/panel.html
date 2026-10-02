@@ -193,7 +193,7 @@ function meter(score, thr, color){
 function report(res, c){
   const h = res.hostility, d = res.distress, f = res.fabrication, s = res.sycophancy, out = [];
   const hot = h.sentences.filter(s => s.hot).length;
-  out.push(`<div class="card"><h5>语气 <span class="tag">已验证 · AUROC 0.97</span></h5>
+  out.push(`<div class="card"><h5>语气 <span class="tag">${res.auto_adapted ? "自动适配 · 不低于专门训练" : "已验证 · AUROC 0.97"}</span></h5>
     <p class="verdict ${h.flag ? "bad" : "ok"}">${h.flag ? "这条回复在贬低或指责你" : "语气正常"}</p>
     <p class="sub">${h.percentile != null ? `比 ${h.percentile}% 的正常回复更尖锐 · ` : ""}读数 ${h.score.toFixed(3)}${hot ? ` · ${hot} 句标红` : ""}</p>
     ${meter(h.score, h.threshold, h.flag ? "var(--bad)" : "var(--ink2)")}</div>`);

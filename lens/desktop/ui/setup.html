@@ -22,6 +22,7 @@ h2{font-size:12px;font-weight:500;color:var(--mute);letter-spacing:.02em;margin:
 .badge.wb{background:rgba(34,197,94,.12);border-color:rgba(34,197,94,.35);color:#7ddc9c}
 .badge.rd{background:rgba(143,176,245,.10);border-color:rgba(143,176,245,.3);color:var(--info)}
 .badge.lp{background:rgba(245,165,36,.10);border-color:rgba(245,165,36,.3);color:#f7c46e}
+.badge.ad{background:rgba(45,212,191,.10);border-color:rgba(45,212,191,.35);color:#5eead4}
 .empty{padding:12px 14px;color:var(--faint)}
 .hw{display:flex;gap:18px;flex-wrap:wrap;padding:12px 14px;color:var(--ink2)}
 .hw span b{color:var(--ink);font-weight:500}
@@ -87,6 +88,7 @@ function siteFamily(host){ return REG.families.find(f => (f.sites || []).include
 function capability(f, how){
   if (f && f.pack && how === "safetensors") return ["wb", "白盒读取 · 可直接作为读者"];
   if (f && f.pack && how === "gguf") return ["rd", "同款模型 · GGUF 白盒适配中，先用读者代理"];
+  if ((!f || f.kind !== "closed") && how === "safetensors") return ["ad", "可自动适配 · 能用作读者"];
   if (f && f.kind === "open") return ["rd", "读者代理 · 探针包待适配"];
   if (f && f.logprobs && how === "api") return ["lp", "读者代理 + logprob（接口支持时）"];
   return ["rd", "读者代理"];
@@ -96,6 +98,10 @@ function itemHTML(title, sub, cap){ return `<div class="item"><b>${esc(title)}</
 async function scan(){
   $("ais").innerHTML = '<p class="empty"><span class="spin"></span>正在识别本机的模型服务和已有模型…</p>';
   [REG, ENV, CFG] = await Promise.all([T.core.invoke("registry"), T.core.invoke("detect_env"), T.core.invoke("engine_status").then(s => s.config || {})]);
+  render();
+}
+async function scanRender(){ render(); }
+function render(){
   const rows = [];
   for (const r of ENV.runtimes) for (const m of r.models) {
     const f = family(m.id), gguf = (m.format || "").toLowerCase() === "gguf" || r.id === "ollama";
@@ -103,10 +109,14 @@ async function scan(){
   }
   for (const w of ENV.weights) {
     const f = family(w.id);
-    rows.push(itemHTML(w.id, `${w.source} · ${f ? f.vendor + " " + f.name : "未登记的模型"} · 已在本机`, capability(f, w.safetensors ? "safetensors" : "gguf")));
+    rows.push(itemHTML(w.id, `${w.source} · ${f ? f.vendor + " " + f.name : "未登记的模型"} · ${w.size_gb} GB · 已在本机`, capability(f, w.safetensors ? "safetensors" : "gguf")));
   }
+  rows.push(`<form id="addform" style="grid-template-columns:1fr auto"><input id="a_dir" placeholder="模型放在别处？粘贴模型文件夹路径（含 config.json 的那一层）"><button class="line" type="submit">添加文件夹</button></form>`);
   rows.push(itemHTML("网页和 App 里的 AI", "ChatGPT、Kimi、豆包、DeepSeek、通义、文心、元宝、Claude、Gemini 等：用浏览器插件，或复制回复后检查", ["rd", "读者代理"]));
   $("ais").innerHTML = rows.join("");
+  $("addform").onsubmit = async e => { e.preventDefault(); const v = await T.core.invoke("inspect_folder", {path: $("a_dir").value});
+    if (!v) { $("a_dir").value = ""; $("a_dir").placeholder = "这个文件夹不是可读取的对话模型（需要 config.json 和 .safetensors）"; return; }
+    ENV.weights.push(v); const keep = ENV.weights; const r = ENV.runtimes; await scanRender(r, keep); };
   drawApis(); drawHw(); drawPlan();
 }
 function drawApis(){
@@ -123,14 +133,22 @@ function drawHw(){
   const h = ENV.hardware, g = h.gpus.map(x => `${x.name}${x.vram_gb ? " " + x.vram_gb.toFixed(0) + " GB" : ""}`).join("、");
   $("hw").innerHTML = `<span><b>${esc(h.chip || h.os)}</b></span><span>内存 <b>${h.mem_gb ?? "?"} GB</b></span>${g ? `<span>显卡 <b>${esc(g)}</b></span>` : ""}<span>本地读取：<b style="color:${h.local_reader_ok ? "var(--ok)" : "var(--mute)"}">${h.local_reader_ok ? "可以" : "配置不够"}</b></span>`;
 }
+function budgetGB(h){ const v = Math.max(0, ...h.gpus.map(g => g.vram_gb || 0)); return h.apple_silicon ? (h.mem_gb || 0) * 0.45 : v * 0.9; }
 function drawPlan(){
   const h = ENV.hardware, have = ENV.weights.find(w => w.safetensors && (family(w.id) || {}).pack);
+  // the largest model the person already has that fits (only ~60% of layers are loaded), excluding closed-family names
+  const fits = ENV.weights.filter(w => w.safetensors && !(family(w.id) || {}).pack && (family(w.id) || {}).kind !== "closed" && w.size_gb * 0.6 <= budgetGB(h)).sort((a, b) => b.size_gb - a.size_gb);
+  const adapt = fits[0];
   const cur = CFG.reader && CFG.reader.chosen ? `<p class="why">当前使用：${CFG.reader.source === "download" ? "已下载的本地读者" : "你已有的 " + esc(CFG.reader.path)}</p>` : "";
   let html = "";
   if (have) {
     html = `<p>你的电脑上已经有 <b>${esc(have.id)}</b>，Nous 可以直接用它来读，<b>不需要下载</b>。</p>
       <p class="why">对网页、App 和 API 里的模型：用它做读者代理。如果你直接和 ${esc(have.id)} 对话（通过 Nous 网关），还能白盒读取，在它开口前预警。</p>
       <div class="btns"><button class="solid" id="use">用这个模型开始（只安装约 1 GB 运行组件）</button></div>`;
+  } else if (adapt) {
+    html = `<p>你的电脑上已经有 <b>${esc(adapt.id)}</b>（${adapt.size_gb} GB）。Nous 可以<b>为它自动生成探针</b>，用它来读，<b>不需要下载</b>，也不需要任何标注。</p>
+      <p class="why">自动适配：让你的模型读 900 段内置文本，学一个线性映射，把 Nous 的标准探针换算到你的模型上。大约 2–10 分钟。在 4 款开源模型上，敌意读数的效果不低于专门训练；附和与编造是实验性的。</p>
+      <div class="btns"><button class="solid" id="adapt">用 ${esc(adapt.id)} 自动适配并开始</button>${h.local_reader_ok ? '<button class="line" id="dl">改为下载标准读者（8 GB）</button>' : ""}</div>`;
   } else if (h.local_reader_ok) {
     html = `<p>没有找到 Nous 能直接读取的模型。你在用的模型会通过<b>读者代理</b>来读，读者可以放在：</p>
       <div class="btns"><button class="line" disabled>云端读者 · 即将上线（无需下载）</button><button class="line" id="dl">隐私模式：下载本地读者（约 8 GB，对话不离开本机）</button></div>
@@ -142,12 +160,10 @@ function drawPlan(){
   $("plan").innerHTML = html + cur;
   if ($("use")) $("use").onclick = () => start("existing", have.path, (family(have.id) || {}).pack);
   if ($("dl")) $("dl").onclick = () => start("download", null, "qwen3-4b-2507");
+  if ($("adapt")) $("adapt").onclick = () => { showProgress(); T.core.invoke("adapt_and_use", {path: adapt.path, name: adapt.id}); };
 }
-function start(source, path, fam){
-  $("progress").style.display = "block"; $("progress").scrollIntoView({behavior: "smooth"}); mark(1);
-  document.querySelectorAll("#plan button").forEach(b => b.disabled = true);
-  T.core.invoke("choose_reader", {source, path, family: fam});
-}
+function showProgress(){ $("progress").style.display = "block"; $("progress").scrollIntoView({behavior: "smooth"}); mark(1); document.querySelectorAll("#plan button").forEach(b => b.disabled = true); }
+function start(source, path, fam){ showProgress(); T.core.invoke("choose_reader", {source, path, family: fam}); }
 function mark(n){ for (let i = 1; i <= 4; i++) $("s" + i).className = "s" + (i < n ? " done" : i === n ? " on" : ""); }
 const lines = [];
 T.event.listen("setup", e => { const d = e.payload;

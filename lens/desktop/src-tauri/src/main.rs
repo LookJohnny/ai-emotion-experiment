@@ -85,14 +85,14 @@ fn find_python() -> Option<String> {
     })
 }
 
-fn setup(app: AppHandle) {
-    thread::spawn(move || {
+fn ensure_env(app: &AppHandle) -> bool {
+        let app = app.clone();
         let _ = std::fs::create_dir_all(base());
         if !venv_bin("python").exists() {
             emit(&app, "step", "1/3 准备运行环境");
-            let Some(py) = find_python() else { emit(&app, "error", "没有找到 Python 3.10 或更新版本。请从 python.org 安装后重新打开本应用。"); return; };
+            let Some(py) = find_python() else { emit(&app, "error", "没有找到 Python 3.10 或更新版本。请从 python.org 安装后重新打开本应用。"); return false; };
             let mut c = cmd(&py); if py == "py" { c.arg("-3"); } c.args(["-m", "venv"]).arg(base().join("venv"));
-            if !run_logged(&app, c) { emit(&app, "error", "创建运行环境失败。"); return; }
+            if !run_logged(&app, c) { emit(&app, "error", "创建运行环境失败。"); return false; }
             let req = engine_root(&app).join("requirements.txt");
             emit(&app, "step", "2/3 安装组件（约 3–10 分钟）");
             if cfg!(windows) && cmd("nvidia-smi").stdout(Stdio::null()).stderr(Stdio::null()).status().map(|s| s.success()).unwrap_or(false) {
@@ -102,9 +102,15 @@ fn setup(app: AppHandle) {
             if !run_logged(&app, c) {
                 emit(&app, "log", "国内镜像暂不可用，改用官方源继续安装…");
                 let mut c = cmd(venv_bin("pip")); c.args(["install", "-r"]).arg(&req);
-                if !run_logged(&app, c) { let _ = std::fs::remove_dir_all(base().join("venv")); emit(&app, "error", "安装失败，请检查网络后重新打开本应用。"); return; }
+                if !run_logged(&app, c) { let _ = std::fs::remove_dir_all(base().join("venv")); emit(&app, "error", "安装失败，请检查网络后重新打开本应用。"); return false; }
             }
         }
+        true
+}
+
+fn setup(app: AppHandle) {
+    thread::spawn(move || {
+        if !ensure_env(&app) { return; }
         if config()["reader"]["source"] == "download" && !download_dir().join(".complete").exists() {
             emit(&app, "step", "3/3 下载本地读者 Qwen3-4B（约 8 GB，只需一次）");
             let mut c = cmd(venv_bin("modelscope")); c.args(["download", "--model", "Qwen/Qwen3-4B-Instruct-2507", "--local_dir"]).arg(download_dir());
@@ -120,8 +126,9 @@ fn start_engine(app: &AppHandle) {
     if engine_up() { return; }                                    // already running (e.g. started from the terminal)
     let root = engine_root(app);
     let mut c = cmd(venv_bin("python"));
-    c.args(["-m", "nous_lens.server", "--no-browser", "--model"]).arg(model_dir())
-        .current_dir(&root).env("PYTHONPATH", &root).stdout(Stdio::null()).stderr(Stdio::null());
+    c.args(["-m", "nous_lens.server", "--no-browser", "--model"]).arg(model_dir());
+    if let Some(p) = config()["reader"]["pack"].as_str() { c.arg("--pack").arg(p); }     // auto-adapted pack for the person's own model
+    c.current_dir(&root).env("PYTHONPATH", &root).stdout(Stdio::null()).stderr(Stdio::null());
     if let Ok(child) = c.spawn() { *app.state::<Engine>().0.lock().unwrap() = Some(child); }
 }
 
@@ -146,6 +153,9 @@ fn engine_status() -> serde_json::Value {
 fn detect_env() -> serde_json::Value { detect::detect() }
 
 #[tauri::command]
+fn inspect_folder(path: String) -> serde_json::Value { detect::inspect(&path) }
+
+#[tauri::command]
 fn registry() -> serde_json::Value { serde_json::from_str(detect::REGISTRY).unwrap() }
 
 // remember the API models a person (or a company) uses, e.g. Kimi K3 behind their own base_url
@@ -159,6 +169,24 @@ fn choose_reader(app: AppHandle, source: String, path: Option<String>, family: O
     let p = if source == "download" { download_dir() } else { PathBuf::from(path.unwrap_or_default()) };
     c["reader"] = serde_json::json!({ "source": source, "path": p, "family": family.unwrap_or_else(|| "qwen3-4b-2507".into()), "chosen": true });
     save_config(&c); stop_engine(&app); setup(app);
+}
+
+// automatic adaptation: build a probe pack for a model the person already has (no labels, no download), then use it as the reader
+#[tauri::command]
+fn adapt_and_use(app: AppHandle, path: String, name: String) {
+    thread::spawn(move || {
+        if !ensure_env(&app) { return; }
+        let safe: String = name.chars().map(|ch| if ch.is_alphanumeric() || ch == '-' || ch == '.' { ch } else { '_' }).collect();
+        let out = base().join("packs").join(&safe);
+        emit(&app, "step", "3/3 为你的模型自动生成探针（只读本机文本，不需要标注）");
+        let mut c = cmd(venv_bin("python")); c.args(["-m", "nous_lens.adapt", "--model", &path, "--out"]).arg(&out)
+            .current_dir(engine_root(&app)).env("PYTHONPATH", engine_root(&app));
+        if !run_logged(&app, c) || !out.join("manifest.json").exists() { emit(&app, "error", "自动适配失败：这款模型可能不是 Hugging Face 格式的对话模型。"); return; }
+        let mut cf = config();
+        cf["reader"] = serde_json::json!({ "source": "existing", "path": path, "pack": out, "family": "auto", "auto_adapted": true, "name": name, "chosen": true });
+        save_config(&cf); stop_engine(&app);
+        emit(&app, "done", "准备完成"); start_engine(&app);
+    });
 }
 
 #[tauri::command]
@@ -186,7 +214,7 @@ fn main() {
         .plugin(tauri_plugin_notification::init())
         .plugin(tauri_plugin_clipboard_manager::init())
         .manage(Engine(Mutex::new(None)))
-        .invoke_handler(tauri::generate_handler![open_panel, engine_status, detect_env, registry, set_api_models, choose_reader, open_setup])
+        .invoke_handler(tauri::generate_handler![open_panel, engine_status, detect_env, registry, set_api_models, choose_reader, adapt_and_use, inspect_folder, open_setup])
         .setup(|app| {
             #[cfg(target_os = "macos")]
             app.set_activation_policy(tauri::ActivationPolicy::Accessory);   // menu-bar app: no Dock icon
