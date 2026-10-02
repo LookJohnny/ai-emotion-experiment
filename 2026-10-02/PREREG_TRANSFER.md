@@ -57,4 +57,5 @@ Every text is read by the target model exactly as by the reference: same system 
 **Reported:** the reference reading the same test texts; secondary test sets; (b′); every per-layer number.
 
 ## Deviations
-(none)
+- **Model 4 fixed (2026-10-02, before its features):** GLM-4-9B-0414 (`Glm4ForCausalLM`, 40 layers, native in transformers 4.57).
+- **Order note:** Qwen3-8B results were computed before the other three models were downloaded. No method or threshold was changed after seeing them.
