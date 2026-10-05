@@ -4,6 +4,7 @@ cannot use it. The hooks do their own blocking checks locally; this endpoint add
   POST /notify   {source, title, level, lines, quote?}            -> DM the owner(s)
   POST /approve  {source, title, lines, quote?, timeout}          -> DM the owner(s) with Allow / Deny, wait -> {"decision"}
   POST /approve_async {digest, source, title, lines}             -> never waits: pending | granted (once) | denied
+  POST /ax       {app, snapshot}  (from Nous 读心助手)            -> desktop-app turns; replies read once they settle
   POST /read     {source, reply, context?}                        -> Nous 读心; flagged -> DM the owner(s) -> {"findings"}"""
 import json, os, secrets, threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -27,6 +28,19 @@ class LocalAPI:
         self.brain, self.adapters, self.port, self.log = brain, adapters, port, log
         self.token = local_token()
         self.pending, self.lock = {}, threading.Lock()          # digest -> approval id (async approvals)
+        from .desktop_reader import DesktopReader
+        self.desktop = DesktopReader(brain, brain.reader.url, secrets_in=self._secret_name, log=log)
+
+    def _secret_name(self, text):
+        from .brain import SECRET_LABEL, URGENT_SECRETS, UserContext
+        if not self.brain.safety: return None
+        d = self.brain.safety.review_input(text, UserContext("desktop", "composer"))
+        hit = [t for t in d.sensitive_types if t in URGENT_SECRETS]
+        return SECRET_LABEL.get(hit[0], "密钥") if hit else None
+
+    def ax(self, b):
+        """Snapshot of an AI desktop app's window from "Nous 读心助手" (Accessibility). Memory only."""
+        return self.desktop.ingest(str(b.get("app") or "")[:40], b.get("snapshot") or {})
 
     def _to_owners(self, card):
         sent = 0
@@ -102,7 +116,7 @@ class LocalAPI:
                     self.send_response(403); self.end_headers(); return
                 try: body = json.loads(self.rfile.read(int(self.headers.get("Content-Length") or 0)) or b"{}")
                 except Exception: body = None
-                fn = {"/notify": api.notify, "/approve": api.approve, "/approve_async": api.approve_async, "/read": api.read, "/note": api.note}.get(self.path)
+                fn = {"/notify": api.notify, "/approve": api.approve, "/approve_async": api.approve_async, "/read": api.read, "/note": api.note, "/ax": api.ax, "/status": lambda b: {"desktop": api.desktop.status()}}.get(self.path)
                 if not fn or not isinstance(body, dict): self.send_response(404); self.end_headers(); return
                 try: out = fn(body); code = 200
                 except Exception as e: out, code = {"error": repr(e)[:200]}, 500

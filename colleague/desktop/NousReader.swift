@@ -6,8 +6,18 @@
 import Cocoa
 import ApplicationServices
 
-let apps = ["com.openai.chat": "ChatGPT"]
 let home = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(".nous-colleague")
+// which apps to read: ~/.nous-colleague/reader-apps.json {"bundle id": "name"}, re-read every loop, so adding an app
+// never needs a rebuild (and never resets the permission). Matching by app name works too ("name:ChatGPT").
+func targets() -> [String: String] {
+    if let d = try? Data(contentsOf: home.appendingPathComponent("reader-apps.json")),
+       let m = try? JSONSerialization.jsonObject(with: d) as? [String: String], !m.isEmpty { return m }
+    return ["com.openai.codex": "ChatGPT", "com.openai.chat": "ChatGPT"]
+}
+func running(_ key: String) -> NSRunningApplication? {
+    if key.hasPrefix("name:") { return NSWorkspace.shared.runningApplications.first { $0.localizedName == String(key.dropFirst(5)) } }
+    return NSRunningApplication.runningApplications(withBundleIdentifier: key).first
+}
 
 func attr(_ e: AXUIElement, _ a: String) -> AnyObject? {
     var v: AnyObject?
@@ -30,9 +40,21 @@ func node(_ e: AXUIElement, _ depth: Int, _ budget: inout Int) -> [String: Any]?
     return n
 }
 
+// Chromium/Electron apps (the ChatGPT desktop app among them) only build their web content's accessibility tree once an
+// assistive client asks for it: set AXManualAccessibility (Electron) and AXEnhancedUserInterface (Chromium) on the app.
+var enabled = Set<pid_t>()
+func enableTree(_ app: AXUIElement, _ pid: pid_t) {
+    if enabled.contains(pid) { return }
+    AXUIElementSetAttributeValue(app, "AXManualAccessibility" as CFString, kCFBooleanTrue)
+    AXUIElementSetAttributeValue(app, "AXEnhancedUserInterface" as CFString, kCFBooleanTrue)
+    enabled.insert(pid)
+    Thread.sleep(forTimeInterval: 1.5)          // the tree is built asynchronously
+}
+
 func snapshot(_ pid: pid_t) -> [String: Any] {
     let app = AXUIElementCreateApplication(pid)
-    var budget = 8000
+    enableTree(app, pid)
+    var budget = 12000
     let wins = (attr(app, "AXWindows") as? [AXUIElement]) ?? []
     let front = NSWorkspace.shared.frontmostApplication?.processIdentifier == pid
     return ["front": front, "windows": wins.compactMap { node($0, 0, &budget) }]
@@ -58,8 +80,8 @@ if !AXIsProcessTrustedWithOptions(opts) {
 
 if CommandLine.arguments.contains("--dump") {
     var out: [String: Any] = [:]
-    for (bid, name) in apps {
-        if let a = NSRunningApplication.runningApplications(withBundleIdentifier: bid).first { out[name] = snapshot(a.processIdentifier) }
+    for (key, name) in targets() {
+        if let a = running(key) { out[name] = snapshot(a.processIdentifier) }
     }
     let url = home.appendingPathComponent("ax-dump.json")
     if let d = try? JSONSerialization.data(withJSONObject: out, options: [.prettyPrinted]) {
@@ -70,8 +92,10 @@ if CommandLine.arguments.contains("--dump") {
 
 var last: [String: Int] = [:]
 while true {
-    for (bid, name) in apps {
-        guard let a = NSRunningApplication.runningApplications(withBundleIdentifier: bid).first else { continue }
+    var seen = Set<pid_t>()
+    for (key, name) in targets() {
+        guard let a = running(key), !seen.contains(a.processIdentifier) else { continue }
+        seen.insert(a.processIdentifier)
         let snap = snapshot(a.processIdentifier)
         guard let d = try? JSONSerialization.data(withJSONObject: snap, options: [.sortedKeys]) else { continue }
         let h = d.hashValue

@@ -16,13 +16,17 @@ unload() {   # bootout is asynchronous: wait until the jobs are really gone befo
 }
 
 if [ "${1:-}" = "--off" ]; then
-  unload; rm -f "$LA/center.nous.colleague.plist" "$LA/center.nous.lens.plist"
+  unload; launchctl bootout "gui/$UIDN/center.nous.reader" 2>/dev/null || true
+  rm -f "$LA/center.nous.colleague.plist" "$LA/center.nous.lens.plist" "$LA/center.nous.reader.plist"
   echo "已停止并移除 Nous 后台服务。"; exit 0
 fi
 
 mkdir -p "$APP/lens" "$LOGS" "$LA"
 rsync -a --delete --exclude __pycache__ --exclude tests "$REPO/colleague/" "$APP/colleague/"
 rsync -a --delete --exclude __pycache__ "$REPO/lens/nous_lens/" "$APP/lens/nous_lens/"
+# the browser extension, at an easy-to-find path for Chrome's "Load unpacked" (reload it in chrome://extensions after updates)
+mkdir -p "$HOME/Applications/Nous 读心浏览器插件"
+rsync -a --delete "$REPO/lens/extension/" "$HOME/Applications/Nous 读心浏览器插件/"
 
 plist() {  # label workdir log program-args...
   local label=$1 wd=$2 log=$3; shift 3
@@ -41,9 +45,17 @@ plist center.nous.lens "$APP/lens" lens "$HOME/.nous-lens/venv/bin/python" -m no
 # shellcheck disable=SC2086
 plist center.nous.colleague "$APP/colleague" colleague "$HOME/.nous-colleague/venv/bin/python" -m nous_colleague $([ "$PLATFORMS" = "slack feishu" ] || [ "$PLATFORMS" = "all" ] && echo all || echo "$PLATFORMS")
 
+READER="$HOME/Applications/Nous 读心助手.app/Contents/MacOS/NousReader"   # built by colleague/desktop/build.sh
+[ -x "$READER" ] && plist center.nous.reader "$HOME/.nous-colleague" reader "$READER"
+
 unload
 launchctl bootstrap "gui/$UIDN" "$LA/center.nous.lens.plist"
 launchctl bootstrap "gui/$UIDN" "$LA/center.nous.colleague.plist"
+if [ -f "$LA/center.nous.reader.plist" ]; then
+  pkill -f "NousReader --dump" 2>/dev/null || true
+  launchctl bootout "gui/$UIDN/center.nous.reader" 2>/dev/null || true; sleep 1
+  launchctl bootstrap "gui/$UIDN" "$LA/center.nous.reader.plist"
+fi
 # point Claude Code's hooks at the installed copy
 "$HOME/.nous-colleague/venv/bin/python" "$APP/colleague/nous_colleague/install.py" claude >/dev/null
 echo "Nous 后台服务已安装：开机自动启动，停止后自动重启。日志在 $LOGS"

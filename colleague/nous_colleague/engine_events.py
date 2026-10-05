@@ -9,7 +9,7 @@ from .cards import Card, clip
 NOTICE = {"prompt_secret_blocked": "网页里拦下含密钥的消息", "prompt_secret_sent_anyway": "含密钥仍坚持发送",
           "paste_secret_warned": "提醒粘贴了密钥"}
 SITE = {"chatgpt.com": "ChatGPT 网页版", "chat.openai.com": "ChatGPT 网页版", "claude.ai": "Claude 网页版", "gemini.google.com": "Gemini",
-        "chat.deepseek.com": "DeepSeek", "www.kimi.com": "Kimi", "kimi.com": "Kimi", "kimi.moonshot.cn": "Kimi", "www.doubao.com": "豆包"}
+        "chat.deepseek.com": "DeepSeek", "www.kimi.com": "Kimi", "kimi.com": "Kimi", "kimi.moonshot.cn": "Kimi", "www.doubao.com": "豆包", "127.0.0.1": "Nous 测试页", "localhost": "Nous 测试页"}
 
 
 def label(source):

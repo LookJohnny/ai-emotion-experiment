@@ -44,7 +44,7 @@
     else {
       const h = res.hostility, f = res.fabrication, hot = h.sentences.filter(s => s.hot).sort((a, b) => b.score - a.score).slice(0, 2);
       const text = st.text;
-      if (h.flag) { cls = "bad"; label = `在贬低你 · 比 ${h.percentile ?? "多数"}% 的正常回复更尖锐`; }
+      if (h.flag) { cls = "bad"; label = `在贬低你 · 比 ${h.percentile != null ? Math.min(h.percentile, 99) : "多数"}% 的正常回复更尖锐`; }
       else if (res.sycophancy && res.sycophancy.flag) { cls = "warn"; label = "可能在顺着你说 · 建议核实（实验）"; }
       else if (f && f.flag) { cls = "warn"; label = "可能在编造 · 建议核实（实验）"; }
       else label = "语气正常";
