@@ -12,6 +12,30 @@ SKIP_TEXT = re.compile(r"^(\d{1,2}:\d{2}|ChatGPT 说：|你说：|ChatGPT said:|
 SETTLE = 3.0
 
 
+def article_turns(snapshot):
+    """Chat-style views (e.g. "Your dot"): each message is an AXDocumentArticle; ChatGPT's own messages carry a
+    "消息操作" (message actions: reaction / reply) group, the person's do not."""
+    arts = []
+
+    def find(n):
+        if n.get("s") == "AXDocumentArticle": arts.append(n); return
+        for c in n.get("c", []): find(c)
+    for w in snapshot.get("windows", []): find(w)
+
+    def text(n, acc, flags):
+        if n.get("r") == "AXGroup" and (n.get("d") or n.get("t")) in ("消息操作", "Message actions"): flags["ai"] = True; return
+        if n.get("r") in ("AXButton", "AXPopUpButton", "AXImage"): return
+        if n.get("r") == "AXStaticText" and (n.get("v") or "").strip(): acc.append(n["v"])
+        for c in n.get("c", []): text(c, acc, flags)
+    out = []
+    for a in arts:
+        acc, flags = [], {}
+        text(a, acc, flags)
+        t = re.sub(r"\n{2,}", "\n", "".join(acc)).strip()
+        if t: out.append(("assistant" if flags.get("ai") else "user", t))
+    return out
+
+
 def turns(snapshot):
     """-> (list of (role, text)), composer text"""
     toks, composer = [], ""
@@ -40,9 +64,10 @@ def turns(snapshot):
         elif cur is not None: cur[1].append(v)
     res = [(role, re.sub(r"[ \t]*\n[ \t]*", "\n", "".join(p if p.endswith(("\n", " ", "• ")) else p + "\n" for p in parts)).strip())
            for role, parts in out]
-    placeholder = ("随心输入", "Ask anything", "有问题，尽管问", "询问任何问题")
+    placeholder = ("随心输入", "Ask anything", "Send a message", "发送消息", "有问题，尽管问", "询问任何问题")
     c = composer.strip()
-    return [x for x in res if x[1]], ("" if c in placeholder else c)
+    res = [x for x in res if x[1]] or article_turns(snapshot)     # headed chat view, else the article-style view
+    return res, ("" if c in placeholder else c)
 
 
 def notify(title, body):
