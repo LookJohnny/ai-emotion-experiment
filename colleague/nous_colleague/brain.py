@@ -79,6 +79,7 @@ class Brain:
         self.bind_codes = {}
         self.safety = SafetyCore(Policy()) if SafetyCore else None
         self.lock = threading.Lock()
+        self.approvals = {}                                   # id -> {"event", "decision", "expires", "by"}
 
     # ---- owner binding: a one-time code shown in the terminal, sent to the bot in a DM ----
     def bind_code(self, platform):
@@ -207,6 +208,32 @@ class Brain:
         if res.get("fabrication"): lines.append("编造（实验性）：没有超过提醒线。")
         else: lines.append("这条不像是在回答事实问题，没有读编造。带上「问：」可以一起读。")
         return [Out("dm", m.sender_id, Card("没发现问题", "ok", lines, note="没发现问题不等于内容一定正确。"))]
+
+    # ---- approvals for AI tools running on this computer (Claude Code / Codex hooks) ----
+    def new_approval(self, ttl):
+        aid = pysecrets.token_urlsafe(12)
+        self.approvals[aid] = {"event": threading.Event(), "decision": None, "expires": self.clock() + ttl, "by": None}
+        return aid
+
+    def wait_approval(self, aid, timeout):
+        a = self.approvals.get(aid)
+        if not a: return "deny"
+        a["event"].wait(timeout)
+        d = a["decision"] or "timeout"; a["decision"] = a["decision"] or "timeout"
+        return d
+
+    def resolve_approval(self, platform, value, user_id):
+        """A button press. Only the bound owner of that platform may decide; each approval is decided once, before it expires."""
+        a = self.approvals.get(value.get("ap"))
+        if not a: return "这个请求已经失效。"
+        if user_id != self.owner(platform): return "只有管理员可以批准或拒绝。"
+        if a["decision"]: return {"allow": "已经允许过了。", "deny": "已经拒绝过了。"}.get(a["decision"], "这个请求已经超时，没有执行。")
+        if self.clock() > a["expires"]: a["decision"] = "timeout"; a["event"].set(); return "这个请求已经超时，没有执行。"
+        a["decision"] = "allow" if value.get("d") == "allow" else "deny"; a["by"] = user_id; a["event"].set()
+        return "已允许，这一次操作会继续执行。" if a["decision"] == "allow" else "已拒绝，这次操作不会执行。"
+
+    def owners(self):
+        return dict(self.state.d["owners"])
 
     # ---- feedback buttons ----
     def feedback(self, platform, value, user_id=""):

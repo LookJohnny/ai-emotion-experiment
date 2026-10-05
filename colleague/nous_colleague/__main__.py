@@ -60,6 +60,8 @@ def main():
         code = brain.bind_code(name)
         if code: print(f"[{name}] 还没有管理员：在{ {'feishu': '飞书', 'slack': 'Slack'}[name] }里私聊机器人，发送绑定码 {code}", flush=True)
         else: print(f"[{name}] 管理员已绑定。", flush=True)
+    from .localapi import LocalAPI
+    LocalAPI(brain, adapters).serve()                     # Claude Code / Codex hooks on this computer report here
     threading.Thread(target=daily_loop, args=(brain, adapters, a.digest_hour), daemon=True).start()
     # the Feishu SDK runs its own asyncio loop and expects the main thread; everything else runs in threads
     threads = [threading.Thread(target=ad.run, daemon=True) for n, ad in adapters.items() if n != "feishu"]

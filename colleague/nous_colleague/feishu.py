@@ -88,7 +88,8 @@ class Feishu:
 
     def _on_card(self, data):
         ev = data.event; val = (ev.action.value if ev.action else None) or {}
-        toast = self.brain.feedback("feishu", val, ev.operator.open_id if ev.operator else "")
+        uid = ev.operator.open_id if ev.operator else ""
+        toast = self.brain.resolve_approval("feishu", val, uid) if "ap" in val else self.brain.feedback("feishu", val, uid)
         return P2CardActionTriggerResponse({"toast": {"type": "success", "content": toast}})
 
     def send(self, outs):

@@ -1,7 +1,7 @@
 """Slack adapter: Socket Mode (no public server needed), Block Kit cards, button callbacks.
 Streaming AI apps post a message and then edit it many times (message_changed); the colleague reads a message once it has
 been quiet for SETTLE seconds, so it reads the final answer, not a half-written one."""
-import threading
+import threading, time
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
 from .brain import Message
@@ -93,20 +93,31 @@ class Slack:
     def _on_button(self, ack, body, respond):
         import json
         ack()
-        a = (body.get("actions") or [{}])[0]
-        toast = self.brain.feedback("slack", json.loads(a.get("value") or "{}"), body.get("user", {}).get("id", ""))
+        a = (body.get("actions") or [{}])[0]; val = json.loads(a.get("value") or "{}"); uid = body.get("user", {}).get("id", "")
+        if "ap" in val:                                   # approval for an AI tool on this computer: replace the buttons with the outcome
+            msg = self.brain.resolve_approval("slack", val, uid)
+            old = (body.get("message") or {}).get("blocks") or []
+            keep = [b for b in old if b.get("type") != "actions"]
+            respond({"replace_original": True, "text": msg, "blocks": keep + [{"type": "context", "elements": [{"type": "mrkdwn", "text": "*" + msg + "*"}]}]})
+            return
+        toast = self.brain.feedback("slack", val, uid)
         respond({"response_type": "ephemeral", "replace_original": False, "text": toast})
 
     def send(self, outs):
         for o in outs:
-            try:
-                if o.kind == "reply":
-                    self.app.client.chat_postMessage(channel=o.chat_id, thread_ts=o.target, blocks=blocks(o.card), text=o.card.text()[:300])
-                else:
-                    ch = self.app.client.conversations_open(users=o.target)["channel"]["id"]
-                    self.app.client.chat_postMessage(channel=ch, blocks=blocks(o.card), text=o.card.text()[:300])
-            except Exception as e:
-                self.log(f"[slack] 发送失败：{e!r}")
+            for attempt in range(3):                      # the network to Slack can drop a TLS connection; retry
+                try:
+                    self._send_one(o); break
+                except Exception as e:
+                    if attempt == 2: self.log(f"[slack] 发送失败：{e!r}")
+                    else: time.sleep(1.5 * (attempt + 1))
+
+    def _send_one(self, o):
+        if o.kind == "reply":
+            self.app.client.chat_postMessage(channel=o.chat_id, thread_ts=o.target, blocks=blocks(o.card), text=o.card.text()[:300])
+        else:
+            ch = self.app.client.conversations_open(users=o.target)["channel"]["id"]
+            self.app.client.chat_postMessage(channel=ch, blocks=blocks(o.card), text=o.card.text()[:300])
 
     def run(self):
         self.log("[slack] 已连接（Socket Mode）。")
