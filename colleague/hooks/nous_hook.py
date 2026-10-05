@@ -119,6 +119,10 @@ def classify(d):
     if tool in ("Bash", "exec_command", "shell", "local_shell"):
         cmd = ti.get("command") or ti.get("cmd") or ""          # Codex code-mode exec_command sends `cmd`
         cmd = " ".join(cmd) if isinstance(cmd, list) else str(cmd)
+        for seg in segments(cmd):            # the command word itself must be the keychain tool, not a mention in text
+            if os.path.basename(seg[0]) == "security" and any("center.nous.vault" in t for t in seg[1:]) and \
+                    any(t.startswith("find-") or t.startswith("dump-") for t in seg[1:]):
+                return "block", "要从 Nous 保险箱里取出密钥明文", "AI 只能通过 nous-run 使用密钥。"
         found = secrets_in(cmd)
         if found and OUTBOUND.search(cmd):
             return "block", f"要把{NAME.get(found[0], '密钥')}发到外部", "命令里直接带着密钥。"
@@ -193,7 +197,30 @@ def main():
     ev = d.get("hook_event_name", ""); project = os.path.basename(d.get("cwd") or "") or "本机"
     src = f"{app} · {project}"
     if ev == "UserPromptSubmit":
-        found = secrets_in(str(d.get("user_input") or d.get("prompt") or ""))
+        prompt = str(d.get("user_input") or d.get("prompt") or "")
+        sys.path.insert(0, HERE)
+        import nous_vault
+        stored = []
+        if secrets_in(prompt) or nous_vault.find_secrets(prompt):
+            # the person is handing a key to the AI: keep it in the keychain and give the AI a name, never the value.
+            # Neither Claude Code nor Codex lets a hook rewrite the prompt, so this one prompt is held and a ready-to-send
+            # version (key replaced by its name) is shown.
+            try: rewritten, stored = nous_vault.stash(prompt)
+            except Exception as e: log(ev, "vault-error", repr(e)[:80])
+            if stored:
+                log(ev, "vaulted", ",".join(stored)); call("/note", {"kind": "密钥存入保险箱"}, 2)
+                out({"decision": "block", "reason":
+                     f"Nous 读心：消息里的密钥已加密存进这台 Mac 的钥匙串，名字是 {'、'.join(stored)}。模型没有看到它。\n"
+                     f"请把下面这段重新发送（密钥已换成名字）：\n\n{rewritten}\n\n"
+                     f"之后 AI 会用 `nous-run {stored[0]} -- 命令` 来使用它，全程看不到明文。"})
+                return
+        names = [n for n in nous_vault.index() if n in prompt]
+        if names:                            # tell the model how to use stored keys without ever seeing them
+            out({"hookSpecificOutput": {"hookEventName": "UserPromptSubmit", "additionalContext":
+                 f"Nous 保险箱（macOS 钥匙串）里有这些密钥：{', '.join(names)}。不要向用户索要明文，也不要尝试读取钥匙串。"
+                 f"需要时用 `nous-run {names[0]} -- <命令>` 运行程序：程序从同名环境变量拿到密钥，输出里出现的密钥会被打码。"}})
+            return
+        found = secrets_in(prompt)
         if found:
             names = "、".join(dict.fromkeys(NAME[t] for t in found))
             log(ev, "block", ",".join(found))

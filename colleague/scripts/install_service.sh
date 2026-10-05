@@ -24,6 +24,9 @@ fi
 mkdir -p "$APP/lens" "$LOGS" "$LA"
 rsync -a --delete --exclude __pycache__ --exclude tests "$REPO/colleague/" "$APP/colleague/"
 rsync -a --delete --exclude __pycache__ "$REPO/lens/nous_lens/" "$APP/lens/nous_lens/"
+# nous-run: lets an AI use a stored key without seeing it
+mkdir -p "$HOME/.local/bin"
+printf '#!/bin/sh\nexec python3 "%s/colleague/hooks/nous_vault.py" "$@"\n' "$APP" > "$HOME/.local/bin/nous-run"; chmod 755 "$HOME/.local/bin/nous-run"
 # the browser extension, at an easy-to-find path for Chrome's "Load unpacked" (reload it in chrome://extensions after updates)
 mkdir -p "$HOME/Applications/Nous 读心浏览器插件"
 rsync -a --delete "$REPO/lens/extension/" "$HOME/Applications/Nous 读心浏览器插件/"

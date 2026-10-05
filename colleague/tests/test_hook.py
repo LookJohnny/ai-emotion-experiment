@@ -9,8 +9,11 @@ KEY = "sk-" + "simTEST1234567890abcdEFGH"          # synthetic
 ENV = "." + "env"
 
 
+VAULT_ENV = {"NOUS_VAULT_SERVICE": "center.nous.vault.test", "NOUS_VAULT_INDEX": os.path.join(tempfile.gettempdir(), "nous-vault-test.json")}
+
+
 def raw(d, *args):
-    env = dict(os.environ, NOUS_LOCAL_API="http://127.0.0.1:9")
+    env = dict(os.environ, NOUS_LOCAL_API="http://127.0.0.1:9", **VAULT_ENV)
     p = subprocess.run([sys.executable, HOOK, *args], input=json.dumps(d), capture_output=True, text=True, env=env, timeout=30)
     return json.loads(p.stdout) if p.stdout else None
 
@@ -24,9 +27,29 @@ def bash(cmd, *args, key="command"): return run({"hook_event_name": "PreToolUse"
 
 
 class T(unittest.TestCase):
-    def test_prompt_with_secret_blocked(self):
-        self.assertEqual(run({"hook_event_name": "UserPromptSubmit", "user_input": f"key={KEY}"}), "block")
-        self.assertEqual(run({"hook_event_name": "UserPromptSubmit", "prompt": f"key={KEY}"}, "codex"), "block")
+    def test_prompt_key_goes_to_vault_not_model(self):
+        import subprocess as sp
+        try:
+            o = raw({"hook_event_name": "UserPromptSubmit", "user_input": f"这是 kimi 的 key：{KEY} 帮我跑一下脚本"})
+            self.assertEqual(o["decision"], "block")                                   # the model never gets this prompt
+            self.assertNotIn(KEY, o["reason"]); self.assertIn("KIMI_API_KEY（已存入 Nous 保险箱）", o["reason"])
+            got = sp.run(["security", "find-generic-password", "-s", VAULT_ENV["NOUS_VAULT_SERVICE"], "-a", "KIMI_API_KEY", "-w"],
+                         capture_output=True, text=True).stdout.strip()
+            self.assertEqual(got, KEY)                                                 # stored encrypted in the keychain
+            # resending with the name: allowed, and the model is told how to use it without seeing it
+            o = raw({"hook_event_name": "UserPromptSubmit", "user_input": "用 KIMI_API_KEY（已存入 Nous 保险箱）跑脚本"})
+            self.assertIn("nous-run KIMI_API_KEY", o["hookSpecificOutput"]["additionalContext"])
+            # nous-run injects the key into the program and masks it in the output
+            env = dict(os.environ, **VAULT_ENV)
+            out = sp.run([sys.executable, os.path.join(HERE, "..", "hooks", "nous_vault.py"), "KIMI_API_KEY", "--",
+                          sys.executable, "-c", "import os; k=os.environ['KIMI_API_KEY']; print(len(k), k)"], env=env, capture_output=True, text=True).stdout
+            self.assertIn(f"{len(KEY)} ●●●", out); self.assertNotIn(KEY, out)
+            # the agent trying to read the vault directly is blocked
+            self.assertEqual(bash("security find-generic-password -s center.nous.vault -a KIMI_API_KEY -w"), "deny")
+        finally:
+            sp.run(["security", "delete-generic-password", "-s", VAULT_ENV["NOUS_VAULT_SERVICE"], "-a", "KIMI_API_KEY"], capture_output=True)
+            try: os.remove(VAULT_ENV["NOUS_VAULT_INDEX"])
+            except OSError: pass
         self.assertIsNone(run({"hook_event_name": "UserPromptSubmit", "user_input": "修一下登录页"}))
 
     def test_secret_file_reads_are_masked_not_asked(self):
