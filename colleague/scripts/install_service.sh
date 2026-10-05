@@ -10,7 +10,10 @@ APP="$HOME/.nous-colleague/app"; LOGS="$HOME/.nous-colleague/logs"; LA="$HOME/Li
 PLATFORMS="${NOUS_PLATFORMS:-slack}"
 UIDN="$(id -u)"
 
-unload() { for l in center.nous.colleague center.nous.lens; do launchctl bootout "gui/$UIDN/$l" 2>/dev/null || true; done; }
+unload() {   # bootout is asynchronous: wait until the jobs are really gone before bootstrapping again
+  for l in center.nous.colleague center.nous.lens; do launchctl bootout "gui/$UIDN/$l" 2>/dev/null || true; done
+  for _ in $(seq 30); do launchctl print "gui/$UIDN/center.nous.lens" >/dev/null 2>&1 || launchctl print "gui/$UIDN/center.nous.colleague" >/dev/null 2>&1 || return 0; sleep 1; done
+}
 
 if [ "${1:-}" = "--off" ]; then
   unload; rm -f "$LA/center.nous.colleague.plist" "$LA/center.nous.lens.plist"
