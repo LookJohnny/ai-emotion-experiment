@@ -18,10 +18,14 @@ chrome.runtime.onMessage.addListener((msg, sender, send) => {
     (async () => {
       const { enabled = true } = await chrome.storage.local.get("enabled");
       if (!enabled) return send({ off: true });
-      try { const res = await read(msg.messages, msg.reply, msg.site); remember(msg.site, res); send({ res }); }
+      try { const res = await read(msg.messages, msg.reply, "web:" + msg.site); remember(msg.site, res); send({ res }); }
       catch (e) { send({ error: String(e.message || e) }); }
     })();
     return true;
+  }
+  if (msg.type === "notice") {            // a front-end event for the daily digest: kind and site only, never text
+    fetch(ENGINE + "/notice", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kind: msg.kind, source: "web:" + msg.site }) }).catch(() => {});
+    return false;
   }
   if (msg.type === "health") {
     fetch(ENGINE + "/health").then(r => r.json()).then(h => send({ h })).catch(() => send({ error: "offline" }));

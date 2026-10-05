@@ -267,7 +267,7 @@ class Brain:
         if any(loc.values()):
             lf = "、".join(f"{LABEL[k]} {loc['flag_' + k]}" for k in ("hostility", "fabrication", "sycophancy") if loc.get("flag_" + k)) or "无"
             notes = "、".join(f"{k[5:]} {v}" for k, v in loc.items() if k.startswith("note:") and k != "note:masked")
-            lines.append(f"**本机的 Claude Code / Codex**：读心读了 {loc.get('ai_read', 0)} 条回答（标注：{lf}）；"
+            lines.append(f"**本机的 AI 工具（Claude Code、Codex、ChatGPT 等）**：读心读了 {loc.get('ai_read', 0)} 条回答（标注：{lf}）；"
                          f"自动隐藏密钥值 {loc.get('note:masked', 0)} 次" + (f"；放行并记录：{notes}" if notes else "") + "。")
         card = Card("Nous 读心 · 今日汇总", "info", lines)
         if reset:

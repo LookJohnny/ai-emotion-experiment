@@ -48,6 +48,17 @@ def build(lens):
         for q in list(subs): q.put_nowait(ev)
         return res
 
+    @app.post("/notice")
+    async def notice(body: dict):
+        # something a front end handled by itself (e.g. the extension stopped a prompt with a key from being sent).
+        # Only a kind and a source travel: never the text.
+        kind = str(body.get("kind") or "")[:40]
+        if kind not in ("prompt_secret_blocked", "prompt_secret_sent_anyway", "paste_secret_warned"):
+            return JSONResponse({"error": "unknown kind"}, 400)
+        ev = {"ts": time.time(), "kind": "notice", "notice": kind, "source": str(body.get("source") or "")[:40], "id": f"{time.time_ns():x}"}
+        for q in list(subs): q.put_nowait(ev)
+        return {"ok": True}
+
     @app.get("/events/recent")
     def events_recent():
         return [e for e, _ in recent][::-1]

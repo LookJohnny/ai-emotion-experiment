@@ -62,6 +62,8 @@ def main():
         else: print(f"[{name}] 管理员已绑定。", flush=True)
     from .localapi import LocalAPI
     LocalAPI(brain, adapters).serve()                     # Claude Code / Codex hooks on this computer report here
+    from .engine_events import EngineEvents
+    EngineEvents(brain, adapters, a.reader).start()       # browser extension + desktop-app reader, via the engine's event stream
     threading.Thread(target=daily_loop, args=(brain, adapters, a.digest_hour), daemon=True).start()
     # the Feishu SDK runs its own asyncio loop and expects the main thread; everything else runs in threads
     threads = [threading.Thread(target=ad.run, daemon=True) for n, ad in adapters.items() if n != "feishu"]

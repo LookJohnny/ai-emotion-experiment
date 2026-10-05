@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Nous 读心",
-  "version": "0.4.0",
-  "description": "读出 AI 回复背后的状态：它是否在贬低你、讨好你、或者可能在编造。全部在本机读取，不上传对话。",
+  "version": "0.5.0",
+  "description": "AI 安全同事：发给 AI 之前拦下密钥和密码；AI 回复后读出它是否在贬低你、附和你或可能在编造。全部在本机完成。",
   "icons": {
     "16": "icons/16.png",
     "48": "icons/48.png",
@@ -28,6 +28,28 @@
     "http://127.0.0.1:7869/*"
   ],
   "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://chat.deepseek.com/*",
+        "https://www.kimi.com/*",
+        "https://kimi.com/*",
+        "https://kimi.moonshot.cn/*",
+        "https://www.doubao.com/*",
+        "https://tongyi.aliyun.com/*",
+        "https://www.qianwen.com/*",
+        "https://yuanbao.tencent.com/*",
+        "http://127.0.0.1:7869/chat*"
+      ],
+      "js": [
+        "guard.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": false
+    },
     {
       "matches": [
         "https://chatgpt.com/*",
