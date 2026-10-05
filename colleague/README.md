@@ -79,4 +79,19 @@ SLACK_APP_TOKEN=xapp-xxx
 ~/.nous-colleague/venv/bin/python -m unittest discover -s tests
 ```
 
-14 项测试，覆盖：标注与私聊管理员、安静时不说话、私聊提醒限频、密钥提醒不复述密钥、手机号不算告警、私聊检查的问答解析、绑定码与管理员权限、引擎离线只提醒一次、状态文件不含正文，以及飞书和 Slack 的消息解析与卡片渲染。
+19 项测试，覆盖：标注与私聊管理员、安静时不说话、私聊提醒限频、密钥提醒不复述密钥、手机号不算告警、私聊检查的问答解析、绑定码与管理员权限、引擎离线只提醒一次、状态文件不含正文、飞书和 Slack 的消息解析与卡片渲染，以及 Claude Code hook 的各项拦截决定。
+
+## 保护本机的 Claude Code，开机自动运行
+
+```bash
+bash colleague/scripts/install_service.sh          # 安装：读心引擎 + 同事服务开机自启，Claude Code hooks 指向安装副本
+bash colleague/scripts/install_service.sh --off    # 停止并移除后台服务
+~/.nous-colleague/venv/bin/python colleague/nous_colleague/install.py claude --off   # 关闭 Claude Code 保护
+```
+
+- 在 Claude Code 里发的消息带密钥：发给模型之前拦下。
+- AI 要把密钥发到外部：直接拒绝。
+- AI 要读密钥文件、强制推送、大范围删除、下载即执行、上传数据、sudo、读钥匙串：私聊管理员审批，2 分钟没人确认就拒绝；Nous 连不上时退回 Claude Code 自己的本机确认。
+- AI 回答完：读心在后台读一遍，有问题私聊管理员。
+
+代码会复制到 `~/.nous-colleague/app` 再运行，因为后台进程默认没有权限读 `~/Documents`。改完代码要重新运行安装脚本。日志在 `~/.nous-colleague/logs`。读心引擎常驻时约占 5 GB 内存。

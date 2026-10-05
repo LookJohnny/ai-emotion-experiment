@@ -18,7 +18,7 @@ NAME = {"private_key": "私钥", "api_key": "API 密钥", "bearer_token": "访�
 SECRET_FILE = re.compile(r"""(?ix)(^|[\s/'"=])(
     \.env(?!\.(example|sample|template|dist))(\.[\w-]+)?\b | \.ssh/ | id_(rsa|ed25519|ecdsa|dsa)\b | \.(pem|p12|pfx|keystore|jks)\b |
     [\w.-]+\.key\b | \.aws/credentials | \.netrc\b | \.npmrc\b | \.pypirc\b | \.git-credentials | \.docker/config\.json |
-    \.kube/config | secrets?\.(env|json|ya?ml|toml)\b | credentials\.json\b | \.nous-colleague/ | \w+\.env\b(?!\.)
+    \.kube/config | secrets?\.(env|json|ya?ml|toml)\b | credentials\.json\b | \.nous-colleague/local\.token |\w+\.env\b(?!\.)
 )""")
 READERS = r"(cat|less|more|head|tail|bat|grep|rg|awk|sed|cp|mv|scp|rsync|base64|xxd|od|strings|source|\.|open|curl|zip|tar)"
 RISKY = [
