@@ -263,15 +263,21 @@ class Brain:
                  f"私聊检查 {s.get('dm_checked', 0)} 次；提醒同事收回敏感信息 {s.get('secret_warned', 0)} 次。"]
         fp = sum(v for k, v in fb.items() if k.startswith("fp_")); tp = sum(v for k, v in fb.items() if k.startswith("tp_"))
         if fp or tp: lines.append(f"同事反馈：有用 {tp}，误报 {fp}。")
+        loc = self.state.d["stats"].get("local", {})
+        if any(loc.values()):
+            lf = "、".join(f"{LABEL[k]} {loc['flag_' + k]}" for k in ("hostility", "fabrication", "sycophancy") if loc.get("flag_" + k)) or "无"
+            notes = "、".join(f"{k[5:]} {v}" for k, v in loc.items() if k.startswith("note:") and k != "note:masked")
+            lines.append(f"**本机的 Claude Code / Codex**：读心读了 {loc.get('ai_read', 0)} 条回答（标注：{lf}）；"
+                         f"自动隐藏密钥值 {loc.get('note:masked', 0)} 次" + (f"；放行并记录：{notes}" if notes else "") + "。")
         card = Card("Nous 读心 · 今日汇总", "info", lines)
         if reset:
-            with self.state.lock: self.state.d["stats"][p] = {}; self.state.save()
+            with self.state.lock: self.state.d["stats"][p] = {}; self.state.d["stats"]["local"] = {}; self.state.save()
         return card
 
     def daily(self, p):
         """Called by the adapter's scheduler once a day; returns the digest DM, or nothing if there is no news."""
         own = self.owner(p); s = self.state.d["stats"].get(p, {})
-        if not own or not any(s.values()): return []
+        if not own or not (any(s.values()) or any(self.state.d["stats"].get("local", {}).values())): return []
         return [Out("dm", own, self.digest_card(p))]
 
     # ---- helpers ----
