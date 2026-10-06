@@ -9,6 +9,7 @@ cannot use it. The hooks do their own blocking checks locally; this endpoint add
 import json, os, secrets, threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from .cards import Card, clip
+from .evidence import record_reading
 from .reader import LABEL, ReaderDown, findings
 
 TOKEN_PATH = os.path.expanduser("~/.nous-colleague/local.token")
@@ -95,6 +96,7 @@ class LocalAPI:
         try: res = self.brain.reader.read(str(b.get("reply", "")), b.get("context"), source=b.get("source", "本机"))
         except ReaderDown: return {"error": "reader down"}
         fs = findings(res); self.brain.state.bump("local", "ai_read")
+        record_reading(b.get("source", "本机"), str(b.get("reply", "")), res)
         if fs:
             for k, *_ in fs: self.brain.state.bump("local", "flag_" + k)
             k, _, pct, validated, _ = fs[0]

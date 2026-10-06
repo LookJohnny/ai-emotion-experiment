@@ -9,7 +9,7 @@ KEY = "sk-" + "simTEST1234567890abcdEFGH"          # synthetic
 ENV = "." + "env"
 
 
-VAULT_ENV = {"NOUS_NO_CLIPBOARD": "1", "NOUS_VAULT_SERVICE": "center.nous.vault.test", "NOUS_VAULT_INDEX": os.path.join(tempfile.gettempdir(), "nous-vault-test.json")}
+VAULT_ENV = {"NOUS_NO_CLIPBOARD": "1", "NOUS_LEDGER_HOME": tempfile.mkdtemp(), "NOUS_VAULT_SERVICE": "center.nous.vault.test", "NOUS_VAULT_INDEX": os.path.join(tempfile.gettempdir(), "nous-vault-test.json")}
 
 
 def raw(d, *args):

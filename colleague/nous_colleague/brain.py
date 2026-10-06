@@ -269,6 +269,11 @@ class Brain:
             notes = "、".join(f"{k[5:]} {v}" for k, v in loc.items() if k.startswith("note:") and k != "note:masked")
             lines.append(f"**本机的 AI 工具（Claude Code、Codex、ChatGPT 等）**：读心读了 {loc.get('ai_read', 0)} 条回答（标注：{lf}）；"
                          f"自动隐藏密钥值 {loc.get('note:masked', 0)} 次" + (f"；放行并记录：{notes}" if notes else "") + "。")
+        try:
+            from .evidence import fingerprint_line
+            fp_line = fingerprint_line()
+            if fp_line: lines.append(fp_line)
+        except Exception: pass
         card = Card("Nous 读心 · 今日汇总", "info", lines)
         if reset:
             with self.state.lock: self.state.d["stats"][p] = {}; self.state.d["stats"]["local"] = {}; self.state.save()

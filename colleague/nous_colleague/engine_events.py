@@ -5,6 +5,7 @@ for the daily digest. Events carry scores and short excerpts, never stored."""
 import json, threading, time, urllib.request
 from .brain import Out
 from .cards import Card, clip
+from .evidence import record_reading
 
 NOTICE = {"prompt_secret_blocked": "网页里拦下含密钥的消息", "prompt_secret_sent_anyway": "含密钥仍坚持发送",
           "paste_secret_warned": "提醒粘贴了密钥"}
@@ -30,6 +31,8 @@ class EngineEvents:
         if ev.get("kind") in (None, "reading"): return
         st.bump("local", "ai_read")
         k = {"hostile": "hostility", "syco": "sycophancy", "fabric": "fabrication"}.get(ev.get("kind"))
+        record_reading(label(src), str(ev.get("reply", "")),                # the event carries only the first 160 characters
+                       {r: {"flag": r == k, "score": ev.get(r)} for r in ("hostility", "sycophancy", "fabrication") if ev.get(r) is not None})
         if not k: return
         st.bump("local", "flag_" + k)
         if k != "hostility": return                                 # experimental readouts: the page marker + the digest

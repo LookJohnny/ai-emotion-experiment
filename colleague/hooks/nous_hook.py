@@ -60,6 +60,16 @@ def log(event, decision, why=""):
         pass
 
 
+def ledger(category, outcome, source, title="", text=None):
+    """One record in the Nous 证据账本 (hash chain, no content kept). Never raises."""
+    try:
+        sys.path.insert(0, HERE)
+        import nous_ledger
+        nous_ledger.append(category, outcome, source, title, text)
+    except Exception:
+        pass
+
+
 def secrets_in(text):
     try:
         sys.path.insert(0, SAFETY_CORE)
@@ -209,7 +219,7 @@ def main():
                 n = nous_vault.name_for(hint, v, prompt); nous_vault.put(n, v); names.append(n)
             names += [n for n in nous_vault.index() if n in prompt and n not in names]
             if names:
-                log(ev, "vaulted-seamless", ",".join(names)); call("/note", {"kind": "密钥由保险箱托管"}, 2)
+                log(ev, "vaulted-seamless", ",".join(names)); ledger("data_exposure", "vaulted", src, "对话里给出的密钥", prompt); call("/note", {"kind": "密钥由保险箱托管"}, 2)
                 out({"hookSpecificOutput": {"hookEventName": "UserPromptSubmit", "additionalContext":
                      "Nous 读心：用户给的密钥由 Nous 保险箱托管，在你看来是占位符 " + "、".join(f"[[NOUS:{n}]]" for n in names) +
                      "。需要用到时，在命令、配置文件或代码里原样写这个占位符即可，执行时 Nous 会自动换成真实值。"
@@ -222,7 +232,7 @@ def main():
             try: rewritten, stored = nous_vault.stash(prompt)
             except Exception as e: log(ev, "vault-error", repr(e)[:80])
             if stored:
-                log(ev, "vaulted", ",".join(stored)); call("/note", {"kind": "密钥存入保险箱"}, 2)
+                log(ev, "vaulted", ",".join(stored)); ledger("data_exposure", "vaulted", src, "对话里给出的密钥", prompt); call("/note", {"kind": "密钥存入保险箱"}, 2)
                 try:
                     if os.environ.get("NOUS_NO_CLIPBOARD"): raise RuntimeError("clipboard disabled (tests)")
                     import subprocess; subprocess.run(["pbcopy"], input=rewritten, text=True, timeout=3); copied = True
@@ -240,7 +250,7 @@ def main():
         found = secrets_in(prompt)
         if found:
             names = "、".join(dict.fromkeys(NAME[t] for t in found))
-            log(ev, "block", ",".join(found))
+            log(ev, "block", ",".join(found)); ledger("data_exposure", "blocked", src, "消息里带着密钥", prompt)
             call("/notify", {"source": src, "title": f"已拦下：你发给 {app} 的消息里有{names}", "level": "warn",
                              "lines": ["这条消息没有发给模型。删掉密钥后重发即可。"]}, 3)
             out({"decision": "block", "reason": f"Nous 读心：这条消息里像是有{names}，已拦下，没有发给模型。请删掉密钥后重发；需要用到时，让 AI 从环境变量或密钥文件读取。"})
@@ -269,6 +279,10 @@ def main():
         if action is None: return
         ti = dict(d.get("tool_input") or {})
         log(ev, action, title)
+        cmd_text = json.dumps(ti, ensure_ascii=False, sort_keys=True)
+        if action in ("block", "mask", "note"):
+            ledger({"block": "data_exposure", "mask": "data_exposure", "note": "risky_command"}[action],
+                   {"block": "blocked", "mask": "masked", "note": "noted"}[action], src, title, cmd_text)
         if action == "block":
             call("/notify", {"source": src, "title": f"已拦下：{app} {title}", "level": "warn", "lines": [(why + " " if why else "") + "没有执行。"]}, 3)
             decide("deny", f"Nous 读心：{title}，已拦下。不要在命令或请求里直接使用密钥或密钥文件；需要时让程序从环境变量读取。")
@@ -292,6 +306,7 @@ def main():
                 dg = hashlib.sha256(json.dumps([d.get("cwd"), d.get("tool_name"), cmd], ensure_ascii=False).encode()).hexdigest()
                 st = (call("/approve_async", {**card, "digest": dg}, 8) or {}).get("status", "unavailable")
                 log(ev, "async-" + st, title)
+                ledger("unauthorized_action", {"granted": "approved", "pending": "held", "denied": "denied"}.get(st, "blocked"), src, title, cmd_text)
                 if st == "granted": decide("allow", "Nous 读心：管理员已允许这一次。")
                 else:
                     decide("deny", {"pending": f"Nous 读心：{title}无法撤销，需要管理员批准，已发到管理员的 Slack / 飞书。请告诉用户；批准后原样再执行这一条一次即可，不要换写法绕过。",
@@ -299,6 +314,7 @@ def main():
             else:
                 dec = (call("/approve", {**card, "timeout": 120}, 135) or {}).get("decision")
                 log(ev, dec or "unavailable", title)
+                ledger("unauthorized_action", {"allow": "approved", "deny": "denied", "timeout": "timeout"}.get(dec, "asked_in_tool"), src, title, cmd_text)
                 if dec == "allow": decide("allow", "Nous 读心：管理员已允许这一次。")
                 elif dec in ("deny", "timeout"): decide("deny", "Nous 读心：管理员拒绝了这个操作。" if dec == "deny" else "Nous 读心：2 分钟内没有人确认，已自动拒绝。")
                 else: decide("ask", f"Nous 读心：{title}，无法撤销。连不上 Nous，请你在这里确认。")
