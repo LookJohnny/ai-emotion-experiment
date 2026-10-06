@@ -266,14 +266,14 @@ class Brain:
 
     def digest_card(self, p, reset=True):
         s = self.state.d["stats"].get(p, {}); fb = self.state.d["feedback"].get(p, {})
-        flags = "、".join(f"{LABEL[k]} {s['flag_' + k]} 条" for k in ("hostility", "fabrication", "sycophancy") if s.get("flag_" + k)) or "没有"
+        flags = "、".join(f"{LABEL[k]} {s['flag_' + k]} 条" for k in ("hostility", "danger", "fabrication", "sycophancy") if s.get("flag_" + k)) or "没有"
         lines = [f"读了 **{s.get('ai_read', 0)}** 条 AI 回复，标注：{flags}。",
                  f"私聊检查 {s.get('dm_checked', 0)} 次；提醒同事收回敏感信息 {s.get('secret_warned', 0)} 次。"]
         fp = sum(v for k, v in fb.items() if k.startswith("fp_")); tp = sum(v for k, v in fb.items() if k.startswith("tp_"))
         if fp or tp: lines.append(f"同事反馈：有用 {tp}，误报 {fp}。")
         loc = self.state.d["stats"].get("local", {})
         if any(loc.values()):
-            lf = "、".join(f"{LABEL[k]} {loc['flag_' + k]}" for k in ("hostility", "fabrication", "sycophancy") if loc.get("flag_" + k)) or "无"
+            lf = "、".join(f"{LABEL[k]} {loc['flag_' + k]}" for k in ("hostility", "danger", "fabrication", "sycophancy") if loc.get("flag_" + k)) or "无"
             notes = "、".join(f"{k[5:]} {v}" for k, v in loc.items() if k.startswith("note:") and k != "note:masked")
             lines.append(f"**本机的 AI 工具（Claude Code、Codex、ChatGPT 等）**：读心读了 {loc.get('ai_read', 0)} 条回答（标注：{lf}）；"
                          f"自动隐藏密钥值 {loc.get('note:masked', 0)} 次" + (f"；放行并记录：{notes}" if notes else "") + "。")

@@ -30,9 +30,9 @@ class EngineEvents:
             st.bump("local", "note:" + NOTICE.get(ev.get("notice"), "其他")); return
         if ev.get("kind") in (None, "reading"): return
         st.bump("local", "ai_read")
-        k = {"hostile": "hostility", "syco": "sycophancy", "fabric": "fabrication"}.get(ev.get("kind"))
+        k = {"hostile": "hostility", "danger": "danger", "syco": "sycophancy", "fabric": "fabrication"}.get(ev.get("kind"))
         record_reading(label(src), str(ev.get("reply", "")),                # the event carries only the first 160 characters
-                       {r: {"flag": r == k, "score": ev.get(r)} for r in ("hostility", "sycophancy", "fabrication") if ev.get(r) is not None})
+                       {r: {"flag": r == k, "score": ev.get(r)} for r in ("hostility", "danger", "sycophancy", "fabrication") if ev.get(r) is not None})
         if not k: return
         st.bump("local", "flag_" + k)
         if k != "hostility": return                                 # experimental readouts: the page marker + the digest

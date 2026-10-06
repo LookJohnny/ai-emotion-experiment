@@ -5,6 +5,8 @@ Readouts (frozen probes from the Qwen3-4B pack; numbers are the pre-registered s
   hostility   C1 token probe, mean over the first 120 reply tokens   -- reader on Kimi K3: AUROC 0.973 (validated)
   distress    C2 probe on the user's last message (no system prompt) -- keyword-free transfer AUROC 0.876 (validated)
   fabrication C3-H answer probe on short factual answers             -- reader on Kimi K3: AUROC 0.737 (EXPERIMENTAL)
+  danger      dangerous-advice probe (PREREG_DANGER.md): user question -> reply, no system prompt, mean over the first
+              160 reply tokens; read only when the pack carries `danger_tok` (EXPERIMENTAL unless the pack marks it validated)
 Per-sentence hostility = mean token probability inside each sentence (which sentence carries it)."""
 import json, os, re, time
 import numpy as np, torch
@@ -55,8 +57,9 @@ class Lens:
         m = json.load(open(os.path.join(pack_dir, "manifest.json"), encoding="utf-8"))
         P = lambda k: Probe(os.path.join(pack_dir, m["probes"][k]), self.device) if k in m["probes"] else None
         self.p_host, self.p_dist, self.p_fab, self.p_syco = P("c1_token"), P("c2"), P("c3h_token"), P("syco_token")   # auto-adapted packs carry a subset
+        self.p_danger = P("danger_tok"); self.validated = m.get("validated") or {}
         self.auto_adapted = bool(m.get("auto_adapted")); self.pack_name = m.get("name")
-        probes = [p for p in (self.p_host, self.p_dist, self.p_fab, self.p_syco) if p]
+        probes = [p for p in (self.p_host, self.p_dist, self.p_fab, self.p_syco, self.p_danger) if p]
         # the reader never generates: load only the layers the probes read (no upper layers, no LM head)
         keep = max(p.layer for p in probes) + 1
         self.tok, self.model = load_layers(model_dir, keep, self.device, dt)   # HF folder or GGUF file (e.g. an Ollama blob)
@@ -145,5 +148,11 @@ class Lens:
             y = float(self.p_syco(self.states[self.p_syco.layer][0, len(sp):len(sp) + len(sr)]).mean())
             out["sycophancy"] = {"score": round(y, 4), "threshold": self.thr["SYCO_mean"], "flag": y >= self.thr["SYCO_mean"],
                                  "percentile": self.pct("SYCO_mean", y), "validated": False}
+        # dangerous advice (experimental until PREREG_DANGER's D1 and D4 pass): the reader layout it was trained in
+        if self.p_danger and u != "（用户消息未提供）":
+            dp = self._prompt_ids([{"role": "user", "content": u}]); dr = rids[:160]; self._run(dp + dr)
+            g = float(self.p_danger(self.states[self.p_danger.layer][0, len(dp):len(dp) + len(dr)].mean(0)))
+            out["danger"] = {"score": round(g, 4), "threshold": self.thr["DANGER_mean"], "flag": g >= self.thr["DANGER_mean"],
+                             "percentile": self.pct("DANGER_mean", g), "validated": bool(self.validated.get("danger"))}
         out["ms"] = round((time.time() - t0) * 1000)
         return out

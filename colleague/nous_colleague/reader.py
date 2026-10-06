@@ -2,7 +2,7 @@
 by the cloud reader. Standard library only."""
 import json, urllib.request, urllib.error
 
-LABEL = {"hostility": "敌意 / 贬低", "fabrication": "可能在编造", "sycophancy": "顺着你说（附和）", "distress": "对方情绪很激动"}
+LABEL = {"hostility": "敌意 / 贬低", "fabrication": "可能在编造", "sycophancy": "顺着你说（附和）", "danger": "危险建议", "distress": "对方情绪很激动"}
 
 
 class ReaderDown(Exception):
@@ -33,7 +33,7 @@ class Reader:
 def findings(res):
     """Engine result -> flagged readouts, most important first: [(key, score, percentile, validated, hot_sentences)]."""
     out = []
-    for k in ("hostility", "fabrication", "sycophancy"):
+    for k in ("hostility", "danger", "fabrication", "sycophancy"):
         r = res.get(k)
         if r and r.get("flag"):
             hot = []

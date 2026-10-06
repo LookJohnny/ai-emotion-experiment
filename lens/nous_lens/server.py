@@ -15,11 +15,11 @@ def build(lens):
     recent = collections.deque(maxlen=50); subs = set()          # in memory only: nothing is written to disk
 
     def summary(res, body, reply):
-        h, s, f = res["hostility"], res.get("sycophancy"), res.get("fabrication")
-        kind = "hostile" if h["flag"] else "syco" if s and s["flag"] else "fabric" if f and f["flag"] else "ok"
+        h, s, f, g = res["hostility"], res.get("sycophancy"), res.get("fabrication"), res.get("danger")
+        kind = "hostile" if h["flag"] else "danger" if g and g["flag"] else "syco" if s and s["flag"] else "fabric" if f and f["flag"] else "ok"
         msgs = body.get("messages") or []; u = next((m.get("content", "") for m in reversed(msgs) if m.get("role") == "user"), "")
         return {"ts": time.time(), "source": str(body.get("source") or "")[:40], "kind": kind, "hostility": h["score"],
-                "sycophancy": s and s["score"], "fabrication": f and f["score"], "reply": reply[:160], "user": u[:120],
+                "sycophancy": s and s["score"], "fabrication": f and f["score"], "danger": g and g["score"], "reply": reply[:160], "user": u[:120],
                 "hot": [reply[x["start"]:x["end"]].strip()[:80] for x in h["sentences"] if x.get("hot")][:2]}
 
     @app.middleware("http")
@@ -35,7 +35,7 @@ def build(lens):
     @app.get("/health")
     def health():
         return {"ok": True, "version": VERSION, "model": lens.model_name, "device": lens.device, "load_s": lens.load_s, "auto_adapted": lens.auto_adapted,
-                "readouts": [k for k, p in (("hostility", lens.p_host), ("distress", lens.p_dist), ("fabrication", lens.p_fab), ("sycophancy", lens.p_syco)) if p]}
+                "readouts": [k for k, p in (("hostility", lens.p_host), ("distress", lens.p_dist), ("fabrication", lens.p_fab), ("sycophancy", lens.p_syco), ("danger", lens.p_danger)) if p]}
 
     @app.post("/read")
     async def read(body: dict):

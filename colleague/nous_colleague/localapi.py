@@ -103,7 +103,8 @@ class LocalAPI:
             self.notify({"source": b.get("source", ""), "title": f"{b.get('source') or '本机 AI'} 的回复：{LABEL[k]}", "level": "bad" if validated else "warn",
                          "lines": [f"**{LABEL[k2]}**{'' if v2 else '（实验性读数）'}" for k2, _, _, v2, _ in fs] +
                                   (["它可能只是在顺着你说。要据此做决定，可以让它列出反对理由。"] if k == "sycophancy" else
-                                   ["涉及事实、数字、出处的内容，请先核对。"] if k == "fabrication" else []),
+                                   ["涉及事实、数字、出处的内容，请先核对。"] if k == "fabrication" else
+                                   ["照做之前先确认安全做法，必要时问专业人士。"] if k == "danger" else []),
                          "quote": b.get("reply", "")})
         return {"findings": [k for k, *_ in fs]}
 
