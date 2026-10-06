@@ -1,6 +1,6 @@
 """Turn Nous 读心 protection on or off for Claude Code (~/.claude/settings.json) or Codex, including the Codex app
 (~/.codex/hooks.json). Only Nous's own hooks are added or removed; a backup is written first.
-  python install.py claude|codex [--off]
+  python install.py claude|codex [--off] [--gateway]   (--gateway: Claude Code via the local key gateway; not recommended)
 Codex asks you to review and trust new hooks once (/hooks in the CLI, or the hooks prompt in the app)."""
 import json, os, shutil, sys, time
 
@@ -23,6 +23,7 @@ def ours(target):
         "UserPromptSubmit": [{"hooks": [{"type": "command", "command": cmd, "timeout": 10}]}],
         "PreToolUse": [{"matcher": "Bash|Read|Edit|Write|MultiEdit|NotebookEdit|WebFetch|mcp__.*",
                         "hooks": [{"type": "command", "command": cmd, "timeout": 150}]}],
+        "PostToolUse": [{"matcher": "WebFetch|WebSearch|Bash|mcp__.*", "hooks": [{"type": "command", "command": cmd, "timeout": 10}]}],
         "Stop": [{"hooks": [{"type": "command", "command": cmd, "timeout": 60, "async": True}]}],
     }
 
@@ -45,11 +46,13 @@ def main():
         for ev, groups in ours(target).items(): hooks.setdefault(ev, []).extend(groups)
     if hooks: s["hooks"] = hooks
     else: s.pop("hooks", None)
-    if target == "claude":                    # route Claude Code through the Nous key gateway (keys never reach the model)
+    if target == "claude":
+        # The key gateway is opt-in only. Routing Claude Code through a local proxy inflated every turn's context
+        # (~180k tokens) and made Claude Code's autocompact thrash (2026-10-06). Turning protection off always removes it.
         env = s.get("env") or {}
-        if "--off" in sys.argv:
+        if "--off" in sys.argv or "--gateway" not in sys.argv:
             if env.get("ANTHROPIC_BASE_URL") == GATEWAY: env.pop("ANTHROPIC_BASE_URL")
-        elif "--no-gateway" not in sys.argv:
+        else:
             env["ANTHROPIC_BASE_URL"] = GATEWAY
         if env: s["env"] = env
         else: s.pop("env", None)

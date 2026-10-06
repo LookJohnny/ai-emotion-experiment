@@ -74,6 +74,35 @@ class Ledger(unittest.TestCase):
         self.assertIn("哈希链完整", h); self.assertIn("数据与密钥泄露", h); self.assertIn(L.anchor()["hash"], h)
 
 
+class TimeStamps(unittest.TestCase):
+    def setUp(self):
+        for f in [L.PATH] + __import__("glob").glob(os.path.join(L.ANCHORS, "*")):
+            try: os.remove(f)
+            except FileNotFoundError: pass
+
+    def test_without_stamp(self):
+        L.append("data_exposure", "blocked", "s", "t", "x")
+        self.assertIsNone(L.covering_stamp(0)); self.assertIn("尚未签发", L.report_html(30))
+
+    def test_stamp_that_does_not_match_the_ledger_fails(self):
+        L.append("data_exposure", "blocked", "s", "t", "x")
+        self.assertFalse(L.check_stamp({"seq": 0, "hash": "f" * 64, "tsa": "x", "time": None})["in_chain"])
+
+    @unittest.skipUnless(os.environ.get("NOUS_TEST_NETWORK"), "contacts a public time-stamping authority")
+    def test_real_time_stamp(self):
+        for i in range(3): L.append("data_exposure", "masked", "s", "t", str(i))
+        m = L.stamp(); self.assertEqual(m["seq"], 2)
+        L.append("risky_command", "noted", "s", "t", "later")
+        e = L.evidence(1); self.assertTrue(e["time_stamp"]["ok"]); self.assertIsNone(L.evidence(3)["time_stamp"])
+        lines = open(L.PATH, encoding="utf-8").read().splitlines()        # rewrite history consistently, then re-hash the whole chain
+        recs = [json.loads(l) for l in lines]; recs[1]["outcome"] = "blocked"; prev = L.GENESIS
+        for r in recs: r["prev"] = prev; r["hash"] = L._hash(r); prev = r["hash"]
+        open(L.PATH, "w", encoding="utf-8").write("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in recs))
+        self.assertTrue(L.verify()[0])                                     # the chain alone cannot tell...
+        self.assertFalse(L.evidence(1)["time_stamp"]["ok"])               # ...the time stamp can
+        self.assertIn("时间戳无法验证", L.report_html(30))
+
+
 class HookWritesLedger(unittest.TestCase):
     def test_blocked_secret_upload_is_recorded(self):
         try: os.remove(L.PATH)
