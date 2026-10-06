@@ -20,6 +20,7 @@ oauth_config:
       - groups:read
       - im:write
       - chat:write
+      - files:write
 settings:
   event_subscriptions:
     bot_events:

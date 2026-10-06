@@ -38,6 +38,37 @@ Nous 读心在每台接入的电脑上记一本账，内容包括：
 - `prev`：上一条记录的哈希；
 - `hash`：本条记录的哈希。
 
+## 证据包怎么送到管理员手里（Slack）
+
+Slack 会把每个事件只交给同一个应用的其中一个连接，而且是随机挑的。所以全公司只有**管理员的电脑**运行完整的同事机器人，其他电脑只负责发证据包：
+
+| 电脑 | 安装 | 发送 |
+|---|---|---|
+| 管理员 | `scripts/install_service.sh` | 每天发汇总时，自动把本机证据包私信给管理员；私信机器人发「证据包」可以立即要一份 |
+| 成员 | `scripts/install_service.sh --member` | 每天 18:05 运行 `python -m nous_colleague.ship`，用 bot token 私信给管理员，不建立长连接 |
+
+**准备工作**
+
+- Slack 应用需要 `files:write` 权限（`slack-manifest.yaml` 里已加）。加了之后要重新安装到工作区。
+- 成员电脑的 `~/.nous-colleague/secrets.env` 里写两项：
+  - `SLACK_BOT_TOKEN`；
+  - `SLACK_ADMIN_USER=U…`（管理员的 Slack 成员 ID）。
+- 每台电脑先用 `python3 hooks/nous_ledger.py label "部门 · 名字"` 起个名字，团队报告里会显示这个名字。
+
+**签不上时间戳时**
+
+发送前会先签一次第三方时间戳。如果没签上（比如断网），证据包照常发出，这批记录由下次的时间戳补上。
+
+**生成团队报告**
+
+管理员把收到的证据包下载到一个文件夹，然后运行：
+
+```sh
+python -m nous_colleague.team 报告.html 文件夹/*.tar.gz --state team.json
+```
+
+`team.json` 要一直保留：靠它才能发现“这次交来的账本改写或删减了上次已经交过的记录”。
+
 ## 不依赖 Nous 代码的核验方法
 
 **1. 哈希链。** 逐条检查以下三点：

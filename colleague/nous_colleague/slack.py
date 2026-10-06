@@ -112,7 +112,19 @@ class Slack:
                     if attempt == 2: self.log(f"[slack] 发送失败：{e!r}")
                     else: time.sleep(1.5 * (attempt + 1))
 
+    def ship(self, user_id):
+        """Export this computer's ledger and DM it to user_id; on failure DM what to fix instead."""
+        from .ship import ShipError, ship
+        from .cards import Card
+        try: ship(self.app.client, user_id)
+        except ShipError as e:
+            self.log(f"[slack] 证据包发送失败：{e}")
+            ch = self.app.client.conversations_open(users=user_id)["channel"]["id"]
+            c = Card("证据包没能发出", "warn", [str(e)])
+            self.app.client.chat_postMessage(channel=ch, blocks=blocks(c), text=c.text()[:300])
+
     def _send_one(self, o):
+        if o.kind == "ship": return self.ship(o.target)
         if o.kind == "reply":
             self.app.client.chat_postMessage(channel=o.chat_id, thread_ts=o.target, blocks=blocks(o.card), text=o.card.text()[:300])
         else:

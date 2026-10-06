@@ -27,10 +27,13 @@ def daily_loop(brain, adapters, hour):
         t = time.localtime()
         if t.tm_hour == hour and last != t.tm_yday:
             last = t.tm_yday
-            try:                                   # third-party time stamp on the ledger head (sends only its hash)
-                from .evidence import nous_ledger
-                nous_ledger.stamp()
-            except Exception as e: print(f"[账本] 时间戳失败：{e!r}", flush=True)
+            try:                                   # time-stamp the ledger head (only its hash leaves) and DM the bundle to the admin
+                own = brain.owner("slack")
+                if "slack" in adapters and own: adapters["slack"].ship(own)
+                else:
+                    from .evidence import nous_ledger
+                    nous_ledger.stamp()
+            except Exception as e: print(f"[账本] 证据包 / 时间戳失败：{e!r}", flush=True)
             for name, ad in adapters.items():
                 try: ad.send(brain.daily(name))
                 except Exception as e: print(f"[{name}] 汇总发送失败：{e!r}", flush=True)
