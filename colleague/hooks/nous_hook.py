@@ -201,6 +201,20 @@ def main():
         sys.path.insert(0, HERE)
         import nous_vault
         stored = []
+        if not codex and "127.0.0.1:7871" in os.environ.get("ANTHROPIC_BASE_URL", ""):
+            # Claude Code goes through the Nous gateway: the key is swapped for a placeholder before it leaves this
+            # computer, so nothing needs to be held. Just store it now and tell the model how it will see it.
+            names = []
+            for hint, v in nous_vault.find_secrets(prompt):
+                n = nous_vault.name_for(hint, v, prompt); nous_vault.put(n, v); names.append(n)
+            names += [n for n in nous_vault.index() if n in prompt and n not in names]
+            if names:
+                log(ev, "vaulted-seamless", ",".join(names)); call("/note", {"kind": "密钥由保险箱托管"}, 2)
+                out({"hookSpecificOutput": {"hookEventName": "UserPromptSubmit", "additionalContext":
+                     "Nous 读心：用户给的密钥由 Nous 保险箱托管，在你看来是占位符 " + "、".join(f"[[NOUS:{n}]]" for n in names) +
+                     "。需要用到时，在命令、配置文件或代码里原样写这个占位符即可，执行时 Nous 会自动换成真实值。"
+                     "不要让用户重发明文，也不要尝试读取钥匙串。"}})
+            return
         if secrets_in(prompt) or nous_vault.find_secrets(prompt):
             # the person is handing a key to the AI: keep it in the keychain and give the AI a name, never the value.
             # Neither Claude Code nor Codex lets a hook rewrite the prompt, so this one prompt is held and a ready-to-send
@@ -209,10 +223,13 @@ def main():
             except Exception as e: log(ev, "vault-error", repr(e)[:80])
             if stored:
                 log(ev, "vaulted", ",".join(stored)); call("/note", {"kind": "密钥存入保险箱"}, 2)
+                try:
+                    if os.environ.get("NOUS_NO_CLIPBOARD"): raise RuntimeError("clipboard disabled (tests)")
+                    import subprocess; subprocess.run(["pbcopy"], input=rewritten, text=True, timeout=3); copied = True
+                except Exception: copied = False
                 out({"decision": "block", "reason":
-                     f"Nous 读心：消息里的密钥已加密存进这台 Mac 的钥匙串，名字是 {'、'.join(stored)}。模型没有看到它。\n"
-                     f"请把下面这段重新发送（密钥已换成名字）：\n\n{rewritten}\n\n"
-                     f"之后 AI 会用 `nous-run {stored[0]} -- 命令` 来使用它，全程看不到明文。"})
+                     f"Nous 读心：密钥已存进保险箱（{'、'.join(stored)}），模型不会看到明文。"
+                     + ("换好名字的消息已复制，按 ⌘V 再回车发送即可。" if copied else f"请重新发送：{rewritten}")})
                 return
         names = [n for n in nous_vault.index() if n in prompt]
         if names:                            # tell the model how to use stored keys without ever seeing them
@@ -229,6 +246,25 @@ def main():
             out({"decision": "block", "reason": f"Nous 读心：这条消息里像是有{names}，已拦下，没有发给模型。请删掉密钥后重发；需要用到时，让 AI 从环境变量或密钥文件读取。"})
         return
     if ev == "PreToolUse":
+        raw = json.dumps(d.get("tool_input") or {}, ensure_ascii=False)
+        via_gateway = "127.0.0.1:7871" in os.environ.get("ANTHROPIC_BASE_URL", "")
+        if "[[NOUS:" in raw and via_gateway:          # elsewhere a placeholder is just text (e.g. code about Nous itself)
+            # the model uses a key it only knows as a placeholder: put the real value in, at execution time only
+            sys.path.insert(0, HERE)
+            import nous_vault
+            missing = []
+            def sub(m):
+                v = nous_vault.get(m.group(1))
+                if v is None: missing.append(m.group(1)); return m.group(0)
+                return v
+            filled = re.sub(r"\[\[NOUS:([A-Za-z0-9_]+)\]\]", sub, raw)
+            if filled != raw:                         # at least one stored key used (unknown names stay as text)
+                log(ev, "vault-fill", d.get("tool_name", ""))
+                # keep Claude Code's own permission flow: auto-approve only where the person already chose not to be asked
+                mode = d.get("permission_mode", "default")
+                decide("allow" if mode in ("bypassPermissions", "dontAsk", "auto", "acceptEdits") or codex else "ask",
+                       "Nous 读心：已在执行时填入保险箱里的密钥（模型看不到）。", json.loads(filled))
+                return
         action, title, why = classify(d)
         if action is None: return
         ti = dict(d.get("tool_input") or {})

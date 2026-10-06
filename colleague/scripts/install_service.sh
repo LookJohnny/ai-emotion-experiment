@@ -16,8 +16,9 @@ unload() {   # bootout is asynchronous: wait until the jobs are really gone befo
 }
 
 if [ "${1:-}" = "--off" ]; then
-  unload; launchctl bootout "gui/$UIDN/center.nous.reader" 2>/dev/null || true
-  rm -f "$LA/center.nous.colleague.plist" "$LA/center.nous.lens.plist" "$LA/center.nous.reader.plist"
+  "$HOME/.nous-colleague/venv/bin/python" "$APP/colleague/nous_colleague/install.py" claude --off >/dev/null 2>&1 || true   # Claude Code back to direct
+  unload; for l in center.nous.reader center.nous.gateway; do launchctl bootout "gui/$UIDN/$l" 2>/dev/null || true; done
+  rm -f "$LA/center.nous.colleague.plist" "$LA/center.nous.lens.plist" "$LA/center.nous.reader.plist" "$LA/center.nous.gateway.plist"
   echo "已停止并移除 Nous 后台服务。"; exit 0
 fi
 
@@ -48,12 +49,17 @@ plist center.nous.lens "$APP/lens" lens "$HOME/.nous-lens/venv/bin/python" -m no
 # shellcheck disable=SC2086
 plist center.nous.colleague "$APP/colleague" colleague "$HOME/.nous-colleague/venv/bin/python" -m nous_colleague $([ "$PLATFORMS" = "slack feishu" ] || [ "$PLATFORMS" = "all" ] && echo all || echo "$PLATFORMS")
 
+# the key gateway for Claude Code (127.0.0.1:7871): stdlib only, independent of the colleague so a colleague restart never
+# interrupts Claude Code
+plist center.nous.gateway "$APP/colleague" gateway /usr/bin/python3 "$APP/colleague/hooks/nous_gateway.py"
 READER="$HOME/Applications/Nous 读心助手.app/Contents/MacOS/NousReader"   # built by colleague/desktop/build.sh
 [ -x "$READER" ] && plist center.nous.reader "$HOME/.nous-colleague" reader "$READER"
 
 unload
 launchctl bootstrap "gui/$UIDN" "$LA/center.nous.lens.plist"
 launchctl bootstrap "gui/$UIDN" "$LA/center.nous.colleague.plist"
+launchctl bootout "gui/$UIDN/center.nous.gateway" 2>/dev/null || true; sleep 1
+launchctl bootstrap "gui/$UIDN" "$LA/center.nous.gateway.plist"
 if [ -f "$LA/center.nous.reader.plist" ]; then
   pkill -f "NousReader --dump" 2>/dev/null || true
   launchctl bootout "gui/$UIDN/center.nous.reader" 2>/dev/null || true; sleep 1

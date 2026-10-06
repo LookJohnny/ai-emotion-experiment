@@ -9,11 +9,12 @@ KEY = "sk-" + "simTEST1234567890abcdEFGH"          # synthetic
 ENV = "." + "env"
 
 
-VAULT_ENV = {"NOUS_VAULT_SERVICE": "center.nous.vault.test", "NOUS_VAULT_INDEX": os.path.join(tempfile.gettempdir(), "nous-vault-test.json")}
+VAULT_ENV = {"NOUS_NO_CLIPBOARD": "1", "NOUS_VAULT_SERVICE": "center.nous.vault.test", "NOUS_VAULT_INDEX": os.path.join(tempfile.gettempdir(), "nous-vault-test.json")}
 
 
 def raw(d, *args):
     env = dict(os.environ, NOUS_LOCAL_API="http://127.0.0.1:9", **VAULT_ENV)
+    env.pop("ANTHROPIC_BASE_URL", None)
     p = subprocess.run([sys.executable, HOOK, *args], input=json.dumps(d), capture_output=True, text=True, env=env, timeout=30)
     return json.loads(p.stdout) if p.stdout else None
 
@@ -32,7 +33,7 @@ class T(unittest.TestCase):
         try:
             o = raw({"hook_event_name": "UserPromptSubmit", "user_input": f"这是 kimi 的 key：{KEY} 帮我跑一下脚本"})
             self.assertEqual(o["decision"], "block")                                   # the model never gets this prompt
-            self.assertNotIn(KEY, o["reason"]); self.assertIn("KIMI_API_KEY（已存入 Nous 保险箱）", o["reason"])
+            self.assertNotIn(KEY, o["reason"]); self.assertIn("保险箱（KIMI_API_KEY）", o["reason"]); self.assertIn("请重新发送：", o["reason"])
             got = sp.run(["security", "find-generic-password", "-s", VAULT_ENV["NOUS_VAULT_SERVICE"], "-a", "KIMI_API_KEY", "-w"],
                          capture_output=True, text=True).stdout.strip()
             self.assertEqual(got, KEY)                                                 # stored encrypted in the keychain

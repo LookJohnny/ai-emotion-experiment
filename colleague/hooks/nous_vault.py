@@ -22,7 +22,11 @@ VALUE_PATTERNS = [
     ("GROQ_API_KEY", re.compile(r"\bgsk_[A-Za-z0-9]{20,}")),
     ("PRIVATE_KEY", re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----.*?-----END [A-Z ]*PRIVATE KEY-----", re.S)),
 ]
-ASSIGN = re.compile(r"(?i)\b([A-Za-z][A-Za-z0-9_]*(?:password|passwd|pwd|secret|token|api[_-]?key))\s*[:=]\s*[\"']?([^\s\"'，,;；]{6,})")
+# the name starts after a non-word character or after a literal \n / \r / \t escape (JSON-ish text), never inside one;
+# the value stops at a backslash so an escaped line break does not glue the next line onto it
+ASSIGN = re.compile(r"(?i)(?:(?<=\\[nrt])|(?<![\w\\]))([A-Za-z][A-Za-z0-9_]*(?:password|passwd|pwd|secret|token|api[_-]?key))"
+                    r"\s*[:=]\s*[\"']?([^\s\"'\\，,;；]{6,})")
+PLACEHOLDER = re.compile(r"\[\[NOUS:[A-Z0-9_]+\]\]")
 PROVIDERS = [("KIMI_API_KEY", r"kimi|moonshot|月之暗面"), ("DEEPSEEK_API_KEY", r"deepseek|深度求索"), ("OPENAI_API_KEY", r"openai|chatgpt|gpt"),
              ("ANTHROPIC_API_KEY", r"anthropic|claude"), ("DASHSCOPE_API_KEY", r"dashscope|通义|qwen|百炼"), ("ZHIPU_API_KEY", r"zhipu|智谱|glm"),
              ("SILICONFLOW_API_KEY", r"siliconflow|硅基"), ("VOLC_API_KEY", r"火山|doubao|豆包|volc")]
@@ -62,6 +66,7 @@ def find_secrets(text):
             if v not in seen and not any(v in s or s in v for s in seen): seen.add(v); out.append((hint, v, m.start()))
     for m in ASSIGN.finditer(text):
         v = m.group(2)
+        if "NOUS:" in v or "[[" in v: continue           # a placeholder (or part of one) is not a new secret
         if v not in seen and not any(v in s or s in v for s in seen): seen.add(v); out.append((m.group(1).upper(), v, m.start(2)))
     return [(h, v) for h, v, _ in sorted(out, key=lambda x: x[2])]
 
@@ -72,7 +77,10 @@ def name_for(hint, value, text):
     if hint in ("API_KEY", "OPENAI_API_KEY"):
         for n, rx in PROVIDERS:
             if re.search(rx, text, re.I): name = n; break
-    existing = index(); base, i = name, 2
+    existing = index()
+    for n in existing:                               # the same value already stored under some name: keep that name
+        if get(n) == value: return n
+    base, i = name, 2
     while name in existing and get(name) not in (None, value):
         name = f"{base}_{i}"; i += 1
     return name

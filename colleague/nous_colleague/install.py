@@ -7,6 +7,7 @@ import json, os, shutil, sys, time
 HOOK = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "hooks", "nous_hook.py"))
 FILES = {"claude": os.path.expanduser("~/.claude/settings.json"), "codex": os.path.expanduser("~/.codex/hooks.json")}
 MARK = "nous_hook.py"
+GATEWAY = "http://127.0.0.1:7871"
 
 
 def ours(target):
@@ -44,6 +45,14 @@ def main():
         for ev, groups in ours(target).items(): hooks.setdefault(ev, []).extend(groups)
     if hooks: s["hooks"] = hooks
     else: s.pop("hooks", None)
+    if target == "claude":                    # route Claude Code through the Nous key gateway (keys never reach the model)
+        env = s.get("env") or {}
+        if "--off" in sys.argv:
+            if env.get("ANTHROPIC_BASE_URL") == GATEWAY: env.pop("ANTHROPIC_BASE_URL")
+        elif "--no-gateway" not in sys.argv:
+            env["ANTHROPIC_BASE_URL"] = GATEWAY
+        if env: s["env"] = env
+        else: s.pop("env", None)
     os.makedirs(os.path.dirname(SETTINGS), exist_ok=True)
     tmp = SETTINGS + ".tmp"; json.dump(s, open(tmp, "w"), ensure_ascii=False, indent=2); os.replace(tmp, SETTINGS)
     name = {"claude": "Claude Code", "codex": "Codex"}[target]
