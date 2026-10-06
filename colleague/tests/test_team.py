@@ -112,3 +112,40 @@ class Team(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CollectFromSlack(unittest.TestCase):
+    def test_downloads_only_our_bundles(self):
+        import http.server, threading
+        _, a = machine("A", EV); _, b = machine("B", EV)
+        blobs = {"/a": open(a, "rb").read(), "/b": open(b, "rb").read(), "/html": b"<html>login</html>"}
+
+        class H(http.server.BaseHTTPRequestHandler):
+            def log_message(self, *x): pass
+            def do_GET(self):
+                assert self.headers["Authorization"] == "Bearer xoxb-test"
+                d = blobs[self.path]; self.send_response(200); self.send_header("Content-Length", str(len(d))); self.end_headers(); self.wfile.write(d)
+        srv = http.server.ThreadingHTTPServer(("127.0.0.1", 0), H); threading.Thread(target=srv.serve_forever, daemon=True).start()
+        self.addCleanup(srv.shutdown)
+        u = f"http://127.0.0.1:{srv.server_address[1]}"
+        pages = {1: [{"id": "F1", "name": "20261006-180500-aaaaaaaa.tar.gz", "size": 100, "url_private_download": u + "/a"},
+                     {"id": "F2", "name": "notes.txt", "size": 5, "url_private_download": u + "/a"},
+                     {"id": "F../3", "name": "20261006-180500-bbbbbbbb.tar.gz", "size": 100, "url_private_download": u + "/html"}],
+                 2: [{"id": "F4", "name": "20261006-180600-cccccccc.tar.gz", "size": 100, "url_private_download": u + "/b"},
+                     {"id": "F5", "name": "20261006-180600-dddddddd.tar.gz", "size": team.MAX_BYTES + 1, "url_private_download": u + "/b"}]}
+
+        class Client:
+            def files_list(self, user, ts_from, count, page):
+                assert user == "UBOT"; return {"files": pages[page], "paging": {"pages": 2}}
+        inbox = tempfile.mkdtemp()
+        paths = team.collect_from_slack(Client(), "UBOT", "xoxb-test", inbox=inbox)
+        self.assertEqual(sorted(os.path.basename(p) for p in paths), ["F1.tar.gz", "F4.tar.gz"])   # no txt, no error page, no oversize
+        self.assertEqual(sorted(os.listdir(inbox)), ["F1.tar.gz", "F4.tar.gz"])
+        rep = team.build(paths); self.assertEqual(len(rep["machines"]), 2); self.assertIn("全部核验通过", team.summary(rep))
+
+    def test_team_command_is_owner_only(self):
+        from nous_colleague.brain import Brain, Message
+        b = Brain(state_path=os.path.join(tempfile.mkdtemp(), "s.json"), reader=None, clock=lambda: 5000.0)
+        b.handle(Message("slack", "d", "p2p", "m0", "owner", False, "绑定码 " + b.bind_code("slack")))
+        self.assertEqual(b.handle(Message("slack", "d", "p2p", "m1", "owner", False, "团队报告"))[0].kind, "team")
+        self.assertEqual(b.handle(Message("slack", "d", "p2p", "m2", "x", False, "团队报告"))[0].kind, "dm")

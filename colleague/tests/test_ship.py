@@ -63,3 +63,29 @@ class Command(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SlackTeamReport(unittest.TestCase):
+    def test_end_to_end_with_fake_slack(self):
+        import types
+        from nous_colleague import slack as SL, team as TM
+        home = tempfile.mkdtemp(); self.addCleanup(setattr, TM, "TEAM_HOME", TM.TEAM_HOME); TM.TEAM_HOME = home
+        self.addCleanup(setattr, L, "TSA", L.TSA); L.TSA = "http://127.0.0.1:9/"
+        uploads = []
+
+        class Client(FakeSlack):
+            token = "xoxb-test"
+            def files_upload_v2(self, **kw):
+                uploads.append(kw); return {"ok": True}
+            def files_list(self, **kw): return {"files": [], "paging": {"pages": 1}}
+            def chat_postMessage(self, **kw): uploads.append(kw)
+        ad = object.__new__(SL.Slack); ad.app = types.SimpleNamespace(client=Client()); ad.me_user = "UBOT"; ad.log = lambda *a: None
+        orig = TM.collect_from_slack
+        self.addCleanup(setattr, TM, "collect_from_slack", orig)
+        TM.collect_from_slack = lambda client, bot, token, days=30: [u["file"] for u in uploads if str(u.get("file", "")).endswith(".tar.gz")]
+        ad.team_report("UADMIN")
+        self.assertEqual(uploads[0]["filename"][-7:], ".tar.gz")                 # this computer ships first
+        self.assertTrue(uploads[-1]["filename"].startswith("团队风险证明")); self.assertIn("团队 AI 风险证明", uploads[-1]["initial_comment"])
+        TM.collect_from_slack = lambda *a, **k: []
+        uploads.clear(); ad.team_report("UADMIN")
+        self.assertIn("最近没有收到任何证据包", str(uploads[-1]["blocks"]))

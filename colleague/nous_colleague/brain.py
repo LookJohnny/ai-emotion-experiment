@@ -43,7 +43,7 @@ class Message:
 
 @dataclass
 class Out:
-    kind: str                # reply (under msg target) | dm (user target) | ship (send this computer's ledger bundle to user target)
+    kind: str                # reply (under msg target) | dm (user target) | ship (this computer's ledger bundle) | team (team report), both to user target
     target: str
     card: Card
     chat_id: str = ""
@@ -183,6 +183,10 @@ class Brain:
         if cmd in ("帮助", "help", "?", "？"): return [Out("dm", m.sender_id, self.help_card(m.sender_id == own))]
         if cmd in ("状态", "status"): return [Out("dm", m.sender_id, self.status_card(p))]
         if cmd in ("汇总", "digest"): return [Out("dm", m.sender_id, self.digest_card(p, reset=False))]
+        if cmd in ("团队报告", "team"):
+            if m.sender_id != own: return [Out("dm", m.sender_id, Card("只有管理员可以操作", "info", ["团队报告只发给这个工作区的 Nous 管理员。"]))]
+            if p != "slack": return [Out("dm", m.sender_id, Card("暂时只支持 Slack", "info", ["团队报告目前通过 Slack 私信发送。"]))]
+            return [Out("team", m.sender_id, Card("团队报告", "info", []))]
         if cmd in ("证据包", "evidence", "bundle"):
             if m.sender_id != own: return [Out("dm", m.sender_id, Card("只有管理员可以操作", "info", ["证据包只发给这个工作区的 Nous 管理员。"]))]
             if p != "slack": return [Out("dm", m.sender_id, Card("暂时只支持 Slack", "info", ["证据包目前通过 Slack 私信发送。"]))]
@@ -250,7 +254,7 @@ class Brain:
     def help_card(self, is_owner):
         lines = ["**在群里**：我读 AI 机器人的每条回复。发现贬低、编造或一味附和，会在那条消息下面标注。平时我不说话。",
                  "**私聊我**：转发或粘贴任何 AI 的回复，我帮你读一遍。格式「问：…  答：…」更准。",
-                 "**命令**：状态、汇总" + ("、暂停、继续、证据包（把这台电脑的证据账本发给你）" if is_owner else "")]
+                 "**命令**：状态、汇总" + ("、暂停、继续、证据包（把这台电脑的证据账本发给你）、团队报告（收齐各台电脑的证据包，核验后生成团队风险证明）" if is_owner else "")]
         return Card("Nous 读心 · AI 安全同事", "info", lines, note="读心读的是模型内部状态。编造和附和读数是实验性的。")
 
     def status_card(self, p):

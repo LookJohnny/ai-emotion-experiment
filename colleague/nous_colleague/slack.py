@@ -1,7 +1,7 @@
 """Slack adapter: Socket Mode (no public server needed), Block Kit cards, button callbacks.
 Streaming AI apps post a message and then edit it many times (message_changed); the colleague reads a message once it has
 been quiet for SETTLE seconds, so it reads the final answer, not a half-written one."""
-import threading, time
+import os, threading, time
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
 from .brain import Message
@@ -123,8 +123,33 @@ class Slack:
             c = Card("证据包没能发出", "warn", [str(e)])
             self.app.client.chat_postMessage(channel=ch, blocks=blocks(c), text=c.text()[:300])
 
+    def team_report(self, user_id, days=30):
+        """Collect every computer's bundle from the bot's own uploads, check them, DM the report as an HTML file."""
+        from . import team
+        from .cards import Card
+        try:
+            self.ship(user_id)                                       # include this computer's latest record
+            paths = team.collect_from_slack(self.app.client, self.me_user, self.app.client.token, days)
+            if not paths: raise RuntimeError("最近没有收到任何证据包。")
+            rep = team.build(paths, days, os.path.join(team.TEAM_HOME, "team.json"))
+            out = os.path.join(team.TEAM_HOME, time.strftime("团队风险证明-%Y%m%d-%H%M.html"))
+            fd = os.open(out, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)
+            with os.fdopen(fd, "w", encoding="utf-8") as f: f.write(team.render(rep))
+            ch = self.app.client.conversations_open(users=user_id)["channel"]["id"]
+            self.app.client.files_upload_v2(channel=ch, file=out, filename=os.path.basename(out), title="团队 AI 风险证明",
+                                            initial_comment=team.summary(rep))
+        except Exception as e:
+            err = getattr(getattr(e, "response", None), "get", lambda *_: None)("error")
+            why = ("Slack 应用缺少 files:read 或 files:write 权限：在 api.slack.com/apps → OAuth & Permissions 里添加，然后重新安装到工作区。"
+                   if err == "missing_scope" else str(e) if isinstance(e, RuntimeError) else f"出错了：{err or repr(e)[:120]}")
+            self.log(f"[slack] 团队报告失败：{why}")
+            ch = self.app.client.conversations_open(users=user_id)["channel"]["id"]
+            c = Card("团队报告没能生成", "warn", [why])
+            self.app.client.chat_postMessage(channel=ch, blocks=blocks(c), text=c.text()[:300])
+
     def _send_one(self, o):
         if o.kind == "ship": return self.ship(o.target)
+        if o.kind == "team": return self.team_report(o.target)
         if o.kind == "reply":
             self.app.client.chat_postMessage(channel=o.chat_id, thread_ts=o.target, blocks=blocks(o.card), text=o.card.text()[:300])
         else:

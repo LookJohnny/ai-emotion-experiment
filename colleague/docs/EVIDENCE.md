@@ -49,7 +49,7 @@ Slack 会把每个事件只交给同一个应用的其中一个连接，而且�
 
 **准备工作**
 
-- Slack 应用需要 `files:write` 权限（`slack-manifest.yaml` 里已加）。加了之后要重新安装到工作区。
+- Slack 应用需要 `files:write` 和 `files:read` 两个权限（`slack-manifest.yaml` 里已加）。加了之后要重新安装到工作区。
 - 成员电脑的 `~/.nous-colleague/secrets.env` 里写两项：
   - `SLACK_BOT_TOKEN`；
   - `SLACK_ADMIN_USER=U…`（管理员的 Slack 成员 ID）。
@@ -61,7 +61,15 @@ Slack 会把每个事件只交给同一个应用的其中一个连接，而且�
 
 **生成团队报告**
 
-管理员把收到的证据包下载到一个文件夹，然后运行：
+最简单的方式：管理员在私信里对机器人发「团队报告」。每周一也会自动生成一次。之后机器人会自动完成：
+
+1. 收齐最近 30 天各台电脑发来的证据包。证据包按不可信输入处理：改用自己的文件名保存，有大小上限，不是 gzip 的直接跳过。
+2. 逐台核验。
+3. 把 HTML 报告和一段摘要发回私信。
+
+这需要 Slack 应用同时有 `files:read` 权限，以及上面说的 `files:write`。
+
+也可以手动生成：管理员把证据包下载到一个文件夹，然后运行：
 
 ```sh
 python -m nous_colleague.team 报告.html 文件夹/*.tar.gz --state team.json

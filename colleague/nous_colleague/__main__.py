@@ -29,7 +29,9 @@ def daily_loop(brain, adapters, hour):
             last = t.tm_yday
             try:                                   # time-stamp the ledger head (only its hash leaves) and DM the bundle to the admin
                 own = brain.owner("slack")
-                if "slack" in adapters and own: adapters["slack"].ship(own)
+                if "slack" in adapters and own:
+                    if t.tm_wday == 0: adapters["slack"].team_report(own)        # Mondays: the whole team (ships this computer first)
+                    else: adapters["slack"].ship(own)
                 else:
                     from .evidence import nous_ledger
                     nous_ledger.stamp()

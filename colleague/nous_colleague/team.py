@@ -111,6 +111,46 @@ def render(rep):
     return L.page("AI 使用风险证明 · 团队", f"由 Nous 读心生成 · {L._t(rep['generated'])} · 统计最近 {rep['days']} 天 · {len(ms)} 台电脑", body)
 
 
+# ---- the admin's colleague collects bundles that every computer DMed to the admin, and answers with the report ----
+import re
+BUNDLE_NAME = re.compile(r"^\d{8}-\d{6}-[0-9a-f]{8}\.tar\.gz$")
+TEAM_HOME = os.path.expanduser("~/.nous-colleague/team")
+
+
+def collect_from_slack(client, bot_user, token, days=30, inbox=None):
+    """Download the bundles this bot uploaded in the last `days` (they are untrusted: saved under our own names, size-capped).
+    -> list of local paths."""
+    import urllib.request
+    inbox = inbox or os.path.join(TEAM_HOME, "inbox"); os.makedirs(inbox, mode=0o700, exist_ok=True)
+    since = int(time.time() - days * 86400); paths, page = [], 1
+    while True:
+        r = client.files_list(user=bot_user, ts_from=since, count=100, page=page)
+        for f in r.get("files", []):
+            if not BUNDLE_NAME.match(f.get("name", "")) or f.get("size", 0) > MAX_BYTES: continue
+            dst = os.path.join(inbox, re.sub(r"[^A-Za-z0-9]", "", f["id"])[:20] + ".tar.gz")
+            if not os.path.exists(dst):
+                req = urllib.request.Request(f["url_private_download"], headers={"Authorization": "Bearer " + token})
+                with urllib.request.urlopen(req, timeout=60) as resp: data = resp.read(MAX_BYTES + 1)
+                if len(data) > MAX_BYTES or not data.startswith(b"\x1f\x8b"): continue      # not a gzip: an error page, skip
+                fd = os.open(dst, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)
+                with os.fdopen(fd, "wb") as fo: fo.write(data)
+            paths.append(dst)
+        pg = r.get("paging") or {}
+        if page >= pg.get("pages", 1): break
+        page += 1
+    return paths
+
+
+def summary(rep):
+    ms = rep["machines"]; bad = [m for m in ms if not m["ok"]]; stale = [m for m in ms if m["ok"] and m["stale"]]
+    lines = [f"团队 AI 风险证明：{len(ms)} 台电脑，最近 {rep['days']} 天，风险操作 {rep['team']['events']} 次，读心读了 {rep['team']['ai_replies_read']} 条回复。"]
+    lines += [f":red_circle: {m['label']}：{'；'.join(m['problems'])}" for m in bad]
+    lines += [f":large_orange_circle: {m['label']}：超过 7 天没有新记录，可能已关闭保护" for m in stale]
+    if rep["missing_since_last"]: lines.append(f":large_orange_circle: 上次汇总有、这次没交证据包的电脑：{len(rep['missing_since_last'])} 台")
+    if not bad and not stale and not rep["missing_since_last"]: lines.append("全部核验通过。")
+    return "\n".join(lines)
+
+
 def main():
     ap = argparse.ArgumentParser(prog="nous_colleague.team"); ap.add_argument("out"); ap.add_argument("bundles", nargs="+")
     ap.add_argument("--days", type=int, default=30); ap.add_argument("--state"); ap.add_argument("--stale-days", type=int, default=7)

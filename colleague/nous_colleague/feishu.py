@@ -94,7 +94,7 @@ class Feishu:
 
     def send(self, outs):
         for o in outs:
-            if o.kind == "ship": continue                    # bundles go out through Slack only (see brain: 证据包)
+            if o.kind in ("ship", "team"): continue                    # bundles go out through Slack only (see brain: 证据包)
             content = card_json(o.card)
             if o.kind == "reply":
                 req = ReplyMessageRequest.builder().message_id(o.target).request_body(
