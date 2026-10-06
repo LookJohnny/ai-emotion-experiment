@@ -86,3 +86,13 @@ After exploring, `CLAIMS.md` lists each claimed pattern as a check with a number
 - Llama-3.2-1B is weak in Chinese.
 - Decodability is not causation; E01's causal heads are the only causal anchor.
 - One dataset of mixed-event Chinese text.
+
+## Deviations
+
+- 2026-10-06, after seeing Llama-3.2-1B explore numbers only. No holdout features had been extracted.
+  1. **The head classes in A cannot work at the anchor site.** The anchor's own words differ by scenario, so eta_scn > eta_emo for every head by construction. Two changes follow:
+     - heads are ranked by emo_auc, as the confirmation checks already do;
+     - one more measure is reported: `within_share = eta_emo / (1 − eta_scn)`, the share of within-scenario variance explained by emotion.
+     
+     The classes are still reported at the lead site.
+  2. **A null for B's subspace cosine.** It is the mean and 95th percentile of the same statistic for random 3-dimensional subspace pairs in the same dimension, over 200 draws.

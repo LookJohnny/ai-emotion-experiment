@@ -1,0 +1,606 @@
+{
+ "probe_vs_emotion": {
+  "c1_token": {
+   "layer": 16,
+   "lead/joy": {
+    "cos": -0.0005,
+    "null_mean": -0.0012,
+    "null_abs_p95": 0.0339
+   },
+   "lead/sadness": {
+    "cos": -0.0166,
+    "null_mean": 0.0023,
+    "null_abs_p95": 0.0386
+   },
+   "lead/anger": {
+    "cos": 0.0233,
+    "null_mean": -0.0022,
+    "null_abs_p95": 0.0316
+   },
+   "anchor/joy": {
+    "cos": -0.044,
+    "null_mean": 0.003,
+    "null_abs_p95": 0.0666
+   },
+   "anchor/sadness": {
+    "cos": -0.0267,
+    "null_mean": -0.0019,
+    "null_abs_p95": 0.0693
+   },
+   "anchor/anger": {
+    "cos": 0.0327,
+    "null_mean": 0.0021,
+    "null_abs_p95": 0.0585
+   }
+  },
+  "c2": {
+   "layer": 16,
+   "lead/joy": {
+    "cos": 0.002,
+    "null_mean": 0.0053,
+    "null_abs_p95": 0.0357
+   },
+   "lead/sadness": {
+    "cos": 0.0221,
+    "null_mean": -0.0046,
+    "null_abs_p95": 0.0545
+   },
+   "lead/anger": {
+    "cos": 0.0988,
+    "null_mean": -0.0027,
+    "null_abs_p95": 0.0804
+   },
+   "anchor/joy": {
+    "cos": 0.0368,
+    "null_mean": -0.0024,
+    "null_abs_p95": 0.0417
+   },
+   "anchor/sadness": {
+    "cos": 0.0654,
+    "null_mean": 0.0008,
+    "null_abs_p95": 0.0581
+   },
+   "anchor/anger": {
+    "cos": 0.1412,
+    "null_mean": -0.0017,
+    "null_abs_p95": 0.1286
+   }
+  },
+  "c3h_token": {
+   "layer": 19,
+   "lead/joy": {
+    "cos": 0.0168,
+    "null_mean": 0.0024,
+    "null_abs_p95": 0.0269
+   },
+   "lead/sadness": {
+    "cos": 0.0037,
+    "null_mean": -0.0003,
+    "null_abs_p95": 0.0272
+   },
+   "lead/anger": {
+    "cos": 0.0023,
+    "null_mean": 0.0006,
+    "null_abs_p95": 0.0199
+   },
+   "anchor/joy": {
+    "cos": 0.0088,
+    "null_mean": -0.0018,
+    "null_abs_p95": 0.0364
+   },
+   "anchor/sadness": {
+    "cos": 0.011,
+    "null_mean": 0.0039,
+    "null_abs_p95": 0.0279
+   },
+   "anchor/anger": {
+    "cos": 0.0271,
+    "null_mean": -0.0003,
+    "null_abs_p95": 0.0364
+   }
+  },
+  "syco_token": {
+   "layer": 20,
+   "lead/joy": {
+    "cos": 0.0245,
+    "null_mean": 0.004,
+    "null_abs_p95": 0.0333
+   },
+   "lead/sadness": {
+    "cos": 0.0183,
+    "null_mean": 0.0009,
+    "null_abs_p95": 0.0278
+   },
+   "lead/anger": {
+    "cos": 0.03,
+    "null_mean": -0.0026,
+    "null_abs_p95": 0.0424
+   },
+   "anchor/joy": {
+    "cos": 0.0006,
+    "null_mean": 0.0011,
+    "null_abs_p95": 0.0253
+   },
+   "anchor/sadness": {
+    "cos": -0.0256,
+    "null_mean": -0.0012,
+    "null_abs_p95": 0.041
+   },
+   "anchor/anger": {
+    "cos": -0.0122,
+    "null_mean": -0.0006,
+    "null_abs_p95": 0.0409
+   }
+  }
+ },
+ "emotion_vs_emotion": [
+  {
+   "layer": 0,
+   "lead": {
+    "joy~sad": 0.7624,
+    "joy~anger": 0.7574,
+    "sad~anger": 0.7103
+   },
+   "anchor": {
+    "joy~sad": 0.8607,
+    "joy~anger": 0.7698,
+    "sad~anger": 0.7661
+   }
+  },
+  {
+   "layer": 1,
+   "lead": {
+    "joy~sad": 0.7837,
+    "joy~anger": 0.7816,
+    "sad~anger": 0.7246
+   },
+   "anchor": {
+    "joy~sad": 0.8669,
+    "joy~anger": 0.803,
+    "sad~anger": 0.7574
+   }
+  },
+  {
+   "layer": 2,
+   "lead": {
+    "joy~sad": 0.7847,
+    "joy~anger": 0.8021,
+    "sad~anger": 0.7257
+   },
+   "anchor": {
+    "joy~sad": 0.8848,
+    "joy~anger": 0.8232,
+    "sad~anger": 0.7852
+   }
+  },
+  {
+   "layer": 3,
+   "lead": {
+    "joy~sad": 0.8054,
+    "joy~anger": 0.813,
+    "sad~anger": 0.7312
+   },
+   "anchor": {
+    "joy~sad": 0.8866,
+    "joy~anger": 0.8365,
+    "sad~anger": 0.7887
+   }
+  },
+  {
+   "layer": 4,
+   "lead": {
+    "joy~sad": 0.807,
+    "joy~anger": 0.8167,
+    "sad~anger": 0.7178
+   },
+   "anchor": {
+    "joy~sad": 0.8925,
+    "joy~anger": 0.8202,
+    "sad~anger": 0.7819
+   }
+  },
+  {
+   "layer": 5,
+   "lead": {
+    "joy~sad": 0.8082,
+    "joy~anger": 0.8145,
+    "sad~anger": 0.7376
+   },
+   "anchor": {
+    "joy~sad": 0.8843,
+    "joy~anger": 0.8276,
+    "sad~anger": 0.7516
+   }
+  },
+  {
+   "layer": 6,
+   "lead": {
+    "joy~sad": 0.8072,
+    "joy~anger": 0.8034,
+    "sad~anger": 0.7473
+   },
+   "anchor": {
+    "joy~sad": 0.8733,
+    "joy~anger": 0.8033,
+    "sad~anger": 0.7535
+   }
+  },
+  {
+   "layer": 7,
+   "lead": {
+    "joy~sad": 0.7897,
+    "joy~anger": 0.8022,
+    "sad~anger": 0.7437
+   },
+   "anchor": {
+    "joy~sad": 0.8453,
+    "joy~anger": 0.7334,
+    "sad~anger": 0.7591
+   }
+  },
+  {
+   "layer": 8,
+   "lead": {
+    "joy~sad": 0.7963,
+    "joy~anger": 0.7853,
+    "sad~anger": 0.7374
+   },
+   "anchor": {
+    "joy~sad": 0.8332,
+    "joy~anger": 0.7415,
+    "sad~anger": 0.7771
+   }
+  },
+  {
+   "layer": 9,
+   "lead": {
+    "joy~sad": 0.7952,
+    "joy~anger": 0.7742,
+    "sad~anger": 0.7509
+   },
+   "anchor": {
+    "joy~sad": 0.7968,
+    "joy~anger": 0.673,
+    "sad~anger": 0.7655
+   }
+  },
+  {
+   "layer": 10,
+   "lead": {
+    "joy~sad": 0.8021,
+    "joy~anger": 0.7722,
+    "sad~anger": 0.7499
+   },
+   "anchor": {
+    "joy~sad": 0.7708,
+    "joy~anger": 0.621,
+    "sad~anger": 0.7755
+   }
+  },
+  {
+   "layer": 11,
+   "lead": {
+    "joy~sad": 0.7987,
+    "joy~anger": 0.7707,
+    "sad~anger": 0.7461
+   },
+   "anchor": {
+    "joy~sad": 0.7938,
+    "joy~anger": 0.6438,
+    "sad~anger": 0.7949
+   }
+  },
+  {
+   "layer": 12,
+   "lead": {
+    "joy~sad": 0.7924,
+    "joy~anger": 0.7566,
+    "sad~anger": 0.7274
+   },
+   "anchor": {
+    "joy~sad": 0.8306,
+    "joy~anger": 0.6858,
+    "sad~anger": 0.7881
+   }
+  },
+  {
+   "layer": 13,
+   "lead": {
+    "joy~sad": 0.7918,
+    "joy~anger": 0.7534,
+    "sad~anger": 0.7267
+   },
+   "anchor": {
+    "joy~sad": 0.8332,
+    "joy~anger": 0.6991,
+    "sad~anger": 0.7908
+   }
+  },
+  {
+   "layer": 14,
+   "lead": {
+    "joy~sad": 0.7779,
+    "joy~anger": 0.7342,
+    "sad~anger": 0.7281
+   },
+   "anchor": {
+    "joy~sad": 0.7808,
+    "joy~anger": 0.6414,
+    "sad~anger": 0.7683
+   }
+  },
+  {
+   "layer": 15,
+   "lead": {
+    "joy~sad": 0.7819,
+    "joy~anger": 0.7363,
+    "sad~anger": 0.7332
+   },
+   "anchor": {
+    "joy~sad": 0.7967,
+    "joy~anger": 0.6809,
+    "sad~anger": 0.7974
+   }
+  },
+  {
+   "layer": 16,
+   "lead": {
+    "joy~sad": 0.7778,
+    "joy~anger": 0.7234,
+    "sad~anger": 0.7204
+   },
+   "anchor": {
+    "joy~sad": 0.7983,
+    "joy~anger": 0.6719,
+    "sad~anger": 0.8118
+   }
+  },
+  {
+   "layer": 17,
+   "lead": {
+    "joy~sad": 0.769,
+    "joy~anger": 0.7157,
+    "sad~anger": 0.7146
+   },
+   "anchor": {
+    "joy~sad": 0.7907,
+    "joy~anger": 0.6474,
+    "sad~anger": 0.8095
+   }
+  },
+  {
+   "layer": 18,
+   "lead": {
+    "joy~sad": 0.7515,
+    "joy~anger": 0.7046,
+    "sad~anger": 0.7116
+   },
+   "anchor": {
+    "joy~sad": 0.7928,
+    "joy~anger": 0.6543,
+    "sad~anger": 0.8159
+   }
+  },
+  {
+   "layer": 19,
+   "lead": {
+    "joy~sad": 0.7459,
+    "joy~anger": 0.6849,
+    "sad~anger": 0.697
+   },
+   "anchor": {
+    "joy~sad": 0.7489,
+    "joy~anger": 0.6091,
+    "sad~anger": 0.807
+   }
+  },
+  {
+   "layer": 20,
+   "lead": {
+    "joy~sad": 0.7428,
+    "joy~anger": 0.6787,
+    "sad~anger": 0.6952
+   },
+   "anchor": {
+    "joy~sad": 0.7565,
+    "joy~anger": 0.6101,
+    "sad~anger": 0.8122
+   }
+  },
+  {
+   "layer": 21,
+   "lead": {
+    "joy~sad": 0.7489,
+    "joy~anger": 0.6812,
+    "sad~anger": 0.6958
+   },
+   "anchor": {
+    "joy~sad": 0.7646,
+    "joy~anger": 0.6261,
+    "sad~anger": 0.8103
+   }
+  },
+  {
+   "layer": 22,
+   "lead": {
+    "joy~sad": 0.7398,
+    "joy~anger": 0.6719,
+    "sad~anger": 0.6944
+   },
+   "anchor": {
+    "joy~sad": 0.7474,
+    "joy~anger": 0.5933,
+    "sad~anger": 0.7826
+   }
+  },
+  {
+   "layer": 23,
+   "lead": {
+    "joy~sad": 0.7621,
+    "joy~anger": 0.7076,
+    "sad~anger": 0.7015
+   },
+   "anchor": {
+    "joy~sad": 0.7527,
+    "joy~anger": 0.6007,
+    "sad~anger": 0.7879
+   }
+  },
+  {
+   "layer": 24,
+   "lead": {
+    "joy~sad": 0.7797,
+    "joy~anger": 0.7147,
+    "sad~anger": 0.7062
+   },
+   "anchor": {
+    "joy~sad": 0.764,
+    "joy~anger": 0.591,
+    "sad~anger": 0.78
+   }
+  },
+  {
+   "layer": 25,
+   "lead": {
+    "joy~sad": 0.7905,
+    "joy~anger": 0.7305,
+    "sad~anger": 0.7108
+   },
+   "anchor": {
+    "joy~sad": 0.7696,
+    "joy~anger": 0.5916,
+    "sad~anger": 0.7851
+   }
+  },
+  {
+   "layer": 26,
+   "lead": {
+    "joy~sad": 0.7953,
+    "joy~anger": 0.7398,
+    "sad~anger": 0.7221
+   },
+   "anchor": {
+    "joy~sad": 0.7767,
+    "joy~anger": 0.6129,
+    "sad~anger": 0.7959
+   }
+  },
+  {
+   "layer": 27,
+   "lead": {
+    "joy~sad": 0.789,
+    "joy~anger": 0.7447,
+    "sad~anger": 0.7291
+   },
+   "anchor": {
+    "joy~sad": 0.7681,
+    "joy~anger": 0.6073,
+    "sad~anger": 0.8018
+   }
+  },
+  {
+   "layer": 28,
+   "lead": {
+    "joy~sad": 0.7999,
+    "joy~anger": 0.7532,
+    "sad~anger": 0.7219
+   },
+   "anchor": {
+    "joy~sad": 0.7772,
+    "joy~anger": 0.6259,
+    "sad~anger": 0.8098
+   }
+  },
+  {
+   "layer": 29,
+   "lead": {
+    "joy~sad": 0.8071,
+    "joy~anger": 0.7592,
+    "sad~anger": 0.7252
+   },
+   "anchor": {
+    "joy~sad": 0.7832,
+    "joy~anger": 0.6381,
+    "sad~anger": 0.8133
+   }
+  },
+  {
+   "layer": 30,
+   "lead": {
+    "joy~sad": 0.8154,
+    "joy~anger": 0.768,
+    "sad~anger": 0.7349
+   },
+   "anchor": {
+    "joy~sad": 0.7888,
+    "joy~anger": 0.6655,
+    "sad~anger": 0.8195
+   }
+  },
+  {
+   "layer": 31,
+   "lead": {
+    "joy~sad": 0.8169,
+    "joy~anger": 0.7686,
+    "sad~anger": 0.7333
+   },
+   "anchor": {
+    "joy~sad": 0.7938,
+    "joy~anger": 0.6726,
+    "sad~anger": 0.8257
+   }
+  },
+  {
+   "layer": 32,
+   "lead": {
+    "joy~sad": 0.821,
+    "joy~anger": 0.7783,
+    "sad~anger": 0.7465
+   },
+   "anchor": {
+    "joy~sad": 0.7941,
+    "joy~anger": 0.6803,
+    "sad~anger": 0.8285
+   }
+  },
+  {
+   "layer": 33,
+   "lead": {
+    "joy~sad": 0.8223,
+    "joy~anger": 0.7758,
+    "sad~anger": 0.7449
+   },
+   "anchor": {
+    "joy~sad": 0.8,
+    "joy~anger": 0.6928,
+    "sad~anger": 0.8299
+   }
+  },
+  {
+   "layer": 34,
+   "lead": {
+    "joy~sad": 0.8308,
+    "joy~anger": 0.7806,
+    "sad~anger": 0.7605
+   },
+   "anchor": {
+    "joy~sad": 0.8069,
+    "joy~anger": 0.7056,
+    "sad~anger": 0.8296
+   }
+  },
+  {
+   "layer": 35,
+   "lead": {
+    "joy~sad": 0.852,
+    "joy~anger": 0.8032,
+    "sad~anger": 0.7994
+   },
+   "anchor": {
+    "joy~sad": 0.8603,
+    "joy~anger": 0.7581,
+    "sad~anger": 0.8457
+   }
+  }
+ ]
+}
