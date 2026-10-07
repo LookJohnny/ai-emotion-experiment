@@ -1,0 +1,321 @@
+{
+ "by_lambda": {
+  "1.0": {
+   "n_scenarios": 20,
+   "target_minus_rdir": [
+    0.075,
+    [
+     -0.037,
+     0.2
+    ]
+   ],
+   "target_minus_none": [
+    0.05,
+    [
+     0.0,
+     0.125
+    ]
+   ],
+   "target_minus_rheads": [
+    0.013,
+    [
+     -0.087,
+     0.138
+    ]
+   ],
+   "rheads_minus_none": [
+    0.037,
+    [
+     -0.1,
+     0.15
+    ]
+   ],
+   "prefix_minus_none": [
+    1.325,
+    [
+     0.825,
+     1.825
+    ]
+   ],
+   "specificity": {
+    "joy": [
+     0.125,
+     [
+      0.0,
+      0.3
+     ]
+    ],
+    "sadness": [
+     0.025,
+     [
+      -0.3,
+      0.275
+     ]
+    ]
+   },
+   "fluency": [
+    -0.05,
+    [
+     -0.15,
+     0.0
+    ]
+   ],
+   "consistency": [
+    0.05,
+    [
+     0.0,
+     0.15
+    ]
+   ],
+   "means": {
+    "none": 0.25,
+    "primary_prefix": 1.575,
+    "target": 0.3,
+    "rdir": 0.225,
+    "rheads": 0.287
+   },
+   "quality": {
+    "fluency": "PASS",
+    "consistency": "PASS"
+   }
+  },
+  "2.0": {
+   "n_scenarios": 20,
+   "target_minus_rdir": [
+    -0.05,
+    [
+     -0.175,
+     0.075
+    ]
+   ],
+   "target_minus_none": [
+    -0.075,
+    [
+     -0.25,
+     0.05
+    ]
+   ],
+   "target_minus_rheads": [
+    -0.125,
+    [
+     -0.225,
+     -0.05
+    ]
+   ],
+   "rheads_minus_none": [
+    0.05,
+    [
+     -0.125,
+     0.2
+    ]
+   ],
+   "prefix_minus_none": [
+    1.325,
+    [
+     0.825,
+     1.85
+    ]
+   ],
+   "specificity": {
+    "joy": [
+     0.175,
+     [
+      -0.075,
+      0.425
+     ]
+    ],
+    "sadness": [
+     -0.25,
+     [
+      -0.55,
+      0.025
+     ]
+    ]
+   },
+   "fluency": [
+    -0.075,
+    [
+     -0.2,
+     0.0
+    ]
+   ],
+   "consistency": [
+    0.05,
+    [
+     0.0,
+     0.15
+    ]
+   ],
+   "means": {
+    "none": 0.25,
+    "primary_prefix": 1.575,
+    "target": 0.175,
+    "rdir": 0.225,
+    "rheads": 0.3
+   },
+   "quality": {
+    "fluency": "PASS",
+    "consistency": "PASS"
+   }
+  },
+  "4.0": {
+   "n_scenarios": 20,
+   "target_minus_rdir": [
+    0.05,
+    [
+     -0.1,
+     0.212
+    ]
+   ],
+   "target_minus_none": [
+    -0.025,
+    [
+     -0.2,
+     0.15
+    ]
+   ],
+   "target_minus_rheads": [
+    -0.275,
+    [
+     -0.487,
+     -0.087
+    ]
+   ],
+   "rheads_minus_none": [
+    0.25,
+    [
+     0.0,
+     0.5
+    ]
+   ],
+   "prefix_minus_none": [
+    1.325,
+    [
+     0.825,
+     1.85
+    ]
+   ],
+   "specificity": {
+    "joy": [
+     0.2,
+     [
+      -0.075,
+      0.475
+     ]
+    ],
+    "sadness": [
+     -0.25,
+     [
+      -0.575,
+      0.025
+     ]
+    ]
+   },
+   "fluency": [
+    0.0,
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "consistency": [
+    0.05,
+    [
+     0.0,
+     0.15
+    ]
+   ],
+   "means": {
+    "none": 0.25,
+    "primary_prefix": 1.575,
+    "target": 0.225,
+    "rdir": 0.175,
+    "rheads": 0.5
+   },
+   "quality": {
+    "fluency": "PASS",
+    "consistency": "PASS"
+   }
+  },
+  "8.0": {
+   "n_scenarios": 20,
+   "target_minus_rdir": [
+    0.0,
+    [
+     -0.138,
+     0.163
+    ]
+   ],
+   "target_minus_none": [
+    -0.1,
+    [
+     -0.3,
+     0.1
+    ]
+   ],
+   "target_minus_rheads": [
+    -0.588,
+    [
+     -0.85,
+     -0.312
+    ]
+   ],
+   "rheads_minus_none": [
+    0.487,
+    [
+     0.212,
+     0.762
+    ]
+   ],
+   "prefix_minus_none": [
+    1.325,
+    [
+     0.8,
+     1.825
+    ]
+   ],
+   "specificity": {
+    "joy": [
+     0.15,
+     [
+      -0.125,
+      0.425
+     ]
+    ],
+    "sadness": [
+     -0.225,
+     [
+      -0.475,
+      0.05
+     ]
+    ]
+   },
+   "fluency": [
+    -0.175,
+    [
+     -0.35,
+     0.0
+    ]
+   ],
+   "consistency": [
+    -0.05,
+    [
+     -0.25,
+     0.1
+    ]
+   ],
+   "means": {
+    "none": 0.25,
+    "primary_prefix": 1.575,
+    "target": 0.15,
+    "rdir": 0.15,
+    "rheads": 0.738
+   },
+   "quality": {
+    "fluency": "INCONCLUSIVE",
+    "consistency": "INCONCLUSIVE"
+   }
+  }
+ },
+ "pick": 1.0
+}

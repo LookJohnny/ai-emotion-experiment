@@ -1,0 +1,105 @@
+{
+ "frozen_note": "frozen after validation rating, before any test generation",
+ "lambda": 1.0,
+ "heads": [
+  "L14H25",
+  "L35H4",
+  "L19H29",
+  "L27H12",
+  "L22H16",
+  "L31H18",
+  "L27H14",
+  "L31H19",
+  "L19H28",
+  "L12H25",
+  "L11H29",
+  "L17H19"
+ ],
+ "vectors_sha256": "7f6d2a5315e13d5a8af69317817285e855bb1747189035c3353c4a7dae263bf4",
+ "validation": {
+  "n_scenarios": 20,
+  "target_minus_rdir": [
+   0.075,
+   [
+    -0.037,
+    0.2
+   ]
+  ],
+  "target_minus_none": [
+   0.05,
+   [
+    0.0,
+    0.125
+   ]
+  ],
+  "target_minus_rheads": [
+   0.013,
+   [
+    -0.087,
+    0.138
+   ]
+  ],
+  "rheads_minus_none": [
+   0.037,
+   [
+    -0.1,
+    0.15
+   ]
+  ],
+  "prefix_minus_none": [
+   1.325,
+   [
+    0.825,
+    1.825
+   ]
+  ],
+  "specificity": {
+   "joy": [
+    0.125,
+    [
+     0.0,
+     0.3
+    ]
+   ],
+   "sadness": [
+    0.025,
+    [
+     -0.3,
+     0.275
+    ]
+   ]
+  },
+  "fluency": [
+   -0.05,
+   [
+    -0.15,
+    0.0
+   ]
+  ],
+  "consistency": [
+   0.05,
+   [
+    0.0,
+    0.15
+   ]
+  ],
+  "means": {
+   "none": 0.25,
+   "primary_prefix": 1.575,
+   "target": 0.3,
+   "rdir": 0.225,
+   "rheads": 0.287
+  },
+  "quality": {
+   "fluency": "PASS",
+   "consistency": "PASS"
+  }
+ },
+ "sha256": {
+  "PREREG_E03.md": "8b13caa2c895e7e4491101fa53ec8e2d50cdfdf8b33c63964f56d0137144c268",
+  "steer8b.py": "3ebe54ea39b98de063021a33f9521a68edb40abac9ec65d81177de5c04ad280c",
+  "e03_eval.py": "614b7b20b42973e65dd53ac6929f4cb80f6cbb6a1006e07f9299e28b1eaa1da5",
+  "map/anger_minus_neutral.npy": "7f6d2a5315e13d5a8af69317817285e855bb1747189035c3353c4a7dae263bf4",
+  "RATER_PROMPT_FRAGMENT.md": "8053d79c6f99835b9ae440bca33baa71562200523c33725c704e555779ec8f0c"
+ }
+}
