@@ -1,0 +1,381 @@
+{
+ "by_lambda": {
+  "1.0": {
+   "n_scenarios": 20,
+   "target_minus_rdir": [
+    0.25,
+    [
+     0.075,
+     0.463
+    ]
+   ],
+   "target_minus_none": [
+    0.2,
+    [
+     0.05,
+     0.4
+    ]
+   ],
+   "target_minus_rheads": [
+    0.212,
+    [
+     0.037,
+     0.412
+    ]
+   ],
+   "target_minus_native": [
+    0.05,
+    [
+     -0.175,
+     0.3
+    ]
+   ],
+   "native_minus_none": [
+    0.15,
+    [
+     -0.05,
+     0.35
+    ]
+   ],
+   "rheads_minus_none": [
+    -0.013,
+    [
+     -0.1,
+     0.05
+    ]
+   ],
+   "prefix_minus_none": [
+    1.0,
+    [
+     0.55,
+     1.425
+    ]
+   ],
+   "specificity": {
+    "joy": [
+     0.45,
+     [
+      0.2,
+      0.725
+     ]
+    ],
+    "sadness": [
+     -0.2,
+     [
+      -0.525,
+      0.1
+     ]
+    ]
+   },
+   "fluency": [
+    0.025,
+    [
+     -0.05,
+     0.1
+    ]
+   ],
+   "consistency": [
+    0.025,
+    [
+     -0.075,
+     0.15
+    ]
+   ],
+   "means": {
+    "none": 0.2,
+    "primary_prefix": 1.2,
+    "target": 0.4,
+    "rdir": 0.15,
+    "rheads": 0.188,
+    "native": 0.35
+   },
+   "quality": {
+    "fluency": "PASS",
+    "consistency": "INCONCLUSIVE"
+   }
+  },
+  "2.0": {
+   "n_scenarios": 20,
+   "target_minus_rdir": [
+    1.288,
+    [
+     0.925,
+     1.65
+    ]
+   ],
+   "target_minus_none": [
+    1.225,
+    [
+     0.9,
+     1.55
+    ]
+   ],
+   "target_minus_rheads": [
+    1.25,
+    [
+     0.9,
+     1.587
+    ]
+   ],
+   "target_minus_native": [
+    0.1,
+    [
+     -0.2,
+     0.4
+    ]
+   ],
+   "native_minus_none": [
+    1.125,
+    [
+     0.75,
+     1.5
+    ]
+   ],
+   "rheads_minus_none": [
+    -0.025,
+    [
+     -0.113,
+     0.037
+    ]
+   ],
+   "prefix_minus_none": [
+    1.0,
+    [
+     0.55,
+     1.425
+    ]
+   ],
+   "specificity": {
+    "joy": [
+     1.55,
+     [
+      1.2,
+      1.925
+     ]
+    ],
+    "sadness": [
+     0.875,
+     [
+      0.45,
+      1.3
+     ]
+    ]
+   },
+   "fluency": [
+    -0.15,
+    [
+     -0.35,
+     0.025
+    ]
+   ],
+   "consistency": [
+    -0.075,
+    [
+     -0.25,
+     0.1
+    ]
+   ],
+   "means": {
+    "none": 0.2,
+    "primary_prefix": 1.2,
+    "target": 1.425,
+    "rdir": 0.138,
+    "rheads": 0.175,
+    "native": 1.325
+   },
+   "quality": {
+    "fluency": "INCONCLUSIVE",
+    "consistency": "FAIL"
+   }
+  },
+  "4.0": {
+   "n_scenarios": 20,
+   "target_minus_rdir": [
+    2.087,
+    [
+     1.675,
+     2.45
+    ]
+   ],
+   "target_minus_none": [
+    2.025,
+    [
+     1.625,
+     2.4
+    ]
+   ],
+   "target_minus_rheads": [
+    2.087,
+    [
+     1.688,
+     2.462
+    ]
+   ],
+   "target_minus_native": [
+    -0.2,
+    [
+     -0.625,
+     0.175
+    ]
+   ],
+   "native_minus_none": [
+    2.225,
+    [
+     1.8,
+     2.6
+    ]
+   ],
+   "rheads_minus_none": [
+    -0.062,
+    [
+     -0.237,
+     0.087
+    ]
+   ],
+   "prefix_minus_none": [
+    1.0,
+    [
+     0.55,
+     1.45
+    ]
+   ],
+   "specificity": {
+    "joy": [
+     2.35,
+     [
+      1.925,
+      2.775
+     ]
+    ],
+    "sadness": [
+     1.475,
+     [
+      1.025,
+      1.9
+     ]
+    ]
+   },
+   "fluency": [
+    -0.1,
+    [
+     -0.3,
+     0.075
+    ]
+   ],
+   "consistency": [
+    -0.15,
+    [
+     -0.35,
+     0.05
+    ]
+   ],
+   "means": {
+    "none": 0.2,
+    "primary_prefix": 1.2,
+    "target": 2.225,
+    "rdir": 0.138,
+    "rheads": 0.138,
+    "native": 2.425
+   },
+   "quality": {
+    "fluency": "INCONCLUSIVE",
+    "consistency": "FAIL"
+   }
+  },
+  "8.0": {
+   "n_scenarios": 20,
+   "target_minus_rdir": [
+    2.95,
+    [
+     2.675,
+     3.188
+    ]
+   ],
+   "target_minus_none": [
+    3.025,
+    [
+     2.8,
+     3.25
+    ]
+   ],
+   "target_minus_rheads": [
+    3.112,
+    [
+     2.913,
+     3.312
+    ]
+   ],
+   "target_minus_native": [
+    -0.15,
+    [
+     -0.275,
+     -0.025
+    ]
+   ],
+   "native_minus_none": [
+    3.175,
+    [
+     2.975,
+     3.4
+    ]
+   ],
+   "rheads_minus_none": [
+    -0.087,
+    [
+     -0.25,
+     0.037
+    ]
+   ],
+   "prefix_minus_none": [
+    1.0,
+    [
+     0.55,
+     1.425
+    ]
+   ],
+   "specificity": {
+    "joy": [
+     3.35,
+     [
+      3.05,
+      3.675
+     ]
+    ],
+    "sadness": [
+     3.125,
+     [
+      2.775,
+      3.475
+     ]
+    ]
+   },
+   "fluency": [
+    -0.25,
+    [
+     -0.6,
+     0.0
+    ]
+   ],
+   "consistency": [
+    -0.2,
+    [
+     -0.375,
+     -0.05
+    ]
+   ],
+   "means": {
+    "none": 0.2,
+    "primary_prefix": 1.2,
+    "target": 3.225,
+    "rdir": 0.275,
+    "rheads": 0.113,
+    "native": 3.375
+   },
+   "quality": {
+    "fluency": "INCONCLUSIVE",
+    "consistency": "FAIL"
+   }
+  }
+ },
+ "pick": 1.0
+}

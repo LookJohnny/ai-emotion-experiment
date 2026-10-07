@@ -1,0 +1,122 @@
+{
+ "frozen_note": "frozen after validation rating, before any test generation",
+ "lambda": 1.0,
+ "heads": [
+  "L14H25",
+  "L35H4",
+  "L19H29",
+  "L27H12",
+  "L22H16",
+  "L31H18",
+  "L27H14",
+  "L31H19",
+  "L19H28",
+  "L12H25",
+  "L11H29",
+  "L17H19"
+ ],
+ "transfer_freeze_sha256": "d87e061ac3802e5aec0fd033bd1cb32726132e23df322db9a8b2a33b7b94ec98",
+ "vectors_sha256": "7f6d2a5315e13d5a8af69317817285e855bb1747189035c3353c4a7dae263bf4",
+ "validation": {
+  "n_scenarios": 20,
+  "target_minus_rdir": [
+   0.25,
+   [
+    0.075,
+    0.463
+   ]
+  ],
+  "target_minus_none": [
+   0.2,
+   [
+    0.05,
+    0.4
+   ]
+  ],
+  "target_minus_rheads": [
+   0.212,
+   [
+    0.037,
+    0.412
+   ]
+  ],
+  "target_minus_native": [
+   0.05,
+   [
+    -0.175,
+    0.3
+   ]
+  ],
+  "native_minus_none": [
+   0.15,
+   [
+    -0.05,
+    0.35
+   ]
+  ],
+  "rheads_minus_none": [
+   -0.013,
+   [
+    -0.1,
+    0.05
+   ]
+  ],
+  "prefix_minus_none": [
+   1.0,
+   [
+    0.55,
+    1.425
+   ]
+  ],
+  "specificity": {
+   "joy": [
+    0.45,
+    [
+     0.2,
+     0.725
+    ]
+   ],
+   "sadness": [
+    -0.2,
+    [
+     -0.525,
+     0.1
+    ]
+   ]
+  },
+  "fluency": [
+   0.025,
+   [
+    -0.05,
+    0.1
+   ]
+  ],
+  "consistency": [
+   0.025,
+   [
+    -0.075,
+    0.15
+   ]
+  ],
+  "means": {
+   "none": 0.2,
+   "primary_prefix": 1.2,
+   "target": 0.4,
+   "rdir": 0.15,
+   "rheads": 0.188,
+   "native": 0.35
+  },
+  "quality": {
+   "fluency": "PASS",
+   "consistency": "INCONCLUSIVE"
+  }
+ },
+ "sha256": {
+  "PREREG_E05.md": "da804437e4aaaf4177af82ac11d4267a37fdacda20d84382a1a6949320e3e098",
+  "steer_transfer.py": "835e2334405dee873386620bb94d6a482cb76697f827c1ac057ea39c2ffabf33",
+  "e05_eval.py": "c018df9b3fbfae1cad65ac81d1e4ec3b71b3a6c39e053209661d270a949b20b0",
+  "../map/anger_minus_neutral.npy": "7f6d2a5315e13d5a8af69317817285e855bb1747189035c3353c4a7dae263bf4",
+  "RATER_PROMPT_FRAGMENT.md": "8053d79c6f99835b9ae440bca33baa71562200523c33725c704e555779ec8f0c",
+  "freeze/TRANSFER_FREEZE.json": "d87e061ac3802e5aec0fd033bd1cb32726132e23df322db9a8b2a33b7b94ec98"
+ }
+}

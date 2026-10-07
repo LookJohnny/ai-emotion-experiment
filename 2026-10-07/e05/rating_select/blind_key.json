@@ -1,0 +1,3122 @@
+{
+"e50000": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50001": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50002": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50003": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50004": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50005": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50006": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50007": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50008": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50009": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50010": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50011": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50012": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50013": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50014": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50015": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50016": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50017": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50018": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50019": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50020": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50021": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50022": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50023": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50024": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50025": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50026": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50027": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50028": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50029": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50030": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50031": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50032": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50033": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50034": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50035": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50036": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50037": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50038": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50039": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50040": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50041": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50042": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50043": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50044": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50045": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50046": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50047": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50048": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50049": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50050": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50051": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50052": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50053": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50054": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50055": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50056": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50057": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50058": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50059": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50060": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50061": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50062": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50063": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50064": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50065": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50066": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50067": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50068": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50069": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50070": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50071": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50072": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50073": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50074": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50075": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50076": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50077": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50078": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50079": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50080": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50081": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50082": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50083": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50084": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50085": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50086": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50087": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50088": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50089": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50090": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50091": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50092": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50093": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50094": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50095": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50096": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50097": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50098": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50099": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50100": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50101": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50102": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50103": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50104": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50105": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50106": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50107": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50108": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50109": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50110": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50111": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50112": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50113": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50114": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50115": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50116": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50117": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50118": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50119": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50120": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50121": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50122": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50123": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50124": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50125": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50126": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50127": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50128": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50129": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50130": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50131": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50132": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50133": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50134": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50135": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50136": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50137": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50138": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50139": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50140": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50141": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50142": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50143": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50144": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50145": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50146": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50147": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50148": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50149": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50150": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50151": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50152": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50153": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50154": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50155": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50156": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50157": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50158": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50159": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50160": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50161": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50162": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50163": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50164": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50165": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50166": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50167": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50168": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50169": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50170": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50171": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50172": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50173": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50174": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50175": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50176": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50177": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50178": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50179": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50180": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50181": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50182": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50183": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50184": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50185": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50186": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50187": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50188": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50189": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50190": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50191": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50192": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50193": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50194": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50195": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50196": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50197": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50198": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50199": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50200": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50201": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50202": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50203": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50204": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50205": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50206": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50207": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50208": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50209": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50210": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50211": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50212": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50213": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50214": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50215": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50216": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50217": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50218": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50219": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50220": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50221": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50222": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50223": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50224": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50225": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50226": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50227": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50228": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50229": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50230": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50231": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50232": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50233": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50234": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50235": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50236": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50237": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50238": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50239": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50240": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50241": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50242": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50243": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50244": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50245": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50246": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50247": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50248": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50249": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50250": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50251": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50252": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50253": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50254": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50255": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50256": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50257": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50258": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50259": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50260": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50261": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50262": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50263": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50264": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50265": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50266": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50267": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50268": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50269": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50270": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50271": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50272": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50273": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50274": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50275": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50276": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50277": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50278": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50279": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50280": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50281": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50282": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50283": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50284": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50285": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50286": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50287": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50288": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50289": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50290": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50291": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50292": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50293": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50294": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50295": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50296": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50297": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50298": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50299": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50300": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50301": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50302": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50303": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50304": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50305": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50306": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50307": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50308": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50309": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50310": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50311": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50312": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50313": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50314": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50315": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50316": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50317": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50318": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50319": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50320": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50321": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50322": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50323": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50324": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50325": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50326": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50327": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50328": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50329": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50330": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50331": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50332": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50333": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50334": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50335": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50336": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50337": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50338": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50339": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50340": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50341": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50342": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50343": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50344": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50345": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50346": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50347": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50348": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50349": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50350": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50351": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50352": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50353": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50354": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50355": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50356": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50357": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50358": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50359": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50360": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50361": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50362": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50363": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50364": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50365": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50366": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50367": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50368": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50369": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50370": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50371": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50372": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50373": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50374": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50375": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50376": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50377": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50378": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50379": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50380": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50381": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50382": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50383": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50384": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50385": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50386": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50387": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50388": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50389": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50390": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50391": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50392": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50393": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50394": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50395": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50396": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50397": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50398": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50399": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50400": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50401": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50402": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50403": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50404": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50405": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50406": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50407": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50408": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50409": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50410": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50411": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50412": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50413": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50414": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50415": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50416": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50417": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50418": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50419": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50420": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50421": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50422": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50423": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50424": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50425": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50426": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50427": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50428": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50429": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50430": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50431": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50432": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50433": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50434": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50435": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50436": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50437": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50438": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50439": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50440": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50441": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50442": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50443": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50444": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50445": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50446": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50447": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50448": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50449": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50450": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50451": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50452": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50453": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50454": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50455": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50456": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50457": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50458": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e50459": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50460": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50461": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "native",
+"lam": 1.0
+},
+"e50462": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e50463": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50464": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50465": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50466": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e50467": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50468": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50469": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50470": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50471": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50472": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50473": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50474": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "native",
+"lam": 4.0
+},
+"e50475": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50476": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50477": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50478": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50479": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50480": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e50481": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e50482": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50483": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50484": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50485": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50486": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50487": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50488": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50489": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50490": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50491": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e50492": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e50493": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e50494": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50495": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50496": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e50497": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50498": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50499": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e50500": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50501": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e50502": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50503": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50504": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e50505": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e50506": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e50507": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "native",
+"lam": 2.0
+},
+"e50508": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e50509": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50510": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e50511": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "native",
+"lam": 8.0
+},
+"e50512": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e50513": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e50514": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e50515": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e50516": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e50517": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50518": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e50519": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+}
+}
