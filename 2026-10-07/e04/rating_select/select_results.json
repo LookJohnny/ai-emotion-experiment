@@ -1,0 +1,385 @@
+{
+ "by_lambda": {
+  "1.0": {
+   "n_scenarios": 20,
+   "target_minus_rdir": [
+    0.2,
+    [
+     0.025,
+     0.425
+    ]
+   ],
+   "target_minus_none": [
+    0.2,
+    [
+     0.05,
+     0.4
+    ]
+   ],
+   "target_minus_rheads": [
+    0.2,
+    [
+     0.025,
+     0.4
+    ]
+   ],
+   "target_minus_maponly": [
+    0.075,
+    [
+     0.0,
+     0.2
+    ]
+   ],
+   "target_minus_rscreen": [
+    0.2,
+    [
+     0.025,
+     0.4
+    ]
+   ],
+   "rheads_minus_none": [
+    0.0,
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "prefix_minus_none": [
+    0.975,
+    [
+     0.65,
+     1.3
+    ]
+   ],
+   "specificity": {
+    "joy": [
+     0.25,
+     [
+      0.05,
+      0.475
+     ]
+    ],
+    "sadness": [
+     0.25,
+     [
+      0.075,
+      0.425
+     ]
+    ]
+   },
+   "fluency": [
+    -0.025,
+    [
+     -0.075,
+     0.0
+    ]
+   ],
+   "consistency": [
+    0.05,
+    [
+     0.0,
+     0.15
+    ]
+   ],
+   "means": {
+    "none": 0.15,
+    "primary_prefix": 1.125,
+    "target": 0.35,
+    "rdir": 0.15,
+    "rheads": 0.15,
+    "maponly": 0.275,
+    "rscreen": 0.15
+   },
+   "quality": {
+    "fluency": "PASS",
+    "consistency": "PASS"
+   }
+  },
+  "2.0": {
+   "n_scenarios": 20,
+   "target_minus_rdir": [
+    0.45,
+    [
+     0.175,
+     0.75
+    ]
+   ],
+   "target_minus_none": [
+    0.45,
+    [
+     0.2,
+     0.75
+    ]
+   ],
+   "target_minus_rheads": [
+    0.425,
+    [
+     0.163,
+     0.738
+    ]
+   ],
+   "target_minus_maponly": [
+    0.275,
+    [
+     0.075,
+     0.525
+    ]
+   ],
+   "target_minus_rscreen": [
+    0.425,
+    [
+     0.175,
+     0.725
+    ]
+   ],
+   "rheads_minus_none": [
+    0.025,
+    [
+     0.0,
+     0.062
+    ]
+   ],
+   "prefix_minus_none": [
+    0.975,
+    [
+     0.65,
+     1.3
+    ]
+   ],
+   "specificity": {
+    "joy": [
+     0.55,
+     [
+      0.25,
+      0.925
+     ]
+    ],
+    "sadness": [
+     0.2,
+     [
+      0.0,
+      0.4
+     ]
+    ]
+   },
+   "fluency": [
+    -0.025,
+    [
+     -0.075,
+     0.0
+    ]
+   ],
+   "consistency": [
+    0.05,
+    [
+     0.0,
+     0.15
+    ]
+   ],
+   "means": {
+    "none": 0.15,
+    "primary_prefix": 1.125,
+    "target": 0.6,
+    "rdir": 0.15,
+    "rheads": 0.175,
+    "maponly": 0.325,
+    "rscreen": 0.175
+   },
+   "quality": {
+    "fluency": "PASS",
+    "consistency": "PASS"
+   }
+  },
+  "4.0": {
+   "n_scenarios": 20,
+   "target_minus_rdir": [
+    1.15,
+    [
+     0.675,
+     1.65
+    ]
+   ],
+   "target_minus_none": [
+    1.15,
+    [
+     0.675,
+     1.65
+    ]
+   ],
+   "target_minus_rheads": [
+    1.163,
+    [
+     0.7,
+     1.675
+    ]
+   ],
+   "target_minus_maponly": [
+    0.825,
+    [
+     0.425,
+     1.275
+    ]
+   ],
+   "target_minus_rscreen": [
+    1.075,
+    [
+     0.65,
+     1.55
+    ]
+   ],
+   "rheads_minus_none": [
+    -0.013,
+    [
+     -0.087,
+     0.062
+    ]
+   ],
+   "prefix_minus_none": [
+    0.975,
+    [
+     0.65,
+     1.3
+    ]
+   ],
+   "specificity": {
+    "joy": [
+     1.25,
+     [
+      0.75,
+      1.8
+     ]
+    ],
+    "sadness": [
+     1.0,
+     [
+      0.475,
+      1.575
+     ]
+    ]
+   },
+   "fluency": [
+    0.0,
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "consistency": [
+    0.05,
+    [
+     0.0,
+     0.15
+    ]
+   ],
+   "means": {
+    "none": 0.15,
+    "primary_prefix": 1.125,
+    "target": 1.3,
+    "rdir": 0.15,
+    "rheads": 0.138,
+    "maponly": 0.475,
+    "rscreen": 0.225
+   },
+   "quality": {
+    "fluency": "PASS",
+    "consistency": "PASS"
+   }
+  },
+  "8.0": {
+   "n_scenarios": 20,
+   "target_minus_rdir": [
+    1.5,
+    [
+     0.975,
+     2.0
+    ]
+   ],
+   "target_minus_none": [
+    1.6,
+    [
+     1.075,
+     2.1
+    ]
+   ],
+   "target_minus_rheads": [
+    1.488,
+    [
+     0.925,
+     2.025
+    ]
+   ],
+   "target_minus_maponly": [
+    0.3,
+    [
+     -0.05,
+     0.7
+    ]
+   ],
+   "target_minus_rscreen": [
+    1.525,
+    [
+     1.025,
+     2.025
+    ]
+   ],
+   "rheads_minus_none": [
+    0.113,
+    [
+     -0.05,
+     0.338
+    ]
+   ],
+   "prefix_minus_none": [
+    0.975,
+    [
+     0.65,
+     1.325
+    ]
+   ],
+   "specificity": {
+    "joy": [
+     1.75,
+     [
+      1.225,
+      2.275
+     ]
+    ],
+    "sadness": [
+     1.075,
+     [
+      0.55,
+      1.6
+     ]
+    ]
+   },
+   "fluency": [
+    -0.025,
+    [
+     -0.075,
+     0.0
+    ]
+   ],
+   "consistency": [
+    0.025,
+    [
+     0.0,
+     0.075
+    ]
+   ],
+   "means": {
+    "none": 0.15,
+    "primary_prefix": 1.125,
+    "target": 1.75,
+    "rdir": 0.25,
+    "rheads": 0.263,
+    "maponly": 1.45,
+    "rscreen": 0.225
+   },
+   "quality": {
+    "fluency": "PASS",
+    "consistency": "PASS"
+   }
+  }
+ },
+ "pick": 8.0
+}

@@ -1,0 +1,3602 @@
+{
+"e40000": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40001": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40002": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40003": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40004": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40005": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40006": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40007": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40008": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40009": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40010": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40011": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40012": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40013": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40014": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40015": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40016": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40017": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40018": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40019": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40020": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40021": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40022": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40023": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40024": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40025": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40026": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40027": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40028": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40029": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40030": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40031": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40032": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40033": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40034": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40035": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40036": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40037": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40038": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40039": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40040": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40041": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40042": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40043": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40044": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40045": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40046": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40047": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40048": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40049": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40050": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40051": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40052": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40053": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40054": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40055": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40056": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40057": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40058": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40059": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40060": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40061": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40062": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40063": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40064": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40065": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40066": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40067": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40068": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40069": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40070": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40071": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40072": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40073": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40074": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40075": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40076": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40077": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40078": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40079": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40080": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40081": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40082": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40083": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40084": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40085": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40086": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40087": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40088": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40089": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40090": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40091": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40092": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40093": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40094": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40095": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40096": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40097": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40098": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40099": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40100": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40101": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40102": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40103": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40104": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40105": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40106": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40107": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40108": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40109": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40110": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40111": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40112": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40113": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40114": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40115": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40116": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40117": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40118": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40119": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40120": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40121": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40122": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40123": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40124": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40125": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40126": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40127": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40128": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40129": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40130": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40131": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40132": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40133": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40134": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40135": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40136": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40137": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40138": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40139": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40140": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40141": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40142": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40143": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40144": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40145": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40146": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40147": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40148": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40149": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40150": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40151": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40152": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40153": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40154": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40155": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40156": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40157": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40158": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40159": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40160": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40161": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40162": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40163": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40164": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40165": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40166": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40167": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40168": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40169": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40170": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40171": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40172": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40173": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40174": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40175": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40176": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40177": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40178": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40179": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40180": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40181": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40182": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40183": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40184": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40185": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40186": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40187": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40188": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40189": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40190": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40191": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40192": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40193": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40194": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40195": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40196": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40197": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40198": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40199": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40200": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40201": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40202": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40203": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40204": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40205": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40206": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40207": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40208": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40209": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40210": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40211": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40212": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40213": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40214": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40215": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40216": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40217": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40218": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40219": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40220": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40221": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40222": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40223": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40224": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40225": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40226": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40227": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40228": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40229": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40230": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40231": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40232": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40233": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40234": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40235": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40236": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40237": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40238": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40239": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40240": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40241": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40242": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40243": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40244": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40245": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40246": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40247": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40248": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40249": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40250": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40251": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40252": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40253": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40254": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40255": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40256": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40257": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40258": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40259": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40260": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40261": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40262": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40263": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40264": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40265": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40266": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40267": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40268": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40269": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40270": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40271": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40272": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40273": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40274": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40275": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40276": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40277": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40278": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40279": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40280": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40281": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40282": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40283": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40284": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40285": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40286": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40287": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40288": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40289": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40290": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40291": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40292": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40293": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40294": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40295": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40296": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40297": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40298": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40299": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40300": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40301": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40302": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40303": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40304": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40305": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40306": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40307": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40308": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40309": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40310": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40311": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40312": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40313": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40314": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40315": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40316": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40317": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40318": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40319": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40320": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40321": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40322": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40323": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40324": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40325": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40326": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40327": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40328": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40329": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40330": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40331": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40332": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40333": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40334": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40335": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40336": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40337": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40338": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40339": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40340": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40341": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40342": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40343": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40344": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40345": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40346": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40347": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40348": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40349": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40350": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40351": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40352": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40353": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40354": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40355": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40356": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40357": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40358": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40359": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40360": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40361": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40362": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40363": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40364": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40365": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40366": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40367": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40368": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40369": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40370": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40371": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40372": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40373": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40374": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40375": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40376": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40377": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40378": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40379": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40380": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40381": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40382": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40383": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40384": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40385": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40386": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40387": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40388": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40389": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40390": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40391": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40392": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40393": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40394": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40395": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40396": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40397": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40398": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40399": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40400": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40401": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40402": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40403": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40404": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40405": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40406": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40407": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40408": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40409": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40410": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40411": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40412": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40413": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40414": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40415": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40416": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40417": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40418": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40419": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40420": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40421": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40422": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40423": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40424": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40425": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40426": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40427": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40428": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40429": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40430": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40431": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40432": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40433": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40434": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40435": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40436": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40437": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40438": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40439": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40440": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40441": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40442": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40443": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40444": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40445": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40446": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40447": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40448": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40449": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40450": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40451": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40452": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40453": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40454": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40455": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40456": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40457": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40458": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40459": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40460": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40461": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40462": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40463": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40464": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40465": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40466": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40467": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40468": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40469": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40470": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40471": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40472": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40473": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40474": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40475": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40476": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40477": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40478": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40479": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40480": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40481": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40482": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40483": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40484": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40485": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 4.0
+},
+"e40486": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40487": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40488": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40489": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40490": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40491": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40492": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40493": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40494": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40495": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40496": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 8.0
+},
+"e40497": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40498": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40499": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40500": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40501": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40502": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40503": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40504": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40505": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40506": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40507": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40508": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40509": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40510": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40511": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40512": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40513": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40514": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40515": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40516": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40517": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40518": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40519": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40520": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40521": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 8.0
+},
+"e40522": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40523": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40524": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40525": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40526": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40527": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40528": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40529": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40530": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40531": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40532": {
+"scenario_id": "study10",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40533": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40534": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40535": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40536": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e40537": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40538": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40539": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40540": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40541": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40542": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40543": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40544": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 2.0
+},
+"e40545": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40546": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40547": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 4.0
+},
+"e40548": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40549": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40550": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40551": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40552": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40553": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 8.0
+},
+"e40554": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40555": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40556": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40557": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40558": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40559": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40560": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40561": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40562": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40563": {
+"scenario_id": "study17",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40564": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40565": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 2.0
+},
+"e40566": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e40567": {
+"scenario_id": "study09",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40568": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40569": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40570": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e40571": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40572": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40573": {
+"scenario_id": "study03",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40574": {
+"scenario_id": "study14",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e40575": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 2.0
+},
+"e40576": {
+"scenario_id": "study19",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 2.0
+},
+"e40577": {
+"scenario_id": "study20",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40578": {
+"scenario_id": "study04",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40579": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 1.0
+},
+"e40580": {
+"scenario_id": "study13",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e40581": {
+"scenario_id": "study06",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e40582": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e40583": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e40584": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rscreen",
+"lam": 2.0
+},
+"e40585": {
+"scenario_id": "study05",
+"paraphrase": "A",
+"condition": "target",
+"lam": 2.0
+},
+"e40586": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40587": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e40588": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 4.0
+},
+"e40589": {
+"scenario_id": "study08",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 4.0
+},
+"e40590": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 1.0
+},
+"e40591": {
+"scenario_id": "study07",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 8.0
+},
+"e40592": {
+"scenario_id": "study16",
+"paraphrase": "A",
+"condition": "target",
+"lam": 4.0
+},
+"e40593": {
+"scenario_id": "study01",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40594": {
+"scenario_id": "study15",
+"paraphrase": "A",
+"condition": "target",
+"lam": 8.0
+},
+"e40595": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "maponly",
+"lam": 2.0
+},
+"e40596": {
+"scenario_id": "study02",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e40597": {
+"scenario_id": "study18",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40598": {
+"scenario_id": "study12",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e40599": {
+"scenario_id": "study11",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 4.0
+}
+}

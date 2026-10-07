@@ -1,0 +1,124 @@
+{
+ "frozen_note": "frozen after validation rating, before any test generation",
+ "lambda": 8.0,
+ "heads": [
+  "L22H28",
+  "L15H13",
+  "L22H27",
+  "L15H14",
+  "L27H21",
+  "L15H11",
+  "L27H22",
+  "L30H21",
+  "L17H18",
+  "L14H33",
+  "L16H25",
+  "L15H10"
+ ],
+ "screen_sha256": "fbf6e881958a868f0b032e0c9588e83807c2b65881744c1058114c37a22388f7",
+ "vectors_sha256": "1a07ba1680588e101fdc82aa8742f38599b077083a784f5c253737f8b1a6d7b2",
+ "validation": {
+  "n_scenarios": 20,
+  "target_minus_rdir": [
+   1.5,
+   [
+    0.975,
+    2.0
+   ]
+  ],
+  "target_minus_none": [
+   1.6,
+   [
+    1.075,
+    2.1
+   ]
+  ],
+  "target_minus_rheads": [
+   1.488,
+   [
+    0.925,
+    2.025
+   ]
+  ],
+  "target_minus_maponly": [
+   0.3,
+   [
+    -0.05,
+    0.7
+   ]
+  ],
+  "target_minus_rscreen": [
+   1.525,
+   [
+    1.025,
+    2.025
+   ]
+  ],
+  "rheads_minus_none": [
+   0.113,
+   [
+    -0.05,
+    0.338
+   ]
+  ],
+  "prefix_minus_none": [
+   0.975,
+   [
+    0.65,
+    1.325
+   ]
+  ],
+  "specificity": {
+   "joy": [
+    1.75,
+    [
+     1.225,
+     2.275
+    ]
+   ],
+   "sadness": [
+    1.075,
+    [
+     0.55,
+     1.6
+    ]
+   ]
+  },
+  "fluency": [
+   -0.025,
+   [
+    -0.075,
+    0.0
+   ]
+  ],
+  "consistency": [
+   0.025,
+   [
+    0.0,
+    0.075
+   ]
+  ],
+  "means": {
+   "none": 0.15,
+   "primary_prefix": 1.125,
+   "target": 1.75,
+   "rdir": 0.25,
+   "rheads": 0.263,
+   "maponly": 1.45,
+   "rscreen": 0.225
+  },
+  "quality": {
+   "fluency": "PASS",
+   "consistency": "PASS"
+  }
+ },
+ "sha256": {
+  "PREREG_E04.md": "ce7f48f4663b8f9c86e7a711cca2a637d64ac4552c2f61b2100bc39c7ecfbfc1",
+  "steer14b.py": "f86cd0ef0ca4edb299e130d39a49ad7dd019c38bc1a4af6d871fc9b6fd805217",
+  "e04_eval.py": "f6aaaab515bcf087accc5b2641db03c807f793c31db02e135dfc413bfebd894d",
+  "screen.py": "475af7295b56dc3c4cf222adfab6090d0c463ac89a4e9a3d5e98032eae42d13f",
+  "map/anger_minus_neutral.npy": "1a07ba1680588e101fdc82aa8742f38599b077083a784f5c253737f8b1a6d7b2",
+  "RATER_PROMPT_FRAGMENT.md": "8053d79c6f99835b9ae440bca33baa71562200523c33725c704e555779ec8f0c",
+  "screen/SCREEN_FREEZE.json": "fbf6e881958a868f0b032e0c9588e83807c2b65881744c1058114c37a22388f7"
+ }
+}
