@@ -1,0 +1,105 @@
+{
+ "n_scenarios": 40,
+ "target_minus_rdir": [
+  0.247,
+  [
+   0.113,
+   0.393
+  ]
+ ],
+ "target_minus_none": [
+  0.237,
+  [
+   0.075,
+   0.4
+  ]
+ ],
+ "target_minus_rheads": [
+  0.21,
+  [
+   0.077,
+   0.352
+  ]
+ ],
+ "target_minus_native": [
+  0.062,
+  [
+   -0.037,
+   0.175
+  ]
+ ],
+ "native_minus_none": [
+  0.175,
+  [
+   0.025,
+   0.325
+  ]
+ ],
+ "rheads_minus_none": [
+  0.028,
+  [
+   -0.055,
+   0.118
+  ]
+ ],
+ "prefix_minus_none": [
+  1.113,
+  [
+   0.812,
+   1.4
+  ]
+ ],
+ "specificity": {
+  "joy": [
+   0.35,
+   [
+    0.138,
+    0.562
+   ]
+  ],
+  "sadness": [
+   -0.212,
+   [
+    -0.55,
+    0.163
+   ]
+  ]
+ },
+ "fluency": [
+  0.013,
+  [
+   -0.062,
+   0.075
+  ]
+ ],
+ "consistency": [
+  0.0,
+  [
+   0.0,
+   0.0
+  ]
+ ],
+ "means": {
+  "none": 0.362,
+  "primary_prefix": 1.475,
+  "target": 0.6,
+  "rdir": 0.352,
+  "rheads": 0.39,
+  "native": 0.537
+ },
+ "quality": {
+  "fluency": "PASS",
+  "consistency": "PASS"
+ },
+ "gates": {
+  "G1 target-rdir>=0.5 & CI>0": false,
+  "G2 target-none CI>0": true,
+  "G3 target-rheads CI>0": true,
+  "G4 non-inferiority target-native > -0.5": "PASS",
+  "G5 specificity CI>0 (joy, sadness)": false,
+  "G6 quality (FAIL blocks)": true
+ },
+ "all_gates_passed": false,
+ "frozen_lambda": 1.0,
+ "note": "Raters are two blind LLM streams (not human-calibrated)."
+}
