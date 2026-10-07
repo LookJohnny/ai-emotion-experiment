@@ -1,5 +1,5 @@
 """E02 features (PLAN.md): per record and layer, mean residual and per-head attention output over the lead and anchor sites.
-python feats.py MODEL_DIR OUT.npz explore|holdout
+python feats.py MODEL_DIR OUT.npz explore|holdout|discovery
 Teacher forcing: chat prefix (user prompt) + style_lead + common_anchor; one forward pass; float16 storage. cuda or mps."""
 import json, os, sys, time
 import numpy as np, torch
@@ -7,7 +7,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 MODEL, OUT, PART = sys.argv[1:4]
 DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "2026-09-28", "data", "formal_960.jsonl")
-SPLITS = {"explore": ("discovery", "validation"), "holdout": ("test",)}[PART]
+SPLITS = {"explore": ("discovery", "validation"), "holdout": ("test",), "discovery": ("discovery",)}[PART]
 rows = [r for r in map(json.loads, open(DATA, encoding="utf-8")) if r["split"] in SPLITS]
 dev = "cuda" if torch.cuda.is_available() else "mps"
 tok = AutoTokenizer.from_pretrained(MODEL)
