@@ -1,0 +1,3122 @@
+{
+"e30000": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30001": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30002": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30003": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30004": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30005": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30006": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30007": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30008": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30009": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30010": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30011": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30012": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30013": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30014": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30015": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30016": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30017": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30018": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30019": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30020": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30021": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30022": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30023": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30024": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30025": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30026": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30027": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30028": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30029": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30030": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30031": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30032": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30033": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30034": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30035": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30036": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30037": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30038": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30039": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30040": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30041": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30042": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30043": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30044": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30045": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30046": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30047": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30048": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30049": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30050": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30051": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30052": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30053": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30054": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30055": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30056": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30057": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30058": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30059": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30060": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30061": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30062": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30063": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30064": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30065": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30066": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30067": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30068": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30069": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30070": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30071": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30072": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30073": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30074": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30075": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30076": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30077": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30078": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30079": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30080": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30081": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30082": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30083": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30084": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30085": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30086": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30087": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30088": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30089": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30090": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30091": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30092": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30093": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30094": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30095": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30096": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30097": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30098": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30099": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30100": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30101": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30102": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30103": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30104": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30105": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30106": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30107": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30108": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30109": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30110": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30111": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30112": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30113": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30114": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30115": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30116": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30117": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30118": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30119": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30120": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30121": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30122": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30123": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30124": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30125": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30126": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30127": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30128": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30129": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30130": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30131": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30132": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30133": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30134": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30135": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30136": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30137": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30138": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30139": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30140": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30141": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30142": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30143": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30144": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30145": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30146": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30147": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30148": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30149": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30150": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30151": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30152": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30153": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30154": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30155": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30156": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30157": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30158": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30159": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30160": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30161": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30162": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30163": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30164": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30165": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30166": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30167": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30168": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30169": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30170": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30171": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30172": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30173": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30174": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30175": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30176": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30177": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30178": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30179": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30180": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30181": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30182": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30183": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30184": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30185": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30186": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30187": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30188": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30189": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30190": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30191": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30192": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30193": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30194": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30195": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30196": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30197": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30198": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30199": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30200": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30201": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30202": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30203": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30204": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30205": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30206": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30207": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30208": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30209": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30210": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30211": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30212": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30213": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30214": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30215": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30216": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30217": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30218": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30219": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30220": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30221": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30222": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30223": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30224": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30225": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30226": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30227": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30228": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30229": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30230": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30231": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30232": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30233": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30234": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30235": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30236": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30237": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30238": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30239": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30240": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30241": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30242": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30243": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30244": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30245": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30246": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30247": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30248": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30249": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30250": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30251": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30252": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30253": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30254": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30255": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30256": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30257": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30258": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30259": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30260": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30261": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30262": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30263": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30264": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30265": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30266": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30267": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30268": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30269": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30270": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30271": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30272": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30273": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30274": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30275": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30276": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30277": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30278": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30279": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30280": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30281": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30282": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30283": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30284": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30285": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30286": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30287": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30288": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30289": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30290": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30291": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30292": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30293": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30294": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30295": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30296": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30297": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30298": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30299": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30300": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30301": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30302": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30303": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30304": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30305": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30306": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30307": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30308": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30309": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30310": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30311": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30312": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30313": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30314": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30315": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30316": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30317": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30318": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30319": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30320": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30321": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30322": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30323": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30324": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30325": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30326": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30327": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30328": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30329": {
+"scenario_id": "hobby16",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30330": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30331": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30332": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30333": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30334": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30335": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30336": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30337": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30338": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30339": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30340": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30341": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30342": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30343": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30344": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30345": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30346": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30347": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30348": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30349": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30350": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30351": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30352": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30353": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30354": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30355": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30356": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30357": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30358": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30359": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30360": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30361": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30362": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30363": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30364": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30365": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30366": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30367": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30368": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30369": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30370": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30371": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30372": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30373": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30374": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30375": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30376": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30377": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30378": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30379": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30380": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30381": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30382": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30383": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30384": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30385": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30386": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30387": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30388": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30389": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30390": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30391": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30392": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30393": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30394": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30395": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30396": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30397": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30398": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30399": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30400": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30401": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30402": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30403": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30404": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30405": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30406": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30407": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30408": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30409": {
+"scenario_id": "hobby08",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30410": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30411": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30412": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30413": {
+"scenario_id": "work09",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30414": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30415": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30416": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30417": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30418": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30419": {
+"scenario_id": "hobby09",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30420": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30421": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30422": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30423": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30424": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30425": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30426": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30427": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30428": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30429": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30430": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30431": {
+"scenario_id": "hobby14",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30432": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30433": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30434": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30435": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30436": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30437": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30438": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30439": {
+"scenario_id": "hobby15",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30440": {
+"scenario_id": "hobby12",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30441": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30442": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30443": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30444": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30445": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30446": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30447": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30448": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30449": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30450": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30451": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30452": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30453": {
+"scenario_id": "work16",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30454": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30455": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30456": {
+"scenario_id": "hobby05",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30457": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30458": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30459": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30460": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30461": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30462": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30463": {
+"scenario_id": "work02",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30464": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30465": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30466": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30467": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30468": {
+"scenario_id": "hobby20",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30469": {
+"scenario_id": "hobby10",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30470": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30471": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30472": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30473": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30474": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30475": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30476": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30477": {
+"scenario_id": "work17",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30478": {
+"scenario_id": "work20",
+"paraphrase": "A",
+"condition": "rdir_105",
+"lam": 1.0
+},
+"e30479": {
+"scenario_id": "work18",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30480": {
+"scenario_id": "work01",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30481": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30482": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30483": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30484": {
+"scenario_id": "work05",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30485": {
+"scenario_id": "hobby11",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30486": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "rdir_102",
+"lam": 1.0
+},
+"e30487": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30488": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30489": {
+"scenario_id": "work06",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30490": {
+"scenario_id": "work14",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30491": {
+"scenario_id": "work12",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30492": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30493": {
+"scenario_id": "hobby13",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30494": {
+"scenario_id": "hobby17",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30495": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30496": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30497": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30498": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30499": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30500": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30501": {
+"scenario_id": "work08",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30502": {
+"scenario_id": "work10",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30503": {
+"scenario_id": "work15",
+"paraphrase": "A",
+"condition": "rheads_301",
+"lam": 1.0
+},
+"e30504": {
+"scenario_id": "hobby03",
+"paraphrase": "A",
+"condition": "rdir_103",
+"lam": 1.0
+},
+"e30505": {
+"scenario_id": "hobby19",
+"paraphrase": "A",
+"condition": "none",
+"lam": 0.0
+},
+"e30506": {
+"scenario_id": "hobby07",
+"paraphrase": "A",
+"condition": "rheads_304",
+"lam": 1.0
+},
+"e30507": {
+"scenario_id": "work13",
+"paraphrase": "A",
+"condition": "rheads_302",
+"lam": 1.0
+},
+"e30508": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30509": {
+"scenario_id": "work03",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30510": {
+"scenario_id": "work19",
+"paraphrase": "A",
+"condition": "target",
+"lam": 1.0
+},
+"e30511": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30512": {
+"scenario_id": "hobby04",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30513": {
+"scenario_id": "hobby02",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30514": {
+"scenario_id": "work04",
+"paraphrase": "A",
+"condition": "rdir_101",
+"lam": 1.0
+},
+"e30515": {
+"scenario_id": "hobby06",
+"paraphrase": "A",
+"condition": "rheads_303",
+"lam": 1.0
+},
+"e30516": {
+"scenario_id": "work11",
+"paraphrase": "A",
+"condition": "rdir_104",
+"lam": 1.0
+},
+"e30517": {
+"scenario_id": "hobby18",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+},
+"e30518": {
+"scenario_id": "hobby01",
+"paraphrase": "A",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e30519": {
+"scenario_id": "work07",
+"paraphrase": "A",
+"condition": "rheads_305",
+"lam": 1.0
+}
+}

@@ -1,0 +1,89 @@
+{
+ "n_scenarios": 40,
+ "target_minus_rdir": [
+  0.04,
+  [
+   -0.05,
+   0.12
+  ]
+ ],
+ "target_minus_none": [
+  0.025,
+  [
+   -0.087,
+   0.138
+  ]
+ ],
+ "target_minus_rheads": [
+  -0.008,
+  [
+   -0.105,
+   0.092
+  ]
+ ],
+ "rheads_minus_none": [
+  0.033,
+  [
+   -0.055,
+   0.11
+  ]
+ ],
+ "prefix_minus_none": [
+  1.1,
+  [
+   0.787,
+   1.413
+  ]
+ ],
+ "specificity": {
+  "joy": [
+   0.025,
+   [
+    -0.15,
+    0.2
+   ]
+  ],
+  "sadness": [
+   -0.037,
+   [
+    -0.237,
+    0.15
+   ]
+  ]
+ },
+ "fluency": [
+  -0.013,
+  [
+   -0.062,
+   0.025
+  ]
+ ],
+ "consistency": [
+  0.0,
+  [
+   0.0,
+   0.0
+  ]
+ ],
+ "means": {
+  "none": 0.388,
+  "primary_prefix": 1.488,
+  "target": 0.412,
+  "rdir": 0.372,
+  "rheads": 0.42
+ },
+ "quality": {
+  "fluency": "PASS",
+  "consistency": "PASS"
+ },
+ "gates": {
+  "G1 target-rdir>=0.5 & CI>0": false,
+  "G2 target-none CI>0": false,
+  "G3 target-rheads CI>0": false,
+  "G4 specificity CI>0 (joy, sadness)": false,
+  "G5 quality (FAIL blocks)": true
+ },
+ "all_gates_passed": false,
+ "frozen_lambda": 1.0,
+ "note": "Raters are two blind LLM streams (not human-calibrated)."
+}
