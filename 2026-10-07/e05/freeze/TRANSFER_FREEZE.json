@@ -1,0 +1,46 @@
+{
+ "source_model": "master",
+ "target_model": "Qwen3-8B",
+ "twostage": [
+  "L22H19",
+  "L19H29",
+  "L16H12",
+  "L17H16",
+  "L17H18",
+  "L22H17",
+  "L16H3",
+  "L14H26",
+  "L15H27",
+  "L12H27",
+  "L19H28",
+  "L15H4"
+ ],
+ "native": [
+  "L14H26",
+  "L19H29",
+  "L17H16",
+  "L22H19",
+  "L18H9",
+  "L15H18",
+  "L11H30",
+  "L15H17",
+  "L22H7",
+  "L22H17",
+  "L16H3",
+  "L10H16"
+ ],
+ "overlap": [
+  "L14H26",
+  "L16H3",
+  "L17H16",
+  "L19H29",
+  "L22H17",
+  "L22H19"
+ ],
+ "stop": false,
+ "map_freeze_sha256": "a9d1ffb070ccf6ee760a5d7ae43ed021b4c2059c5f191424ea27d8a3192c48a4",
+ "source_screen_sha256": "3e073b58c53cb54f8c5120d4c419aacb4dca964f25564302603610c5e5835f48",
+ "target_screen_sha256": "833917215323f20f7af1c0b3d6d678ee3a593e0358a55ac8af1123e64e96aa1f",
+ "maponly": [],
+ "rscreen": []
+}
