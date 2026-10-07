@@ -1,0 +1,3202 @@
+{
+"e60000": {
+"scenario_id": "work16",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60001": {
+"scenario_id": "hobby13",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60002": {
+"scenario_id": "work13",
+"condition": "iti",
+"lam": 8.0
+},
+"e60003": {
+"scenario_id": "work19",
+"condition": "iti",
+"lam": 4.0
+},
+"e60004": {
+"scenario_id": "hobby20",
+"condition": "none",
+"lam": 0.0
+},
+"e60005": {
+"scenario_id": "work15",
+"condition": "none",
+"lam": 0.0
+},
+"e60006": {
+"scenario_id": "hobby01",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60007": {
+"scenario_id": "hobby12",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60008": {
+"scenario_id": "hobby17",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60009": {
+"scenario_id": "hobby13",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60010": {
+"scenario_id": "hobby12",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60011": {
+"scenario_id": "work03",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60012": {
+"scenario_id": "work19",
+"condition": "iti",
+"lam": 8.0
+},
+"e60013": {
+"scenario_id": "work06",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60014": {
+"scenario_id": "work07",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60015": {
+"scenario_id": "work12",
+"condition": "iti",
+"lam": 8.0
+},
+"e60016": {
+"scenario_id": "work17",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60017": {
+"scenario_id": "work01",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60018": {
+"scenario_id": "hobby09",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60019": {
+"scenario_id": "work08",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60020": {
+"scenario_id": "work11",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60021": {
+"scenario_id": "hobby10",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60022": {
+"scenario_id": "hobby15",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60023": {
+"scenario_id": "hobby08",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60024": {
+"scenario_id": "hobby14",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60025": {
+"scenario_id": "work06",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60026": {
+"scenario_id": "work03",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60027": {
+"scenario_id": "hobby03",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60028": {
+"scenario_id": "work07",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60029": {
+"scenario_id": "hobby08",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60030": {
+"scenario_id": "hobby15",
+"condition": "none",
+"lam": 0.0
+},
+"e60031": {
+"scenario_id": "hobby01",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60032": {
+"scenario_id": "hobby05",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60033": {
+"scenario_id": "hobby01",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60034": {
+"scenario_id": "hobby18",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60035": {
+"scenario_id": "work11",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60036": {
+"scenario_id": "work01",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60037": {
+"scenario_id": "work04",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60038": {
+"scenario_id": "hobby15",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60039": {
+"scenario_id": "work14",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60040": {
+"scenario_id": "hobby04",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60041": {
+"scenario_id": "hobby10",
+"condition": "iti",
+"lam": 4.0
+},
+"e60042": {
+"scenario_id": "hobby18",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60043": {
+"scenario_id": "hobby06",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60044": {
+"scenario_id": "hobby06",
+"condition": "none",
+"lam": 0.0
+},
+"e60045": {
+"scenario_id": "work10",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60046": {
+"scenario_id": "work13",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60047": {
+"scenario_id": "hobby06",
+"condition": "iti",
+"lam": 8.0
+},
+"e60048": {
+"scenario_id": "hobby03",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60049": {
+"scenario_id": "work05",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60050": {
+"scenario_id": "hobby13",
+"condition": "none",
+"lam": 0.0
+},
+"e60051": {
+"scenario_id": "hobby05",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60052": {
+"scenario_id": "hobby09",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60053": {
+"scenario_id": "hobby05",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60054": {
+"scenario_id": "hobby06",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60055": {
+"scenario_id": "hobby18",
+"condition": "none",
+"lam": 0.0
+},
+"e60056": {
+"scenario_id": "hobby10",
+"condition": "none",
+"lam": 0.0
+},
+"e60057": {
+"scenario_id": "hobby19",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60058": {
+"scenario_id": "work20",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60059": {
+"scenario_id": "hobby01",
+"condition": "iti",
+"lam": 8.0
+},
+"e60060": {
+"scenario_id": "work02",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60061": {
+"scenario_id": "hobby09",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60062": {
+"scenario_id": "work01",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60063": {
+"scenario_id": "work06",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60064": {
+"scenario_id": "work20",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60065": {
+"scenario_id": "work17",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60066": {
+"scenario_id": "hobby16",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60067": {
+"scenario_id": "hobby05",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60068": {
+"scenario_id": "work20",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60069": {
+"scenario_id": "work17",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60070": {
+"scenario_id": "work11",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60071": {
+"scenario_id": "work10",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60072": {
+"scenario_id": "work05",
+"condition": "iti",
+"lam": 8.0
+},
+"e60073": {
+"scenario_id": "hobby07",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60074": {
+"scenario_id": "work18",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60075": {
+"scenario_id": "hobby16",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60076": {
+"scenario_id": "work04",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60077": {
+"scenario_id": "work20",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60078": {
+"scenario_id": "hobby11",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60079": {
+"scenario_id": "hobby17",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60080": {
+"scenario_id": "hobby08",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60081": {
+"scenario_id": "work12",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60082": {
+"scenario_id": "hobby16",
+"condition": "none",
+"lam": 0.0
+},
+"e60083": {
+"scenario_id": "work11",
+"condition": "iti",
+"lam": 4.0
+},
+"e60084": {
+"scenario_id": "hobby16",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60085": {
+"scenario_id": "hobby11",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60086": {
+"scenario_id": "hobby09",
+"condition": "iti",
+"lam": 4.0
+},
+"e60087": {
+"scenario_id": "hobby06",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60088": {
+"scenario_id": "work13",
+"condition": "iti",
+"lam": 4.0
+},
+"e60089": {
+"scenario_id": "work06",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60090": {
+"scenario_id": "hobby18",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60091": {
+"scenario_id": "work18",
+"condition": "none",
+"lam": 0.0
+},
+"e60092": {
+"scenario_id": "hobby14",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60093": {
+"scenario_id": "work05",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60094": {
+"scenario_id": "hobby02",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60095": {
+"scenario_id": "hobby16",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60096": {
+"scenario_id": "work01",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60097": {
+"scenario_id": "hobby04",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60098": {
+"scenario_id": "work17",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60099": {
+"scenario_id": "hobby04",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60100": {
+"scenario_id": "work04",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60101": {
+"scenario_id": "hobby11",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60102": {
+"scenario_id": "hobby04",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60103": {
+"scenario_id": "hobby12",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60104": {
+"scenario_id": "work12",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60105": {
+"scenario_id": "hobby01",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60106": {
+"scenario_id": "hobby17",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60107": {
+"scenario_id": "work15",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60108": {
+"scenario_id": "hobby10",
+"condition": "iti",
+"lam": 8.0
+},
+"e60109": {
+"scenario_id": "work03",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60110": {
+"scenario_id": "work14",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60111": {
+"scenario_id": "hobby15",
+"condition": "iti",
+"lam": 8.0
+},
+"e60112": {
+"scenario_id": "work03",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60113": {
+"scenario_id": "hobby11",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60114": {
+"scenario_id": "hobby13",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60115": {
+"scenario_id": "hobby07",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60116": {
+"scenario_id": "hobby04",
+"condition": "none",
+"lam": 0.0
+},
+"e60117": {
+"scenario_id": "hobby17",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60118": {
+"scenario_id": "hobby16",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60119": {
+"scenario_id": "work17",
+"condition": "iti",
+"lam": 8.0
+},
+"e60120": {
+"scenario_id": "hobby14",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60121": {
+"scenario_id": "hobby03",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60122": {
+"scenario_id": "hobby14",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60123": {
+"scenario_id": "work02",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60124": {
+"scenario_id": "work17",
+"condition": "none",
+"lam": 0.0
+},
+"e60125": {
+"scenario_id": "hobby11",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60126": {
+"scenario_id": "work15",
+"condition": "iti",
+"lam": 4.0
+},
+"e60127": {
+"scenario_id": "work02",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60128": {
+"scenario_id": "hobby12",
+"condition": "none",
+"lam": 0.0
+},
+"e60129": {
+"scenario_id": "hobby13",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60130": {
+"scenario_id": "hobby07",
+"condition": "iti",
+"lam": 4.0
+},
+"e60131": {
+"scenario_id": "work14",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60132": {
+"scenario_id": "work02",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60133": {
+"scenario_id": "work13",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60134": {
+"scenario_id": "hobby20",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60135": {
+"scenario_id": "work13",
+"condition": "none",
+"lam": 0.0
+},
+"e60136": {
+"scenario_id": "hobby17",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60137": {
+"scenario_id": "hobby07",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60138": {
+"scenario_id": "work19",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60139": {
+"scenario_id": "work18",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60140": {
+"scenario_id": "hobby19",
+"condition": "iti",
+"lam": 4.0
+},
+"e60141": {
+"scenario_id": "hobby15",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60142": {
+"scenario_id": "work19",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60143": {
+"scenario_id": "hobby15",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60144": {
+"scenario_id": "work10",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60145": {
+"scenario_id": "hobby05",
+"condition": "iti",
+"lam": 4.0
+},
+"e60146": {
+"scenario_id": "work19",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60147": {
+"scenario_id": "hobby16",
+"condition": "iti",
+"lam": 4.0
+},
+"e60148": {
+"scenario_id": "hobby20",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60149": {
+"scenario_id": "work18",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60150": {
+"scenario_id": "hobby12",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60151": {
+"scenario_id": "hobby19",
+"condition": "none",
+"lam": 0.0
+},
+"e60152": {
+"scenario_id": "hobby19",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60153": {
+"scenario_id": "work12",
+"condition": "iti",
+"lam": 4.0
+},
+"e60154": {
+"scenario_id": "hobby03",
+"condition": "iti",
+"lam": 4.0
+},
+"e60155": {
+"scenario_id": "hobby18",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60156": {
+"scenario_id": "work11",
+"condition": "iti",
+"lam": 8.0
+},
+"e60157": {
+"scenario_id": "work09",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60158": {
+"scenario_id": "work02",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60159": {
+"scenario_id": "work17",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60160": {
+"scenario_id": "hobby08",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60161": {
+"scenario_id": "hobby03",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60162": {
+"scenario_id": "work15",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60163": {
+"scenario_id": "work05",
+"condition": "iti",
+"lam": 4.0
+},
+"e60164": {
+"scenario_id": "work06",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60165": {
+"scenario_id": "work12",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60166": {
+"scenario_id": "work07",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60167": {
+"scenario_id": "work09",
+"condition": "none",
+"lam": 0.0
+},
+"e60168": {
+"scenario_id": "hobby02",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60169": {
+"scenario_id": "work03",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60170": {
+"scenario_id": "work09",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60171": {
+"scenario_id": "work14",
+"condition": "iti",
+"lam": 4.0
+},
+"e60172": {
+"scenario_id": "work11",
+"condition": "none",
+"lam": 0.0
+},
+"e60173": {
+"scenario_id": "work05",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60174": {
+"scenario_id": "work07",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60175": {
+"scenario_id": "work09",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60176": {
+"scenario_id": "work07",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60177": {
+"scenario_id": "hobby12",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60178": {
+"scenario_id": "work15",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60179": {
+"scenario_id": "hobby08",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60180": {
+"scenario_id": "work16",
+"condition": "iti",
+"lam": 8.0
+},
+"e60181": {
+"scenario_id": "work05",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60182": {
+"scenario_id": "work09",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60183": {
+"scenario_id": "hobby16",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60184": {
+"scenario_id": "hobby20",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60185": {
+"scenario_id": "work08",
+"condition": "iti",
+"lam": 8.0
+},
+"e60186": {
+"scenario_id": "hobby19",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60187": {
+"scenario_id": "hobby10",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60188": {
+"scenario_id": "hobby15",
+"condition": "iti",
+"lam": 4.0
+},
+"e60189": {
+"scenario_id": "work11",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60190": {
+"scenario_id": "hobby04",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60191": {
+"scenario_id": "hobby19",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60192": {
+"scenario_id": "work01",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60193": {
+"scenario_id": "work20",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60194": {
+"scenario_id": "hobby04",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60195": {
+"scenario_id": "hobby11",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60196": {
+"scenario_id": "work06",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60197": {
+"scenario_id": "hobby11",
+"condition": "iti",
+"lam": 8.0
+},
+"e60198": {
+"scenario_id": "work14",
+"condition": "none",
+"lam": 0.0
+},
+"e60199": {
+"scenario_id": "hobby18",
+"condition": "iti",
+"lam": 8.0
+},
+"e60200": {
+"scenario_id": "hobby01",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60201": {
+"scenario_id": "hobby14",
+"condition": "iti",
+"lam": 8.0
+},
+"e60202": {
+"scenario_id": "work09",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60203": {
+"scenario_id": "hobby08",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60204": {
+"scenario_id": "work12",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60205": {
+"scenario_id": "work04",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60206": {
+"scenario_id": "hobby07",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60207": {
+"scenario_id": "hobby14",
+"condition": "iti",
+"lam": 4.0
+},
+"e60208": {
+"scenario_id": "work18",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60209": {
+"scenario_id": "hobby11",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60210": {
+"scenario_id": "work03",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60211": {
+"scenario_id": "work08",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60212": {
+"scenario_id": "hobby12",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60213": {
+"scenario_id": "hobby15",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60214": {
+"scenario_id": "hobby07",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60215": {
+"scenario_id": "hobby03",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60216": {
+"scenario_id": "work15",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60217": {
+"scenario_id": "work13",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60218": {
+"scenario_id": "work11",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60219": {
+"scenario_id": "work02",
+"condition": "iti",
+"lam": 8.0
+},
+"e60220": {
+"scenario_id": "hobby06",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60221": {
+"scenario_id": "hobby15",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60222": {
+"scenario_id": "hobby14",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60223": {
+"scenario_id": "hobby15",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60224": {
+"scenario_id": "work17",
+"condition": "iti",
+"lam": 4.0
+},
+"e60225": {
+"scenario_id": "work13",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60226": {
+"scenario_id": "work10",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60227": {
+"scenario_id": "work08",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60228": {
+"scenario_id": "work09",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60229": {
+"scenario_id": "hobby09",
+"condition": "iti",
+"lam": 8.0
+},
+"e60230": {
+"scenario_id": "work18",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60231": {
+"scenario_id": "work12",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60232": {
+"scenario_id": "hobby16",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60233": {
+"scenario_id": "hobby04",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60234": {
+"scenario_id": "work05",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60235": {
+"scenario_id": "hobby12",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60236": {
+"scenario_id": "hobby04",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60237": {
+"scenario_id": "hobby16",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60238": {
+"scenario_id": "work16",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60239": {
+"scenario_id": "work05",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60240": {
+"scenario_id": "hobby13",
+"condition": "iti",
+"lam": 8.0
+},
+"e60241": {
+"scenario_id": "hobby03",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60242": {
+"scenario_id": "work13",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60243": {
+"scenario_id": "hobby13",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60244": {
+"scenario_id": "work05",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60245": {
+"scenario_id": "work15",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60246": {
+"scenario_id": "work19",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60247": {
+"scenario_id": "work19",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60248": {
+"scenario_id": "hobby12",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60249": {
+"scenario_id": "work10",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60250": {
+"scenario_id": "work13",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60251": {
+"scenario_id": "work20",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60252": {
+"scenario_id": "work07",
+"condition": "iti",
+"lam": 4.0
+},
+"e60253": {
+"scenario_id": "work19",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60254": {
+"scenario_id": "hobby08",
+"condition": "iti",
+"lam": 8.0
+},
+"e60255": {
+"scenario_id": "work07",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60256": {
+"scenario_id": "hobby18",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60257": {
+"scenario_id": "hobby17",
+"condition": "iti",
+"lam": 4.0
+},
+"e60258": {
+"scenario_id": "hobby11",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60259": {
+"scenario_id": "hobby16",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60260": {
+"scenario_id": "work09",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60261": {
+"scenario_id": "work18",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60262": {
+"scenario_id": "work19",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60263": {
+"scenario_id": "work03",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60264": {
+"scenario_id": "work15",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60265": {
+"scenario_id": "hobby11",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60266": {
+"scenario_id": "work10",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60267": {
+"scenario_id": "work06",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60268": {
+"scenario_id": "work06",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60269": {
+"scenario_id": "hobby11",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60270": {
+"scenario_id": "work16",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60271": {
+"scenario_id": "hobby19",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60272": {
+"scenario_id": "work15",
+"condition": "iti",
+"lam": 8.0
+},
+"e60273": {
+"scenario_id": "work05",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60274": {
+"scenario_id": "work17",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60275": {
+"scenario_id": "hobby02",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60276": {
+"scenario_id": "work04",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60277": {
+"scenario_id": "hobby20",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60278": {
+"scenario_id": "work03",
+"condition": "iti",
+"lam": 4.0
+},
+"e60279": {
+"scenario_id": "hobby10",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60280": {
+"scenario_id": "work12",
+"condition": "none",
+"lam": 0.0
+},
+"e60281": {
+"scenario_id": "work09",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60282": {
+"scenario_id": "hobby09",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60283": {
+"scenario_id": "work20",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60284": {
+"scenario_id": "hobby09",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60285": {
+"scenario_id": "hobby07",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60286": {
+"scenario_id": "hobby06",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60287": {
+"scenario_id": "work20",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60288": {
+"scenario_id": "hobby20",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60289": {
+"scenario_id": "hobby05",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60290": {
+"scenario_id": "hobby10",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60291": {
+"scenario_id": "work14",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60292": {
+"scenario_id": "work19",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60293": {
+"scenario_id": "work04",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60294": {
+"scenario_id": "hobby13",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60295": {
+"scenario_id": "hobby08",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60296": {
+"scenario_id": "hobby11",
+"condition": "none",
+"lam": 0.0
+},
+"e60297": {
+"scenario_id": "work07",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60298": {
+"scenario_id": "work13",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60299": {
+"scenario_id": "work09",
+"condition": "iti",
+"lam": 4.0
+},
+"e60300": {
+"scenario_id": "hobby08",
+"condition": "none",
+"lam": 0.0
+},
+"e60301": {
+"scenario_id": "hobby19",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60302": {
+"scenario_id": "hobby01",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60303": {
+"scenario_id": "hobby10",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60304": {
+"scenario_id": "work06",
+"condition": "none",
+"lam": 0.0
+},
+"e60305": {
+"scenario_id": "hobby17",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60306": {
+"scenario_id": "work02",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60307": {
+"scenario_id": "work04",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60308": {
+"scenario_id": "work10",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60309": {
+"scenario_id": "work05",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60310": {
+"scenario_id": "work03",
+"condition": "none",
+"lam": 0.0
+},
+"e60311": {
+"scenario_id": "work12",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60312": {
+"scenario_id": "work03",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60313": {
+"scenario_id": "hobby17",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60314": {
+"scenario_id": "hobby17",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60315": {
+"scenario_id": "hobby02",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60316": {
+"scenario_id": "hobby09",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60317": {
+"scenario_id": "hobby03",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60318": {
+"scenario_id": "work05",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60319": {
+"scenario_id": "hobby10",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60320": {
+"scenario_id": "work02",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60321": {
+"scenario_id": "work11",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60322": {
+"scenario_id": "hobby17",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60323": {
+"scenario_id": "hobby18",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60324": {
+"scenario_id": "work01",
+"condition": "iti",
+"lam": 8.0
+},
+"e60325": {
+"scenario_id": "work07",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60326": {
+"scenario_id": "hobby07",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60327": {
+"scenario_id": "work10",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60328": {
+"scenario_id": "work16",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60329": {
+"scenario_id": "hobby19",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60330": {
+"scenario_id": "work04",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60331": {
+"scenario_id": "hobby17",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60332": {
+"scenario_id": "hobby17",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60333": {
+"scenario_id": "hobby03",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60334": {
+"scenario_id": "hobby13",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60335": {
+"scenario_id": "work15",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60336": {
+"scenario_id": "hobby08",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60337": {
+"scenario_id": "work20",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60338": {
+"scenario_id": "work11",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60339": {
+"scenario_id": "hobby13",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60340": {
+"scenario_id": "hobby06",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60341": {
+"scenario_id": "work14",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60342": {
+"scenario_id": "work11",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60343": {
+"scenario_id": "hobby05",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60344": {
+"scenario_id": "hobby03",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60345": {
+"scenario_id": "work07",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60346": {
+"scenario_id": "work09",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60347": {
+"scenario_id": "work10",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60348": {
+"scenario_id": "work12",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60349": {
+"scenario_id": "work08",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60350": {
+"scenario_id": "work08",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60351": {
+"scenario_id": "hobby14",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60352": {
+"scenario_id": "work18",
+"condition": "iti",
+"lam": 4.0
+},
+"e60353": {
+"scenario_id": "hobby04",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60354": {
+"scenario_id": "hobby08",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60355": {
+"scenario_id": "hobby06",
+"condition": "iti",
+"lam": 4.0
+},
+"e60356": {
+"scenario_id": "work12",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60357": {
+"scenario_id": "work09",
+"condition": "iti",
+"lam": 8.0
+},
+"e60358": {
+"scenario_id": "hobby08",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60359": {
+"scenario_id": "hobby14",
+"condition": "none",
+"lam": 0.0
+},
+"e60360": {
+"scenario_id": "hobby01",
+"condition": "iti",
+"lam": 4.0
+},
+"e60361": {
+"scenario_id": "hobby07",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60362": {
+"scenario_id": "hobby09",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60363": {
+"scenario_id": "hobby10",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60364": {
+"scenario_id": "hobby17",
+"condition": "iti",
+"lam": 8.0
+},
+"e60365": {
+"scenario_id": "work04",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60366": {
+"scenario_id": "hobby04",
+"condition": "iti",
+"lam": 4.0
+},
+"e60367": {
+"scenario_id": "work10",
+"condition": "iti",
+"lam": 4.0
+},
+"e60368": {
+"scenario_id": "hobby05",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60369": {
+"scenario_id": "hobby09",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60370": {
+"scenario_id": "hobby08",
+"condition": "iti",
+"lam": 4.0
+},
+"e60371": {
+"scenario_id": "hobby18",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60372": {
+"scenario_id": "work01",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60373": {
+"scenario_id": "hobby18",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60374": {
+"scenario_id": "hobby06",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60375": {
+"scenario_id": "hobby20",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60376": {
+"scenario_id": "hobby08",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60377": {
+"scenario_id": "hobby08",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60378": {
+"scenario_id": "hobby03",
+"condition": "none",
+"lam": 0.0
+},
+"e60379": {
+"scenario_id": "work15",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60380": {
+"scenario_id": "hobby20",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60381": {
+"scenario_id": "hobby02",
+"condition": "iti",
+"lam": 4.0
+},
+"e60382": {
+"scenario_id": "work16",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60383": {
+"scenario_id": "hobby02",
+"condition": "iti",
+"lam": 8.0
+},
+"e60384": {
+"scenario_id": "work08",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60385": {
+"scenario_id": "work14",
+"condition": "iti",
+"lam": 8.0
+},
+"e60386": {
+"scenario_id": "work02",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60387": {
+"scenario_id": "work03",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60388": {
+"scenario_id": "work03",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60389": {
+"scenario_id": "work05",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60390": {
+"scenario_id": "work01",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60391": {
+"scenario_id": "hobby01",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60392": {
+"scenario_id": "work16",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60393": {
+"scenario_id": "work18",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60394": {
+"scenario_id": "work02",
+"condition": "iti",
+"lam": 4.0
+},
+"e60395": {
+"scenario_id": "hobby05",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60396": {
+"scenario_id": "hobby12",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60397": {
+"scenario_id": "hobby17",
+"condition": "none",
+"lam": 0.0
+},
+"e60398": {
+"scenario_id": "hobby07",
+"condition": "iti",
+"lam": 8.0
+},
+"e60399": {
+"scenario_id": "hobby01",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60400": {
+"scenario_id": "hobby07",
+"condition": "none",
+"lam": 0.0
+},
+"e60401": {
+"scenario_id": "hobby19",
+"condition": "iti",
+"lam": 8.0
+},
+"e60402": {
+"scenario_id": "work01",
+"condition": "iti",
+"lam": 4.0
+},
+"e60403": {
+"scenario_id": "work17",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60404": {
+"scenario_id": "work12",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60405": {
+"scenario_id": "hobby02",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60406": {
+"scenario_id": "hobby11",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60407": {
+"scenario_id": "work17",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60408": {
+"scenario_id": "hobby01",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60409": {
+"scenario_id": "hobby09",
+"condition": "none",
+"lam": 0.0
+},
+"e60410": {
+"scenario_id": "work08",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60411": {
+"scenario_id": "work14",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60412": {
+"scenario_id": "hobby12",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60413": {
+"scenario_id": "hobby02",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60414": {
+"scenario_id": "work13",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60415": {
+"scenario_id": "hobby04",
+"condition": "iti",
+"lam": 8.0
+},
+"e60416": {
+"scenario_id": "hobby02",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60417": {
+"scenario_id": "hobby07",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60418": {
+"scenario_id": "hobby10",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60419": {
+"scenario_id": "work17",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60420": {
+"scenario_id": "hobby19",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60421": {
+"scenario_id": "work04",
+"condition": "iti",
+"lam": 8.0
+},
+"e60422": {
+"scenario_id": "work02",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60423": {
+"scenario_id": "hobby20",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60424": {
+"scenario_id": "hobby05",
+"condition": "iti",
+"lam": 8.0
+},
+"e60425": {
+"scenario_id": "work06",
+"condition": "iti",
+"lam": 4.0
+},
+"e60426": {
+"scenario_id": "hobby14",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60427": {
+"scenario_id": "work17",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60428": {
+"scenario_id": "work17",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60429": {
+"scenario_id": "hobby16",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60430": {
+"scenario_id": "work10",
+"condition": "iti",
+"lam": 8.0
+},
+"e60431": {
+"scenario_id": "hobby14",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60432": {
+"scenario_id": "work18",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60433": {
+"scenario_id": "work10",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60434": {
+"scenario_id": "hobby05",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60435": {
+"scenario_id": "work20",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60436": {
+"scenario_id": "hobby20",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60437": {
+"scenario_id": "work14",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60438": {
+"scenario_id": "work01",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60439": {
+"scenario_id": "work14",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60440": {
+"scenario_id": "hobby11",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60441": {
+"scenario_id": "work08",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60442": {
+"scenario_id": "hobby02",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60443": {
+"scenario_id": "work01",
+"condition": "none",
+"lam": 0.0
+},
+"e60444": {
+"scenario_id": "hobby12",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60445": {
+"scenario_id": "hobby20",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60446": {
+"scenario_id": "hobby03",
+"condition": "iti",
+"lam": 8.0
+},
+"e60447": {
+"scenario_id": "hobby19",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60448": {
+"scenario_id": "work07",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60449": {
+"scenario_id": "work07",
+"condition": "iti",
+"lam": 8.0
+},
+"e60450": {
+"scenario_id": "hobby09",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60451": {
+"scenario_id": "work05",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60452": {
+"scenario_id": "work07",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60453": {
+"scenario_id": "work20",
+"condition": "none",
+"lam": 0.0
+},
+"e60454": {
+"scenario_id": "hobby09",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60455": {
+"scenario_id": "hobby10",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60456": {
+"scenario_id": "hobby11",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60457": {
+"scenario_id": "hobby12",
+"condition": "iti",
+"lam": 8.0
+},
+"e60458": {
+"scenario_id": "work01",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60459": {
+"scenario_id": "work18",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60460": {
+"scenario_id": "hobby13",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60461": {
+"scenario_id": "work05",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60462": {
+"scenario_id": "work05",
+"condition": "none",
+"lam": 0.0
+},
+"e60463": {
+"scenario_id": "work16",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60464": {
+"scenario_id": "work16",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60465": {
+"scenario_id": "work08",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60466": {
+"scenario_id": "work16",
+"condition": "iti",
+"lam": 4.0
+},
+"e60467": {
+"scenario_id": "hobby13",
+"condition": "iti",
+"lam": 4.0
+},
+"e60468": {
+"scenario_id": "work20",
+"condition": "iti",
+"lam": 4.0
+},
+"e60469": {
+"scenario_id": "hobby08",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60470": {
+"scenario_id": "hobby04",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60471": {
+"scenario_id": "work14",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60472": {
+"scenario_id": "work18",
+"condition": "iti",
+"lam": 8.0
+},
+"e60473": {
+"scenario_id": "work04",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60474": {
+"scenario_id": "work18",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60475": {
+"scenario_id": "work01",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60476": {
+"scenario_id": "work14",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60477": {
+"scenario_id": "work06",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60478": {
+"scenario_id": "hobby17",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60479": {
+"scenario_id": "work08",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60480": {
+"scenario_id": "work18",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60481": {
+"scenario_id": "work16",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60482": {
+"scenario_id": "hobby20",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60483": {
+"scenario_id": "hobby02",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60484": {
+"scenario_id": "work12",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60485": {
+"scenario_id": "hobby02",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60486": {
+"scenario_id": "hobby18",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60487": {
+"scenario_id": "hobby19",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60488": {
+"scenario_id": "hobby07",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60489": {
+"scenario_id": "work09",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60490": {
+"scenario_id": "hobby10",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60491": {
+"scenario_id": "work13",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60492": {
+"scenario_id": "work08",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60493": {
+"scenario_id": "work20",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60494": {
+"scenario_id": "hobby15",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60495": {
+"scenario_id": "hobby01",
+"condition": "none",
+"lam": 0.0
+},
+"e60496": {
+"scenario_id": "work12",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60497": {
+"scenario_id": "work19",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60498": {
+"scenario_id": "work01",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60499": {
+"scenario_id": "hobby16",
+"condition": "iti",
+"lam": 8.0
+},
+"e60500": {
+"scenario_id": "hobby06",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60501": {
+"scenario_id": "work10",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60502": {
+"scenario_id": "work04",
+"condition": "iti",
+"lam": 4.0
+},
+"e60503": {
+"scenario_id": "work11",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60504": {
+"scenario_id": "hobby18",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60505": {
+"scenario_id": "work15",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60506": {
+"scenario_id": "hobby10",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60507": {
+"scenario_id": "work13",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60508": {
+"scenario_id": "work10",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60509": {
+"scenario_id": "hobby02",
+"condition": "none",
+"lam": 0.0
+},
+"e60510": {
+"scenario_id": "work16",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60511": {
+"scenario_id": "hobby18",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60512": {
+"scenario_id": "hobby10",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60513": {
+"scenario_id": "hobby16",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60514": {
+"scenario_id": "work10",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60515": {
+"scenario_id": "work16",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60516": {
+"scenario_id": "hobby15",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60517": {
+"scenario_id": "hobby20",
+"condition": "iti",
+"lam": 4.0
+},
+"e60518": {
+"scenario_id": "hobby01",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60519": {
+"scenario_id": "work11",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60520": {
+"scenario_id": "work08",
+"condition": "none",
+"lam": 0.0
+},
+"e60521": {
+"scenario_id": "hobby13",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60522": {
+"scenario_id": "work19",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60523": {
+"scenario_id": "work12",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60524": {
+"scenario_id": "hobby18",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60525": {
+"scenario_id": "work07",
+"condition": "none",
+"lam": 0.0
+},
+"e60526": {
+"scenario_id": "work11",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60527": {
+"scenario_id": "work06",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60528": {
+"scenario_id": "work15",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60529": {
+"scenario_id": "work14",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60530": {
+"scenario_id": "work02",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60531": {
+"scenario_id": "work06",
+"condition": "iti",
+"lam": 8.0
+},
+"e60532": {
+"scenario_id": "work13",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60533": {
+"scenario_id": "hobby01",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60534": {
+"scenario_id": "hobby18",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60535": {
+"scenario_id": "hobby20",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60536": {
+"scenario_id": "hobby06",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60537": {
+"scenario_id": "hobby16",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60538": {
+"scenario_id": "hobby12",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60539": {
+"scenario_id": "hobby07",
+"condition": "twostage_self",
+"lam": 4.0
+},
+"e60540": {
+"scenario_id": "hobby03",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60541": {
+"scenario_id": "work17",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60542": {
+"scenario_id": "hobby14",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60543": {
+"scenario_id": "work03",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60544": {
+"scenario_id": "work11",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60545": {
+"scenario_id": "hobby02",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60546": {
+"scenario_id": "hobby19",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60547": {
+"scenario_id": "work04",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60548": {
+"scenario_id": "hobby06",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60549": {
+"scenario_id": "work06",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60550": {
+"scenario_id": "work02",
+"condition": "none",
+"lam": 0.0
+},
+"e60551": {
+"scenario_id": "work02",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60552": {
+"scenario_id": "hobby13",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60553": {
+"scenario_id": "hobby15",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60554": {
+"scenario_id": "work19",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60555": {
+"scenario_id": "hobby15",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60556": {
+"scenario_id": "work14",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60557": {
+"scenario_id": "hobby19",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60558": {
+"scenario_id": "hobby04",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60559": {
+"scenario_id": "work15",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60560": {
+"scenario_id": "hobby11",
+"condition": "iti",
+"lam": 4.0
+},
+"e60561": {
+"scenario_id": "hobby15",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60562": {
+"scenario_id": "hobby05",
+"condition": "none",
+"lam": 0.0
+},
+"e60563": {
+"scenario_id": "hobby20",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60564": {
+"scenario_id": "work08",
+"condition": "iti",
+"lam": 4.0
+},
+"e60565": {
+"scenario_id": "hobby19",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60566": {
+"scenario_id": "hobby06",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60567": {
+"scenario_id": "hobby07",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60568": {
+"scenario_id": "hobby02",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60569": {
+"scenario_id": "hobby14",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60570": {
+"scenario_id": "work17",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60571": {
+"scenario_id": "work12",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60572": {
+"scenario_id": "hobby14",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60573": {
+"scenario_id": "work09",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60574": {
+"scenario_id": "work14",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60575": {
+"scenario_id": "work19",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60576": {
+"scenario_id": "work06",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60577": {
+"scenario_id": "work02",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60578": {
+"scenario_id": "hobby16",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60579": {
+"scenario_id": "work16",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60580": {
+"scenario_id": "hobby01",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60581": {
+"scenario_id": "hobby06",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60582": {
+"scenario_id": "work19",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60583": {
+"scenario_id": "hobby05",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60584": {
+"scenario_id": "work01",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60585": {
+"scenario_id": "work10",
+"condition": "none",
+"lam": 0.0
+},
+"e60586": {
+"scenario_id": "hobby13",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60587": {
+"scenario_id": "hobby01",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60588": {
+"scenario_id": "hobby13",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60589": {
+"scenario_id": "hobby03",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60590": {
+"scenario_id": "work04",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60591": {
+"scenario_id": "hobby14",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60592": {
+"scenario_id": "hobby12",
+"condition": "iti",
+"lam": 4.0
+},
+"e60593": {
+"scenario_id": "work01",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60594": {
+"scenario_id": "work07",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60595": {
+"scenario_id": "work19",
+"condition": "none",
+"lam": 0.0
+},
+"e60596": {
+"scenario_id": "work18",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60597": {
+"scenario_id": "work09",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60598": {
+"scenario_id": "hobby09",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60599": {
+"scenario_id": "work03",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60600": {
+"scenario_id": "hobby05",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60601": {
+"scenario_id": "work20",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60602": {
+"scenario_id": "work07",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60603": {
+"scenario_id": "work03",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60604": {
+"scenario_id": "hobby17",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60605": {
+"scenario_id": "hobby20",
+"condition": "iti",
+"lam": 8.0
+},
+"e60606": {
+"scenario_id": "hobby09",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60607": {
+"scenario_id": "hobby09",
+"condition": "rheads_303",
+"lam": 4.0
+},
+"e60608": {
+"scenario_id": "work16",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60609": {
+"scenario_id": "hobby07",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60610": {
+"scenario_id": "work20",
+"condition": "iti",
+"lam": 8.0
+},
+"e60611": {
+"scenario_id": "work11",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60612": {
+"scenario_id": "work13",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60613": {
+"scenario_id": "work16",
+"condition": "none",
+"lam": 0.0
+},
+"e60614": {
+"scenario_id": "work20",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60615": {
+"scenario_id": "hobby14",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60616": {
+"scenario_id": "hobby18",
+"condition": "iti",
+"lam": 4.0
+},
+"e60617": {
+"scenario_id": "work13",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60618": {
+"scenario_id": "hobby04",
+"condition": "rheads_302",
+"lam": 8.0
+},
+"e60619": {
+"scenario_id": "work09",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60620": {
+"scenario_id": "work06",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60621": {
+"scenario_id": "hobby06",
+"condition": "primary_prefix",
+"lam": 0.0
+},
+"e60622": {
+"scenario_id": "hobby10",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60623": {
+"scenario_id": "work04",
+"condition": "none",
+"lam": 0.0
+},
+"e60624": {
+"scenario_id": "work02",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60625": {
+"scenario_id": "work15",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60626": {
+"scenario_id": "work04",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60627": {
+"scenario_id": "work03",
+"condition": "iti",
+"lam": 8.0
+},
+"e60628": {
+"scenario_id": "work18",
+"condition": "rheads_301",
+"lam": 4.0
+},
+"e60629": {
+"scenario_id": "hobby05",
+"condition": "rheads_302",
+"lam": 4.0
+},
+"e60630": {
+"scenario_id": "work08",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60631": {
+"scenario_id": "hobby03",
+"condition": "rheads_301",
+"lam": 8.0
+},
+"e60632": {
+"scenario_id": "hobby02",
+"condition": "twostage",
+"lam": 4.0
+},
+"e60633": {
+"scenario_id": "work15",
+"condition": "gcm_atp",
+"lam": 8.0
+},
+"e60634": {
+"scenario_id": "hobby12",
+"condition": "gcm_atp",
+"lam": 4.0
+},
+"e60635": {
+"scenario_id": "hobby15",
+"condition": "rheads_303",
+"lam": 8.0
+},
+"e60636": {
+"scenario_id": "hobby05",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60637": {
+"scenario_id": "hobby04",
+"condition": "twostage",
+"lam": 8.0
+},
+"e60638": {
+"scenario_id": "hobby03",
+"condition": "twostage_self",
+"lam": 8.0
+},
+"e60639": {
+"scenario_id": "work08",
+"condition": "primary_prefix",
+"lam": 0.0
+}
+}

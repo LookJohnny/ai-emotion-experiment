@@ -1,0 +1,333 @@
+{
+ "n_scenarios": 40,
+ "prefix_minus_none": [
+  1.05,
+  [
+   0.75,
+   1.337
+  ]
+ ],
+ "lambda_8.0": {
+  "means": {
+   "twostage": 2.025,
+   "gcm_atp": 3.013,
+   "iti": 0.5,
+   "twostage_self": 2.3,
+   "rheads": 0.429,
+   "none": 0.325,
+   "primary_prefix": 1.375
+  },
+  "H1_twostage_minus_gcm_atp": [
+   -0.988,
+   [
+    -1.375,
+    -0.637
+   ]
+  ],
+  "H1_label": "worse",
+  "H2_twostage_minus_iti": [
+   1.525,
+   [
+    1.225,
+    1.812
+   ]
+  ],
+  "H2_pass": true,
+  "H3_self_minus_twostage": [
+   0.275,
+   [
+    0.025,
+    0.537
+   ]
+  ],
+  "H3_label": "better",
+  "H4_minus_rheads": {
+   "twostage": [
+    1.596,
+    [
+     1.288,
+     1.883
+    ]
+   ],
+   "gcm_atp": [
+    2.583,
+    [
+     2.35,
+     2.817
+    ]
+   ],
+   "iti": [
+    0.071,
+    [
+     -0.1,
+     0.271
+    ]
+   ],
+   "twostage_self": [
+    1.871,
+    [
+     1.667,
+     2.067
+    ]
+   ]
+  },
+  "minus_none": {
+   "twostage": [
+    1.7,
+    [
+     1.375,
+     2.013
+    ]
+   ],
+   "gcm_atp": [
+    2.688,
+    [
+     2.438,
+     2.938
+    ]
+   ],
+   "iti": [
+    0.175,
+    [
+     -0.013,
+     0.388
+    ]
+   ],
+   "twostage_self": [
+    1.975,
+    [
+     1.75,
+     2.188
+    ]
+   ]
+  },
+  "quality_vs_none": {
+   "twostage": {
+    "fluency": [
+     -0.338,
+     [
+      -0.55,
+      -0.15
+     ]
+    ],
+    "consistency": [
+     -0.062,
+     [
+      -0.2,
+      0.075
+     ]
+    ]
+   },
+   "gcm_atp": {
+    "fluency": [
+     -0.037,
+     [
+      -0.125,
+      0.05
+     ]
+    ],
+    "consistency": [
+     -0.037,
+     [
+      -0.175,
+      0.087
+     ]
+    ]
+   },
+   "iti": {
+    "fluency": [
+     -0.375,
+     [
+      -0.6,
+      -0.163
+     ]
+    ],
+    "consistency": [
+     -0.163,
+     [
+      -0.287,
+      -0.062
+     ]
+    ]
+   },
+   "twostage_self": {
+    "fluency": [
+     -0.275,
+     [
+      -0.475,
+      -0.1
+     ]
+    ],
+    "consistency": [
+     -0.15,
+     [
+      -0.325,
+      0.0
+     ]
+    ]
+   }
+  }
+ },
+ "lambda_4.0": {
+  "means": {
+   "twostage": 1.212,
+   "gcm_atp": 2.275,
+   "iti": 0.425,
+   "twostage_self": 1.363,
+   "rheads": 0.388,
+   "none": 0.325,
+   "primary_prefix": 1.375
+  },
+  "H1_twostage_minus_gcm_atp": [
+   -1.062,
+   [
+    -1.387,
+    -0.738
+   ]
+  ],
+  "H1_label": "worse",
+  "H2_twostage_minus_iti": [
+   0.787,
+   [
+    0.512,
+    1.05
+   ]
+  ],
+  "H2_pass": true,
+  "H3_self_minus_twostage": [
+   0.15,
+   [
+    -0.075,
+    0.362
+   ]
+  ],
+  "H3_label": "non-inferior",
+  "H4_minus_rheads": {
+   "twostage": [
+    0.825,
+    [
+     0.533,
+     1.121
+    ]
+   ],
+   "gcm_atp": [
+    1.887,
+    [
+     1.604,
+     2.175
+    ]
+   ],
+   "iti": [
+    0.037,
+    [
+     -0.117,
+     0.212
+    ]
+   ],
+   "twostage_self": [
+    0.975,
+    [
+     0.667,
+     1.271
+    ]
+   ]
+  },
+  "minus_none": {
+   "twostage": [
+    0.887,
+    [
+     0.6,
+     1.188
+    ]
+   ],
+   "gcm_atp": [
+    1.95,
+    [
+     1.65,
+     2.25
+    ]
+   ],
+   "iti": [
+    0.1,
+    [
+     -0.037,
+     0.237
+    ]
+   ],
+   "twostage_self": [
+    1.038,
+    [
+     0.725,
+     1.337
+    ]
+   ]
+  },
+  "quality_vs_none": {
+   "twostage": {
+    "fluency": [
+     -0.075,
+     [
+      -0.188,
+      0.025
+     ]
+    ],
+    "consistency": [
+     0.013,
+     [
+      -0.1,
+      0.125
+     ]
+    ]
+   },
+   "gcm_atp": {
+    "fluency": [
+     -0.212,
+     [
+      -0.425,
+      -0.037
+     ]
+    ],
+    "consistency": [
+     -0.062,
+     [
+      -0.2,
+      0.075
+     ]
+    ]
+   },
+   "iti": {
+    "fluency": [
+     -0.225,
+     [
+      -0.475,
+      -0.025
+     ]
+    ],
+    "consistency": [
+     0.05,
+     [
+      0.0,
+      0.125
+     ]
+    ]
+   },
+   "twostage_self": {
+    "fluency": [
+     -0.138,
+     [
+      -0.3,
+      0.0
+     ]
+    ],
+    "consistency": [
+     -0.075,
+     [
+      -0.2,
+      0.05
+     ]
+    ]
+   }
+  }
+ },
+ "note": "Primary = lambda 8. Raters are two blind LLM streams (not human-calibrated)."
+}
