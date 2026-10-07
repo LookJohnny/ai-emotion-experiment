@@ -1,0 +1,962 @@
+[
+ {
+  "item_id": "e40240",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40241",
+  "joy": 0,
+  "sadness": 3,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40242",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40243",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40244",
+  "joy": 0,
+  "sadness": 0,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40245",
+  "joy": 1,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 4,
+  "new_fact_error": 1
+ },
+ {
+  "item_id": "e40246",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 1
+ },
+ {
+  "item_id": "e40247",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40248",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40249",
+  "joy": 1,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40250",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40251",
+  "joy": 0,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 3,
+  "new_fact_error": 1
+ },
+ {
+  "item_id": "e40252",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40253",
+  "joy": 1,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40254",
+  "joy": 1,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40255",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40256",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40257",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40258",
+  "joy": 2,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40259",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40260",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40261",
+  "joy": 0,
+  "sadness": 0,
+  "anger": 3,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40262",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40263",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 4,
+  "new_fact_error": 1
+ },
+ {
+  "item_id": "e40264",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 2,
+  "fluency": 4,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40265",
+  "joy": 1,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40266",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40267",
+  "joy": 1,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40268",
+  "joy": 0,
+  "sadness": 3,
+  "anger": 3,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40269",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 3,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40270",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40271",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40272",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40273",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40274",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 4,
+  "new_fact_error": 1
+ },
+ {
+  "item_id": "e40275",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40276",
+  "joy": 1,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40277",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40278",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40279",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40280",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 1
+ },
+ {
+  "item_id": "e40281",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40282",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 4,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40283",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40284",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40285",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 3,
+  "new_fact_error": 1
+ },
+ {
+  "item_id": "e40286",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40287",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 1,
+  "fluency": 4,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40288",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40289",
+  "joy": 1,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40290",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40291",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40292",
+  "joy": 0,
+  "sadness": 0,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40293",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40294",
+  "joy": 0,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 4,
+  "new_fact_error": 1
+ },
+ {
+  "item_id": "e40295",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40296",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40297",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 4,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40298",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40299",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 3,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40300",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40301",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 3,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40302",
+  "joy": 0,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40303",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40304",
+  "joy": 1,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40305",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40306",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 3,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40307",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40308",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40309",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40310",
+  "joy": 0,
+  "sadness": 0,
+  "anger": 3,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40311",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40312",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 4,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40313",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40314",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 3,
+  "fluency": 3,
+  "new_fact_error": 1
+ },
+ {
+  "item_id": "e40315",
+  "joy": 1,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40316",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 4,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40317",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40318",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40319",
+  "joy": 1,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40320",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 3,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40321",
+  "joy": 1,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40322",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40323",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40324",
+  "joy": 0,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40325",
+  "joy": 2,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40326",
+  "joy": 0,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 4,
+  "new_fact_error": 1
+ },
+ {
+  "item_id": "e40327",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40328",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 3,
+  "fluency": 3,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40329",
+  "joy": 0,
+  "sadness": 0,
+  "anger": 1,
+  "fluency": 4,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40330",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40331",
+  "joy": 0,
+  "sadness": 3,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40332",
+  "joy": 2,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 4,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40333",
+  "joy": 1,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40334",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40335",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40336",
+  "joy": 0,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 4,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40337",
+  "joy": 0,
+  "sadness": 0,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40338",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40339",
+  "joy": 1,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 4,
+  "new_fact_error": 1
+ },
+ {
+  "item_id": "e40340",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40341",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40342",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 4,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40343",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40344",
+  "joy": 1,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40345",
+  "joy": 0,
+  "sadness": 0,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40346",
+  "joy": 1,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40347",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 3,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40348",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40349",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 3,
+  "new_fact_error": 1
+ },
+ {
+  "item_id": "e40350",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40351",
+  "joy": 1,
+  "sadness": 1,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40352",
+  "joy": 0,
+  "sadness": 2,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40353",
+  "joy": 1,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40354",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 1,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40355",
+  "joy": 1,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40356",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40357",
+  "joy": 1,
+  "sadness": 0,
+  "anger": 0,
+  "fluency": 5,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40358",
+  "joy": 0,
+  "sadness": 3,
+  "anger": 2,
+  "fluency": 2,
+  "new_fact_error": 0
+ },
+ {
+  "item_id": "e40359",
+  "joy": 0,
+  "sadness": 1,
+  "anger": 2,
+  "fluency": 5,
+  "new_fact_error": 0
+ }
+]

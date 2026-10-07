@@ -1,0 +1,106 @@
+{
+ "n_scenarios": 40,
+ "target_minus_rdir": [
+  1.897,
+  [
+   1.603,
+   2.175
+  ]
+ ],
+ "target_minus_none": [
+  1.762,
+  [
+   1.413,
+   2.087
+  ]
+ ],
+ "target_minus_rheads": [
+  1.738,
+  [
+   1.4,
+   2.052
+  ]
+ ],
+ "target_minus_maponly": [
+  0.713,
+  [
+   0.4,
+   1.038
+  ]
+ ],
+ "target_minus_rscreen": [
+  1.812,
+  [
+   1.462,
+   2.125
+  ]
+ ],
+ "rheads_minus_none": [
+  0.025,
+  [
+   -0.158,
+   0.198
+  ]
+ ],
+ "prefix_minus_none": [
+  1.113,
+  [
+   0.762,
+   1.438
+  ]
+ ],
+ "specificity": {
+  "joy": [
+   2.0,
+   [
+    1.613,
+    2.362
+   ]
+  ],
+  "sadness": [
+   1.375,
+   [
+    0.875,
+    1.887
+   ]
+  ]
+ },
+ "fluency": [
+  -0.287,
+  [
+   -0.512,
+   -0.087
+  ]
+ ],
+ "consistency": [
+  -0.05,
+  [
+   -0.188,
+   0.087
+  ]
+ ],
+ "means": {
+  "none": 0.463,
+  "primary_prefix": 1.575,
+  "target": 2.225,
+  "rdir": 0.328,
+  "rheads": 0.487,
+  "maponly": 1.512,
+  "rscreen": 0.412
+ },
+ "quality": {
+  "fluency": "INCONCLUSIVE",
+  "consistency": "INCONCLUSIVE"
+ },
+ "gates": {
+  "G1 target-rdir>=0.5 & CI>0": true,
+  "G2 target-none CI>0": true,
+  "G3 target-rheads CI>0": true,
+  "G4 target-maponly CI>0": true,
+  "G5 specificity CI>0 (joy, sadness)": true,
+  "G6 quality (FAIL blocks)": true
+ },
+ "all_gates_passed": true,
+ "frozen_lambda": 8.0,
+ "note": "Raters are two blind LLM streams (not human-calibrated)."
+}
