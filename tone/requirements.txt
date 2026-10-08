@@ -1,0 +1,8 @@
+torch>=2.4
+transformers>=4.57,<5
+numpy
+scikit-learn
+fastapi
+uvicorn
+# tests only
+httpx2

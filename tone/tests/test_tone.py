@@ -77,8 +77,10 @@ class T(unittest.TestCase):
         msgs = [{"role": "user", "content": "老板让我周末加班。"}]
         a = eng.generate(msgs, max_new_tokens=10)["text"]; b = eng.generate(msgs, tone={"anger": 2.0}, max_new_tokens=10)["text"]
         self.assertNotEqual(a, b)
-        lams = [ev["lambda"].get("anger", 0) for ev in eng.stream(msgs, target={"anger": 0.8}, max_new_tokens=8) if not ev.get("done")]
-        self.assertGreater(lams[-1], lams[0]); self.assertLessEqual(max(lams), 8.0)               # rises toward the target, capped
+        p = eng.packs["anger"]; p.meta["calibration"] = {"strength": [0, 1, 2], "readout": [0.1, 0.4, 0.8]}
+        self.assertAlmostEqual(eng.strength_for(p, 0.6), 1.5); self.assertEqual(eng.strength_for(p, 0.95), 2.0)
+        lams = [ev["lambda"].get("anger", 0) for ev in eng.stream(msgs, target={"anger": 0.6}, max_new_tokens=8) if not ev.get("done")]
+        self.assertAlmostEqual(lams[0], 6.0); self.assertLessEqual(max(lams), 8.0)               # calibrated start, capped
         ev = next(e for e in eng.stream(msgs, max_new_tokens=2) if not e.get("done"))
         self.assertIn("angry", ev["expression"]); self.assertIn("neutral", ev["expression"])
         with self.assertRaises(ValueError): next(eng.stream(msgs, tone={"joy": 1.0}))
@@ -89,7 +91,7 @@ class T(unittest.TestCase):
         p = B.build("tiny", "anger", d, k=3, n=3, gen=4, device="cpu", model=tiny(1), tok=self.tok, log=lambda *a: None)
         q = TonePack.load(d)
         self.assertLessEqual(len(q.heads), 3); self.assertEqual(q.vectors.shape[1], 16); self.assertIn("a", q.readout)
-        self.assertEqual(set(q.meta["dose_curve"]), {"1.0", "2.0", "4.0", "8.0"}); self.assertEqual(q.expression, "angry")
+        self.assertEqual(set(q.meta["dose_curve"]), {"0.25", "0.5", "1.0", "2.0", "4.0", "8.0"}); self.assertEqual(q.expression, "angry")
 
 
 if __name__ == "__main__":
@@ -111,3 +113,18 @@ class Server(unittest.TestCase):
         self.assertEqual(lines[-1], "data: [DONE]"); first = json.loads(lines[0][6:])
         self.assertIn("expression", first["x_tone"]); self.assertEqual(c.get("/v1/tone/packs").json()["packs"][0]["attribute"], "anger")
         eng.H.remove()
+
+
+class Utf8(unittest.TestCase):
+    def test_no_replacement_chars_from_split_characters(self):
+        """Characters split across tokens (emoji) must not leave U+FFFD in the streamed text."""
+        tok = AutoTokenizer.from_pretrained(TOK_DIR); eng = ToneEngine(model=tiny(), tok=tok, device="cpu")
+        target = tok("好的😄🎉", add_special_tokens=False)["input_ids"]
+        class Forced:                                  # a stand-in model that emits a fixed token sequence
+            def __init__(s, m): s.m, s.i, s.config, s.generation_config = m, 0, m.config, m.generation_config
+            def __call__(s, ids, **kw):
+                out = s.m(ids, **kw); logits = torch.full_like(out.logits, -1e9)
+                logits[0, -1, target[s.i] if s.i < len(target) else eng.tok.eos_token_id] = 0; s.i += 1; out.logits = logits; return out
+        eng.model = Forced(eng.model)
+        text = "".join(ev.get("delta", "") for ev in eng.stream([{"role": "user", "content": "hi"}], max_new_tokens=len(target) + 1) if not ev.get("done"))
+        self.assertNotIn("�", text); self.assertEqual(text, "好的😄🎉"); eng.H.remove()

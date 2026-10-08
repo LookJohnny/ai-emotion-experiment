@@ -1,5 +1,5 @@
 """OpenAI-compatible server.
-  python -m nous_tone.server MODEL_DIR packs/anger packs/joy ... [--port 7880] [--host 127.0.0.1]
+  python -m nous_tone.server MODEL_DIR packs/anger packs/joy ... [--readout packs/readout] [--port 7880] [--host 127.0.0.1]
 POST /v1/chat/completions   standard body + optional
     "tone":        {"anger": -1.0, "warmth": 0.8}    open-loop strengths (-2..2, 1.0 = pack default)
     "tone_target": {"joy": 0.7}                      closed-loop target intensities (0..1)
@@ -62,8 +62,8 @@ def create_app(engine: ToneEngine, model_name="local"):
 def main():
     import os, uvicorn
     ap = argparse.ArgumentParser(prog="nous_tone.server"); ap.add_argument("model"); ap.add_argument("packs", nargs="*")
-    ap.add_argument("--port", type=int, default=7880); ap.add_argument("--host", default="127.0.0.1")
-    a = ap.parse_args(); eng = ToneEngine(a.model, a.packs)
+    ap.add_argument("--port", type=int, default=7880); ap.add_argument("--host", default="127.0.0.1"); ap.add_argument("--readout")
+    a = ap.parse_args(); eng = ToneEngine(a.model, a.packs, readout_dir=a.readout)
     uvicorn.run(create_app(eng, os.path.basename(a.model.rstrip("/"))), host=a.host, port=a.port)
 
 

@@ -8,7 +8,7 @@ Contrast pairs: the same user message under a reference system prompt (p_ref) an
 3. vectors: per head, mean of (z_att - z_ref) over the aligned suffix
 4. readout: projection of each selected head's output onto its unit vector, averaged over heads, read on the reference prompt
    with the neutral text vs the attribute text forced in; a logistic fit maps the score to an intensity 0..1
-5. dose curve (teacher-forced effect and fluency proxy at lambda 1/2/4/8) -> default lambda"""
+5. dose curve (teacher-forced effect and fluency proxy at lambda 0.25..8) -> default lambda (fluency cost < 0.3 nats/token)"""
 import argparse, json, os, time
 import numpy as np, torch
 from .hooks import HeadHooks
@@ -87,8 +87,8 @@ def build(model_dir, attribute, out, k=12, n=40, gen=48, device=None, model=None
             H.mode = None; model.zero_grad(set_to_none=True)
         for L in range(NL):
             d = z_att[L] - z_ref[L]
-            IE[L] += ((grads[0][L] - grads[1][L]) * d).view(na, NH, HD).sum(dim=(0, 2)).double().cpu()
-            VSUM[L] += d.mean(0).double().cpu()
+            IE[L] += ((grads[0][L] - grads[1][L]) * d).view(na, NH, HD).sum(dim=(0, 2)).cpu().double()      # MPS has no float64
+            VSUM[L] += d.mean(0).cpu().double()
     IE /= len(pairs); VEC = (VSUM / len(pairs)).float()
     order = sorted(((L, h) for L in range(NL) for h in range(NH)), key=lambda x: -float(IE[x]))
     heads = [h for h in order if float(IE[h]) > 0][:k]
@@ -125,14 +125,14 @@ def build(model_dir, attribute, out, k=12, n=40, gen=48, device=None, model=None
             H.mode = None; eff.append(lp[0] - lp[1]); nll.append(-lp[1])
         return float(np.mean(eff)), float(np.mean(nll))
     base_eff, base_nll = tf(0.0); curve = {}
-    for lam in (1.0, 2.0, 4.0, 8.0):
+    for lam in (0.25, 0.5, 1.0, 2.0, 4.0, 8.0):
         e, l = tf(lam); curve[str(lam)] = {"effect": round(e - base_eff, 4), "nll_increase": round(l - base_nll, 4)}
-    # default: the largest lambda whose fluency proxy (NLL of the model's own neutral text) rises by < 0.5 nats/token
-    ok = [float(x) for x, c in curve.items() if c["nll_increase"] < 0.5]
-    default = max(ok) if ok else 1.0
+    # default: the largest lambda whose fluency proxy (NLL of the model's own neutral text) rises by < 0.3 nats/token
+    ok = [float(x) for x, c in curve.items() if c["nll_increase"] < 0.3]
+    default = max(ok) if ok else 0.25
     H.remove()
     pack = TonePack(attribute=attribute, model=os.path.basename(str(model_dir).rstrip("/")), layers=NL, heads_per_layer=NH, head_dim=HD,
-                    heads=[list(h) for h in heads], vectors=vectors, default_lambda=default, max_lambda=max(default * 2, 2.0),
+                    heads=[list(h) for h in heads], vectors=vectors, default_lambda=default, max_lambda=default * 2,
                     readout=readout, expression=att["expression"],
                     meta={"method": "attribution patching (GCM) over all heads at the aligned suffix", "n_messages": len(pairs),
                           "gen_tokens": gen, "ie_top": [[name, round(float(IE[h]), 6)] for name, h in ((f"L{L}H{hh}", (L, hh)) for L, hh in order[:30])],
