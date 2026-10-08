@@ -5,7 +5,7 @@ tone   = open-loop strength per attribute (-2..2); 1.0 = the pack's default lamb
 target = closed loop: desired intensity 0..1; lambda is adjusted every token from the readout (never above max_lambda)
 Readouts come from the same heads and directions that steer: the head output (before our injection) projected on the
 pack's unit vectors, mapped to 0..1 by the pack's calibration. Expression weights for avatars follow the readouts."""
-import concurrent.futures, logging, math, queue, threading, time
+import collections, concurrent.futures, logging, math, queue, threading, time
 import numpy as np, torch
 from .hooks import HeadHooks
 from .pack import TonePack
@@ -83,7 +83,8 @@ class PriorityLock:
 
 
 class ToneEngine:
-    def __init__(self, model_dir=None, pack_dirs=(), device=None, model=None, tok=None, gain=1.0, ema=0.3, readout_dir=None):
+    def __init__(self, model_dir=None, pack_dirs=(), device=None, model=None, tok=None, gain=1.0, ema=0.3, readout_dir=None,
+                 prefix_cache=3):
         from transformers import AutoTokenizer, AutoModelForCausalLM
         self.device = device or pick_device()
         if model is None:
@@ -95,6 +96,9 @@ class ToneEngine:
         # (a read is one ~0.1 s forward): a streamed decision's lines get their tone
         # without waiting for the whole decision to finish.
         self._jobs: queue.SimpleQueue = queue.SimpleQueue(); self._job_mutex = threading.Lock(); self._generating = False
+        # Prompt KV prefixes of recent requests (LRU). A companion's prompts share a long head
+        # (character, contract, history), so the next turn prefills only what changed.
+        self.prefix_cache = prefix_cache; self._prefixes: collections.OrderedDict = collections.OrderedDict()
         g = getattr(model.generation_config, "eos_token_id", None)
         self.eos = {tok.eos_token_id} | (set(g) if isinstance(g, (list, tuple)) else {g} if g is not None else set())
         for d in pack_dirs: self.add_pack(TonePack.load(d))
@@ -194,11 +198,15 @@ class ToneEngine:
         scan = JsonObjectEnd() if json_object else None                   # JSON mode: stop once the object closes
         if scan is not None and prefill: scan.feed(prefill)
         with self.lock.hold(priority):
-            H = self.H; H.mode, H.V, H.start = "steer", self._V(lams), start
-            t_start = time.monotonic()
+            V = self._V(lams); steered = bool(V)
+            reused, cached = self._prefix_lookup(ids, start, steered)
+            # the hook steers from `start` within the chunk it sees; the chunk now begins at `reused`
+            H = self.H; H.mode, H.V, H.start = "steer", V, max(0, start - reused)
+            t_start = time.monotonic(); past = None
             with self._job_mutex: self._generating = True
             try:
-                out = self.model(torch.tensor([ids], device=self.device), use_cache=True); past = out.past_key_values
+                out = self.model(torch.tensor([ids[reused:]], device=self.device), past_key_values=cached, use_cache=True)
+                past = out.past_key_values
                 logits = out.logits[0, -1].float(); toks = list(pre_ids)
                 text_so_far = self.tok.decode(toks, skip_special_tokens=True) if toks else ""; lead = text_so_far
                 for step in range(max_new_tokens):
@@ -245,13 +253,14 @@ class ToneEngine:
                 finish = "length"
                 yield {"done": True, "finish_reason": "length", "readout": ema, "lambda": dict(lams)}
             finally:
+                self._prefix_store(ids, start, steered, past)                # the prompt part only (cropped to len(ids))
                 with self._job_mutex:                                        # no read is left waiting on a finished generation
                     self._generating = False
                     self._drain_jobs()
                 H.mode, H.V = None, None
                 dt = time.monotonic() - t_start
-                log.info("generate priority=%d prompt=%d tokens=%d wait=%.2fs gen=%.2fs (%.1f tok/s) finish=%s", priority, len(ids), n_out,
-                         t_start - t_queued, dt, n_out / dt if dt > 0 else 0.0, finish)
+                log.info("generate priority=%d prompt=%d reused=%d tokens=%d wait=%.2fs gen=%.2fs (%.1f tok/s) finish=%s", priority,
+                         len(ids), reused, n_out, t_start - t_queued, dt, n_out / dt if dt > 0 else 0.0, finish)
 
     @torch.no_grad()
     def read(self, text, segments=None, user="", shrink=8.0, priority=1):
@@ -312,6 +321,33 @@ class ToneEngine:
             try: job = self._jobs.get_nowait()
             except queue.Empty: return
             job()
+
+    MIN_REUSE = 32
+
+    def _prefix_lookup(self, ids, start, steered):
+        """(tokens reused, DynamicCache) from the cached prompt sharing the longest head with `ids`.
+        Steered positions (from a steering start on) depend on that request's strengths, so when either
+        side steers, only positions before both steering starts are reused."""
+        from transformers import DynamicCache
+        best, best_key = 0, None
+        for key, (c_ids, c_start, c_steered, _) in self._prefixes.items():
+            n, limit = 0, min(len(c_ids), len(ids) - 1)                      # at least one token left to run
+            while n < limit and c_ids[n] == ids[n]: n += 1
+            if steered or c_steered: n = min(n, start, c_start)
+            if n > best: best, best_key = n, key
+        if best < self.MIN_REUSE: return 0, None
+        self._prefixes.move_to_end(best_key)
+        legacy = self._prefixes[best_key][3]
+        # slices are views: DynamicCache.update concatenates into new tensors, so the stored prefix stays intact
+        return best, DynamicCache.from_legacy_cache(tuple((k[..., :best, :], v[..., :best, :]) for k, v in legacy))
+
+    def _prefix_store(self, ids, start, steered, past):
+        if not self.prefix_cache or past is None: return
+        try: legacy = past.to_legacy_cache() if hasattr(past, "to_legacy_cache") else past
+        except Exception: return
+        n = len(ids)
+        self._prefixes[id(legacy)] = (list(ids), start, steered, tuple((k[..., :n, :], v[..., :n, :]) for k, v in legacy))
+        while len(self._prefixes) > self.prefix_cache: self._prefixes.popitem(last=False)
 
     def generate(self, messages, **kw):
         text, last = "", {}

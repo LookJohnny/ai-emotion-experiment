@@ -327,3 +327,29 @@ class InterleavedRead(unittest.TestCase):
         self.assertEqual(out["gen"]["readout"], alone["readout"])
         self.assertEqual(during["readout"], standalone_read["readout"])  # same answer as alone
         eng.H.remove()
+
+
+class PrefixCache(unittest.TestCase):
+    def test_reusing_a_cached_prompt_head_changes_nothing(self):
+        tok = AutoTokenizer.from_pretrained(TOK_DIR)
+        system = {"role": "system", "content": "你是小星。" + "你温柔、耐心，喜欢陪人聊天。" * 12}
+        turn1 = [system, {"role": "user", "content": "你好"}]
+        turn2 = turn1 + [{"role": "assistant", "content": "你好呀"}, {"role": "user", "content": "今天下雨了"}]
+        v = np.random.RandomState(0).randn(4, 16).astype(np.float32) * 5
+        pack = lambda: TonePack("anger", "tiny", 3, 4, 16, [[0, 1], [1, 0], [1, 3], [2, 2]], v, default_lambda=4.0, max_lambda=8.0,
+                                readout={"a": 0.0, "b": 0.0}, expression="angry")
+        for tone in ({}, {"anger": 1.0}):
+            cached = ToneEngine(model=tiny(), tok=tok, device="cpu"); cached.add_pack(pack())
+            fresh = ToneEngine(model=tiny(), tok=tok, device="cpu", prefix_cache=0); fresh.add_pack(pack())
+            for msgs in (turn1, turn2, turn2):
+                a = cached.generate(msgs, max_new_tokens=12, tone=tone)
+                b = fresh.generate(msgs, max_new_tokens=12, tone=tone)
+                self.assertEqual(a["text"], b["text"], f"tone={tone}")
+                self.assertEqual(a["readout"], b["readout"])
+            self.assertTrue(cached._prefixes); self.assertFalse(fresh._prefixes)
+            ids, start = cached._render(turn2)
+            reused, _ = cached._prefix_lookup(ids, start, steered=bool(tone))
+            self.assertGreaterEqual(reused, ToneEngine.MIN_REUSE)
+            if tone:  # steered positions are never reused
+                self.assertLessEqual(reused, start)
+            cached.H.remove(); fresh.H.remove()
