@@ -1,0 +1,47 @@
+{
+ "model": "Qwen3-1.7B",
+ "layer": 7,
+ "classes": [
+  "reference",
+  "anger",
+  "joy",
+  "sadness",
+  "warmth"
+ ],
+ "cv_accuracy_by_layer": {
+  "7": 0.8057,
+  "8": 0.804,
+  "9": 0.7825,
+  "10": 0.8002,
+  "11": 0.7924,
+  "12": 0.7887,
+  "13": 0.8003,
+  "14": 0.8036,
+  "15": 0.7912,
+  "16": 0.7838,
+  "17": 0.785,
+  "18": 0.7921,
+  "19": 0.7756,
+  "20": 0.7598,
+  "21": 0.7552,
+  "22": 0.7408,
+  "23": 0.7399
+ },
+ "cv_accuracy": 0.82,
+ "cv_accuracy_sentence": 0.7913,
+ "chance": 0.2,
+ "temperature": 1.5696,
+ "oof_nll": {
+  "uncalibrated": 0.631,
+  "calibrated": 0.5649
+ },
+ "n_messages": 40,
+ "n_samples": {
+  "replies": 400,
+  "sentences": 1222
+ },
+ "shrink": 8.0,
+ "short_variants": true,
+ "gen_tokens": 48,
+ "seconds": 905.7
+}
